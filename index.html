@@ -2,32 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<script>
-/* Demo-only storage isolation. Every page load gets a new browser session. */
-(function(){
-  const prefix='dd254_';
-  function clearDd254(store){
-    try{
-      const keys=[];
-      for(let i=0;i<store.length;i++){ const k=store.key(i)||''; if(k.indexOf(prefix)===0) keys.push(k); }
-      keys.forEach(function(k){ store.removeItem(k); });
-    }catch(e){}
-  }
-  clearDd254(localStorage);
-  clearDd254(sessionStorage);
-  window.DD254_DEMO_SESSION_ID=(function(){
-    try{ return crypto.randomUUID(); }
-    catch(e){ return Date.now().toString(36)+'-'+Math.random().toString(36).slice(2); }
-  })();
-  try{ indexedDB.deleteDatabase('dd254_dashboard'); indexedDB.deleteDatabase('dd254_templates'); }catch(e){}
-  window.addEventListener('pagehide',function(){
-    try{
-      indexedDB.deleteDatabase('dd254_dashboard_'+window.DD254_DEMO_SESSION_ID);
-      indexedDB.deleteDatabase('dd254_templates_'+window.DD254_DEMO_SESSION_ID);
-    }catch(e){}
-  });
-})();
-</script>
 <!-- ── CONTENT SECURITY POLICY ───────────────────────────────────────────────
      The claim "this file never talks to the network" should not have to be
      taken on trust. connect-src 'none' makes the browser ENFORCE it: fetch,
@@ -46,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD Form 254 – Interactive Guided Form v1.9 Demo</title>
+<title>DD254 Interactive - Codex Astra v1.13.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -505,7 +479,19 @@ body.ws-auto.tpl-wide #dashWrap{max-width:none!important;}
 body.ws-dragging{user-select:none;}
 @media print{#wsDrag{display:none!important;}}
 </style>
-</head>
+<style>
+#astraPanel{margin:12px 0;padding:16px;border:1px solid #b9c9d8;border-radius:8px;background:var(--bg,#fff);color:var(--text,#1d3349);font:13px/1.5 Arial,sans-serif}
+#astraPanel h2{font-size:17px;margin:0 0 6px}.astra-edition{font-size:11px;font-weight:normal}
+#astraPanel details{border-top:1px solid #bdcad6;padding:9px 0}#astraPanel summary{cursor:pointer;font-weight:bold;padding:4px 0}
+#astraReview summary::before{content:none!important}
+.astra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}.astra-grid label{display:block;font-size:12px}
+.astra-grid input,.astra-grid textarea,.astra-grid select{display:block;box-sizing:border-box;width:100%;padding:7px;border:1px solid #9fb3c5;border-radius:4px;background:#fff;color:#172d42;font:13px Arial,sans-serif}
+.astra-grid textarea{resize:vertical}.astra-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:10px 0}.astra-actions label{font-size:12px}
+#astraPanel :focus-visible{outline:3px solid #3184ce;outline-offset:2px}#astraFindings{margin:12px 0;padding:10px;background:#edf3f8;color:#1d3349}.astra-row{margin-left:12px}.astra-cost{font-weight:bold}
+@media(max-width:700px){.astra-grid{grid-template-columns:1fr}.astra-row{margin-left:0}}
+@media print{#astraReview{display:none!important}}
+</style>
+<style>.completion-tools{padding:9px;margin:8px 0;border-left:3px solid #2d6592;background:#eef4fa;font:12px/1.5 Arial;color:#173b58}.completion-tools button{margin:4px}.completion-inline{font:11px/1.5 Arial;color:#8b1a0a;white-space:pre-line;margin:3px 0 8px}.completion-jump{margin-left:6px}.completion-target{outline:3px solid #2674b5!important;outline-offset:3px}#completionPromptHint{color:#8b1a0a;font-weight:bold}@media print{.completion-tools,.completion-inline,.completion-jump,#completionNext{display:none!important}.completion-target{outline:none!important}}</style></head>
 <body>
 <a href="#mainFormContent" style="position:absolute;left:-9999px;top:0;background:#1d5fa8;color:#fff;padding:10px 16px;z-index:9999;border-radius:0 0 6px 0;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to form content</a>
 <div id="dashView">
@@ -513,9 +499,6 @@ body.ws-dragging{user-select:none;}
   <div style="background:var(--dcsa-blue);color:#fff;border-radius:8px;padding:18px 24px;margin-bottom:16px;border-bottom:3px solid var(--dcsa-gold);">
     <div style="font-size:20px;font-weight:bold;">DD-254 Workspace Dashboard</div>
     <div style="font-size:11.5px;color:#9ab8d8;margin-top:4px;">Drafts autosave to this browser as you work. Clearing browser site data erases them — take a backup regularly. UNCLASSIFIED / CUI only.</div>
-  </div>
-  <div id="dashFeedbackRequest" style="background:#eef3fa;border:1px solid #b8c7d8;border-left:4px solid #46606f;border-radius:6px;padding:11px 14px;margin-bottom:14px;">
-    <div style="font-size:12.5px;font-weight:bold;color:#2b3440;">If you have feedback, contact me at darinadams@darinadams.org.</div>
   </div>
   <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
     <button class="pbtn dash-btn-primary" style="font-size:14px;padding:12px 26px;" onclick="dashNewDraft('sol')">＋ New Solicitation</button>
@@ -606,7 +589,7 @@ body.ws-dragging{user-select:none;}
 <div class="fw">
 <div class="cls-banner" id="clsBanner">UNCLASSIFIED</div>
 <div class="fh">
-<h1>Department of Defense<br>Contract Security Classification Specification<br><span style="font-size:10px;font-weight:normal;color:#7090b0;">DD Form 254 · APR 2018 · OMB 0704-0567 · <span id="toolVer">Tool v2.121</span> (Exp. Aug 31, 2028)</span></h1>
+<h1>Department of Defense<br>Contract Security Classification Specification<br><span style="font-size:10px;font-weight:normal;color:#7090b0;">DD Form 254 · APR 2018 · OMB 0704-0567 · <span id="toolVer">Tool</span> · Codex Astra v1.12.0 (Exp. Aug 31, 2028)</span></h1>
 <div class="omb">The requirements of the National Industrial<br>Security Program (NISP) apply to all security<br>aspects of this effort involving classified information.</div>
 </div>
 
@@ -623,6 +606,7 @@ body.ws-dragging{user-select:none;}
     </div>
 </div>
 
+<details id="astraReview" style="margin-bottom:15px;"><summary style="cursor:pointer;font:bold 14px Arial;color:#245278;">Optional supporting records</summary><div id="astraPanel"></div></details>
 <details id="vlogBox" style="margin-bottom:15px;background:#f1f3f5;border:1px solid #c4ccd4;border-radius:6px;padding:10px 14px;">
 <summary style="cursor:pointer;font-weight:bold;font-size:13px;color:#4a5568;">Source &amp; Validation Log — <span id="vlogSummary">0 entries · 0 attachments</span> <span style="font-weight:normal;font-size:11px;color:#6a7888;">(working record — exports separately, never printed on the official form)</span></summary>
 <div style="font-size:10.5px;background:#fff3cd;border:1px solid #e0c060;border-radius:4px;padding:6px 10px;margin:8px 0;color:#4a5568;">
@@ -659,7 +643,7 @@ body.ws-dragging{user-select:none;}
 <option value="">UNCLASSIFIED</option>
 <option value="CUI">CUI — Controlled Unclassified Information</option>
 </select>
-<span style="font-size:10px;color:#9aa8b4;margin-left:8px;">The DD Form 254 itself may only be UNCLASSIFIED or CUI. Classified content is conveyed through attachments referenced in Items 13/14.</span>
+<span style="font-size:10px;color:#9aa8b4;margin-left:8px;">This tool supports UNCLASSIFIED or CUI entries only. Never enter classified content or upload classified attachments. A classified DD Form 254 must be prepared on an approved system.</span>
 </div>
 <div class="print-bar">
 <span>Expand the <strong>▶ Instructions</strong> panels in each field for detailed conditional rules · Right panel shows live validation</span>
@@ -765,7 +749,7 @@ body.ws-dragging{user-select:none;}
 <label class="sub-lbl" for="i2b" style="margin-top:8px;"><span class="sub-ltr">2b</span> Subcontract Number</label>
 <input type="text" id="i2b" placeholder="Subcontract number (prime-to-sub only)" oninput="run()">
 <div class="alert alert-r" id="a2bNeedsa">⚠️ <strong>REQUIRED:</strong> If 2b (subcontract) is filled, 2a (prime contract number) must also be filled.</div>
-<div class="alert alert-r" id="a2bSubSign" style="display:none;">⚠️ <strong>SUBCONTRACTOR SIGNATURE REQUIRED:</strong> This is a subcontract DD Form 254. The subcontractor <em>must</em> sign this form before access to any Special Access Program or classified information is granted. For SAP contracts, ensure the subcontractor's authorized representative countersigns Item 17.</div>
+<div class="alert alert-r" id="a2bSubSign" style="display:none;">⚠️ <strong>SUBCONTRACTOR SIGNATURE REQUIRED:</strong> This is a subcontract DD Form 254. The subcontractor <em>must</em> sign this form before access to any Special Access Program or classified information is granted. For SAP contracts, the subcontractor's authorized representative must sign this DD Form 254. The form provides no subcontractor signature block — capture the signature by the method your programme accepts and record how it was obtained.</div>
 </div>
 <div class="sc">
 <label class="sub-lbl" for="i2c"><span class="sub-ltr">2c</span> Solicitation / Other Number</label>
@@ -786,7 +770,7 @@ body.ws-dragging{user-select:none;}
 <div class="rule-n">Do NOT issue a revised DD Form 254 solely to exercise an option year — the original remains valid. Do NOT revise solely to update POC information.</div>
 <div class="rule-r">Revised DD Forms 254 must be incorporated into the contract by modification.</div>
 <div class="rule-r"><strong>Applies to 3b only:</strong> Conduct a review of classification requirements at least biennially (<a class="src-link" href="https://www.esd.whs.mil/portals/54/documents/dd/forms/dd/dd0254-Inst.pdf" target="_blank" rel="noopener">DD Form 254 Instructions, Item 3b(3)</a>). This bullet appears under 3b (Revised) in the DoD form instructions — there is no equivalent biennial requirement under 3a (Original) or 3c (Final). The separate biennial obligation in DoDM 5220.32 Vol. 1, §6.3g falls on the GCA, not the contractor.</div>
-<p><strong>3c Final:</strong> ONLY issued when a contract is complete AND the GCA approves a formal contractor request to retain classified material beyond the automatic 2-year post-contract period.</p>
+<p><strong>3c Final:</strong> Used for authorized continued security requirements after completion, including extended retention under 32 CFR 117.13(d)(5) and applicable SAP continuation under DoDM 5205.07 section 10.5. Coordinate the basis and disposition instructions with the GCA.</p>
 <div class="rule-r">If 3c is checked → you MUST complete Item 5 AND enter the original date in 3a.</div>
 </details>
 <div class="cbgrid" style="grid-template-columns:1fr 1fr 1fr;">
@@ -818,12 +802,12 @@ body.ws-dragging{user-select:none;}
 <div class="cbi-rules">
 <span class="rr">Must complete Item 5 with retention dates</span>
 <span class="rr">Must enter original date in Item 3a</span>
-<span class="rn">ONLY for post-contract retention beyond 2-year NISPOM period</span>
+<span class="rn">For authorized post-contract retention or applicable program continuation</span>
 </div>
 </div>
 </div>
 </div>
-<div class="alert alert-r" id="a3cItem5" style="margin-top:6px;">🔴 <strong>REQUIRED:</strong> 3c (Final) is selected — you must complete <strong>Item 5</strong> AND enter the original issuance date in Item 3a.</div>
+<div class="alert alert-r" id="a3cItem5" style="margin-top:6px;">🔴 <strong>REQUIRED:</strong> 3c (Final) is selected — enter the original date in Item 3a and disposition guidance in Item 13. Complete <strong>Item 5</strong> for authorized retention; coordinate SAP continuation with the GCA and PSM/PSO.</div>
 </div>
 <div class="sec">
 <div class="sec-row">
@@ -848,7 +832,7 @@ body.ws-dragging{user-select:none;}
 <div class="ilabel"><span class="inum">5</span><span class="ititle">Is This a Final DD Form 254? <span class="req">*</span></span></div>
 <details class="inst-box">
 <summary>Instructions for Item 5</summary>
-<p>ONLY marked YES when: (1) the contract is complete, AND (2) the GCA is approving a formal contractor request to retain classified material beyond the automatic 2-year post-contract NISPOM period.</p>
+<p>Mark YES for a documented post-contract retention request and its GCA-authorized period. The general two-year provision is conditional and applies to copies; SAP retention needs specific written GCA authorization.</p>
 <div class="rule-r">If YES → enter the date of the contractor's formal retention request AND the GCA-authorized retention period.</div>
 <div class="rule-r">If YES → Item 13 MUST contain final disposition instructions for all classified material under the contract.</div>
 <div class="rule-r">If Item 3c is checked → this MUST be YES.</div>
@@ -1049,7 +1033,7 @@ body.ws-dragging{user-select:none;}
 <span class="rr">Collateral classified information incorporated into this SAP contract must be listed on this form or approved by PSM/PSO before entry. (DoDM 5205.07 §4.4.d)</span>
 <span class="rn">If this SAP is acknowledged: the DD Form 254 may be unclassified or CUI. If unacknowledged: the form itself may be CUI and the addendum will be classified — consult your PSO on handling. (DoDM 5205.07 §10.1.c)</span>
 <span class="rn">HVSACO: If any non-SAP contract information carries the HVSACO marking, it must be stored in an accredited SAPF or SCIF and handled via SAP-approved channels only. HVSACO is a control marking, not a classification level. Include HVSACO training in contractor indoctrination. (DoDM 5205.07 §4.1)</span>
-<span class="rr">Upon contract closeout, a final DD Form 254 must be issued. Contractor shall not retain SAP information without written GCA authorization. (DoDM 5205.07 §10.5)</span>
+<span class="rr">At SAP closeout, coordinate disposition and the termination plan. A final DD Form 254 addresses continued SAP security requirements. Contractor shall not retain SAP information without specific written GCA authorization. (DoDM 5205.07 §10.5)</span>
 </div></div>
 </div>
 <div class="crev" id="ird10fRev" style="display:none;margin:4px 0 6px 18px;padding:8px 10px;background:#f4eeff;border-left:3px solid #4a4a5a;border-radius:0 4px 4px 0;">
@@ -1435,7 +1419,8 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.121';
+const TOOL_VERSION='2.125';
+document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 /* The one shared normaliser for text drawn into a PDF with pdf-lib's standard
    (WinAnsi) fonts \u2014 this used to be a second, looser implementation that a
    duplicate inside the flat-PDF module shadowed for its own callers, leaving
@@ -1499,7 +1484,7 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 </div>
 </div><!-- /step5 --><div class="wizard-step" id="step6"><div class="sec-hdr">GCA, Certification &amp; Signatures</div>
 <div class="sec">
-<div class="ilabel"><span class="inum">16</span><span class="ititle">Government Contracting Activity (GCA) and POC</span></div>
+<div class="ilabel"><span class="inum">16</span><span class="ititle">Government Contracting Activity (GCA) and POC <span class="req">*</span></span></div>
 <details class="inst-box">
 <summary>Instructions for Item 16</summary>
 <div class="rule-n">Do NOT revise the DD Form 254 solely to update POC information (16d or 16f). POC changes alone are not a valid reason for revision.</div>
@@ -1509,10 +1494,10 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 <div class="sec-row">
 <div class="sc sc2">
 <div style="display:flex;gap:8px;">
-<div style="flex:3;"><label class="sub-lbl" for="i16a"><span class="sub-ltr">16a</span> GCA Name</label><input type="text" id="i16a" placeholder="e.g., Defense Logistics Agency Aviation"></div>
-<div style="flex:1;"><label class="sub-lbl" for="i16b"><span class="sub-ltr">16b</span> AAC</label><input type="text" id="i16b" placeholder="6-char" maxlength="6"></div>
+<div style="flex:3;"><label class="sub-lbl" for="i16a"><span class="sub-ltr">16a</span> GCA Name <span class="req">*</span></label><input type="text" id="i16a" placeholder="e.g., Defense Logistics Agency Aviation"></div>
+<div style="flex:1;"><label class="sub-lbl" for="i16b"><span class="sub-ltr">16b</span> AAC <span class="req">*</span></label><input type="text" id="i16b" placeholder="6-char" maxlength="6"></div>
 </div>
-<label class="sub-lbl" for="i16c" style="margin-top:6px;"><span class="sub-ltr">16c</span> Address (include ZIP)</label>
+<label class="sub-lbl" for="i16c" style="margin-top:6px;"><span class="sub-ltr">16c</span> Address (include ZIP) <span class="req">*</span></label>
 <textarea id="i16c" placeholder="Address, City, State  ZIP" style="min-height:42px;"></textarea>
 </div>
 <div class="sc">
@@ -1527,7 +1512,7 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 </div>
 </div>
 <div class="sec">
-<div class="ilabel"><span class="inum">17</span><span class="ititle">Certification and Signatures</span></div>
+<div class="ilabel"><span class="inum">17</span><span class="ititle">Certification and Signatures <span class="req">*</span></span></div>
 <details class="inst-box">
 <summary>Instructions for Item 17</summary>
 <p>Contracting Officer or authorized representative certifies that security requirements are complete and adequate.</p>
@@ -1539,19 +1524,19 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 <div class="sec-row">
 <div class="sc sc2">
 <div style="display:flex;gap:8px;">
-<div style="flex:3;"><label class="sub-lbl" for="i17a"><span class="sub-ltr">17a</span> Certifying Official Name (Last, First, MI)</label><select id="certTplSel" onchange="applyCertTpl(this)" style="margin-bottom:3px;font-size:10.5px;background:#eef1f4;"><option value="">— apply certifying-official template… —</option></select>
+<div style="flex:3;"><label class="sub-lbl" for="i17a"><span class="sub-ltr">17a</span> Certifying Official Name (Last, First, MI) <span class="req">*</span></label><select id="certTplSel" onchange="applyCertTpl(this)" style="margin-bottom:3px;font-size:10.5px;background:#eef1f4;"><option value="">— apply certifying-official template… —</option></select>
 <input type="text" id="i17a" placeholder="Smith, John A."></div>
-<div style="flex:2;"><label class="sub-lbl" for="i17b"><span class="sub-ltr">17b</span> Title</label><input type="text" id="i17b" placeholder="Contracting Officer"></div>
+<div style="flex:2;"><label class="sub-lbl" for="i17b"><span class="sub-ltr">17b</span> Title <span class="req">*</span></label><input type="text" id="i17b" placeholder="Contracting Officer"></div>
 </div>
-<label class="sub-lbl" for="i17c" style="margin-top:6px;"><span class="sub-ltr">17c</span> Mailing Address, ZIP</label>
+<label class="sub-lbl" for="i17c" style="margin-top:6px;"><span class="sub-ltr">17c</span> Mailing Address, ZIP <span class="req">*</span></label>
 <textarea id="i17c" style="min-height:42px;" placeholder="Address, City, State  ZIP"></textarea>
 </div>
 <div class="sc">
-<label class="sub-lbl" for="i17d"><span class="sub-ltr">17d</span> AAC</label>
+<label class="sub-lbl" for="i17d"><span class="sub-ltr">17d</span> AAC <span class="req">*</span></label>
 <input type="text" id="i17d" placeholder="6-char AAC" maxlength="6">
 <label class="sub-lbl" for="i17e" style="margin-top:5px;"><span class="sub-ltr">17e</span> CAGE of Prime <span style="font-weight:normal;">(subcontracts only)</span></label>
 <input class="cage-up" type="text" id="i17e" placeholder="Leave blank for prime forms" maxlength="5">
-<label class="sub-lbl" for="i17f" style="margin-top:5px;"><span class="sub-ltr">17f</span> Phone</label>
+<label class="sub-lbl" for="i17f" style="margin-top:5px;"><span class="sub-ltr">17f</span> Phone <span class="req">*</span></label>
 <input id="i17f" type="text" placeholder="(xxx) xxx-xxxx">
 <label class="sub-lbl" for="i17g" style="margin-top:5px;"><span class="sub-ltr">17g</span> Email</label>
 <input type="text" id="i17g" placeholder="certifying.official@agency.mil">
@@ -2050,6 +2035,7 @@ function validationFindingsRender(panel,items,level,emptyText,canDismiss){
       button.addEventListener('click',function(){ dismissAdd(message); });
       body.appendChild(button);
     }
+    if(items.length&&typeof completionReviewButton==='function'){const jump=completionReviewButton(message);if(jump)body.appendChild(jump);}
     row.appendChild(icon); row.appendChild(body); panel.appendChild(row);
   });
 }
@@ -2085,7 +2071,12 @@ show('a2bNeedsa', S.i2b && !S.i2a);
 // ── SAP subcontract: subcontractor must countersign (DoDM 5205.07 §10.1.d)
   //    Gated on the explicit SAP flag. This is a Special Access Program rule and
   //    used to fire on every subcontract, which was simply wrong.
-show('a2bSubSign', !!S.i2b && S.sap);
+/* A subcontract DD-254 is one that identifies a subcontractor. Keying this on
+   Item 2b alone missed the common case of a form that names the subcontractor
+   in Item 7a and leaves 2b blank, so the SAP countersignature requirement -
+   the whole point of the flag - simply never appeared on those forms. */
+S.sapSub = S.sap && (!!S.i2b || !!String((ck('i7a')&&ck('i7a').value)||'').trim());
+show('a2bSubSign', S.sapSub);
 // ── 2b: 18b (Subcontractor FSO) required when subcontract form
 show('a18bReq', !!S.i2b && !ck('dist18b')?.checked);
 // ── 3c
@@ -2158,6 +2149,7 @@ buildItem11Advisor();
 
 /* The composer follows form state; run() is the one place every path ends. */
 if(typeof b13SyncFromRaw==='function') b13SyncFromRaw();
+if(typeof completionRender==='function') completionRender();
 }
 /* ── ACCESS ELIGIBILITY ADVISOR — NONBLOCKING ─────────────────────────────
    These checks are intentionally separate from buildPanel(). They do not
@@ -2475,21 +2467,18 @@ html += info('Each revision supersedes all previous specifications. Provide revi
 }
 else if(S.spec === '3c'){
 html += `<div style="background:var(--req-bg);border-left:3px solid var(--req-red);padding:5px 8px;border-radius:0 4px 4px 0;font-size:10.5px;font-family:Arial,sans-serif;color:var(--rule-red);font-weight:bold;margin-bottom:6px;">3c — FINAL selected</div>`;
-html += `<div style="background:#fff3f2;border:1px solid #e8a09a;border-radius:4px;padding:6px 8px;margin:4px 0 6px;font-size:10px;font-family:Arial,sans-serif;color:var(--rule-red);">
-<strong>3c (Final) is ONLY valid when ALL of the following are true:</strong><br>
-<span style="display:block;margin-top:3px;line-height:1.7;">① The contract has been <strong>completed</strong><br>② The contractor has submitted a <strong>formal written request</strong> for retention<br>③ The GCA has <strong>approved</strong> retention beyond the automatic 2-year post-contract NISPOM period</span>
-</div>`;
+html += info(astraRetention(!!ck('sapFlag')?.checked));
 html += req('Enter the <strong>original issuance date</strong> in Item 3a — it must still appear on a Final form.');
-html += req('Complete <strong>Item 5</strong>: enter the contractor\'s formal request date AND the GCA-authorized retention period.');
+html += req('For retention, complete <strong>Item 5</strong> with the request date and authorized period; coordinate any SAP continuation basis with the GCA and PSM/PSO.');
 html += req('<strong>Item 13 must contain final disposition instructions</strong> for all classified material covered by this contract.');
 html += req('Enter the date the Final DD Form 254 is issued in the 3c date field (YYYYMMDD).');
-if(!isFinal) html += `<div class="check-item"><span class="ci-icon ci-error">✕</span><span class="ci-text error">Item 5 is currently set to NO — must be set to YES for a Final form.</span></div>`;
-else         html += `<div class="check-item"><span class="ci-icon ci-ok">✓</span><span class="ci-text ok">Item 5 is set to YES ✓</span></div>`;
+if(!isFinal&&!ck('sapFlag')?.checked) html += `<div class="check-item"><span class="ci-icon ci-error">✕</span><span class="ci-text error">Item 5 is currently set to NO — must be set to YES for a Final form.</span></div>`;
+else if(isFinal) html += `<div class="check-item"><span class="ci-icon ci-ok">✓</span><span class="ci-text ok">Item 5 is set to YES ✓</span></div>`;
 html += nope('Issue 3c for a contract that is still active — only for completed contracts.');
-html += nope('Use 3c as a routine closeout step — the 2-year automatic retention period under NISPOM applies without a Final form. 3c is only needed if the contractor needs retention <em>beyond</em> that 2-year period.');
-html += nope('Issue 3c without a formal written contractor request on file with the GCA.');
+html += info('A Final is not a universal closeout step. Record the applicable GCA disposition or continued-program requirement.');
+html += warn('For requested retention, keep the written request and GCA authorization; for SAP continuation, retain the applicable program direction.');
 html += info('The GCA may also grant extended retention via a separate formal written authorization rather than a Final DD Form 254 — either method satisfies the requirement.');
-html += info('If the GCA has no objection, the automatic 2-year NISPOM retention period applies without issuing a Final form at all.');
+html += info('The conditional two-year provision concerns copies. Government-provided and deliverable information must be returned; SAP retention requires specific written authorization.');
 html += warn('Confirm Item 13 includes specific disposition instructions: what material, retention period, and how it will be destroyed or returned at expiration.');
 }
 p.innerHTML = html;
@@ -2713,7 +2702,7 @@ if(S.i2b&&!S.i2a) errors.push('Item 2a: Required when subcontract number (2b) is
 if(!S.spec) errors.push('Item 3: Must select Original (3a), Revised (3b), or Final (3c)');
 if(S.spec==='3b') warns.push('Item 3b Revised: Confirm reason is a valid one — classification guidance change, security requirement change, or contractor location change (not option year exercise or POC-only update)');
 if(S.spec==='3b') warns.push('Item 3b Revised: Must be incorporated into the contract by modification');
-if(S.spec==='3c' && S.fin!=='yes') errors.push('Item 3c Final + Item 5: Item 5 must be set to YES — enter contractor\'s formal request date and GCA-authorized retention period');
+if(S.spec==='3c' && S.fin!=='yes' && !ck('sapFlag')?.checked) errors.push('Item 3c Final + Item 5: Item 5 must be set to YES — enter contractor\'s formal request date and GCA-authorized retention period');
 /* This used to fire on Item 3c alone and never look at Item 13, so it could
    never be cleared — every Final was pinned in Draft with a DRAFT-watermarked
    PDF. It now checks that Item 13 actually carries disposition language. */
@@ -2723,7 +2712,7 @@ if(S.spec==='3c'){
   if(!_hasDisp) errors.push('Item 3c Final: Item 13 must contain final disposition instructions for all classified material');
   else complete.push('Item 3c Final: Item 13 carries disposition instructions');
 }
-if(S.spec==='3c') warns.push('Item 3c Final: Verify contract is complete, contractor submitted a formal written request, and GCA has approved retention beyond the automatic 2-year NISPOM period');
+if(S.spec==='3c') warns.push('Item 3c Final: '+astraRetention(!!ck('sapFlag')?.checked));
 if(!(typeof solStrip==='function'?solStrip(S.i9):S.i9).trim()) warns.push('Item 9: Unclassified description is required');
 else complete.push('Item 9: Description entered');
 if(S.c['11a']&&(!ck('item13')?.value.includes('8')&&!ck('item13')?.value.includes('11a')&&!ck('item13')?.value.length)) warns.push('Item 11a: Ensure Item 8a identifies where contractor will access classified info');
@@ -2774,9 +2763,37 @@ if(S.c['11l']&&!S.c['10j']) warns.push('Item 11l: Should only be checked when It
   const val=function(id){return String(((ck(id)||{}).value)||'').trim();};
   const designated=val('cuiCtrlBy')||val('cuiCat')||val('cuiPoc')||val('distStmt')||val('distCat')
     ||(typeof ldcChecked==='function'&&ldcChecked().length);
+  /* States what is true - the contract involves CUI - without instructing the
+     preparer to mark the form CUI. The old wording said "Select CUI before
+     export", which mismarks an unclassified document; the marking follows the
+     content of THIS form, and a DD Form 254 that names CUI categories for a
+     classified contract is normally UNCLASSIFIED. */
   if((S.c['10j']||S.c['11l']||designated)&&val('clsSel')!=='CUI')
-    warns.push('CUI content is present, but the DD Form 254 marking is UNCLASSIFIED. Select CUI before export or remove the CUI selections/designation. E-mail warnings will still treat this draft as CUI.');
+    warns.push('This contract involves CUI (Item 10j/11l, a CUI designation, a distribution statement or an LDC). Item 13 must carry the GCA\u2019s CUI protection guidance. The form marking stays UNCLASSIFIED unless the content of this form is itself CUI \u2014 naming CUI categories does not make the form CUI.');
 })();
+(function(){
+  /* An Item 8 row carrying the same CAGE as Item 7 is the subcontractor's own
+     facility, so Item 13 prints that classified mailing address once and drops
+     the Item 8 copy. Silent suppression is right when the two agree and wrong
+     when they do not - that is a discrepancy the preparer has to resolve, not
+     something to hide. Say so rather than quietly keeping one of them. */
+  const norm=function(v){ return String(v||'').trim().toUpperCase().replace(/[^A-Z0-9]/g,''); };
+  const subCage=norm((ck('i7b')||{}).value);
+  const subAddr=String(((ck('i7cma')||{}).value)||'').trim();
+  if(!subCage||!subAddr) return;
+  document.querySelectorAll('#perfBlocks > div[id^="perf-"]').forEach(function(b){
+    if(typeof perfFields!=='function') return;
+    const f=perfFields(b); if(!f||!f.cma) return;
+    const a=String(f.cma.value||'').trim(); if(!a) return;
+    if(norm(f.cage?f.cage.value:'')!==subCage) return;
+    if(norm(a)!==norm(subAddr))
+      warns.push('Item 8 repeats CAGE '+subCage+' from Item 7 but gives a DIFFERENT classified mailing address. Item 13 prints the Item 7 address and suppresses the Item 8 copy as a duplicate \u2014 reconcile the two addresses, or give that location its own CAGE.');
+  });
+})();
+/* The flag is supposed to ADD a constraint, and a hidden advisory panel is not
+   a constraint - it left no trace in the warning count, the preparer worksheet
+   or the workflow. Stated as a finding so it travels with the record. */
+if(S.sapSub) warns.push('SAP subcontract: this DD Form 254 is not complete until the subcontractor’s authorized representative signs it. DoDM 5205.07 §10.1.d does not name a block, and the form provides no subcontractor signature field — capture the signature by the method your programme accepts (a signed copy, an addendum, or a separate written acknowledgement) and record which. Do not grant access to SAP or classified information until you hold it.');
 if(S.c['11f']) warns.push('Item 11f: Ensure Item 13 identifies U.S. activity, city, and country of overseas performance');
 if(S.c['11f']&&!ck('dist18d')?.checked) warns.push('Item 18d: Should be checked for overseas access (11f)');
 if(S.c['10g']) warns.push('10g NATO: Item 13 must note NATO access briefing/debriefing is required');
@@ -2823,9 +2840,16 @@ if(typeof flowIssuesLive==='function'){ const _fl=flowIssuesLive();
    unwatermarked.
 
    MAINTENANCE NOTE: this list and the asterisks in the markup are two separate
-   sources of truth. Items 16/17 deliberately carry no asterisks because this
-   preparer workflow does not gate on them. If a field gains or loses its
-   asterisk, edit this block to match.
+   sources of truth, and nothing enforces the pairing. The Item 16/17 asterisks
+   are in the markup ON PURPOSE even though REQ does not gate on them, and the
+   two do not contradict each other: the asterisk states what the FORM requires,
+   REQ states what THIS PREPARER has to finish before handing the form over.
+   A field does not stop being required on a DD Form 254 because a different
+   party fills it in later. Deleting the asterisk to match REQ was tried and was
+   wrong - it removed the only cue that Item 16 and Item 17 have to be completed
+   at all. If a field gains or loses its asterisk, edit this block to match.
+   Folding both into one declarative table (id, item, who fills it in, when it
+   is checked) is the change that would remove the risk.
 
    Deliberately NOT required here:
      Item 16 (GCA block) and Item 17 (certification block), in their entirety.
@@ -2935,7 +2959,7 @@ if(S.c['10f']) tags.push('10f — SAP addendum (PIDs + period of performance) re
 if(S.c['10f']) tags.push('10f — collateral info incorporated into SAP must be listed');
 if(S.c['10f']) tags.push('10f — closeout: final DD Form 254 + retention authorization required');
 if(S.c['10f']&&S.ird==='yes') tags.push('10f-IR&D — GCA/GAM written permission + establishing document required (DoDM 5205.07 §10.4)');
-if(S.i2b&&S.sap) tags.push('SAP subcontract — subcontractor must countersign Item 17 (DoDM 5205.07 §10.1.d)');
+if(S.i2b&&S.sap) tags.push('SAP subcontract — requires the signature of the subcontractor’s authorized representative (DoDM 5205.07 §10.1.d)');
 if(S.c['10g']) tags.push('10g NATO access briefing requirement');
 if(S.c['10j']) tags.push('10j CUI protection procedures');
 if(S.c['10k']) tags.push('10k Other access (specify)');
@@ -2984,7 +3008,7 @@ const TPL_DEFAULTS = {
 '11m': {label:'Ref. 11m — Other Performance Requirements', text:'Reference 11m:\n\n[DESCRIBE ADDITIONAL PERFORMANCE REQUIREMENTS not covered by Items 11a–11l. Examples: contractor provides both services AND generates classified (use instead of checking both 11c and 11e); contractor has unique storage or access arrangements; contractor operates under additional program-specific security requirements.] All additional requirements shall be performed in accordance with applicable security guidance provided in this DD Form 254, the contract, and any supplemental security instructions provided by the GCA.'},
 '18f': {label:'Item 18f — Other Distribution', text:'Reference 18f:\n\nIn addition to required distribution listed in Items 18a–18e, copies of this DD Form 254 shall be provided to the following:\n\n[LIST ADDITIONAL RECIPIENTS — examples below, delete those that do not apply]\n\n• [PROGRAM OFFICE / REQUIRING ACTIVITY NAME], Attn: [POC NAME / SECURITY OFFICE], [ADDRESS]\n• [DEFENSE CONTRACT MANAGEMENT AGENCY (DCMA) office if ACO is different from Item 18e recipient]\n• [PRIME CONTRACTOR security office, if this is a GCA-issued form for a subcontract]\n• [Other government activity with oversight or inspection responsibility per Item 15]\n\nNote: If additional space is needed, continue distribution list in Item 13.'},
 'fo':  {label:'Item 4 — Follow-On Transfer', text:'Reference Item 4:\n\nAll classified material and information associated with Contract [PRECEDING CONTRACT NUMBER] is authorized to be transferred to Contract [NEW CONTRACT NUMBER FROM ITEM 2a]. [OR: The following specifically identified classified material is authorized for transfer to the new contract: (list material/documents)]'},
-'fin': {label:'Item 5 — Final Disposition', text:"Reference Item 5:\n\nIn response to the contractor's formal request dated [DATE], the following classified material may be retained through [RETENTION DATE]: [LIST MATERIAL/DOCUMENTS]. At the conclusion of the authorized retention period, all remaining classified material shall be disposed of in accordance with NISPOM (32 CFR Part 117) Chapter 5 and applicable GCA disposition instructions. The contractor shall notify the GCA upon completion of disposition."},
+'fin': {label:'Item 5 — Final Disposition', text:"Reference Item 5:\n\nIn response to the contractor's formal request dated [DATE], the following classified material may be retained through [RETENTION DATE]: [LIST MATERIAL/DOCUMENTS]. At the conclusion of the authorized retention period, all remaining classified material shall be disposed of in accordance with 32 CFR 117.13(d)(5), applicable safeguarding and disposition rules, and GCA disposition instructions. The contractor shall notify the GCA upon completion of disposition."},
 '12':  {label:'Item 12 — Public Release Authority', target:'i12', text:'[OFFICE NAME], [ADDRESS], [CITY, STATE ZIP]\nPhone: [PHONE NUMBER]\nEmail: [EMAIL ADDRESS]\n\nAll proposed public releases of information pertaining to this contract shall be submitted to the above office for review and approval prior to release. Contractor shall allow a minimum of [X] business days for review. Approval does not constitute declassification or CUI decontrol.'},
 '14':  {label:'Item 14 — Additional Security Requirements', target:'i14text', text:'The following security requirements, in addition to NISPOM (32 CFR Part 117) baseline requirements, are established for this contract:\n\n[REQUIREMENT 1 — e.g., TEMPEST: Contractor shall implement TEMPEST countermeasures per [APPLICABLE STANDARD] for all processing equipment used in performance of this contract. TEMPEST requirements are identified in Contract CLIN [X].]\n\n[REQUIREMENT 2 — e.g., OPSEC: Contractor is subject to the [COMMAND/UNIT] OPSEC plan dated [DATE], provided as Attachment [#]. Contractor shall implement applicable OPSEC countermeasures per DoDD 5205.02E.]\n\n[REQUIREMENT 3 — e.g., SAP: SAP program security requirements are established under separate Program Access Request (PAR) authority. Contact the Program Security Officer (PSO) at [CONTACT INFO] prior to performance.]\n\nAdditional requirements may be imposed by written direction of the Contracting Officer in coordination with the GCA security office.'},
 '15':  {label:'Item 15 — Inspections (Non-CSO Elements)', target:'i15text', text:'[DESCRIBE WHICH CONTRACT ELEMENTS ARE OUTSIDE DCSA CSO INSPECTION RESPONSIBILITY AND IDENTIFY THE RESPONSIBLE GOVERNMENT ACTIVITY]\n\nFor SCI elements: The [AGENCY] Senior Intelligence Officer (SIO) has exclusive security oversight responsibility for all SCI-classified material released or generated under this contract and held within the contractor\'s Sensitive Compartmented Information Facility (SCIF). The cognizant SIO is: [NAME/OFFICE/PHONE/EMAIL].\n\nFor SAP elements: The Program Security Officer (PSO) for [PROGRAM NAME] has security oversight responsibility for all SAP-controlled material under this contract. Contact: [PSO NAME/OFFICE/PHONE/EMAIL].\n\nFor overseas elements: The [U.S. ACTIVITY NAME] Security Officer has responsibility for inspection of classified information accessed at [LOCATION] per Item 11f.'},
@@ -3854,6 +3878,7 @@ async function saveWorkspace() {
         data.perf.push({loc:p.loc, cage:p.cage, cso:p.cso, email:p.email, cma:p.cma});
     });
     data.vlog = {entries:VLOG.entries, remarks:VLOG.remarks, files:VLOG.files};
+    data.astra=astraSnapshot();
     document.querySelectorAll('input[type="text"], textarea, [contenteditable="true"]').forEach(e => { if(e.id) data.texts[e.id] = e.value; });
     document.querySelectorAll('input[type="checkbox"]').forEach(e => { if(e.id) data.checks[e.id] = e.checked; });
     document.querySelectorAll('input[type="radio"]').forEach(e => { if(e.name && e.checked) data.radios[e.name] = e.value; });
@@ -3895,6 +3920,7 @@ function loadWorkspace(event) {
     reader.onload = (e) => {
         try {
             const data = JSON.parse(e.target.result);
+            astraValidate(data.astra);
             if(typeof b13SelectionReset==='function') b13SelectionReset();
             if(data.texts) { 
                 Object.keys(data.texts).forEach(id => { 
@@ -3926,8 +3952,9 @@ function loadWorkspace(event) {
             if(data.vlog){ VLOG.entries=data.vlog.entries||[]; VLOG.remarks=data.vlog.remarks||''; VLOG.files=data.vlog.files||[];
                 const r=document.getElementById('vlogRemarks'); if(r) r.value=VLOG.remarks; vlogRender(); }
             updateStateAndUI();
+            astraLoad(data.astra);
             alert("Draft workspace loaded successfully!");
-        } catch(err) { alert("Invalid JSON workspace file."); }
+        } catch(err) { alert("Workspace could not be loaded: "+err.message); }
     };
     reader.readAsText(file);
     event.target.value = '';
@@ -4120,7 +4147,7 @@ function dashDB(){
     if(DASH.db||DASH.useLS) return res();
     if(!window.indexedDB){ DASH.useLS=true; return res(); }
     try{
-      const rq=indexedDB.open('dd254_dashboard_'+window.DD254_DEMO_SESSION_ID,2);
+      const rq=indexedDB.open('dd254_dashboard',2);
       rq.onupgradeneeded=function(){
         if(!rq.result.objectStoreNames.contains('drafts')) rq.result.createObjectStore('drafts',{keyPath:'id'});
         if(!rq.result.objectStoreNames.contains('audit')){
@@ -4185,15 +4212,20 @@ function lsWrite(all){
   }
 }
 async function draftPut(rec){
+  astraValidate(rec&&rec.workspace&&rec.workspace.astra);
   if(window.DD254_READONLY) return;   /* read-only tab: never write a draft */
   if(typeof bkMark==='function'&&!window.BK_UNLOADING) bkMark();
   await dashDB();
   if(DASH.useLS){ const all=lsAll(); all[rec.id]=rec; if(!lsWrite(all)) throw new Error('Draft was retained in this tab only'); return; }
   return new Promise(function(res,rej){
-    const tx=DASH.db.transaction('drafts','readwrite'); tx.objectStore('drafts').put(rec);
-    tx.oncomplete=function(){draftStorageSuccess();res();};
-    tx.onerror=function(){draftStorageFailure(tx.error);rej(tx.error||new Error('Draft write failed'));};
-    tx.onabort=function(){draftStorageFailure(tx.error);rej(tx.error||new Error('Draft write aborted'));};
+    const snapshot=JSON.parse(JSON.stringify(rec));
+    const failed=function(err){ DASH_MEM[rec.id]=snapshot; draftStorageFailure(err); rej(err||new Error('Draft write failed')); };
+    try{
+      const tx=DASH.db.transaction('drafts','readwrite'); tx.objectStore('drafts').put(snapshot);
+      tx.oncomplete=function(){delete DASH_MEM[rec.id];draftStorageSuccess();res();};
+      tx.onerror=function(){failed(tx.error);};
+      tx.onabort=function(){failed(tx.error);};
+    }catch(err){failed(err);}
   });
 }
 /* Bulk issuance is all-or-nothing. One IndexedDB transaction (or one
@@ -4220,12 +4252,23 @@ async function draftPutMany(records){
 async function draftGet(id){
   await dashDB();
   if(DASH.useLS) return lsAll()[id]||null;
+  if(Object.prototype.hasOwnProperty.call(DASH_MEM,id)) return JSON.parse(JSON.stringify(DASH_MEM[id]));
   return new Promise(function(res){ const rq=DASH.db.transaction('drafts').objectStore('drafts').get(id); rq.onsuccess=function(){res(rq.result||null);}; rq.onerror=function(){res(null);} });
 }
 async function draftAll(){
   await dashDB();
   if(DASH.useLS) return Object.values(lsAll());
-  return new Promise(function(res){ const rq=DASH.db.transaction('drafts').objectStore('drafts').getAll(); rq.onsuccess=function(){res(rq.result||[]);}; rq.onerror=function(){res([]);} });
+  return new Promise(function(res,rej){
+    const rq=DASH.db.transaction('drafts').objectStore('drafts').getAll();
+    rq.onsuccess=function(){
+      const all={}; (rq.result||[]).forEach(function(r){all[r.id]=r;});
+      Object.keys(DASH_MEM).forEach(function(id){all[id]=JSON.parse(JSON.stringify(DASH_MEM[id]));});
+      res(Object.values(all));
+    };
+    /* An unreadable database is not an empty portfolio. Refuse the export
+       instead of offering a deceptively successful but incomplete backup. */
+    rq.onerror=function(){rej(rq.error||new Error('Drafts could not be read'));};
+  });
 }
 async function draftDel(id){
   if(typeof bkMark==='function') bkMark();
@@ -4233,7 +4276,7 @@ async function draftDel(id){
   if(DASH.useLS){ const all=lsAll(); delete all[id]; if(!lsWrite(all)) throw new Error('Draft delete was not saved'); return; }
   return new Promise(function(res,rej){
     const tx=DASH.db.transaction('drafts','readwrite'); tx.objectStore('drafts').delete(id);
-    tx.oncomplete=function(){draftStorageSuccess();res();};
+    tx.oncomplete=function(){delete DASH_MEM[id];draftStorageSuccess();res();};
     tx.onerror=function(){draftStorageFailure(tx.error);rej(tx.error||new Error('Draft delete failed'));};
     tx.onabort=function(){draftStorageFailure(tx.error);rej(tx.error||new Error('Draft delete aborted'));};
   });
@@ -4548,19 +4591,33 @@ function cmaFirstLine(v,fallback){
   const l=String(v||'').split(/\r?\n/).map(function(x){return x.trim();}).filter(Boolean);
   return l.length?l[0]:fallback;
 }
+/* CAGE codes are compared on their significant characters only, so a code
+   typed as "1abc5" and one typed as "1ABC5 " are recognised as one company. */
+function cmaCageKey(v){ return String(v||'').trim().toUpperCase().replace(/[^A-Z0-9]/g,''); }
 function cmaEntries(){
   const out=[];
   const sub=document.getElementById('i7cma');
+  const subCage=cmaCageKey((document.getElementById('i7b')||{}).value);
+  let subAddr='';
   if(sub&&String(sub.value||'').trim()){
+    subAddr=String(sub.value).trim();
     out.push({who:cmaFirstLine((document.getElementById('i7a')||{}).value,'Subcontractor'),
-              addr:String(sub.value).trim()});
+              addr:subAddr});
   }
   let n=0;
   document.querySelectorAll('#perfBlocks > div[id^="perf-"]').forEach(function(b){
     n++;
     const ta=b.querySelector('.cma-loc'); if(!ta||!String(ta.value||'').trim()) return;
-    const loc=perfFields(b).loc;
-    out.push({who:cmaFirstLine(loc?loc.value:'','Performance location '+n),
+    const f=perfFields(b);
+    /* Item 7 and Item 8 are describing one company whenever the CAGE matches -
+       the subcontractor is performing at its own facility. Its classified
+       mailing address has already been stated once, and Item 13 does not get
+       more correct by stating it twice: one address, in one place, that stays
+       current. Keyed on CAGE because that is the identifier that does not
+       drift. Item 6 is deliberately excluded - the prime's classified mailing
+       address is a different entry that means something different. */
+    if(subAddr&&subCage&&cmaCageKey(f.cage?f.cage.value:'')===subCage) return;
+    out.push({who:cmaFirstLine(f.loc?f.loc.value:'','Performance location '+n),
               addr:String(ta.value).trim()});
   });
   return out;
@@ -5408,10 +5465,12 @@ function collectWorkspace(){
     data.perf.push({loc:p.loc,cage:p.cage,cso:p.cso,email:p.email,cma:p.cma});
   });
   data.vlog={entries:VLOG.entries,remarks:VLOG.remarks,files:VLOG.files};
+  data.astra=astraSnapshot();
   return data;
 }
 function applyWorkspace(data){
   if(!data) return;
+  astraValidate(data.astra);
   if(typeof b13SelectionReset==='function') b13SelectionReset();
   if(data.texts){
     Object.keys(data.texts).forEach(function(id){
@@ -5456,6 +5515,7 @@ function applyWorkspace(data){
   if(typeof cuiAdopt==='function') cuiAdopt();
   const r=document.getElementById('vlogRemarks'); if(r) r.value=VLOG.remarks;
   if(typeof vlogRender==='function') vlogRender();
+  astraLoad(data.astra);
   updateStateAndUI();
 }
 function syncUIFromDom(){
@@ -5496,6 +5556,7 @@ function resetFormFields(){
   document.querySelectorAll('#perfBlocks > div[id^="perf-"]').forEach(function(b){b.remove();});
   document.querySelectorAll('.reviewer-row').forEach(function(b){b.remove();});
   VLOG.entries=[]; VLOG.remarks=''; VLOG.files=[];
+  astraLoad(null);
   if(typeof vlogRender==='function') vlogRender();
   syncUIFromDom();
 }
@@ -5987,12 +6048,20 @@ async function dashDistDel(id,i){
 async function dashCsToggle(id){
   const rec=await draftGet(id); if(!rec) return;
   if(rec.countersign&&rec.countersign.received){
-    if(!(await uiConfirm('Clear the Item 17 countersignature record?'))) return;
+    if(!(await uiConfirm('Clear the subcontractor signature record?'))) return;
     audLog(id,rec.title,'countersign-cleared','');
     rec.countersign=null;
   } else {
-    rec.countersign={received:true,date:new Date().toISOString().split('T')[0]};
-    audLog(id,rec.title,'countersign-received',rec.countersign.date);
+    /* The DD Form 254 has no subcontractor signature block, so WHERE the
+       signature is held is the part that has to be written down. Recording that
+       one exists without recording where anyone can find it is not a record of
+       anything. The answer is optional - a blank still counts as received,
+       because refusing to log a signature the operator is holding would be
+       worse than logging it without a location. */
+    const how=await uiPrompt('Where is the subcontractor signature held? (signed copy on file, addendum, separate acknowledgement letter)','');
+    if(how==null) return;
+    rec.countersign={received:true,date:new Date().toISOString().split('T')[0],how:String(how||'').trim()};
+    audLog(id,rec.title,'countersign-received',rec.countersign.date+(rec.countersign.how?' - '+rec.countersign.how:' - location not recorded'));
   }
   await draftPut(rec); dashRenderCards(id);
 }
@@ -6019,6 +6088,18 @@ function dd254BoxName(k){
 }
 function dd254WsVal(ws,id){ ws=ws||{}; return (ws.selects&&ws.selects[id])||(ws.texts&&ws.texts[id])||''; }
 function dd254WsChecked(ws,id){ return !!(ws&&ws.checks&&ws.checks[id]); }
+/* Mirrors S.sapSub for a stored record. A SAP subcontract DD Form 254 is not
+   complete until the subcontractor's authorized representative signs it, so
+   the dashboard has
+   to know which records carry that obligation - it is the difference between a
+   countersignature being a note somebody may tick and one that is owed. */
+function dd254WorkspaceSapSub(ws){
+  ws=ws||{};
+  if(!dd254WsChecked(ws,'sapFlag')) return false;
+  const tx=ws.texts||{};
+  return !!(String(tx.i2b||'').trim()||String(tx.i7a||'').trim());
+}
+function dashSapSub(rec){ return dd254WorkspaceSapSub((rec||{}).workspace||{}); }
 
 /* Everything a search should be able to reach: identity, workflow, the whole
    filled form, checked box numbers AND their labels, and the note text.
@@ -6244,18 +6325,49 @@ function dashHoldPrompt(status){
    (or none) may be loaded — so the addresses are mined from the stored record
    instead. Same sources the on-form Email Distribution panel uses:
    6c / 7c / 8c CSO text, the manual FSO list, Item 13, and Block 18f. */
-function dd254WorkspaceHasCUI(ws){
+/* Two different facts about a draft, deliberately kept apart.
+
+   dd254WorkspaceCuiMarking - how the DD Form 254 DOCUMENT is marked: the
+   operator's marking selection, or the marking carried by the template the
+   draft was built from. This is the only thing allowed to drive a CUI banner,
+   a (CUI) subject marking or an encryption requirement, because each of those
+   is an assertion about this piece of paper.
+
+   dd254WorkspaceContractCui - whether the CONTRACT involves CUI: Item 10j,
+   Item 11l, a CUI designation block, a distribution statement or an LDC. That
+   is a fact about the work. A DD Form 254 for a classified contract that also
+   carries CUI requirements is routinely UNCLASSIFIED: the form NAMES the CUI
+   categories, and naming them does not make the form CUI.
+
+   These were one function, which derived the marking from the contract
+   indicators. Every draft with 10j ticked was badged CUI on the dashboard and
+   went out with a (CUI)(CUI)(CUI) subject line over an unclassified form.
+   Marking an unclassified document as CUI is a marking error of its own, not a
+   harmless excess of caution, so the two are now answered separately. */
+function dd254WorkspaceCuiMarking(ws){
+  ws=ws||{};
+  const sel=(ws||{}).selects||{};
+  if(sel.clsSel==='CUI') return true;
+  try{
+    const t=ctFind(sel.ctTplSel);
+    return !!(t&&t.data&&t.data.cls==='CUI');
+  }catch(e){ return false; }
+}
+function dd254WorkspaceContractCui(ws){
   ws=ws||{};
   const tx=ws.texts||{}, ch=ws.checks||{}, sel=ws.selects||{};
-  if(sel.clsSel==='CUI'||ch.c10j||ch.c11l) return true;
+  if(ch.c10j||ch.c11l) return true;
   if(['cuiCtrlBy','cuiCat','cuiPoc','distDate','distOffice'].some(function(k){return !!String(tx[k]||'').trim();})) return true;
   if(String(sel.distStmt||'').trim()||String(sel.distCat||'').trim()) return true;
   if(Object.keys(ch).some(function(k){return /^ldc/i.test(k)&&ch[k];})) return true;
   try{
     const t=ctFind(sel.ctTplSel);
-    return !!(t&&t.data&&(t.data.cls==='CUI'||(t.data.c10&&t.data.c10['10j'])||(t.data.c11&&t.data.c11['11l'])));
+    return !!(t&&t.data&&((t.data.c10&&t.data.c10['10j'])||(t.data.c11&&t.data.c11['11l'])));
   }catch(e){ return false; }
 }
+/* Kept for callers written against the single-function shape. Every one of them
+   meant the marking. */
+function dd254WorkspaceHasCUI(ws){ return dd254WorkspaceCuiMarking(ws); }
 function dashDistEmails(rec){
   rec=rec||{};
   const ws=rec.workspace||{}, tx=ws.texts||{};
@@ -6367,7 +6479,11 @@ function dashDistAttachments(rec){
   return {auto:auto,tpl:tpl,manual:manual,all:auto.concat(tpl,manual)};
 }
 function dashDistIsCUI(rec){
-  return dd254WorkspaceHasCUI((rec||{}).workspace||{});
+  return dd254WorkspaceCuiMarking((rec||{}).workspace||{});
+}
+/* Reported next to the marking, never in place of it. */
+function dashContractCui(rec){
+  return dd254WorkspaceContractCui((rec||{}).workspace||{});
 }
 
 /* Who this particular DD-254 has to go to, taken from its own Item 18, with the
@@ -6406,11 +6522,16 @@ function dashDistStats(r){ return {n:(r.dist||[]).length}; }
 function dashClsOf(r){ return dashDistIsCUI(r)?'CUI':'UNCLASSIFIED'; }
 function dashClsBadge(r){
   const cui=dashClsOf(r)==='CUI';
-  return '<span class="dash-badge" title="'+(cui
-      ?'CUI handling detected from the marking, selections, designation or template — transmit encrypted (DoDI 5200.48)'
+  const marking='<span class="dash-badge" title="'+(cui
+      ?'Marked CUI — must be transmitted encrypted (DoDI 5200.48)'
       :'Marked UNCLASSIFIED — the DD Form 254 itself carries no classified content')
     +'" style="background:'+(cui?'#f3e8fb':'#e7f3ea')+';color:'+(cui?'#5c1a8a':'#1a6030')
     +';letter-spacing:.4px;font-weight:bold;">'+(cui?'🔒 CUI':'UNCLASSIFIED')+'</span>';
+  /* The contract's CUI requirements earn their place on the card - they drive
+     Item 13 guidance and the GCA's protection direction - but they are stated
+     as what they are, beside the marking rather than as the marking. Dropped
+     when the form is itself marked CUI, where it would add nothing. */
+  return marking;
 }
 /* Attachments a DD-254 has to travel with, counted for the card. Same source as
    the distribution dialog, so the two can never disagree. */
@@ -6474,7 +6595,16 @@ function dashDistDialog(rec){
       +(dashDistIsCUI(rec)
         ?'<div style="background:#f3e8fb;border:1px solid #5c1a8a;border-left:5px solid #5c1a8a;border-radius:4px;padding:9px 12px;margin-bottom:12px;">'
           +'<div style="font-size:11.5px;font-weight:bold;color:#5c1a8a;letter-spacing:.3px;margin-bottom:3px;">🔒 CUI — SEND ENCRYPTED</div>'
-          +'<div style="font-size:11px;color:#3a2a50;line-height:1.5;">The form marking, a CUI selection/designation, or its selected template indicates CUI handling. E-mail transmission must be encrypted in accordance with DoDI 5200.48 and the applicable agency CUI policy. Do not send it, or any attachment listed below, in the clear.</div>'
+          +'<div style="font-size:11px;color:#3a2a50;line-height:1.5;">This DD Form 254 is marked CUI. E-mail transmission must be encrypted in accordance with DoDI 5200.48 and the applicable agency CUI policy. Do not send it, or any attachment listed below, in the clear.</div>'
+          +'</div>'
+        :'')
+      /* The contract involving CUI is worth saying here, because it shapes what
+         Item 13 has to carry. It is not an encryption instruction: the form is
+         marked UNCLASSIFIED and travels as an unclassified document. */
+      +((!dashDistIsCUI(rec)&&dashContractCui(rec))
+        ?'<div style="background:#eef0fb;border:1px solid #b8bee0;border-left:5px solid #3a3a8a;border-radius:4px;padding:9px 12px;margin-bottom:12px;">'
+          +'<div style="font-size:11.5px;font-weight:bold;color:#3a3a8a;letter-spacing:.3px;margin-bottom:3px;">This contract involves CUI</div>'
+          +'<div style="font-size:11px;color:#2a2a50;line-height:1.5;">Item 10j, Item 11l or a CUI designation is present, so Item 13 must carry the GCA\u2019s CUI protection guidance. The form itself is marked UNCLASSIFIED and does not require encrypted transmission on that basis \u2014 naming CUI categories does not make the form CUI.</div>'
           +'</div>'
         :'')
       +rows
@@ -6760,7 +6890,7 @@ async function portfolioCsv(onlyIds){
       .concat([m.errors||0,m.warns||0,
       (r.todos||[]).filter(function(t){return !t.done;}).length,
       (r.niss&&r.niss.on)?'yes':'no',(r.niss&&r.niss.date)||'',(r.niss&&r.niss.by)||'',
-      (r.countersign&&r.countersign.received)?('yes '+(r.countersign.date||'')):'no',
+      (r.countersign&&r.countersign.received)?('yes '+(r.countersign.date||'')+(r.countersign.how?' ('+r.countersign.how+')':'')):'no',
       String(r.issuedAt||'').substring(0,10),r.reviewDate||'',ds.n,
       dashHoldsOpen(r).length, dashHoldsOpen(r).map(function(h){return (h.s||'')+' '+(h.d||'')+': '+(h.t||'');}).join(' | '),
       (r.cancel&&r.cancel.date)||'', (r.cancel&&r.cancel.from)||'', (r.cancel&&r.cancel.reason)||'',
@@ -6894,8 +7024,23 @@ function bkStatus(){
   storageMeter();
 }
 async function fullBackup(){
+  /* Capture active edits before reading the stores. Failed draft writes leave
+     an emergency snapshot that draftAll includes, so backup remains a rescue
+     path even when persistence is unavailable. */
+  if(DASH.current&&!document.body.classList.contains('dash-mode')){
+    try{await dashSaveNow();}catch(err){draftStorageFailure(err);}
+  }
+  await dashNotesFlush();
+  if(typeof TPL_DIRTY!=='undefined'&&(TPL_DIRTY||TPL_TOUCH_T)) await dashTplFlush();
+  if(typeof TPL_WRITE!=='undefined') await TPL_WRITE;
+  const snapshotChanges=bkDirty();
   const templates={}; BK_KINDS.forEach(function(k){ templates[k]=tplLoad(tplKeyOf(k)); });
-  const drafts=await draftAll();
+  let drafts;
+  try{drafts=await draftAll();}catch(err){
+    await uiAlert('Full Backup could not read the draft database. No backup was downloaded and the reminder was not cleared. Keep this tab open and try again.');
+    return false;
+  }
+  drafts=drafts.map(function(rec){return Object.assign({},rec,{notes:dashNotesValue(rec)});});
   const payload={tool:'DD254 Full Backup',version:4,exported:new Date().toISOString(),templates:templates,drafts:drafts};
   payload.counts=bkCounts(templates,drafts);
   payload.sha256=await bkSha256(bkBody(templates,drafts));
@@ -6918,7 +7063,15 @@ async function fullBackup(){
      operator actually received a complete file. The dirty counter is custody
      evidence, so clear it only after the operator confirms the save. */
   const saved=await uiConfirm('Did the Full Backup file finish downloading and save successfully?\n\nChoose Cancel if the browser blocked it, the file is still downloading, or you cannot find it. The backup reminder will stay active.');
-  if(saved) bkClear(); else bkStatus();
+  if(saved){
+    /* Edits made while hashing or confirming the download are outside this
+       snapshot. Never clear their reminder with an older backup. */
+    try{
+      localStorage.setItem('dd254_dirty_n',String(Math.max(0,bkDirty()-snapshotChanges)));
+      localStorage.setItem('dd254_last_backup',payload.exported);
+    }catch(err){}
+  }
+  bkStatus();
   return !!saved;
 }
 function fullRestore(ev){
@@ -6927,6 +7080,7 @@ function fullRestore(ev){
   rd.onload=async function(e){
     try{
       const data=JSON.parse(e.target.result);
+      astraValidateRecords(data.drafts||[]);
       if(data.tool!=='DD254 Full Backup'||!data.templates) return alert('That is not a full-backup file.');
       const nT=BK_KINDS.reduce(function(a,k){return a+((data.templates[k]||[]).length);},0);
       const nD=(data.drafts||[]).length;
@@ -7377,6 +7531,7 @@ async function dashBulkIssue(ids){
     if(typeof uiAlert==='function') await uiAlert(msg); else alert(msg);
     await dashRenderCards(); return false;
   }
+  // Optional supporting records do not introduce an additional issuance dialog.
   const openHolds=[];
   records.forEach(function(rec){ dashHoldsOpen(rec).forEach(function(h){openHolds.push((rec.title||rec.id)+': '+h.t);}); });
   if(openHolds.length && !(await uiConfirm('✋ '+openHolds.length+' open operational hold'+(openHolds.length===1?'':'s')+' across the selected DD-254s:\n\n• '+openHolds.join('\n• ')+'\n\nIssuing with unresolved holds is a contradiction. Issue every selected DD-254 anyway?'))){
@@ -7468,11 +7623,20 @@ async function dashSetStatus(id,val){
       audLog(id,rec.title,'hold-added',rec.status+': '+reason);
     }
     if(rec.status==='Issued'){
+      // Existing validation and approval holds continue to govern issuance.
       const _oh=dashHoldsOpen(rec);
       if(_oh.length && !(await uiConfirm('✋ '+_oh.length+' open hold'+(_oh.length>1?'s':'')+' on this DD-254:\n\n• '+_oh.map(function(h){return h.t;}).join('\n• ')+'\n\nIssuing with an unresolved hold is a contradiction. Issue anyway?'))){
         rec.status=prev; dashRenderCards(); return;
       }
       if(_oh.length) audLog(id,rec.title,'issued-with-open-holds',_oh.length+' hold(s)');
+      /* Issuing a SAP subcontract DD-254 does not complete it. The form has to
+         go out to be countersigned, so this cannot block issuance - but it must
+         not pass silently either, because the thing that is easy to forget is
+         exactly that access stays closed until the signature comes back. */
+      if(dashSapSub(rec)&&!(rec.countersign&&rec.countersign.received)){
+        await uiAlert('✋ SAP subcontract — subcontractor signature outstanding.\n\nThis DD Form 254 is not complete until the subcontractor’s authorized representative signs it. DoDM 5205.07 §10.1.d does not name a block, and the form provides no subcontractor signature field — capture the signature by whatever method your programme accepts (a signed copy, an addendum, or a separate written acknowledgement) and record where it is held, on the card.\n\nDo not grant access to SAP or classified information under this form until you hold that signature.');
+        audLog(id,rec.title,'issued-sap-signature-owed','access withheld until the subcontractor signature is held');
+      }
       if(!(rec.niss&&rec.niss.on)){
         if(!(await uiConfirm('⚠ No NISS verification is recorded for this DD-254 (contractor FCL / safeguarding).\n\nIssue anyway?'))){ rec.status=prev; dashRenderCards(); return; }
         audLog(id,rec.title,'issued-without-niss','');
@@ -7522,6 +7686,31 @@ async function dashSetStatus(id,val){
         if(await uiConfirm('The biennial review requirement applies to revisions (Item 3b) only.\n\nThis DD-254 is '+lbl+', but it carries a review date of '+rec.reviewDate+'.\n\nClear it?')){
           audLog(id,rec.title,'review-cleared',rec.reviewDate+' (not a 3b revision)');
           rec.reviewDate='';
+        }
+      }
+      /* Post-contract disposition clock - 32 CFR 117.15. It shares a number
+         with the biennial review above and nothing else: that one is the
+         two-year REVIEW of a revision, this is the two-year window to get
+         classified material back or destroyed. The branch above clears
+         reviewDate on a Final precisely because a Final is not a revision, so
+         the two clocks never sit on one record.
+
+         Issuing a Final DD Form 254 to a subcontractor does not mean our own
+         contract is complete - a prime closes out a sub while its own contract
+         runs on. So this says only what it means: from the date this Final was
+         issued, there are two years to get that subcontractor to return,
+         transfer or destroy what it holds. Our own retention obligation is
+         tracked separately, on the template revised to Final. */
+      if(spec254==='3c'){
+        const rd=dd254RetentionDue(rec);
+        if(rd&&rd!==rec.retentionDue){
+          const rawFin=String((((rec.workspace||{}).texts||{}).i3c_date)||'').replace(/\D/g,'');
+          const anchorLbl=(/^\d{8}$/.test(rawFin)?'final date '+rawFin:'issuance date');
+          if(await uiConfirm('This is a Final DD Form 254.\n\nSet the subcontractor disposition deadline to '+rd+' ('+anchorLbl+' + 2 years)?\n\nWithin that window the subcontractor must be advised to return, transfer or destroy the classified material it holds, unless the GCA authorises retention in writing. (32 CFR 117.15)')){
+            rec.retentionDue=rd;
+            audLog(id,rec.title,'retention-set',rd+' (from '+anchorLbl+')');
+            if(await uiConfirm('Download an Outlook calendar invite for the disposition deadline?')) dashRetentionIcs(rec);
+          }
         }
       }
     } else {
@@ -7684,6 +7873,7 @@ async function dashRecountAll(){
   const wasOpen=DASH.current;
   const wasForm=wasOpen?collectWorkspace():null;
   let changed=0;
+  window.DD254_RECOUNTING=true;
   try{
     for(const rec of drafts){
       resetFormFields();
@@ -7701,6 +7891,7 @@ async function dashRecountAll(){
       }
     }
   } finally {
+    window.DD254_RECOUNTING=false;
     resetFormFields();
     if(wasForm){ applyWorkspace(wasForm); if(typeof run==='function') run(); }
     DASH.current=wasOpen;
@@ -7748,8 +7939,40 @@ async function dashNotesReport(){
 }
 async function dashToggleTodo(id,i){ const rec=await draftGet(id); if(!rec||!rec.todos[i]) return; rec.todos[i].done=!rec.todos[i].done; await draftPut(rec); dashRenderCards(id); }
 async function dashDelTodo(id,i){ const rec=await draftGet(id); if(!rec) return; rec.todos.splice(i,1); await draftPut(rec); dashRenderCards(id); }
-let dashNotesTimer=null;
-function dashNotesInput(id,val){ clearTimeout(dashNotesTimer); dashNotesTimer=setTimeout(async function(){ const rec=await draftGet(id); if(!rec) return; rec.notes=val; await draftPut(rec); },600); }
+let dashNotesTimer=null, DASH_NOTES_WRITE=Promise.resolve(true);
+const DASH_NOTES_PENDING=new Map();
+function dashNotesInput(id,val){
+  if(window.DD254_READONLY) return;
+  DASH_NOTES_PENDING.set(id,{value:val});
+  bkMark();
+  clearTimeout(dashNotesTimer);
+  dashNotesTimer=setTimeout(function(){dashNotesFlush();},600);
+}
+function dashNotesValue(rec){
+  const pending=DASH_NOTES_PENDING.get(rec.id);
+  return pending?pending.value:(rec.notes||'');
+}
+/* Coalesce each record separately. The old shared timer discarded the first
+   card's text when a second card was edited within 600ms. Serialize writes so
+   a backup can await the same work and a newer keystroke stays pending. */
+function dashNotesFlush(){
+  clearTimeout(dashNotesTimer); dashNotesTimer=null;
+  DASH_NOTES_WRITE=DASH_NOTES_WRITE.then(async function(){
+    let ok=true;
+    for(const [id,pending] of Array.from(DASH_NOTES_PENDING.entries())){
+      try{
+        const rec=await draftGet(id);
+        if(rec){ rec.notes=pending.value; await draftPut(rec); }
+        if(DASH_NOTES_PENDING.get(id)===pending) DASH_NOTES_PENDING.delete(id);
+      }catch(err){ok=false;draftStorageFailure(err);}
+    }
+    return ok;
+  });
+  return DASH_NOTES_WRITE;
+}
+window.addEventListener('beforeunload',function(e){
+  if(DASH_NOTES_PENDING.size){dashNotesFlush();e.preventDefault();e.returnValue='';}
+});
 
 /* render */
 const DASH_STAGES={sol:{chip:'SOLICITATION',bg:'#dfe4ea',fg:'#2b3440'},orig:{chip:'ORIGINAL',bg:'#d8e2ea',fg:'#2b4456'},rev:{chip:'REVISION',bg:'#e6e6ea',fg:'#44444e'},final:{chip:'FINAL',bg:'#2b3440',fg:'#ffffff'}};
@@ -7839,9 +8062,19 @@ async function dashRenderCards(openId){
     const nissB=(r.niss&&r.niss.on)
       ?'<span class="dash-badge" style="background:#e0f2e2;color:#1a6a2a;cursor:pointer;" title="Click to clear" onclick="dashNissToggle(\''+r.id+'\')">NISS ✓ '+dashEsc(r.niss.date||'')+(r.niss.by?' ('+dashEsc(r.niss.by)+')':'')+'</span>'
       :'<span class="dash-badge" style="background:#fbe3e0;color:var(--dcsa-crimson);cursor:pointer;" title="Click to record NISS FCL/safeguarding verification" onclick="dashNissToggle(\''+r.id+'\')">NISS not verified</span>';
-    const csB=r.parentId?((r.countersign&&r.countersign.received)
-      ?'<span class="dash-badge" style="background:#e0f2e2;color:#1a6a2a;cursor:pointer;" title="Click to clear" onclick="dashCsToggle(\''+r.id+'\')">countersigned ✓ '+dashEsc(r.countersign.date||'')+'</span>'
-      :'<span class="dash-badge" style="background:#fff;border:1px solid var(--dcsa-gold);color:#8a6a00;cursor:pointer;" title="Click when the Item 17 countersignature is received" onclick="dashCsToggle(\''+r.id+'\')">no countersignature</span>'):'';
+    /* A countersignature is a note on an ordinary revision and an obligation on
+       a SAP subcontract: DoDM 5205.07 10.1.d says the form is not complete until
+       the subcontractor's representative signs Item 17. The badge says which of
+       the two this is, because "no countersignature" in grey reads as optional
+       and on a SAP subcontract it is not. Shown for any SAP subcontract, not
+       only for records spawned from a parent. */
+    const _sapSub=dashSapSub(r);
+    const _csGot=!!(r.countersign&&r.countersign.received);
+    const csB=(r.parentId||_sapSub)?(_csGot
+      ?'<span class="dash-badge" style="background:#e0f2e2;color:#1a6a2a;cursor:pointer;" title="Signed — '+dashEsc((r.countersign&&r.countersign.how)||'location not recorded')+' — click to clear" onclick="dashCsToggle(\''+r.id+'\')">countersigned ✓ '+dashEsc(r.countersign.date||'')+'</span>'
+      :(_sapSub
+        ?'<span class="dash-badge" style="background:#fbe3e0;color:var(--dcsa-crimson);font-weight:bold;cursor:pointer;" title="SAP subcontract — this DD Form 254 is not complete until the subcontractor’s authorized representative signs it. The form provides no subcontractor signature block, so capture it by the method your programme accepts. Do not grant access until you hold it. Click to record it. (DoDM 5205.07 §10.1.d)" onclick="dashCsToggle(\''+r.id+'\')">✋ SAP countersignature owed</span>'
+        :'<span class="dash-badge" style="background:#fff;border:1px solid var(--dcsa-gold);color:#8a6a00;cursor:pointer;" title="Click when the subcontractor signature is received" onclick="dashCsToggle(\''+r.id+'\')">no countersignature</span>')):'';
     let flowB='';
     if(r.parentId&&byId[r.parentId]){
       const fi=dashFlowIssues(byId[r.parentId],r);
@@ -7921,7 +8154,7 @@ async function dashRenderCards(openId){
             +'</div></span>';
         })()
       +'</div>'
-      +'<div style="margin-top:8px;">'+solB+errB+warnB+todoB+nissB+csB+flowB+dashHoldBadge(r)+dashAttBadge(r,openId===r.id)+dashDistBadge(r,openId===r.id)+dashReviewBadge(r)
+      +'<div style="margin-top:8px;">'+solB+errB+warnB+todoB+nissB+csB+flowB+dashHoldBadge(r)+dashAttBadge(r,openId===r.id)+dashDistBadge(r,openId===r.id)+dashReviewBadge(r)+dashRetentionBadge(r)
       +'<span style="font-size:10px;color:#8a94a0;margin-left:8px;">last edited '+when+'</span></div>'
       +((r.status==='Cancelled'&&r.cancel&&r.cancel.reason)
         ?'<div style="margin-top:10px;border:1px solid #d8b0a8;border-left:4px solid #7a4038;background:#fbf1ef;padding:8px 12px;">'
@@ -7931,7 +8164,7 @@ async function dashRenderCards(openId){
       +dashHoldsHtml(r)
       +(openId===r.id?('<div style="margin-top:10px;border-top:1px dashed #c8d4e4;padding-top:8px;">'
         +'<div style="font-size:11px;font-weight:bold;color:#3a4552;margin-bottom:4px;">Notes:</div>'
-        +'<textarea id="notesIn_'+r.id+'" placeholder="General free text — appears in the Notes report and the manager rollup." oninput="dashNotesInput(\''+r.id+'\',this.value)" style="width:100%;min-height:44px;font-size:12px;padding:6px 8px;">'+dashEsc(r.notes||'')+'</textarea>'
+        +'<textarea id="notesIn_'+r.id+'" placeholder="General free text — appears in the Notes report and the manager rollup." oninput="dashNotesInput(\''+r.id+'\',this.value)" style="width:100%;min-height:44px;font-size:12px;padding:6px 8px;">'+dashEsc(dashNotesValue(r))+'</textarea>'
         +'<div style="font-size:11px;font-weight:bold;color:#3a4552;margin:10px 0 4px;">To-do (“I need…”):</div>'+(todos||'')
         +'<div style="display:flex;gap:6px;margin-top:5px;"><input type="text" id="todoIn_'+r.id+'" placeholder="I need the SCG from the program office…" style="flex:1;font-size:13px;padding:7px 9px;" onkeydown="if(event.key===\'Enter\')dashAddTodo(\''+r.id+'\')"><button class="dash-btn" style="background:#4a5866;" onclick="dashAddTodo(\''+r.id+'\')">Add</button></div>'
         +'<div style="font-size:11px;font-weight:bold;color:#3a4552;margin:8px 0 3px;">Note taken date: <input type="date" id="todoTaken_'+r.id+'" value="'+(new Date().toISOString().split('T')[0])+'" title="Date the note was taken (required to add a note)" style="font-size:11px;width:auto;margin-right:14px;">Review date (tickler): <input type="date" value="'+dashEsc(r.reviewDate||'')+'" onchange="dashSetReview(\''+r.id+'\',this.value)" style="font-size:11px;width:auto;"> <button class="dash-btn" style="background:#8a94a0;padding:2px 8px;" onclick="dashSetReview(\''+r.id+'\',null)">clear</button></div>'
@@ -8064,6 +8297,7 @@ function dashRestore(ev){
     try{
       const data=JSON.parse(e.target.result);
       const list=Array.isArray(data)?data:(data.drafts||[]);
+      astraValidateRecords(list);
       if(!list.length) return alert('No drafts found in that backup.');
       let n=0;
       for(const rec of list){ if(rec&&rec.id){ await draftPut(rec); n++; } }
@@ -8226,6 +8460,7 @@ function dashResetWorkflow(rec){
   rec.dist=[];
   rec.countersign=null;
   delete rec.issuedAt;
+  astraResetRecord(rec);
   return rec;
 }
 async function dashSpawn(id,kind){
@@ -8443,6 +8678,62 @@ async function dashSetReview(id,val){
   rec.reviewDate=val||''; audLog(id,rec.title,'review-set',rec.reviewDate||'(cleared)');
   if(val&&rec.todos) rec.todos.forEach(function(t){ if(!t.review) t.review=val; });
   await draftPut(rec); dashRenderCards(id);
+}
+/* Anchored to the Item 3c final date when one was typed, and to the issuance
+   date otherwise - the same fallback order, and the same UTC-date handling, as
+   the biennial review clock, so the two cannot disagree about what "the date of
+   this DD-254" means. */
+function dd254RetentionDue(rec){
+  if(!rec) return '';
+  const raw=String((((rec.workspace||{}).texts||{}).i3c_date)||'').replace(/\D/g,'');
+  if(/^\d{8}$/.test(raw)){
+    const y=+raw.substring(0,4), m=+raw.substring(4,6), d=+raw.substring(6,8);
+    if(m>=1&&m<=12&&d>=1&&d<=31){
+      const t=new Date(y,m-1,d);
+      if(t.getFullYear()===y&&t.getMonth()===m-1&&t.getDate()===d)
+        return dd254Plus2y(raw.substring(0,4)+'-'+raw.substring(4,6)+'-'+raw.substring(6,8));
+    }
+  }
+  const iso=String(rec.issuedAt||'').substring(0,10);
+  if(/^\d{4}-\d{2}-\d{2}$/.test(iso)) return dd254Plus2y(iso);
+  return '';
+}
+function dashRetentionBadge(r){
+  if(!r||!r.retentionDue) return '';
+  const today=new Date().toISOString().split('T')[0];
+  const soon=new Date(Date.now()+90*86400000).toISOString().split('T')[0];
+  const tip=' title="32 CFR 117.15 \u2014 advise the subcontractor to return, transfer or destroy the classified material it holds, unless the GCA authorises retention in writing."';
+  if(r.retentionDue<today) return '<span class="dash-badge"'+tip+' style="background:#fbe3e0;color:#7a1008;font-weight:bold;">\u23f3 disposition OVERDUE ('+r.retentionDue+')</span>';
+  /* Ninety days rather than the review badge's fourteen: getting classified
+     material back from another company is not a task that can be started in a
+     fortnight. */
+  if(r.retentionDue<=soon) return '<span class="dash-badge"'+tip+' style="background:#fdf3d8;color:#8a6a00;font-weight:bold;">\u23f3 disposition due '+r.retentionDue+'</span>';
+  return '<span class="dash-badge"'+tip+' style="background:#e8ecf0;color:#46606f;">\u23f3 disposition '+r.retentionDue+'</span>';
+}
+function dashRetentionIcs(rec){
+  const due=rec.retentionDue; if(!due) return;
+  const ds=due.replace(/-/g,'');
+  const esc=function(s){return String(s||'').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\r?\n/g,'\\n');};
+  const m=rec.meta||{};
+  const stamp=new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//DD254 Tool//EN','METHOD:PUBLISH','BEGIN:VEVENT',
+    'UID:dd254-retention-'+rec.id+'-'+Date.now()+'@dd254tool','DTSTAMP:'+stamp,'DTSTART:'+ds+'T090000','DTEND:'+ds+'T093000',
+    'SUMMARY:'+esc('DD-254 classified disposition deadline: '+(rec.title||'Untitled')),
+    'DESCRIPTION:'+esc('Contract: '+(m.contract||'-')
+      +'\nContractor: '+(m.contractor||'-')
+      +'\nFinal date: '+((((rec.workspace||{}).texts||{}).i3c_date)||'-')
+      +'\nIssued: '+String(rec.issuedAt||'').substring(0,10)
+      +'\n\nA Final DD Form 254 was issued on this contract. Advise the subcontractor'
+      +'\nto return, transfer or destroy the classified material it holds by this date,'
+      +'\nunless the GCA has authorised retention in writing. (32 CFR 117.15)'),
+    'BEGIN:VALARM','TRIGGER:-P30D','ACTION:DISPLAY','DESCRIPTION:DD-254 classified disposition deadline','END:VALARM',
+    'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const blob=new Blob([ics],{type:'text/calendar'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='DD254_disposition_'+due+'.ics';
+  document.body.appendChild(a); a.click();
+  setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(a.href);},600);
 }
 function dashReviewBadge(r){
   if(!r.reviewDate) return '';
@@ -8868,7 +9159,7 @@ function tdbOpen(){
   TDB.ready=new Promise(function(res){
     try{
       if(typeof indexedDB==='undefined'){ TDB.useLS=true; return res(); }
-      const rq=indexedDB.open('dd254_templates_'+window.DD254_DEMO_SESSION_ID,1);
+      const rq=indexedDB.open('dd254_templates',1);
       rq.onupgradeneeded=function(){ rq.result.createObjectStore('stores'); };
       rq.onsuccess=function(){ TDB.db=rq.result; res(); };
       rq.onerror=function(){ TDB.useLS=true; res(); };
@@ -9271,9 +9562,46 @@ function ctAttMig(d){
   return d;
 }
 function ctAttLines(d){ return String((d&&d.attText)||'').split(/\n+/).map(function(x){return x.trim();}).filter(Boolean); }
-function ctSrcBadge(t){ return t&&t.srcDate
-  ?'<span style="display:inline-block;background:#1a4a7a;color:#fff;font-weight:bold;font-size:12.5px;border-radius:4px;padding:4px 10px;letter-spacing:.4px;">\ud83d\udcc5 SOURCE '+t.srcDate+'</span>'
-  :'<span style="display:inline-block;background:#c0392b;color:#fff;font-weight:bold;font-size:12.5px;border-radius:4px;padding:4px 10px;letter-spacing:.4px;">\u26a0 NO SOURCE DATE</span>'; }
+/* ---- TEMPLATE SOURCE PROVENANCE -------------------------------------------
+   A template is derived from a real DD Form 254, and which one it came from
+   decides how far it can be trusted. "Derived from the Final dated 2026-04-15"
+   and "derived from Revision 3" are different claims, and a date on its own
+   cannot tell them apart. Recording the type beside the date also gives the
+   retention clock below something to anchor to. */
+const CT_SRC_TYPES=[['','\u2014 source type not recorded \u2014'],
+                    ['orig','Original DD Form 254'],
+                    ['rev','Revision'],
+                    ['final','Final DD Form 254']];
+function ctSrcLabel(t){
+  if(!t) return '';
+  if(t.srcType==='orig')  return 'Original';
+  if(t.srcType==='rev')   return 'Revision'+(String(t.srcRev||'').trim()?' '+String(t.srcRev).trim():'');
+  if(t.srcType==='final') return 'FINAL';
+  return '';
+}
+/* Two years from the source date, and only for a Final. Anything else has no
+   retention deadline to show, which is why nothing appears until the type is
+   actually changed to Final. */
+function dd254Plus2y(iso){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(String(iso||''))) return '';
+  const d=new Date(+iso.substring(0,4),+iso.substring(5,7)-1,+iso.substring(8,10));
+  if(isNaN(d.getTime())) return '';
+  d.setFullYear(d.getFullYear()+2);
+  const p=function(n){return (n<10?'0':'')+n;};
+  return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());
+}
+function ctRetentionDue(t){ return (t&&t.srcType==='final')?dd254Plus2y(t.srcDate||''):''; }
+function ctSrcBadge(t){
+  if(!t||!t.srcDate)
+    return '<span style="display:inline-block;background:#c0392b;color:#fff;font-weight:bold;font-size:12.5px;border-radius:4px;padding:4px 10px;letter-spacing:.4px;">\u26a0 NO SOURCE DATE</span>';
+  const lbl=ctSrcLabel(t), fin=(t.srcType==='final');
+  const base='<span style="display:inline-block;background:'+(fin?'#7a1008':'#1a4a7a')+';color:#fff;font-weight:bold;font-size:12.5px;border-radius:4px;padding:4px 10px;letter-spacing:.4px;">\ud83d\udcc5 '+(lbl?lbl+' \u00b7 ':'SOURCE ')+t.srcDate+'</span>';
+  const due=ctRetentionDue(t);
+  if(!due) return base;
+  const today=new Date().toISOString().split('T')[0];
+  const late=(due<today);
+  return base+'<span title="32 CFR 117.15 \u2014 classified material held under this contract must be returned to the Government or destroyed within two years of the final, unless the GCA authorises retention in writing." style="display:inline-block;margin-left:5px;background:'+(late?'#7a1008':'#8a6a00')+';color:#fff;font-weight:bold;font-size:11px;border-radius:4px;padding:4px 9px;letter-spacing:.3px;">\u23f3 RETURN OR DESTROY BY '+due+(late?' \u2014 OVERDUE':'')+'</span>';
+}
 function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim();
   const sms=tplLoad(TPL_SM);
   const m=sms.find(function(x){return (x.name||'')===v;})||(v?sms.find(function(x){return (x.name||'').toLowerCase().indexOf(v.toLowerCase())===0;}):null);
@@ -9283,8 +9611,34 @@ function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim
 }
 function ctSetPrime(i,v){ const d=ctEd(i); if(!d) return; d.primeContract=(v||'').trim(); ctStamp(i); }
 function ctSetTask(i,v){ const d=ctEd(i); if(!d) return; d.taskOrder=(v||'').trim(); ctStamp(i); }
-function ctSetSrc(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; t.srcDate=(v||'').trim(); ctStamp(i);
-  const el=document.getElementById('ctSrc_'+i); if(el) el.innerHTML=ctSrcBadge(t); }
+function ctSrcRepaint(i){
+  const t=window.TPL_EDIT[i]; if(!t) return;
+  const el=document.getElementById('ctSrc_'+i); if(el) el.innerHTML=ctSrcBadge(t);
+  const rv=document.getElementById('ctSrcRev_'+i); if(rv) rv.style.display=(t.srcType==='rev'?'':'none');
+}
+function ctSetSrc(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; t.srcDate=(v||'').trim(); ctStamp(i); ctSrcRepaint(i); }
+function ctSetSrcRev(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; t.srcRev=(v||'').trim(); ctStamp(i); ctSrcRepaint(i); }
+/* Revising a template to Final is the event that starts our own retention
+   clock, so the warning is raised here and at no earlier point. Until the type
+   actually changes to Final there is nothing yet to return or destroy, and the
+   operator is told nothing. */
+function ctSetSrcType(i,v){
+  const t=window.TPL_EDIT[i]; if(!t) return;
+  const was=t.srcType||'';
+  t.srcType=(v||'').trim();
+  if(t.srcType!=='rev') t.srcRev='';
+  ctStamp(i); ctSrcRepaint(i);
+  if(t.srcType==='final'&&was!=='final') ctFinalNotice(t);
+}
+function ctFinalNotice(t){
+  const due=ctRetentionDue(t);
+  const msg='This template is now recorded as a FINAL DD Form 254.\n\n'
+    +(due
+      ?'Retention clock: classified material held under this contract must be returned to the Government or destroyed by '+due+' \u2014 two years from the source date '+t.srcDate+' \u2014 unless the GCA authorises retention in writing. (32 CFR 117.15)'
+      :'Set the source date so the two-year deadline can be calculated. Classified material held under this contract must be returned or destroyed within two years of the final unless the GCA authorises retention in writing. (32 CFR 117.15)')
+    +'\n\nIssuing a Final DD Form 254 to a subcontractor is a separate clock, tracked on that DD-254. This one is about what we hold.';
+  if(typeof uiAlert==='function') uiAlert(msg); else alert(msg);
+}
 function ctUpdText(t){ return t&&t.updatedAt?('last updated '+String(t.updatedAt).replace('T',' ').substring(0,16)):'not yet updated'; }
 function ctStamp(i){ const t=window.TPL_EDIT[i]; if(!t) return; t.updatedAt=new Date().toISOString(); const el=document.getElementById('ctUpd_'+i); if(el) el.textContent=ctUpdText(t); }
 function ctMgrSum(i){ const el=document.getElementById('ctSum_'+i); if(el) el.innerHTML=ctSummary(window.TPL_EDIT[i]); ctStamp(i); }
@@ -9324,7 +9678,7 @@ function ctEditorHtml(t,i){
   return '<div id="ctEd_'+i+'" style="display:none;border-top:1px dashed #c8d4e4;margin-top:8px;padding-top:8px;">'
     +h('Classification of the DD Form 254 itself')
     +sel('cls',[['','UNCLASSIFIED'],['CUI','CUI — Controlled Unclassified Information']])
-    +'<div style="font-size:9.5px;color:#8a94a0;margin:-2px 0 6px;">The DD Form 254 itself is unclassified; CUI is the only other marking it may carry. Classified content travels in the attachments referenced in Items 13 and 14.</div>'
+    +'<div style="font-size:9.5px;color:#8a94a0;margin:-2px 0 6px;">This tool supports UNCLASSIFIED and CUI markings only. Prepare any DD Form 254 containing classified information on an approved system; never enter that information here.</div>'
     +h('10 — Access requirements')+'<div>'+CT_10.map(function(k){return cb('c10',k);}).join('')+'</div>'+inp('t10k','10k — Other (specify)')
     +h('11 — Performance requirements')+'<div>'+CT_11.map(function(k){return cb('c11',k);}).join('')+'</div>'+inp('t11m','11m — Other (specify)')
     +h('12 — Public release')+sel('i12route',[['','routing: (none)'],['dir','DIRECT'],['thru','THROUGH']])+txa('i12','Q2 — Public Release Authority (office, address, procedures)')+txa('i12specify','THROUGH routing — specify the office')
@@ -9728,6 +10082,8 @@ const TPL_IO=(function(){
     col('Prime Contract',function(t){return ioDD(t).primeContract||'';},function(t,v){ioDD(t).primeContract=ioS(v);}),
     col('Task Order',function(t){return ioDD(t).taskOrder||'';},function(t,v){ioDD(t).taskOrder=ioS(v);}),
     col('Source Date',function(t){return t.srcDate||'';},function(t,v){t.srcDate=ioS(v);}),
+    col('Source Type',function(t){return t.srcType||'';},function(t,v){t.srcType=ioS(v);}),
+    col('Source Rev',function(t){return t.srcRev||'';},function(t,v){t.srcRev=ioS(v);}),
     col('Security Manager',function(t){return t.smName||'';},function(t,v){t.smName=ioS(v);}),
     col('SM E-mail',function(t){return t.smEmail||'';},function(t,v){t.smEmail=ioS(v);}),
     col('SM Program',function(t){return t.smProgram||'';},function(t,v){t.smProgram=ioS(v);}),
@@ -10160,7 +10516,13 @@ async function dashTplEdit(kind){
       +'<input type="text" value="'+tplEsc(t.label)+'" placeholder="Template name (e.g. CPFF R&D — SECRET)" style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].label=this.value;ctStamp('+i+')">'
       +'<div style="display:flex;flex-direction:column;gap:3px;align-items:flex-start;">'
       +'<span id="ctSrc_'+i+'">'+ctSrcBadge(t)+'</span>'
-      +'<input type="date" value="'+tplEsc(t.srcDate||'')+'" title="Source date — the version date of this template in the external system it was derived from" style="font-size:10.5px;width:135px;" onchange="ctSetSrc('+i+',this.value)">'
+      +'<div style="display:flex;gap:3px;align-items:center;">'
+      +'<select title="Source type — was this template taken from an Original DD Form 254, a numbered Revision, or a Final?" style="font-size:10.5px;width:104px;" onchange="ctSetSrcType('+i+',this.value)">'
+      +CT_SRC_TYPES.map(function(o){ return '<option value="'+o[0]+'"'+(((t.srcType||'')===o[0])?' selected':'')+'>'+tplEsc(o[1])+'</option>'; }).join('')
+      +'</select>'
+      +'<input type="text" id="ctSrcRev_'+i+'" value="'+tplEsc(t.srcRev||'')+'" placeholder="Rev #" title="Revision number of the source DD Form 254" style="font-size:10.5px;width:56px;display:'+((t.srcType==='rev')?'':'none')+';" onchange="ctSetSrcRev('+i+',this.value)">'
+      +'</div>'
+      +'<input type="date" value="'+tplEsc(t.srcDate||'')+'" title="Source date — the date of the DD Form 254 this template was derived from. For a Final this is what the two-year retention deadline is measured from." style="font-size:10.5px;width:135px;" onchange="ctSetSrc('+i+',this.value)">'
       +'</div>'
       +'<div style="display:flex;flex-direction:column;gap:2px;align-items:flex-start;">'
       +'<input type="text" value="'+tplEsc((t.data&&t.data.primeContract)||'')+'" placeholder="Prime contract (2a)…" title="Prime contract number. Written to Item 2a only when the draft has none — a template never replaces a contract number already entered." style="width:160px;font-size:11px;" onchange="ctSetPrime('+i+',this.value)">'
@@ -10395,7 +10757,7 @@ function exportPrep254() {
   // Subcontract-specific
   const isSAPflag = gc('sapFlag');
   if(isSub && isSAPflag) {
-    must.push('SAP SUBCONTRACT: Subcontractor authorized representative must countersign Item 17 before any classified access is granted. (DoDM 5205.07 §10.1.d)');
+    must.push('SAP SUBCONTRACT: Subcontractor authorized representative must sign this DD Form 254 before any classified access is granted. No signature block is provided on the form — record how the signature was obtained. (DoDM 5205.07 §10.1.d)');
   }
   if(isSub) {
     must.push('Item 17e: Enter the prime contractor CAGE code (subcontract forms only).');
@@ -10430,21 +10792,24 @@ function exportPrep254() {
 
   // Active 10/11 items
   const items10 = [], items11 = [];
-  const map10 = {
-    '10a':'10a — COMSEC','10b':'10b — Restricted Data','10c':'10c — CNWDI',
-    '10d':'10d — Formerly Restricted Data','10e1':'10e(1) — SCI','10e2':'10e(2) — Non-SCI Intelligence',
-    '10f':'10f — Special Access Program (SAP)','10g':'10g — NATO','10h':'10h — Foreign Government Information',
-    '10i':'10i — ACCM','10j':'10j — CUI','10k':'10k — Other'
+  /* The worksheet used to keep its own hand-written copy of every Item 10/11
+     label, and it had drifted from the form: 11c read "Use of SCG" when the box
+     is receive/store/generate, and 11k read "COMSEC (FOCI considerations)" when
+     the box is Defense Courier Service. A preparer working from the printed
+     worksheet was told the wrong thing about what they had ticked. 11b and 11d
+     had also lost the words that carry their restriction ("documents ONLY",
+     "fabricate, modify").
+
+     Two sources of truth is the defect that keeps recurring here, so the second
+     one is gone: the label is read from the box itself and the two can no
+     longer disagree. */
+  const boxLabel=function(k){
+    const el=document.querySelector('#cb'+k+' .ck');
+    const t=el?String(el.textContent||'').replace(/\s+/g,' ').trim():'';
+    return t||k;
   };
-  const map11 = {
-    '11a':'11a — Access at another facility','11b':'11b — Storage at contractor facility',
-    '11c':'11c — Use of SCG','11d':'11d — Hardware/software storage','11e':'11e — Non-possessory access / services',
-    '11f':'11f — Overseas performance','11g':'11g — DTIC access','11h':'11h — COMSEC accountable material at contractor',
-    '11i':'11i — TEMPEST','11j':'11j — OPSEC','11k':'11k — COMSEC (FOCI considerations)',
-    '11l':'11l — CUI performance obligations','11m':'11m — Other'
-  };
-  Object.entries(map10).forEach(([k,v])=>{ if(gc('c'+k)) items10.push(v); });
-  Object.entries(map11).forEach(([k,v])=>{ if(gc('c'+k)) items11.push(v); });
+  CT_10.forEach(function(k){ if(gc('c'+k)) items10.push(boxLabel(k)); });
+  CT_11.forEach(function(k){ if(gc('c'+k)) items11.push(boxLabel(k)); });
 
   const now = new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
 
@@ -10482,7 +10847,7 @@ function exportPrep254() {
   <tr><td>Subcontract No. (2b)</td><td>${isSub ? hv('i2b','<em>Not entered</em>') : '<em>Prime contract form</em>'}</td></tr>
   <tr><td>FCL (1a)</td><td>${fclMap[gv('fcl1a')]||'<em>Not selected</em>'}</td></tr>
   <tr><td>Safeguarding (1b)</td><td>${sfgMap[gv('sfg1b')]||'<em>Not selected</em>'}</td></tr>
-  ${isSub && gc('sapFlag') ? `<tr><td style="color:#566573;font-weight:bold;">⚠ SAP Subcontract</td><td style="color:#566573;font-weight:bold;">Subcontractor must countersign Item 17. DoDM 5205.07 §10.1.d.</td></tr>` : ''}
+  ${isSub && gc('sapFlag') ? `<tr><td style="color:#566573;font-weight:bold;">⚠ SAP Subcontract</td><td style="color:#566573;font-weight:bold;">Subcontractor&#39;s authorized representative must sign this DD Form 254. The form provides no block for it — record how obtained. DoDM 5205.07 §10.1.d.</td></tr>` : ''}
 </table>
 
 <h2>Contractor (Items 6–7)</h2>
@@ -10565,6 +10930,7 @@ function exportCOPrep() {
     _fl.err.forEach(function(x){ coMust.push(x); });
     _fl.warn.forEach(function(x){ coWarn.push(x); }); }
 
+  astraFindings(ASTRA,collectWorkspace()).forEach(x=>coWarn.push('Astra review: '+x));
   // Core CO obligations
   coMust.push('Verify the contractor entity eligibility/FCL and, when possession or storage is required, the approved safeguarding capability through NISS, NCAISS, or the CSA-designated source. A CAGE code or FCL alone does not establish storage authority. (32 CFR §§117.9 and 117.15)');
   coMust.push('Confirm the DD Form 254 is properly prepared, coordinated with requirements and security personnel, distributed, and incorporated with the classified acquisition. (FAR 4.403; 32 CFR §117.13(d))');
@@ -10574,12 +10940,12 @@ function exportCOPrep() {
   coMust.push('Complete the Item 17 certifying-official data, then complete Items 17h and 17i by digitally signing the generated dynamic PDF in Adobe Acrobat Pro.');
 
   if(spec==='3b') coMust.push('REVISED FORM: Incorporate this revised DD Form 254 through the contract modification process and preserve the original Item 3a date.');
-  if(spec==='3c') coMust.push('FINAL FORM: Confirm contract completion, an approved request for retention beyond the normal two-year period, Item 5 completion, and final disposition instructions in Item 13.');
+  if(spec==='3c') coMust.push('FINAL FORM: '+astraRetention(gc('sapFlag'))+' Complete Item 5 for retention and record disposition instructions in Item 13.');
   if(gv('i2c')) coMust.push('SOLICITATION: Issue a new DD Form 254 at award with the awarded contract number; do not reuse the solicitation specification as the award form.');
 
   if(isSub) {
     coMust.push('SUBCONTRACT: Confirm the prime contractor has GCA authorization before imposing classified requirements on the subcontractor.');
-    if(gc('sapFlag')) coMust.push('SAP SUBCONTRACT: This DD Form 254 is not effective until countersigned by the subcontractor authorized representative (Item 17). (DoDM 5205.07 §10.1.d)');
+    if(gc('sapFlag')) coMust.push('SAP SUBCONTRACT: This DD Form 254 is not effective until signed by the subcontractor’s authorized representative. The form provides no subcontractor signature block. (DoDM 5205.07 §10.1.d)');
     coMust.push('SUBCONTRACT: Verify Item 17e contains the prime contractor CAGE code.');
     coMust.push('SUBCONTRACT: Confirm Item 18b (Subcontractor FSO) distribution is checked.');
   }
@@ -10704,7 +11070,7 @@ function exportCOPrep() {
 <div class="meta">Generated: ${now} &nbsp;|&nbsp; FOR INTERNAL CO USE — Not an official document. Do not attach to contract file in lieu of the signed DD Form 254.</div>
 
 ${hasSAP ? '<div class="sap-banner">🔐 SPECIAL ACCESS PROGRAM (SAP) CONTRACT — Coordinate with PSM/PSO before routing</div>' : ''}
-${isSub && gc('sapFlag') ? '<div class="sub-banner">📋 SAP SUBCONTRACT — Subcontractor countersignature on Item 17 required before access is granted (DoDM 5205.07 §10.1.d)</div>' : (isSub ? '<div class="sub-banner">📋 SUBCONTRACT FORM</div>' : '')}
+${isSub && gc('sapFlag') ? '<div class="sub-banner">📋 SAP SUBCONTRACT — subcontractor signature required before access is granted; the form provides no block for it (DoDM 5205.07 §10.1.d)</div>' : (isSub ? '<div class="sub-banner">📋 SUBCONTRACT FORM</div>' : '')}
 
 <h2>Contract Summary</h2>
 <table>
@@ -10776,6 +11142,7 @@ ${isSub && gc('sapFlag') ? `
 </div>
 
 <div style="margin-top:24px;padding-top:10px;border-top:1px solid #b0bac6;font-size:9.5px;color:#888;">
+${astraReportHTML()}
 CO Preparatory Package · DD Form 254 Interactive Guided Edition · Governed by 32 CFR Part 117 (NISPOM)${gc('sapFlag')?' · DoDM 5205.07 (SAP)':''} · FAR Subpart 4.4
 </div>
 </body></html>`;
@@ -11378,6 +11745,404 @@ if(typeof perfOrgRender==='function') perfOrgRender();
 if(typeof b13ViewSet==='function') b13ViewSet(b13ViewGet());
 if(typeof distRenderSel==='function'){ distRenderSel(); distSyncCats(); }</script>
 <script>initWizard(); run();</script>
+
+<script>
+/* Codex Astra review records live inside the existing workspace. They are
+   advisory evidence, never another approval engine or a remote data store. */
+const ASTRA_SCHEMA=1;
+const ASTRA_GUIDANCE={
+  id:'astra-retention-20260906', reviewed:'2026-09-06',
+  general:'At contract completion, return USG-provided or deliverable information. Unless the GCA directs otherwise, copies may be retained for two years; continued need beyond that period requires a final specification or equivalent with disposition instructions. This is not blanket permission to retain all material.',
+  sap:'For SAP work, coordinate disposition and the termination plan with the GCA and PSM/PSO. SAP information may be retained only with specific written GCA authorization. A Final DD Form 254 addresses continued SAP security requirements; do not apply the ordinary two-year rule as automatic SAP retention authority.',
+  sources:[['32 CFR 117.13(d)(5)','https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-D/part-117/section-117.13'],['DoDM 5205.07, 17 January 2025, section 10.5','https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520507m1.PDF']]
+};
+function astraRetention(sap){return sap?ASTRA_GUIDANCE.sap:ASTRA_GUIDANCE.general;}
+function astraBlank(){return {schema:ASTRA_SCHEMA,guidanceVersion:ASTRA_GUIDANCE.id,package:{},sources:[],documents:[],requirements:[],issues:[],closeout:[],history:[]};}
+let ASTRA=astraBlank();
+const ASTRA_FIELDS={
+  package:[['contract','Contract or subcontract number'],['modification','Modification / solicitation reference'],['attachment','Contract attachment / exhibit number'],['revision','Attached DD254 revision (Original, number, or Final)'],['date','Attached DD254 date','date'],['incorporation','Recorded incorporation reference','area'],['clauseBasis','Executed clause / deviation basis','area']],
+  sources:[['title','Source title'],['issuer','Issuing organization'],['edition','Edition / effective date'],['locator','Paragraph / page'],['url','Official reference URL'],['scope','Applicability and limitations','area'],['reviewDate','Date reviewed by preparer','date'],['status','Source status',['Unknown','Current','Superseded']]],
+  documents:[['title','Guidance / attachment title'],['version','Available version / date'],['citedVersion','Version cited in the form'],['items','Affected form items (comma separated)'],['supersedes','Superseded document','documents'],['fileRef','Existing log attachment','files'],['location','Reference-only location / delivery instructions','area'],['recipient','Recipient / audience'],['method','Delivery channel'],['sentDate','Delivery date recorded','date'],['ackDate','Acknowledgment date recorded','date'],['ackRef','Acknowledgment evidence reference']],
+  requirements:[['title','Requirement title'],['task','Required task for Item 13','area'],['items','Affected form items (comma separated)'],['sourceId','Source and authority','sources'],['documentId','Supporting document','documents'],['contractRef','Contract authority / reference'],['scope','Applicability / site','area'],['owner','Implementation owner'],['extra','Additional requirement beyond baseline',['Unknown','Yes','No']],['inspectionOwner','Inspection organization and scope'],['criteria','Inspection criteria / evidence expected','area'],['frequency','Inspection frequency if specified'],['people','People / units','number'],['hours','Hours per person / unit','number'],['rate','Rate per hour / unit','number'],['events','Number of events','number'],['currency','Currency (e.g. USD)'],['costBasis','Estimate assumptions / basis for zero','area']],
+  issues:[['title','Question / mismatch'],['question','Facts and competing interpretations','area'],['items','Affected form items (comma separated)'],['sourceA','First source','sources'],['sourceB','Second source','sources'],['requirementId','Affected requirement','requirements'],['documentId','Affected document','documents'],['reviewer','Reviewer role / office'],['requested','Request date recorded','date'],['proposal','Proposed resolution','area'],['authority','Responding authority'],['responseDate','Response date','date'],['reference','Written response reference'],['resolution','Disposition and rationale','area'],['scope','Decision applicability / scope','area'],['status','Question status',['Draft','Ready for review','Sent recorded','Response recorded','Resolution recorded','Superseded']]],
+  closeout:[['title','Action'],['category','Action category',['Contract completion','Return / disposition','Retention','Continued program requirements']],['requirementId','Affected requirement','requirements'],['sourceId','Source','sources'],['owner','Responsible reviewer'],['due','Due / authorization end date','date'],['authority','Instruction / authorizing office'],['evidence','Disposition / authorization evidence','area'],['completed','Completion date recorded','date'],['status','Action status',['Pending','Completed']]]
+};
+const ASTRA_LABELS={sources:'Guidance sources',documents:'Attachments and delivery',requirements:'Requirements and Item 13',issues:'Questions and decisions',closeout:'Changes and closeout'};
+const ASTRA_PREFIX={sources:'S',documents:'D',requirements:'R',issues:'Q',closeout:'C'};
+['documents','requirements'].forEach(k=>ASTRA_FIELDS[k].push(['reviewer','Impact reviewer'],['reviewNote','Impact review basis','area']));
+ASTRA_FIELDS.requirements.push(['estimateStatus','Estimate status',['Unknown','Draft estimate','Reviewed estimate']],['costTiming','Effort basis',['Unknown','One-time','Recurring']]);
+ASTRA_FIELDS.issues.push(['holdRef','Related existing hold reference (does not resolve the hold)']);
+function astraClone(v){return JSON.parse(JSON.stringify(v));}
+function astraShort(id){return String(id||'').slice(0,10);}
+function astraDisplay(text,a){Object.keys(ASTRA_LABELS).forEach(k=>(a[k]||[]).forEach(r=>{text=String(text).split(r.id).join(astraShort(r.id));}));return text;}
+function astraValidate(v){
+  if(v==null)return true;
+  if(typeof v!=='object'||Array.isArray(v)||v.schema!==ASTRA_SCHEMA)throw new Error('Unsupported Codex Astra workspace version. Use a compatible release; no records were imported.');
+  ['sources','documents','requirements','issues','closeout','history'].forEach(k=>{
+    if(!Array.isArray(v[k]))throw new Error('Invalid Astra '+k+' records.');
+    if(k!=='history'){
+      const ids=new Set(); v[k].forEach(r=>{if(!r||typeof r!=='object'||typeof r.id!=='string'||!/^[-a-zA-Z0-9_]+$/.test(r.id)||ids.has(r.id))throw new Error('Invalid or duplicate Astra record ID.');ids.add(r.id);
+        ASTRA_FIELDS[k].forEach(([field])=>{if(r[field]!=null&&typeof r[field]!=='string')throw new Error('Invalid Astra field '+field+'.');});
+      });
+    }
+  });
+  if(!v.package||typeof v.package!=='object'||Array.isArray(v.package))throw new Error('Invalid Astra contract package.');
+  ASTRA_FIELDS.package.forEach(([field])=>{if(v.package[field]!=null&&typeof v.package[field]!=='string')throw new Error('Invalid Astra contract field.');});
+  return true;
+}
+function astraValidateRecords(records){(records||[]).forEach(r=>astraValidate(r&&r.workspace&&r.workspace.astra));}
+function astraSnapshot(){return astraClone(ASTRA);}
+function astraHasData(a){return a.guidanceVersion!==ASTRA_GUIDANCE.id||Object.values(a.package).some(v=>String(v||'').trim())||Object.keys(ASTRA_LABELS).some(k=>a[k].length);}
+function astraLoad(value){astraValidate(value);ASTRA=value?astraClone(value):astraBlank();if(window.DD254_RECOUNTING)return;if(document.getElementById('astraReview')?.open)astraRender();else astraRefresh();}
+function astraRow(kind,id,data){data=data||ASTRA;return kind==='package'?data.package:(data[kind]||[]).find(r=>r.id===id);}
+function astraAudit(action,id,before,after){ASTRA.history.push({at:new Date().toISOString(),action:action,id:id,before:astraClone(before==null?null:before),after:astraClone(after==null?null:after)});}
+function astraTouch(){if(typeof dashTouch==='function')dashTouch();}
+function astraAdd(kind){
+  if(window.DD254_READONLY||!ASTRA_FIELDS[kind]||kind==='package')return;
+  const id=ASTRA_PREFIX[kind]+'-'+audUid(); const row={id:id,createdAt:new Date().toISOString(),include:true};
+  ASTRA_FIELDS[kind].forEach(([k,label,type])=>{row[k]=Array.isArray(type)?type[0]:'';});
+  ASTRA[kind].push(row);astraAudit('Added '+kind,id,null,row);astraTouch();astraRender();
+  const el=document.getElementById('astra-row-'+id);if(el){el.open=true;el.querySelector('input,textarea,select')?.focus();}return id;
+}
+function astraStateError(kind,row,value){
+  if(kind==='issues'){
+    let fields=value==='Sent recorded'?['reviewer','requested']:value==='Response recorded'?['authority','responseDate','reference']:value==='Resolution recorded'?['authority','responseDate','reference','resolution','scope']:[];
+    if(fields.some(k=>!String(row[k]||'').trim()))return 'Record '+fields.join(', ')+' before using '+value+'.';
+  }
+  if(kind==='closeout'&&value==='Completed'&&['authority','evidence','completed'].some(k=>!String(row[k]||'').trim()))return 'Record the authority, evidence and completion date first.';
+  return '';
+}
+function astraSet(kind,id,key,value,commit,previous){
+  if(window.DD254_READONLY)return false;
+  const row=astraRow(kind,id);if(!row)return false;
+  if(key==='status'){
+    const error=astraStateError(kind,row,value);if(error){alert(error);astraRender();return false;}
+  }
+  const old=previous===undefined?row[key]:previous;row[key]=value;
+  if(commit&&old!==value){
+    astraAudit(kind+' '+key,id,old,value);
+    if(key==='status'&&kind==='issues'&&value==='Resolution recorded')row.basisKey=astraBasis(row,ASTRA,collectWorkspace());
+    if(key==='status'&&kind==='closeout'&&value==='Completed')row.basisKey=astraBasis(row,ASTRA,collectWorkspace());
+  }
+  if(key==='title'){const el=document.querySelector('#astra-row-'+id+' > summary');if(el)el.textContent=astraShort(id)+' - '+(value||'Untitled');}
+  astraTouch();astraRefresh();return true;
+}
+async function astraRemove(kind,id){
+  if(window.DD254_READONLY)return;
+  const row=astraRow(kind,id);if(!row||!(await uiConfirm('Remove '+id+'? A copy remains in local review history; references to it will be flagged.')))return;
+  astraAudit('Removed '+kind,id,row,null);ASTRA[kind]=ASTRA[kind].filter(r=>r.id!==id);astraTouch();astraRender();
+}
+function astraCost(r){
+  const keys=['people','hours','rate','events'];
+  if(keys.some(k=>String(r[k]??'').trim()===''))return {value:null,text:'Unknown - complete units, hours, rate and events.'};
+  const n=keys.map(k=>Number(r[k]));
+  if(n.some(x=>!Number.isFinite(x)||x<0))return {value:null,text:'Invalid estimate - use finite, nonnegative values.'};
+  const value=n.reduce((a,b)=>a*b,1);
+  if(!Number.isFinite(value))return {value:null,text:'Estimate exceeds the supported numeric range.'};
+  if(value===0&&!String(r.costBasis||'').trim())return {value:null,text:'A zero estimate needs a written basis.'};
+  return {value:value,text:value.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})+' '+(r.currency||'(currency not recorded)')+' - estimated, not a contract entitlement'};
+}
+function astraIdentity(ws){
+  ws=ws||{};const t=ws.texts||{},r=ws.radios||{};
+  return {contract:t.i2b||t.i2a||t.i2c||'',prime:t.i2a||'',revision:r.spec==='3b'?String(t.i3b_rev||''):r.spec==='3c'?'Final':'Original',date:r.spec==='3b'?t.i3b_date:r.spec==='3c'?t.i3c_date:t.i3a_date};
+}
+function astraBasis(row,a,ws){
+  const items=String(row.items||'').split(',').map(s=>s.trim().replace(/^Item\s*/i,'')).filter(Boolean);
+  const form={identity:astraIdentity(ws)}, getItem=id=>{
+    if(id==='item13')return '13';if(id==='sapFlag')return '10f';if(id==='fcl1a')return '1a';if(id==='sfg1b')return '1b';
+    const m=id.match(/^(?:dist|[ic])(\d+[a-z]?)/);return m?m[1]:'';
+  };
+  ['texts','checks','selects'].forEach(group=>{Object.keys(ws[group]||{}).sort().forEach(id=>{
+    const item=getItem(id);if(item&&(!items.length||items.some(x=>item===x||item.startsWith(x))))form[id]=ws[group][id];
+  });});
+  if(!items.length||items.some(x=>x.startsWith('8')))form.perf=ws.perf||[];
+  form.radios=ws.radios||{};
+  const refs={};
+  [['sourceA','sources'],['sourceB','sources'],['sourceId','sources'],['documentId','documents'],['requirementId','requirements']].forEach(([field,kind])=>{
+    if(row[field]){const r=astraRow(kind,row[field],a);refs[field]=r?astraClone(r):'MISSING '+row[field];if(r&&kind==='requirements'){refs.requirementSource=astraRow('sources',r.sourceId,a)||null;refs.requirementDocument=astraRow('documents',r.documentId,a)||null;}}
+  });
+  const decision={};['question','proposal','authority','responseDate','reference','resolution','scope','evidence','completed','title','task','version','citedVersion','location','recipient','method','owner','inspectionOwner','criteria','frequency','reviewer','reviewNote'].forEach(k=>decision[k]=row[k]||'');
+  return JSON.stringify({form:form,refs:refs,decision:decision});
+}
+function astraImpact(row,a,ws){
+  if(!row.reviewBasis)return [];
+  try{
+    const prior=JSON.parse(row.reviewBasis),current=JSON.parse(astraBasis(row,a,ws)),changes=[];
+    const different=(x,y)=>JSON.stringify(x)!==JSON.stringify(y);
+    Object.keys({...prior.form,...current.form}).forEach(k=>{if(different(prior.form[k],current.form[k]))changes.push(k==='identity'?'contract / revision identity':k==='perf'?'Item 8 performance sites':k==='radios'?'form selections':'form field '+k);});
+    Object.keys({...prior.refs,...current.refs}).forEach(k=>{if(different(prior.refs[k],current.refs[k]))changes.push('linked '+({sourceId:'source',documentId:'document',requirementId:'requirement',requirementSource:'requirement source',requirementDocument:'requirement document'}[k]||k));});
+    if(different(prior.decision,current.decision))changes.push('record content / review basis');return changes;
+  }catch(e){return ['unreadable previous review basis'];}
+}
+function astraRecordReview(kind,id){
+  if(window.DD254_READONLY)return false;
+  const row=astraRow(kind,id);if(!row||!['documents','requirements'].includes(kind))return false;
+  if(!String(row.reviewer||'').trim()||!String(row.reviewNote||'').trim()){alert('Record the impact reviewer and review basis first.');return false;}
+  const prior={basis:row.reviewBasis||null,at:row.reviewedAt||null};
+  row.reviewBasis=astraBasis(row,ASTRA,collectWorkspace());row.reviewedAt=new Date().toISOString();
+  astraAudit('Impact review recorded',id,prior,{basis:row.reviewBasis,at:row.reviewedAt});astraTouch();astraRefresh();return true;
+}
+function astraFindings(a,ws,lookup){
+  if(!a)return [];astraValidate(a);const out=[],add=s=>out.push(s),p=a.package||{},id=astraIdentity(ws);
+  lookup=lookup||a;
+  if(Object.values(p).some(v=>String(v||'').trim())){
+    if(!p.contract||!p.attachment||!p.revision||!p.incorporation)add('Contract package: record the contract, attachment identifier, DD254 revision and incorporation reference.');
+    if(p.contract&&p.contract.trim()!==id.contract.trim())add('Contract package number '+p.contract+' differs from working form '+(id.contract||'(blank)')+'.');
+    if(p.revision&&p.revision.trim().toLowerCase()!==id.revision.trim().toLowerCase())add('Attached DD254 revision '+p.revision+' differs from working revision '+(id.revision||'(blank)')+'.');
+    if(p.date&&id.date&&p.date.replace(/-/g,'')!==id.date.replace(/-/g,''))add('Attached DD254 date differs from the working form date.');
+  }
+  if(a.guidanceVersion!==ASTRA_GUIDANCE.id)add('This record used guidance '+a.guidanceVersion+'; current guidance '+ASTRA_GUIDANCE.id+' needs review. Prior recorded sources remain unchanged.');
+  a.sources.forEach(r=>{if(!r.edition||!r.locator||!r.scope)add(r.id+': source edition, locator or applicability is not recorded.');});
+  a.documents.forEach(r=>{
+    const impact=astraImpact(r,lookup,ws);if(impact.length)add(r.id+': review delivery / attachment impact after changes to '+impact.join(', ')+'.');
+    if(!r.version||!r.citedVersion)add(r.id+': available or cited guidance version is not recorded.');
+    else if(r.version.trim()!==r.citedVersion.trim())add(r.id+': available version '+r.version+' differs from cited version '+r.citedVersion+'.');
+    if(r.ackDate&&(!r.ackRef||!r.recipient))add(r.id+': acknowledgment needs a recipient and evidence reference.');
+    if(r.sentDate&&(!r.recipient||!r.method))add(r.id+': delivery needs a recipient and channel.');
+    if(r.supersedes&&!astraRow('documents',r.supersedes,lookup))add(r.id+': superseded document reference is missing.');
+  });
+  a.requirements.forEach(r=>{
+    const impact=astraImpact(r,lookup,ws);if(impact.length)add(r.id+': review requirement / inspection impact after changes to '+impact.join(', ')+'.');
+    if(!r.task||!r.sourceId||!r.owner)add(r.id+': record the task, source and implementation owner.');
+    if(!r.inspectionOwner)add(r.id+': inspection organization / scope is not recorded.');
+    if(r.sourceId&&!astraRow('sources',r.sourceId,lookup))add(r.id+': linked source is missing.');
+    if(r.documentId&&!astraRow('documents',r.documentId,lookup))add(r.id+': supporting document is missing.');
+    if(r.extra==='Yes'&&(ws.radios||{}).i14!=='yes')add(r.id+': recorded additional requirement needs Item 14 review. Item 15 is a separate scope decision.');
+    if(astraCost(r).value===null)add(r.id+': '+astraCost(r).text);
+    if(r.insertedText&&!String((ws.texts||{}).item13||'').includes(r.insertedText))add(r.id+': previously inserted Item 13 text was edited or removed; reconcile before replacing it.');
+  });
+  a.issues.forEach(r=>{
+    if(r.status==='Resolution recorded'){
+      if(astraStateError('issues',r,r.status))add(r.id+': incomplete recorded resolution.');
+      if(!r.basisKey||r.basisKey!==astraBasis(r,lookup,ws))add(r.id+': form, linked evidence or decision changed; review the recorded resolution.');
+    }else if(r.status!=='Superseded')add(r.id+': '+(r.status||'Draft')+' - '+(r.title||'unnamed question')+'; reviewer '+(r.reviewer||'not assigned')+'.');
+  });
+  const today=new Date().toISOString().slice(0,10);
+  a.closeout.forEach(r=>{
+    if(r.status==='Completed'){
+      if(astraStateError('closeout',r,r.status)||!r.basisKey||r.basisKey!==astraBasis(r,lookup,ws))add(r.id+': completed action or its evidence needs review.');
+    }else if(r.due&&r.due<today)add(r.id+': overdue since '+r.due+' - '+(r.title||'closeout action')+'.');
+  });
+  return out;
+}
+function astraResetRecord(rec){
+  const a=rec.workspace&&rec.workspace.astra;if(!a)return;astraValidate(a);
+  a.history.push({at:new Date().toISOString(),action:'Workflow reset for new scope',before:{package:astraClone(a.package),documents:astraClone(a.documents),issues:astraClone(a.issues),closeout:astraClone(a.closeout)}});
+  a.package.incorporation='';
+  a.documents.forEach(r=>{r.sentDate='';r.ackDate='';r.ackRef='';});
+  a.issues.forEach(r=>{if(r.status!=='Superseded')r.status='Draft';delete r.basisKey;r.responseDate='';r.reference='';r.authority='';r.resolution='';});
+  a.closeout.forEach(r=>{r.status='Pending';r.completed='';delete r.basisKey;});
+}
+function astraSafeURL(v){try{const u=new URL(v);return ['http:','https:'].includes(u.protocol)?u.href:'';}catch(e){return '';}}
+function astraField(kind,row,field){
+  const [key,label,type]=field,value=String(row[key]??''),id=row.id||'package';let control;
+  const at=' data-kind="'+kind+'" data-row="'+id+'" data-field="'+key+'"';
+  let options=Array.isArray(type)?type.map(s=>[s,s]):ASTRA_LABELS[type]?(ASTRA[type]||[]).filter(x=>x.id!==id).map(x=>[x.id,astraShort(x.id)+' - '+(x.title||'Untitled')]):null;
+  if(type==='files')options=VLOG.files.map(f=>[f.sha256||f.name,f.name+' ['+(f.sha256||'no hash').slice(0,10)+']']);
+  if(options){if(!Array.isArray(type))options.unshift(['','Not recorded']);if(value&&!options.some(x=>x[0]===value))options.push([value,value+' (unavailable)']);control='<select'+at+'>'+options.map(([v,l])=>'<option value="'+htmlEsc(v)+'"'+(v===value?' selected':'')+'>'+htmlEsc(l)+'</option>').join('')+'</select>';}
+  else if(type==='area')control='<textarea'+at+' rows="2">'+htmlEsc(value)+'</textarea>';
+  else control='<input'+at+' type="'+(type==='date'?'date':type==='number'?'number':'text')+'"'+(type==='number'?' min="0" step="any"':'')+' value="'+htmlEsc(value)+'">';
+  return '<label>'+htmlEsc(label)+control+'</label>';
+}
+function astraRowHTML(kind,row){
+  const cost=kind==='requirements'?'<p class="astra-cost" data-cost="'+row.id+'">'+htmlEsc(astraCost(row).text)+'</p>':'';
+  const action=(kind==='requirements'?'<button type="button" class="pbtn pbtn-secondary" data-action="insert" data-kind="'+kind+'" data-row="'+row.id+'">Review text for Item 13</button>':'')+(['documents','requirements'].includes(kind)?'<button type="button" class="pbtn pbtn-secondary" data-action="review" data-kind="'+kind+'" data-row="'+row.id+'">Record impact review</button>':'');
+  return '<details class="astra-row" id="astra-row-'+row.id+'"><summary>'+htmlEsc(astraShort(row.id)+' - '+(row.title||'Untitled'))+'</summary><div class="astra-grid">'+ASTRA_FIELDS[kind].map(f=>astraField(kind,row,f)).join('')+'</div>'+cost+'<div class="astra-actions"><label><input type="checkbox" data-kind="'+kind+'" data-row="'+row.id+'" data-field="include"'+(row.include!==false?' checked':'')+'> Include in separate review report</label>'+action+'<button type="button" class="pbtn pbtn-tertiary" data-action="remove" data-kind="'+kind+'" data-row="'+row.id+'">Remove record</button></div></details>';
+}
+function astraRender(){
+  const host=document.getElementById('astraPanel');if(!host)return;
+  const opened=new Set(Array.from(host.querySelectorAll('details[open]')).map(e=>e.id));
+  host.innerHTML='<h2>Supporting review records <span class="astra-edition">v1.12.0</span></h2><p>Optional working evidence saved in this browser with the draft. These review findings do not clear approval holds. Exports contain only this draft\'s selected records; no attachments are embedded.</p>'
+    +'<div class="astra-actions"><button type="button" class="pbtn pbtn-primary" data-action="pdf">Export selected review PDF</button><button type="button" class="pbtn pbtn-secondary" data-action="refresh">Refresh review</button></div><div id="astraFindings" aria-live="polite"></div>'
+    +'<details id="astra-policy"><summary>Guidance and applicability</summary><p>'+htmlEsc(ASTRA_GUIDANCE.general)+'</p><p>'+htmlEsc(ASTRA_GUIDANCE.sap)+'</p><p>Reviewed '+ASTRA_GUIDANCE.reviewed+'. Recorded source version: '+htmlEsc(ASTRA.guidanceVersion)+'.</p>'+ASTRA_GUIDANCE.sources.map(([l,u])=>'<p><a href="'+u+'" target="_blank" rel="noopener noreferrer">'+htmlEsc(l)+'</a></p>').join('')+'<p>Record the executed contract clause and deviation basis below. A newer source does not amend an existing contract. Contract scope or unresolved placement questions require the responsible Government office.</p></details>'
+    +'<details id="astra-package"><summary>Contract attachment reconciliation</summary><div class="astra-grid">'+ASTRA_FIELDS.package.map(f=>astraField('package',ASTRA.package,f)).join('')+'</div></details>'
+    +Object.keys(ASTRA_LABELS).map(kind=>'<details id="astra-'+kind+'"><summary>'+ASTRA_LABELS[kind]+' ('+ASTRA[kind].length+')</summary><button type="button" class="pbtn pbtn-secondary" data-action="add" data-kind="'+kind+'">Add '+({sources:'source',documents:'document',requirements:'requirement',issues:'question',closeout:'action'}[kind])+'</button>'+ASTRA[kind].map(r=>astraRowHTML(kind,r)).join('')+'</details>').join('')
+    +'<details id="astra-history"><summary>Local review history ('+ASTRA.history.length+')</summary><p>User-recorded history is not authenticated Government approval or immutable evidence. Full Backup retains the complete history.</p>'+ASTRA.history.slice(-30).reverse().map(r=>'<p>'+htmlEsc(r.at+' - '+r.action+' '+(r.id||''))+'</p>').join('')+'</details>';
+  opened.forEach(id=>{const el=document.getElementById(id);if(el)el.open=true;});astraRefresh();
+}
+function astraRefresh(){
+  const host=document.getElementById('astraFindings');if(!host)return;
+  const findings=astraHasData(ASTRA)?astraFindings(ASTRA,collectWorkspace()):[];
+  const summary=document.querySelector('#astraReview > summary');if(summary)summary.textContent='Optional supporting records ('+findings.length+' review items'+(findings.some(x=>x.includes('overdue since'))?', overdue actions':'')+')';
+  host.innerHTML='<strong>Review recommendations ('+findings.length+')</strong>'+(findings.length?'<ul>'+findings.map(s=>'<li>'+htmlEsc(astraDisplay(s,ASTRA))+'</li>').join('')+'</ul>':'<p>No inconsistency detected in the recorded review data. Missing optional records are not evidence of approval or compliance.</p>');
+  document.querySelectorAll('[data-cost]').forEach(el=>{const r=astraRow('requirements',el.dataset.cost);if(r)el.textContent=astraCost(r).text;});
+}
+function astraRequirementText(row){
+  const src=astraRow('sources',row.sourceId),doc=astraRow('documents',row.documentId);
+  return ['Requirement: '+(row.title||row.id),'Task: '+(row.task||''),'Authority: '+(src?[src.title,src.edition,src.locator].filter(Boolean).join('; '):'NOT RECORDED'),row.contractRef?'Contract reference: '+row.contractRef:'',row.scope?'Applicability / site: '+row.scope:'',row.owner?'Implementation owner: '+row.owner:'',doc?'Supporting guidance: '+doc.title+'; version '+doc.version:'',row.inspectionOwner?'Inspection scope / organization: '+row.inspectionOwner:'',row.criteria?'Review criteria: '+row.criteria:''].filter(Boolean).join('\n');
+}
+async function astraInsert(id){
+  const row=astraRow('requirements',id);if(!row||window.DD254_READONLY)return false;
+  if(!row.task||!row.sourceId||!astraRow('sources',row.sourceId)){alert('Record the task and an available authority source before preparing Item 13 text.');return false;}
+  const text=astraRequirementText(row);
+  if(!(await uiConfirm('Review this proposed Item 13 text. Cost assumptions and internal decision notes are excluded.\n\n'+text+'\n\nInsert this wording?')))return false;
+  const box=document.getElementById('item13'),old=box.value||'';
+  if(row.insertedText){
+    const hits=old.split(row.insertedText).length-1;
+    if(hits!==1){alert('The previous inserted wording was changed, removed or duplicated. Reconcile it manually; no Item 13 text was overwritten.');return false;}
+    box.value=old.replace(row.insertedText,text);
+  }else box.value=old+(old.trim()?'\n\n':'')+text;
+  astraAudit('Inserted reviewed Item 13 wording',id,row.insertedText||null,text);row.insertedText=text;
+  box.dispatchEvent(new Event('input',{bubbles:true}));if(typeof run==='function')run();astraTouch();astraRefresh();return true;
+}
+function astraReportLines(a,ws){
+  const id=astraIdentity(ws);
+  const lines=['CODEX ASTRA REVIEW RECORD','Contract: '+(id.contract||'Not recorded')+' | Revision: '+id.revision+' | Date: '+(id.date||'Not recorded'),'User-recorded working evidence. Not the official DD254 or authenticated approval.','Generated '+new Date().toISOString(),'Guidance version: '+a.guidanceVersion,'CONTRACT PACKAGE'];
+  ASTRA_FIELDS.package.forEach(([k,l])=>{if(a.package[k])lines.push(l+': '+a.package[k]);});
+  const selected=astraClone(a);Object.keys(ASTRA_LABELS).forEach(kind=>{selected[kind]=selected[kind].filter(r=>r.include!==false);});
+  lines.push('REVIEW RECOMMENDATIONS FOR SELECTED RECORDS');lines.push(...astraFindings(selected,ws,a));
+  Object.keys(ASTRA_LABELS).forEach(kind=>{
+    if(!selected[kind].length)return;
+    lines.push(ASTRA_LABELS[kind].toUpperCase());
+    selected[kind].forEach(r=>{lines.push(r.id+' - '+(r.title||'Untitled'));ASTRA_FIELDS[kind].forEach(([k,l,type])=>{if(!r[k])return;let value=r[k];if(ASTRA_LABELS[type]){const ref=astraRow(type,value,selected);value=ref?astraShort(ref.id)+' - '+(ref.title||'Untitled'):astraShort(value)+' (reference not included in this report)';}lines.push(l+': '+value);});if(r.reviewedAt)lines.push('Impact review recorded: '+r.reviewedAt);if(kind==='requirements')lines.push('Estimate: '+astraCost(r).text);});
+  });
+  return lines.map(s=>astraDisplay(s,selected));
+}
+function astraReportHTML(){return '<section style="margin-top:20px;font:12px/1.5 Arial;color:#172d42"><h2>Codex Astra review evidence</h2><p>Selected records for this draft only. Referenced files are not embedded. Internal history is retained in Full Backup.</p>'+astraReportLines(ASTRA,collectWorkspace()).map(s=>'<p style="white-space:pre-wrap">'+htmlEsc(s)+'</p>').join('')+'</section>';}
+async function astraExportPDF(){
+  try{
+    const ws=collectWorkspace(),a=astraSnapshot(),lines=astraReportLines(a,ws);
+    const {PDFDocument,StandardFonts,rgb}=PDFLib,doc=await PDFDocument.create();
+    const font=await doc.embedFont(StandardFonts.Helvetica),bold=await doc.embedFont(StandardFonts.HelveticaBold);let page,y;
+    const marking=(typeof dashClsOf==='function'&&dashClsOf({workspace:ws})==='CUI')||ws.selects.clsSel==='CUI'?'CUI':'UNCLASSIFIED';
+    function next(){page=doc.addPage([612,792]);y=736;page.drawText(marking,{x:46,y:765,size:9,font:bold});page.drawText(marking+' | Codex Astra v1.12.0 | '+doc.getPageCount(),{x:46,y:22,size:8,font:font});}
+    next();
+    lines.forEach((s,i)=>{
+      const clean=sanitizePdfText(String(s)).replace(/\r/g,'');
+      clean.split('\n').forEach(line=>{
+        let current='';for(const char of line){if(font.widthOfTextAtSize(current+char,10)>518){if(y<48)next();page.drawText(current,{x:46,y:y,size:10,font:font});y-=14;current='';}current+=char;}
+        if(y<48)next();page.drawText(current,{x:46,y:y,size:10,font:i===0?bold:font,color:rgb(.08,.13,.2)});y-=14;
+      });y-=4;
+    });
+    doc.setTitle('DD254 Codex Astra review record');doc.setSubject('Selected local review evidence');
+    const blob=new Blob([await doc.save()],{type:'application/pdf'}),url=URL.createObjectURL(blob),link=document.createElement('a');
+    link.href=url;link.download='DD254_Astra_Review_'+dd254FileSafe(astraIdentity(ws).contract||'Draft','_')+'.pdf';document.body.appendChild(link);link.click();setTimeout(()=>{link.remove();URL.revokeObjectURL(url);},1200);
+    if(typeof audLog==='function')audLog(DASH.current||'','','astra-review-export','Selected records; no automatic sending or approval');return true;
+  }catch(e){alert('Review PDF could not be created: '+e.message);return false;}
+}
+async function astraPreflight(records){
+  const lines=[];(records||[]).forEach(r=>{astraFindings(r.workspace&&r.workspace.astra,r.workspace||{}).forEach(s=>lines.push((r.title||r.id)+': '+s));});
+  if(!lines.length)return true;
+  return uiConfirm('Astra review recommendations (existing approval holds remain in force):\n\n'+lines.join('\n')+'\n\nContinue issuance with these review items? Cancel to reconcile them.');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  astraRender();const host=document.getElementById('astraPanel');
+  document.getElementById('astraReview').addEventListener('toggle',function(){if(this.open)astraRender();});
+  host.addEventListener('focusin',e=>{if(e.target.dataset.field)e.target.dataset.previous=e.target.type==='checkbox'?String(e.target.checked):e.target.value;});
+  host.addEventListener('input',e=>{const x=e.target;if(!x.dataset.field||x.tagName==='SELECT'||x.type==='checkbox')return;astraSet(x.dataset.kind,x.dataset.row,x.dataset.field,x.value,false);});
+  host.addEventListener('change',e=>{const x=e.target;if(!x.dataset.field)return;astraSet(x.dataset.kind,x.dataset.row,x.dataset.field,x.type==='checkbox'?x.checked:x.value,true,x.type==='checkbox'?x.dataset.previous==='true':x.dataset.previous);});
+  host.addEventListener('click',e=>{const x=e.target.closest('[data-action]');if(!x)return;const k=x.dataset.kind,id=x.dataset.row;
+    if(x.dataset.action==='add'){const id=astraAdd(k);const group=document.getElementById('astra-'+k);if(group)group.open=true;}
+    if(x.dataset.action==='remove')astraRemove(k,id);if(x.dataset.action==='insert')astraInsert(id);if(x.dataset.action==='review')astraRecordReview(k,id);if(x.dataset.action==='pdf')astraExportPDF();if(x.dataset.action==='refresh')astraRender();
+  });
+  document.addEventListener('change',e=>{if(!host.contains(e.target))astraRefresh();});
+  setInterval(()=>{if(!document.hidden&&document.getElementById('astraReview').open)astraRefresh();},60000);
+});
+
+</script>
+
+<script>
+/* Drafting actions reuse the form and its existing validators/templates.
+   They add no approval decisions or parallel working records. */
+const COMPLETION_INLINE=new Map();
+function completionTarget(message){
+  const text=String(message),m=text.match(/Item\s+(\d+[a-z]?)/i);if(!m)return null;
+  let key=m[1].toLowerCase();
+  if(/Item 13 must contain/i.test(text))key='13';
+  if(/Item 5 must be set/i.test(text))key='5';
+  if(['14','15'].includes(key)&&!/must be described/i.test(text))return document.querySelector('input[name="i'+key+'"]');
+  const map={'1a':'fcl1a','1b':'sfg1b','3a':'i3a_date','3b':/number/i.test(text)?'i3b_rev':'i3b_date','3c':'i3c_date','9':'i9','13':'item13','14':'i14text','15':'i15text'};
+  if(/FSO.*e-mail/i.test(text)&&/^[67]/.test(key))return document.getElementById('i'+key[0]+'fsoEmail');
+  let el=document.getElementById(map[key]||'i'+key);
+  if(!el&&key.startsWith('8')){const blocks=[...document.querySelectorAll('#perfBlocks > [id^="perf-"]')],n=text.match(/(?:location|block)\s*#?\s*(\d+)/i);const b=blocks[n?Math.max(0,+n[1]-1):0];if(b)el=perfFields(b)[key==='8b'?'cage':key==='8c'?'cso':'loc'];else el=document.getElementById('completionReuse');}
+  if(!el){const radio={2:'ct',3:'spec',4:'follow',5:'fin',14:'i14',15:'i15'}[key];if(radio)el=document.querySelector('input[name="'+radio+'"]');}
+  if(!el&&/^1[01]/.test(key))el=document.getElementById('cb'+key)||document.getElementById('step'+(key.startsWith('10')?3:4));
+  if(!el&&key.startsWith('18'))el=document.getElementById('dist'+key)||document.getElementById('step7');
+  return el;
+}
+function completionGo(target){
+  const el=typeof target==='string'?document.getElementById(target):target;if(!el)return false;
+  showFormView();const step=el.closest('.wizard-step');if(step)showStep(+step.id.replace('step',''));
+  for(let p=el.parentElement;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;
+  const focus=el.closest('.cbi')||el;
+  if(!focus.matches('input,textarea,select,button,[tabindex]'))focus.tabIndex=-1;
+  try{focus.focus({preventScroll:true});focus.scrollIntoView({block:'center',behavior:'smooth'});}catch(e){}
+  focus.classList.add('completion-target');setTimeout(()=>focus.classList.remove('completion-target'),1600);return true;
+}
+function completionReviewButton(message){
+  const target=completionTarget(message);if(!target)return null;
+  const b=document.createElement('button');b.type='button';b.className='dash-btn completion-jump';b.textContent='Go to field';b.addEventListener('click',()=>completionGo(target));return b;
+}
+function completionReuse(source){
+  if(window.DD254_READONLY||!['6','7'].includes(String(source)))return false;
+  const get=k=>String(document.getElementById('i'+source+k)?.value||'');
+  const values={loc:get('a'),cage:get('b'),cso:get('c'),email:get('fsoEmail'),cma:source==='7'?get('cma'):''};
+  if(!values.loc.trim()){completionGo('i'+source+'a');return false;}
+  const blocks=[...document.querySelectorAll('#perfBlocks > [id^="perf-"]')];
+  const same=blocks.find(b=>{const p=perfVals(b);return p.loc.trim()===values.loc.trim()&&p.cage.trim().toUpperCase()===values.cage.trim().toUpperCase();});
+  if(same){completionGo(perfFields(same).loc);return false;}
+  let block=blocks.find(b=>Object.values(perfVals(b)).every(v=>!String(v).trim()));
+  if(!block){addPerf();block=[...document.querySelectorAll('#perfBlocks > [id^="perf-"]')].pop();}
+  const fields=perfFields(block);Object.keys(values).forEach(k=>{if(fields[k])fields[k].value=values[k];});
+  cmaSync();run();dashTouch();completionGo(fields.loc);
+  if(typeof audLog==='function')audLog(DASH.current||'','','reuse-performance-site','Copied current Item '+source+' details to Item 8; no verification inferred');return true;
+}
+function completionTemplates(){
+  return B13_ORDER.filter(k=>document.getElementById('c'+k)?.checked&&!String(b13SectionGet(k)||'').trim()&&TPL_DEFAULTS[k])
+    .map(key=>({key,text:String(getTplText(key)||'')})).filter(x=>x.text.trim());
+}
+async function completionInsertSelected(){
+  if(window.DD254_READONLY)return false;
+  const pending=completionTemplates();if(!pending.length)return false;
+  const original=b13Text();
+  const preview='Review draft language for selected Items '+pending.map(x=>x.key).join(', ')+'. Existing Item 13 sections will be preserved.\n\nThese are existing templates, not confirmed contract authority. Replace every unfinished prompt and verify applicability before use.\n\n'+pending.map(x=>x.text).join('\n\n--------------------\n\n')+'\n\nInsert these missing sections?';
+  if(!(await uiConfirm(preview)))return false;
+  const current=completionTemplates();
+  if(window.DD254_READONLY||b13Text()!==original||JSON.stringify(current)!==JSON.stringify(pending)){alert('The form or template changed during review. Preview the current language again; nothing was inserted.');return false;}
+  pending.forEach(x=>b13SectionSet(x.key,x.text,true));
+  run();dashTouch();completionGo('item13');
+  if(typeof audLog==='function')audLog(DASH.current||'','','insert-selected-language','Reviewed missing sections: '+pending.map(x=>x.key).join(', '));return true;
+}
+function completionPrompts(value){
+  const text=value===undefined?b13Text():String(value),re=/\[(?:INSERT|ENTER|SPECIFY|DESCRIBE|LIST|IDENTIFY|NAME|ADDRESS|CONTRACT|PROGRAM|POC|APPLICABLE)\b[^\]\r\n]{0,250}\]/gi;
+  return [...text.matchAll(re)].map(m=>({text:m[0],start:m.index,end:m.index+m[0].length}));
+}
+let COMPLETION_PROMPT_LAST={text:null,end:0};
+function completionNextPrompt(){
+  const box=b13El();completionGo(box);const text=box.textContent,prompts=completionPrompts(text);if(!prompts.length)return false;
+  const end=COMPLETION_PROMPT_LAST.text===text?COMPLETION_PROMPT_LAST.end:0,p=prompts.find(p=>p.start>=end)||prompts[0];
+  const walker=document.createTreeWalker(box,NodeFilter.SHOW_TEXT),range=document.createRange();let node,offset=0,started=false;
+  while((node=walker.nextNode())){const next=offset+node.textContent.length;if(!started&&p.start<next){range.setStart(node,p.start-offset);started=true;}if(started&&p.end<=next){range.setEnd(node,p.end-offset);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);COMPLETION_PROMPT_LAST={text,end:p.end};return true;}offset=next;}
+  return false;
+}
+function completionRender(){
+  if(window.DD254_RECOUNTING)return;
+  const desired=new Map();
+  (window.DD254_ERRORS||[]).forEach(message=>{const target=completionTarget(message);if(!target||!target.matches('input:not([type=radio]):not([type=checkbox]),select,textarea,[contenteditable]'))return;if(!desired.has(target))desired.set(target,[]);desired.get(target).push(message);});
+  COMPLETION_INLINE.forEach((node,el)=>{if(!desired.has(el)||!el.isConnected){node.remove();COMPLETION_INLINE.delete(el);}});
+  desired.forEach((messages,el)=>{let node=COMPLETION_INLINE.get(el);if(!node||!node.isConnected){node=document.createElement('div');node.className='completion-inline';node.setAttribute('role','note');el.after(node);COMPLETION_INLINE.set(el,node);}const text=messages.join('\n');if(node.textContent!==text)node.textContent=text;});
+  const next=document.getElementById('completionNext');if(next){const count=(window.DD254_ERRORS||[]).filter(x=>completionTarget(x)).length;next.textContent=count?'Go to next incomplete field ('+count+' findings)':'No incomplete fields detected';next.disabled=!count;}
+  ['6','7'].forEach(k=>{const b=document.getElementById('completionReuse'+k);if(b)b.disabled=!String(document.getElementById('i'+k+'a')?.value||'').trim();});
+  const insert=document.getElementById('completionInsert');if(insert){const p=completionTemplates();insert.disabled=!p.length;insert.textContent=p.length?'Review language for '+p.length+' missing selected section'+(p.length===1?'':'s'):'Selected sections already have text';}
+  const prompts=completionPrompts(),hint=document.getElementById('completionPromptHint'),button=document.getElementById('completionPrompt');
+  if(hint)hint.textContent=prompts.length?prompts.length+' unfinished template prompt'+(prompts.length===1?'':'s')+' in Item 13. Complete contract-specific details and authorities.':'';
+  if(button)button.hidden=!prompts.length;
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  function button(id,text,fn){const b=document.createElement('button');b.type='button';b.id=id;b.className='bpbtn';b.textContent=text;b.addEventListener('click',fn);return b;}
+  const progress=document.getElementById('wpDots');if(progress)progress.after(button('completionNext','Go to next incomplete field',()=>{const next=(window.DD254_ERRORS||[]).find(x=>completionTarget(x));if(next)completionGo(completionTarget(next));}));
+  const reuse=document.createElement('div');reuse.id='completionReuse';reuse.className='completion-tools';reuse.append('If classified performance is at a location already entered: ',button('completionReuse6','Use Item 6 contractor as a performance site',()=>completionReuse('6')),button('completionReuse7','Use Item 7 subcontractor as a performance site',()=>completionReuse('7')));
+  document.getElementById('perfBlocks').before(reuse);
+  const compose=document.createElement('div');compose.id='completionCompose';compose.className='completion-tools';
+  compose.append(button('completionInsert','Review missing selected language',completionInsertSelected));
+  const note=document.createElement('div');note.textContent='Uses existing templates for selected Items 10/11. Existing sections are preserved. Review contract authority and replace unfinished prompts.';compose.append(note);
+  const hint=document.createElement('div');hint.id='completionPromptHint';compose.append(hint,button('completionPrompt','Find next unfinished prompt',completionNextPrompt));
+  b13El().before(compose);
+  const records=document.getElementById('astraReview'),log=document.getElementById('vlogBox');if(records&&log){records.open=false;log.after(records);}
+  completionRender();
+});
+
+</script>
 <script>
 /* ── DEMONSTRATION BUILD ─────────────────────────────────────────
    Identical to the shipped tool except for this block. Every template library
