@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive - Codex Astra v1.13.0</title>
+<title>DD254 Interactive - Codex Astra v1.14.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -480,16 +480,6 @@ body.ws-dragging{user-select:none;}
 @media print{#wsDrag{display:none!important;}}
 </style>
 <style>
-#astraPanel{margin:12px 0;padding:16px;border:1px solid #b9c9d8;border-radius:8px;background:var(--bg,#fff);color:var(--text,#1d3349);font:13px/1.5 Arial,sans-serif}
-#astraPanel h2{font-size:17px;margin:0 0 6px}.astra-edition{font-size:11px;font-weight:normal}
-#astraPanel details{border-top:1px solid #bdcad6;padding:9px 0}#astraPanel summary{cursor:pointer;font-weight:bold;padding:4px 0}
-#astraReview summary::before{content:none!important}
-.astra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}.astra-grid label{display:block;font-size:12px}
-.astra-grid input,.astra-grid textarea,.astra-grid select{display:block;box-sizing:border-box;width:100%;padding:7px;border:1px solid #9fb3c5;border-radius:4px;background:#fff;color:#172d42;font:13px Arial,sans-serif}
-.astra-grid textarea{resize:vertical}.astra-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:10px 0}.astra-actions label{font-size:12px}
-#astraPanel :focus-visible{outline:3px solid #3184ce;outline-offset:2px}#astraFindings{margin:12px 0;padding:10px;background:#edf3f8;color:#1d3349}.astra-row{margin-left:12px}.astra-cost{font-weight:bold}
-@media(max-width:700px){.astra-grid{grid-template-columns:1fr}.astra-row{margin-left:0}}
-@media print{#astraReview{display:none!important}}
 </style>
 <style>.completion-tools{padding:9px;margin:8px 0;border-left:3px solid #2d6592;background:#eef4fa;font:12px/1.5 Arial;color:#173b58}.completion-tools button{margin:4px}.completion-inline{font:11px/1.5 Arial;color:#8b1a0a;white-space:pre-line;margin:3px 0 8px}.completion-jump{margin-left:6px}.completion-target{outline:3px solid #2674b5!important;outline-offset:3px}#completionPromptHint{color:#8b1a0a;font-weight:bold}@media print{.completion-tools,.completion-inline,.completion-jump,#completionNext{display:none!important}.completion-target{outline:none!important}}</style></head>
 <body>
@@ -606,33 +596,6 @@ body.ws-dragging{user-select:none;}
     </div>
 </div>
 
-<details id="astraReview" style="margin-bottom:15px;"><summary style="cursor:pointer;font:bold 14px Arial;color:#245278;">Optional supporting records</summary><div id="astraPanel"></div></details>
-<details id="vlogBox" style="margin-bottom:15px;background:#f1f3f5;border:1px solid #c4ccd4;border-radius:6px;padding:10px 14px;">
-<summary style="cursor:pointer;font-weight:bold;font-size:13px;color:#4a5568;">Source &amp; Validation Log — <span id="vlogSummary">0 entries · 0 attachments</span> <span style="font-weight:normal;font-size:11px;color:#6a7888;">(working record — exports separately, never printed on the official form)</span></summary>
-<div style="font-size:10.5px;background:#fff3cd;border:1px solid #e0c060;border-radius:4px;padding:6px 10px;margin:8px 0;color:#4a5568;">
-⚠️ <strong>UNCLASSIFIED / CUI ONLY.</strong> Attached files are embedded in this browser workspace, in saved draft .json files, and inside the exported log PDF. Never attach classified material to this tool.
-</div>
-<table style="width:100%;border-collapse:collapse;font-size:11px;" id="vlogTable">
-<thead><tr style="text-align:left;color:#4a5568;">
-<th scope="col" style="width:80px;padding:3px;">Item</th><th scope="col" style="padding:3px;">Source (URL / document / person consulted)</th><th scope="col" style="padding:3px;">What was confirmed / note</th><th scope="col" style="width:118px;padding:3px;">Logged</th><th scope="col" style="width:26px;"></th>
-</tr></thead>
-<tbody id="vlogRows"></tbody>
-</table>
-<button class="pbtn pbtn-secondary" style="font-size:11px;padding:4px 12px;margin-top:6px;" onclick="vlogAddEntry()">＋ Add Source Entry</button>
-<div style="margin-top:10px;">
-<label style="font-size:11px;font-weight:bold;color:#4a5568;">General remarks (anything that doesn't fit a single item):</label>
-<textarea id="vlogRemarks" style="width:100%;min-height:44px;margin-top:3px;" oninput="VLOG.remarks=this.value;vlogSummaryUpd();" placeholder="e.g. FCL verified in NISS 2026-07-13; SCG version confirmed with program office by phone."></textarea>
-</div>
-<div style="margin-top:10px;">
-<label style="font-size:11px;font-weight:bold;color:#4a5568;">Attachments (embedded — SHA-256 recorded):</label>
-<input type="file" id="vlogFileInput" multiple style="display:none;" onchange="vlogAddFiles(event)">
-<button class="pbtn pbtn-tertiary" style="font-size:11px;padding:4px 12px;margin-left:8px;" onclick="document.getElementById('vlogFileInput').click()">📎 Attach File(s)</button>
-<div id="vlogFiles" style="margin-top:6px;font-size:10.5px;"></div>
-</div>
-<div style="margin-top:12px;border-top:1px dashed #c4ccd4;padding-top:10px;">
-<button class="pbtn pbtn-primary" style="font-size:12px;padding:7px 18px;" onclick="exportValidationLog(this)">Export Validation Log (PDF, with embedded files)</button>
-</div>
-</details>
 
 
 <div class="top-bar">
@@ -1419,7 +1382,7 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.125';
+const TOOL_VERSION='2.126';
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 /* The one shared normaliser for text drawn into a PDF with pdf-lib's standard
    (WinAnsi) fonts \u2014 this used to be a second, looser implementation that a
@@ -2426,6 +2389,17 @@ function renderMarkedSummary(){
   body.innerHTML=html||'<em style="color:#7a8aa0;">None marked yet in Items 10 or 11.</em>';
 }
 // ── ITEM 3 CHECKLIST PANEL ────────────────────────────────────
+/* Retention guidance shown for a Final DD Form 254 - in the Item 3 instructions,
+   in the Item 3c validation note and in the CO package. Sources: 32 CFR
+   117.13(d)(5); DoDM 5205.07 (17 January 2025) section 10.5. It lived inside the
+   optional supporting-records panel, which was removed in v1.14.0, and that
+   script block loaded after the initial run(), so a draft opened as Final could
+   reach this before it existed. It belongs to the form, so it lives with it. */
+const FINAL_RETENTION_GUIDANCE={
+  general:'At contract completion, return USG-provided or deliverable information. Unless the GCA directs otherwise, copies may be retained for two years; continued need beyond that period requires a final specification or equivalent with disposition instructions. This is not blanket permission to retain all material.',
+  sap:'For SAP work, coordinate disposition and the termination plan with the GCA and PSM/PSO. SAP information may be retained only with specific written GCA authorization. A Final DD Form 254 addresses continued SAP security requirements; do not apply the ordinary two-year rule as automatic SAP retention authority.'
+};
+function finalRetentionGuidance(sap){ return sap?FINAL_RETENTION_GUIDANCE.sap:FINAL_RETENTION_GUIDANCE.general; }
 function buildItem3Panel(){
 const p = ck('item3Panel');
 if(!S.spec){ p.innerHTML='<div class="check-item"><span class="ci-icon ci-pending">—</span><span class="ci-text" style="font-style:italic;">Select 3a, 3b, or 3c above to see applicable rules</span></div>'; return; }
@@ -2467,7 +2441,7 @@ html += info('Each revision supersedes all previous specifications. Provide revi
 }
 else if(S.spec === '3c'){
 html += `<div style="background:var(--req-bg);border-left:3px solid var(--req-red);padding:5px 8px;border-radius:0 4px 4px 0;font-size:10.5px;font-family:Arial,sans-serif;color:var(--rule-red);font-weight:bold;margin-bottom:6px;">3c — FINAL selected</div>`;
-html += info(astraRetention(!!ck('sapFlag')?.checked));
+html += info(finalRetentionGuidance(!!ck('sapFlag')?.checked));
 html += req('Enter the <strong>original issuance date</strong> in Item 3a — it must still appear on a Final form.');
 html += req('For retention, complete <strong>Item 5</strong> with the request date and authorized period; coordinate any SAP continuation basis with the GCA and PSM/PSO.');
 html += req('<strong>Item 13 must contain final disposition instructions</strong> for all classified material covered by this contract.');
@@ -2551,7 +2525,7 @@ function dd254Cage(v){ return String(v==null?'':v).trim().toUpperCase(); }
    is a different number, and two unrelated forms could collide on one name.
    Slashes now become hyphens so the number stays readable and distinct.
    spaceRepl controls what happens to whitespace: '' packs it out (PDF exports),
-   '_' keeps the words apart (validation log, calendar files). */
+   '_' keeps the words apart (calendar files). */
 function dd254FileSafe(v,spaceRepl){
   var x=String(v==null?'':v).trim().replace(/[\/\\]+/g,'-');
   x=x.replace(/\s+/g, spaceRepl==null?'':spaceRepl);
@@ -2712,7 +2686,7 @@ if(S.spec==='3c'){
   if(!_hasDisp) errors.push('Item 3c Final: Item 13 must contain final disposition instructions for all classified material');
   else complete.push('Item 3c Final: Item 13 carries disposition instructions');
 }
-if(S.spec==='3c') warns.push('Item 3c Final: '+astraRetention(!!ck('sapFlag')?.checked));
+if(S.spec==='3c') warns.push('Item 3c Final: '+finalRetentionGuidance(!!ck('sapFlag')?.checked));
 if(!(typeof solStrip==='function'?solStrip(S.i9):S.i9).trim()) warns.push('Item 9: Unclassified description is required');
 else complete.push('Item 9: Description entered');
 if(S.c['11a']&&(!ck('item13')?.value.includes('8')&&!ck('item13')?.value.includes('11a')&&!ck('item13')?.value.length)) warns.push('Item 11a: Ensure Item 8a identifies where contractor will access classified info');
@@ -3871,14 +3845,12 @@ function addReviewer(idStr) {
 }
 
 async function saveWorkspace() {
-    const data = { texts: {}, checks: {}, radios: {}, selects: {}, perf: [], vlog: null };
+    const data = { texts: {}, checks: {}, radios: {}, selects: {}, perf: [] };
     document.querySelectorAll('select').forEach(e => { if(e.id) data.selects[e.id] = e.value; });
     document.querySelectorAll('#perfBlocks > div[id^="perf-"]').forEach(b => {
         const p=perfVals(b);
         data.perf.push({loc:p.loc, cage:p.cage, cso:p.cso, email:p.email, cma:p.cma});
     });
-    data.vlog = {entries:VLOG.entries, remarks:VLOG.remarks, files:VLOG.files};
-    data.astra=astraSnapshot();
     document.querySelectorAll('input[type="text"], textarea, [contenteditable="true"]').forEach(e => { if(e.id) data.texts[e.id] = e.value; });
     document.querySelectorAll('input[type="checkbox"]').forEach(e => { if(e.id) data.checks[e.id] = e.checked; });
     document.querySelectorAll('input[type="radio"]').forEach(e => { if(e.name && e.checked) data.radios[e.name] = e.value; });
@@ -3920,7 +3892,6 @@ function loadWorkspace(event) {
     reader.onload = (e) => {
         try {
             const data = JSON.parse(e.target.result);
-            astraValidate(data.astra);
             if(typeof b13SelectionReset==='function') b13SelectionReset();
             if(data.texts) { 
                 Object.keys(data.texts).forEach(id => { 
@@ -3949,10 +3920,7 @@ function loadWorkspace(event) {
         if(f.cso) f.cso.value=p.cso||''; if(f.email) f.email.value=p.email||'';
         if(f.cma) f.cma.value=p.cma||''; } });
             }
-            if(data.vlog){ VLOG.entries=data.vlog.entries||[]; VLOG.remarks=data.vlog.remarks||''; VLOG.files=data.vlog.files||[];
-                const r=document.getElementById('vlogRemarks'); if(r) r.value=VLOG.remarks; vlogRender(); }
             updateStateAndUI();
-            astraLoad(data.astra);
             alert("Draft workspace loaded successfully!");
         } catch(err) { alert("Workspace could not be loaded: "+err.message); }
     };
@@ -3967,164 +3935,6 @@ function loadWorkspace(event) {
 </body>
 </html>
 <script>
-/* ── SOURCE & VALIDATION LOG ───────────────────────── */
-const VLOG={entries:[],remarks:'',files:[]}; window.VLOG=VLOG;
-const VLOG_ITEMS=['General','1a','1b','2a','2b','2c','3','4','5','6a','6b','6c','7a','7b','7c','8a','8b','8c','9','10a','10b','10c','10d','10e1','10e2','10f','10g','10h','10i','10j','10k','11a','11b','11c','11d','11e','11f','11g','11h','11i','11j','11k','11l','11m','12','13','14','15','16','17','18'];
-
-function vlogSummaryUpd(){
-  const s=document.getElementById('vlogSummary');
-  if(s) s.textContent=VLOG.entries.length+' entries · '+VLOG.files.length+' attachments'+(VLOG.remarks.trim()?' · remarks':'');
-}
-function vlogAddEntry(pre){
-  VLOG.entries.push(Object.assign({item:'General',source:'',note:'',ts:new Date().toISOString()},pre||{}));
-  vlogRender();
-}
-function vlogDelEntry(i){ VLOG.entries.splice(i,1); vlogRender(); }
-function vlogDelFile(i){ VLOG.files.splice(i,1); vlogRender(); }
-function vlogEsc(s){ return htmlEsc(s); }
-function vlogRender(){
-  const tb=document.getElementById('vlogRows'); if(!tb) return;
-  tb.innerHTML=VLOG.entries.map(function(e,i){
-    const opts=VLOG_ITEMS.map(function(it){return '<option'+(it===e.item?' selected':'')+'>'+it+'</option>';}).join('');
-    const when=e.ts?e.ts.replace('T',' ').substring(0,16)+'Z':'';
-    return '<tr style="background:'+(i%2?'#eceef1':'transparent')+';">'
-      +'<td style="padding:2px;"><select onchange="VLOG.entries['+i+'].item=this.value;" style="font-size:10.5px;width:74px;">'+opts+'</select></td>'
-      +'<td style="padding:2px;"><input type="text" value="'+vlogEsc(e.source)+'" oninput="VLOG.entries['+i+'].source=this.value;" style="width:98%;font-size:10.5px;" placeholder="niss.dcsa.mil / SCG v3 §2.4 / J. Smith, GCA"></td>'
-      +'<td style="padding:2px;"><input type="text" value="'+vlogEsc(e.note)+'" oninput="VLOG.entries['+i+'].note=this.value;" style="width:98%;font-size:10.5px;" placeholder="what this confirms"></td>'
-      +'<td style="padding:2px;font-size:9.5px;color:#7a6a30;">'+when+'</td>'
-      +'<td style="padding:2px;"><button onclick="vlogDelEntry('+i+')" style="background:#7a4038;color:#fff;border:none;border-radius:3px;padding:1px 6px;cursor:pointer;">✕</button></td></tr>';
-  }).join('');
-  const fl=document.getElementById('vlogFiles');
-  if(fl) fl.innerHTML=VLOG.files.length?VLOG.files.map(function(f,i){
-    return '<div style="padding:3px 6px;background:#e8ebee;border-radius:3px;margin-bottom:3px;display:flex;gap:10px;align-items:center;">'
-      +'<span style="flex:1;"><strong>'+vlogEsc(f.name)+'</strong> ('+Math.round(f.size/1024)+' KB) <span style="color:#6a7888;font-family:monospace;font-size:9px;">SHA-256: '+(f.sha256||'n/a').substring(0,32)+'…</span></span>'
-      +'<input type="text" value="'+vlogEsc(f.source||'')+'" oninput="VLOG.files['+i+'].source=this.value;" placeholder="where this file came from" style="width:220px;font-size:10px;">'
-      +'<button onclick="vlogDelFile('+i+')" style="background:#7a4038;color:#fff;border:none;border-radius:3px;padding:1px 6px;cursor:pointer;">✕</button></div>';
-  }).join(''):'<em style="color:#8a94a0;">No files attached.</em>';
-  vlogSummaryUpd();
-}
-async function vlogSha256(buf){
-  try{ if(window.crypto&&crypto.subtle){
-    const h=await crypto.subtle.digest('SHA-256',buf);
-    return Array.from(new Uint8Array(h)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');
-  }}catch(e){}
-  return '';
-}
-function vlogB64(buf){
-  const u8=new Uint8Array(buf); let s=''; const CH=32768;
-  for(let i=0;i<u8.length;i+=CH) s+=String.fromCharCode.apply(null,u8.subarray(i,i+CH));
-  return btoa(s);
-}
-async function vlogAddFiles(ev){
-  const files=Array.from(ev.target.files||[]);
-  for(const f of files){
-    const total=VLOG.files.reduce(function(a,x){return a+x.size;},0);
-    if(f.size>15*1024*1024 && !(await uiConfirm(f.name+' is '+Math.round(f.size/1048576)+' MB — large files bloat the workspace and log PDF. Attach anyway?'))) continue;
-    if(total+f.size>60*1024*1024){ alert('Attachment budget (60 MB total) exceeded — '+f.name+' skipped. Reference it in a source entry instead.'); continue; }
-    const buf=await f.arrayBuffer();
-    VLOG.files.push({name:f.name,size:f.size,type:f.type||'application/octet-stream',sha256:await vlogSha256(buf),addedAt:new Date().toISOString(),source:'',b64:vlogB64(buf)});
-  }
-  ev.target.value='';
-  vlogRender();
-}
-
-async function exportValidationLog(btn){
-  const _b=(btn&&btn.tagName)?btn:null;
-  try{
-    if(_b){_b.dataset.orig=_b.innerText;_b.innerText='⏳ Building log…';_b.disabled=true;}
-    const {PDFDocument,StandardFonts,rgb}=PDFLib;
-    const doc=await PDFDocument.create();
-    const helv=await doc.embedFont(StandardFonts.Helvetica);
-    const helvB=await doc.embedFont(StandardFonts.HelveticaBold);
-    const mono=await doc.embedFont(StandardFonts.Courier);
-    const W=612,H=792,M=46;
-    let pg,y;
-    const cls=(document.getElementById('clsSel')||{}).value||'';
-    const clsTxt=cls==='CUI'?'CUI':'UNCLASSIFIED';
-    function newPage(){
-      pg=doc.addPage([W,H]); y=H-30;
-      pg.drawText(clsTxt,{x:W/2-clsTxt.length*3,y:H-22,size:9,font:helvB,color:rgb(0.05,0.25,0.05)});
-      pg.drawText(clsTxt,{x:W/2-clsTxt.length*3,y:14,size:9,font:helvB,color:rgb(0.05,0.25,0.05)});
-      y=H-46;
-    }
-    function need(h){ if(y-h<32) newPage(); }
-    function wrapT(t,size,width,font){
-      const f=font||helv; const out=[];
-      String((typeof sanitizePdfText==='function'?sanitizePdfText(t):t)||'').split('\n').forEach(function(line){
-        let cur='';
-        line.split(' ').forEach(function(w){
-          const trial=cur?cur+' '+w:w;
-          if(f.widthOfTextAtSize(trial,size)>width&&cur){out.push(cur);cur=w;}else cur=trial;
-        });
-        out.push(cur);
-      });
-      return out;
-    }
-    function text(t,x,size,opt){
-      opt=opt||{};
-      const lines=wrapT(t,size,(opt.width||W-M-x),opt.font);
-      lines.forEach(function(l){ need(size+3); pg.drawText(l,{x:x,y:y,size:size,font:opt.font||helv,color:opt.color||rgb(0,0,0)}); y-=size+(opt.lead||3); });
-      return lines.length;
-    }
-    newPage();
-    text('SOURCE & VALIDATION LOG',M,16,{font:helvB}); y-=2;
-    text('Working record for DD Form 254 preparation — not part of the official form',M,9,{color:rgb(.35,.3,.1)}); y-=8;
-    const gv2=function(id){const e=document.getElementById(id);return e?e.value.trim():'';};
-    const meta=[['Contract / RFP (Item 2):',gv2('i2a')||gv2('i2b')||gv2('i2c')||'—'],
-      ['Contractor (Item 6a):',(gv2('i6a').split('\n')[0]||'—')],
-      ['CAGE (Item 6b):',gv2('i6b')||'—'],
-      ['Certifying official (17a):',gv2('i17a')||'—'],
-      ['Log generated:',new Date().toISOString().replace('T',' ').substring(0,17)+'Z — Tool v'+TOOL_VERSION]];
-    meta.forEach(function(m){ need(12); pg.drawText(m[0],{x:M,y:y,size:9,font:helvB}); pg.drawText(sanitizePdfText(m[1]),{x:M+150,y:y,size:9,font:helv}); y-=13; });
-    y-=6;
-
-    text('SOURCE ENTRIES ('+VLOG.entries.length+')',M,11,{font:helvB}); y-=3;
-    if(!VLOG.entries.length){ text('None recorded.',M,9,{color:rgb(.4,.4,.4)}); }
-    VLOG.entries.forEach(function(e,i){
-      need(30);
-      pg.drawText((i+1)+'.',{x:M,y:y,size:9,font:helvB});
-      pg.drawText('Item '+e.item,{x:M+18,y:y,size:9,font:helvB});
-      pg.drawText((e.ts||'').replace('T',' ').substring(0,16)+'Z',{x:W-M-92,y:y,size:8,font:helv,color:rgb(.4,.4,.4)});
-      y-=12;
-      text('Source: '+(e.source||'—'),M+18,9); 
-      if(e.note) text('Confirms: '+e.note,M+18,9,{color:rgb(.15,.15,.15)});
-      y-=4;
-    });
-    y-=6;
-    if(VLOG.remarks.trim()){ text('GENERAL REMARKS',M,11,{font:helvB}); y-=2; text(VLOG.remarks,M,9); y-=6; }
-
-    text('ATTACHMENTS ('+VLOG.files.length+') — files are embedded in this PDF (Acrobat: paperclip / attachments panel)',M,11,{font:helvB}); y-=3;
-    if(!VLOG.files.length) text('None.',M,9,{color:rgb(.4,.4,.4)});
-    VLOG.files.forEach(function(f,i){
-      need(34);
-      pg.drawText(sanitizePdfText((i+1)+'. '+f.name+'  ('+Math.round(f.size/1024)+' KB, '+(f.type||'unknown')+')'),{x:M,y:y,size:9,font:helvB}); y-=11;
-      if(f.source) { text('Origin: '+f.source,M+14,8.5); }
-      pg.drawText('SHA-256: '+(f.sha256||'unavailable'),{x:M+14,y:y,size:7.5,font:mono,color:rgb(.25,.25,.25)}); y-=10;
-      pg.drawText('Added: '+(f.addedAt||'').replace('T',' ').substring(0,16)+'Z',{x:M+14,y:y,size:8,font:helv,color:rgb(.4,.4,.4)}); y-=14;
-    });
-
-    let attachFail=[];
-    for(const f of VLOG.files){
-      try{
-        const bytes=Uint8Array.from(atob(f.b64),function(c){return c.charCodeAt(0);});
-        await doc.attach(bytes,f.name,{mimeType:f.type||'application/octet-stream',description:'Validation log attachment — SHA-256 '+(f.sha256||'n/a'),creationDate:new Date(f.addedAt||Date.now()),modificationDate:new Date(f.addedAt||Date.now())});
-      }catch(err){ attachFail.push(f.name); }
-    }
-    if(attachFail.length){ need(20); text('NOTE: could not embed: '+attachFail.join(', ')+' (listed above for reference).',M,8.5,{color:rgb(.6,.1,.1)}); }
-
-    const bytesOut=await doc.save();
-    const blob=new Blob([bytesOut],{type:'application/pdf'});
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');
-    a.href=url; a.download='DD254_Validation_Log_'+dd254FileSafe(((document.getElementById('i2a')||{}).value||'Draft'),'_')+'.pdf';
-    document.body.appendChild(a); a.click();
-    setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(url);if(_b){_b.innerText=_b.dataset.orig;_b.disabled=false;}},800);
-  }catch(e){
-    alert('Error building validation log: '+e.message); console.error(e);
-    if(_b){_b.innerText=_b.dataset.orig||'📤 Export Validation Log (PDF, with embedded files)';_b.disabled=false;}
-  }
-}
-
 /* missing in prior versions — loadWorkspace calls this; without it every load alerted "Invalid JSON" */
 function updateStateAndUI(){
   try{ if(typeof updateBanner==='function') updateBanner(); }catch(e){}
@@ -4212,7 +4022,6 @@ function lsWrite(all){
   }
 }
 async function draftPut(rec){
-  astraValidate(rec&&rec.workspace&&rec.workspace.astra);
   if(window.DD254_READONLY) return;   /* read-only tab: never write a draft */
   if(typeof bkMark==='function'&&!window.BK_UNLOADING) bkMark();
   await dashDB();
@@ -5454,7 +5263,7 @@ function cmaSync(){
   if(typeof run==='function') run();
 }
 function collectWorkspace(){
-  const data={texts:{},checks:{},radios:{},selects:{},perf:[],vlog:null};
+  const data={texts:{},checks:{},radios:{},selects:{},perf:[]};
   document.querySelectorAll('input[type="text"], textarea, [contenteditable="true"]').forEach(function(e){ if(e.id) data.texts[e.id]=e.value; });
   document.querySelectorAll('input[type="checkbox"]').forEach(function(e){ if(e.id) data.checks[e.id]=e.checked; });
   document.querySelectorAll('input[type="radio"]').forEach(function(e){ if(e.name&&e.checked) data.radios[e.name]=e.value; });
@@ -5464,13 +5273,10 @@ function collectWorkspace(){
     const p=perfVals(b);
     data.perf.push({loc:p.loc,cage:p.cage,cso:p.cso,email:p.email,cma:p.cma});
   });
-  data.vlog={entries:VLOG.entries,remarks:VLOG.remarks,files:VLOG.files};
-  data.astra=astraSnapshot();
   return data;
 }
 function applyWorkspace(data){
   if(!data) return;
-  astraValidate(data.astra);
   if(typeof b13SelectionReset==='function') b13SelectionReset();
   if(data.texts){
     Object.keys(data.texts).forEach(function(id){
@@ -5508,14 +5314,10 @@ function applyWorkspace(data){
         if(f.cso) f.cso.value=p.cso||''; if(f.email) f.email.value=p.email||'';
         if(f.cma) f.cma.value=p.cma||''; } });
   }
-  VLOG.entries=(data.vlog&&data.vlog.entries)||[]; VLOG.remarks=(data.vlog&&data.vlog.remarks)||''; VLOG.files=(data.vlog&&data.vlog.files)||[];
   if(typeof distSyncCats==='function') distSyncCats(data.selects&&data.selects.distCat);
   if(typeof cmaAdopt==='function') cmaAdopt();
   if(typeof supAdopt==='function') supAdopt();
   if(typeof cuiAdopt==='function') cuiAdopt();
-  const r=document.getElementById('vlogRemarks'); if(r) r.value=VLOG.remarks;
-  if(typeof vlogRender==='function') vlogRender();
-  astraLoad(data.astra);
   updateStateAndUI();
 }
 function syncUIFromDom(){
@@ -5555,9 +5357,6 @@ function resetFormFields(){
   document.querySelectorAll('select').forEach(function(e){ e.selectedIndex=0; });
   document.querySelectorAll('#perfBlocks > div[id^="perf-"]').forEach(function(b){b.remove();});
   document.querySelectorAll('.reviewer-row').forEach(function(b){b.remove();});
-  VLOG.entries=[]; VLOG.remarks=''; VLOG.files=[];
-  astraLoad(null);
-  if(typeof vlogRender==='function') vlogRender();
   syncUIFromDom();
 }
 
@@ -7080,7 +6879,6 @@ function fullRestore(ev){
   rd.onload=async function(e){
     try{
       const data=JSON.parse(e.target.result);
-      astraValidateRecords(data.drafts||[]);
       if(data.tool!=='DD254 Full Backup'||!data.templates) return alert('That is not a full-backup file.');
       const nT=BK_KINDS.reduce(function(a,k){return a+((data.templates[k]||[]).length);},0);
       const nD=(data.drafts||[]).length;
@@ -7379,7 +7177,7 @@ async function dashRename(id){
    it. Only fields the template actually sets are written — a blank field in
    the template leaves whatever is already on the draft alone. */
 function ctApplyDataToWorkspace(d,ws){
-  ws=ws||{texts:{},checks:{},radios:{},selects:{},perf:[],vlog:null};
+  ws=ws||{texts:{},checks:{},radios:{},selects:{},perf:[]};
   if(!d) return ws;
   ws.texts=ws.texts||{}; ws.checks=ws.checks||{}; ws.radios=ws.radios||{}; ws.selects=ws.selects||{};
   const put=function(id,v){ if(v!=null&&String(v).trim()) ws.texts[id]=String(v); };
@@ -7531,7 +7329,6 @@ async function dashBulkIssue(ids){
     if(typeof uiAlert==='function') await uiAlert(msg); else alert(msg);
     await dashRenderCards(); return false;
   }
-  // Optional supporting records do not introduce an additional issuance dialog.
   const openHolds=[];
   records.forEach(function(rec){ dashHoldsOpen(rec).forEach(function(h){openHolds.push((rec.title||rec.id)+': '+h.t);}); });
   if(openHolds.length && !(await uiConfirm('✋ '+openHolds.length+' open operational hold'+(openHolds.length===1?'':'s')+' across the selected DD-254s:\n\n• '+openHolds.join('\n• ')+'\n\nIssuing with unresolved holds is a contradiction. Issue every selected DD-254 anyway?'))){
@@ -8297,7 +8094,6 @@ function dashRestore(ev){
     try{
       const data=JSON.parse(e.target.result);
       const list=Array.isArray(data)?data:(data.drafts||[]);
-      astraValidateRecords(list);
       if(!list.length) return alert('No drafts found in that backup.');
       let n=0;
       for(const rec of list){ if(rec&&rec.id){ await draftPut(rec); n++; } }
@@ -8395,7 +8191,7 @@ async function dashDuplicate(id){
                was distributed, it was countersigned, it was issued. None of
                these is true of the child, so they are cleared.
      context — the work in progress: NISS verification of the contractor's FCL,
-               open to-dos, notes, and the source & validation log. The contract
+               open to-dos and notes. The contract
                has not changed, so these follow the work forward.
 
    This was previously a straight deep copy, so an Original spawned from a
@@ -8460,7 +8256,6 @@ function dashResetWorkflow(rec){
   rec.dist=[];
   rec.countersign=null;
   delete rec.issuedAt;
-  astraResetRecord(rec);
   return rec;
 }
 async function dashSpawn(id,kind){
@@ -8471,7 +8266,7 @@ async function dashSpawn(id,kind){
   rec.id=dashId(); rec.parentId=src.id; rec.rootId=root; rec.stage=kind;
   dashResetWorkflow(rec);
   rec.createdAt=rec.updatedAt=new Date().toISOString();
-  if(!rec.workspace) rec.workspace={texts:{},checks:{},radios:{},selects:{},perf:[],vlog:null};
+  if(!rec.workspace) rec.workspace={texts:{},checks:{},radios:{},selects:{},perf:[]};
   rec.workspace.radios=rec.workspace.radios||{};
   rec.workspace.texts=rec.workspace.texts||{};
   const base=(src.title||'Untitled DD-254').replace(/ — (Solicitation|Original|Rev \d+|Final)$/,'');
@@ -10930,7 +10725,6 @@ function exportCOPrep() {
     _fl.err.forEach(function(x){ coMust.push(x); });
     _fl.warn.forEach(function(x){ coWarn.push(x); }); }
 
-  astraFindings(ASTRA,collectWorkspace()).forEach(x=>coWarn.push('Astra review: '+x));
   // Core CO obligations
   coMust.push('Verify the contractor entity eligibility/FCL and, when possession or storage is required, the approved safeguarding capability through NISS, NCAISS, or the CSA-designated source. A CAGE code or FCL alone does not establish storage authority. (32 CFR §§117.9 and 117.15)');
   coMust.push('Confirm the DD Form 254 is properly prepared, coordinated with requirements and security personnel, distributed, and incorporated with the classified acquisition. (FAR 4.403; 32 CFR §117.13(d))');
@@ -10940,7 +10734,7 @@ function exportCOPrep() {
   coMust.push('Complete the Item 17 certifying-official data, then complete Items 17h and 17i by digitally signing the generated dynamic PDF in Adobe Acrobat Pro.');
 
   if(spec==='3b') coMust.push('REVISED FORM: Incorporate this revised DD Form 254 through the contract modification process and preserve the original Item 3a date.');
-  if(spec==='3c') coMust.push('FINAL FORM: '+astraRetention(gc('sapFlag'))+' Complete Item 5 for retention and record disposition instructions in Item 13.');
+  if(spec==='3c') coMust.push('FINAL FORM: '+finalRetentionGuidance(gc('sapFlag'))+' Complete Item 5 for retention and record disposition instructions in Item 13.');
   if(gv('i2c')) coMust.push('SOLICITATION: Issue a new DD Form 254 at award with the awarded contract number; do not reuse the solicitation specification as the award form.');
 
   if(isSub) {
@@ -11142,7 +10936,6 @@ ${isSub && gc('sapFlag') ? `
 </div>
 
 <div style="margin-top:24px;padding-top:10px;border-top:1px solid #b0bac6;font-size:9.5px;color:#888;">
-${astraReportHTML()}
 CO Preparatory Package · DD Form 254 Interactive Guided Edition · Governed by 32 CFR Part 117 (NISPOM)${gc('sapFlag')?' · DoDM 5205.07 (SAP)':''} · FAR Subpart 4.4
 </div>
 </body></html>`;
@@ -11279,8 +11072,6 @@ const A11Y_LABELS={
   dashSortSel     :'Sort the dashboard',
   dashSearchBox   :'Search the dashboard',
   loadJson        :'Load a saved draft file',
-  vlogFileInput   :'Attach a source document to the validation log',
-  vlogRemarks     :'Validation log remarks',
   clsSel          :'Classification marking of this DD Form 254',
   fcl1a           :'Item 1a \u2014 facility clearance level required',
   sfg1b           :'Item 1b \u2014 level of safeguarding required',
@@ -11746,300 +11537,6 @@ if(typeof b13ViewSet==='function') b13ViewSet(b13ViewGet());
 if(typeof distRenderSel==='function'){ distRenderSel(); distSyncCats(); }</script>
 <script>initWizard(); run();</script>
 
-<script>
-/* Codex Astra review records live inside the existing workspace. They are
-   advisory evidence, never another approval engine or a remote data store. */
-const ASTRA_SCHEMA=1;
-const ASTRA_GUIDANCE={
-  id:'astra-retention-20260906', reviewed:'2026-09-06',
-  general:'At contract completion, return USG-provided or deliverable information. Unless the GCA directs otherwise, copies may be retained for two years; continued need beyond that period requires a final specification or equivalent with disposition instructions. This is not blanket permission to retain all material.',
-  sap:'For SAP work, coordinate disposition and the termination plan with the GCA and PSM/PSO. SAP information may be retained only with specific written GCA authorization. A Final DD Form 254 addresses continued SAP security requirements; do not apply the ordinary two-year rule as automatic SAP retention authority.',
-  sources:[['32 CFR 117.13(d)(5)','https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-D/part-117/section-117.13'],['DoDM 5205.07, 17 January 2025, section 10.5','https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520507m1.PDF']]
-};
-function astraRetention(sap){return sap?ASTRA_GUIDANCE.sap:ASTRA_GUIDANCE.general;}
-function astraBlank(){return {schema:ASTRA_SCHEMA,guidanceVersion:ASTRA_GUIDANCE.id,package:{},sources:[],documents:[],requirements:[],issues:[],closeout:[],history:[]};}
-let ASTRA=astraBlank();
-const ASTRA_FIELDS={
-  package:[['contract','Contract or subcontract number'],['modification','Modification / solicitation reference'],['attachment','Contract attachment / exhibit number'],['revision','Attached DD254 revision (Original, number, or Final)'],['date','Attached DD254 date','date'],['incorporation','Recorded incorporation reference','area'],['clauseBasis','Executed clause / deviation basis','area']],
-  sources:[['title','Source title'],['issuer','Issuing organization'],['edition','Edition / effective date'],['locator','Paragraph / page'],['url','Official reference URL'],['scope','Applicability and limitations','area'],['reviewDate','Date reviewed by preparer','date'],['status','Source status',['Unknown','Current','Superseded']]],
-  documents:[['title','Guidance / attachment title'],['version','Available version / date'],['citedVersion','Version cited in the form'],['items','Affected form items (comma separated)'],['supersedes','Superseded document','documents'],['fileRef','Existing log attachment','files'],['location','Reference-only location / delivery instructions','area'],['recipient','Recipient / audience'],['method','Delivery channel'],['sentDate','Delivery date recorded','date'],['ackDate','Acknowledgment date recorded','date'],['ackRef','Acknowledgment evidence reference']],
-  requirements:[['title','Requirement title'],['task','Required task for Item 13','area'],['items','Affected form items (comma separated)'],['sourceId','Source and authority','sources'],['documentId','Supporting document','documents'],['contractRef','Contract authority / reference'],['scope','Applicability / site','area'],['owner','Implementation owner'],['extra','Additional requirement beyond baseline',['Unknown','Yes','No']],['inspectionOwner','Inspection organization and scope'],['criteria','Inspection criteria / evidence expected','area'],['frequency','Inspection frequency if specified'],['people','People / units','number'],['hours','Hours per person / unit','number'],['rate','Rate per hour / unit','number'],['events','Number of events','number'],['currency','Currency (e.g. USD)'],['costBasis','Estimate assumptions / basis for zero','area']],
-  issues:[['title','Question / mismatch'],['question','Facts and competing interpretations','area'],['items','Affected form items (comma separated)'],['sourceA','First source','sources'],['sourceB','Second source','sources'],['requirementId','Affected requirement','requirements'],['documentId','Affected document','documents'],['reviewer','Reviewer role / office'],['requested','Request date recorded','date'],['proposal','Proposed resolution','area'],['authority','Responding authority'],['responseDate','Response date','date'],['reference','Written response reference'],['resolution','Disposition and rationale','area'],['scope','Decision applicability / scope','area'],['status','Question status',['Draft','Ready for review','Sent recorded','Response recorded','Resolution recorded','Superseded']]],
-  closeout:[['title','Action'],['category','Action category',['Contract completion','Return / disposition','Retention','Continued program requirements']],['requirementId','Affected requirement','requirements'],['sourceId','Source','sources'],['owner','Responsible reviewer'],['due','Due / authorization end date','date'],['authority','Instruction / authorizing office'],['evidence','Disposition / authorization evidence','area'],['completed','Completion date recorded','date'],['status','Action status',['Pending','Completed']]]
-};
-const ASTRA_LABELS={sources:'Guidance sources',documents:'Attachments and delivery',requirements:'Requirements and Item 13',issues:'Questions and decisions',closeout:'Changes and closeout'};
-const ASTRA_PREFIX={sources:'S',documents:'D',requirements:'R',issues:'Q',closeout:'C'};
-['documents','requirements'].forEach(k=>ASTRA_FIELDS[k].push(['reviewer','Impact reviewer'],['reviewNote','Impact review basis','area']));
-ASTRA_FIELDS.requirements.push(['estimateStatus','Estimate status',['Unknown','Draft estimate','Reviewed estimate']],['costTiming','Effort basis',['Unknown','One-time','Recurring']]);
-ASTRA_FIELDS.issues.push(['holdRef','Related existing hold reference (does not resolve the hold)']);
-function astraClone(v){return JSON.parse(JSON.stringify(v));}
-function astraShort(id){return String(id||'').slice(0,10);}
-function astraDisplay(text,a){Object.keys(ASTRA_LABELS).forEach(k=>(a[k]||[]).forEach(r=>{text=String(text).split(r.id).join(astraShort(r.id));}));return text;}
-function astraValidate(v){
-  if(v==null)return true;
-  if(typeof v!=='object'||Array.isArray(v)||v.schema!==ASTRA_SCHEMA)throw new Error('Unsupported Codex Astra workspace version. Use a compatible release; no records were imported.');
-  ['sources','documents','requirements','issues','closeout','history'].forEach(k=>{
-    if(!Array.isArray(v[k]))throw new Error('Invalid Astra '+k+' records.');
-    if(k!=='history'){
-      const ids=new Set(); v[k].forEach(r=>{if(!r||typeof r!=='object'||typeof r.id!=='string'||!/^[-a-zA-Z0-9_]+$/.test(r.id)||ids.has(r.id))throw new Error('Invalid or duplicate Astra record ID.');ids.add(r.id);
-        ASTRA_FIELDS[k].forEach(([field])=>{if(r[field]!=null&&typeof r[field]!=='string')throw new Error('Invalid Astra field '+field+'.');});
-      });
-    }
-  });
-  if(!v.package||typeof v.package!=='object'||Array.isArray(v.package))throw new Error('Invalid Astra contract package.');
-  ASTRA_FIELDS.package.forEach(([field])=>{if(v.package[field]!=null&&typeof v.package[field]!=='string')throw new Error('Invalid Astra contract field.');});
-  return true;
-}
-function astraValidateRecords(records){(records||[]).forEach(r=>astraValidate(r&&r.workspace&&r.workspace.astra));}
-function astraSnapshot(){return astraClone(ASTRA);}
-function astraHasData(a){return a.guidanceVersion!==ASTRA_GUIDANCE.id||Object.values(a.package).some(v=>String(v||'').trim())||Object.keys(ASTRA_LABELS).some(k=>a[k].length);}
-function astraLoad(value){astraValidate(value);ASTRA=value?astraClone(value):astraBlank();if(window.DD254_RECOUNTING)return;if(document.getElementById('astraReview')?.open)astraRender();else astraRefresh();}
-function astraRow(kind,id,data){data=data||ASTRA;return kind==='package'?data.package:(data[kind]||[]).find(r=>r.id===id);}
-function astraAudit(action,id,before,after){ASTRA.history.push({at:new Date().toISOString(),action:action,id:id,before:astraClone(before==null?null:before),after:astraClone(after==null?null:after)});}
-function astraTouch(){if(typeof dashTouch==='function')dashTouch();}
-function astraAdd(kind){
-  if(window.DD254_READONLY||!ASTRA_FIELDS[kind]||kind==='package')return;
-  const id=ASTRA_PREFIX[kind]+'-'+audUid(); const row={id:id,createdAt:new Date().toISOString(),include:true};
-  ASTRA_FIELDS[kind].forEach(([k,label,type])=>{row[k]=Array.isArray(type)?type[0]:'';});
-  ASTRA[kind].push(row);astraAudit('Added '+kind,id,null,row);astraTouch();astraRender();
-  const el=document.getElementById('astra-row-'+id);if(el){el.open=true;el.querySelector('input,textarea,select')?.focus();}return id;
-}
-function astraStateError(kind,row,value){
-  if(kind==='issues'){
-    let fields=value==='Sent recorded'?['reviewer','requested']:value==='Response recorded'?['authority','responseDate','reference']:value==='Resolution recorded'?['authority','responseDate','reference','resolution','scope']:[];
-    if(fields.some(k=>!String(row[k]||'').trim()))return 'Record '+fields.join(', ')+' before using '+value+'.';
-  }
-  if(kind==='closeout'&&value==='Completed'&&['authority','evidence','completed'].some(k=>!String(row[k]||'').trim()))return 'Record the authority, evidence and completion date first.';
-  return '';
-}
-function astraSet(kind,id,key,value,commit,previous){
-  if(window.DD254_READONLY)return false;
-  const row=astraRow(kind,id);if(!row)return false;
-  if(key==='status'){
-    const error=astraStateError(kind,row,value);if(error){alert(error);astraRender();return false;}
-  }
-  const old=previous===undefined?row[key]:previous;row[key]=value;
-  if(commit&&old!==value){
-    astraAudit(kind+' '+key,id,old,value);
-    if(key==='status'&&kind==='issues'&&value==='Resolution recorded')row.basisKey=astraBasis(row,ASTRA,collectWorkspace());
-    if(key==='status'&&kind==='closeout'&&value==='Completed')row.basisKey=astraBasis(row,ASTRA,collectWorkspace());
-  }
-  if(key==='title'){const el=document.querySelector('#astra-row-'+id+' > summary');if(el)el.textContent=astraShort(id)+' - '+(value||'Untitled');}
-  astraTouch();astraRefresh();return true;
-}
-async function astraRemove(kind,id){
-  if(window.DD254_READONLY)return;
-  const row=astraRow(kind,id);if(!row||!(await uiConfirm('Remove '+id+'? A copy remains in local review history; references to it will be flagged.')))return;
-  astraAudit('Removed '+kind,id,row,null);ASTRA[kind]=ASTRA[kind].filter(r=>r.id!==id);astraTouch();astraRender();
-}
-function astraCost(r){
-  const keys=['people','hours','rate','events'];
-  if(keys.some(k=>String(r[k]??'').trim()===''))return {value:null,text:'Unknown - complete units, hours, rate and events.'};
-  const n=keys.map(k=>Number(r[k]));
-  if(n.some(x=>!Number.isFinite(x)||x<0))return {value:null,text:'Invalid estimate - use finite, nonnegative values.'};
-  const value=n.reduce((a,b)=>a*b,1);
-  if(!Number.isFinite(value))return {value:null,text:'Estimate exceeds the supported numeric range.'};
-  if(value===0&&!String(r.costBasis||'').trim())return {value:null,text:'A zero estimate needs a written basis.'};
-  return {value:value,text:value.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})+' '+(r.currency||'(currency not recorded)')+' - estimated, not a contract entitlement'};
-}
-function astraIdentity(ws){
-  ws=ws||{};const t=ws.texts||{},r=ws.radios||{};
-  return {contract:t.i2b||t.i2a||t.i2c||'',prime:t.i2a||'',revision:r.spec==='3b'?String(t.i3b_rev||''):r.spec==='3c'?'Final':'Original',date:r.spec==='3b'?t.i3b_date:r.spec==='3c'?t.i3c_date:t.i3a_date};
-}
-function astraBasis(row,a,ws){
-  const items=String(row.items||'').split(',').map(s=>s.trim().replace(/^Item\s*/i,'')).filter(Boolean);
-  const form={identity:astraIdentity(ws)}, getItem=id=>{
-    if(id==='item13')return '13';if(id==='sapFlag')return '10f';if(id==='fcl1a')return '1a';if(id==='sfg1b')return '1b';
-    const m=id.match(/^(?:dist|[ic])(\d+[a-z]?)/);return m?m[1]:'';
-  };
-  ['texts','checks','selects'].forEach(group=>{Object.keys(ws[group]||{}).sort().forEach(id=>{
-    const item=getItem(id);if(item&&(!items.length||items.some(x=>item===x||item.startsWith(x))))form[id]=ws[group][id];
-  });});
-  if(!items.length||items.some(x=>x.startsWith('8')))form.perf=ws.perf||[];
-  form.radios=ws.radios||{};
-  const refs={};
-  [['sourceA','sources'],['sourceB','sources'],['sourceId','sources'],['documentId','documents'],['requirementId','requirements']].forEach(([field,kind])=>{
-    if(row[field]){const r=astraRow(kind,row[field],a);refs[field]=r?astraClone(r):'MISSING '+row[field];if(r&&kind==='requirements'){refs.requirementSource=astraRow('sources',r.sourceId,a)||null;refs.requirementDocument=astraRow('documents',r.documentId,a)||null;}}
-  });
-  const decision={};['question','proposal','authority','responseDate','reference','resolution','scope','evidence','completed','title','task','version','citedVersion','location','recipient','method','owner','inspectionOwner','criteria','frequency','reviewer','reviewNote'].forEach(k=>decision[k]=row[k]||'');
-  return JSON.stringify({form:form,refs:refs,decision:decision});
-}
-function astraImpact(row,a,ws){
-  if(!row.reviewBasis)return [];
-  try{
-    const prior=JSON.parse(row.reviewBasis),current=JSON.parse(astraBasis(row,a,ws)),changes=[];
-    const different=(x,y)=>JSON.stringify(x)!==JSON.stringify(y);
-    Object.keys({...prior.form,...current.form}).forEach(k=>{if(different(prior.form[k],current.form[k]))changes.push(k==='identity'?'contract / revision identity':k==='perf'?'Item 8 performance sites':k==='radios'?'form selections':'form field '+k);});
-    Object.keys({...prior.refs,...current.refs}).forEach(k=>{if(different(prior.refs[k],current.refs[k]))changes.push('linked '+({sourceId:'source',documentId:'document',requirementId:'requirement',requirementSource:'requirement source',requirementDocument:'requirement document'}[k]||k));});
-    if(different(prior.decision,current.decision))changes.push('record content / review basis');return changes;
-  }catch(e){return ['unreadable previous review basis'];}
-}
-function astraRecordReview(kind,id){
-  if(window.DD254_READONLY)return false;
-  const row=astraRow(kind,id);if(!row||!['documents','requirements'].includes(kind))return false;
-  if(!String(row.reviewer||'').trim()||!String(row.reviewNote||'').trim()){alert('Record the impact reviewer and review basis first.');return false;}
-  const prior={basis:row.reviewBasis||null,at:row.reviewedAt||null};
-  row.reviewBasis=astraBasis(row,ASTRA,collectWorkspace());row.reviewedAt=new Date().toISOString();
-  astraAudit('Impact review recorded',id,prior,{basis:row.reviewBasis,at:row.reviewedAt});astraTouch();astraRefresh();return true;
-}
-function astraFindings(a,ws,lookup){
-  if(!a)return [];astraValidate(a);const out=[],add=s=>out.push(s),p=a.package||{},id=astraIdentity(ws);
-  lookup=lookup||a;
-  if(Object.values(p).some(v=>String(v||'').trim())){
-    if(!p.contract||!p.attachment||!p.revision||!p.incorporation)add('Contract package: record the contract, attachment identifier, DD254 revision and incorporation reference.');
-    if(p.contract&&p.contract.trim()!==id.contract.trim())add('Contract package number '+p.contract+' differs from working form '+(id.contract||'(blank)')+'.');
-    if(p.revision&&p.revision.trim().toLowerCase()!==id.revision.trim().toLowerCase())add('Attached DD254 revision '+p.revision+' differs from working revision '+(id.revision||'(blank)')+'.');
-    if(p.date&&id.date&&p.date.replace(/-/g,'')!==id.date.replace(/-/g,''))add('Attached DD254 date differs from the working form date.');
-  }
-  if(a.guidanceVersion!==ASTRA_GUIDANCE.id)add('This record used guidance '+a.guidanceVersion+'; current guidance '+ASTRA_GUIDANCE.id+' needs review. Prior recorded sources remain unchanged.');
-  a.sources.forEach(r=>{if(!r.edition||!r.locator||!r.scope)add(r.id+': source edition, locator or applicability is not recorded.');});
-  a.documents.forEach(r=>{
-    const impact=astraImpact(r,lookup,ws);if(impact.length)add(r.id+': review delivery / attachment impact after changes to '+impact.join(', ')+'.');
-    if(!r.version||!r.citedVersion)add(r.id+': available or cited guidance version is not recorded.');
-    else if(r.version.trim()!==r.citedVersion.trim())add(r.id+': available version '+r.version+' differs from cited version '+r.citedVersion+'.');
-    if(r.ackDate&&(!r.ackRef||!r.recipient))add(r.id+': acknowledgment needs a recipient and evidence reference.');
-    if(r.sentDate&&(!r.recipient||!r.method))add(r.id+': delivery needs a recipient and channel.');
-    if(r.supersedes&&!astraRow('documents',r.supersedes,lookup))add(r.id+': superseded document reference is missing.');
-  });
-  a.requirements.forEach(r=>{
-    const impact=astraImpact(r,lookup,ws);if(impact.length)add(r.id+': review requirement / inspection impact after changes to '+impact.join(', ')+'.');
-    if(!r.task||!r.sourceId||!r.owner)add(r.id+': record the task, source and implementation owner.');
-    if(!r.inspectionOwner)add(r.id+': inspection organization / scope is not recorded.');
-    if(r.sourceId&&!astraRow('sources',r.sourceId,lookup))add(r.id+': linked source is missing.');
-    if(r.documentId&&!astraRow('documents',r.documentId,lookup))add(r.id+': supporting document is missing.');
-    if(r.extra==='Yes'&&(ws.radios||{}).i14!=='yes')add(r.id+': recorded additional requirement needs Item 14 review. Item 15 is a separate scope decision.');
-    if(astraCost(r).value===null)add(r.id+': '+astraCost(r).text);
-    if(r.insertedText&&!String((ws.texts||{}).item13||'').includes(r.insertedText))add(r.id+': previously inserted Item 13 text was edited or removed; reconcile before replacing it.');
-  });
-  a.issues.forEach(r=>{
-    if(r.status==='Resolution recorded'){
-      if(astraStateError('issues',r,r.status))add(r.id+': incomplete recorded resolution.');
-      if(!r.basisKey||r.basisKey!==astraBasis(r,lookup,ws))add(r.id+': form, linked evidence or decision changed; review the recorded resolution.');
-    }else if(r.status!=='Superseded')add(r.id+': '+(r.status||'Draft')+' - '+(r.title||'unnamed question')+'; reviewer '+(r.reviewer||'not assigned')+'.');
-  });
-  const today=new Date().toISOString().slice(0,10);
-  a.closeout.forEach(r=>{
-    if(r.status==='Completed'){
-      if(astraStateError('closeout',r,r.status)||!r.basisKey||r.basisKey!==astraBasis(r,lookup,ws))add(r.id+': completed action or its evidence needs review.');
-    }else if(r.due&&r.due<today)add(r.id+': overdue since '+r.due+' - '+(r.title||'closeout action')+'.');
-  });
-  return out;
-}
-function astraResetRecord(rec){
-  const a=rec.workspace&&rec.workspace.astra;if(!a)return;astraValidate(a);
-  a.history.push({at:new Date().toISOString(),action:'Workflow reset for new scope',before:{package:astraClone(a.package),documents:astraClone(a.documents),issues:astraClone(a.issues),closeout:astraClone(a.closeout)}});
-  a.package.incorporation='';
-  a.documents.forEach(r=>{r.sentDate='';r.ackDate='';r.ackRef='';});
-  a.issues.forEach(r=>{if(r.status!=='Superseded')r.status='Draft';delete r.basisKey;r.responseDate='';r.reference='';r.authority='';r.resolution='';});
-  a.closeout.forEach(r=>{r.status='Pending';r.completed='';delete r.basisKey;});
-}
-function astraSafeURL(v){try{const u=new URL(v);return ['http:','https:'].includes(u.protocol)?u.href:'';}catch(e){return '';}}
-function astraField(kind,row,field){
-  const [key,label,type]=field,value=String(row[key]??''),id=row.id||'package';let control;
-  const at=' data-kind="'+kind+'" data-row="'+id+'" data-field="'+key+'"';
-  let options=Array.isArray(type)?type.map(s=>[s,s]):ASTRA_LABELS[type]?(ASTRA[type]||[]).filter(x=>x.id!==id).map(x=>[x.id,astraShort(x.id)+' - '+(x.title||'Untitled')]):null;
-  if(type==='files')options=VLOG.files.map(f=>[f.sha256||f.name,f.name+' ['+(f.sha256||'no hash').slice(0,10)+']']);
-  if(options){if(!Array.isArray(type))options.unshift(['','Not recorded']);if(value&&!options.some(x=>x[0]===value))options.push([value,value+' (unavailable)']);control='<select'+at+'>'+options.map(([v,l])=>'<option value="'+htmlEsc(v)+'"'+(v===value?' selected':'')+'>'+htmlEsc(l)+'</option>').join('')+'</select>';}
-  else if(type==='area')control='<textarea'+at+' rows="2">'+htmlEsc(value)+'</textarea>';
-  else control='<input'+at+' type="'+(type==='date'?'date':type==='number'?'number':'text')+'"'+(type==='number'?' min="0" step="any"':'')+' value="'+htmlEsc(value)+'">';
-  return '<label>'+htmlEsc(label)+control+'</label>';
-}
-function astraRowHTML(kind,row){
-  const cost=kind==='requirements'?'<p class="astra-cost" data-cost="'+row.id+'">'+htmlEsc(astraCost(row).text)+'</p>':'';
-  const action=(kind==='requirements'?'<button type="button" class="pbtn pbtn-secondary" data-action="insert" data-kind="'+kind+'" data-row="'+row.id+'">Review text for Item 13</button>':'')+(['documents','requirements'].includes(kind)?'<button type="button" class="pbtn pbtn-secondary" data-action="review" data-kind="'+kind+'" data-row="'+row.id+'">Record impact review</button>':'');
-  return '<details class="astra-row" id="astra-row-'+row.id+'"><summary>'+htmlEsc(astraShort(row.id)+' - '+(row.title||'Untitled'))+'</summary><div class="astra-grid">'+ASTRA_FIELDS[kind].map(f=>astraField(kind,row,f)).join('')+'</div>'+cost+'<div class="astra-actions"><label><input type="checkbox" data-kind="'+kind+'" data-row="'+row.id+'" data-field="include"'+(row.include!==false?' checked':'')+'> Include in separate review report</label>'+action+'<button type="button" class="pbtn pbtn-tertiary" data-action="remove" data-kind="'+kind+'" data-row="'+row.id+'">Remove record</button></div></details>';
-}
-function astraRender(){
-  const host=document.getElementById('astraPanel');if(!host)return;
-  const opened=new Set(Array.from(host.querySelectorAll('details[open]')).map(e=>e.id));
-  host.innerHTML='<h2>Supporting review records <span class="astra-edition">v1.12.0</span></h2><p>Optional working evidence saved in this browser with the draft. These review findings do not clear approval holds. Exports contain only this draft\'s selected records; no attachments are embedded.</p>'
-    +'<div class="astra-actions"><button type="button" class="pbtn pbtn-primary" data-action="pdf">Export selected review PDF</button><button type="button" class="pbtn pbtn-secondary" data-action="refresh">Refresh review</button></div><div id="astraFindings" aria-live="polite"></div>'
-    +'<details id="astra-policy"><summary>Guidance and applicability</summary><p>'+htmlEsc(ASTRA_GUIDANCE.general)+'</p><p>'+htmlEsc(ASTRA_GUIDANCE.sap)+'</p><p>Reviewed '+ASTRA_GUIDANCE.reviewed+'. Recorded source version: '+htmlEsc(ASTRA.guidanceVersion)+'.</p>'+ASTRA_GUIDANCE.sources.map(([l,u])=>'<p><a href="'+u+'" target="_blank" rel="noopener noreferrer">'+htmlEsc(l)+'</a></p>').join('')+'<p>Record the executed contract clause and deviation basis below. A newer source does not amend an existing contract. Contract scope or unresolved placement questions require the responsible Government office.</p></details>'
-    +'<details id="astra-package"><summary>Contract attachment reconciliation</summary><div class="astra-grid">'+ASTRA_FIELDS.package.map(f=>astraField('package',ASTRA.package,f)).join('')+'</div></details>'
-    +Object.keys(ASTRA_LABELS).map(kind=>'<details id="astra-'+kind+'"><summary>'+ASTRA_LABELS[kind]+' ('+ASTRA[kind].length+')</summary><button type="button" class="pbtn pbtn-secondary" data-action="add" data-kind="'+kind+'">Add '+({sources:'source',documents:'document',requirements:'requirement',issues:'question',closeout:'action'}[kind])+'</button>'+ASTRA[kind].map(r=>astraRowHTML(kind,r)).join('')+'</details>').join('')
-    +'<details id="astra-history"><summary>Local review history ('+ASTRA.history.length+')</summary><p>User-recorded history is not authenticated Government approval or immutable evidence. Full Backup retains the complete history.</p>'+ASTRA.history.slice(-30).reverse().map(r=>'<p>'+htmlEsc(r.at+' - '+r.action+' '+(r.id||''))+'</p>').join('')+'</details>';
-  opened.forEach(id=>{const el=document.getElementById(id);if(el)el.open=true;});astraRefresh();
-}
-function astraRefresh(){
-  const host=document.getElementById('astraFindings');if(!host)return;
-  const findings=astraHasData(ASTRA)?astraFindings(ASTRA,collectWorkspace()):[];
-  const summary=document.querySelector('#astraReview > summary');if(summary)summary.textContent='Optional supporting records ('+findings.length+' review items'+(findings.some(x=>x.includes('overdue since'))?', overdue actions':'')+')';
-  host.innerHTML='<strong>Review recommendations ('+findings.length+')</strong>'+(findings.length?'<ul>'+findings.map(s=>'<li>'+htmlEsc(astraDisplay(s,ASTRA))+'</li>').join('')+'</ul>':'<p>No inconsistency detected in the recorded review data. Missing optional records are not evidence of approval or compliance.</p>');
-  document.querySelectorAll('[data-cost]').forEach(el=>{const r=astraRow('requirements',el.dataset.cost);if(r)el.textContent=astraCost(r).text;});
-}
-function astraRequirementText(row){
-  const src=astraRow('sources',row.sourceId),doc=astraRow('documents',row.documentId);
-  return ['Requirement: '+(row.title||row.id),'Task: '+(row.task||''),'Authority: '+(src?[src.title,src.edition,src.locator].filter(Boolean).join('; '):'NOT RECORDED'),row.contractRef?'Contract reference: '+row.contractRef:'',row.scope?'Applicability / site: '+row.scope:'',row.owner?'Implementation owner: '+row.owner:'',doc?'Supporting guidance: '+doc.title+'; version '+doc.version:'',row.inspectionOwner?'Inspection scope / organization: '+row.inspectionOwner:'',row.criteria?'Review criteria: '+row.criteria:''].filter(Boolean).join('\n');
-}
-async function astraInsert(id){
-  const row=astraRow('requirements',id);if(!row||window.DD254_READONLY)return false;
-  if(!row.task||!row.sourceId||!astraRow('sources',row.sourceId)){alert('Record the task and an available authority source before preparing Item 13 text.');return false;}
-  const text=astraRequirementText(row);
-  if(!(await uiConfirm('Review this proposed Item 13 text. Cost assumptions and internal decision notes are excluded.\n\n'+text+'\n\nInsert this wording?')))return false;
-  const box=document.getElementById('item13'),old=box.value||'';
-  if(row.insertedText){
-    const hits=old.split(row.insertedText).length-1;
-    if(hits!==1){alert('The previous inserted wording was changed, removed or duplicated. Reconcile it manually; no Item 13 text was overwritten.');return false;}
-    box.value=old.replace(row.insertedText,text);
-  }else box.value=old+(old.trim()?'\n\n':'')+text;
-  astraAudit('Inserted reviewed Item 13 wording',id,row.insertedText||null,text);row.insertedText=text;
-  box.dispatchEvent(new Event('input',{bubbles:true}));if(typeof run==='function')run();astraTouch();astraRefresh();return true;
-}
-function astraReportLines(a,ws){
-  const id=astraIdentity(ws);
-  const lines=['CODEX ASTRA REVIEW RECORD','Contract: '+(id.contract||'Not recorded')+' | Revision: '+id.revision+' | Date: '+(id.date||'Not recorded'),'User-recorded working evidence. Not the official DD254 or authenticated approval.','Generated '+new Date().toISOString(),'Guidance version: '+a.guidanceVersion,'CONTRACT PACKAGE'];
-  ASTRA_FIELDS.package.forEach(([k,l])=>{if(a.package[k])lines.push(l+': '+a.package[k]);});
-  const selected=astraClone(a);Object.keys(ASTRA_LABELS).forEach(kind=>{selected[kind]=selected[kind].filter(r=>r.include!==false);});
-  lines.push('REVIEW RECOMMENDATIONS FOR SELECTED RECORDS');lines.push(...astraFindings(selected,ws,a));
-  Object.keys(ASTRA_LABELS).forEach(kind=>{
-    if(!selected[kind].length)return;
-    lines.push(ASTRA_LABELS[kind].toUpperCase());
-    selected[kind].forEach(r=>{lines.push(r.id+' - '+(r.title||'Untitled'));ASTRA_FIELDS[kind].forEach(([k,l,type])=>{if(!r[k])return;let value=r[k];if(ASTRA_LABELS[type]){const ref=astraRow(type,value,selected);value=ref?astraShort(ref.id)+' - '+(ref.title||'Untitled'):astraShort(value)+' (reference not included in this report)';}lines.push(l+': '+value);});if(r.reviewedAt)lines.push('Impact review recorded: '+r.reviewedAt);if(kind==='requirements')lines.push('Estimate: '+astraCost(r).text);});
-  });
-  return lines.map(s=>astraDisplay(s,selected));
-}
-function astraReportHTML(){return '<section style="margin-top:20px;font:12px/1.5 Arial;color:#172d42"><h2>Codex Astra review evidence</h2><p>Selected records for this draft only. Referenced files are not embedded. Internal history is retained in Full Backup.</p>'+astraReportLines(ASTRA,collectWorkspace()).map(s=>'<p style="white-space:pre-wrap">'+htmlEsc(s)+'</p>').join('')+'</section>';}
-async function astraExportPDF(){
-  try{
-    const ws=collectWorkspace(),a=astraSnapshot(),lines=astraReportLines(a,ws);
-    const {PDFDocument,StandardFonts,rgb}=PDFLib,doc=await PDFDocument.create();
-    const font=await doc.embedFont(StandardFonts.Helvetica),bold=await doc.embedFont(StandardFonts.HelveticaBold);let page,y;
-    const marking=(typeof dashClsOf==='function'&&dashClsOf({workspace:ws})==='CUI')||ws.selects.clsSel==='CUI'?'CUI':'UNCLASSIFIED';
-    function next(){page=doc.addPage([612,792]);y=736;page.drawText(marking,{x:46,y:765,size:9,font:bold});page.drawText(marking+' | Codex Astra v1.12.0 | '+doc.getPageCount(),{x:46,y:22,size:8,font:font});}
-    next();
-    lines.forEach((s,i)=>{
-      const clean=sanitizePdfText(String(s)).replace(/\r/g,'');
-      clean.split('\n').forEach(line=>{
-        let current='';for(const char of line){if(font.widthOfTextAtSize(current+char,10)>518){if(y<48)next();page.drawText(current,{x:46,y:y,size:10,font:font});y-=14;current='';}current+=char;}
-        if(y<48)next();page.drawText(current,{x:46,y:y,size:10,font:i===0?bold:font,color:rgb(.08,.13,.2)});y-=14;
-      });y-=4;
-    });
-    doc.setTitle('DD254 Codex Astra review record');doc.setSubject('Selected local review evidence');
-    const blob=new Blob([await doc.save()],{type:'application/pdf'}),url=URL.createObjectURL(blob),link=document.createElement('a');
-    link.href=url;link.download='DD254_Astra_Review_'+dd254FileSafe(astraIdentity(ws).contract||'Draft','_')+'.pdf';document.body.appendChild(link);link.click();setTimeout(()=>{link.remove();URL.revokeObjectURL(url);},1200);
-    if(typeof audLog==='function')audLog(DASH.current||'','','astra-review-export','Selected records; no automatic sending or approval');return true;
-  }catch(e){alert('Review PDF could not be created: '+e.message);return false;}
-}
-async function astraPreflight(records){
-  const lines=[];(records||[]).forEach(r=>{astraFindings(r.workspace&&r.workspace.astra,r.workspace||{}).forEach(s=>lines.push((r.title||r.id)+': '+s));});
-  if(!lines.length)return true;
-  return uiConfirm('Astra review recommendations (existing approval holds remain in force):\n\n'+lines.join('\n')+'\n\nContinue issuance with these review items? Cancel to reconcile them.');
-}
-document.addEventListener('DOMContentLoaded',function(){
-  astraRender();const host=document.getElementById('astraPanel');
-  document.getElementById('astraReview').addEventListener('toggle',function(){if(this.open)astraRender();});
-  host.addEventListener('focusin',e=>{if(e.target.dataset.field)e.target.dataset.previous=e.target.type==='checkbox'?String(e.target.checked):e.target.value;});
-  host.addEventListener('input',e=>{const x=e.target;if(!x.dataset.field||x.tagName==='SELECT'||x.type==='checkbox')return;astraSet(x.dataset.kind,x.dataset.row,x.dataset.field,x.value,false);});
-  host.addEventListener('change',e=>{const x=e.target;if(!x.dataset.field)return;astraSet(x.dataset.kind,x.dataset.row,x.dataset.field,x.type==='checkbox'?x.checked:x.value,true,x.type==='checkbox'?x.dataset.previous==='true':x.dataset.previous);});
-  host.addEventListener('click',e=>{const x=e.target.closest('[data-action]');if(!x)return;const k=x.dataset.kind,id=x.dataset.row;
-    if(x.dataset.action==='add'){const id=astraAdd(k);const group=document.getElementById('astra-'+k);if(group)group.open=true;}
-    if(x.dataset.action==='remove')astraRemove(k,id);if(x.dataset.action==='insert')astraInsert(id);if(x.dataset.action==='review')astraRecordReview(k,id);if(x.dataset.action==='pdf')astraExportPDF();if(x.dataset.action==='refresh')astraRender();
-  });
-  document.addEventListener('change',e=>{if(!host.contains(e.target))astraRefresh();});
-  setInterval(()=>{if(!document.hidden&&document.getElementById('astraReview').open)astraRefresh();},60000);
-});
-
-</script>
 
 <script>
 /* Drafting actions reuse the form and its existing validators/templates.
@@ -12138,7 +11635,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   const note=document.createElement('div');note.textContent='Uses existing templates for selected Items 10/11. Existing sections are preserved. Review contract authority and replace unfinished prompts.';compose.append(note);
   const hint=document.createElement('div');hint.id='completionPromptHint';compose.append(hint,button('completionPrompt','Find next unfinished prompt',completionNextPrompt));
   b13El().before(compose);
-  const records=document.getElementById('astraReview'),log=document.getElementById('vlogBox');if(records&&log){records.open=false;log.after(records);}
   completionRender();
 });
 
