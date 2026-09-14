@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive - Codex Astra v1.15.0</title>
+<title>DD254 Interactive - Codex Astra v1.15.1</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1382,14 +1382,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.128';
+const TOOL_VERSION='2.129';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='1.15.0';
+const RELEASE_VERSION='1.15.1';
 function releaseLabel(){ return 'Codex Astra v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -9761,6 +9761,164 @@ async function dashCtCapture(i){
   tplSave(TPL_CT,window.TPL_EDIT);
   dashTplEdit('ct');
 }
+/* ── RECEIVED DD FORM 254 → DD-254 TEMPLATE LANGUAGE ─────────────────
+   A subcontract DD-254 is written from the language of the DD Form 254 the
+   company received, and that language used to be retyped by hand. This reads
+   the form data a dynamic DD Form 254 carries (its XFA datasets packet - the
+   same fields exportOfficialXFA writes) and creates ONE DD-254 Template
+   Language entry from Items 10-16 and 18, with its source type and date taken
+   from Item 3.
+
+   That entry is the only thing it creates. By owner decision it makes no draft,
+   no dashboard record, no parent link and keeps no copy of the PDF: the tool's
+   scope is preparing and issuing DD Forms 254, and the received form is an
+   input to a template, not a record to track. Items 1-9 and 17, reviewers,
+   signatures and file attachments are not imported.
+
+   A PDF without form data (flattened, printed, scanned or generated by another
+   system), an encrypted one, and a form marked above CUI are refused with the
+   reason. This tool handles UNCLASSIFIED and CUI entries only. */
+const RCV254_MAX_BYTES=25*1024*1024;
+const RCV254_NO_DATA='This PDF carries no DD Form 254 form data. It may be a flattened, printed or scanned copy, or a PDF produced by another system. Only a fillable (dynamic) DD Form 254 can be imported; enter the language by hand instead.';
+function rcv254Name(item){
+  const s=(item&&typeof item.decodeText==='function')?item.decodeText():String(item||'');
+  return s.replace(/^\(|\)$/g,'').trim().toLowerCase();
+}
+function rcv254Decode(L,obj){
+  if(obj instanceof L.PDFRawStream) return L.decodePDFRawStream(obj).decode();
+  if(obj&&typeof obj.getContents==='function') return obj.getContents();
+  throw new Error(RCV254_NO_DATA);
+}
+async function rcv254ExtractDatasets(bytes){
+  const L=(typeof PDFLib!=='undefined')?PDFLib:window.PDFLib;
+  if(!L) throw new Error('The PDF library did not load.');
+  let doc;
+  try{ doc=await L.PDFDocument.load(bytes,{updateMetadata:false}); }
+  catch(e){
+    if(/encrypt/i.test(String((e&&e.message)||''))) throw new Error('This PDF is encrypted, so its form data cannot be read. Ask the sender for an unencrypted copy.');
+    throw new Error('This file could not be read as a PDF.');
+  }
+  if(doc.isEncrypted) throw new Error('This PDF is encrypted, so its form data cannot be read. Ask the sender for an unencrypted copy.');
+  const acro=doc.catalog.lookupMaybe(L.PDFName.of('AcroForm'),L.PDFDict);
+  const xfa=acro?acro.lookup(L.PDFName.of('XFA')):null;
+  if(!xfa) throw new Error(RCV254_NO_DATA);
+  const text=function(u8){ return new TextDecoder('utf-8').decode(u8); };
+  let xml='';
+  try{
+    if(xfa instanceof L.PDFArray){
+      for(let i=0;i+1<xfa.size();i+=2){
+        if(rcv254Name(xfa.get(i))==='datasets'){ xml=text(rcv254Decode(L,xfa.lookup(i+1))); break; }
+      }
+    } else {
+      const whole=text(rcv254Decode(L,xfa));
+      const m=whole.match(/<xfa:datasets[\s\S]*?<\/xfa:datasets>/);
+      xml=m?m[0]:'';
+    }
+  }catch(e){
+    if(e&&e.message===RCV254_NO_DATA) throw e;
+    throw new Error('The form data in this PDF is compressed in a way this tool cannot read.');
+  }
+  if(!xml.trim()) throw new Error(RCV254_NO_DATA);
+  return xml;
+}
+function rcv254Date(v){
+  const s=String(v||'').trim(); let m;
+  if((m=s.match(/^(\d{4})-?(\d{2})-?(\d{2})$/))) return m[1]+'-'+m[2]+'-'+m[3];
+  if((m=s.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/))) return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);
+  if((m=s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/))) return m[3]+'-'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2);
+  return '';
+}
+/* Returns {data, srcType, srcRev, srcDate, rawDate, number, marking} or throws
+   with a reason a preparer can act on. */
+function rcv254Parse(xml){
+  let dom;
+  try{ dom=new DOMParser().parseFromString(xml,'application/xml'); }catch(e){ dom=null; }
+  if(!dom||dom.getElementsByTagName('parsererror').length) throw new Error('The form data in this PDF is not readable.');
+  const f=function(name){ const el=dom.getElementsByTagName(name)[0]; return el?String(el.textContent||'').trim():null; };
+  if(f('thirteen_text')===null&&f('ten_a')===null&&f('eleven_a')===null) throw new Error('This PDF has form data, but it is not a DD Form 254.');
+  const on=function(name){ return /^(1|true|on|yes)$/i.test(f(name)||''); };
+  const marking=f('Classification')||'';
+  let cls='';
+  if(/\bCUI\b/i.test(marking)&&!/SECRET|CONFIDENTIAL/i.test(marking)) cls='CUI';
+  else if(marking&&!/^UNCLASSIFIED\b/i.test(marking)) throw new Error('This DD Form 254 is marked "'+marking+'". This tool handles UNCLASSIFIED or CUI entries only, so it was not imported. A classified DD Form 254 must be handled on an approved system.');
+  const d=ctBlankData();
+  d.cls=cls;
+  const map10={'10a':'ten_a','10b':'ten_b','10c':'ten_c','10d':'ten_d','10e1':'ten_SCI','10e2':'ten_NonSCI','10f':'ten_f','10g':'ten_g','10h':'ten_h','10i':'ten_i','10j':'ten_j','10k':'ten_k'};
+  CT_10.forEach(function(k){ d.c10[k]=on(map10[k]); });
+  d.t10k=f('ten_other')||'';
+  CT_11.forEach(function(k){ d.c11[k]=on('eleven_'+k.substring(2)); });
+  d.t11m=f('eleven_other')||'';
+  d.i12route=on('twelve_direct')?'dir':(on('twelve_thru')?'thru':'');
+  d.i12specify=f('twelve_specify')||'';
+  d.i12=f('twelve_PublicAuthority')||'';
+  d.i13=f('thirteen_text')||'';
+  d.i14=on('fourteen_Yes')?'yes':(on('fourteen_No')?'no':''); d.i14text=f('fourteen_identify')||'';
+  d.i15=on('fifteen_Yes')?'yes':(on('fifteen_No')?'no':''); d.i15text=f('fifteen_identify')||'';
+  d.i16={a:f('sixteen_GCAName')||'',b:f('sixteen_AAC')||'',c:f('sixteen_Address')||'',d:f('sixteen_POCName')||'',e:f('sixteen_Phone')||'',f:f('sixteen_Email')||''};
+  CT_18.forEach(function(k){ d.c18[k]=on('eighteen_'+k.substring(2)); });
+  d.t18f=d.c18['18f']?(f('eighteen_other')||''):'';
+  let srcType='', srcRev='', rawDate='';
+  if(on('three_C')){ srcType='final'; rawDate=f('three_dateC')||''; }
+  else if(on('three_B')){ srcType='rev'; srcRev=f('three_RevisionNum')||''; rawDate=f('three_dateB')||''; }
+  else if(on('three_A')){ srcType='orig'; rawDate=f('three_dateA')||''; }
+  const number=f('two_Sub')||f('two_Prime')||f('two_Solicitation')||'';
+  const has=CT_10.some(function(k){return d.c10[k];})||CT_11.some(function(k){return d.c11[k];})||CT_18.some(function(k){return d.c18[k];})
+    ||[d.i12route,d.i12,d.i12specify,d.i13,d.i14,d.i14text,d.i15,d.i15text,d.t10k,d.t11m].some(Boolean)
+    ||Object.keys(d.i16).some(function(k){return d.i16[k];});
+  if(!has) throw new Error('This DD Form 254 has no content in Items 10 to 16 or 18, so there is nothing to import.');
+  return {data:d, srcType:srcType, srcRev:srcRev, srcDate:rcv254Date(rawDate), rawDate:rawDate, number:number, marking:marking};
+}
+function rcv254Summary(r){
+  const d=r.data, lines=[];
+  const sel=function(list,grp){ return list.filter(function(k){return d[grp][k];}); };
+  const s10=sel(CT_10,'c10'), s11=sel(CT_11,'c11'), s18=sel(CT_18,'c18');
+  lines.push('Item 10: '+(s10.length?s10.join(', '):'none selected'));
+  lines.push('Item 11: '+(s11.length?s11.join(', '):'none selected'));
+  lines.push('Item 12: '+({dir:'DIRECT',thru:'THROUGH'}[d.i12route]||'no routing')+(d.i12?' with release authority':''));
+  lines.push('Item 13: '+(d.i13?d.i13.length.toLocaleString()+' characters':'empty'));
+  lines.push('Item 14: '+(d.i14?d.i14.toUpperCase():'not marked')+(d.i14text?' with text':'')+' · Item 15: '+(d.i15?d.i15.toUpperCase():'not marked')+(d.i15text?' with text':''));
+  lines.push('Item 16: '+(Object.keys(d.i16).some(function(k){return d.i16[k];})?'GCA details':'empty'));
+  lines.push('Item 18: '+(s18.length?s18.join(', '):'none selected'));
+  return lines;
+}
+async function rcv254Import(file){
+  if(window.DD254_READONLY){ alert('This tab is read-only — another tab holds the lock.'); return false; }
+  if(!file) return false;
+  if(file.size>RCV254_MAX_BYTES){ alert('That file is larger than 25 MB, which is too large for a DD Form 254. Nothing was imported.'); return false; }
+  let result, bytes;
+  try{
+    bytes=new Uint8Array(await file.arrayBuffer());
+    result=rcv254Parse(await rcv254ExtractDatasets(bytes));
+  }catch(e){ alert('Nothing was imported.\n\n'+((e&&e.message)||e)); return false; }
+  const srcLbl=ctSrcLabel({srcType:result.srcType,srcRev:result.srcRev});
+  const label='Received DD 254 — '+(result.number||'no contract number')+(srcLbl?' — '+srcLbl:'')+(result.srcDate?' '+result.srcDate:'');
+  const ok=await uiConfirm('Create a DD-254 Template Language entry from "'+(file.name||'this PDF')+'"?\n\n'
+    +'Name: '+label+'\n'
+    +'Source: '+(srcLbl||'Item 3 type not marked')+(result.srcDate?' dated '+result.srcDate:(result.rawDate?' (date "'+result.rawDate+'" not recognised — set it on the template)':' (no date)'))+'\n'
+    +'Form marked: '+(result.data.cls==='CUI'?'CUI':'UNCLASSIFIED')+'\n\n• '
+    +rcv254Summary(result).join('\n• ')
+    +'\n\nNot imported: Items 1–9 and 17, reviewers, signatures and file attachments. No draft or dashboard record is created, and the PDF is not kept.'
+    +'\n\nThis is the received form’s own wording. Review it before applying it to a subcontract.');
+  if(!ok) return false;
+  const t={label:label, srcDate:result.srcDate, srcType:result.srcType, srcRev:result.srcRev,
+           ioId:(typeof ioNewId==='function')?ioNewId():('ct'+Math.random().toString(36).slice(2,10)),
+           updatedAt:new Date().toISOString(), data:result.data};
+  const editing=(window.TPL_EDIT_KIND==='ct'&&Array.isArray(window.TPL_EDIT));
+  const list=editing?window.TPL_EDIT:tplLoad(TPL_CT);
+  list.push(t);
+  await tplSave(TPL_CT,list);
+  let hash='';
+  try{ const h=await crypto.subtle.digest('SHA-256',bytes); hash=Array.from(new Uint8Array(h)).map(function(b){return ('0'+b.toString(16)).slice(-2);}).join(''); }catch(e){}
+  audLog('',label,'template-imported-from-dd254',(file.name||'PDF')+(hash?' sha256 '+hash:'')+' — '+rcv254Summary(result).join('; '));
+  if(editing) dashTplEdit('ct');
+  if(t.srcType==='final') ctFinalNotice(t);
+  return t;
+}
+function rcv254Upload(ev){
+  const f=ev&&ev.target&&ev.target.files&&ev.target.files[0];
+  if(ev&&ev.target) ev.target.value='';
+  return rcv254Import(f);
+}
 /* ── form-side panel ── */
 /* Drafts store whichever template they were built from. That reference used to
    be the template's POSITION in the list, so reordering or deleting a template
@@ -10589,6 +10747,8 @@ async function dashTplEdit(kind){
       +'<input type="file" id="tplUpFile" accept=".csv,.xlsx" style="display:none" onchange="tplIoUpload(event,\''+kind+'\')">':'')
     +(ioHasUndo(kind)?'<button class="dash-btn" style="background:#8a6a00;" onclick="tplIoUndo(\''+kind+'\')">↩ Undo last change</button>':'')
     +'<input type="file" id="tplImportFile" accept=".json" style="display:none" onchange="tplImport(event)">'
+    +(kind==='ct'?'<button class="dash-btn" id="rcv254Btn" style="background:#2e5077;" title="Create a DD-254 Template Language entry from the Items 10–16 and 18 of a fillable DD Form 254 you received. Nothing else is created and the PDF is not kept." onclick="document.getElementById(\'rcv254File\').click()">⬆ Import received DD 254 (PDF)</button>'
+      +'<input type="file" id="rcv254File" accept=".pdf,application/pdf" style="display:none" onchange="rcv254Upload(event)">':'')
     +'<button class="dash-btn" style="background:#46606f;" onclick="dashTplSaveNow()">💾 Save now</button>'
     +'<span id="tplSaveState" style="font-size:10.5px;font-weight:bold;margin-left:6px;align-self:center;"></span>'
     +'<button class="dash-btn" style="background:#2b3440;" onclick="dashTplDone()">✓ Done</button></div>'
