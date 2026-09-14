@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive - Codex Astra v1.14.0</title>
+<title>DD254 Interactive - Codex Astra v1.14.1</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -579,7 +579,7 @@ body.ws-dragging{user-select:none;}
 <div class="fw">
 <div class="cls-banner" id="clsBanner">UNCLASSIFIED</div>
 <div class="fh">
-<h1>Department of Defense<br>Contract Security Classification Specification<br><span style="font-size:10px;font-weight:normal;color:#7090b0;">DD Form 254 · APR 2018 · OMB 0704-0567 · <span id="toolVer">Tool</span> · Codex Astra v1.12.0 (Exp. Aug 31, 2028)</span></h1>
+<h1>Department of Defense<br>Contract Security Classification Specification<br><span style="font-size:10px;font-weight:normal;color:#7090b0;">DD Form 254 · APR 2018 · OMB 0704-0567 (Exp. Aug 31, 2028) · <span id="toolVer">Tool</span> · <span id="releaseVer">Codex Astra</span></span></h1>
 <div class="omb">The requirements of the National Industrial<br>Security Program (NISP) apply to all security<br>aspects of this effort involving classified information.</div>
 </div>
 
@@ -1382,8 +1382,17 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.126';
+const TOOL_VERSION='2.127';
+/* The release name had a second, hand-typed copy in the header markup and it
+   drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
+   reviewer compares against the download. The header now renders from this
+   constant, and make_build_facts.py refuses a build whose title, filename or any
+   literal release string disagrees with it. The OMB expiry belongs to the
+   form's information collection, so it sits beside the OMB number instead. */
+const RELEASE_VERSION='1.14.1';
+function releaseLabel(){ return 'Codex Astra v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
+document.getElementById('releaseVer').textContent=releaseLabel();
 /* The one shared normaliser for text drawn into a PDF with pdf-lib's standard
    (WinAnsi) fonts \u2014 this used to be a second, looser implementation that a
    duplicate inside the flat-PDF module shadowed for its own callers, leaving
@@ -4023,7 +4032,10 @@ function lsWrite(all){
 }
 async function draftPut(rec){
   if(window.DD254_READONLY) return;   /* read-only tab: never write a draft */
-  if(typeof bkMark==='function'&&!window.BK_UNLOADING) bkMark();
+  /* DD254_QUIET_WRITE: a rules-version stamp with unchanged counts is
+     bookkeeping. Counting it would turn the backup reminder red for the whole
+     portfolio on every upgrade, which teaches people to ignore the reminder. */
+  if(typeof bkMark==='function'&&!window.BK_UNLOADING&&!window.DD254_QUIET_WRITE) bkMark();
   await dashDB();
   if(DASH.useLS){ const all=lsAll(); all[rec.id]=rec; if(!lsWrite(all)) throw new Error('Draft was retained in this tab only'); return; }
   return new Promise(function(res,rej){
@@ -5375,7 +5387,8 @@ async function dashSaveNow(){
   rec.stdLang=(typeof slApplied==='function')?slApplied():[];
   rec.meta={contract:gvx('i2a')||gvx('i2b')||gvx('i2c')||'', cage7:gvx('i7b'),
     contractor:(gvx('i6a').split('\n')[0]||''),
-    errors:(window.DD254_ERRORS||[]).length, warns:(window.DD254_WARNS||[]).length};
+    errors:(window.DD254_ERRORS||[]).length, warns:(window.DD254_WARNS||[]).length,
+    rulesVersion:TOOL_VERSION};
   if((rec.meta.errors>0)&&!rec.statusOverride&&!DASH_LOCKED[rec.status]) rec.status='Draft';
   /* Ticking a box that needs somebody else's approval raises its hold here, so
      the stop happens while you are working rather than at the end. */
@@ -5450,6 +5463,51 @@ function uiModal(kind, message, defVal){
 }
 function uiPrompt(msg,defVal){ return uiModal('prompt',msg,defVal); }
 function uiConfirm(msg){ return uiModal('confirm',msg); }
+/* More than two answers. Resolves the chosen value; Escape resolves null, the
+   same as a Cancel choice, so dismissing the dialog is never the action that
+   discards anything. */
+function uiChoice(message, choices){
+  return new Promise(function(resolve){
+    const triggerEl=document.activeElement;
+    const ov=document.createElement('div');
+    ov.className='ui-modal-ov';
+    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:5000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;';
+    const box=document.createElement('div');
+    box.className='ui-modal-box';
+    box.setAttribute('role','dialog'); box.setAttribute('aria-modal','true');
+    box.style.cssText='background:#fff;border-radius:8px;padding:20px 22px;max-width:520px;width:90%;box-shadow:0 8px 30px rgba(0,0,0,.35);';
+    const msg=document.createElement('div');
+    msg.id='uiModalMsg_'+Math.random().toString(36).slice(2,8);
+    box.setAttribute('aria-labelledby', msg.id);
+    msg.className='ui-modal-msg';
+    msg.style.cssText='font-size:13px;color:#1a1e26;white-space:pre-wrap;margin-bottom:14px;line-height:1.5;';
+    msg.textContent=message;
+    box.appendChild(msg);
+    const btnRow=document.createElement('div');
+    btnRow.style.cssText='display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px;';
+    function close(val){ if(ov.parentNode) document.body.removeChild(ov); if(triggerEl&&triggerEl.focus) triggerEl.focus(); resolve(val); }
+    const buttons=(choices||[]).map(function(c){
+      const b=document.createElement('button');
+      b.textContent=c.label; b.className='pbtn '+(c.primary?'pbtn-primary':'pbtn-tertiary'); b.style.textTransform='none';
+      b.setAttribute('data-choice',c.value==null?'':String(c.value));
+      b.onclick=function(){ close(c.value==null?null:c.value); };
+      btnRow.appendChild(b); return b;
+    });
+    box.appendChild(btnRow);
+    ov.appendChild(box);
+    document.body.appendChild(ov);
+    ov.addEventListener('keydown',function(e){
+      if(e.key==='Escape'){ close(null); return; }
+      if(e.key==='Tab'&&buttons.length){
+        const first=buttons[0], last=buttons[buttons.length-1];
+        if(e.shiftKey&&document.activeElement===first){ e.preventDefault(); last.focus(); }
+        else if(!e.shiftKey&&document.activeElement===last){ e.preventDefault(); first.focus(); }
+      }
+    });
+    const primary=buttons.find(function(b){ return /pbtn-primary/.test(b.className); })||buttons[0];
+    if(primary) primary.focus();
+  });
+}
 /* list-picker modal (resolves selected index, or null on cancel) */
 /* ── AUDIT TRAIL (append-only) ── */
 const AUD_KEY='dd254_audit';                 /* legacy whole-log store */
@@ -6950,7 +7008,7 @@ window.addEventListener('beforeunload',function(e){
   window.BK_UNLOADING=true;
   if(bkDirty()>0){ e.preventDefault(); e.returnValue=''; }
 });
-setTimeout(function(){ bkStatus(); var tv=document.getElementById('toolVer'); if(tv) tv.textContent='Tool v'+TOOL_VERSION; },600);
+setTimeout(function(){ bkStatus(); var tv=document.getElementById('toolVer'); if(tv) tv.textContent='Tool v'+TOOL_VERSION; var rv=document.getElementById('releaseVer'); if(rv) rv.textContent=releaseLabel(); },600);
 function ctPickContractType(list){
   return new Promise(function(res){
     var esc=htmlEsc; /* alias, not a second implementation — see htmlEsc's comment */
@@ -7117,9 +7175,77 @@ function dismissRender(){
     }).join('')+'</div>';
 }
 
+/* ── MATERIAL FROM EARLIER VERSIONS ─────────────────────────────────
+   v1.14.0 removed the Source & Validation Log and the Optional supporting
+   records. A draft saved by an earlier version still carries them in its stored
+   workspace, and opening that draft saves it (every run() autosaves), and saving
+   writes neither back. That was stated in the release notes and nowhere on
+   screen, so the first a preparer learned of it was the material being gone.
+
+   Every v1.11.0-v1.13.0 draft carries an empty vlog and astra block, so only
+   content counts: an empty log or an untouched records panel raises nothing. */
+const LEGACY_ASTRA_KINDS=[['sources','guidance source','guidance sources'],['documents','attachment or delivery record','attachment and delivery records'],
+  ['requirements','requirement record','requirement records'],['issues','question or decision','questions and decisions'],
+  ['closeout','change or closeout record','change and closeout records'],['history','review history entry','review history entries']];
+function legacyMaterialSummary(ws){
+  ws=ws||{}; const out=[];
+  const count=function(n,one,many){ if(n) out.push(n+' '+(n===1?one:many)); };
+  const v=ws.vlog;
+  if(v&&typeof v==='object'){
+    count(Array.isArray(v.entries)?v.entries.length:0,'source log entry','source log entries');
+    count(Array.isArray(v.files)?v.files.length:0,'attached file','attached files');
+    if(String(v.remarks||'').trim()) out.push('source log remarks');
+  }
+  const a=ws.astra;
+  if(a&&typeof a==='object'&&!Array.isArray(a)){
+    LEGACY_ASTRA_KINDS.forEach(function(k){ count(Array.isArray(a[k[0]])?a[k[0]].length:0,k[1],k[2]); });
+    if(a.package&&typeof a.package==='object'&&Object.keys(a.package).some(function(k){ return String(a.package[k]||'').trim(); })) out.push('contract package details');
+    /* A records block in a shape no release wrote is still somebody's data. */
+    const known=['schema','guidanceVersion','package'].concat(LEGACY_ASTRA_KINDS.map(function(k){ return k[0]; }));
+    if(Object.keys(a).some(function(k){ const x=a[k]; return known.indexOf(k)<0&&x!=null&&x!==''&&!(typeof x==='object'&&!Object.keys(x).length); })) out.push('supporting records in a format this version does not recognise');
+  }
+  return out;
+}
+/* Verbatim stored workspace: the Save Draft Workspace format, which v1.13.0's
+   Load Draft reads back with its log and records intact. */
+function legacyMaterialExport(rec){
+  const blob=new Blob([JSON.stringify(rec.workspace,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='DD254_Earlier_Version_Material_'+dd254FileSafe((rec.title||rec.id||'draft'),'_')+'_'+new Date().toISOString().split('T')[0]+'.json';
+  document.body.appendChild(a); a.click();
+  setTimeout(function(){ if(a.parentNode) document.body.removeChild(a); URL.revokeObjectURL(a.href); },600);
+  return blob;
+}
+async function legacyMaterialGate(rec){
+  /* A read-only tab never saves, so nothing is dropped there. */
+  if(window.DD254_READONLY) return true;
+  const found=legacyMaterialSummary(rec&&rec.workspace);
+  if(!found.length) return true;
+  const title=rec.title||((rec.meta||{}).contract)||'Untitled draft';
+  const choice=await uiChoice('“'+title+'” was saved by an earlier version and still holds material this version no longer keeps:\n\n• '
+    +found.join('\n• ')
+    +'\n\nThe Source & Validation Log and Optional supporting records were removed in v1.14.0. Opening this draft saves it, and saving drops that material from this browser for good.'
+    +'\n\nExport it first to keep a copy. The file opens with Load Draft in v1.13.0.',
+    [{label:'Cancel',value:null},{label:'Open without exporting',value:'discard'},{label:'Export, then open',value:'export',primary:true}]);
+  if(!choice) return false;
+  if(choice==='export'){
+    legacyMaterialExport(rec);
+    /* Same rule as Full Backup: the browser cannot prove a download landed, so
+       the preparer confirms it before the only other copy is discarded. */
+    if(!(await uiConfirm('Did the file finish downloading and save?\n\nOK opens the draft, which drops the material from this browser. Cancel leaves the draft unopened and unchanged.'))) return false;
+    audLog(rec.id,rec.title||'','legacy-material-exported',found.join('; '));
+  } else {
+    audLog(rec.id,rec.title||'','legacy-material-discarded',found.join('; '));
+  }
+  return true;
+}
 async function dashOpen(id){
   if(typeof dashTplLeave==='function'&&!(await dashTplLeave())) return;
+  /* The post-upgrade recount drives the same form fields; opening a draft
+     midway would have it overwrite what the preparer is looking at. */
+  if(window.DD254_AUTO_RECOUNT) await window.DD254_AUTO_RECOUNT;
   const rec=await draftGet(id); if(!rec) return alert('Draft not found.');
+  if(!(await legacyMaterialGate(rec))) return;
   resetFormFields();
   DASH.current=id;
   if(typeof dismissLoad==='function') dismissLoad(rec);
@@ -7662,30 +7788,37 @@ async function dashTodoIcs(id,i){
    from rules that no longer exist, and the only cure was to open each draft in
    turn. This walks the lot: it applies each draft's workspace to the form, runs
    validation, rewrites meta, and puts back whatever was open. */
-async function dashRecountAll(){
-  if(window.DD254_READONLY){ alert('This tab is read-only — another tab holds the lock.'); return; }
-  const drafts=await draftAll();
-  if(!drafts.length){ alert('No drafts to recount.'); return; }
-  if(!(await uiConfirm('Recount validation for '+drafts.length+' draft'+(drafts.length===1?'':'s')+'?\n\nEach one is re-checked against the current rules and its error and warning counts are refreshed. Nothing else about the drafts is changed.'))) return;
+/* Shared by the manual command and the post-upgrade pass. Each record is
+   re-read immediately before it is written and only its counts and rules
+   version are patched onto that fresh copy: writing back the snapshot taken at
+   the start would silently undo a status change, hold or note made on the
+   dashboard while a large portfolio was still being recounted. */
+async function dashRecountDrafts(drafts){
   const wasOpen=DASH.current;
   const wasForm=wasOpen?collectWorkspace():null;
-  let changed=0;
+  let changed=0, failed=0;
   window.DD254_RECOUNTING=true;
   try{
     for(const rec of drafts){
-      resetFormFields();
-      if(typeof dismissLoad==='function') dismissLoad(rec);
-      applyWorkspace(rec.workspace||{});
-      if(typeof run==='function') run();
-      const e=(window.DD254_ERRORS||[]).length, wn=(window.DD254_WARNS||[]).length;
-      rec.meta=rec.meta||{};
-      if(rec.meta.errors!==e||rec.meta.warns!==wn){
-        rec.meta.errors=e; rec.meta.warns=wn;
+      try{
+        resetFormFields();
+        if(typeof dismissLoad==='function') dismissLoad(rec);
+        applyWorkspace(rec.workspace||{});
+        if(typeof run==='function') run();
+        const e=(window.DD254_ERRORS||[]).length, wn=(window.DD254_WARNS||[]).length;
+        const fresh=(await draftGet(rec.id))||rec;
+        fresh.meta=fresh.meta||{};
+        const stale=fresh.meta.errors!==e||fresh.meta.warns!==wn;
+        if(!stale&&fresh.meta.rulesVersion===TOOL_VERSION) continue;
         /* a draft forced to Draft by errors that no longer exist should be
            allowed back out, but never silently promoted — leave the status */
-        changed++;
-        await draftPut(rec);
-      }
+        fresh.meta.errors=e; fresh.meta.warns=wn; fresh.meta.rulesVersion=TOOL_VERSION;
+        if(stale) changed++;
+        window.DD254_QUIET_WRITE=!stale;
+        const write=draftPut(fresh);
+        window.DD254_QUIET_WRITE=false;
+        await write;
+      }catch(err){ window.DD254_QUIET_WRITE=false; failed++; }
     }
   } finally {
     window.DD254_RECOUNTING=false;
@@ -7693,9 +7826,35 @@ async function dashRecountAll(){
     if(wasForm){ applyWorkspace(wasForm); if(typeof run==='function') run(); }
     DASH.current=wasOpen;
   }
-  audLog('','','recount',changed+' of '+drafts.length+' draft(s) updated');
+  return {changed:changed, failed:failed};
+}
+async function dashRecountAll(){
+  if(window.DD254_READONLY){ alert('This tab is read-only — another tab holds the lock.'); return; }
+  if(window.DD254_AUTO_RECOUNT) await window.DD254_AUTO_RECOUNT;
+  const drafts=await draftAll();
+  if(!drafts.length){ alert('No drafts to recount.'); return; }
+  if(!(await uiConfirm('Recount validation for '+drafts.length+' draft'+(drafts.length===1?'':'s')+'?\n\nEach one is re-checked against the current rules and its error and warning counts are refreshed. Nothing else about the drafts is changed.'))) return;
+  const res=await dashRecountDrafts(drafts);
+  audLog('','','recount',res.changed+' of '+drafts.length+' draft(s) updated'+(res.failed?'; '+res.failed+' could not be checked':''));
   await dashRenderCards();
-  alert('Recount complete: '+changed+' of '+drafts.length+' draft(s) had stale counts.');
+  alert('Recount complete: '+res.changed+' of '+drafts.length+' draft(s) had stale counts.'+(res.failed?'\n\n'+res.failed+' draft(s) could not be checked and were left unchanged.':''));
+}
+/* Card counts are snapshots taken under the rules of the version that saved
+   them, so after an update a queue could look clean when it is not, or blocked
+   when it is not, until someone remembered Manage → Recount. Any draft whose
+   counts were not taken under this TOOL_VERSION is recounted once on load,
+   without a prompt. Status is never changed, and the stored workspace is not
+   rewritten, so material from earlier versions is not dropped by this pass. */
+async function dashAutoRecount(){
+  if(window.DD254_READONLY||DASH.current) return {changed:0,checked:0,failed:0};
+  let drafts=[];
+  try{ drafts=await draftAll(); }catch(e){ return {changed:0,checked:0,failed:0}; }
+  const stale=drafts.filter(function(r){ return r&&r.id&&((r.meta||{}).rulesVersion!==TOOL_VERSION); });
+  if(!stale.length) return {changed:0,checked:0,failed:0};
+  const res=await dashRecountDrafts(stale);
+  audLog('','','recount','automatic after update to Tool v'+TOOL_VERSION+': '+res.changed+' of '+stale.length+' draft(s) had stale counts'+(res.failed?'; '+res.failed+' could not be checked':''));
+  if(!DASH.current) await dashRenderCards();
+  return {changed:res.changed,checked:stale.length,failed:res.failed};
 }
 async function dashNotesReport(){
   const drafts=(await draftAll()).sort(function(a,b){return (b.updatedAt||'').localeCompare(a.updatedAt||'');});
@@ -8120,6 +8279,9 @@ function dashRestore(ev){
     window.addEventListener('beforeunload',function(){ if(DASH.current) dashSaveNow(); });
     document.body.classList.add('dash-mode');
     dashRenderCards();
+    window.DD254_AUTO_RECOUNT=dashAutoRecount()
+      .catch(function(){ return {changed:0,checked:0,failed:0}; })
+      .then(function(r){ window.DD254_AUTO_RECOUNT=null; return r; });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot); else boot();
 })();
@@ -10663,10 +10825,10 @@ ${items11.length
   ? items11.map(i=>`<span class="tag">${htmlEsc(i)}</span>`).join('')
   : '<em style="font-size:10.5px;color:#888;">No performance requirements checked</em>'}
 
-<h2>Government Approval / Supplemental</h2>
+<h2>${htmlEsc(formItemTitle('14'))} / ${htmlEsc(formItemTitle('15'))}</h2>
 <table>
-  <tr><td>Item 14 — Gov't Approval Required</td><td>${i14yes?'YES — '+htmlEsc(gv('i14text')):'No'}</td></tr>
-  <tr><td>Item 15 — Supplemental Information</td><td>${i15yes?'YES — '+htmlEsc(gv('i15text')):'No'}</td></tr>
+  <tr><td>Item 14 — ${htmlEsc(formItemTitle('14'))}</td><td>${i14yes?'YES — '+htmlEsc(gv('i14text')):'No'}</td></tr>
+  <tr><td>Item 15 — ${htmlEsc(formItemTitle('15'))}</td><td>${i15yes?'YES — '+htmlEsc(gv('i15text')):'No'}</td></tr>
 </table>
 
 ${gv('item13') ? `<h2>Item 13 — Special Requirements (current text)</h2>
@@ -10697,6 +10859,19 @@ DD Form 254 Interactive Guided Edition · Preparation Aid Only · Governed by 32
   openGeneratedReport(html);
 }
 
+/* An item's title as the form prints it, read from the item's own label. The
+   worksheet and the CO package each kept a hand-typed copy of the Item 14 and 15
+   titles and both drifted: Item 14 became "Gov't Approval Required" and Item 15
+   "Supplemental Information", when the boxes are Additional Security
+   Requirements and Inspections. v1.13.0 fixed the same drift for Items 10 and 11
+   by reading the boxes; this does it for the numbered items. */
+function formItemTitle(num){
+  const n=Array.prototype.find.call(document.querySelectorAll('.ilabel .inum'),function(el){ return el.textContent.trim()===String(num); });
+  const t=n&&n.parentElement.querySelector('.ititle');
+  if(!t) return 'Item '+num;
+  const c=t.cloneNode(true); c.querySelectorAll('.req').forEach(function(r){ r.remove(); });
+  return c.textContent.replace(/\s+/g,' ').trim();
+}
 // ══════════════════════════════════════════════════════════════════
 // CONTRACTING OFFICER PREPARATORY PACKAGE EXPORT
 // ══════════════════════════════════════════════════════════════════
@@ -10739,10 +10914,13 @@ function exportCOPrep() {
 
   if(isSub) {
     coMust.push('SUBCONTRACT: Confirm the prime contractor has GCA authorization before imposing classified requirements on the subcontractor.');
-    if(gc('sapFlag')) coMust.push('SAP SUBCONTRACT: This DD Form 254 is not effective until signed by the subcontractor’s authorized representative. The form provides no subcontractor signature block. (DoDM 5205.07 §10.1.d)');
     coMust.push('SUBCONTRACT: Verify Item 17e contains the prime contractor CAGE code.');
     coMust.push('SUBCONTRACT: Confirm Item 18b (Subcontractor FSO) distribution is checked.');
   }
+  /* A SAP subcontract is identified by Item 2b OR Item 7a, as everywhere else
+     since v1.13.0 (dd254WorkspaceSapSub). This package still keyed on 2b alone,
+     so a form naming its subcontractor only in 7a lost the requirement here. */
+  if(gc('sapFlag') && (isSub || gv('i7a'))) coMust.push('SAP SUBCONTRACT: This DD Form 254 is not effective until signed by the subcontractor’s authorized representative. The form provides no subcontractor signature block. (DoDM 5205.07 §10.1.d)');
 
   if(hasSAP) {
     coMust.push('SAP: Coordinate with the Program Security Officer (PSO) and Program Security Manager (PSM) before issuing this DD Form 254.');
@@ -10831,6 +11009,13 @@ function exportCOPrep() {
     + flowClauses.map(fx=>`<div class="clause"><span class="clause-ref far">${htmlEsc(fx.ref)}</span><span>${htmlEsc(fx.rule)}</span></div>`).join('')
     + `<div style="font-size:10px;color:#566573;font-style:italic;margin-top:4px;">Confirm the current clause text and applicability in the subcontract instrument. The DD Form 254 conveys classification guidance and does not establish export-control jurisdiction or a complete clause set.</div>`;
 
+  /* This package is a review aid, not an official document, so it carries no
+     signature or date lines. It used to end in a signature block of its own,
+     which invited signing the wrong document: the certification is Item 17h,
+     with its date in 17i, on the generated dynamic DD Form 254. For a SAP
+     subcontract it also drew signature lines for the subcontractor - the
+     location v1.13.0 stopped inventing - under the Item 6 prime's name. */
+
   const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <title>Contracting Officer Preparatory Package — DD Form 254</title>
@@ -10864,18 +11049,19 @@ function exportCOPrep() {
 <div class="meta">Generated: ${now} &nbsp;|&nbsp; FOR INTERNAL CO USE — Not an official document. Do not attach to contract file in lieu of the signed DD Form 254.</div>
 
 ${hasSAP ? '<div class="sap-banner">🔐 SPECIAL ACCESS PROGRAM (SAP) CONTRACT — Coordinate with PSM/PSO before routing</div>' : ''}
-${isSub && gc('sapFlag') ? '<div class="sub-banner">📋 SAP SUBCONTRACT — subcontractor signature required before access is granted; the form provides no block for it (DoDM 5205.07 §10.1.d)</div>' : (isSub ? '<div class="sub-banner">📋 SUBCONTRACT FORM</div>' : '')}
+${gc('sapFlag') && (isSub || gv('i7a')) ? '<div class="sub-banner">📋 SAP SUBCONTRACT — subcontractor signature required before access is granted; the form provides no block for it (DoDM 5205.07 §10.1.d)</div>' : (isSub ? '<div class="sub-banner">📋 SUBCONTRACT FORM</div>' : '')}
 
 <h2>Contract Summary</h2>
 <table>
   <tr><td>Prime Contract No. (2a)</td><td>${hv('i2a','<em>Not entered</em>')}</td></tr>
-  <tr><td>Subcontract No. (2b)</td><td>${isSub ? hv('i2b','<em>Not entered</em>') : 'N/A — Prime form'}</td></tr>
+  <tr><td>Subcontract No. (2b)</td><td>${isSub ? hv('i2b','<em>Not entered</em>') : (gv('i7a') ? '<em>Not entered — Item 7a names a subcontractor</em>' : 'N/A — Prime form')}</td></tr>
   <tr><td>FCL Required (1a)</td><td>${fclMap[gv('fcl1a')]||'<em>Not selected</em>'}</td></tr>
   <tr><td>Safeguarding (1b)</td><td>${sfgMap[gv('sfg1b')]||'<em>Not selected</em>'}</td></tr>
   <tr><td>Contractor (6a/6b)</td><td>${hv('i6a','<em>Not entered</em>')} &nbsp; CAGE: ${hv('i6b','—')}</td></tr>
   <tr><td>CSO (6c)</td><td>${hv('i6c','<em>Not entered</em>').replace(/\n/g,'<br>')}</td></tr>
   <tr><td>GCA (16a)</td><td>${hv('i16a','<em>Not entered</em>')}</td></tr>
-  <tr><td>Gov't Approval Req'd (14)</td><td>${gr('i14')==='yes' ? '✅ YES' : 'No'}</td></tr>
+  <tr><td>${htmlEsc(formItemTitle('14'))} (14)</td><td>${gr('i14')==='yes' ? '✅ YES' : 'No'}</td></tr>
+  <tr><td>${htmlEsc(formItemTitle('15'))} (15)</td><td>${gr('i15')==='yes' ? '✅ YES' : 'No'}</td></tr>
 </table>
 
 <h2>CO Action Checklist</h2>
@@ -10897,41 +11083,25 @@ ${flowDownSection}
 ${dist18.filter(Boolean).map(d=>`<div style="padding:3px 0 3px 8px;border-bottom:1px solid #e8e8e8;">${d.startsWith('⚠')?`<span style="color:#c0392b;font-weight:bold;">${htmlEsc(d)}</span>`:htmlEsc(d)}</div>`).join('')||'<em>No distribution selections detected</em>'}
 <div style="font-size:10px;color:#566573;font-style:italic;margin-top:6px;">Distribute the signed and certified DD Form 254, not this preparatory report. Identify every Item 18f “Other” recipient by name and address in Item 13 or an attachment.</div>
 
-<h2>CO Certification Block</h2>
+<h2>Certifying Official (Item 17)</h2>
 <div class="sig-block">
 <table style="border:none;">
-  <tr>
-    <td style="border:none;background:none;width:50%;padding:0 16px 0 0;">
-      <div style="font-weight:bold;margin-bottom:4px;">Certifying Official</div>
-      <div style="font-size:10.5px;">${hv('i17a','_______________________________')}</div>
-      <div style="font-size:10px;color:#555;">${hv('i17b','Title')}</div>
-      <div style="font-size:10px;color:#555;">AAC: ${hv('i17d','______')}</div>
-      <div style="font-size:10px;color:#555;">Ph: ${hv('i17f','______')}</div>
-      <div class="sig-line">Signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date</div>
-    </td>
-    <td style="border:none;background:none;padding:0;">
-      <div style="font-weight:bold;margin-bottom:4px;">Address / AAC</div>
-      <div style="font-size:10px;white-space:pre-wrap;">${hv('i17c','_______________________________')}</div>
-      ${isSub ? `<div style="margin-top:8px;font-size:10px;color:#566573;font-weight:bold;">Prime CAGE (17e): ${hv('i17e','<em>REQUIRED</em>')}</div>` : ''}
-    </td>
-  </tr>
+  <tr><td>Name (17a)</td><td>${hv('i17a','<em>Not entered</em>')}</td></tr>
+  <tr><td>Title (17b)</td><td>${hv('i17b','<em>Not entered</em>')}</td></tr>
+  <tr><td>Address (17c)</td><td style="white-space:pre-wrap;">${hv('i17c','<em>Not entered</em>')}</td></tr>
+  <tr><td>AAC (17d)</td><td>${hv('i17d','<em>Not entered</em>')}</td></tr>
+  ${isSub ? `<tr><td>Prime CAGE (17e)</td><td>${hv('i17e','<em>REQUIRED</em>')}</td></tr>` : ''}
+  <tr><td>Telephone (17f)</td><td>${hv('i17f','<em>Not entered</em>')}</td></tr>
 </table>
-${isSub && gc('sapFlag') ? `
+<div class="ok">Sign Item 17h and date Item 17i in the generated dynamic DD Form 254 (Adobe Acrobat Pro). Do not sign this package; it is not the certification.</div>
+${gc('sapFlag') && (isSub || gv('i7a')) ? `
 <div style="margin-top:16px;border-top:2px dashed #c0392b;padding-top:10px;">
-  <div style="font-weight:bold;color:#c0392b;font-size:11px;margin-bottom:6px;">⚠ SAP SUBCONTRACT — COUNTERSIGNATURE REQUIRED (DoDM 5205.07 §10.1.d)</div>
+  <div style="font-weight:bold;color:#c0392b;font-size:11px;margin-bottom:6px;">⚠ SAP SUBCONTRACT — SUBCONTRACTOR SIGNATURE REQUIRED (DoDM 5205.07 §10.1.d)</div>
   <table style="border:none;width:100%;">
-    <tr>
-      <td style="border:none;background:none;width:50%;padding:0 16px 0 0;">
-        <div style="font-size:10px;color:#555;">Subcontractor Authorized Representative:</div>
-        <div class="sig-line" style="margin-top:30px;">Printed Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Title</div>
-        <div class="sig-line" style="margin-top:30px;">Signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date</div>
-      </td>
-      <td style="border:none;background:none;padding:0;">
-        <div style="font-size:10px;color:#555;">Subcontractor Organization / CAGE:</div>
-        <div style="margin-top:4px;font-size:10px;">${hv('i6a','_______________________________')} &nbsp; CAGE: ${hv('i6b','______')}</div>
-      </td>
-    </tr>
+    <tr><td>Subcontractor (7a)</td><td>${hv('i7a','<em>Not entered in Item 7a</em>')}</td></tr>
+    <tr><td>Subcontractor CAGE (7b)</td><td>${hv('i7b','<em>Not entered</em>')}</td></tr>
   </table>
+  <div style="font-size:10px;color:#566573;margin-top:6px;">The subcontractor's authorized representative must sign before access is granted. The DD Form 254 has no subcontractor signature block and this package is not one: capture the signature however the program accepts it, then record where it is held with Countersigned on the dashboard card.</div>
 </div>` : ''}
 </div>
 
@@ -11652,7 +11822,14 @@ document.addEventListener('DOMContentLoaded',()=>{
    person, and it must not be used to prepare an actual DD Form 254.
 
    Seeding only happens when a library is empty, so anything typed during a
-   demonstration survives a reload rather than being overwritten on every load. */
+   demonstration survives a reload rather than being overwritten on every load.
+
+   The companies are fictitious; the authorities are not. A demo is where a
+   reviewer judges whether the tool gets the rules right, and v1.14.0's seed
+   told them CUI was safeguarded under 32 CFR Part 117, which expressly places
+   CUI outside its scope. Every citation below was checked against the approved
+   library on 14 September 2026, and the regression suite refuses any citation
+   in this file that is not on its verified list. */
 (function(){
   const B=[
     ['Aurora Dynamics','7AUR1','1400 Kestrel Way, Building 3','Fairfax, VA 22030'],
@@ -11708,24 +11885,24 @@ document.addEventListener('DOMContentLoaded',()=>{
       return {label:p[0], name:p[0], email:p[3], program:['Programme ALDER (demo)','Programme BIRCH (demo)','Programme CEDAR (demo)','Programme DAMSON (demo)'][i]};
     }));
     seed(TPL_SL, [
-      {label:'Derivative classification', text:'Reference 11c:\n\nAll classified material generated or derived under this effort shall be marked in accordance with the applicable security classification guide. The contractor shall not classify by compilation without written GCA concurrence.'},
+      {label:'Derivative classification', text:'Reference 11c:\n\nAll classified material generated or derived under this effort shall be marked in accordance with the applicable security classification guide.'},
       {label:'Subcontracting notice', text:'Reference 10a:\n\nFurther disclosure of classified information, to include subcontracting at any tier, requires prior written approval of the Government Contracting Activity.'},
-      {label:'Visit authorisation', text:'Reference 11a:\n\nClassified visits shall be arranged through the Defense Information System for Security. Visit requests shall cite this contract number and identify the accrediting security office.'},
-      {label:'Return or destruction', text:'Reference 13:\n\nUpon completion or termination, all classified material shall be returned to the Government Contracting Activity or destroyed under NISPOM procedures, and a certificate of destruction retained.'}
+      {label:'Visit authorisation', text:'Reference 11a:\n\nThe host will verify each visitor\'s personnel clearance through a CSA-designated database or a visit authorization letter (32 CFR 117.16(a)(4)). Visit requests shall cite this contract number.'},
+      {label:'Return or destruction', text:'Reference 13:\n\nUpon completion of the contract, the contractor must return all USG-provided or deliverable information to USG custody; unless the GCA advises otherwise, copies may be retained for two years (32 CFR 117.13(d)(5)). Destruction records are required for TOP SECRET material (32 CFR 117.15(e)(2)(vii)).'}
     ]);
     seed(TPL_B13, [
       {label:'CPFF Research — SECRET (demo)', data:ctData({cls:'',c10:{'10a':true,'10b':true},c11:{'11a':true,'11c':true},i14:'no',i15:'yes',i15text:'Inspections by the cognizant security office.'})},
       {label:'FFP Services — CONFIDENTIAL (demo)', data:ctData({c11:{'11e':true},i14:'no',i15:'no'})},
-      {label:'IDIQ Task Order — SECRET/CUI (demo)', data:ctData({cls:'CUI',c10:{'10b':true},c11:{'11c':true,'11l':true},i14:'yes',i14text:'CUI handling per 32 CFR Part 117.'})},
+      {label:'IDIQ Task Order — SECRET/CUI (demo)', data:ctData({cls:'CUI',c10:{'10b':true},c11:{'11c':true,'11l':true},i14:'yes',i14text:'CUI handling per 32 CFR Part 2002 and the CUI designation block in Item 13.'})},
       {label:'Subcontract flow-down — SECRET (demo)', data:ctData({c10:{'10a':true},c11:{'11b':true,'11c':true},i14:'no',i15:'yes',i15text:'Prime retains inspection responsibility.'})}
     ]);
     seed(TPL_CT, [
       {label:'Aurora Dynamics — Programme ALDER (demo)', srcDate:'2026-02-02', smName:'R. Vance', smEmail:'r.vance@example.com', smProgram:'Programme ALDER (demo)',
-       data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'', c10:{'10a':true}, l10:{'10a':'Reference 10a:\n\nAccess to classified COMSEC information requires a final U.S. Government clearance at the appropriate level.'}})},
+       data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'', c10:{'10a':true}, l10:{'10a':'Reference 10a:\n\nAccess to COMSEC information requires a final entity eligibility determination and a final personnel clearance at the appropriate level (32 CFR 117.21(c)(3)).'}})},
       {label:'Task Order 0042 — Meridian (demo)', srcDate:'2026-03-14', smName:'T. Okafor', smEmail:'t.okafor@example.com', smProgram:'Programme BIRCH (demo)',
        data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'0042', c11:{'11c':true}, l11:{'11c':'Reference 11c:\n\nThe contractor will reference the applicable security classification guide when generating or deriving classified material.'}})},
       {label:'Calder Aerospace — Programme CEDAR (demo)', srcDate:'2026-04-01', smName:'M. Lindqvist', smEmail:'m.lindqvist@example.com', smProgram:'Programme CEDAR (demo)',
-       data:ctData({primeContract:'N00178-25-D-2204', c11:{'11l':true}, l11:{'11l':'Reference 11l:\n\nControlled Unclassified Information generated under this contract shall be marked and safeguarded per 32 CFR Part 117 and the CUI designation block below.'}})},
+       data:ctData({primeContract:'N00178-25-D-2204', c11:{'11l':true}, l11:{'11l':'Reference 11l:\n\nControlled Unclassified Information generated under this contract shall be marked and safeguarded per 32 CFR Part 2002 and the CUI designation block below. CUI requirements are outside the scope of 32 CFR Part 117 (32 CFR 117.7(h)(1)(iii)).'}})},
       {label:'Northwind Defense — Programme DAMSON (demo)', srcDate:'2026-05-20', smName:'J. Serrano', smEmail:'j.serrano@example.com', smProgram:'Programme DAMSON (demo)',
        data:ctData({primeContract:'SP4701-25-C-3310', taskOrder:'0007', c10:{'10b':true}, l10:{'10b':'Reference 10b:\n\nRestricted Data access is limited to personnel briefed under the applicable programme access requirements.'}})}
     ]);
