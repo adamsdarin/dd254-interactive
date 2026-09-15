@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive - Codex Astra v1.16.0</title>
+<title>DD254 Interactive - Codex Astra v2.0.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1394,14 +1394,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.136';
+const TOOL_VERSION='2.137';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='1.16.0';
+const RELEASE_VERSION='2.0.0';
 function releaseLabel(){ return 'Codex Astra v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -4189,7 +4189,7 @@ async function draftDel(id){
 const PACK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg'];
 const PACK_LABEL={fac:'Facility',cso:'CSO',perf:'Performance / Sub',cert:'Certifier',
                   b13:'Contract Type',ct:'DD-254 Template Language',sm:'Security Managers',
-                  sl:'Standard Language'};
+                  sl:'Standard Language',scg:'Security Classification Guides'};
 /* Libraries that describe YOUR sites and YOUR subcontractors rather than a way
    of writing a DD-254. Off by default on import: a curator's facility list is
    usually wrong for everybody else. */
@@ -4352,7 +4352,7 @@ function tplPackPlan(kind,incoming,owner,when){
 function tplPackApply(kind,plan){
   const key=tplKeyOf(kind);
   const mine=tplLoad(key)||[];
-  ioSetUndo(kind,JSON.parse(JSON.stringify(mine)));
+  ioSetUndo(kind,{ts:new Date().toISOString(),data:JSON.parse(JSON.stringify(mine))});
   plan.update.forEach(function(u){
     const keepId=mine[u.idx].ioId;
     mine[u.idx]=JSON.parse(JSON.stringify(u.row));
@@ -4365,7 +4365,13 @@ function tplPackApply(kind,plan){
 /* Nothing is applied until this resolves. Shows, per library, what would change
    and lets the importer leave any of them out — a curator's facility list is
    usually about their own sites, not yours. */
+/* info.mode 'restore' (v2.0.0): the same plan and dialog for a Full Backup. Every
+   library with changes starts ticked (it is your own backup), an update is shown
+   as returning to the backup's version, and a separate button offers replace-all.
+   A restore resolves {picked:[...]} or {replaceAll:true}; a pack still resolves
+   the array of ticked libraries. */
 function tplPackPreview(info){
+  const restore=info&&info.mode==='restore';
   return new Promise(function(resolve){
     const stale=document.getElementById('tplPackDlg');
     if(stale){ try{ if(stale.__done) stale.__done(null); stale.remove(); }catch(e){} }
@@ -4377,11 +4383,11 @@ function tplPackPreview(info){
       const total=p.update.length+p.add.length+p.rename.length;
       const nothing=(total===0);
       const bits=[];
-      if(p.update.length) bits.push('<b>'+p.update.length+'</b> updated');
+      if(p.update.length) bits.push('<b>'+p.update.length+'</b> '+(restore?'returned to the backup\u2019s version':'updated'));
       if(p.add.length)    bits.push('<b>'+p.add.length+'</b> added');
       if(p.rename.length) bits.push('<b style="color:#8a6a00;">'+p.rename.length+'</b> kept alongside yours');
       if(p.same.length)   bits.push('<span style="color:#8a94a0;">'+p.same.length+' already identical</span>');
-      const local=!!PACK_LOCAL[k];
+      const local=!restore&&!!PACK_LOCAL[k];
       return '<div style="border-bottom:1px dotted #e0e8f0;padding:5px 0;">'
         +'<label style="display:flex;gap:7px;align-items:flex-start;font-size:11.5px;'+(nothing?'opacity:.5;':'')+'">'
         +'<input type="checkbox" id="pk_'+k+'" '+((!nothing&&!local)?'checked':'')+' '+(nothing?'disabled':'')+' style="margin-top:2px;">'
@@ -4394,14 +4400,18 @@ function tplPackPreview(info){
         +'</span></label></div>';
     }).join('');
     ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:560px;width:94%;max-height:80vh;overflow:auto;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
-      +'<div style="font-weight:bold;font-size:14px;color:#2b3440;margin-bottom:3px;">Import templates — nothing has been applied yet</div>'
+      +'<div style="font-weight:bold;font-size:14px;color:#2b3440;margin-bottom:3px;">'+(restore?'Restore templates from a backup':'Import templates')+' — nothing has been applied yet</div>'
       +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:10px;">'
-        +(info.owner?('From <b>'+esc(info.owner)+'</b>'):'Source not named')
-        +(info.exported?(', exported '+esc(String(info.exported).split('T')[0])):'')+'. Tick the libraries to take.</div>'
+        +(restore?('Full Backup'+(info.exported?(' exported '+esc(String(info.exported).split('T')[0])):'')+(typeof info.drafts==='number'?('. Its '+info.drafts+' draft'+(info.drafts===1?'':'s')+' will be added or overwritten by ID; other drafts are kept'):'')+'. Tick the template libraries to restore.')
+          :((info.owner?('From <b>'+esc(info.owner)+'</b>'):'Source not named')
+        +(info.exported?(', exported '+esc(String(info.exported).split('T')[0])):'')+'. Tick the libraries to take.'))+'</div>'
       +rows
-      +'<div style="font-size:10.5px;color:#5a6a80;margin-top:9px;line-height:1.5;">A template you imported before is recognised and updated in place. A name that clashes with one of yours is kept alongside it, renamed, so nothing of yours is lost — delete whichever you do not want. <b>Undo last change</b> reverts a library.</div>'
-      +'<div style="display:flex;gap:8px;margin-top:12px;">'
-      +'<button id="pkGo" style="background:#15702e;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Import the ticked libraries</button>'
+      +'<div style="font-size:10.5px;color:#5a6a80;margin-top:9px;line-height:1.5;">'+(restore
+        ?'Nothing is removed: templates you created or kept after this backup was taken stay. A template in both is set to the backup\u2019s version. A different template with the same name is kept alongside yours, renamed. <b>Undo last change</b> reverts a library.'
+        :'A template you imported before is recognised and updated in place. A name that clashes with one of yours is kept alongside it, renamed, so nothing of yours is lost — delete whichever you do not want. <b>Undo last change</b> reverts a library.')+'</div>'
+      +'<div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;">'
+      +'<button id="pkGo" style="background:#15702e;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">'+(restore?'Restore the ticked libraries':'Import the ticked libraries')+'</button>'
+      +(restore?'<button id="pkReplace" style="background:#9e1b32;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Replace all templates instead\u2026</button>':'')
       +'<button id="pkNo" style="background:#8a94a0;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Cancel</button>'
       +'</div></div>';
     document.body.appendChild(ov);
@@ -4409,8 +4419,10 @@ function tplPackPreview(info){
     ov.__done=done;
     ov.querySelector('#pkNo').onclick=function(){ done(null); };
     ov.querySelector('#pkGo').onclick=function(){
-      done(PACK_KINDS.filter(function(k){ const c=document.getElementById('pk_'+k); return c&&c.checked&&!c.disabled; }));
+      const picked=PACK_KINDS.filter(function(k){ const c=document.getElementById('pk_'+k); return c&&c.checked&&!c.disabled; });
+      done(restore?{picked:picked}:picked);
     };
+    if(restore) ov.querySelector('#pkReplace').onclick=function(){ done({replaceAll:true}); };
     ov.addEventListener('keydown',function(e){ if(e.key==='Escape') done(null); });
   });
 }
@@ -7095,9 +7107,24 @@ function fullRestore(ev){
   const f=ev.target.files[0]; ev.target.value=''; if(!f) return;
   const rd=new FileReader();
   rd.onload=async function(e){
-    try{
-      const data=JSON.parse(e.target.result);
-      if(data.tool!=='DD254 Full Backup'||!data.templates) return alert('That is not a full-backup file.');
+    let data=null;
+    try{ data=JSON.parse(e.target.result); }catch(err){ return alert('Restore failed: '+err); }
+    await fullRestoreData(data);
+  };
+  rd.readAsText(f);
+}
+/* ── RESTORE WITHOUT LOSING NEWER TEMPLATES (v2.0.0) ──────────────────────────
+   A Full Backup restore used to REPLACE every template list with the backup's,
+   so restoring last month's backup silently deleted every template created
+   since. Roadmap 4.3: the verified backup is merged the way a colleague's
+   template pack is (tplPackPlan) - matched by stable id, then by name - after a
+   preview of what each library would change. Replace-all is still available,
+   as an explicit choice that first takes a Full Backup of what is there now.
+   Drafts are unchanged: added or overwritten by id, others kept. */
+async function fullRestoreData(data){
+  if(window.DD254_READONLY){ alert('This tab is read-only — another tab holds the lock.'); return false; }
+  try{
+      if(!data||data.tool!=='DD254 Full Backup'||!data.templates) return alert('That is not a full-backup file.');
       const nT=BK_KINDS.reduce(function(a,k){return a+((data.templates[k]||[]).length);},0);
       const nD=(data.drafts||[]).length;
       /* ── integrity gate ── */
@@ -7114,10 +7141,23 @@ function fullRestore(ev){
           if(!(await uiConfirm('This browser cannot verify the backup checksum (no Web Crypto available).\n\nRestore without verifying?'))) return;
         } else if(calc!==data.sha256){
           return alert('⛔ Restore refused — checksum mismatch.\n\nThis backup has been modified or corrupted since it was exported.\n\nExpected '
-            +String(data.sha256).substring(0,16)+'…\nFound    '+calc.substring(0,16)+'…\n\nRestoring it would REPLACE your template lists with untrusted data.');
+            +String(data.sha256).substring(0,16)+'…\nFound    '+calc.substring(0,16)+'…\n\nRestoring it would bring untrusted data into your templates and drafts.');
         }
       } else if(!(await uiConfirm('⚠ This backup carries no checksum (exported by an older version of the tool).\n\nIts contents cannot be verified. Restore it anyway?'))) return;
-      if(!(await uiConfirm('Restore full backup from '+String(data.exported||'').substring(0,10)+'?\n\n• '+nT+' template entries — REPLACE the current template lists\n• '+nD+' draft(s) — added/overwritten by ID (other drafts kept)\n\nConsider taking a Full Backup of the current state first.'))) return;
+      const plans={};
+      BK_KINDS.forEach(function(k){ plans[k]=tplPackPlan(k,data.templates[k]||[],'',data.exported); });
+      const choice=await tplPackPreview({plans:plans,exported:data.exported,drafts:nD,mode:'restore'});
+      if(!choice) return false;
+      const replaceAll=!!choice.replaceAll, picked=replaceAll?[]:(choice.picked||[]);
+      if(replaceAll){
+        if(!(await uiConfirm('Replace ALL template lists with the backup\u2019s?\n\n'
+          +'Templates created or changed since '+String(data.exported||'').substring(0,10)+' will be removed from every library.\n\n'
+          +'A Full Backup of what you have now is downloaded first. If it does not complete, nothing is replaced.'))) return false;
+        if((await fullBackup())!==true){
+          alert('Nothing was replaced: the backup of your current templates did not complete.');
+          return false;
+        }
+      }
       window.BK_RESTORING=true;
       if(Array.isArray(data.audit)&&data.audit.length){
         /* The custody record is verified before it is merged. A backup whose
@@ -7153,16 +7193,29 @@ function fullRestore(ev){
           if(!(await audFlush())) alert('The backup restored, but its audit history could not be saved. Keep this tab open and take a new Full Backup now.');
         }catch(e){}
       }
-      BK_KINDS.forEach(function(k){ if(data.templates[k]) tplSave(tplKeyOf(k),data.templates[k]); });
+      let summary='';
+      if(replaceAll){
+        BK_KINDS.forEach(function(k){
+          if(!data.templates[k]) return;
+          ioSetUndo(k,{ts:new Date().toISOString(),data:JSON.parse(JSON.stringify(tplLoad(tplKeyOf(k))||[]))});
+          tplSave(tplKeyOf(k),data.templates[k]);
+        });
+        summary='all template lists replaced ('+nT+' entries), after a backup of the previous ones';
+      } else {
+        picked.forEach(function(k){ tplPackApply(k,plans[k]); });
+        summary=picked.length?picked.map(function(k){ const p=plans[k];
+          return PACK_LABEL[k]+': '+p.update.length+' returned, '+p.add.length+' added'+(p.rename.length?', '+p.rename.length+' kept alongside':''); }).join('; ')
+          :'no template libraries restored';
+      }
+      if(typeof buildTplSelects==='function') buildTplSelects();
       for(const r of (data.drafts||[])){ if(r&&r.id) await draftPut(r); }
       window.BK_RESTORING=false;
       bkMark();
       if(typeof dashRenderCards==='function') dashRenderCards();
-      audLog('','','full-restore',nT+' template entries, '+nD+' drafts from '+String(data.exported||'').substring(0,10));
-      alert('Restore complete: '+nT+' template entries, '+nD+' draft(s).');
-    }catch(err){ window.BK_RESTORING=false; alert('Restore failed: '+err); }
-  };
-  rd.readAsText(f);
+      audLog('','','full-restore',(replaceAll?'replace-all: ':'merge: ')+summary+'; '+nD+' drafts from '+String(data.exported||'').substring(0,10));
+      alert('Restore complete.\n\n'+(replaceAll?'Every template list was replaced with the backup\u2019s.':(picked.length?summary.split('; ').join('\n'):'No template library was changed.'))+'\n\n'+nD+' draft(s) added or overwritten by ID.');
+      return true;
+  }catch(err){ window.BK_RESTORING=false; alert('Restore failed: '+err); return false; }
 }
 window.addEventListener('beforeunload',function(e){
   window.BK_UNLOADING=true;
@@ -11265,9 +11318,12 @@ function ioNewId(){ return 'io'+Date.now().toString(36)+Math.random().toString(3
 function ioHasUndo(kind){ if(IO_UNDO[kind]) return true; try{return !!localStorage.getItem('dd254_io_undo_'+kind);}catch(e){return false;} }
 async function tplIoUndo(kind){
   try{
-    const o=await ioGetUndo(kind); if(!o) return;
-    if(!(await uiConfirm('Restore this template list to its state at '+String(o.ts||'').replace('T',' ').substring(0,16)+'?\n\nThe last upload or row deletion will be reverted.'))) return;
-    tplSave(tplKeyOf(kind),o.data||[]);
+    let o=await ioGetUndo(kind); if(!o) return;
+    /* Before v2.0.0 a pack import saved the bare list rather than {ts,data}. */
+    if(Array.isArray(o)) o={ts:'',data:o};
+    if(!Array.isArray(o.data)){ alert('Undo is not available: the saved copy of this list could not be read. Nothing was changed.'); return; }
+    if(!(await uiConfirm('Restore this template list to its state '+(o.ts?'at '+String(o.ts).replace('T',' ').substring(0,16):'before the last change')+'?\n\nThe last upload, import, restore or row deletion will be reverted.'))) return;
+    tplSave(tplKeyOf(kind),o.data);
     ioClearUndo(kind);
     dashTplEdit(kind);
   }catch(e){ alert('Undo failed: '+e); }
