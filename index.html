@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive - Codex Astra v2.0.0</title>
+<title>DD254 Interactive - Codex Astra v2.0.1</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -755,7 +755,7 @@ body.ws-dragging{user-select:none;}
 <div class="ck">3a. Original</div>
 <div class="cd" style="margin:3px 0 2px;">Original date (YYYYMMDD):</div>
 <input type="text" id="i3a_date" class="df" placeholder="YYYYMMDD" onclick="e=>{e.stopPropagation()}" style="margin-top:2px;">
-<div class="cd" style="font-size:9.5px;margin-top:3px;">Date never changes on revisions.</div>
+<div class="cd" style="font-size:9.5px;margin-top:3px;">Date never changes on revisions or the Final.</div>
 </div>
 </div>
 <div class="cbi" id="cb3b" onclick="radioSel('spec','3b')" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
@@ -763,10 +763,10 @@ body.ws-dragging{user-select:none;}
 <div class="cbl">
 <div class="ck">3b. Revised</div>
 <div style="display:flex;gap:5px;margin-top:4px;">
-<input type="text" id="i3b_rev" placeholder="Rev #" style="width:60px;" onclick="event.stopPropagation()">
+<input type="text" id="i3b_rev" placeholder="Rev #" inputmode="numeric" style="width:60px;" onclick="event.stopPropagation()">
 <input type="text" id="i3b_date" class="df" placeholder="YYYYMMDD" onclick="event.stopPropagation()">
 </div>
-<div class="cd" style="font-size:9.5px;margin-top:3px;">Must be incorporated by contract modification.</div>
+<div class="cd" style="font-size:9.5px;margin-top:3px;">Numbered 1, 2, 3… in sequence. Keep the original date in 3a. Must be incorporated by contract modification.</div>
 </div>
 </div>
 <div class="cbi" id="cb3c" onclick="radioSel('spec','3c');run()" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
@@ -1394,14 +1394,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.137';
+const TOOL_VERSION='2.138';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.0.0';
+const RELEASE_VERSION='2.0.1';
 function releaseLabel(){ return 'Codex Astra v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -2928,6 +2928,35 @@ if(typeof flowIssuesLive==='function'){ const _fl=flowIssuesLive();
   el.classList.toggle('req-missing',blank);
   if(blank) errors.push(m[1]+': '+m[2]+' is required.');
 })();
+/* A Revision or Final keeps the Original's date in 3a: it "will not change and
+   will continue to show on any subsequent revisions", and a Final enters it
+   (DD Form 254 Instructions, Items 3a and 3c(2)). Revisions carry a sequential
+   number (Item 3b). Messages carry digits only, never typed text. */
+(function(){
+  const r=ck('i3b_rev'); if(r) r.classList.remove('req-missing');
+  if(S.spec!=='3b'&&S.spec!=='3c') return;
+  const kind=S.spec==='3b'?'Revision':'Final';
+  const a=ck('i3a_date');
+  if(a){
+    const av=String(a.value||'').trim();
+    const o=window.DD254_PARENT&&window.DD254_PARENT.origin;
+    const od=o?String(o.date||'').replace(/\D/g,''):'';
+    if(!av){
+      a.classList.add('req-missing');
+      errors.push('Item 3a: the original date is required on a '+kind+' — it does not change and continues to show on every revision and the Final.');
+    } else if(od&&av.replace(/\D/g,'')!==od){
+      a.classList.add('req-missing');
+      errors.push('Item 3a: the original date must stay '+od+', the date on this contract\u2019s '+(o.stage==='sol'?'Solicitation':'Original')+'. It does not change on a '+kind+'.');
+    }
+  }
+  if(S.spec==='3b'&&r){
+    const rv=String(r.value||'').trim();
+    const bad=!/^[1-9]\d*$/.test(rv);
+    r.classList.toggle('req-missing',bad);
+    if(!rv) errors.push('Item 3b: revision number is required.');
+    else if(bad) errors.push('Item 3b: revision number must be a whole number in sequence (1, 2, 3…).');
+  }
+})();
 /* Items 14 and 15 marked YES without the narrative the YES promises. Whether
    the box was YES was already enforced; whether it was explained never was —
    the rule enforced its easy half and skipped the half that carries meaning. */
@@ -3491,7 +3520,9 @@ async function buildOfficialPdf(PDFLib, basePdfBytes, data){
   d(p1,v('i2c'),58,278,9);
   d(p1,dd254Date(v('i2c_due')),218,278,9);
   // Item 3
-  if(spec==='3a'){X(p1,322,202); d(p1,dd254Date(v('i3a_date')),520,205,9);}
+  /* One X, but the original date prints on Revisions and Finals too (Instructions, Item 3). */
+  if(spec==='3a') X(p1,322,202);
+  if(spec==='3a'||spec==='3b'||spec==='3c') d(p1,dd254Date(v('i3a_date')),520,205,9);
   if(spec==='3b'){X(p1,322,237.5); d(p1,v('i3b_rev'),432,246,9); d(p1,dd254Date(v('i3b_date')),520,246,9);}
   if(spec==='3c'){X(p1,322,272.5); d(p1,dd254Date(v('i3c_date')),520,272,9);}
   // Item 4
@@ -7468,6 +7499,7 @@ async function dashOpen(id){
      synchronously against the live form on every run(). */
   window.DD254_PARENT=null;
   if(rec.parentId) window.DD254_PARENT=dashParentContext(await draftGet(rec.parentId));
+  if(window.DD254_PARENT) window.DD254_PARENT.origin=await dashIssuanceOrigin(rec);
   if(typeof rsumLoadBase==='function') await rsumLoadBase(rec);
   applyWorkspace(rec.workspace);
   showFormView();
@@ -8022,6 +8054,7 @@ async function dashRecountDrafts(drafts){
         /* Parent-dependent findings (the SAP lineage error, the POC-only
            warning) must count here exactly as they do when the draft is open. */
         if(rec.parentId) window.DD254_PARENT=dashParentContext(await draftGet(rec.parentId));
+        if(window.DD254_PARENT) window.DD254_PARENT.origin=await dashIssuanceOrigin(rec);
         if(typeof rsumLoadBase==='function') await rsumLoadBase(rec);
         applyWorkspace(rec.workspace||{});
         if(typeof run==='function') run();
@@ -8174,6 +8207,35 @@ function dashStatusOptions(r){
   return base;
 }
 function dashStageOf(r){ return r.stage||(r.parentId?'rev':'orig'); }
+/* An issuance starts at an Original or a Solicitation, whose signature date is
+   Item 3a. Its Revisions are numbered, and its Revisions and Final dated, within
+   it: an award Original starts a new issuance with its own date and its own
+   revision numbers (DD Form 254 Instructions, Items 3a(1)-(3) and 3b). */
+function dashIssuanceStartIn(rec,byId){
+  let cur=rec, guard=0;
+  while(cur&&guard++<60){
+    const st=dashStageOf(cur);
+    if(st==='orig'||st==='sol') return cur;
+    cur=cur.parentId?byId[cur.parentId]:null;
+  }
+  return null;
+}
+function dashRevNumberOf(r){
+  const t=String((((r||{}).workspace||{}).texts||{}).i3b_rev||'').trim();
+  if(/^[1-9]\d*$/.test(t)) return parseInt(t,10);
+  return (r&&r.revN>0)?r.revN:0;
+}
+/* What the open draft's issuance says Item 3a must be: read from the records,
+   so a change made in an intermediate Revision is not inherited as the rule. */
+async function dashIssuanceOrigin(rec){
+  let cur=(rec&&rec.parentId)?await draftGet(rec.parentId):null, guard=0;
+  while(cur&&guard++<60){
+    const st=dashStageOf(cur);
+    if(st==='orig'||st==='sol') return {id:cur.id,stage:st,date:String((((cur.workspace||{}).texts||{}).i3a_date)||'')};
+    cur=cur.parentId?await draftGet(cur.parentId):null;
+  }
+  return null;
+}
 function dashStageChip(r){ const s=DASH_STAGES[dashStageOf(r)]||DASH_STAGES.orig; return '<span class="dash-badge" style="background:'+s.bg+';color:'+s.fg+';letter-spacing:.5px;">'+s.chip+'</span>'; }
 async function dashRenderCards(openId){
   if(typeof bkStatus==='function') bkStatus();
@@ -8683,12 +8745,30 @@ async function dashSpawn(id,kind){
     rec.workspace.radios.spec='3a';
     rec.workspace.texts.i3b_rev=''; rec.workspace.texts.i3b_date=''; rec.workspace.texts.i3c_date='';
     rec.workspace.texts.i2c=''; rec.workspace.texts.i2c_due='';
+    /* The award's 3a is its own release/signature date, which may differ from
+       the solicitation's (Instructions, Item 3a(2)-(3)). */
+    rec.workspace.texts.i3a_date='';
     rec.title=base+' — Original';
   }
+  const byId={}; all.forEach(function(x){byId[x.id]=x;});
+  const start=dashIssuanceStartIn(src,byId);
+  if(kind==='rev'||kind==='final'){
+    /* 3a carries the issuance's original date, taken from the Original itself. */
+    const od=start?String((((start.workspace||{}).texts||{}).i3a_date)||'').trim():'';
+    if(od) rec.workspace.texts.i3a_date=od;
+  }
   if(kind==='rev'){
-    const byId={}; all.forEach(function(x){byId[x.id]=x;});
-    let n=1, cur=src, guard=0;
-    while(cur&&guard++<30){ if(dashStageOf(cur)==='rev') n++; cur=cur.parentId?byId[cur.parentId]:null; }
+    /* Sequential within the issuance: one more than the highest number held by a
+       Revision of it that is not cancelled, and never below this branch's depth. */
+    let depth=0, cur=src, guard=0;
+    while(cur&&guard++<60&&cur!==start){ if(dashStageOf(cur)==='rev') depth++; cur=cur.parentId?byId[cur.parentId]:null; }
+    let used=0;
+    all.forEach(function(x){
+      if(x.status==='Cancelled'||dashStageOf(x)!=='rev') return;
+      const xs=dashIssuanceStartIn(x,byId);
+      if((xs&&xs.id)===(start&&start.id)) used=Math.max(used,dashRevNumberOf(x));
+    });
+    const n=Math.max(used,depth)+1;
     rec.revN=n;
     rec.rsumPending=true;
     rec.workspace.radios.spec='3b';
@@ -9196,7 +9276,7 @@ function buildXfaDatasets(d){
    +el('Block2', tx('two_A',(v('i2a')&&!v('i2b')&&!v('i2c'))?'1':'0')+tx('two_Prime',v('i2a'))
      +tx('two_B',(v('i2b')&&!v('i2c'))?'1':'0')+tx('two_Sub',v('i2b'))
      +tx('two_C',(v('i2c'))?'1':'0')+tx('two_Solicitation',v('i2c'))+tx('two_DueDate',dateFmt(v('i2c_due'))))
-   +el('Block3', tx('three_A',spec==='3a'?'1':'0')+tx('three_dateA',spec==='3a'?dateFmt(v('i3a_date')):'')
+   +el('Block3', tx('three_A',spec==='3a'?'1':'0')+tx('three_dateA',(spec==='3a'||spec==='3b'||spec==='3c')?dateFmt(v('i3a_date')):'')
      +tx('three_B',spec==='3b'?'1':'0')
      +el('Block3B', tx('three_RevisionNum',spec==='3b'?v('i3b_rev'):'')+tx('three_dateB',spec==='3b'?dateFmt(v('i3b_date')):''))
      +tx('three_C',spec==='3c'?'1':'0')+tx('three_Final','')+tx('three_dateC',spec==='3c'?dateFmt(v('i3c_date')):''))
@@ -11791,8 +11871,8 @@ function exportPrep254() {
   const sfgMap = {C:'Confidential', S:'Secret', TS:'Top Secret', NONE:'None', NA:'N/A'};
   const specMap = {
     '3a':'3a — Original',
-    '3b':`3b — Revised (Rev ${htmlEsc(gv('i3b_rev')||'__')}, Date ${htmlEsc(gv('i3b_date')||'__')})`,
-    '3c':'3c — Final'
+    '3b':`3b — Revised (Rev ${htmlEsc(gv('i3b_rev')||'__')}, Date ${htmlEsc(gv('i3b_date')||'__')}; original date ${htmlEsc(gv('i3a_date')||'__')})`,
+    '3c':`3c — Final (original date ${htmlEsc(gv('i3a_date')||'__')})`
   };
   const foYes  = gr('fo')==='yes';
   const finYes = gr('fin')==='yes';
@@ -11816,6 +11896,8 @@ function exportPrep254() {
   if(isSub && !gv('i2a'))     must.push('Item 2a: Prime contract number MUST be filled when 2b (subcontract) is used.');
   if(!gr('spec'))             must.push('Item 3: Select Original (3a), Revised (3b), or Final (3c).');
   if(gr('spec')==='3b' && !gv('i3b_rev')) must.push('Item 3b: Revision number required.');
+  else if(gr('spec')==='3b' && !/^[1-9]\d*$/.test(gv('i3b_rev'))) must.push('Item 3b: Revision number must be a whole number in sequence (1, 2, 3\u2026).');
+  if((gr('spec')==='3b'||gr('spec')==='3c') && !gv('i3a_date')) must.push('Item 3a: Original date required \u2014 it continues to show on every revision and the Final.');
   if(!gv('i6a'))              must.push('Item 6a: Contractor name and address required.');
   if(!gv('i6b'))              must.push('Item 6b: CAGE code required.');
   if(!gv('i6c'))              must.push('Item 6c: Cognizant Security Office (CSO) required.');
