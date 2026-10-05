@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.1.1</title>
+<title>DD254 Interactive v2.4.1</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -716,11 +716,12 @@ body.ws-dragging{user-select:none;}
 <input type="checkbox" id="i2a_ngc" style="display:none;">
 </div>
 <div class="hint">GCA enters when issuing to prime. Prime enters when issuing to sub. Required if 2b is filled.</div>
-<label class="sub-lbl" for="iEffort" style="margin-top:8px;">Task Order / BPA / Other Effort Number <span style="font-weight:normal;color:#6a7888;">(optional)</span></label>
+<label class="sub-lbl" for="iEffort" style="margin-top:8px;">Task Order / BPA / Delivery Order Number <span style="font-weight:normal;color:#6a7888;">(optional)</span></label>
 <input type="text" id="iEffort" placeholder="Task order, BPA call, delivery order…" oninput="supSync()" autocomplete="off" style="border-style:dashed;">
+<label style="display:block;font-size:11px;margin-top:5px;">Order type <select id="iOrderType" onchange="run()" style="width:170px;font-size:11px;"><option>Task Order</option><option>BPA</option><option>Delivery Order</option></select></label><div id="ctSourceBanner" style="display:none;font-size:11px;background:#edf1f5;border:1px solid #c4ccd4;padding:7px;border-radius:4px;margin-top:6px;"></div>
 <div class="hint">Not a box on the DD Form 254 — there is no Item 2 field for it. Entering a number writes <em>“This is in support of effort …”</em> at the top of Item 13, which is where the form instructions say these numbers belong. Clearing it removes that line.</div>
-<label style="display:flex;align-items:flex-start;gap:6px;margin-top:6px;font-size:11px;font-weight:bold;color:#384558;cursor:pointer;"><input type="checkbox" id="iStandalone" onchange="run()" style="margin-top:2px;flex-shrink:0;"><span>This is a standalone DD Form 254 for the task order above</span></label>
-<div class="hint">When ticked, the exported Block 2a reads <em>&lt;prime contract number&gt; | Task Order &lt;number&gt;</em>. The field above keeps the bare contract number, so the 17-character check and the export filename are unaffected. The Item 13 reference line still appears.</div>
+<label style="display:flex;align-items:flex-start;gap:6px;margin-top:6px;font-size:11px;font-weight:bold;color:#384558;cursor:pointer;"><input type="checkbox" id="iStandalone" onchange="run()" style="margin-top:2px;flex-shrink:0;"><span>This outgoing DD Form 254 is specific to the order above</span></label>
+<div class="hint">When ticked, the exported Block 2a reads <em>&lt;prime contract number&gt; | &lt;order type&gt; &lt;number&gt;</em>. The field above keeps the bare contract number, so the 17-character check and the export filename are unaffected. The Item 13 reference line still appears.</div>
 <label class="sub-lbl" for="i2b" style="margin-top:8px;"><span class="sub-ltr">2b</span> Subcontract Number</label>
 <input type="text" id="i2b" placeholder="Subcontract number (prime-to-sub only)" oninput="run()">
 <div class="alert alert-r" id="a2bNeedsa">⚠️ <strong>REQUIRED:</strong> If 2b (subcontract) is filled, 2a (prime contract number) must also be filled.</div>
@@ -1394,14 +1395,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.142';
+const TOOL_VERSION='2.147';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.1.1';
+const RELEASE_VERSION='2.4.1';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -1557,6 +1558,14 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 <label class="sub-lbl" for="cuiPoc" style="margin-top:6px;">Point of Contact (POC)</label>
 <input type="text" id="cuiPoc" placeholder="Name and telephone or e-mail" oninput="cuiSync()" autocomplete="off">
 </div>
+<div style="border-top:1px dotted #b0bac6;margin-top:12px;padding-top:8px;">
+<label class="sub-lbl" for="distSmPick">Security / program security managers — CC</label>
+<div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;"><select id="distSmPick" style="flex:1;min-width:230px;font-size:11px;"><option value="">— select a security / program security manager —</option></select><button type="button" class="pbtn" style="font-size:10px;padding:5px 12px;text-transform:none;" onclick="distSmAdd()">Add to CC</button></div>
+<input type="text" id="distSmRecipients" value="[]" style="display:none;" aria-hidden="true" tabindex="-1"><input type="text" id="distSmAssigned" style="display:none;" aria-hidden="true" tabindex="-1">
+<div id="distSmList" style="font-size:11px;line-height:1.7;margin:5px 0;"></div>
+<div class="hint">Choose from Security Manager templates. The manager assigned to the DD-254 language template is included automatically.</div>
+</div>
+<div style="border-top:1px dotted #b0bac6;margin-top:12px;padding-top:8px;"><button type="button" class="pbtn" id="ctSaveFormBtn" style="font-size:11px;padding:6px 12px;background:#2e5077;text-transform:none;" onclick="ctSaveFormTemplate(this)">💾 Save this language template</button><span id="ctSaveFormState" role="status" style="display:block;font-size:11px;margin-top:5px;"></span><div class="hint">Name and save the current template language to DD-254 Template Language without leaving this workflow.</div></div>
 <div class="alert alert-w" id="a18d">🟡 <strong>REQUIRED (11f Overseas):</strong> Item 18d (U.S. Activity Responsible for Overseas Security Administration) should be checked.</div>
 <div class="alert alert-r" id="a18bReq" style="display:none;">⚠️ <strong>REQUIRED (Subcontract):</strong> Item 18b (Subcontractor FSO) must be checked — distribution to the subcontractor FSO is required when this is a subcontract DD Form 254.</div>
 </div>
@@ -1627,26 +1636,26 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 <div class="rp-section">
 <h4>DD-254 Template Language</h4>
 <input type="search" id="ctTplSearch" placeholder="Search templates — name, content, source date, security manager…" oninput="ctFilterSel(this.value)" style="font-size:10.5px;margin-bottom:4px;">
-<select id="ctTplSel" onchange="buildCtPanel();ctAutoLangSync()" style="font-size:10.5px;margin-bottom:6px;"><option value="">— select a template… —</option></select>
+<select id="ctTplSel" onchange="buildCtPanel();ctAutoLangSync();distSmSelectChanged()" style="font-size:10.5px;margin-bottom:6px;"><option value="">— select a template… —</option></select>
 <div id="ctPanel" style="font-size:10px;color:#888;font-family:Arial,sans-serif;">Select a saved template above to see its insertable guidance. Nothing is applied automatically.</div>
 </div>
 <div class="rp-section" id="emailDistSection">
 <h4>Distribution — Email Checklist</h4>
 <div style="font-size:10px;font-family:Arial,sans-serif;color:#384558;">
   <div style="display:flex;align-items:center;gap:6px;margin-top:2px;">
-    <strong style="color:#2b3440;">1 · MUST SEND TO CSO and Requestor</strong>
-    <span style="color:#8a94a0;">(auto — 6c / 7c / 8c + requestor)</span>
-    <button class="dash-btn" style="background:#566573;padding:1px 8px;font-size:9.5px;" onclick="emailDistCopy('cso',this)">⧉ copy</button>
+    <strong style="color:#2b3440;">1 · CC — Facility FSOs, CSOs and managers</strong>
+    <span style="color:#8a94a0;">(auto + selected managers)</span>
+    <button class="dash-btn" style="background:#566573;padding:1px 8px;font-size:9.5px;" onclick="emailDistCopy('cc',this)">⧉ copy</button>
   </div>
   <div id="csoEmailList" style="padding:3px 0 6px;color:#3a4552;">—</div>
   <div style="display:flex;align-items:center;gap:6px;border-top:1px dotted #d0d8e0;padding-top:5px;">
-    <strong style="color:#2b3440;">2 · MUST SEND TO FSOs</strong>
-    <span style="color:#8a94a0;">(auto — Items 6, 7, 8 + manual)</span>
-    <button class="dash-btn" style="background:#566573;padding:1px 8px;font-size:9.5px;" onclick="emailDistCopy('fso',this)">⧉ copy</button>
+    <strong style="color:#2b3440;">2 · To — Requestor and performance / sub FSOs</strong>
+    <span style="color:#8a94a0;">(auto — Items 7, 8 + requestor)</span>
+    <button class="dash-btn" style="background:#566573;padding:1px 8px;font-size:9.5px;" onclick="emailDistCopy('to',this)">⧉ copy</button>
   </div>
-  <div id="fsoEmailList" style="padding:3px 0 4px;color:#3a4552;">—</div><textarea id="fsoEmails" placeholder="Additional FSO addresses not covered by Items 6, 7 or 8" style="width:100%;min-height:34px;font-size:10px;margin:3px 0 6px;" oninput="if(typeof run==='function')run();"></textarea>
+  <div id="fsoEmailList" style="padding:3px 0 4px;color:#3a4552;">—</div><textarea id="fsoEmails" placeholder="Additional FSO addresses — CC" style="width:100%;min-height:34px;font-size:10px;margin:3px 0 6px;" oninput="if(typeof run==='function')run();"></textarea>
   <div style="display:flex;align-items:center;gap:6px;border-top:1px dotted #d0d8e0;padding-top:5px;">
-    <strong style="color:#2b3440;">3 · MUST SEND PER DD-254 REQUIREMENT</strong>
+    <strong style="color:#2b3440;">3 · Additional contacts in the DD-254</strong>
     <span style="color:#8a94a0;">(auto — Items 13 &amp; 18f)</span>
     <button class="dash-btn" style="background:#566573;padding:1px 8px;font-size:9.5px;" onclick="emailDistCopy('req',this)">⧉ copy</button>
   </div>
@@ -3272,25 +3281,37 @@ function buildAttachmentReminder(){
    selected in the side panel, and the Contract Type applied to this draft. A
    Contract Type can now record required attachments, so a list that read only
    the side panel would quietly swallow half of them. */
-function ctAppliedContractType(){
-  const lbl=window.DD254_CT_APPLIED||'';
+function ctAppliedContractType(){ return ctTypeByLabel(window.DD254_CT_APPLIED||''); }
+function ctTypeByLabel(lbl){
+  lbl=String(lbl||'').trim();
   if(!lbl||typeof tplLoad!=='function') return null;
   const arr=tplLoad(TPL_B13)||[];
   for(let i=0;i<arr.length;i++){ if(String(arr[i].label||'')===lbl) return arr[i]; }
   return null;
 }
-function ctTplAttachments(){
+/* One derivation, two callers. The form reads the live selection and the
+   dashboard reads the stored draft, but both have to answer with the same
+   attachments. They did not: the issue pop-up consulted only the DD-254
+   Template Language entry, so required attachments recorded on a Contract Type
+   template were listed on the form and silently missing from the pop-up that
+   tells the preparer what to attach before sending. Two sources of truth, which
+   is the failure this file keeps paying for - derive, do not duplicate. */
+function dd254AttFromTemplates(list){
   const out={tpl:null,att:[]}, seen={};
-  const add=function(t){
+  (list||[]).forEach(function(t){
     if(!t||!t.data) return;
     const lines=ctAttLines(t.data);
     if(!lines.length) return;
     if(!out.tpl) out.tpl=t;
     lines.forEach(function(x){ const k=x.toLowerCase(); if(!seen[k]){ seen[k]=1; out.att.push(x); } });
-  };
-  add((typeof ctActiveTpl==='function')?ctActiveTpl():null);
-  add(ctAppliedContractType());
+  });
   return out;
+}
+function ctTplAttachments(){
+  return dd254AttFromTemplates([
+    (typeof ctActiveTpl==='function')?ctActiveTpl():null,
+    ctAppliedContractType()
+  ]);
 }
 function buildTplAttachments(){
   const wrap=document.getElementById('attachTplWrap'), tl=document.getElementById('attachTplList');
@@ -3851,7 +3872,7 @@ function collect254Data(draft){
      names the exported file, so neither is disturbed. The Item 13 reference
      line is unaffected and still appears. */
   if(gc('iStandalone') && v.i2a && gv('iEffort')){
-    v.i2a = v.i2a + ' | Task Order ' + gv('iEffort');
+    v.i2a = v.i2a + ' | ' + ctOrderType(gv('iOrderType')) + ' ' + gv('iEffort');
   }
   v.dist18f_other=gc('dist18f')?((document.querySelector('#dist18fRev input')||{}).value||''):'';
   const cIds=['c10a','c10b','c10c','c10d','c10e1','c10e2','c10f','c10g','c10h','c10i','c10j','c10k','c11a','c11b','c11c','c11d','c11e','c11f','c11g','c11h','c11i','c11j','c11k','c11l','c11m','dist18a','dist18b','dist18c','dist18d','dist18e','dist18f'];
@@ -3968,6 +3989,7 @@ function loadWorkspace(event) {
         try {
             const data = JSON.parse(e.target.result);
             if(typeof b13SelectionReset==='function') b13SelectionReset();
+            ['distSmRecipients','distSmAssigned'].forEach(function(id){const el=document.getElementById(id);if(el)el.value='';});
             if(data.texts) { 
                 Object.keys(data.texts).forEach(id => { 
                     if(id.startsWith('revName_')) {
@@ -4217,14 +4239,14 @@ async function draftDel(id){
    and both are visible. Silently overwriting someone's wording is discovered
    when it prints on an issued DD-254; a visible duplicate is discovered
    immediately and deleted in one click. */
-const PACK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg'];
+const PACK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg','orders'];
 const PACK_LABEL={fac:'Facility',cso:'CSO',perf:'Performance / Sub',cert:'Certifier',
                   b13:'Contract Type',ct:'DD-254 Template Language',sm:'Security Managers',
-                  sl:'Standard Language',scg:'Security Classification Guides'};
+                  sl:'Standard Language',scg:'Security Classification Guides',orders:'Contract orders and saved source versions'};
 /* Libraries that describe YOUR sites and YOUR subcontractors rather than a way
    of writing a DD-254. Off by default on import: a curator's facility list is
    usually wrong for everybody else. */
-const PACK_LOCAL={fac:1,perf:1};
+const PACK_LOCAL={fac:1,perf:1,orders:1};
 function packOwner(){
   let o=''; try{ o=localStorage.getItem('dd254_owner')||''; }catch(e){}
   return o;
@@ -4347,13 +4369,14 @@ async function tplPackExport(){
 /* Work out what an incoming library would do, without touching anything. */
 function tplPackPlan(kind,incoming,owner,when){
   const mine=tplLoad(tplKeyOf(kind))||[];
+  if(kind==='orders')return ctOrderImportPlan(mine,incoming);
   const byId={}, byName={};
   mine.forEach(function(t,i){
     if(t.ioId) byId[t.ioId]=i;
     const n=packName(t).toLowerCase();
     if(n && !(n in byName)) byName[n]=i;
   });
-  const plan={update:[],add:[],rename:[],same:[]};
+  const plan={update:[],add:[],rename:[],same:[],duplicates:[]};
   (incoming||[]).forEach(function(t){
     if(!t) return;
     const idx=(t.ioId && (t.ioId in byId)) ? byId[t.ioId] : -1;
@@ -4378,6 +4401,7 @@ function tplPackPlan(kind,incoming,owner,when){
     if(!add.ioId) add.ioId=ioNewId();
     plan.add.push(add);
   });
+  if(kind==='ct'){const combined=mine.slice();plan.update.forEach(function(u){combined[u.idx]=u.row;});plan.rename.forEach(function(r){combined.push(r.row);});plan.add.forEach(function(t){combined.push(t);});plan.duplicates=ctDuplicatePairs(combined).map(function(p){return (combined[p.a].label||'(unnamed)')+' / '+(combined[p.b].label||'(unnamed)');});}
   return plan;
 }
 function tplPackApply(kind,plan){
@@ -4418,6 +4442,7 @@ function tplPackPreview(info){
       if(p.add.length)    bits.push('<b>'+p.add.length+'</b> added');
       if(p.rename.length) bits.push('<b style="color:#8a6a00;">'+p.rename.length+'</b> kept alongside yours');
       if(p.same.length)   bits.push('<span style="color:#8a94a0;">'+p.same.length+' already identical</span>');
+      if(p.duplicates&&p.duplicates.length)bits.push('<span style="color:#a03028;">⚠ Possible duplicates: '+esc(p.duplicates.join('; '))+'</span>');
       const local=!restore&&!!PACK_LOCAL[k];
       return '<div style="border-bottom:1px dotted #e0e8f0;padding:5px 0;">'
         +'<label style="display:flex;gap:7px;align-items:flex-start;font-size:11.5px;'+(nothing?'opacity:.5;':'')+'">'
@@ -5411,10 +5436,14 @@ function collectWorkspace(){
     const p=perfVals(b);
     data.perf.push({loc:p.loc,cage:p.cage,cso:p.cso,email:p.email,cma:p.cma});
   });
+  if(window.DD254_ORDER_SOURCE)data.ctSource=JSON.parse(JSON.stringify(window.DD254_ORDER_SOURCE));
   return data;
 }
 function applyWorkspace(data){
   if(!data) return;
+  window.DD254_ORDER_SOURCE=data.ctSource?JSON.parse(JSON.stringify(data.ctSource)):null;
+  buildCtSelect();
+  ['distSmRecipients','distSmAssigned'].forEach(function(id){const e=document.getElementById(id);if(e)e.value='';});
   if(typeof b13SelectionReset==='function') b13SelectionReset();
   if(data.texts){
     Object.keys(data.texts).forEach(function(id){
@@ -5458,6 +5487,7 @@ function applyWorkspace(data){
   if(typeof cuiAdopt==='function') cuiAdopt();
   if(typeof rsumAdopt==='function') rsumAdopt();
   updateStateAndUI();
+  ctSourceBanner();
 }
 function syncUIFromDom(){
   ['10a','10b','10c','10d','10e1','10e2','10f','10g','10h','10i','10j','10k',
@@ -5481,6 +5511,7 @@ function syncUIFromDom(){
 }
 
 function resetFormFields(){
+  window.DD254_ORDER_SOURCE=null;ctSourceBanner();
   window.DD254_PARENT=null;
   if(typeof b13SelectionReset==='function') b13SelectionReset();
   CMA_LAST='';
@@ -6384,6 +6415,11 @@ function dashHoldPrompt(status){
    carries CUI requirements is routinely UNCLASSIFIED: the form NAMES the CUI
    categories, and naming them does not make the form CUI.
 
+   dd254WorkspaceContractCui has no product caller since v2.1.2 removed the
+   issue pop-up's notice. It is kept because the suite uses it to state which
+   workspaces involve CUI without being marked CUI - it is the negative control
+   that stops these two being folded back together.
+
    These were one function, which derived the marking from the contract
    indicators. Every draft with 10j ticked was badged CUI on the dashboard and
    went out with a (CUI)(CUI)(CUI) subject line over an unclassified form.
@@ -6394,7 +6430,7 @@ function dd254WorkspaceCuiMarking(ws){
   const sel=(ws||{}).selects||{};
   if(sel.clsSel==='CUI') return true;
   try{
-    const t=ctFind(sel.ctTplSel);
+    const t=ctTemplateForWorkspace(ws,sel.ctTplSel);
     return !!(t&&t.data&&t.data.cls==='CUI');
   }catch(e){ return false; }
 }
@@ -6406,40 +6442,87 @@ function dd254WorkspaceContractCui(ws){
   if(String(sel.distStmt||'').trim()||String(sel.distCat||'').trim()) return true;
   if(Object.keys(ch).some(function(k){return /^ldc/i.test(k)&&ch[k];})) return true;
   try{
-    const t=ctFind(sel.ctTplSel);
+    const t=ctTemplateForWorkspace(ws,sel.ctTplSel);
     return !!(t&&t.data&&((t.data.c10&&t.data.c10['10j'])||(t.data.c11&&t.data.c11['11l'])));
   }catch(e){ return false; }
 }
 /* Kept for callers written against the single-function shape. Every one of them
    meant the marking. */
 function dd254WorkspaceHasCUI(ws){ return dd254WorkspaceCuiMarking(ws); }
+/* Recipient snapshots travel with the draft; removing a library entry cannot
+   silently remove a recipient from an already prepared DD Form 254. */
+function distSmRead(value){
+  try{ const a=JSON.parse(value||'[]'); return Array.isArray(a)?a.filter(function(m){return m&&typeof m.email==='string';}):[]; }
+  catch(e){ return []; }
+}
+function distSmOfTemplate(t){
+  return t&&t.smEmail?[{name:t.smName||'',email:t.smEmail,program:t.smProgram||''}]:[];
+}
+function distSmSources(ws){
+  const tx=(ws||{}).texts||{};
+  let assigned=[];
+  if(tx.distSmAssigned) assigned=distSmRead(tx.distSmAssigned);
+  else { try{ assigned=distSmOfTemplate(ctTemplateForWorkspace(ws,((ws||{}).selects||{}).ctTplSel)); }catch(e){} }
+  return {assigned:assigned,manual:distSmRead(tx.distSmRecipients)};
+}
+function distSmSelectChanged(){
+  const e=document.getElementById('distSmAssigned'); if(e) e.value='';
+  distSmRender(); updateEmailDist(); if(typeof dashTouch==='function') dashTouch();
+}
+function distSmAdd(){
+  if(window.DD254_READONLY) return;
+  const sel=document.getElementById('distSmPick'), box=document.getElementById('distSmRecipients');
+  const m=tplLoad(TPL_SM).find(function(t){return t.ioId===sel.value;});
+  if(!m||!box) return;
+  if(!emailsIn(m.email).length) return alert('This security manager has no e-mail address. Add one in Security Manager templates first.');
+  const a=distSmRead(box.value);
+  if(!a.some(function(x){return String(x.email).trim().toLowerCase()===String(m.email).trim().toLowerCase();}))
+    a.push({name:m.name||'',email:m.email||'',program:m.program||''});
+  box.value=JSON.stringify(a); sel.value=''; distSmRender(); updateEmailDist(); dashTouch();
+}
+function distSmRemove(i){
+  if(window.DD254_READONLY) return;
+  const e=document.getElementById('distSmRecipients'); if(!e) return;
+  const a=distSmRead(e.value); a.splice(i,1); e.value=JSON.stringify(a);
+  distSmRender(); updateEmailDist(); dashTouch();
+}
+function distSmRender(){
+  const sel=document.getElementById('distSmPick'), el=document.getElementById('distSmList');
+  if(!sel||!el) return;
+  const prev=sel.value;
+  const managers=tplLoad(TPL_SM);let idsAdded=false;
+  managers.forEach(function(m){if(!m.ioId){m.ioId=ioNewId();idsAdded=true;}});
+  if(idsAdded&&!window.DD254_READONLY)tplSave(TPL_SM,managers);
+  sel.innerHTML='<option value="">— select a security / program security manager —</option>'+managers.map(function(m){
+    return '<option value="'+tplEsc(m.ioId||'')+'">'+tplEsc([m.name,m.program,m.email].filter(Boolean).join(' · '))+'</option>';
+  }).join(''); sel.value=prev;
+  const s=distSmSources({texts:{distSmAssigned:ctGv('distSmAssigned'),distSmRecipients:ctGv('distSmRecipients')},selects:{ctTplSel:ctGv('ctTplSel')}});
+  el.innerHTML=s.assigned.map(function(m){return '<div>'+tplEsc([m.name,m.email,m.program].filter(Boolean).join(' · '))+' <span style="color:#6a7888;">(assigned to template · CC)</span></div>';}).join('')
+    +s.manual.map(function(m,i){return '<div>'+tplEsc([m.name,m.email,m.program].filter(Boolean).join(' · '))+' <button type="button" class="dash-btn" style="background:#7a4038;padding:1px 6px;" aria-label="Remove '+tplEsc(m.name||m.email)+'" onclick="distSmRemove('+i+')">✕</button></div>';}).join('');
+}
 function dashDistEmails(rec){
   rec=rec||{};
   const ws=rec.workspace||{}, tx=ws.texts||{};
   const dedupe=function(a){ const seen={},out=[]; a.forEach(function(x){ const k=String(x||'').toLowerCase();
     if(x&&!seen[k]){ seen[k]=1; out.push(x); } }); return out; };
-  let cso=emailsIn(tx.i6c).concat(emailsIn(tx.i7c));
-  (ws.perf||[]).forEach(function(p){ cso=cso.concat(emailsIn(p&&p.cso)); });
-  let fsoItems=[].concat(emailsIn(tx.i6fsoEmail),emailsIn(tx.i7fsoEmail));
-  (ws.perf||[]).forEach(function(p){ fsoItems=fsoItems.concat(emailsIn(p&&p.email)); });
-  const fso=fsoItems.concat(emailsIn(tx.fsoEmails));
+  let cso=emailsIn(tx.i6c).concat(emailsIn(tx.i7c)), fsoPerf=[];
+  (ws.perf||[]).forEach(function(p){ cso=cso.concat(emailsIn(p&&p.cso)); fsoPerf=fsoPerf.concat(emailsIn(p&&p.email)); });
+  const prime=emailsIn(tx.i6fsoEmail), sub=emailsIn(tx.i7fsoEmail), manual=emailsIn(tx.fsoEmails);
+  const sm=distSmSources(ws);
+  const managers=sm.assigned.concat(sm.manual).reduce(function(a,m){return a.concat(emailsIn(m.email));},[]);
   const other18f=dd254WsChecked(ws,'dist18f')?dedupe(emailsIn(tx.dist18fOther)):[];
-  const o={cso:dedupe(cso),
-           fso:dedupe(fso),
-           fsoItems:dedupe(fsoItems),
-           fsoPrime:dedupe(emailsIn(tx.i6fsoEmail)),
-           fsoSub:dedupe(emailsIn(tx.i7fsoEmail)),
-           other18f:other18f,
-           other:dedupe(other18f.concat(emailsIn(tx.item13))),
-           requestor:dedupe(emailsIn(rec.requestedBy))};
-  o.all=dedupe([].concat(o.fso,o.cso,o.other,o.requestor));
+  const o={cso:dedupe(cso),fso:dedupe(prime.concat(sub,fsoPerf,manual)),
+    fsoItems:dedupe(prime.concat(sub,fsoPerf)),fsoPrime:dedupe(prime),fsoSub:dedupe(sub),fsoPerf:dedupe(fsoPerf),
+    fsoManual:dedupe(manual),managers:dedupe(managers),other18f:other18f,
+    other:dedupe(other18f.concat(emailsIn(tx.item13))),requestor:dedupe(emailsIn(rec.requestedBy))};
+  o.all=dedupe([].concat(o.fso,o.cso,o.other,o.requestor,o.managers));
   return o;
 }
 
 /* The issuance compose window has a deliberately narrower audience than the
-   general distribution picker. Only the requestor and the FSO fields attached
-   to Items 6, 7 and 8 belong on To; the CSO fields in those same items and any
-   e-mail addresses explicitly entered in Block 18f belong on CC. Claiming To
+   general distribution picker. The requestor, subcontractor FSO and performance-location FSOs
+   belong on To. Facility FSOs, security/program security managers, CSOs,
+   additional manual FSOs and checked Item 18f addresses belong on CC. Claiming To
    first also prevents Outlook from showing one person on both lines when a
    contact performs more than one role. */
 function dashIssueMailMany(records){
@@ -6452,12 +6535,12 @@ function dashIssueMailMany(records){
   let to=[];
   records.forEach(function(rec){
     const em=dashDistEmails(rec);
-    to=to.concat(claim([].concat(em.requestor||[],em.fsoItems||[])));
+    to=to.concat(claim([].concat(em.requestor||[],em.fsoSub||[],em.fsoPerf||[])));
   });
   let cc=[];
   records.forEach(function(rec){
     const em=dashDistEmails(rec);
-    cc=cc.concat(claim([].concat(em.cso||[],em.other18f||[])));
+    cc=cc.concat(claim([].concat(em.cso||[],em.fsoPrime||[],em.fsoManual||[],em.managers||[],em.other18f||[])));
   });
   const name=records.length===1
     ? (String((records[0]&&records[0].title)||'DD Form 254').trim()||'DD Form 254')
@@ -6516,19 +6599,20 @@ function dashDistAttachments(rec){
   const ws=rec.workspace||{}, ch=ws.checks||{}, rd=ws.radios||{}, tx=ws.texts||{};
   const auto=dd254AutoAttachments(function(k){ return !!ch['c'+k]; }, function(n){ return rd[n]||''; }, tx.item13||'');
   let tpl=[];
+  /* Both template sources, from the stored draft: the DD-254 Template Language
+     entry the form still has selected, and the Contract Type template the draft
+     was built from (recorded on the record as ctType, not in the workspace). */
   try{
-    const t=ctFind((ws.selects||{}).ctTplSel);
-    if(t&&t.data) tpl=ctAttLines(t.data);
+    tpl=dd254AttFromTemplates([
+      ctTemplateForWorkspace(ws,(ws.selects||{}).ctTplSel),
+      ctTypeByLabel(rec.ctType)
+    ]).att;
   }catch(e){}
   const manual=String(tx.attachNotes||'').split(/\n+/).map(function(x){return x.trim();}).filter(Boolean);
   return {auto:auto,tpl:tpl,manual:manual,all:auto.concat(tpl,manual)};
 }
 function dashDistIsCUI(rec){
   return dd254WorkspaceCuiMarking((rec||{}).workspace||{});
-}
-/* Reported next to the marking, never in place of it. */
-function dashContractCui(rec){
-  return dd254WorkspaceContractCui((rec||{}).workspace||{});
 }
 
 /* Who this particular DD-254 has to go to, taken from its own Item 18, with the
@@ -6643,15 +6727,11 @@ function dashDistDialog(rec){
           +'<div style="font-size:11px;color:#3a2a50;line-height:1.5;">This DD Form 254 is marked CUI. E-mail transmission must be encrypted in accordance with DoDI 5200.48 and the applicable agency CUI policy. Do not send it, or any attachment listed below, in the clear.</div>'
           +'</div>'
         :'')
-      /* The contract involving CUI is worth saying here, because it shapes what
-         Item 13 has to carry. It is not an encryption instruction: the form is
-         marked UNCLASSIFIED and travels as an unclassified document. */
-      +((!dashDistIsCUI(rec)&&dashContractCui(rec))
-        ?'<div style="background:#eef0fb;border:1px solid #b8bee0;border-left:5px solid #3a3a8a;border-radius:4px;padding:9px 12px;margin-bottom:12px;">'
-          +'<div style="font-size:11.5px;font-weight:bold;color:#3a3a8a;letter-spacing:.3px;margin-bottom:3px;">This contract involves CUI</div>'
-          +'<div style="font-size:11px;color:#2a2a50;line-height:1.5;">Item 10j, Item 11l or a CUI designation is present, so Item 13 must carry the GCA\u2019s CUI protection guidance. The form itself is marked UNCLASSIFIED and does not require encrypted transmission on that basis \u2014 naming CUI categories does not make the form CUI.</div>'
-          +'</div>'
-        :'')
+      /* Owner decision (24 September 2026): the contract involving CUI does not
+         belong on this pop-up. This dialog is about sending the document, and
+         the only thing that changes how the document is sent is the marking on
+         it. Item 10j/11l still raises its warning on the form, where the
+         preparer can act on it by writing Item 13. */
       +rows
       +(function(){ const at=dashDistAttachments(rec);
         if(!at.all.length) return parties.length
@@ -6672,7 +6752,7 @@ function dashDistDialog(rec){
           +'</div>'; })()
       +'<datalist id="ddOpts">'+((dashDistEmails(rec).all)||[]).map(function(e){return '<option value="'+dashEsc(e)+'">';}).join('')+'</datalist>'
       +(parties.length?'<div style="font-size:10.5px;color:#8a94a0;margin-top:8px;line-height:1.5;">Addresses pulled from 6c / 7c / 8c, the FSO list, Item 13, Block 18f and the requestor field. Every box is a free-text field with a picker — edit anything that is wrong.</div>':'')
-      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;"><b>Open e-mail</b> uses the saved DD-254 to place the requestor and Item 6/7/8 FSOs on <b>To</b>, and the Item 6/7/8 CSOs plus e-mail addresses in Block 18f on <b>CC</b>. Duplicate addresses are removed across both lines, and each address is separated by a semicolon and space for the mail application. It is a direct e-mail link to your computer\u2019s registered mail application; the tool does not open a web window or send automatically. <span style="white-space:nowrap;">To: '+issueMail.to.length+' · CC: '+issueMail.cc.length+'</span></div>'
+      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;"><b>Open e-mail</b> uses the saved DD-254 to place the requestor, subcontractor FSO and performance-location FSOs on <b>To</b>, and facility FSOs, security / program security managers, CSOs, additional FSOs and checked Item 18f addresses on <b>CC</b>. Duplicate addresses are removed across both lines, and each address is separated by a semicolon and space for the mail application. It is a direct e-mail link to your computer\u2019s registered mail application; the tool does not open a web window or send automatically. <span style="white-space:nowrap;">To: '+issueMail.to.length+' · CC: '+issueMail.cc.length+'</span></div>'
       +(dashMailHrefTooLong(issueMail)?'<div style="font-size:10.5px;color:#9e1b32;background:#fdebea;padding:6px 8px;border-radius:3px;margin-top:7px;"><b>E-mail link is too long for a reliable handoff.</b> Use Copy To and Copy CC, then compose the message in your mail application.</div>':'')
       +'<div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">'
       +'<a id="ddEmail" title="Open a prepared message in Outlook or the computer’s default e-mail application" style="background:#1565a8;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;">✉ Open e-mail</a>'
@@ -6785,7 +6865,7 @@ function dashBulkDistDialog(records){
       +groupPanels
       +sections
       +'<datalist id="bddOpts">'+known.map(function(e){return '<option value="'+dashEsc(e)+'">';}).join('')+'</datalist>'
-      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;">Within each e-mail, requestors and Item 6/7/8 FSOs are on <b>To</b>; Item 6/7/8 CSOs plus checked Block 18f e-mail addresses are on <b>CC</b>. Duplicate addresses are removed across both lines. Each address is separated by a semicolon and space.</div>'
+      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;">Within each e-mail, requestors, subcontractor FSOs and performance-location FSOs are on <b>To</b>; facility FSOs, security / program security managers, CSOs, additional FSOs and checked Item 18f addresses are on <b>CC</b>. Duplicate addresses are removed across both lines. Each address is separated by a semicolon and space.</div>'
       +'<div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">'
       +'<button id="bddSave" style="background:#15702e;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Issue all and record distribution</button>'
       +'<button id="bddSkip" style="background:#8a94a0;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Issue all · log later</button>'
@@ -7032,7 +7112,7 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 /* ── END SINGLE-TAB LOCK ── */
 
 /* ── FULL BACKUP / RESTORE + close-time warning ── */
-const BK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg'];
+const BK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg','orders'];
 /* Integrity for Full Backup. The backup REPLACES the entire template store on
    restore, so a truncated download or a hand-edited file must not be accepted
    silently. Canonical body is {templates,drafts} in that key order — JSON.parse
@@ -7323,7 +7403,7 @@ async function dashNewDraft(stage){
   if(typeof initWizard==='function') initWizard();
   const r3=document.querySelector('input[name="spec"][value="3a"]'); if(r3) r3.checked=true;
   window.DD254_CT_APPLIED=(tplPick&&tplPick.label)||'';
-  if(tplPick&&tplPick.data) ctApplyWsToForm(ctApplyDataToWorkspace(tplPick.data,null));
+  if(tplPick&&tplPick.data) ctApplyWsToForm(ctApplyDataToWorkspace(tplPick.data,null,tplPick));
   /* A solicitation says so in Item 9 before it says anything else. Applied after
      any contract type, so it sits above language the template brought with it. */
   if(stage==='sol'){
@@ -7555,54 +7635,40 @@ async function dashRename(id){
 /* Write a template's whole content into a draft workspace. Contract Type
    templates used to carry Block 13 text alone; they now carry the same
    structure as DD-254 Template Language, so applying one has to move all of
-   it. Only fields the template actually sets are written — a blank field in
-   the template leaves whatever is already on the draft alone. */
-function ctApplyDataToWorkspace(d,ws){
+   it. Each represented section is replaced, including blank fields and unchecked
+   boxes. Sections missing from an older template remain untouched. */
+/* Whole-template application replaces the sections represented by the
+   template, including blank values. Absent legacy sections remain untouched. */
+function ctApplyDataToWorkspace(d,ws,template){
+  const live=!ws;
   ws=ws||{texts:{},checks:{},radios:{},selects:{},perf:[]};
   if(!d) return ws;
   ws.texts=ws.texts||{}; ws.checks=ws.checks||{}; ws.radios=ws.radios||{}; ws.selects=ws.selects||{};
-  const put=function(id,v){ if(v!=null&&String(v).trim()) ws.texts[id]=String(v); };
-  CT_10.forEach(function(k){ if(d.c10&&d.c10[k]) ws.checks['c'+k]=true; });
-  CT_11.forEach(function(k){ if(d.c11&&d.c11[k]) ws.checks['c'+k]=true; });
-  CT_18.forEach(function(k){ if(d.c18&&d.c18[k]) ws.checks['dist'+k]=true; });
-  /* A task order with its own DD-254. The standalone tick is derived from the
-     task order rather than stored separately — a template carrying a task
-     order number but claiming not to be standalone would be a contradiction
-     the editor could not show and nobody could resolve.
-
-     2a is filled only when it is empty. A template must not quietly replace
-     the contract number on a form somebody has already started; the check is
-     made against the workspace being written when there is one, and against
-     the live field when the template is applied straight to the open form. */
-  if(d.taskOrder&&String(d.taskOrder).trim()){
-    put('iEffort',d.taskOrder);
-    ws.checks.iStandalone=true;
-    const already=(ws.texts&&ws.texts.i2a!=null&&String(ws.texts.i2a).trim())
-      ? String(ws.texts.i2a).trim()
-      : ((typeof gv==='function')?gv('i2a'):'');
-    if(!already && d.primeContract && String(d.primeContract).trim()) put('i2a',d.primeContract);
-  }
-  put('i10k',d.t10k); put('i11m',d.t11m);
-  if(d.cls) ws.selects.clsSel=d.cls;
-  if(d.i12route) ws.radios.i12route=d.i12route;
-  put('i12',d.i12); put('i12specify',d.i12specify);
-  /* Block 13 gets the free text plus the language attached to each checked box,
-     which is how the same data reaches Block 13 on the form side. */
-  const b13=[];
-  if(d.i13&&String(d.i13).trim()) b13.push(String(d.i13).trim());
-  [['c10','l10',CT_10],['c11','l11',CT_11]].forEach(function(g){
-    (g[2]||[]).forEach(function(k){
-      if(d[g[0]]&&d[g[0]][k]&&d[g[1]]&&String(d[g[1]][k]||'').trim()) b13.push(String(d[g[1]][k]).trim());
-    });
+  const has=function(k){return Object.prototype.hasOwnProperty.call(d,k);};
+  const put=function(id,v){ ws.texts[id]=v==null?'':String(v); };
+  [['c10',CT_10,'c'],['c11',CT_11,'c'],['c18',CT_18,'dist']].forEach(function(g){
+    if(has(g[0])) g[1].forEach(function(k){ws.checks[g[2]+k]=!!(d[g[0]]&&d[g[0]][k]);});
   });
-  if(b13.length) ws.texts.item13=b13.join('\n\n');
-  if(d.i14) ws.radios.i14=d.i14;
-  if(d.i15) ws.radios.i15=d.i15;
-  put('i14text',d.i14text); put('i15text',d.i15text);
-  if(d.i16) ['a','b','c','d','e','f'].forEach(function(k){ put('i16'+k,d.i16[k]); });
-  if(d.c18&&d.c18['18f']) put('dist18fOther',d.t18f);
+  /* Contract identity stays deliberate: fill 2a only when empty. */
+  const already=String(ws.texts.i2a!=null?ws.texts.i2a:(live?ctGv('i2a'):'')).trim();
+  if(!already&&String(d.primeContract||'').trim()) put('i2a',d.primeContract);
+  if(String(d.taskOrder||'').trim()&&!ws.ctSource&&!(live&&window.DD254_ORDER_SOURCE)){put('iEffort',d.taskOrder);ws.selects.iOrderType=ctOrderType(d.orderType);if(has('standalone'))ws.checks.iStandalone=!!d.standalone;else ws.checks.iStandalone=true;}
+  [['t10k','i10k'],['t11m','i11m'],['i12','i12'],['i12specify','i12specify'],['i14text','i14text'],['i15text','i15text']].forEach(function(p){if(has(p[0])) put(p[1],d[p[0]]);});
+  if(has('cls')) ws.selects.clsSel=d.cls||'';
+  ['i12route','i14','i15'].forEach(function(k){if(has(k)) ws.radios[k]=d[k]||'';});
+  const b13=[];
+  if(String(d.i13||'').trim()) b13.push(String(d.i13).trim());
+  [['c10','l10',CT_10],['c11','l11',CT_11]].forEach(function(g){g[2].forEach(function(k){
+    const text=String((d[g[1]]||{})[k]||'').trim();
+    if((d[g[0]]||{})[k]&&text&&b13.indexOf(text)<0) b13.push(text);
+  });});
+  if(has('i13')||has('l10')||has('l11')) put('item13',b13.join('\n\n'));
+  if(has('i16')) ['a','b','c','d','e','f'].forEach(function(k){put('i16'+k,(d.i16||{})[k]);});
+  if(has('t18f')||has('c18')) put('dist18fOther',(d.c18||{})['18f']?d.t18f:'');
+  if(template) put('distSmAssigned',JSON.stringify(distSmOfTemplate(template)));
   return ws;
 }
+
 /* Checkboxes, radios and the classification select are driven with a real
    .click()/value-plus-updateBanner() rather than a bare assignment, so reveal
    toggles and any onchange-driven side effect fire exactly as if the entry
@@ -7612,6 +7678,8 @@ function ctApplyDataToWorkspace(d,ws){
    DOM anyway. That stops being true the day a text field gets its own
    oninput side effect that run() does not also cover. */
 function ctApplyWsToForm(ws){
+  window.CT_APPLY_BUSY=true;
+  try{
   Object.keys(ws.texts||{}).forEach(function(k){ const e=document.getElementById(k); if(e) e.value=ws.texts[k]; });
   Object.keys(ws.checks||{}).forEach(function(k){
     const e=document.getElementById(k); if(!e||e.checked===ws.checks[k]) return;
@@ -7622,7 +7690,8 @@ function ctApplyWsToForm(ws){
     if(tile&&/^c1[01]/.test(k)) tile.click(); else e.click();
   });
   Object.keys(ws.radios||{}).forEach(function(k){
-    const r=document.querySelector('input[name="'+k+'"][value="'+ws.radios[k]+'"]'); if(r&&!r.checked) r.click(); });
+    document.querySelectorAll('input[name="'+k+'"]').forEach(function(e){e.checked=false;});
+    const r=document.querySelector('input[name="'+k+'"][value="'+ws.radios[k]+'"]'); if(r) r.click(); });
   Object.keys(ws.selects||{}).forEach(function(k){
     const e=document.getElementById(k); if(!e) return;
     e.value=ws.selects[k];
@@ -7635,6 +7704,8 @@ function ctApplyWsToForm(ws){
      back rather than let the two disagree. */
   if(typeof supSync==='function') supSync();
   if(typeof cuiSync==='function') cuiSync();
+  syncUIFromDom(); distSmRender();
+  } finally {window.CT_APPLY_BUSY=false;}
 }
 async function dashApplyB13(id,idx){
   if(idx===''||idx==null) return;
@@ -7646,12 +7717,12 @@ async function dashApplyB13(id,idx){
   if(String(cur).trim() && !(await uiConfirm('This DD-254 already has Block 13 text.\n\nApply Contract Type "'+(t.label||'unnamed')+'" over it?'))) return;
   if(DASH.current===id){
     window.DD254_CT_APPLIED=t.label||'';
-    ctApplyWsToForm(ctApplyDataToWorkspace(d,null));
+    ctApplyWsToForm(ctApplyDataToWorkspace(d,null,t));
     if(typeof run==='function') run();
     await dashSaveNow();
     const r2=await draftGet(id); if(r2){ r2.ctType=t.label||''; await draftPut(r2); }
   } else {
-    rec.workspace=ctApplyDataToWorkspace(d,rec.workspace);
+    rec.workspace=ctApplyDataToWorkspace(d,rec.workspace,t);
     rec.ctType=t.label||'';
     rec.updatedAt=new Date().toISOString();
     await draftPut(rec);
@@ -9158,7 +9229,7 @@ function dashRollupRender(teams){
   const host=document.getElementById('dashRollupView'); if(!host) return;
   document.getElementById('dashCards').style.display='none';
   host.style.display='block';
-  host.innerHTML='<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">'
+  host.innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px;">'
     +'<h3 style="margin:0;color:#2b3440;font-size:15px;">👁 Manager Rollup — read-only ('+teams.length+' member file'+(teams.length>1?'s':'')+')</h3>'
     +'<button class="dash-btn" style="background:#566573;" onclick="dashRollupClose()">← Back to my drafts</button></div>'
     +teams.map(function(t){
@@ -9512,8 +9583,9 @@ async function exportOfficialXFA(btn, isSilentBatch){
 </script>
 <script>
 /* ── FACILITY & CSO TEMPLATE LIBRARIES ─────────────── */
+const TPL_ORDERS='dd254_contract_orders';
 const TPL_FAC='dd254_fac_tpl', TPL_CSO='dd254_cso_tpl', TPL_PERF='dd254_perf_tpl', TPL_CERT='dd254_cert_tpl', TPL_B13='dd254_b13_tpl', TPL_CT='dd254_ct_tpl', TPL_SM='dd254_sm_tpl', TPL_SL='dd254_sl_tpl', TPL_SCG='dd254_scg_tpl';
-function tplKeyOf(kind){ return kind==='fac'?TPL_FAC:(kind==='cso'?TPL_CSO:(kind==='cert'?TPL_CERT:(kind==='b13'?TPL_B13:(kind==='ct'?TPL_CT:(kind==='sm'?TPL_SM:(kind==='sl'?TPL_SL:(kind==='scg'?TPL_SCG:TPL_PERF))))))); }
+function tplKeyOf(kind){ if(kind==='orders')return TPL_ORDERS; return kind==='fac'?TPL_FAC:(kind==='cso'?TPL_CSO:(kind==='cert'?TPL_CERT:(kind==='b13'?TPL_B13:(kind==='ct'?TPL_CT:(kind==='sm'?TPL_SM:(kind==='sl'?TPL_SL:(kind==='scg'?TPL_SCG:TPL_PERF))))))); }
 const TPL_MEM={};
 /* ── TEMPLATE STORAGE: local IndexedDB (write-through cache) ──
    Purely local browser storage — no network, no external calls.
@@ -9600,7 +9672,7 @@ async function tplWalReplay(){
 }
 async function tdbInit(){
   await tdbOpen();
-  const keys=[TPL_FAC,TPL_CSO,TPL_PERF,TPL_CERT,TPL_B13,TPL_CT,TPL_SM,TPL_SL,TPL_SCG];
+  const keys=[TPL_FAC,TPL_CSO,TPL_PERF,TPL_CERT,TPL_B13,TPL_CT,TPL_SM,TPL_SL,TPL_SCG,TPL_ORDERS];
   if(TDB.useLS){
     keys.forEach(function(k){ TPL_CACHE[k]=lsTplRead(k); });
   } else {
@@ -9620,7 +9692,7 @@ async function tdbInit(){
       TPL_CACHE[k]=v||[];
     }
     // restore undo flags
-    const kinds=['fac','cso','perf','cert','b13','ct','sm','sl'];
+    const kinds=['fac','cso','perf','cert','b13','ct','sm','sl','orders'];
     for(const kd of kinds){
       if((await tdbGet('undo_'+kd))!=null) IO_UNDO[kd]=true;
       else { try{ if(localStorage.getItem('dd254_io_undo_'+kd)) IO_UNDO[kd]=true; }catch(e){} }
@@ -9887,7 +9959,7 @@ function applyPerfTplFromSearch(inp,mode){
   let t=byCage(arr);
   if(!t){
     const f=facTplByCage(val);
-    if(f) t={name:f.text||'',cage:f.cage||'',cso:'',csoLabel:f.csoLabel,csoSnap:f.csoSnap};
+    if(f) t={name:f.text||'',cage:f.cage||'',email:f.email||'',cma:f.cma||'',cso:'',csoLabel:f.csoLabel,csoSnap:f.csoSnap};
   }
   if(!t) return;
   inp.value='';
@@ -9899,7 +9971,7 @@ function applyPerfTplFromSearch(inp,mode){
   if(mode==='sub'){
     const a=document.getElementById('i7a'), b=document.getElementById('i7b'), c=document.getElementById('i7c');
     if(a) a.value=t.name||''; if(b) b.value=t.cage||''; if(c) c.value=csoVal;
-    const e7=document.getElementById('i7fsoEmail'); if(e7&&t.email) e7.value=t.email;
+    const e7=document.getElementById('i7fsoEmail'); if(e7) e7.value=t.email||'';
     const c7=document.getElementById('i7cma'); if(c7&&t.cma) c7.value=t.cma;
     if(typeof cmaSync==='function') cmaSync();
     const w7=document.getElementById('a7Tpl'); if(w7) w7.classList.add('show');
@@ -9907,7 +9979,7 @@ function applyPerfTplFromSearch(inp,mode){
     const blk=inp.closest('div[id^="perf-"]');
     if(blk){ const f=perfFields(blk);
       if(f.loc) f.loc.value=t.name||''; if(f.cage) f.cage.value=t.cage||''; if(f.cso) f.cso.value=csoVal;
-      if(f.email&&t.email) f.email.value=t.email;
+      if(f.email) f.email.value=t.email||'';
       if(f.cma&&t.cma) f.cma.value=t.cma;
       if(typeof cmaSync==='function') cmaSync();
       const w8=blk.querySelector('.tpl-confirm'); if(w8) w8.classList.add('show'); }
@@ -10065,7 +10137,16 @@ function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim
   const el=document.getElementById('ctSmInfo_'+i); if(el) el.textContent=t.smName?((t.smEmail||'—')+(t.smProgram?' · '+t.smProgram:'')):'';
 }
 function ctSetPrime(i,v){ const d=ctEd(i); if(!d) return; d.primeContract=(v||'').trim(); ctStamp(i); }
-function ctSetTask(i,v){ const d=ctEd(i); if(!d) return; d.taskOrder=(v||'').trim(); ctStamp(i); }
+async function ctSetTask(i,v){
+  const d=ctEd(i);if(!d)return;const value=String(v||'').trim(),before=d.taskOrder;
+  if(window.TPL_EDIT_KIND==='ct'&&before){
+    if(!value||value.length>120){alert('Enter an order number of 120 characters or fewer.');ctRepoRender(true);return;}
+    const records=ctOrderStore(),o=ctOrderRows(records).find(function(x){return ctOrderKey(x.primeContract,x.number)===ctOrderKey(d.primeContract,before);});
+    if(ctOrderRows(records).some(function(x){return x!==o&&ctOrderKey(x.primeContract,x.number)===ctOrderKey(d.primeContract,value);})||window.TPL_EDIT.some(function(t,j){return j!==i&&ctOrderKey((t.data||{}).primeContract,(t.data||{}).taskOrder)===ctOrderKey(d.primeContract,value);})){alert('This prime contract / order number already exists.');ctRepoRender(true);return;}
+    if(o){o.number=value;o.label=o.primeContract+' · '+value;o.updatedAt=new Date().toISOString();if(!(await tplSave(TPL_ORDERS,records))){alert('The order number was not confirmed saved.');ctRepoRender(true);return;}}
+  }
+  d.taskOrder=value;ctStamp(i);dashTplTouch();ctRepoRender();
+}
 function ctSrcRepaint(i){
   const t=window.TPL_EDIT[i]; if(!t) return;
   const el=document.getElementById('ctSrc_'+i); if(el) el.innerHTML=ctSrcBadge(t);
@@ -10097,7 +10178,434 @@ function ctFinalNotice(t){
 function ctUpdText(t){ return t&&t.updatedAt?('last updated '+String(t.updatedAt).replace('T',' ').substring(0,16)):'not yet updated'; }
 function ctStamp(i){ const t=window.TPL_EDIT[i]; if(!t) return; t.updatedAt=new Date().toISOString(); const el=document.getElementById('ctUpd_'+i); if(el) el.textContent=ctUpdText(t); }
 function ctMgrSum(i){ const el=document.getElementById('ctSum_'+i); if(el) el.innerHTML=ctSummary(window.TPL_EDIT[i]); ctStamp(i); }
-function ctMgrToggle(i){ const e=document.getElementById('ctEd_'+i); if(e) e.style.display=(e.style.display==='none'?'block':'none'); }
+function ctEditorShell(i){return '<div id="ctEd_'+i+'" data-lazy="true" style="display:none;"></div>';}
+function ctMgrToggle(i){
+  let e=document.getElementById('ctEd_'+i);if(!e)return;
+  if(e.dataset.lazy){ctEd(i);e.outerHTML=ctEditorHtml(window.TPL_EDIT[i],i);e=document.getElementById('ctEd_'+i);}
+  e.style.display=e.style.display==='none'?'block':'none';
+}
+/* Comparison uses content, not names or storage IDs. Normalise spacing while
+   retaining wording, checked boxes, attachment lists and manager assignment. */
+function ctDupText(v){return String(v==null?'':v).trim().replace(/\s+/g,' ');}
+function ctDupContent(t,scope){
+  const d=(t||{}).data||{}, out={};
+  ['cls','t10k','t11m','i12route','i12','i12specify','i13','i14','i14text','i15','i15text','t18f','attText'].forEach(function(k){out[k]=ctDupText(d[k]);});
+  [['c10',CT_10],['c11',CT_11],['c18',CT_18]].forEach(function(g){out[g[0]]=g[1].map(function(k){return !!(d[g[0]]||{})[k];});});
+  ['l10','l11'].forEach(function(g){out[g]=(g==='l10'?CT_10:CT_11).map(function(k){return ctDupText((d[g]||{})[k]);});});
+  out.i16=['a','b','c','d','e','f'].map(function(k){return ctDupText((d.i16||{})[k]);});
+  out.manager=[ctDupText(t.smName),ctDupText(t.smEmail).toLowerCase(),ctDupText(t.smProgram)];
+  out.orderType=ctOrderType(d.orderType);out.standalone=Object.prototype.hasOwnProperty.call(d,'standalone')?!!d.standalone:!!String(d.taskOrder||'').trim();
+  if(scope!==false){out.prime=ctDupText(d.primeContract).toUpperCase();out.order=ctDupText(d.taskOrder).toUpperCase();}
+  return JSON.stringify(out);
+}
+function ctDupNonempty(t){
+  if(!t||!t.data) return false;
+  return ctDupContent(t)!==ctDupContent({data:ctBlankData()});
+}
+function ctDupApplied(t,scope){
+  const out=JSON.parse(ctDupContent(t,scope)),d=t.data||{},texts=[];
+  if(ctDupText(d.i13))texts.push(ctDupText(d.i13));
+  [['c10','l10',CT_10],['c11','l11',CT_11]].forEach(function(g){g[2].forEach(function(k){const v=ctDupText((d[g[1]]||{})[k]);if((d[g[0]]||{})[k]&&v&&texts.indexOf(v)<0)texts.push(v);});});
+  out.i13=ctDupText(texts.join('\n\n'));delete out.l10;delete out.l11;
+  if(!(d.c18||{})['18f'])out.t18f='';
+  return JSON.stringify(out);
+}
+function ctDuplicatePairs(arr){
+  const pairs=[],identities=new Map(),signatures=[];
+  (arr||[]).forEach(function(t,i){
+    const d=t.data||{},prime=ctContractKey(d.primeContract);if(!prime)return;
+    const key=ctOrderKey(prime,d.taskOrder),sig=ctDupContent(t),j=identities.get(key);
+    if(j!=null){const a=arr[j],ar=(a.dupReviewedAgainst||{})[t.ioId],tr=(t.dupReviewedAgainst||{})[a.ioId];
+      const reviewed=!!(a.ioId&&t.ioId&&((ar&&ar===JSON.stringify([a.ioId,t.ioId,signatures[j],sig]))||(tr&&tr===JSON.stringify([t.ioId,a.ioId,sig,signatures[j]]))));
+      pairs.push({a:j,b:i,kind:'duplicate',reviewed:reviewed});
+    }else identities.set(key,i);
+    signatures[i]=sig;
+  });return pairs;
+}
+function ctDuplicateLabel(p){return 'Duplicate prime contract / order number';}
+
+/* Orders are identities, not copies of template language. Saved source versions
+   share one immutable snapshot per version; orders reference that snapshot. */
+const CT_ORDER_TYPES=['Task Order','BPA','Delivery Order'];
+function ctOrderStore(){return tplLoad(TPL_ORDERS)||[];}
+function ctOrderRows(records){return (records||ctOrderStore()).filter(function(r){return r&&r.recordType==='order';});}
+function ctContractKey(v){return String(v||'').trim().toUpperCase();}
+function ctOrderKey(prime,number){return JSON.stringify([ctContractKey(prime),ctContractKey(number)]);}
+function ctOrderType(v){return CT_ORDER_TYPES.indexOf(v)>=0?v:'Task Order';}
+function ctSourceSnapshot(t){
+  const out={}; ['ioId','label','srcDate','srcType','srcRev','smName','smEmail','smProgram','data'].forEach(function(k){if(t&&t[k]!=null)out[k]=JSON.parse(JSON.stringify(t[k]));});
+  return out;
+}
+function ctSourceBody(t){return JSON.stringify(ctSourceSnapshot(t));}
+function ctSourceSaveVersion(t,records){
+  const body=ctSourceBody(t);
+  let v=records.find(function(r){return r.recordType==='source'&&r.templateId===t.ioId&&ctSourceBody(r.snapshot)===body;});
+  if(!v){v={recordType:'source',ioId:ioNewId(),templateId:t.ioId,label:t.label||'DD254 source',savedAt:new Date().toISOString(),snapshot:ctSourceSnapshot(t)};records.push(v);}
+  return v;
+}
+function ctOrderSource(o,records){return (records||ctOrderStore()).find(function(r){return r.recordType==='source'&&r.ioId===o.sourceVersionId;})||null;}
+function ctSourceCandidates(o,mode,templates){
+  return (templates||tplLoad(TPL_CT)).filter(function(t){const d=t.data||{};return t.ioId&&ctContractKey(d.primeContract)===ctContractKey(o.primeContract)&&(mode==='order'?ctContractKey(d.taskOrder)===ctContractKey(o.number):!ctContractKey(d.taskOrder));});
+}
+function ctLatestSource(list){return (list||[]).filter(function(t){return t.srcType!=='final';}).slice().sort(function(a,b){return String(b.srcDate||'').localeCompare(String(a.srcDate||''))||Number(b.srcRev||0)-Number(a.srcRev||0);})[0]||null;}
+function ctOrderMigrate(templates){
+  if(window.DD254_READONLY)return Promise.resolve(false);
+  const records=ctOrderStore(),known=new Set(ctOrderRows(records).map(function(o){return ctOrderKey(o.primeContract,o.number);})),groups=new Map();
+  templates.forEach(function(t){const d=t.data||{};if(!d.primeContract||!d.taskOrder)return;const key=ctOrderKey(d.primeContract,d.taskOrder);if(!known.has(key)){if(!groups.has(key))groups.set(key,[]);groups.get(key).push(t);}});
+  let changed=false;
+  groups.forEach(function(list){const t=ctLatestSource(list);if(!t)return;const d=t.data,v=ctSourceSaveVersion(t,records),now=new Date().toISOString();records.push({recordType:'order',ioId:ioNewId(),label:d.primeContract+' · '+d.taskOrder,primeContract:d.primeContract,number:d.taskOrder,orderType:ctOrderType(d.orderType),coverageMode:'order',sourceMode:'order',sourceVersionId:v.ioId,createdAt:now,updatedAt:now});changed=true;});
+  return changed?tplSave(TPL_ORDERS,records):Promise.resolve(true);
+}
+/* Coverage is chosen once, when the order is created. Older records infer it
+   from their existing selection or saved source without changing that source. */
+function ctOrderCoverage(o,records){
+  if(o.coverageMode==='prime'||o.coverageMode==='order')return o.coverageMode;
+  if(o.sourceMode==='prime'||o.sourceMode==='order')return o.sourceMode;
+  const v=ctOrderSource(o,records);
+  return v&&ctContractKey((v.snapshot.data||{}).taskOrder)?'order':'prime';
+}
+function ctOrderReview(o,records,templates){
+  if(o.sourceMode==='review'||o.sourceMode!==ctOrderCoverage(o,records))return 'Source needs review';
+  const v=ctOrderSource(o,records); if(!v)return 'Source not linked';
+  const candidates=ctSourceCandidates(o,o.sourceMode,templates),current=candidates.find(function(t){return t.ioId===v.templateId;});
+  if(!current)return 'Saved source removed or moved';
+  if(ctSourceBody(current)!==ctSourceBody(v.snapshot))return 'Saved source changed';
+  if(candidates.some(function(t){return t.ioId!==current.ioId&&(String(t.srcDate||'')>String(current.srcDate||'')||(String(t.srcDate||'')===String(current.srcDate||'')&&Number(t.srcRev||0)>Number(current.srcRev||0)));}))return 'Newer source available';
+  return '';
+}
+async function ctOrderCreate(prime,number,type,mode,templateId){
+  if(window.DD254_READONLY)return {error:'This tab is read-only.'};
+  prime=String(prime||'').trim();number=String(number||'').trim();
+  if(!prime||!number)return {error:'Enter both the prime contract and order number.'};
+  if(prime.length>120||number.length>120)return {error:'Contract and order numbers must be 120 characters or fewer.'};
+  const records=ctOrderStore();
+  if(ctOrderRows(records).some(function(o){return ctOrderKey(o.primeContract,o.number)===ctOrderKey(prime,number);}))return {error:'Order '+number+' already exists under '+prime+'.',duplicate:true};
+  const o={recordType:'order',ioId:ioNewId(),label:prime+' · '+number,primeContract:prime,number:number,orderType:ctOrderType(type),coverageMode:mode==='order'?'order':'prime',sourceMode:'review',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
+  const candidates=ctSourceCandidates(o,mode),t=templateId?candidates.find(function(x){return x.ioId===templateId;}):ctLatestSource(candidates);
+  if((mode==='prime'||mode==='order')&&t){o.sourceMode=mode;o.sourceVersionId=ctSourceSaveVersion(t,records).ioId;}
+  records.push(o);
+  if(!(await tplSave(TPL_ORDERS,records)))return {error:'Browser storage did not confirm the order. Keep this tab open and take a Full Backup.'};
+  audLog('',o.label,'order-added',o.orderType+'; '+o.sourceMode+' source');
+  return {order:o};
+}
+async function ctOrderBind(id,mode,templateId){
+  if(window.DD254_READONLY)return false;
+  const records=ctOrderStore(),o=ctOrderRows(records).find(function(x){return x.ioId===id;});if(!o)return false;
+  const coverage=ctOrderCoverage(o,records);
+  if(mode!=='review'&&mode!==coverage)return false;
+  o.coverageMode=coverage;
+  if(mode==='review'){o.sourceMode='review';}
+  else{
+    const candidates=ctSourceCandidates(o,mode),t=candidates.find(function(x){return x.ioId===templateId;});
+    if(!t)return false;
+    o.sourceVersionId=ctSourceSaveVersion(t,records).ioId;o.sourceMode=mode;
+  }
+  o.updatedAt=new Date().toISOString();
+  const ok=await tplSave(TPL_ORDERS,records);
+  if(ok)audLog('',o.label,'order-source-selected',mode+(templateId?' — '+templateId:''));
+  return ok;
+}
+/* Restore/import uses the same natural order identity even when another browser
+   gave it a different ioId. Source records retain their IDs so links survive. */
+function ctOrderImportPlan(mine,incoming){
+  const plan={update:[],add:[],rename:[],same:[],duplicates:[]},byId=new Map(),byOrder=new Map();
+  mine.forEach(function(r,i){byId.set(r.ioId,i);if(r.recordType==='order')byOrder.set(ctOrderKey(r.primeContract,r.number),i);});
+  (incoming||[]).forEach(function(r){
+    if(!r||!r.ioId||!['order','source'].includes(r.recordType))return;
+    if(r.recordType==='source'&&(!r.snapshot||!r.templateId))return;
+    if(r.recordType==='order'&&(!r.primeContract||!r.number))return;
+    const copy=JSON.parse(JSON.stringify(r));
+    const ix=byId.has(r.ioId)?byId.get(r.ioId):(r.recordType==='order'&&byOrder.has(ctOrderKey(r.primeContract,r.number))?byOrder.get(ctOrderKey(r.primeContract,r.number)):-1);
+    if(ix>=0){
+      if(mine[ix].recordType!==copy.recordType)throw new Error('Order import contains a conflicting record identity. Nothing was imported.');
+      if(copy.recordType==='source'&&ctSourceBody(mine[ix].snapshot)!==ctSourceBody(copy.snapshot))throw new Error('A saved source version has conflicting content. Nothing was imported.');
+      if(JSON.stringify(mine[ix])===JSON.stringify(copy))plan.same.push(copy.label||copy.ioId);else plan.update.push({idx:ix,row:copy});
+    }
+    else if(!plan.add.some(function(a){return a.ioId===copy.ioId||(a.recordType==='order'&&copy.recordType==='order'&&ctOrderKey(a.primeContract,a.number)===ctOrderKey(copy.primeContract,copy.number));}))plan.add.push(copy);
+  });return plan;
+}
+let CT_REPO_VIEW=ctRepoDefaultView();
+function ctRepoDefaultView(){return {q:'',prime:'',order:'',program:'',sort:'newest',basis:'',duplicates:false,open:{},editTemplate:''};}
+function ctProgram(t){return String(t&&t.program!=null?t.program:(t&&t.smProgram)||'').trim();}
+function ctPrimeProgram(prime,templates){const list=(templates||window.TPL_EDIT||tplLoad(TPL_CT)).filter(function(t){return ctContractKey((t.data||{}).primeContract)===ctContractKey(prime)&&!(t.data||{}).taskOrder;});return ctProgram(list[0]);}
+function ctOrderProgram(o,templates){const own=ctSourceCandidates(o,'order',templates);return ctOrderCoverage(o)==='order'&&own.length?ctProgram(own[0]):(o.program!=null?String(o.program).trim():ctPrimeProgram(o.primeContract,templates));}
+function ctRepoToolbar(){
+  return '<div id="ctRepoTools" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px;background:#edf1f5;border:1px solid #c4ccd4;border-radius:5px;padding:8px;font-size:11px;">'
+    +'<label>Program <select id="ctRepoProgram" style="width:165px;font-size:11px;" onchange="ctRepoFilter()"><option value="">All programs</option></select></label>'
+    +'<label>Prime contract <select id="ctRepoPrime" style="width:175px;font-size:11px;" onchange="ctRepoFilter()"><option value="">All prime contracts</option></select></label>'
+    +'<label>Task Order / BPA / Delivery Order <input type="search" id="ctRepoOrder" placeholder="All orders" style="width:115px;font-size:11px;" oninput="ctRepoFilter()"></label>'
+    +'<label>Coverage <select id="ctRepoBasis" style="width:160px;font-size:11px;" onchange="ctRepoFilter()"><option value="">All DD254s</option><option value="prime">Follows prime DD254</option><option value="order">Task-order-specific DD254</option><option value="review">Needs review</option></select></label>'
+    +'<label>Sort <select id="ctRepoSort" style="width:130px;font-size:11px;" onchange="ctRepoFilter()"><option value="newest">Newest first</option><option value="contract">Contract number</option><option value="program">Program</option></select></label>'
+    +'<button type="button" class="dash-btn" style="background:#7a4038;" onclick="ctRepoFindDuplicates()">Find duplicates</button><span id="ctRepoCount" aria-live="polite"></span></div><div id="ctOrderPanel" aria-live="polite"></div>';
+}
+function ctRepoFilter(){
+  [['tplFilter','q'],['ctRepoPrime','prime'],['ctRepoOrder','order'],['ctRepoProgram','program'],['ctRepoSort','sort'],['ctRepoBasis','basis']].forEach(function(p){CT_REPO_VIEW[p[1]]=ctGv(p[0]);});
+  CT_REPO_VIEW.editTemplate='';CT_REPO_VIEW.open={};ctRepoRender(true);
+}
+function ctRepoFindDuplicates(){CT_REPO_VIEW.duplicates=!CT_REPO_VIEW.duplicates;ctRepoRender(true);}
+function ctRepoRestore(){
+  CT_REPO_VIEW.open=CT_REPO_VIEW.open||{};
+  [['tplFilter','q'],['ctRepoPrime','prime'],['ctRepoOrder','order'],['ctRepoProgram','program'],['ctRepoSort','sort'],['ctRepoBasis','basis']].forEach(function(p){const e=document.getElementById(p[0]);if(e)e.value=CT_REPO_VIEW[p[1]]||(p[1]==='sort'?'newest':'');});ctRepoRender(true);
+}
+function ctRepoRowHtml(t,i){return '<div class="tpl-row" data-index="'+i+'" data-lbl="'+tplEsc(dashTplSearchText(t))+'">'+window.CT_REPO_ROW(t,i)+'<div class="ct-dup-warning" role="status" style="display:none;background:#fdecea;border:1px solid #e6a6a0;color:#a03028;border-radius:4px;padding:6px 10px;margin:3px 0 8px;font-size:11px;"></div></div>';}
+function ctRepoWarnings(pairs){
+  const arr=window.TPL_EDIT||[];pairs=pairs||ctDuplicatePairs(arr);
+  const byRow=new Map();pairs.forEach(function(p){[p.a,p.b].forEach(function(i){if(!byRow.has(i))byRow.set(i,[]);byRow.get(i).push(p);});});
+  document.querySelectorAll('#tplRows .tpl-row').forEach(function(r){const i=+r.dataset.index,p=byRow.get(i)||[],warning=r.querySelector('.ct-dup-warning');if(!warning)return;warning.style.display=p.length?'':'none';warning.innerHTML=p.slice(0,3).map(function(x){const j=x.a===i?x.b:x.a;return '<div>⚠ '+tplEsc(ctDuplicateLabel(x))+' with <b>'+tplEsc(arr[j].label||'(unnamed)')+'</b>'+(x.reviewed?' · reviewed':'')+' <button type="button" class="dash-btn" style="background:#7a4038;padding:2px 8px;" onclick="ctRepoCompare('+i+','+j+')">Compare</button></div>';}).join('')+(p.length>3?'<div>More matches are available in the duplicate view.</div>':'');});
+}
+function ctRepoRender(force){
+  if(window.TPL_EDIT_KIND!=='ct'||!window.CT_REPO_ROW)return;
+  const host=document.getElementById('tplRows');if(!host)return;
+  if(!force&&host.contains(document.activeElement)&&document.activeElement.matches('input,textarea,select')){ctRepoWarnings();return;}
+  const arr=window.TPL_EDIT||[],records=ctOrderStore(),orders=ctOrderRows(records),pairs=ctDuplicatePairs(arr),dupSet=new Set();pairs.forEach(function(p){dupSet.add(p.a);dupSet.add(p.b);});
+  const refreshSelect=function(id,key,values,caption){const e=document.getElementById(id);if(!e)return;e.innerHTML='<option value="">'+caption+'</option>'+Array.from(new Set(values.filter(Boolean))).sort(function(a,b){return a.localeCompare(b,undefined,{numeric:true});}).map(function(v){return '<option>'+tplEsc(v)+'</option>';}).join('');e.value=CT_REPO_VIEW[key]||'';if(!e.value)CT_REPO_VIEW[key]='';};
+  refreshSelect('ctRepoPrime','prime',arr.map(function(t){return String((t.data||{}).primeContract||'').trim();}).concat(orders.map(function(o){return o.primeContract;})),'All prime contracts');
+  refreshSelect('ctRepoProgram','program',arr.map(ctProgram).concat(orders.map(function(o){return ctOrderProgram(o,arr);})),'All programs');
+  const contains=function(a,b){return String(a||'').toLowerCase().includes(String(b||'').trim().toLowerCase());};
+  const programMatches=function(p){return !CT_REPO_VIEW.program||p===CT_REPO_VIEW.program;};
+  const groups=new Map(),get=function(prime){const key=ctContractKey(prime);if(!groups.has(key))groups.set(key,{key:key,prime:prime||'Unassigned prime',sources:[],orders:[],rank:arr.length+groups.size});return groups.get(key);};
+  arr.forEach(function(t,i){const g=get(String((t.data||{}).primeContract||'').trim());g.sources.push({t:t,i:i});if(!(t.data||{}).taskOrder)g.rank=Math.min(g.rank,i);});orders.forEach(function(o){get(o.primeContract).orders.push(o);});
+  const list=Array.from(groups.values()).filter(function(g){
+    if(CT_REPO_VIEW.prime&&ctContractKey(g.prime)!==ctContractKey(CT_REPO_VIEW.prime))return false;
+    const parentMatch=contains(g.prime,CT_REPO_VIEW.q);
+    g.matchedSources=g.sources.filter(function(x){const d=x.t.data||{},mode=d.taskOrder?'order':'prime';return (parentMatch||contains(dashTplSearchText(x.t),CT_REPO_VIEW.q))&&contains(d.taskOrder,CT_REPO_VIEW.order)&&programMatches(ctProgram(x.t))&&(!CT_REPO_VIEW.duplicates||dupSet.has(x.i))&&(!CT_REPO_VIEW.basis||CT_REPO_VIEW.basis===mode);});
+    g.matchedOrders=g.orders.filter(function(o){const own=ctSourceCandidates(o,'order',arr),v=ctOrderSource(o,records),review=ctOrderReview(o,records,arr);return (parentMatch||contains([o.number,o.orderType,o.primeContract,ctOrderProgram(o,arr),v&&v.snapshot.label].join(' '),CT_REPO_VIEW.q)||own.some(function(t){return contains(dashTplSearchText(t),CT_REPO_VIEW.q);}))&&contains(o.number,CT_REPO_VIEW.order)&&programMatches(ctOrderProgram(o,arr))&&(!CT_REPO_VIEW.basis||(CT_REPO_VIEW.basis==='review'?!!review:ctOrderCoverage(o,records)===CT_REPO_VIEW.basis))&&(!CT_REPO_VIEW.duplicates||own.some(function(t){return dupSet.has(arr.indexOf(t));}));});
+    return g.matchedSources.length||g.matchedOrders.length;
+  });
+  list.sort(function(a,b){const byContract=function(){return a.prime.localeCompare(b.prime,undefined,{numeric:true});};if(CT_REPO_VIEW.sort==='contract')return byContract();if(CT_REPO_VIEW.sort==='program')return ctPrimeProgram(a.prime,arr).localeCompare(ctPrimeProgram(b.prime,arr))||byContract();return a.rank-b.rank;});
+  window.CT_REPO_GROUPS=list;
+  let shownTemplates=0,shownOrders=0;
+  host.innerHTML=list.map(function(g,gi){
+    const open=CT_REPO_VIEW.open[g.key]!==false;
+    const primeRows=g.sources.filter(function(x){return !(x.t.data||{}).taskOrder;}),primary=primeRows[0],program=ctPrimeProgram(g.prime,arr);
+    let html='<section class="ct-prime-group" data-prime="'+tplEsc(g.key)+'" style="border-top:1px solid #c4ccd4;padding-top:8px;margin-top:10px;">'
+      +'<div class="ct-group-heading" style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:11px;margin-bottom:8px;"><button type="button" class="dash-btn" style="background:transparent;color:#17427d;padding:3px 0;max-width:100%;white-space:normal;text-align:left;overflow-wrap:anywhere;" aria-expanded="'+open+'" onclick="ctRepoToggle('+gi+')">'+(open?'▼ ':'▶ ')+tplEsc(g.prime+(primary?' · '+primary.t.label:''))+'</button>'+(program?'<span>'+tplEsc(program)+'</span>':'')+'<span>'+g.orders.length+' task orders / BPAs / delivery orders</span>'+(g.key?'<button type="button" class="dash-btn" style="background:#46606f;margin-left:auto;" onclick="ctOrderAddPanel('+gi+')">＋ Add task order</button>':'')+'</div>';
+    if(open){
+      html+='<div style="border-left:2px solid #bac5d1;padding-left:12px;">';
+      const displayed=new Set();
+      g.matchedSources.filter(function(x){return !(x.t.data||{}).taskOrder;}).forEach(function(x){html+=ctRepoRowHtml(x.t,x.i);displayed.add(x.i);shownTemplates++;});
+      if(!primeRows.length)html+='<div style="font-size:11px;color:#8a6a00;margin-bottom:8px;">No prime DD254 template saved. Add a prime template with this Block 2A number.</div>';
+      g.matchedOrders.slice().sort(function(a,b){return String(b.createdAt||'').localeCompare(String(a.createdAt||''))||g.orders.indexOf(b)-g.orders.indexOf(a);}).forEach(function(o){
+        const own=g.sources.filter(function(x){return ctContractKey((x.t.data||{}).taskOrder)===ctContractKey(o.number);});
+        const visibleOwn=own.filter(function(x){return programMatches(ctProgram(x.t))&&(!CT_REPO_VIEW.duplicates||dupSet.has(x.i))&&(ctOrderCoverage(o,records)==='order'||CT_REPO_VIEW.duplicates||CT_REPO_VIEW.editTemplate===x.t.ioId);});
+        html+='<div class="ct-order-card" data-order-id="'+tplEsc(o.ioId)+'" style="margin:8px 0 8px 14px;border-left:3px solid #9baebe;padding-left:10px;">'+ctOrderRowHtml(o,records,arr);
+        visibleOwn.forEach(function(x){html+=ctRepoRowHtml(x.t,x.i);displayed.add(x.i);shownTemplates++;});
+        if(ctOrderCoverage(o,records)==='order'&&!own.length)html+='<div style="color:#8a6a00;font-size:11px;padding:5px;">Task-order template is missing. Use Review DD254 to restore its editable template.</div>';
+        html+='</div>';shownOrders++;
+      });
+      g.matchedSources.filter(function(x){return (x.t.data||{}).taskOrder&&!displayed.has(x.i)&&!g.matchedOrders.some(function(o){return ctContractKey(o.number)===ctContractKey((x.t.data||{}).taskOrder);});}).forEach(function(x){html+='<div style="margin-left:14px;">'+ctRepoRowHtml(x.t,x.i)+'</div>';shownTemplates++;});
+      html+='</div>';
+    }return html+'</section>';
+  }).join('')||'<div style="font-size:11px;padding:12px;color:#5a6a80;">No matching contracts or templates.</div>';
+  ctRepoWarnings(pairs);
+  const count=document.getElementById('ctRepoCount');if(count)count.textContent=list.length+' prime groups · '+shownOrders+' orders · '+shownTemplates+' editable templates'+(CT_REPO_VIEW.duplicates?' · '+pairs.length+' duplicate identity matches':'');
+}
+function ctRepoToggle(i){const g=window.CT_REPO_GROUPS[i];if(g){CT_REPO_VIEW.open[g.key]=CT_REPO_VIEW.open[g.key]===false;ctRepoRender(true);}}
+function ctOrderJs(v){return tplEsc(JSON.stringify(v));}
+function ctOrderRowHtml(o,records,arr){
+  const review=ctOrderReview(o,records,arr),own=ctSourceCandidates(o,'order',arr),coverage=ctOrderCoverage(o,records);
+  return '<div class="ct-order-row" data-order-id="'+tplEsc(o.ioId)+'" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:#fff;border:1px solid #c4ccd4;border-radius:5px;padding:8px;margin-bottom:5px;font-size:11px;">'
+    +'<b>'+tplEsc(o.orderType+' '+o.number)+'</b><span style="color:#5a6a80;">'+(coverage==='prime'?'Follows prime DD254':'Task-order-specific DD254')+'</span>'
+    +(coverage!=='order'?'<label>Program <input type="text" value="'+tplEsc(ctOrderProgram(o,arr))+'" style="width:130px;font-size:11px;" onchange="ctOrderSetProgram('+ctOrderJs(o.ioId)+',this.value)"></label>':'')
+    +(coverage==='prime'&&own.length?'<button type="button" class="dash-btn" style="background:#46606f;" onclick="ctRepoGo('+arr.indexOf(own[0])+')">Edit saved task-order template</button>':'')
+    +'<button type="button" class="dash-btn" style="background:#2e5077;margin-left:auto;" onclick="ctOrderStart('+ctOrderJs(o.ioId)+')">'+(o.draftId?'Open DD254':'Create DD254')+'</button>'
+    +(review?'<div style="flex-basis:100%;color:#8a6a00;">⚠ '+tplEsc(review)+' <button type="button" class="dash-btn" style="background:#8a6a00;padding:2px 7px;" onclick="ctOrderSourcePanel('+ctOrderJs(o.ioId)+')">Review DD254</button></div>':'')+'</div>';
+}
+function ctOrderPanel(html){const p=document.getElementById('ctOrderPanel');if(p){p.style.cssText='background:#f5f7fa;border:1px solid #c4ccd4;border-radius:5px;padding:10px;margin-bottom:10px;font-size:11px;';p.innerHTML=html+' <button type="button" class="dash-btn" style="background:#7a8aa0;" onclick="ctOrderPanelClose()">Close</button>';if(p.scrollIntoView)p.scrollIntoView({block:'nearest'});}}
+function ctOrderPanelClose(){const p=document.getElementById('ctOrderPanel');if(p){p.innerHTML='';p.removeAttribute('style');}}
+function ctPrimeAddPanel(){
+  ctOrderPanel('<b>Add prime-contract DD254 template</b><div style="display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin:8px 0;"><label>Prime contract (Block 2A)<br><input id="ctNewPrime" maxlength="120" style="width:190px;font-size:11px;"></label><label>Template name<br><input id="ctNewPrimeName" style="width:220px;font-size:11px;"></label><label>Program<br><input id="ctNewPrimeProgram" list="ctProgramList" style="width:165px;font-size:11px;"></label><button type="button" class="dash-btn" style="background:#2e5077;" onclick="ctPrimeAddSubmit(this)">Add prime template</button></div><div id="ctNewPrimeError" role="alert" style="color:#a03028;"></div>');document.getElementById('ctNewPrime').focus();
+}
+async function ctPrimeCreate(prime,label,program){
+  if(window.DD254_READONLY)return {error:'This tab is read-only.'};
+  prime=String(prime||'').trim();if(!prime||prime.length>120)return {error:'Enter a prime contract number of 120 characters or fewer.'};
+  if(!(await dashTplFlush()))return {error:'Save the current edits before adding a template.'};
+  const arr=tplLoad(TPL_CT);if(arr.some(function(t){const d=t.data||{};return ctContractKey(d.primeContract)===ctContractKey(prime)&&!ctContractKey(d.taskOrder);}))return {error:'A prime DD254 template already exists for '+prime+'. Search for the existing template.',duplicate:true};
+  const now=new Date().toISOString(),d=ctBlankData();d.primeContract=prime;
+  const t={ioId:ioNewId(),label:String(label||'').trim()||prime,program:String(program||'').trim(),createdAt:now,updatedAt:now,data:d};
+  if(!(await tplSave(TPL_CT,[t].concat(arr))))return {error:'The prime template was not confirmed saved. Check browser storage.'};
+  return {template:t};
+}
+async function ctPrimeAddSubmit(button){
+  if(button)button.disabled=true;const result=await ctPrimeCreate(ctGv('ctNewPrime'),ctGv('ctNewPrimeName'),ctGv('ctNewPrimeProgram'));
+  if(result.error){if(button)button.disabled=false;document.getElementById('ctNewPrimeError').textContent=result.error;return false;}
+  CT_REPO_VIEW=ctRepoDefaultView();await dashTplEdit('ct');ctMgrToggle(0);return result.template;
+}
+function ctOrderAddPanel(i){
+  const g=window.CT_REPO_GROUPS[i];if(!g)return;window.CT_ORDER_ADD_PRIME=g.prime;
+  ctOrderPanel('<b>Add Task Order / BPA / Delivery Order</b><div style="margin-top:6px;color:#5a6a80;">Choose DD254 coverage when creating this task order. Saved orders show that choice as a label.</div><div style="display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin:8px 0;"><label>Prime contract (Block 2A)<br><input value="'+tplEsc(g.prime)+'" readonly style="width:180px;font-size:11px;"></label><label>Order number<br><input type="text" id="ctNewOrderNumber" maxlength="120" style="width:150px;font-size:11px;"></label><label>Type<br><select id="ctNewOrderType" style="font-size:11px;">'+CT_ORDER_TYPES.map(function(x){return '<option>'+x+'</option>';}).join('')+'</select></label><label>DD254 coverage<br><select id="ctNewOrderMode" style="font-size:11px;"><option value="order">Use task-order-specific DD254</option><option value="prime">Use prime DD254</option></select></label><label>Template name (optional)<br><input id="ctNewOrderName" style="width:180px;font-size:11px;"></label><label>Program<br><input id="ctNewOrderProgram" list="ctProgramList" value="'+tplEsc(ctPrimeProgram(g.prime))+'" style="width:140px;font-size:11px;"></label><button type="button" class="dash-btn" style="background:#2e5077;" onclick="ctOrderAddSubmit(this)">Add task order</button></div><div id="ctNewOrderError" role="alert" style="color:#a03028;"></div>');document.getElementById('ctNewOrderNumber').focus();
+}
+async function ctOrderCreateEditable(prime,number,type,mode,label,program){
+  if(window.DD254_READONLY)return {error:'This tab is read-only.'};
+  prime=String(prime||'').trim();number=String(number||'').trim();
+  if(!prime||!number||prime.length>120||number.length>120)return {error:'Enter prime and order numbers of 120 characters or fewer.'};
+  if(!(await dashTplFlush()))return {error:'Save the current edits before adding an order.'};
+  if(ctOrderRows().some(function(o){return ctOrderKey(o.primeContract,o.number)===ctOrderKey(prime,number);}))return {error:'Order '+number+' already exists under '+prime+'.',duplicate:true};
+  const arr=tplLoad(TPL_CT),o={primeContract:prime,number:number};
+  let t=null;
+  if(mode==='order'){
+    const matches=ctSourceCandidates(o,'order',arr);
+    if(matches.length)return {error:'A task-order template already exists for '+number+' under '+prime+'. Search for the existing template.',duplicate:true};
+    const now=new Date().toISOString(),d=ctBlankData();d.primeContract=prime;d.taskOrder=number;d.orderType=ctOrderType(type);d.standalone=false;
+    t={ioId:ioNewId(),label:String(label||'').trim()||ctOrderType(type)+' '+number,program:String(program||'').trim(),createdAt:now,updatedAt:now,data:d};
+    if(!(await tplSave(TPL_CT,[t].concat(arr))))return {error:'The task-order template was not confirmed saved.'};
+  }
+  const result=await ctOrderCreate(prime,number,type,mode,t&&t.ioId);
+  if(result.error){if(t)result.error+=' The editable template was saved; reopen the repository to recover it.';return result;}
+  if(program!=null){const records=ctOrderStore(),saved=ctOrderRows(records).find(function(x){return x.ioId===result.order.ioId;});saved.program=String(program).trim();if(!(await tplSave(TPL_ORDERS,records)))return {error:'The order was saved, but its program was not confirmed. Reopen the repository and review it.'};result.order=saved;}
+  return result;
+}
+async function ctOrderAddSubmit(button){
+  if(button)button.disabled=true;
+  const mode=ctGv('ctNewOrderMode'),result=await ctOrderCreateEditable(window.CT_ORDER_ADD_PRIME,ctGv('ctNewOrderNumber'),ctGv('ctNewOrderType'),mode,ctGv('ctNewOrderName'),ctGv('ctNewOrderProgram'));
+  if(result.error){if(button)button.disabled=false;const e=document.getElementById('ctNewOrderError');if(e)e.textContent=result.error;return false;}
+  CT_REPO_VIEW.q='';CT_REPO_VIEW.order='';CT_REPO_VIEW.program='';CT_REPO_VIEW.prime='';CT_REPO_VIEW.basis='';CT_REPO_VIEW.duplicates=false;CT_REPO_VIEW.open[ctContractKey(result.order.primeContract)]=true;
+  await dashTplEdit('ct');if(mode==='order')ctMgrToggle(window.TPL_EDIT.findIndex(function(t){return (t.data||{}).taskOrder===result.order.number&&ctContractKey((t.data||{}).primeContract)===ctContractKey(result.order.primeContract);}));
+  if(result.order.sourceMode==='review')ctOrderSourcePanel(result.order.ioId);return result.order;
+}
+async function ctOrderRepairTemplate(id){
+  if(window.DD254_READONLY||!(await dashTplFlush()))return false;
+  const o=ctOrderRows().find(function(x){return x.ioId===id;});
+  if(!o||ctOrderCoverage(o)!=='order')return false;
+  const candidates=ctSourceCandidates(o,'order');
+  if(candidates.length){ctOrderSourcePanel(id);return false;}
+  const d=ctBlankData();d.primeContract=o.primeContract;d.taskOrder=o.number;d.orderType=o.orderType;d.standalone=false;
+  const now=new Date().toISOString(),t={ioId:ioNewId(),label:o.orderType+' '+o.number,program:ctOrderProgram(o),createdAt:now,updatedAt:now,data:d};
+  if(!(await tplSave(TPL_CT,[t].concat(tplLoad(TPL_CT)))))return false;
+  if(!(await ctOrderBind(id,'order',t.ioId)))return false;
+  await dashTplEdit('ct');ctMgrToggle(0);return true;
+}
+async function ctOrderSetProgram(id,value){
+  if(window.DD254_READONLY)return false;const records=ctOrderStore(),o=ctOrderRows(records).find(function(x){return x.ioId===id;});if(!o)return false;o.program=String(value||'').trim();o.updatedAt=new Date().toISOString();const ok=await tplSave(TPL_ORDERS,records);if(ok)ctRepoRender();else alert('The order program was not confirmed saved.');return ok;
+}
+async function ctOrderRemove(id){
+  if(window.DD254_READONLY||!(await dashTplFlush()))return false;
+  const records=ctOrderStore(),o=ctOrderRows(records).find(function(x){return x.ioId===id;});if(!o)return false;
+  if(!(await uiConfirm('Remove '+o.orderType+' '+o.number+' from this repository? Its saved editable template and any existing DD254 workflow will be kept.')))return false;
+  ioSetUndo('orders',{ts:new Date().toISOString(),data:JSON.parse(JSON.stringify(records))});
+  const ok=await tplSave(TPL_ORDERS,records.filter(function(x){return x.ioId!==id;}));if(ok)ctRepoRender(true);return ok;
+}
+function ctOrderSourcePanel(id){
+  const o=ctOrderRows().find(function(x){return x.ioId===id;});if(!o)return;const mode=ctOrderCoverage(o);
+  window.CT_ORDER_SOURCE_ID=id;window.CT_ORDER_SOURCE_MODE=mode;
+  const candidates=ctSourceCandidates(o,mode,window.TPL_EDIT),v=ctOrderSource(o);
+  ctOrderPanel('<b>Select '+(mode==='prime'?'prime':'order-specific')+' DD254 for '+tplEsc(o.number)+'</b><div style="margin:7px 0;">'+(v?'Saved DD254: '+tplEsc([v.snapshot.label,ctSrcLabel(v.snapshot),v.snapshot.srcDate].filter(Boolean).join(' · ')):'No DD254 selected.')+'</div>'+(candidates.length?'<label>DD254 template <select id="ctOrderSourceChoice" style="font-size:11px;max-width:100%;">'+candidates.map(function(t){return '<option value="'+tplEsc(t.ioId)+'">'+tplEsc([t.label,ctSrcLabel(t),t.srcDate].filter(Boolean).join(' · '))+'</option>';}).join('')+'</select></label> <button type="button" class="dash-btn" style="background:#2e5077;" onclick="ctOrderLinkSubmit(this)">Use selected DD254</button>':'No matching template is saved. Add or import the received DD254 and set its prime'+(mode==='order'?' and order number':' contract number')+'.')+(mode==='order'&&!candidates.length?' <button type="button" class="dash-btn" style="background:#46606f;" onclick="ctOrderRepairTemplate('+ctOrderJs(id)+')">Create editable task-order template</button>':'')+(v?' <button type="button" class="dash-btn" style="background:#46606f;" onclick="ctOrderView('+ctOrderJs(id)+')">Review saved DD254 blocks</button>':'')+'<div id="ctOrderLinkError" role="alert" style="color:#a03028;margin-top:6px;"></div>');
+}
+async function ctOrderLinkSubmit(button){
+  if(button)button.disabled=true;
+  if(!(await dashTplFlush())){if(button)button.disabled=false;return false;}
+  const ok=await ctOrderBind(window.CT_ORDER_SOURCE_ID,window.CT_ORDER_SOURCE_MODE,ctGv('ctOrderSourceChoice'));
+  if(ok){ctOrderPanelClose();ctRepoRender(true);}else{if(button)button.disabled=false;const e=document.getElementById('ctOrderLinkError');if(e)e.textContent='The DD254 could not be linked. Check the template identity and browser storage.';}return ok;
+}
+function ctOrderView(id){
+  const o=ctOrderRows().find(function(x){return x.ioId===id;}),v=o&&ctOrderSource(o);if(!v){ctOrderSourcePanel(id);return;}
+  const t=v.snapshot,names={c10:'Item 10 — selections',l10:'Item 10 — language',t10k:'Item 10k — Other',c11:'Item 11 — selections',l11:'Item 11 — language',t11m:'Item 11m — Other',i12route:'Item 12 — routing',i12:'Item 12 — release authority',i12specify:'Item 12 — through office',i13:'Item 13 — security guidance',i14:'Item 14 — additional requirements',i14text:'Item 14 — explanation',i15:'Item 15 — inspections',i15text:'Item 15 — explanation',i16:'Item 16 — Government contracting activity',c18:'Item 18 — distribution',t18f:'Item 18f — additional distribution',attText:'Required attachments'};
+  ctOrderPanel('<b>Saved DD254 for '+tplEsc(o.number)+'</b><div style="margin:6px 0;">'+tplEsc([t.label,ctSrcLabel(t),t.srcDate].filter(Boolean).join(' · '))+'</div>'+Object.keys(names).map(function(k){return '<details style="margin:5px 0;"><summary>'+names[k]+'</summary><div style="white-space:pre-wrap;overflow-wrap:anywhere;padding:6px;">'+tplEsc(ctDupDisplay(t,k)||'Blank')+'</div></details>';}).join(''));
+}
+
+async function ctOrderStart(id){
+  if(window.DD254_READONLY||!(await dashTplLeave()))return false;
+  if(DASH.current)await dashSaveNow();
+  const records=ctOrderStore(),o=ctOrderRows(records).find(function(x){return x.ioId===id;});if(!o)return false;
+  if(o.draftId){const existing=await draftGet(o.draftId);if(existing){await dashOpen(o.draftId);return existing;}delete o.draftId;}
+  const v=ctOrderSource(o,records);if(!v||ctOrderReview(o,records,tplLoad(TPL_CT))){document.body.classList.add('tpl-wide');ctOrderSourcePanel(id);return false;}
+  const source=v.snapshot,d=JSON.parse(JSON.stringify(source.data||{}));
+  /* Incoming source scope never chooses the outgoing form's standalone flag. */
+  d.primeContract=o.primeContract;d.taskOrder=o.number;d.orderType=o.orderType;d.standalone=false;
+  const ws=ctApplyDataToWorkspace(d,{texts:{},checks:{},radios:{spec:'3a'},selects:{},perf:[]},source);
+  ws.ctSource={orderId:o.ioId,primeContract:o.primeContract,number:o.number,orderType:o.orderType,sourceMode:o.sourceMode,sourceVersionId:v.ioId,templateId:v.templateId,snapshot:ctSourceSnapshot(source)};
+  ws.selects.ctTplSel=source.ioId;
+  const now=new Date().toISOString(),rec={id:dashId(),title:o.primeContract+' · '+o.orderType+' '+o.number,stage:'orig',status:'Draft',createdAt:now,updatedAt:now,todos:[],notes:'',workspace:ws,meta:{contract:o.primeContract,contractor:'',errors:0,warns:0}};
+  await draftPut(rec);o.draftId=rec.id;o.updatedAt=now;
+  if(!(await tplSave(TPL_ORDERS,records))){alert('The DD254 draft was saved, but the order link was not confirmed. Take a Full Backup before closing this tab.');return false;}
+  audLog(rec.id,rec.title,'created-from-order-source',[source.label,ctSrcLabel(source),source.srcDate].filter(Boolean).join(' · '));
+  await dashOpen(rec.id);return rec;
+}
+function ctTemplateForWorkspace(ws,ref){
+  const link=(ws||{}).ctSource;
+  if(link&&link.snapshot&&String(ref||'')===String(link.templateId||link.snapshot.ioId))return link.snapshot;
+  return ctFind(ref);
+}
+function ctFormTemplate(ref){return ctTemplateForWorkspace({ctSource:window.DD254_ORDER_SOURCE},ref);}
+function ctSourceBanner(){
+  const host=document.getElementById('ctSourceBanner');if(!host)return;const link=window.DD254_ORDER_SOURCE;
+  if(!link||!link.snapshot){host.innerHTML='';host.style.display='none';return;}
+  host.style.display='block';const s=link.snapshot;
+  const current=tplLoad(TPL_CT).find(function(t){return t.ioId===link.templateId;}),changed=!current||ctSourceBody(current)!==ctSourceBody(s);
+  host.innerHTML='<b>Received DD254 source:</b> '+tplEsc([s.label,ctSrcLabel(s),s.srcDate].filter(Boolean).join(' · '))+'<br>'+tplEsc(link.orderType+' '+link.number+' · '+(link.sourceMode==='prime'?'uses the prime DD254':'has an order-specific DD254'))+(changed?'<br><span style="color:#8a6a00;">⚠ Repository source changed or was removed. This workflow retains the saved source version; review new guidance before applying it.</span>':'');
+}
+
+function ctDupDisplay(t,k){
+  const d=t.data||{},v=d[k];
+  if(k==='manager')return [t.smName,t.smEmail,t.smProgram].filter(Boolean).join(' · ');
+  if(k==='source')return [ctSrcLabel(t),t.srcDate].filter(Boolean).join(' · ');
+  if(k==='label')return t.label;
+  const label=function(key){return /^18/.test(key)?key+' — '+(CT_18_LBL[key]||''):dd254BoxLabel(key,true);};
+  if(k==='c10'||k==='c11'||k==='c18')return (k==='c10'?CT_10:(k==='c11'?CT_11:CT_18)).filter(function(key){return (v||{})[key];}).map(label).join('\n')||'None selected';
+  if(k==='l10'||k==='l11')return (k==='l10'?CT_10:CT_11).filter(function(key){return ctDupText((v||{})[key]);}).map(function(key){return label(key)+((d[k==='l10'?'c10':'c11']||{})[key]?'':' (not selected)')+':\n'+v[key];}).join('\n\n');
+  if(k==='i16')return [['a','GCA name'],['b','AAC'],['c','Address'],['d','Point of contact'],['e','Telephone'],['f','Email']].filter(function(p){return ctDupText((v||{})[p[0]]);}).map(function(p){return p[1]+': '+v[p[0]];}).join('\n');
+  if(k==='i12route')return v==='dir'?'Direct':(v==='thru'?'Through':v);
+  if(k==='i14'||k==='i15')return v==='yes'?'Yes':(v==='no'?'No':v);
+  return v;
+}
+function ctRepoCompare(i,j){
+  const arr=window.TPL_EDIT||[], a=arr[i], b=arr[j], r=document.querySelector('#tplRows .tpl-row[data-index="'+i+'"]');if(!a||!b||!r)return;
+  let panel=r.querySelector('.ct-dup-compare');if(!panel){panel=document.createElement('div');panel.className='ct-dup-compare';r.appendChild(panel);}
+  const names={label:'Name',primeContract:'Prime contract',taskOrder:'Task order',source:'Source',manager:'Security manager',cls:'Form marking',c10:'Item 10 selections',l10:'Item 10 language',t10k:'10k Other',c11:'Item 11 selections',l11:'Item 11 language',t11m:'11m Other',i12route:'Item 12 routing',i12:'Item 12 authority',i12specify:'Item 12 through',i13:'Item 13',i14:'Item 14 selection',i14text:'Item 14 text',i15:'Item 15 selection',i15text:'Item 15 text',i16:'Item 16',c18:'Item 18 selections',t18f:'Item 18f',attText:'Required attachments'};
+  panel.style.cssText='border:1px solid #c4ccd4;border-radius:4px;padding:9px;margin:6px 0 12px;font-size:11px;background:#f5f7fa;';
+  panel.innerHTML='<b>Compare possible duplicates</b><div style="max-height:300px;overflow:auto;margin:6px 0;"><table style="width:100%;border-collapse:collapse;table-layout:fixed;"><thead><tr><th style="width:22%;text-align:left;">Field</th><th>This template</th><th>Existing template</th></tr></thead><tbody>'+Object.keys(names).map(function(k){
+    const x=ctDupDisplay(a,k)||'', y=ctDupDisplay(b,k)||'';
+    return '<tr style="background:'+(ctDupText(x)===ctDupText(y)?'transparent':'#fff0cf')+';"><td style="border-top:1px solid #d5dce4;padding:4px;">'+names[k]+'</td><td style="border-top:1px solid #d5dce4;padding:4px;white-space:pre-wrap;overflow-wrap:anywhere;">'+tplEsc(x||'— blank —')+'</td><td style="border-top:1px solid #d5dce4;padding:4px;white-space:pre-wrap;overflow-wrap:anywhere;">'+tplEsc(y||'— blank —')+'</td></tr>';
+  }).join('')+'</tbody></table></div><button type="button" class="dash-btn" style="background:#46606f;" onclick="ctRepoGo('+j+')">Go to existing</button> <button type="button" class="dash-btn" style="background:#46606f;" onclick="ctRepoKeepBoth('+i+','+j+')">Keep both · mark reviewed</button> <button type="button" class="dash-btn" style="background:#7a8aa0;" onclick="this.parentElement.remove()">Close</button>';
+}
+function ctRepoGo(i){
+  const t=(window.TPL_EDIT||[])[i];if(!t)return;
+  const prime=String((t.data||{}).primeContract||'').trim();
+  CT_REPO_VIEW.q='';CT_REPO_VIEW.prime=prime;CT_REPO_VIEW.order='';CT_REPO_VIEW.program='';CT_REPO_VIEW.basis='';CT_REPO_VIEW.duplicates=false;CT_REPO_VIEW.editTemplate=t.ioId;
+  CT_REPO_VIEW.open=CT_REPO_VIEW.open||{};CT_REPO_VIEW.open[ctContractKey(prime)]=true;ctRepoRestore();
+  const r=document.querySelector('#tplRows .tpl-row[data-index="'+i+'"]');if(r){if(r.scrollIntoView)r.scrollIntoView({block:'center'});const e=r.querySelector('input');if(e)e.focus();}
+}
+
+function ctRepoKeepBoth(i,j){
+  if(window.DD254_READONLY)return;
+  const a=window.TPL_EDIT[i], b=window.TPL_EDIT[j]; if(!a||!b)return;
+  if(!a.ioId)a.ioId=ioNewId();if(!b.ioId)b.ioId=ioNewId();
+  const first=Math.min(i,j),second=Math.max(i,j),x=window.TPL_EDIT[first],y=window.TPL_EDIT[second];
+  (x.dupReviewedAgainst=x.dupReviewedAgainst||{})[y.ioId]=JSON.stringify([x.ioId,y.ioId,ctDupContent(x),ctDupContent(y)]);
+  dashTplTouch();ctRepoWarnings();
+}
+async function ctDuplicateSaveCheck(arr){
+  const pairs=ctDuplicatePairs(arr).filter(function(p){return !p.reviewed;});
+  if(!pairs.length)return true;
+  return uiConfirm('Possible duplicate templates:\n\n'+pairs.slice(0,8).map(function(p){return '• '+(arr[p.a].label||'(unnamed)')+' / '+(arr[p.b].label||'(unnamed)')+' — '+ctDuplicateLabel(p);}).join('\n')+'\n\nSave both? Cancel to return to the rows and Compare them. Existing templates are kept.');
+}
+async function ctSaveFormTemplate(btn){
+  if(window.DD254_READONLY) return;
+  const state=document.getElementById('ctSaveFormState');if(state)state.textContent='';
+  if(window.TPL_EDIT_KIND==='ct'&&(TPL_DIRTY||TPL_TOUCH_T||TPL_SAVE_PENDING)&&!(await dashTplFlush()))return;
+  const name=await uiPrompt('Save this language template — enter a name:',ctGv('i2a')+(ctGv('iEffort')?' · '+ctGv('iEffort'):''));
+  if(name===null||!String(name).trim())return;
+  const arr=tplLoad(TPL_CT), active=ctActiveTpl();
+  if(arr.some(function(t){return ctDupText(t.label).toLowerCase()===ctDupText(name).toLowerCase();}))return alert('A template with this name already exists. Choose a different name or edit the existing template in the repository.');
+  const spec=(document.querySelector('input[name="spec"]:checked')||{}).value;
+  const t={label:String(name).trim(),ioId:ioNewId(),updatedAt:new Date().toISOString(),data:ctCaptureData(),srcType:spec==='3b'?'rev':(spec==='3c'?'final':(spec==='3a'?'orig':'')),srcRev:spec==='3b'?ctGv('i3b_rev'):'',srcDate:dd254IsoDate(rcv254Date(ctGv(spec==='3b'?'i3b_date':(spec==='3c'?'i3c_date':'i3a_date'))))};
+  const assigned=distSmSources(collectWorkspace()).assigned[0];
+  if(assigned){t.smName=assigned.name;t.smEmail=assigned.email;t.smProgram=assigned.program;}
+  t.createdAt=t.updatedAt;t.program=active?ctProgram(active):(assigned&&assigned.program)||'';
+  if(active&&active.data) t.data.attText=active.data.attText||'';
+  const pairs=ctDuplicatePairs(arr.concat([t])).filter(function(p){return p.b===arr.length;});
+  if(pairs.length&&!(await uiConfirm('This prime contract / order number already has a template: '+pairs.map(function(p){return arr[p.a].label||'(unnamed)';}).join(', ')+'.\n\nSave another copy named "'+t.label+'"? Cancel to keep the existing template.')))return;
+  if(window.DD254_READONLY)return;
+  ioSetUndo('ct',{ts:new Date().toISOString(),data:JSON.parse(JSON.stringify(arr))});
+  const ok=await tplSave(TPL_CT,[t].concat(arr));
+  if(!ok)return alert('The template was not confirmed saved. Check browser storage and try again.');
+  if(window.TPL_EDIT_KIND==='ct')window.TPL_EDIT=tplLoad(TPL_CT);
+  buildCtSelect();distSmRender();
+  if(state)state.textContent='Saved “'+t.label+'” to DD-254 Template Language.';
+  audLog(DASH.current||'','','language-template-saved',t.label);
+  if(btn)ctFlash(btn);
+}
+
 function dashTplSearchText(t){
   let x=(t.label||'')+' '+(t.text||'')+' '+(t.srcDate||'')+' '+(t.name||'')+' '+(t.email||'')+' '+(t.program||'')+' '+(t.smName||'')+' '+(t.smEmail||'')+' '+(t.smProgram||'')
     +' '+(t.ident||'')+' '+(t.date||'')+' '+(t.office||'')+' '+(t.dist||'');
@@ -10105,7 +10613,7 @@ function dashTplSearchText(t){
     const ids=t.contracts; x+=' '+scgContractTemplates().filter(function(c){ return ids.indexOf(c.ioId)>=0; }).map(scgCtLabel).join(' ');
   }
   if(t.data){ const d=t.data;
-    x+=' '+[d.cls,d.t10k,d.t11m,d.i12,d.i12specify,d.i13,d.i14text,d.i15text,d.t18f].filter(Boolean).join(' ');
+    x+=' '+[d.cls,d.t10k,d.t11m,d.i12,d.i12specify,d.i13,d.i14text,d.i15text,d.t18f,d.attText,d.primeContract,d.taskOrder].filter(Boolean).join(' ');
     if(Array.isArray(d.att)) x+=' '+d.att.map(function(r){return (r&&r.title||'')+' '+(r&&r.notes||'');}).join(' ');
     if(d.l10) x+=' '+Object.values(d.l10).filter(Boolean).join(' ');
     if(d.l11) x+=' '+Object.values(d.l11).filter(Boolean).join(' ');
@@ -10162,7 +10670,7 @@ function ctCk(id){ const e=document.getElementById(id); return !!(e&&e.checked);
 function ctCaptureData(){
   const rsel=document.querySelector('input[name="i12route"]:checked');
   const d={
-    cls:ctGv('clsSel'),
+    cls:ctGv('clsSel'),primeContract:ctGv('i2a'),taskOrder:ctGv('iEffort'),orderType:ctOrderType(ctGv('iOrderType')),standalone:ctCk('iStandalone'),
     c10:{},t10k:ctGv('i10k'),
     c11:{},t11m:ctGv('i11m'),
     i12route:rsel?rsel.value:'', i12:ctGv('i12'), i12specify:ctGv('i12specify'),
@@ -10201,11 +10709,13 @@ async function dashCtCapture(i){
   if(window.TPL_EDIT[i].data && !(await uiConfirm('This template already has captured content. Overwrite it with the current form contents?'))) return;
   const _oldD=window.TPL_EDIT[i].data||{};
   window.TPL_EDIT[i].data=ctCaptureData();
+  window.TPL_EDIT[i].data.primeContract=_oldD.primeContract||window.TPL_EDIT[i].data.primeContract;
+  window.TPL_EDIT[i].data.taskOrder=_oldD.taskOrder||window.TPL_EDIT[i].data.taskOrder;
   window.TPL_EDIT[i].data.l10=_oldD.l10||{};
   window.TPL_EDIT[i].data.l11=_oldD.l11||{};
   window.TPL_EDIT[i].data.attText=(typeof _oldD.attText==='string')?_oldD.attText:'';
   window.TPL_EDIT[i].updatedAt=new Date().toISOString();
-  tplSave(TPL_CT,window.TPL_EDIT);
+  await tplSave(TPL_CT,window.TPL_EDIT);
   dashTplEdit('ct');
 }
 /* ── RECEIVED DD FORM 254 → DD-254 TEMPLATE LANGUAGE ─────────────────
@@ -10352,12 +10862,13 @@ async function rcv254Import(file){
            updatedAt:new Date().toISOString(), data:result.data};
   const editing=(window.TPL_EDIT_KIND==='ct'&&Array.isArray(window.TPL_EDIT));
   const list=editing?window.TPL_EDIT:tplLoad(TPL_CT);
-  list.push(t);
-  await tplSave(TPL_CT,list);
+  if(!(await ctDuplicateSaveCheck(list.concat([t]))))return null;
+  t.createdAt=t.updatedAt;list.unshift(t);
+  if(!(await tplSave(TPL_CT,list)))return alert('The imported template was not confirmed saved.');
   let hash='';
   try{ const h=await crypto.subtle.digest('SHA-256',bytes); hash=Array.from(new Uint8Array(h)).map(function(b){return ('0'+b.toString(16)).slice(-2);}).join(''); }catch(e){}
   audLog('',label,'template-imported-from-dd254',(file.name||'PDF')+(hash?' sha256 '+hash:'')+' — '+rcv254Summary(result).join('; '));
-  if(editing) dashTplEdit('ct');
+  if(editing){await dashTplEdit('ct');ctRepoGo(0);}
   if(t.srcType==='final') ctFinalNotice(t);
   return t;
 }
@@ -10389,14 +10900,16 @@ function ctFind(ref){
 }
 function buildCtSelect(){
   const sel=document.getElementById('ctTplSel'); if(!sel) return;
-  const arr=ctEnsureIds();
+  let arr=ctEnsureIds();
+  const link=window.DD254_ORDER_SOURCE;
+  if(link&&link.snapshot){const saved=Object.assign({},link.snapshot,{label:(link.snapshot.label||'Source')+' — saved workflow source'});arr=arr.map(function(t){return t.ioId===link.templateId?saved:t;});if(!arr.some(function(t){return t.ioId===link.templateId;}))arr.push(saved);}
   const cur=sel.value;
   const q=(window.CT_FILTER||'').trim().toLowerCase();
   sel.innerHTML='<option value="">— select a template… —</option>'+arr.map(function(t,i){
     if(q&&(typeof dashTplSearchText==='function'?dashTplSearchText(t):String(t.label||'').toLowerCase()).indexOf(q)<0) return '';
     return '<option value="'+tplEsc(t.ioId)+'">'+tplEsc((t.label||('Template '+(i+1)))+(t.srcDate?' \u2014 src '+t.srcDate:' \u2014 NO SOURCE DATE'))+'</option>';
   }).join('');
-  if(cur && ctFind(cur) && sel.querySelector('option[value="'+cur+'"]')) sel.value=cur; else if(cur) sel.value='';
+  if(cur && ctFormTemplate(cur) && Array.from(sel.options).some(function(o){return o.value===cur;})) sel.value=cur; else if(cur) sel.value='';
 }
 function ctFilterSel(q){
   window.CT_FILTER=q;
@@ -10414,7 +10927,7 @@ function ctPrev(t){ t=String(t||''); t=t.replace(/&/g,'&amp;').replace(/</g,'&lt
 function buildCtPanel(){
   const p=document.getElementById('ctPanel'); if(!p) return;
   const sel=document.getElementById('ctTplSel');
-  const t=sel?ctFind(sel.value):null;
+  const t=sel?ctFormTemplate(sel.value):null;
   if(!t){ p.innerHTML='<div style="font-size:10px;color:#888;font-family:Arial,sans-serif;">Select a saved template above to see its insertable guidance. Nothing is applied automatically.</div>';
     if(typeof buildTplAttachments==='function') buildTplAttachments();
     if(typeof run==='function') run(); return; }
@@ -10474,10 +10987,11 @@ function buildCtPanel(){
 }
 
 function ctActiveTpl(){ const sel=document.getElementById('ctTplSel'); if(!sel||sel.value==='') return null;
-  const t=ctFind(sel.value); return (t&&t.data)?t:null; }
+  const t=ctFormTemplate(sel.value); return (t&&t.data)?t:null; }
 function ctLangOf(t,key){ const grp=key.indexOf('10')===0?'l10':'l11';
   const v=t.data[grp]&&t.data[grp][key]?String(t.data[grp][key]).trim():''; return v; }
 function ctAutoLangKey(key,addOnly){
+  if(window.CT_APPLY_BUSY)return;
   const t=ctActiveTpl(); if(!t) return;
   const txt=ctLangOf(t,key); if(!txt) return;
   const ta=document.getElementById('item13'); if(!ta) return;
@@ -11230,19 +11744,19 @@ function ctAutoLangSync(){
   CT_10.concat(CT_11).forEach(function(k){ ctAutoLangKey(k,true); });
   if(typeof run==='function') run();
 }
-function ctData(ref){ const t=ctFind(ref); return (t&&t.data)?t.data:null; }
+function ctData(ref){ const t=ctFormTemplate(ref); return (t&&t.data)?t.data:null; }
 function ctFlash(el){ if(!el) return; el.style.outline='2px solid var(--ok)'; setTimeout(function(){el.style.outline='';},1400); }
 /* Apply an entire DD-254 Template Language entry to the open form. Deliberately
    routed through the same two functions a Contract Type uses, so "insert all"
    and "apply a contract type" can never drift into meaning different things. */
 async function ctInsertAll(idx){
   const d=ctData(idx); if(!d) return;
-  const t=(typeof ctActiveTpl==='function')?ctActiveTpl():null;
+  const t=ctFormTemplate(idx);
   const cur=(document.getElementById('item13')||{}).value||'';
-  if(String(cur).trim() && typeof uiConfirm==='function'){
-    if(!(await uiConfirm('This form already has Block 13 text.\n\nInsert the whole of "'+((t&&t.label)||'this template')+'" over it?'))) return;
+  if(typeof uiConfirm==='function'){
+    if(!(await uiConfirm('Insert all of "'+((t&&t.label)||'this template')+'"?\n\nThis replaces the template sections in Items 10–16 and 18, including blank fields, unchecked boxes and the form marking. Existing contacts in Item 18f are cleared when the template has none.'))) return;
   }
-  ctApplyWsToForm(ctApplyDataToWorkspace(d,null));
+  ctApplyWsToForm(ctApplyDataToWorkspace(d,null,t));
   if(typeof run==='function') run();
   if(typeof dashTouch==='function') dashTouch();
   const first=document.getElementById('item13'); if(first) ctFlash(first);
@@ -11338,9 +11852,12 @@ const TPL_IO=(function(){
        two libraries, one definition, so the spreadsheets cannot drift apart. */
     cols:null};
   const ctC=[col('Template Name',function(t){return t.label||'';},function(t,v){t.label=ioS(v);}),
+    col('Program',function(t){return ctProgram(t);},function(t,v){t.program=ioS(v);}),
     col('Form Classification',function(t){return ioDD(t).cls||'';},function(t,v){ var x=ioS(v).toUpperCase(); ioDD(t).cls=(x==='CUI')?'CUI':''; }),
     col('Prime Contract',function(t){return ioDD(t).primeContract||'';},function(t,v){ioDD(t).primeContract=ioS(v);}),
     col('Task Order',function(t){return ioDD(t).taskOrder||'';},function(t,v){ioDD(t).taskOrder=ioS(v);}),
+    col('Order Type',function(t){return ioDD(t).orderType||'Task Order';},function(t,v){ioDD(t).orderType=ctOrderType(ioS(v));}),
+    col('Outgoing Order-specific',function(t){return Object.prototype.hasOwnProperty.call(ioDD(t),'standalone')?String(!!ioDD(t).standalone):'';},function(t,v){if(ioS(v))ioDD(t).standalone=/^(true|yes|1)$/i.test(ioS(v));}),
     col('Source Date',function(t){return t.srcDate||'';},function(t,v){t.srcDate=ioS(v);}),
     col('Source Type',function(t){return t.srcType||'';},function(t,v){t.srcType=ioS(v);}),
     col('Source Rev',function(t){return t.srcRev||'';},function(t,v){t.srcRev=ioS(v);}),
@@ -11542,7 +12059,7 @@ async function tplIoUndo(kind){
     if(!(await uiConfirm('Restore this template list to its state '+(o.ts?'at '+String(o.ts).replace('T',' ').substring(0,16):'before the last change')+'?\n\nThe last upload, import, restore or row deletion will be reverted.'))) return;
     tplSave(tplKeyOf(kind),o.data);
     ioClearUndo(kind);
-    dashTplEdit(kind);
+    dashTplEdit(kind==='orders'?'ct':kind);
   }catch(e){ alert('Undo failed: '+e); }
 }
 function ioPreview(info){
@@ -11639,7 +12156,8 @@ async function tplIoApply(kind,table){
   let out;
   if(dec.del) out=arr.filter(function(t,i){return !!matched[i];}).concat(adds);
   else out=arr.concat(adds);
-  tplSave(storeKey,out);
+  if(kind==='ct'&&!(await ctDuplicateSaveCheck(out)))return;
+  if(!(await tplSave(storeKey,out)))return alert('The upload was not confirmed saved.');
   dashTplEdit(kind);
   audLog('','','template-upload',kind+': '+updates.length+' updated, '+adds.length+' added'+(dec.del?', '+missing.length+' deleted':''));
   alert('Upload applied: '+updates.length+' updated, '+adds.length+' added'+(dec.del?', '+missing.length+' deleted':'')+(skipped?', '+skipped+' skipped':'')+'.');
@@ -11697,9 +12215,10 @@ async function dashTplFlush(){
   tplStateRender();
   return !!ok;
 }
-function dashTplSaveNow(){ return dashTplFlush(); }
+async function dashTplSaveNow(){ if(window.TPL_EDIT_KIND==='ct'&&!(await ctDuplicateSaveCheck(window.TPL_EDIT)))return false; const ok=await dashTplFlush();if(ok&&window.TPL_EDIT_KIND==='ct')ctRepoRender(true);return ok; }
 function dashTplTouch(){
   TPL_DIRTY=true; TPL_SAVE_ERROR=''; TPL_SAVED_AT=''; tplStateRender();
+  if(window.TPL_EDIT_KIND==='ct')ctRepoWarnings();
   clearTimeout(TPL_TOUCH_T);
   TPL_TOUCH_T=setTimeout(function(){ TPL_TOUCH_T=null; dashTplFlush(); },600);
 }
@@ -11727,7 +12246,8 @@ window.addEventListener('beforeunload',function(e){
 async function dashTplEdit(kind){
   if(window.TPL_EDIT&&window.TPL_EDIT_KIND&&window.TPL_EDIT_KIND!==kind&&!(await dashTplFlush())) return;
   const key=tplKeyOf(kind);
-  const arr=tplLoad(key);
+  const arr=kind==='ct'?ctEnsureIds():tplLoad(key);
+  if(kind==='ct')ctOrderMigrate(arr);
   const host=document.getElementById('tplView'); if(!host) return;
   document.body.classList.add('tpl-wide');
   TPL_DIRTY=false; TPL_SAVED_AT=''; TPL_SAVE_ERROR='';
@@ -11786,7 +12306,7 @@ async function dashTplEdit(kind){
     }
     if(kind==='ct'||kind==='b13'){
       return '<div style="background:#fff;border:1px solid #c4ccd4;border-radius:5px;padding:8px;margin-bottom:6px;">'
-      +'<div style="display:flex;gap:8px;align-items:flex-start;">'
+      +'<div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;">'
       +mv(i)
       +'<input type="text" value="'+tplEsc(t.label)+'" placeholder="Template name (e.g. CPFF R&D — SECRET)" style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].label=this.value;ctStamp('+i+')">'
       +'<div style="display:flex;flex-direction:column;gap:3px;align-items:flex-start;">'
@@ -11800,18 +12320,19 @@ async function dashTplEdit(kind){
       +'<input type="date" value="'+tplEsc(t.srcDate||'')+'" title="Source date — the date of the DD Form 254 this template was derived from. For a Final this is what the two-year retention deadline is measured from." style="font-size:10.5px;width:135px;" onchange="ctSetSrc('+i+',this.value)">'
       +'</div>'
       +'<div style="display:flex;flex-direction:column;gap:2px;align-items:flex-start;">'
-      +'<input type="text" value="'+tplEsc((t.data&&t.data.primeContract)||'')+'" placeholder="Prime contract (2a)…" title="Prime contract number. Written to Item 2a only when the draft has none — a template never replaces a contract number already entered." style="width:160px;font-size:11px;" onchange="ctSetPrime('+i+',this.value)">'
-      +'<input type="text" value="'+tplEsc((t.data&&t.data.taskOrder)||'')+'" placeholder="Task order…" title="If this task order has its own DD Form 254, put its number here. Applying the template fills the task order field and ticks the standalone box, so the exported Block 2a reads prime | Task Order number." style="width:160px;font-size:11px;" onchange="ctSetTask('+i+',this.value)">'
+      +'<input type="text" value="'+tplEsc((t.data&&t.data.primeContract)||'')+'" '+(kind==='ct'&&(t.data||{}).taskOrder?'readonly ':'')+'placeholder="Prime contract (2a)…" title="Prime contract number. Written to Item 2a only when the draft has none — a template never replaces a contract number already entered." style="width:160px;font-size:11px;" onchange="ctSetPrime('+i+',this.value)">'
+      +'<input type="text" value="'+tplEsc((t.data&&t.data.taskOrder)||'')+'" '+(kind==='ct'&&!(t.data||{}).taskOrder?'readonly ':'')+'placeholder="Task Order / BPA / Delivery Order…" title="Prime templates have no order number. Add task orders beneath the matching prime contract." style="width:160px;font-size:11px;" onchange="ctSetTask('+i+',this.value)">'
       +'</div>'
       +'<div style="display:flex;flex-direction:column;gap:2px;align-items:flex-start;">'
-      +'<input type="text" value="'+tplEsc(t.smName||'')+'" list="ctSmList" placeholder="🛡 Security manager…" title="Assign a security manager — type to search the Security Manager templates" style="width:160px;font-size:11px;" onchange="ctSetSm('+i+',this.value)">'
+      +'<input type="text" value="'+tplEsc(t.smName||'')+'" list="ctSmList" placeholder="🛡 Security / program manager…" title="Assign a security / program security manager from Security Manager templates — included on CC" style="width:160px;font-size:11px;" onchange="ctSetSm('+i+',this.value)">'
       +'<span id="ctSmInfo_'+i+'" style="font-size:9.5px;color:#5a6a80;">'+tplEsc(t.smName?((t.smEmail||'—')+(t.smProgram?' · '+t.smProgram:'')):'')+'</span>'
       +'</div>'
-      +'<div style="flex:1;"><div id="ctSum_'+i+'" style="font-size:10.5px;color:#4a5866;line-height:1.5;">'+ctSummary(t)+'</div><div id="ctUpd_'+i+'" style="font-size:9.5px;color:#8a94a0;margin-top:2px;font-style:italic;">'+ctUpdText(t)+'</div></div>'
+      +(kind==='ct'?'<label style="font-size:10px;">Program<br><input type="text" value="'+tplEsc(ctProgram(t))+'" list="ctProgramList" placeholder="Program" style="width:145px;font-size:11px;" oninput="TPL_EDIT['+i+'].program=this.value;ctStamp('+i+')"></label>':'')
+      +'<div style="flex:1;min-width:170px;"><div id="ctSum_'+i+'" style="font-size:10.5px;color:#4a5866;line-height:1.5;">'+ctSummary(t)+'</div><div id="ctUpd_'+i+'" style="font-size:9.5px;color:#8a94a0;margin-top:2px;font-style:italic;">'+ctUpdText(t)+'</div></div>'
       +'<button class="dash-btn" style="background:#46606f;" title="Write or edit this template&#39;s block content by hand" onclick="ctMgrToggle('+i+')">✎ Edit blocks</button>'
       +'<button class="dash-btn" style="background:#2e5077;" title="Snapshot Blocks 2a, 10, 11, 12, 13, 14, 15, 16 and 18 from the form as it is right now (required attachments are kept, not overwritten)" onclick="dashCtCapture('+i+')">⇪ Capture from form</button>'
       +'<button class="dash-btn" style="background:#7a4038;" onclick="dashTplDel('+i+')">\u2715</button></div>'
-      +ctEditorHtml(t,i)+'</div>';
+      +(kind==='ct'?ctEditorShell(i):ctEditorHtml(t,i))+'</div>';
     }
     if(kind==='scg'){
       /* One guide per row. The date is what a citation is checked against: when
@@ -11856,16 +12377,19 @@ async function dashTplEdit(kind){
       +'<input type="text" value="'+tplEsc(t.email)+'" placeholder="Email (optional)" style="width:170px;font-size:11px;" oninput="TPL_EDIT['+i+'].email=this.value">'
       +'<button class="dash-btn" style="background:#7a4038;" onclick="dashTplDel('+i+')">✕</button></div>';
   }
+  if(window.TPL_EDIT_KIND!==kind) CT_REPO_VIEW=ctRepoDefaultView();
   window.TPL_EDIT=arr; window.TPL_EDIT_KIND=kind;
+  if(kind==='ct'){window.CT_REPO_ROW=row;if(!Object.keys(CT_REPO_VIEW.open||{}).length&&arr.length)CT_REPO_VIEW.open[ctContractKey((arr[0].data||{}).primeContract)]=true;}
   host.innerHTML='<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">'
     +'<h3 style="margin:0;color:#2b3440;font-size:15px;">'+(kind==='fac'?'🏢 Facility Templates (Blocks 6a / 6b / 6c, and the Item 17 certifier)':(kind==='perf'?'📍 Performance location / Sub-contractor Templates (Blocks 7 & 8)':(kind==='cert'?'✍ Certifier Templates — the official who certifies the DD-254 (Items 17a/b/c/e/f/g)':(kind==='ct'?'📝 DD-254 Template Language — Blocks 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 (insertable from the form side panel)':(kind==='b13'?'📄 Contract Type Templates — Blocks 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 (offered when a new DD-254 is created)':(kind==='sl'?'📑 Standard Language — recurring Block 13 text your organisation adds to its DD-254s':(kind==='sm'?'🛡 Security Manager Templates — name / e-mail / program':(kind==='scg'?'📘 Security Classification Guides — unclassified titles, dates and issuing offices cited in Item 13':'🏛 CSO Templates (Blocks 6c / 7c / 8c)'))))))))+'</h3>'
-    +((kind==='fac'||kind==='perf'||kind==='b13'||kind==='ct'||kind==='sm'||kind==='sl'||kind==='scg')?'<input type="search" id="tplFilter" placeholder="🔎 Search templates…" oninput="dashTplFilter(this.value)" style="font-size:11px;padding:3px 7px;width:190px;">':'')
-    +'<button class="dash-btn" style="background:#4a5866;" onclick="dashTplAdd()">＋ Add</button>'
+    +((kind==='fac'||kind==='perf'||kind==='b13'||kind==='ct'||kind==='sm'||kind==='sl'||kind==='scg')?'<input type="search" id="tplFilter" placeholder="🔎 Search name, program, contract…" oninput="dashTplFilter(this.value)" style="font-size:11px;padding:3px 7px;width:190px;">':'')
+    +'<button class="dash-btn" style="background:#4a5866;" onclick="dashTplAdd()">'+(kind==='ct'?'＋ Add template':'＋ Add')+'</button>'
     +'<button class="dash-btn" style="background:#46606f;" onclick="tplExport()">⬇ Export (.json)</button>'
     +'<button class="dash-btn" style="background:#46606f;" onclick="document.getElementById(\'tplImportFile\').click()">⬆ Import (.json)</button>'
     +(TPL_IO[kind]?'<button class="dash-btn" style="background:#1f6f4a;" onclick="tplIoExport(\''+kind+'\')">⬇ Export (.csv)</button>'
       +'<button class="dash-btn" style="background:#1f6f4a;" onclick="document.getElementById(\'tplUpFile\').click()">⬆ Upload (.csv/.xlsx)</button>'
       +'<input type="file" id="tplUpFile" accept=".csv,.xlsx" style="display:none" onchange="tplIoUpload(event,\''+kind+'\')">':'')
+    +(kind==='ct'&&ioHasUndo('orders')?'<button class="dash-btn" style="background:#8a6a00;" onclick="tplIoUndo(\'orders\')">↩ Undo order import / restore</button>':'')
     +(ioHasUndo(kind)?'<button class="dash-btn" style="background:#8a6a00;" onclick="tplIoUndo(\''+kind+'\')">↩ Undo last change</button>':'')
     +'<input type="file" id="tplImportFile" accept=".json" style="display:none" onchange="tplImport(event)">'
     +(kind==='ct'?'<button class="dash-btn" id="rcv254Btn" style="background:#2e5077;" title="Create a DD-254 Template Language entry from the Items 10–16 and 18 of a fillable DD Form 254 you received. Nothing else is created and the PDF is not kept." onclick="document.getElementById(\'rcv254File\').click()">⬆ Import received DD 254 (PDF)</button>'
@@ -11875,10 +12399,11 @@ async function dashTplEdit(kind){
     +'<button class="dash-btn" style="background:#2b3440;" onclick="dashTplDone()">✓ Done</button></div>'
     +(kind==='scg'?'<div id="scgUnclassNote" style="background:#fdf3d8;border:1px solid #e8d49a;color:#5a3000;border-radius:4px;padding:6px 10px;margin-bottom:8px;font-size:11px;line-height:1.45;">Enter only <b>unclassified</b> titles and identifiers. The DD Form 254 instructions ask Item 13 to list the unclassified titles or identities of the guides, and every referenced guide must be attached or forwarded under separate cover. The guides themselves are never stored here.</div>':'')
     +((kind==='fac'||kind==='perf')?'<div id="tplDupWarn" style="display:none;background:#fdecea;border:1px solid #e6a6a0;color:#a03028;border-radius:4px;padding:6px 10px;margin-bottom:8px;font-size:11px;font-weight:bold;"></div>':'')
-    +(kind==='ct'?'<datalist id="ctSmList">'+tplLoad(TPL_SM).map(function(x){return '<option value="'+tplEsc(x.name||'')+'" label="'+tplEsc([x.email,x.program].filter(Boolean).join(' · '))+'"></option>';}).join('')+'</datalist>':'')+'<div id="tplRows">'+(arr.length?arr.map(function(t,i){return '<div class="tpl-row" data-lbl="'+tplEsc(dashTplSearchText(t))+'">'+row(t,i)+'</div>';}).join(''):'<div style="color:#7a8aa0;padding:20px 0;">None yet — click ＋ Add.</div>')+'</div>';
-  host.oninput=function(){ dashTplTouch(); };
-  host.onchange=function(){ dashTplTouch(); };
+    +(kind==='ct'?'<datalist id="ctSmList">'+tplLoad(TPL_SM).map(function(x){return '<option value="'+tplEsc(x.name||'')+'" label="'+tplEsc([x.email,x.program].filter(Boolean).join(' · '))+'"></option>';}).join('')+'</datalist>':'')+(kind==='ct'?'<datalist id="ctProgramList">'+Array.from(new Set(arr.map(ctProgram).filter(Boolean))).sort().map(function(p){return '<option value="'+tplEsc(p)+'"></option>';}).join('')+'</datalist>'+ctRepoToolbar():'')+'<div id="tplRows">'+(kind==='ct'?'':(arr.length?arr.map(function(t,i){return '<div class="tpl-row" data-index="'+i+'" data-lbl="'+tplEsc(dashTplSearchText(t))+'">'+row(t,i)+(kind==='ct'?'<div class="ct-dup-warning" role="status" style="display:none;background:#fdecea;border:1px solid #e6a6a0;color:#a03028;border-radius:4px;padding:6px 10px;margin:3px 0 8px;font-size:11px;"></div>':'')+'</div>';}).join(''):'<div style="color:#7a8aa0;padding:20px 0;">None yet — click ＋ Add.</div>'))+'</div>';
+  const editTouch=function(ev){if(ev.target.id==='tplFilter'||ev.target.closest('#ctRepoTools')||ev.target.closest('#ctOrderPanel')||ev.target.closest('.ct-order-row'))return;dashTplTouch();};
+  host.oninput=editTouch;host.onchange=editTouch;
   if(kind==='fac'||kind==='perf') dashTplCageCheck();
+  if(kind==='ct')ctRepoRestore();
 }
 function dashTplCageCheck(){
   const banner=document.getElementById('tplDupWarn');
@@ -11896,15 +12421,18 @@ function dashTplCageCheck(){
   }
 }
 function dashTplFilter(q){
+  if(window.TPL_EDIT_KIND==='ct'){CT_REPO_VIEW.q=q;ctRepoFilter();return;}
   q=(q||'').trim().toLowerCase();
   document.querySelectorAll('#tplRows > .tpl-row').forEach(function(r){
     r.style.display=(!q||(r.getAttribute('data-lbl')||'').indexOf(q)>=0)?'':'none';
   });
 }
 function dashTplAdd(){
+  if(window.TPL_EDIT_KIND==='ct'){ctPrimeAddPanel();return;}
   window.TPL_EDIT.push(window.TPL_EDIT_KIND==='fac'?{label:'',text:'',cage:''}:(window.TPL_EDIT_KIND==='perf'?{label:'',name:'',cage:'',cso:''}:(window.TPL_EDIT_KIND==='cert'?{label:'',name:'',title:'',address:'',cage:'',phone:'',email:''}:(window.TPL_EDIT_KIND==='b13'?{label:'',data:ctBlankData()}:(window.TPL_EDIT_KIND==='ct'?{label:'',data:ctBlankData()}:(window.TPL_EDIT_KIND==='scg'?{label:'',ident:'',date:'',office:'',dist:'',delivery:''}:(window.TPL_EDIT_KIND==='sl'?{label:'',text:''}:(window.TPL_EDIT_KIND==='sm'?{label:'',name:'',email:'',program:''}:{label:'',name:'',address:'',phone:'',email:''}))))))));
+  if(window.TPL_EDIT_KIND==='ct')window.TPL_EDIT[window.TPL_EDIT.length-1].ioId=ioNewId();
   tplSave(tplKeyOf(window.TPL_EDIT_KIND),window.TPL_EDIT);
-  dashTplEdit(window.TPL_EDIT_KIND);
+  dashTplEdit(window.TPL_EDIT_KIND).then(function(){if(window.TPL_EDIT_KIND==='ct')ctRepoGo(window.TPL_EDIT.length-1);});
 }
 function dashTplDel(i){
   const kind=window.TPL_EDIT_KIND;
@@ -11936,7 +12464,7 @@ function tplExport(){
   const kind=window.TPL_EDIT_KIND;
   if(window.TPL_EDIT&&kind){ clearTimeout(TPL_TOUCH_T); tplSave(tplKeyOf(kind),window.TPL_EDIT); }
   const names={fac:'Facility',cso:'CSO',perf:'PerfSub',cert:'Certifier',b13:'ContractType',ct:'DD254Language',sm:'SecurityManagers',sl:'StandardLanguage',scg:'SecurityClassificationGuides'};
-  const blob=new Blob([JSON.stringify({tool:'DD254 Templates',kind:kind,exported:new Date().toISOString(),entries:tplLoad(tplKeyOf(kind))},null,1)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({tool:'DD254 Templates',kind:kind,exported:new Date().toISOString(),entries:tplLoad(tplKeyOf(kind)),orders:kind==='ct'?ctOrderStore():undefined},null,1)],{type:'application/json'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
   a.download='DD254_'+names[kind]+'_Templates_'+new Date().toISOString().split('T')[0]+'.json';
@@ -11962,7 +12490,9 @@ function tplImport(ev){
         if(ix>=0){ if(JSON.stringify(arr[ix])!==JSON.stringify(t)){arr[ix]=t;updated++;} }
         else { arr.push(t); added++; }
       });
-      tplSave(tplKeyOf(kind),arr);
+      if(kind==='ct'&&!(await ctDuplicateSaveCheck(arr)))return;
+      await tplSave(tplKeyOf(kind),arr);
+      if(kind==='ct'&&Array.isArray(data.orders))tplPackApply('orders',tplPackPlan('orders',data.orders,'',data.exported));
       window.TPL_EDIT=arr;
       alert('Import merged: '+added+' added, '+updated+' updated. Existing entries not in the file were kept.');
       dashTplEdit(kind);
@@ -11979,7 +12509,7 @@ function dashTplPerfCso(i,label){
   dashTplEdit('perf');
 }
 async function dashTplDone(){
-  if(!(await dashTplFlush())) return;
+  if(!(await dashTplSaveNow())) return;
   document.body.classList.remove('tpl-wide');
   document.getElementById('tplView').style.display='none';
   document.getElementById('dashCards').style.display='block';
@@ -12684,7 +13214,8 @@ function emailDistSets(){
   const reqOut=claim(req);
   /* rawFso lets the panel tell "you have not entered one" apart from
      "you did, and it is already listed under an earlier group". */
-  return {cso:csoOut, fso:fsoOut, fsoAuto:fsoAutoOut, req:reqOut, rawFso:rawFso};
+  const mail=dashIssueMail({requestedBy:window.CURRENT_REQUESTOR_EMAIL||'',workspace:collectWorkspace()});
+  return {cso:csoOut,fso:fsoOut,fsoAuto:fsoAutoOut,req:reqOut,rawFso:rawFso,to:mail.to,cc:mail.cc};
 }
 function updateEmailDist(){
   const s=emailDistSets();
@@ -12692,11 +13223,10 @@ function updateEmailDist(){
     const el=document.getElementById(id); if(!el) return;
     el.innerHTML=list.length?list.map(function(e){return '<div>☐ '+e.replace(/</g,'&lt;')+'</div>';}).join(''):'<span style="color:#9aa4b0;font-style:italic;">'+emptyMsg+'</span>';
   };
-  rend('csoEmailList',s.cso,'no CSO or requestor emails — add "Email: …" in 6c/7c/8c, or a requestor e-mail on the dashboard');
-  rend('fsoEmailList',s.fsoAuto, s.rawFso
-    ? 'already listed above — the same address is recorded as a CSO or requestor contact'
-    : 'no FSO e-mails yet — add them in Items 6, 7 and 8');
-  rend('reqEmailList',s.req,'no emails found in Item 13 or Block 18f');
+  rend('csoEmailList',s.cc,'no CC recipients yet — add facility FSO, CSO or security manager contacts');
+  rend('fsoEmailList',s.to,'no To recipients yet — add a requestor, subcontractor FSO or performance-location FSO');
+  rend('reqEmailList',s.req,'no emails found in Item 13 or Item 18f');
+  distSmRender();
 }
 function emailDistCopy(kind,btn){
   const s=emailDistSets();
@@ -13451,6 +13981,19 @@ document.addEventListener('DOMContentLoaded',()=>{
       {label:'Northwind Defense — Programme DAMSON (demo)', srcDate:'2026-05-20', smName:'J. Serrano', smEmail:'j.serrano@example.com', smProgram:'Programme DAMSON (demo)',
        data:ctData({primeContract:'SP4701-25-C-3310', taskOrder:'0007', c10:{'10b':true}, l10:{'10b':'Reference 10b:\n\nRestricted Data access is limited to personnel briefed under the applicable programme access requirements.'}})}
     ]);
+    /* Prime/order example: one prime source shared by twenty orders. */
+    if(typeof TPL_ORDERS!=='undefined'&&!tplLoad(TPL_ORDERS).length){
+      const templates=ctEnsureIds();templates.forEach(t=>{if(t.program==null)t.program=/Meridian/i.test(t.label)?'Meridian':(/ALDER/i.test(t.label)?'ALDER':(/Northwind/i.test(t.label)?'Northwind':'Other programs'));});const prime=templates.find(t=>(t.data||{}).primeContract==='HQ0034-25-D-0101'&&!(t.data||{}).taskOrder);
+      if(prime){
+        const records=[],base=ctSourceSaveVersion(prime,records),now=new Date().toISOString();
+        for(let n=1;n<=23;n++){
+          const number=String(n).padStart(4,'0'),type=CT_ORDER_TYPES[(n-1)%3];let version=base,mode='prime';
+          if(n>20){const own=JSON.parse(JSON.stringify(prime));own.ioId=uid();own.label='Order '+number+' DD254 - Programme ALDER (demo)';own.srcType='orig';own.srcRev='';own.srcDate='2026-09-'+String(n+2);own.data.taskOrder=number;own.data.orderType=type;own.data.standalone=false;own.data.i13='Example order-specific guidance for order '+number+'.';templates.push(own);version=ctSourceSaveVersion(own,records);mode='order';}
+          records.push({recordType:'order',ioId:uid(),label:prime.data.primeContract+' - '+number,primeContract:prime.data.primeContract,number:number,orderType:type,sourceMode:mode,sourceVersionId:version.ioId,createdAt:now,updatedAt:now});
+        }
+        tplSave(TPL_CT,templates);tplSave(TPL_ORDERS,records);
+      }
+    }
     /* Fictitious guides: invented titles and identifiers, no real programme. */
     if(typeof TPL_SCG!=='undefined') seed(TPL_SCG, [
       {label:'Programme ALDER Security Classification Guide (demo)', ident:'SCG-ALD-01', date:'2026-02-02', office:'Programme ALDER Office (demo)', dist:'', delivery:'attached'},
