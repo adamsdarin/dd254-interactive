@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.6.0</title>
+<title>DD254 Interactive v2.7.1</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1282,7 +1282,7 @@ This advisor compares Items 1a, 1b, 10, and 11 with a verification snapshot. Its
 <span class="rr">Contractor must be provided with a copy of the system/command/unit OPSEC requirements or plan — include in Item 13 or as attachment</span>
 <span class="rr">Item 13 must identify pertinent contract clauses and provide OPSEC guidance</span>
 <span class="rn">Prime contractors may NOT impose OPSEC requirements on subcontractors without GCA approval</span>
-<span class="rr">OPSEC clauses are cited in Item 14 — see <a class="src-link" href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/520502E.pdf" target="_blank" rel="noopener">DoDD 5205.02E</a></span>
+<span class="rr">Item 14 must be YES, with the additional requirements stated there or in an attachment; identify the pertinent contract clauses and add clarifying guidance to Item 13 — <a class="src-link" href="https://www.esd.whs.mil/portals/54/documents/dd/forms/dd/dd0254-Inst.pdf" target="_blank" rel="noopener">DD Form 254 Instructions, Item 11j(1)</a></span><span class="rn">OPSEC requirements are additional to the NISPOM and apply when the GCA determines extra safeguards are essential for the contract. The DoD OPSEC programme itself is <a class="src-link" href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/520502E.pdf" target="_blank" rel="noopener">DoDD 5205.02E</a>; it is not what obliges Item 14 — that is the form instructions.</span>
 </div></div>
 </div>
 <div class="cbi" id="cb11k" onclick="tgl11('11k')" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
@@ -1395,14 +1395,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.149';
+const TOOL_VERSION='2.151';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.6.0';
+const RELEASE_VERSION='2.7.1';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -1632,6 +1632,11 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 <div class="rp-section">
 <h4>Security Classification Guides</h4>
 <div id="scgPanel" style="font-family:Arial,sans-serif;">No classification guides saved.</div>
+</div>
+<div class="rp-section">
+<h4>Contract Type</h4>
+<select id="ctTypeSel" onchange="ctTypeApply(this)" style="font-size:10.5px;margin-bottom:4px;" title="Contract vehicles that carry their own boilerplate. Most contracts are ordinary FAR-based ones and need nothing here."><option value="">&#8212; select a contract vehicle&#8230; &#8212;</option></select>
+<div class="hint">For contracts on a funding vehicle that carries its own boilerplate. Applying one fills Items 10, 11, 12, 13, 14, 15, 16 and 18 from that vehicle.</div>
 </div>
 <div class="rp-section">
 <h4>DD-254 Template Language</h4>
@@ -7411,11 +7416,14 @@ async function dashNewDraft(stage){
   /* Contract type offer. These templates used to carry Block 13 text alone;
      they now carry the same structure as a DD-254 Template Language entry, so
      the whole thing is applied to the new draft rather than just its text. */
-  let tplPick=null;
-  try{
-    const ctypes=(typeof tplLoad==='function')?tplLoad(TPL_B13):[];
-    if(ctypes.length) tplPick=await ctPickContractType(ctypes);
-  }catch(e){}
+  /* No contract-type question at origination. Nearly every contract is an
+     ordinary FAR-based one with no contract type at all, so asking on every new
+     DD-254 spent everyone's attention on a minority case - and a prompt that is
+     usually answered "no" is one people learn to dismiss without reading, which
+     is worse than not asking. Contract types are chosen from their own picker on
+     the form, beside the other template libraries, in the same search-and-apply
+     motion the preparer already uses. */
+  const tplPick=null;
   const rec={id:dashId(),title:t,stage:stage,ctType:(tplPick&&tplPick.label)||'',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'Draft',todos:[],notes:'',workspace:null,meta:{contract:'',contractor:'',errors:0,warns:0}};
   await draftPut(rec);
   audLog(rec.id,rec.title,'created',stage+(tplPick?' (contract type: '+(tplPick.label||'unnamed')+')':''));
@@ -7742,6 +7750,15 @@ function ctApplyWsToForm(ws){
   if(typeof cuiSync==='function') cuiSync();
   syncUIFromDom(); distSmRender();
   } finally {window.CT_APPLY_BUSY=false;}
+}
+/* The form-side picker hands straight to dashApplyB13, which already asks before
+   it overwrites Item 13, records ctType on the draft and writes the audit entry.
+   One apply path, so the picker and the dashboard card cannot drift apart. */
+async function ctTypeApply(sel){
+  if(!sel||sel.value==='') return;
+  const idx=sel.value; sel.value='';
+  if(!DASH.current){ alert('Save this DD-254 to the dashboard before applying a contract type.'); return; }
+  await dashApplyB13(DASH.current,idx);
 }
 async function dashApplyB13(id,idx){
   if(idx===''||idx==null) return;
@@ -9906,6 +9923,12 @@ function buildTplSelects(){
     const facOpts=fac.map(function(t){return cageOpt(t.cage,t.label||t.text);});
     dl.innerHTML=perfOpts.concat(facOpts).filter(Boolean).join('');
   }
+  const ct=document.getElementById('ctTypeSel');
+  if(ct){
+    const b13=(typeof tplLoad==='function')?(tplLoad(TPL_B13)||[]):[];
+    ct.innerHTML='<option value="">— select a contract vehicle… —</option>'
+      +b13.map(function(t,i){ return '<option value="'+i+'">'+tplEsc(t.label||('Contract type '+(i+1)))+'</option>'; }).join('');
+  }
   const cs=document.getElementById('certTplSel');
   if(cs){ cs.innerHTML='<option value="">— apply certifying-official template… —</option>'+tplLoad(TPL_CERT).map(function(t,i){return '<option value="'+i+'">'+tplEsc(t.label||t.name||('Official '+(i+1)))+'</option>';}).join(''); }
 }
@@ -10934,6 +10957,14 @@ function ctFind(ref){
   if(/^\d+$/.test(String(ref))) return arr[+ref]||null;   /* legacy positional reference */
   return null;
 }
+/* Task orders that carry their own DD-254 are listed here under their own
+   identity, not only as whichever template happens to be bound to them. An
+   order is how the preparer thinks about order-specific work - "0042 under
+   N00178-24-D-1234" - and orders live in their own store, so a picker that read
+   only the template store could not show them at all. Selecting an order
+   selects its bound template, so everything downstream is unchanged; the bound
+   template is not listed twice. An order whose source still needs review is
+   shown and cannot be chosen, because there is nothing to apply yet. */
 function buildCtSelect(){
   const sel=document.getElementById('ctTplSel'); if(!sel) return;
   let arr=ctEnsureIds();
@@ -10941,10 +10972,36 @@ function buildCtSelect(){
   if(link&&link.snapshot){const saved=Object.assign({},link.snapshot,{label:(link.snapshot.label||'Source')+' — saved workflow source'});arr=arr.map(function(t){return t.ioId===link.templateId?saved:t;});if(!arr.some(function(t){return t.ioId===link.templateId;}))arr.push(saved);}
   const cur=sel.value;
   const q=(window.CT_FILTER||'').trim().toLowerCase();
-  sel.innerHTML='<option value="">— select a template… —</option>'+arr.map(function(t,i){
+  const hit=function(text){ return !q || String(text||'').toLowerCase().indexOf(q)>=0; };
+
+  const orderOpts=[]; const bound={};
+  try{
+    const records=(typeof ctOrderStore==='function')?ctOrderStore():[];
+    const rows=(typeof ctOrderRows==='function')?ctOrderRows(records):[];
+    rows.forEach(function(o){
+      if((typeof ctOrderCoverage==='function'?ctOrderCoverage(o,records):o.coverageMode)!=='order') return;
+      const v=(typeof ctOrderSource==='function')?ctOrderSource(o,records):null;
+      const tid=v&&v.templateId;
+      const name=(o.primeContract||'')+' · '+(o.number||'')+' — '+(o.orderType||'Order')+' DD-254';
+      if(!hit(name+' '+(o.label||''))) return;
+      if(tid&&arr.some(function(t){return t.ioId===tid;})){
+        bound[tid]=1;
+        orderOpts.push('<option value="'+tplEsc(tid)+'">'+tplEsc(name)+'</option>');
+      } else {
+        orderOpts.push('<option value="" disabled>'+tplEsc(name+' — source needs review')+'</option>');
+      }
+    });
+  }catch(e){}
+
+  const tplOpts=arr.map(function(t,i){
+    if(bound[t.ioId]) return '';
     if(q&&(typeof dashTplSearchText==='function'?dashTplSearchText(t):String(t.label||'').toLowerCase()).indexOf(q)<0) return '';
-    return '<option value="'+tplEsc(t.ioId)+'">'+tplEsc((t.label||('Template '+(i+1)))+(t.srcDate?' \u2014 src '+t.srcDate:' \u2014 NO SOURCE DATE'))+'</option>';
+    return '<option value="'+tplEsc(t.ioId)+'">'+tplEsc((t.label||('Template '+(i+1)))+(t.srcDate?' — src '+t.srcDate:' — NO SOURCE DATE'))+'</option>';
   }).join('');
+
+  sel.innerHTML='<option value="">— select a template… —</option>'
+    +(orderOpts.length?'<optgroup label="Task orders with their own DD-254">'+orderOpts.join('')+'</optgroup>':'')
+    +(tplOpts?'<optgroup label="Templates">'+tplOpts+'</optgroup>':'');
   if(cur && ctFormTemplate(cur) && Array.from(sel.options).some(function(o){return o.value===cur;})) sel.value=cur; else if(cur) sel.value='';
 }
 function ctFilterSel(q){
