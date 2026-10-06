@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.7.1</title>
+<title>DD254 Interactive v2.8.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1395,14 +1395,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.151';
+const TOOL_VERSION='2.153';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.7.1';
+const RELEASE_VERSION='2.8.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -2983,6 +2983,11 @@ if(typeof flowIssuesLive==='function'){ const _fl=flowIssuesLive();
   if(b14) errors.push('Item 14: marked YES — the additional security requirements must be described.');
   if(b15) errors.push('Item 15: marked YES — the inspection and review responsibility must be described.');
 })();
+/* Mandatory standard language holds the status at Draft, which is the whole
+   point of the setting. It is added before the dismissal filter, so a DD-254
+   that genuinely must go out without it can be set aside with a written reason
+   like any other finding, rather than needing the policy switched off. */
+if(typeof slRequiredError==='function'){ const _slErr=slRequiredError(); if(_slErr) errors.push(_slErr); }
 /* Dismissed findings are removed from the blocking set here, once, so the
    status gate, the step dots and the recount all read the same number. */
 const _dismissed=errors.filter(function(e){ return typeof dismissIsSet==='function'&&dismissIsSet(e); });
@@ -7433,6 +7438,16 @@ async function dashNewDraft(stage){
   showFormView();
   if(typeof initWizard==='function') initWizard();
   const r3=document.querySelector('input[name="spec"][value="3a"]'); if(r3) r3.checked=true;
+  /* Mandatory standard language, offered once on a form that is still empty. */
+  if(typeof slRequired==='function' && slRequired() && slAll().length){
+    const slPick=await slPickForNew();
+    if(slPick){
+      const lv=document.getElementById('fcl1a');
+      if(lv && slPick.level && !lv.value) lv.value=slPick.level;
+      slInsert(slPick.index);
+      audLog(rec.id,rec.title,'standard-language',(slAll()[slPick.index]||{}).label||'(unnamed)');
+    }
+  }
   window.DD254_CT_APPLIED=(tplPick&&tplPick.label)||'';
   if(tplPick&&tplPick.data) ctApplyWsToForm(ctApplyDataToWorkspace(tplPick.data,null,tplPick));
   /* A solicitation says so in Item 9 before it says anything else. Applied after
@@ -8712,20 +8727,21 @@ function dashRestore(ev){
 })();
 
 /* ── REVISIONS / DIFF / TICKLER / ROLLUP ───────────── */
-/* Two kinds of copy, because "copy this" means two different things.
+/* Two kinds of copy, because "copy this" means two different things. Neither
+   carries the parent's workflow: status, holds, distribution record,
+   countersignature, issue date and review date are events on the record they
+   happened to, and a copy they did not happen to must not claim them.
 
-     Full copy      — everything comes across. Right when the new form is the
-                      same work in a new place and the holds, distribution
-                      record and countersignature are all still live questions.
-     Reset workflow — the dashboard face stays exactly as it is (title, contract,
-                      contractor, notes, to-dos, NISS verification, the whole
-                      form) and only the workflow events clear: status, holds,
-                      distribution, countersignature, issue date, review date.
-                      Right when the paperwork is correct but this is a fresh
-                      run of it.
+     Copy          — the whole dashboard face comes across: title, contract,
+                     contractor, notes, to-dos, NISS verification and the form.
+                     Right when this is a fresh run of correct paperwork.
+     Copy the form — the form and the NISS verification only. Right when the
+                     form is the starting point and the notes and to-dos belong
+                     to the work already done on the original.
 
-   Neither carries an issue date. An inherited one would be a plain falsehood,
-   and it feeds the portfolio export and the draft-to-issued average. */
+   The buttons used to be labelled the other way round, and the first claimed
+   "everything comes across" while the code it ran cleared the notes and the
+   to-dos and kept the holds. Both halves of that were wrong. */
 function dashCopyPrompt(title){
   return new Promise(function(resolve){
     const ov=document.createElement('div'); ov.id='dashCopyDlg';
@@ -8733,16 +8749,17 @@ function dashCopyPrompt(title){
     ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:520px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
       +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">\u29c9 Copy this DD-254</div>'
       +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">'+dashEsc(title||'Untitled DD-254')+'</div>'
-      +'<button id="cpFull" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
-        +'<b>Full copy</b><div style="font-size:10.5px;color:#5a6a80;margin-top:2px;">Everything comes across, including holds, distribution and countersignature.</div></button>'
-      +'<button id="cpReset" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
-        +'<b>Copy and reset the workflow</b><div style="font-size:10.5px;color:#5a6a80;margin-top:2px;">Keeps the form, notes, to-dos and NISS verification. Clears status, holds, distribution, countersignature, issue and review dates.</div></button>'
+      +'<button id="cpKeep" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
+        +'<b>Copy</b><div style="font-size:10.5px;color:#5a6a80;margin-top:2px;">Keeps the form, notes, to-dos and NISS verification.</div></button>'
+      +'<button id="cpForm" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
+        +'<b>Copy the form only</b><div style="font-size:10.5px;color:#5a6a80;margin-top:2px;">Keeps the form and NISS verification. Leaves the notes and to-dos on the original.</div></button>'
+      +'<div style="font-size:10.5px;color:#5a6a80;margin:2px 0 0;">Either way the copy starts at Draft. Status, holds, distribution, countersignature and the issue and review dates stay with the original.</div>'
       +'<div style="display:flex;gap:8px;margin-top:8px;">'
       +'<button id="cpCancel" style="background:#8a94a0;color:#fff;border:none;padding:7px 14px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Cancel</button></div></div>';
     document.body.appendChild(ov);
     const done=function(v){ try{ov.remove();}catch(e){} resolve(v); };
-    ov.querySelector('#cpFull').onclick=function(){ done('full'); };
-    ov.querySelector('#cpReset').onclick=function(){ done('reset'); };
+    ov.querySelector('#cpKeep').onclick=function(){ done('keep'); };
+    ov.querySelector('#cpForm').onclick=function(){ done('form'); };
     ov.querySelector('#cpCancel').onclick=function(){ done(null); };
     ov.addEventListener('keydown',function(e){ if(e.key==='Escape') done(null); });
   });
@@ -8758,17 +8775,25 @@ async function dashDuplicate(id){
   delete rec.parentId; delete rec.rootId; delete rec.revN;
   rec.copiedFrom=fresh.id;
   rec.copiedOn=new Date().toISOString().split('T')[0];
-  if(mode==='reset'){ dashResetWorkflow(rec); }
-  else { rec.status='Draft'; rec.reviewDate=''; rec.todos=[]; rec.notes=''; }
-  /* A copy has not been issued. Holds, distribution and NISS are deliberately
-     carried (a copy is usually the same facility and contract family), but an
-     inherited issue date would be a plain falsehood — and it feeds the portfolio
-     export and the draft-to-issued average. */
-  delete rec.issuedAt;
+  /* A copy carries the form, not the parent's workflow. Full copy used to bring
+     the holds, the distribution record, the countersignature and the Blocked
+     status across, so copying a blocked DD-254 produced a second blocked
+     DD-254 that nothing had actually happened to: holds raised against the
+     parent, dated before the copy existed, stalling a queue the copy was never
+     in. Those are events, and events belong to the record they happened on.
+     The copy therefore starts at Draft with no workflow history, the same rule
+     a spawned DD-254 has always followed. */
+  dashResetWorkflow(rec);
+  if(mode==='form'){ rec.todos=[]; rec.notes=''; }
+  /* An approval gate is raised by the form, not by the workflow. If the copy's
+     own boxes demand GCA approval it gets its OWN hold, dated today — not the
+     parent's. Starting clean must not become a way to slip the gate, which is
+     the same reason a workflow reset reconciles. */
+  if(typeof dashSyncCompliance==='function') dashSyncCompliance(rec);
   rec.createdAt=rec.updatedAt=new Date().toISOString();
   const base=(fresh.title||((fresh.meta&&fresh.meta.contract)||'Untitled DD-254')).replace(/^Copy of /,'');
   rec.title='Copy of '+base;
-  await draftPut(rec); audLog(rec.id,rec.title,'duplicated',mode==='reset'?'workflow reset':'full copy');
+  await draftPut(rec); audLog(rec.id,rec.title,'duplicated',(mode==='form'?'form only':'form, notes and to-dos')+'; workflow history not carried');
   await dashRenderCards(rec.id);
 }
 /* A spawned DD-254 is a new document, but it is the same contract and the same
@@ -10386,6 +10411,17 @@ function ctOrderImportPlan(mine,incoming){
 let CT_REPO_VIEW=ctRepoDefaultView();
 function ctRepoDefaultView(){return {q:'',prime:'',order:'',program:'',sort:'newest',basis:'',duplicates:false,open:{},editTemplate:''};}
 function ctProgram(t){return String(t&&t.program!=null?t.program:(t&&t.smProgram)||'').trim();}
+/* Programme names belong to the Security Managers repository: the manager owns
+   the programme, and a programme typed by hand into two template libraries is
+   how those libraries drift apart. The picker therefore offers every programme
+   a security manager records, plus any programme already written on a template
+   so an entry made before its manager existed does not drop out of the list. */
+function ctProgramOptions(arr){
+  const out={};
+  tplLoad(TPL_SM).forEach(function(m){ const v=String((m&&m.program)||'').trim(); if(v) out[v]=1; });
+  (arr||[]).forEach(function(t){ const v=ctProgram(t); if(v) out[v]=1; });
+  return Object.keys(out).sort(function(a,b){ return a.localeCompare(b); });
+}
 function ctPrimeProgram(prime,templates){const list=(templates||window.TPL_EDIT||tplLoad(TPL_CT)).filter(function(t){return ctContractKey((t.data||{}).primeContract)===ctContractKey(prime)&&!(t.data||{}).taskOrder;});return ctProgram(list[0]);}
 function ctOrderProgram(o,templates){const own=ctSourceCandidates(o,'order',templates);return ctOrderCoverage(o)==='order'&&own.length?ctProgram(own[0]):(o.program!=null?String(o.program).trim():ctPrimeProgram(o.primeContract,templates));}
 function ctRepoToolbar(){
@@ -11105,6 +11141,42 @@ function ctAutoLangKey(key,addOnly){
    rebuilt from what is actually present, so a deletion sticks — nothing puts it
    back on the next sync. The list exists to stop the same entry going in twice
    and to say on the card what a form is carrying, not to control Block 13. */
+/* ── STANDARD LANGUAGE: OPTIONAL OR MANDATORY ─────────────────────────────
+   Optional is the default and the old behaviour: the library is there, you
+   insert from it when you want it. Mandatory says the organisation's wording
+   belongs on every DD Form 254 it issues - so a new DD-254 is offered the
+   entry that fits its programme and its Item 1a level, and one that carries
+   none of the library's wording cannot reach Issued.
+
+   Presence in Item 13 is what is checked, not a flag recorded at creation. A
+   preparer who deletes the paragraph has removed the standard language, and a
+   setting that believed its own bookkeeping instead of the form would say the
+   DD-254 carries wording that is not on it. */
+const SL_REQ_KEY='dd254_sl_required';
+function slRequired(){ return lsGet(SL_REQ_KEY)==='1'; }
+function slRequiredModeGet(){ return slRequired()?'on':'off'; }
+function slRequiredModeSet(v){
+  const on=(v==='on');
+  if(on!==slRequired()){
+    lsPut(SL_REQ_KEY,on?'1':'');
+    if(typeof audLog==='function') audLog('','','setting-changed','Standard language: '+(on?'mandatory':'optional'));
+  }
+  return slRequiredModeGet();
+}
+/* An entry's programme and Item 1a level are what make it selectable for a new
+   DD-254. Blank means "any": an organisation with one standard paragraph should
+   not have to describe it before the setting works. */
+function slLevelOf(t){ return String((t&&t.level)||'').trim(); }
+function slProgramOf(t){ return String((t&&t.program)||'').trim(); }
+function slMatches(t,program,level){
+  const tp=slProgramOf(t), tl=slLevelOf(t);
+  if(tp && program && tp!==program) return false;
+  if(tl && level && tl!==level) return false;
+  return true;
+}
+function slCandidates(program,level){
+  return slAll().filter(function(t){ return slBlockText(t) && slMatches(t,program,level); });
+}
 function slAll(){ return (typeof tplLoad==='function') ? (tplLoad(TPL_SL)||[]) : []; }
 function slFind(ref){
   const arr=slAll(); const i=parseInt(ref,10);
@@ -11124,6 +11196,77 @@ function slAppliedIn(txt){
 function slApplied(){
   const el=document.getElementById('item13');
   return el?slAppliedIn(el.value):[];
+}
+/* Mandatory standard language asks once, at creation: the programme and the
+   Item 1a level are decided then, before any wording has been typed, and that
+   is the one moment the question is not an interruption. Both answers only
+   narrow the list - the preparer still chooses the entry, because the library
+   may hold two that fit and the tool has no basis for preferring one.
+
+   Declining is allowed and leaves the blocking error standing. A dialog that
+   cannot be dismissed is one people learn to fight, and the library may
+   genuinely not hold the entry this contract needs yet. */
+/* One statement of the rule, read by the live validator that holds the status
+   at Draft and by the issue checklist, so the two cannot come to disagree about
+   what is blocking. Returns '' when nothing is wrong. */
+function slRequiredError(){
+  if(typeof slRequired!=='function' || !slRequired()) return '';
+  if(typeof slApplied!=='function') return '';
+  if(slApplied().length) return '';
+  return slAll().length ? 'Item 13: Standard language is mandatory in Settings and none of the Standard Language library appears in Item 13. Insert the entry for this programme and Item 1a level from the Standard Language panel.' : 'Item 13: Standard language is mandatory in Settings but the Standard Language library is empty. Add the wording to the library, or set Standard language back to Optional.';
+}
+function slPickForNew(){
+  return new Promise(function(resolve){
+    const progs=(typeof ctProgramOptions==='function')?ctProgramOptions(slAll()):[];
+    const LV=[['','Any level'],['C','Confidential'],['S','Secret'],['TS','Top Secret']];
+    const ov=document.createElement('div'); ov.id='slPickDlg';
+    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;';
+    const opt=function(v,l,sel){ return '<option value="'+tplEsc(v)+'"'+(sel===v?' selected':'')+'>'+tplEsc(l)+'</option>'; };
+    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:560px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
+      +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">📑 Standard language for this DD-254</div>'
+      +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">Standard language is mandatory in Settings. Choose the programme and the Item 1a level, then the entry to insert at the top of Item 13.</div>'
+      +'<div style="display:flex;gap:8px;margin-bottom:9px;">'
+      +'<label style="font-size:10.5px;color:#5a6a80;">Programme<br><select id="slPickProg" style="width:200px;font-size:11.5px;">'
+        +opt('','All programmes','')+progs.map(function(x){ return opt(x,x,''); }).join('')+'</select></label>'
+      +'<label style="font-size:10.5px;color:#5a6a80;">Item 1a level<br><select id="slPickLvl" style="width:160px;font-size:11.5px;">'
+        +LV.map(function(o){ return opt(o[0],o[1],''); }).join('')+'</select></label>'
+      +'</div>'
+      +'<div id="slPickList" style="max-height:230px;overflow:auto;"></div>'
+      +'<div style="display:flex;gap:8px;margin-top:10px;">'
+      +'<button id="slPickSkip" style="background:#8a94a0;color:#fff;border:none;padding:7px 14px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Not now</button>'
+      +'<span style="font-size:10.5px;color:#8a6a00;align-self:center;">Skipping leaves a blocking error until Item 13 carries standard language.</span>'
+      +'</div></div>';
+    document.body.appendChild(ov);
+    const done=function(v){ try{ov.remove();}catch(e){} resolve(v); };
+    const draw=function(){
+      const pr=ov.querySelector('#slPickProg').value, lv=ov.querySelector('#slPickLvl').value;
+      const all=slAll();
+      const hit=all.filter(function(t){ return slBlockText(t) && slMatches(t,pr,lv); });
+      const host=ov.querySelector('#slPickList');
+      if(!hit.length){
+        host.innerHTML='<div style="font-size:11.5px;color:#a03028;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:8px 10px;">No entry in the library is written for that programme and level. Widen the choice above, or add the wording to the Standard Language library first.</div>';
+        return;
+      }
+      host.innerHTML=hit.map(function(t){
+        const idx=all.indexOf(t);
+        const lab=LV.filter(function(o){ return o[0]===slLevelOf(t); })[0];
+        const tags=(slProgramOf(t)||'any programme')+' · '+(slLevelOf(t)?(lab?lab[1]:slLevelOf(t)):'any level');
+        const body=slBlockText(t);
+        return '<button class="slPickOne" data-idx="'+idx+'" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
+          +'<b>'+tplEsc(t.label||'(unnamed)')+'</b>'
+          +'<div style="font-size:10px;color:#5a6a80;margin-top:2px;">'+tplEsc(tags)+'</div>'
+          +'<div style="font-size:10.5px;color:#4a5866;margin-top:3px;white-space:pre-wrap;">'+tplEsc(body.slice(0,180))+(body.length>180?'…':'')+'</div></button>';
+      }).join('');
+      Array.prototype.forEach.call(host.querySelectorAll('.slPickOne'),function(b){
+        b.onclick=function(){ done({index:parseInt(b.getAttribute('data-idx'),10),level:ov.querySelector('#slPickLvl').value}); };
+      });
+    };
+    ov.querySelector('#slPickProg').onchange=draw;
+    ov.querySelector('#slPickLvl').onchange=draw;
+    ov.querySelector('#slPickSkip').onclick=function(){ done(null); };
+    ov.addEventListener('keydown',function(e){ if(e.key==='Escape') done(null); });
+    draw();
+  });
 }
 function slInsert(ref){
   const t=slFind(ref); if(!t) return;
@@ -12449,12 +12592,20 @@ async function dashTplEdit(kind){
         +scgLinkHtml(t,i)+'</div>';
     }
     if(kind==='sl'){
-      /* Name plus the text itself. Nothing else: this library exists so a company
-         can keep the wording it puts on every DD-254 in one place, not to model
-         anything about the form. */
+      /* Name, the text itself, and the two things that decide which entry a new
+         DD-254 is offered when standard language is mandatory: the programme it
+         belongs to and the Item 1a level it is written for. Both may be left
+         blank, which means "any" - an organisation with one standard paragraph
+         should not have to classify it before the setting works. */
       return '<div style="display:flex;gap:8px;margin-bottom:6px;align-items:flex-start;background:#fff;border:1px solid #c4ccd4;border-radius:5px;padding:8px;">'
         +mv(i)
+        +'<div style="display:flex;flex-direction:column;gap:3px;align-items:flex-start;">'
         +'<input type="text" value="'+tplEsc(t.label)+'" placeholder="Name (e.g. Acme corporate standard)" style="width:190px;font-size:11px;" oninput="TPL_EDIT['+i+'].label=this.value">'
+        +'<input type="text" value="'+tplEsc(t.program||'')+'" list="ctProgramList" placeholder="Programme (blank = any)" title="Programme this wording belongs to. The options come from the Security Manager templates. Blank means it fits any programme." style="width:190px;font-size:11px;" oninput="TPL_EDIT['+i+'].program=this.value">'
+        +'<select title="Item 1a level this wording is written for. Blank means it fits any level." style="width:190px;font-size:11px;" onchange="TPL_EDIT['+i+'].level=this.value">'
+        +[['','Any Item 1a level'],['C','Confidential'],['S','Secret'],['TS','Top Secret']].map(function(o){ return '<option value="'+o[0]+'"'+((String(t.level||'')===o[0])?' selected':'')+'>'+o[1]+'</option>'; }).join('')
+        +'</select>'
+        +'</div>'
         +'<textarea placeholder="The text to insert at the top of Block 13\u2026" style="flex:1;min-height:110px;font-size:11px;" oninput="TPL_EDIT['+i+'].text=this.value">'+tplEsc(t.text)+'</textarea>'
         +'<button class="dash-btn" style="background:#7a4038;" onclick="dashTplDel('+i+')">\u2715</button></div>';
     }
@@ -12497,7 +12648,7 @@ async function dashTplEdit(kind){
     +'<button class="dash-btn" style="background:#2b3440;" onclick="dashTplDone()">✓ Done</button></div>'
     +(kind==='scg'?'<div id="scgUnclassNote" style="background:#fdf3d8;border:1px solid #e8d49a;color:#5a3000;border-radius:4px;padding:6px 10px;margin-bottom:8px;font-size:11px;line-height:1.45;">Enter only <b>unclassified</b> titles and identifiers. The DD Form 254 instructions ask Item 13 to list the unclassified titles or identities of the guides, and every referenced guide must be attached or forwarded under separate cover. The guides themselves are never stored here.</div>':'')
     +((kind==='fac'||kind==='perf')?'<div id="tplDupWarn" style="display:none;background:#fdecea;border:1px solid #e6a6a0;color:#a03028;border-radius:4px;padding:6px 10px;margin-bottom:8px;font-size:11px;font-weight:bold;"></div>':'')
-    +(kind==='ct'?'<datalist id="ctSmList">'+tplLoad(TPL_SM).map(function(x){return '<option value="'+tplEsc(x.name||'')+'" label="'+tplEsc([x.email,x.program].filter(Boolean).join(' · '))+'"></option>';}).join('')+'</datalist>':'')+(kind==='ct'?'<datalist id="ctProgramList">'+Array.from(new Set(arr.map(ctProgram).filter(Boolean))).sort().map(function(p){return '<option value="'+tplEsc(p)+'"></option>';}).join('')+'</datalist>'+ctRepoToolbar():'')+'<div id="tplRows">'+(kind==='ct'?'':(arr.length?arr.map(function(t,i){return '<div class="tpl-row" data-index="'+i+'" data-lbl="'+tplEsc(dashTplSearchText(t))+'">'+row(t,i)+(kind==='ct'?'<div class="ct-dup-warning" role="status" style="display:none;background:#fdecea;border:1px solid #e6a6a0;color:#a03028;border-radius:4px;padding:6px 10px;margin:3px 0 8px;font-size:11px;"></div>':'')+'</div>';}).join(''):'<div style="color:#7a8aa0;padding:20px 0;">None yet — click ＋ Add.</div>'))+'</div>';
+    +((kind==='ct'||kind==='b13')?'<datalist id="ctSmList">'+tplLoad(TPL_SM).map(function(x){return '<option value="'+tplEsc(x.name||'')+'" label="'+tplEsc([x.email,x.program].filter(Boolean).join(' · '))+'"></option>';}).join('')+'</datalist>':'')+((kind==='ct'||kind==='b13'||kind==='sl')?'<datalist id="ctProgramList">'+ctProgramOptions(arr).map(function(p){return '<option value="'+tplEsc(p)+'"></option>';}).join('')+'</datalist>':'')+(kind==='ct'?ctRepoToolbar():'')+'<div id="tplRows">'+(kind==='ct'?'':(arr.length?arr.map(function(t,i){return '<div class="tpl-row" data-index="'+i+'" data-lbl="'+tplEsc(dashTplSearchText(t))+'">'+row(t,i)+(kind==='ct'?'<div class="ct-dup-warning" role="status" style="display:none;background:#fdecea;border:1px solid #e6a6a0;color:#a03028;border-radius:4px;padding:6px 10px;margin:3px 0 8px;font-size:11px;"></div>':'')+'</div>';}).join(''):'<div style="color:#7a8aa0;padding:20px 0;">None yet — click ＋ Add.</div>'))+'</div>';
   const editTouch=function(ev){if(ev.target.id==='tplFilter'||ev.target.closest('#ctRepoTools')||ev.target.closest('#ctOrderPanel')||ev.target.closest('.ct-order-row'))return;dashTplTouch();};
   host.oninput=editTouch;host.onchange=editTouch;
   if(kind==='fac'||kind==='perf') dashTplCageCheck();
@@ -12716,6 +12867,10 @@ function exportPrep254() {
   if(gc('c10c') && !gc('c10b')) warn.push('Item 10c (CNWDI) requires 10b (Restricted Data) — check 10b.');
   if(gc('c11h') && !gc('c10a')) warn.push('Item 11h (COMSEC accountable material) requires 10a (COMSEC) — check 10a.');
   if(!gv('item13'))             warn.push('Item 13: No special requirements text entered — review all checked 10/11 items for required narrative.');
+  /* Mandatory standard language. Blocking, because the setting exists to stop a
+     DD-254 going out without the organisation's wording on it; advisory would
+     make it a reminder, which the library already was. */
+  if(typeof slRequiredError==='function'){ const _slErr=slRequiredError(); if(_slErr) must.push(_slErr); }
   if(foYes  && !gv('i4prev'))  warn.push('Item 4: Follow-on contract marked YES — enter prior contract number.');
   if(finYes)                    warn.push('Item 5: Final DD Form 254 marked — verify disposition requirements and retention period are documented.');
   if(gc('c11f') && !document.getElementById('dist18d')?.checked)
@@ -13767,6 +13922,10 @@ const SETTINGS_DEFS=[
     help:'Required asks why whenever you set a finding aside, mark a DD-254 Blocked or cancel one, so the audit trail can be reviewed later. Optional lets you leave the reason blank; the action is still written to the audit log as "No reason given", and changing this setting is logged too.',
     choices:[['required','Required'],['optional','Optional']],
     read:reasonsModeGet, write:reasonsModeSet },
+  { key:'slRequired', label:'Standard language', type:'choice',
+    help:'Optional leaves the Standard Language library as a library: insert from it when you want it. Mandatory means a new DD-254 is offered the entry matching its programme and Item 1a level, and a DD-254 carrying none of that wording in Item 13 cannot leave Draft. Presence in Item 13 is what is checked, so deleting the paragraph removes it. Changing this setting is written to the audit log.',
+    choices:[['off','Optional'],['on','Mandatory']],
+    read:slRequiredModeGet, write:slRequiredModeSet },
   { key:'bkEvery', label:'Backup reminder', type:'number', min:1, max:50,
     help:'Warn after this many unsaved changes. 1 warns on the first change.',
     suffix:'change(s)', read:bkEveryGet, write:bkEverySet },
