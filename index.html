@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.8.0</title>
+<title>DD254 Interactive v2.9.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -660,7 +660,7 @@ body.ws-dragging{user-select:none;}
 <div class="rule-n">Do NOT use DD Form 254 for foreign contractors, foreign governments, or NATO activities. Issue a Security Aspects Letter instead.</div>
 <p>Verify existing FCL via <a class="src-link" href="https://www.dcsa.mil/is/niss/" target="_blank" rel="noopener">NISS/NCAISS</a> at <a class="src-link" href="https://www.dcsa.mil" target="_blank" rel="noopener">dcsa.mil</a>.</p><p style="margin-top:5px;"><strong>Controlling clause:</strong> <a class="clause-tag far" href="https://www.acquisition.gov/far/52.204-2" target="_blank" rel="noopener">FAR 52.204-2</a> Security Requirements — required in every contract where contractor must access classified information.</p>
 </details>
-<select id="fcl1a" onchange="run()">
+<select id="fcl1a" onchange="run();if(typeof slAutoAfterEdit==='function')slAutoAfterEdit()">
 <option value="">— Select FCL Level Required —</option>
 <option value="C">Confidential</option>
 <option value="S">Secret</option>
@@ -1395,14 +1395,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.153';
+const TOOL_VERSION='2.154';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.8.0';
+const RELEASE_VERSION='2.9.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -2045,6 +2045,7 @@ function run(){
 /* The revision summary is rewritten first, so every check below reads the Item 13
    that will actually print. */
 if(typeof rsumSync==='function') rsumSync();
+
 validationAlertReferencesApply();
 // Read state
 S.fcl=ck('fcl1a').value;
@@ -7414,9 +7415,13 @@ function ctPickContractType(list){
 
 async function dashNewDraft(stage){
   stage=stage||'orig';
-  let t=await uiPrompt('Title this DD-254 '+(stage==='sol'?'solicitation ':'')+'(you can rename it any time):','');
-  if(t==null) return;
-  t=t.trim()||'Untitled DD-254';
+  const ans=await dashPartyPrompt({
+    heading:'New DD-254 '+(stage==='sol'?'solicitation':'original'),
+    note:'Named for the person and the contract. Everything here can be changed later with the pencil.',
+    ok:'Create'
+  });
+  if(ans==null) return;
+  let t=ans.title;
   if(stage==='sol'&&!/solicitation/i.test(t)) t+=' — Solicitation';
   /* Contract type offer. These templates used to carry Block 13 text alone;
      they now carry the same structure as a DD-254 Template Language entry, so
@@ -7429,25 +7434,25 @@ async function dashNewDraft(stage){
      the form, beside the other template libraries, in the same search-and-apply
      motion the preparer already uses. */
   const tplPick=null;
-  const rec={id:dashId(),title:t,stage:stage,ctType:(tplPick&&tplPick.label)||'',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'Draft',todos:[],notes:'',workspace:null,meta:{contract:'',contractor:'',errors:0,warns:0}};
+  const rec={id:dashId(),title:t,stage:stage,ctType:(tplPick&&tplPick.label)||'',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'Draft',todos:[],notes:'',workspace:null,
+    requestedBy:ans.email,requestedByName:ans.person,
+    meta:{contract:ans.prime,contractor:'',errors:0,warns:0}};
   await draftPut(rec);
   audLog(rec.id,rec.title,'created',stage+(tplPick?' (contract type: '+(tplPick.label||'unnamed')+')':''));
   resetFormFields();
-  window.CURRENT_REQUESTOR_EMAIL='';
+  window.CURRENT_REQUESTOR_EMAIL=ans.email;
   DASH.current=rec.id;
   showFormView();
   if(typeof initWizard==='function') initWizard();
   const r3=document.querySelector('input[name="spec"][value="3a"]'); if(r3) r3.checked=true;
-  /* Mandatory standard language, offered once on a form that is still empty. */
-  if(typeof slRequired==='function' && slRequired() && slAll().length){
-    const slPick=await slPickForNew();
-    if(slPick){
-      const lv=document.getElementById('fcl1a');
-      if(lv && slPick.level && !lv.value) lv.value=slPick.level;
-      slInsert(slPick.index);
-      audLog(rec.id,rec.title,'standard-language',(slAll()[slPick.index]||{}).label||'(unnamed)');
-    }
-  }
+  /* Asked once, written where they belong: Item 2a, Item 2b and the requestor. */
+  const _i2a=document.getElementById('i2a'); if(_i2a) _i2a.value=ans.prime;
+  const _i2b=document.getElementById('i2b'); if(_i2b) _i2b.value=ans.sub;
+  /* Standard language is not asked about at creation. At that moment Item 1a is
+     empty and the programme is unknown, so the question could only be answered
+     by the preparer telling the tool what the form is about to say. It is
+     inserted automatically instead, from the programme and the Item 1a level,
+     as soon as the form carries both. */
   window.DD254_CT_APPLIED=(tplPick&&tplPick.label)||'';
   if(tplPick&&tplPick.data) ctApplyWsToForm(ctApplyDataToWorkspace(tplPick.data,null,tplPick));
   /* A solicitation says so in Item 9 before it says anything else. Applied after
@@ -7458,6 +7463,7 @@ async function dashNewDraft(stage){
   }
   if(typeof run==='function') run();
   dashSaveNow();
+  return rec;
 }
 
 /* ── DISMISSING A VALIDATION FLAG ────────────────────────────────
@@ -7649,6 +7655,9 @@ async function dashOpen(id){
      the operator's own text. The summary ignores this line in any case - see
      rsumItem13 - which is what actually keeps it out of the change list. */
   if(typeof cmaSync==='function' && I13_FINAL_STATUS.indexOf(String((rec||{}).status||''))<0) cmaSync();
+  /* Same rule, same reason: a draft that predates the setting gains its
+     standard language when it is opened, and an issued one is left alone. */
+  if(typeof slAutoApply==='function' && I13_FINAL_STATUS.indexOf(String((rec||{}).status||''))<0) slAutoApply();
   if(typeof initWizard==='function') initWizard();
   const t=document.getElementById('draftBarTitle'); if(t) t.textContent=rec.title||(rec.meta&&rec.meta.contract)||'Untitled draft';
 }
@@ -7676,15 +7685,137 @@ async function dashDelete(id){
   if(DASH.current===id) DASH.current=null;
   dashRenderCards();
 }
+/* \u2500\u2500 HOW A DD-254 IS NAMED \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   A free-text box asked for a title and got whatever was typed, so the same
+   contract could arrive under three different names depending on the day. The
+   owner's convention is the person and the contract, so that is what the box
+   asks for (owner, 7 October 2026).
+
+   The answers are not only a name. The prime contract number is Item 2a, the
+   subcontract number is Item 2b and the e-mail is the requestor, so asking for
+   them here means not typing them again on the form. The composed name is
+   editable before it is accepted and afterwards through the same pencil: a
+   convention that cannot be departed from is one people work around. */
+function dashNameCompose(p){
+  const person=String((p&&p.person)||'').trim();
+  const prime=String((p&&p.prime)||'').trim();
+  const sub=String((p&&p.sub)||'').trim();
+  const head=[person,prime].filter(Boolean).join(' \u2014 ');
+  return (head+(sub?(head?' · ':'')+sub:'')).trim();
+}
+function dashEmailOk(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||'').trim()); }
+/* locked: an Issued, Cancelled or Skipped DD-254 may be renamed - a name is not
+   a statement about what went out - but its Items 2a and 2b are the record and
+   are shown without being editable. */
+function dashPartyPrompt(o){
+  o=o||{};
+  return new Promise(function(resolve){
+    const locked=!!o.locked;
+    const ov=document.createElement('div'); ov.id='dashPartyDlg';
+    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;';
+    const row=function(id,label,val,hint,dis){
+      return '<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:7px;">'+dashEsc(label)
+        +'<input id="'+id+'" type="text" value="'+dashEsc(val||'')+'"'+(dis?' disabled':'')
+        +' style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;'+(dis?'background:#eef1f4;color:#6a7888;':'')+'">'
+        +(hint?'<span style="font-size:9.5px;color:#8a94a0;">'+dashEsc(hint)+'</span>':'')+'</label>';
+    };
+    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:520px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
+      +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">'+dashEsc(o.heading||'Name this DD-254')+'</div>'
+      +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">'+dashEsc(o.note||'The name is built from the person and the contract. Everything here can be changed later with the pencil.')+'</div>'
+      +row('np_person','First and last name',o.person,'',false)
+      +row('np_prime','Prime contract number (Item 2a)',o.prime,locked?'This DD-254 is '+(o.status||'issued')+' \u2014 Items 2a and 2b are the record of what went out.':'',locked)
+      +row('np_sub','Subcontract number (Item 2b) \u2014 optional',o.sub,'',locked)
+      +row('np_email','E-mail',o.email,'Becomes the requestor e-mail, which is copied on distribution.',false)
+      +'<div style="border-top:1px solid #e3e8ee;margin:4px 0 9px;"></div>'
+      +row('np_title','Name of this DD-254',o.title||'','Filled in from the fields above. Type here to use something else.',false)
+      +'<div id="np_err" role="alert" style="font-size:10.5px;color:#a03028;min-height:14px;margin-bottom:6px;"></div>'
+      +'<div style="display:flex;gap:8px;justify-content:flex-end;">'
+      +'<button id="np_cancel" style="background:#8a94a0;color:#fff;border:none;padding:7px 14px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Cancel</button>'
+      +'<button id="np_ok" style="background:#17427d;color:#fff;border:none;padding:7px 16px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">'+dashEsc(o.ok||'Create')+'</button>'
+      +'</div></div>';
+    document.body.appendChild(ov);
+    const g=function(id){ return ov.querySelector('#'+id); };
+    const done=function(v){ try{ov.remove();}catch(e){} resolve(v); };
+    /* The name follows the fields until it is typed in, and then stops: at that
+       point it is the operator's name for this DD-254, not a derived one. */
+    let manual=!!(o.title && o.title!==dashNameCompose(o));
+    const recompose=function(){
+      if(manual) return;
+      g('np_title').value=dashNameCompose({person:g('np_person').value,prime:g('np_prime').value,sub:g('np_sub').value});
+    };
+    ['np_person','np_prime','np_sub'].forEach(function(id){ g(id).oninput=recompose; });
+    g('np_title').oninput=function(){ manual=true; };
+    const submit=function(){
+      const person=g('np_person').value.trim(), prime=g('np_prime').value.trim();
+      const sub=g('np_sub').value.trim(), email=g('np_email').value.trim();
+      const miss=[];
+      if(!person) miss.push('a first and last name');
+      if(!prime) miss.push('the prime contract number');
+      if(!email) miss.push('an e-mail');
+      if(miss.length){ g('np_err').textContent='Still needed: '+miss.join(', ')+'.'; return; }
+      if(!dashEmailOk(email)){ g('np_err').textContent='That does not look like an e-mail address.'; return; }
+      const title=g('np_title').value.trim()||dashNameCompose({person:person,prime:prime,sub:sub});
+      done({person:person,prime:prime,sub:sub,email:email,title:title});
+    };
+    g('np_ok').onclick=submit;
+    g('np_cancel').onclick=function(){ done(null); };
+    ov.addEventListener('keydown',function(e){
+      if(e.key==='Escape') done(null);
+      if(e.key==='Enter'&&e.target&&e.target.tagName==='INPUT') submit();
+    });
+    if(g('np_person').focus) g('np_person').focus();
+    if(!o.title) recompose();
+  });
+}
+/* Write what the dialog collected onto the record and, when it is the DD-254 on
+   screen, onto the form. Items 2a and 2b are left alone on a record that states
+   something already happened. */
+async function dashPartyApply(rec,ans,opts){
+  opts=opts||{};
+  rec.title=ans.title;
+  rec.requestedBy=ans.email;
+  rec.requestedByName=ans.person;
+  rec.meta=rec.meta||{};
+  if(!opts.lockedFields){
+    rec.meta.contract=ans.prime;
+    rec.workspace=rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]};
+    rec.workspace.texts=rec.workspace.texts||{};
+    rec.workspace.texts.i2a=ans.prime;
+    rec.workspace.texts.i2b=ans.sub;
+  }
+  rec.updatedAt=new Date().toISOString();
+  if(DASH.current===rec.id){
+    window.CURRENT_REQUESTOR_EMAIL=rec.requestedBy;
+    if(!opts.lockedFields){
+      const a=document.getElementById('i2a'); if(a) a.value=ans.prime;
+      const b=document.getElementById('i2b'); if(b) b.value=ans.sub;
+    }
+    const tb=document.getElementById('draftBarTitle'); if(tb) tb.textContent=rec.title;
+    if(typeof run==='function') run();
+  }
+  return rec;
+}
 async function dashRename(id){
   const rec=await draftGet(id); if(!rec) return;
-  let t=await uiPrompt('New title:',rec.title||'');
-  if(t==null) return;
-  rec.title=t.trim()||'Untitled DD-254';
-  rec.updatedAt=new Date().toISOString();
+  if(window.DD254_READONLY){ alert('This tab is read-only \u2014 another tab holds the lock.'); return; }
+  const ws=rec.workspace||{}, tx=ws.texts||{};
+  const locked=(typeof DASH_LOCKED!=='undefined') && !!DASH_LOCKED[rec.status];
+  const live=(DASH.current===id);
+  const ans=await dashPartyPrompt({
+    heading:'Edit this DD-254',
+    note:'The name is built from the person and the contract. Change any of them.',
+    ok:'Save',
+    person:rec.requestedByName||'',
+    prime:(live?((document.getElementById('i2a')||{}).value||''):'')||tx.i2a||(rec.meta&&rec.meta.contract)||'',
+    sub:(live?((document.getElementById('i2b')||{}).value||''):'')||tx.i2b||'',
+    email:rec.requestedBy||'',
+    title:rec.title||'',
+    locked:locked, status:rec.status
+  });
+  if(!ans) return;
+  await dashPartyApply(rec,ans,{lockedFields:locked});
   await draftPut(rec);
-  const tb=document.getElementById('draftBarTitle');
-  if(tb&&DASH.current===id) tb.textContent=rec.title;
+  audLog(id,rec.title,'renamed',locked?('name only \u2014 record is '+rec.status):'name, contract and requestor');
   dashRenderCards();
 }
 /* Write a template's whole content into a draft workspace. Contract Type
@@ -7764,6 +7895,9 @@ function ctApplyWsToForm(ws){
   if(typeof cmaSync==='function') cmaSync();
   if(typeof cuiSync==='function') cuiSync();
   syncUIFromDom(); distSmRender();
+  /* A template carries the programme, so applying one can settle which standard
+     language this DD-254 calls for. */
+  if(typeof slAutoAfterEdit==='function') slAutoAfterEdit();
   } finally {window.CT_APPLY_BUSY=false;}
 }
 /* The form-side picker hands straight to dashApplyB13, which already asks before
@@ -7798,6 +7932,71 @@ async function dashApplyB13(id,idx){
   audLog(id,rec.title,'contract-type-applied',t.label||'unnamed');
   dashRenderCards();
 }
+/* Apply a saved DD-254 template to a card's DD-254. Deliberately the same shape
+   as dashApplyB13: ask before writing over Item 13, apply to the open form when
+   that is the record on screen so the preparer watches it happen, and to the
+   stored workspace otherwise. */
+async function dashApplyTpl(id,ref){
+  if(ref===''||ref==null) return;
+  if(window.DD254_READONLY){ alert('This tab is read-only \u2014 another tab holds the lock.'); return; }
+  const t=(typeof ctFind==='function')?ctFind(ref):null;
+  if(!t){ alert('That DD-254 template was not found. It may have been renamed or deleted.'); return; }
+  const d=t.data; if(!d) return alert('That DD-254 template has no content saved.');
+  const rec=await draftGet(id); if(!rec) return alert('Draft not found.');
+  if(typeof DASH_LOCKED!=='undefined' && DASH_LOCKED[rec.status]){
+    alert('\u26d4 This DD-254 is '+rec.status+'.\n\nIt is the record of what went out and is not rewritten. Copy it and apply the template to the copy.');
+    return;
+  }
+  const cur=(DASH.current===id)?(((document.getElementById('item13')||{}).value)||''):(((rec.workspace||{}).texts||{}).item13||'');
+  if(String(cur).trim() && !(await uiConfirm('This DD-254 already has Block 13 text.\n\nApply the template \u201c'+(t.label||'unnamed')+'\u201d over it?'))) return;
+  if(DASH.current===id){
+    ctApplyWsToForm(ctApplyDataToWorkspace(d,null,t));
+    const sl=document.getElementById('ctTplSel'); if(sl) sl.value=t.ioId||'';
+    if(typeof buildCtPanel==='function') buildCtPanel();
+    if(typeof run==='function') run();
+    await dashSaveNow();
+  } else {
+    rec.workspace=ctApplyDataToWorkspace(d,rec.workspace,t);
+    rec.updatedAt=new Date().toISOString();
+    await draftPut(rec);
+  }
+  audLog(id,rec.title,'template-applied',[t.label,(typeof ctSrcLabel==='function'?ctSrcLabel(t):''),t.srcDate].filter(Boolean).join(' · '));
+  dashRenderCards();
+}
+/* What a type-ahead hands back is text, so each resolves it through the list it
+   was rendered from, and says so when nothing matches rather than applying
+   something near-enough. */
+async function dashCardTpl(id,input){
+  const text=String((input&&input.value)||'').trim();
+  if(!text) return;
+  const ref=(typeof ctPickerResolve==='function')?ctPickerResolve(text):'';
+  if(!ref){ alert('No saved DD-254 template is named \u201c'+text+'\u201d.\n\nType part of a contract or order number and choose from the list.'); return; }
+  input.value='';
+  await dashApplyTpl(id,ref);
+}
+async function dashCardType(id,input){
+  const text=String((input&&input.value)||'').trim();
+  if(!text) return;
+  const b13=(typeof tplLoad==='function')?(tplLoad(TPL_B13)||[]):[];
+  let idx=-1;
+  b13.forEach(function(x,i){ if(String(x.label||('Template '+(i+1))).toLowerCase()===text.toLowerCase()) idx=i; });
+  if(idx<0){ alert('No saved contract type is named \u201c'+text+'\u201d.\n\nType part of its name and choose from the list.'); return; }
+  input.value='';
+  await dashApplyB13(id,String(idx));
+}
+/* One datalist per kind for the whole dashboard, not one per card: a thousand
+   templates repeated down a list of cards is a thousand times the DOM for no
+   added meaning. */
+function dashPickerLists(){
+  const b13=(typeof tplLoad==='function')?(tplLoad(TPL_B13)||[]):[];
+  const tpl=(typeof ctPickerTypeahead==='function')?ctPickerTypeahead((typeof ctEnsureIds==='function')?ctEnsureIds():[],''):[];
+  return '<datalist id="dashTypeList">'
+    +b13.map(function(x,i){ return '<option value="'+dashEsc(x.label||('Template '+(i+1)))+'"></option>'; }).join('')
+    +'</datalist><datalist id="dashTplList">'
+    +tpl.map(function(x){ return '<option value="'+dashEsc(x.text)+'"></option>'; }).join('')
+    +'</datalist>';
+}
+
 /* Required-reason prompt for a cancellation. Same shape as the hold prompt;
    resolves to the text, or null if the user backs out. */
 function dashCancelPrompt(title){
@@ -8519,10 +8718,15 @@ async function dashRenderCards(openId){
           +'</div></div>'; })()
       +'<select onchange="dashSetStatus(\''+r.id+'\',this.value)" style="font-size:12px;padding:5px 8px;border:1px solid #c4ccd4;border-radius:4px;background:#fff;">'
       +dashStatusOptions(r).map(function(s){return '<option'+(r.status===s?' selected':'')+'>'+s+'</option>';}).join('')+'</select>'
+      /* Both pickers are type-aheads rather than plain dropdowns: a library of a
+         thousand templates cannot be scrolled, and the number the preparer
+         knows -- the contract or the order -- is what they want to type. */
       +(function(){ const b13=(typeof tplLoad==='function')?tplLoad(TPL_B13):[]; if(!b13.length) return '';
-        return '<select onchange="dashApplyB13(\''+r.id+'\',this.value);this.selectedIndex=0;" title="Apply a contract type (Block 13 default guidance) to this DD-254" style="font-size:12px;padding:5px 8px;border:1px solid #c4ccd4;border-radius:4px;background:#fff;max-width:160px;">'
-          +'<option value="">\u2014 Contract type\u2026 \u2014</option>'
-          +b13.map(function(x,i){return '<option value="'+i+'">'+dashEsc(x.label||('Template '+(i+1)))+'</option>';}).join('')+'</select>'; })()
+        return '<input type="search" list="dashTypeList" placeholder="\u2014 Contract type\u2026 \u2014" title="Apply a contract type (Block 13 default guidance) to this DD-254. Type to search; the list narrows as you type." onchange="dashCardType(\''+r.id+'\',this)" style="font-size:12px;padding:5px 8px;border:1px solid #c4ccd4;border-radius:4px;background:#fff;width:160px;">'; })()
+      +(function(){ const n=(typeof ctEnsureIds==='function')?ctEnsureIds().length:0;
+        const orders=(typeof ctOrderRows==='function')?ctOrderRows().length:0;
+        if(!n&&!orders) return '';
+        return '<input type="search" list="dashTplList" placeholder="\u2014 DD-254 template\u2026 \u2014" title="Apply a saved DD-254 template to this DD-254. Task orders are listed under their own number; one that follows its prime resolves to the prime&#39;s template. Type to search." onchange="dashCardTpl(\''+r.id+'\',this)" style="font-size:12px;padding:5px 8px;border:1px solid #c4ccd4;border-radius:4px;background:#fff;width:200px;">'; })()
       +'<input type="email" value="'+dashEsc(r.requestedBy||'')+'" placeholder="Requestor e-mail\u2026" onchange="dashSetRequestedBy(\''+r.id+'\',this.value)" style="font-size:12px;padding:5px 8px;border:1px solid #c4ccd4;border-radius:4px;width:150px;" title="Requestor e-mail - also added to the CSO and Requestor send list">'
       +'<button class="dash-btn dash-btn-primary" onclick="dashOpen(\''+r.id+'\')">Open</button>'
         +'<button class="dash-btn" onclick="dashRenderCards(\''+(openId===r.id?'':r.id)+'\')">Notes ('+(r.todos||[]).length+')'+((r.dist||[]).length?' · Dist ('+r.dist.length+')':'')+'</button>'
@@ -8662,7 +8866,9 @@ async function dashRenderCards(openId){
     else if(sortMode==='status') flat.sort(function(a,b){var d=STORDER[a.status||'Draft']-STORDER[b.status||'Draft']; return d||latest(b).localeCompare(latest(a));});
     flat.forEach(function(r){ walk(r,0); html+='<div style="height:12px;"></div>'; });
   }
-  host.innerHTML=html;
+  /* The two datalists the card type-aheads read, written once per render
+     rather than once per card. */
+  host.innerHTML=(typeof dashPickerLists==='function'?dashPickerLists():'')+html;
   if(openId){ var _ni=document.getElementById('todoIn_'+openId); if(_ni&&_pnT) _ni.value=_pnT; var _nd=document.getElementById('todoTaken_'+openId); if(_nd&&_pnD) _nd.value=_pnD; }
   if(typeof apply508==='function') apply508();
   /* A selected draft that was deleted cannot stay selected. One narrowed by
@@ -10389,6 +10595,113 @@ async function ctOrderBind(id,mode,templateId){
   if(ok)audLog('',o.label,'order-source-selected',mode+(templateId?' — '+templateId:''));
   return ok;
 }
+/* ── DELETING AN ORDER, AND CHANGING WHAT COVERS IT ───────────────────────
+   v2.4.1 removed coverage switching: coverage was chosen once, at creation,
+   because switching it silently re-pointed a saved source at language written
+   for a different scope. The owner asked for it back on 6 October 2026, so it
+   returns as an explicit action that says what it will do and leaves nothing
+   silently re-pointed - the order drops to "source needs review" unless a
+   template is seeded for it.
+
+   Deletion removes the ORDER IDENTITY and its source links. It does not touch
+   the template, which is language somebody wrote and may be the only copy, and
+   it does not touch a DD-254 already created from the order: that document
+   exists, carries its own immutable snapshot, and is not made not to exist by
+   removing the order row. */
+function ctOrderDeleteScope(o,records,templates){
+  records=records||ctOrderStore();
+  const own=ctSourceCandidates(o,'order',templates||tplLoad(TPL_CT));
+  return {
+    number:(o.orderType||'Order')+' '+(o.number||''),
+    prime:o.primeContract||'',
+    coverage:ctOrderCoverage(o,records),
+    sources:records.filter(function(r){ return r.recordType==='source'&&own.some(function(t){return t.ioId===r.templateId;}); }).length,
+    templates:own.length,
+    draft:!!o.draftId
+  };
+}
+async function ctOrderDelete(id){
+  if(window.DD254_READONLY){ alert('This tab is read-only — another tab holds the lock.'); return false; }
+  const records=ctOrderStore(), o=ctOrderRows(records).find(function(x){return x.ioId===id;});
+  if(!o) return false;
+  const sc=ctOrderDeleteScope(o,records,window.TPL_EDIT);
+  const keeps=[];
+  if(sc.templates) keeps.push(sc.templates+' saved template'+(sc.templates===1?'':'s')+' for this order stay in DD-254 Template Language');
+  if(sc.draft) keeps.push('the DD-254 already created from this order stays on the dashboard, with the source it was built from');
+  if(!(await uiConfirm('Delete '+sc.number+' under '+sc.prime+'?\n\nThis removes the order and its link to a saved DD-254.'
+      +(keeps.length?'\n\nKept:\n\n• '+keeps.join('\n• '):'')
+      +'\n\nThis cannot be undone.'))) return false;
+  const keep=records.filter(function(r){ return r!==o; });
+  if(!(await tplSave(TPL_ORDERS,keep))){
+    alert('Browser storage did not confirm the deletion. Keep this tab open and take a Full Backup.');
+    return false;
+  }
+  audLog('',o.label||(o.primeContract+' · '+o.number),'order-deleted',
+    sc.coverage==='order'?'had its own DD-254; template kept':'followed the prime DD-254');
+  ctOrderPanelClose(); ctRepoRender(true);
+  if(typeof buildTplSelects==='function') buildTplSelects();
+  return true;
+}
+/* Seeding a template for an order that is leaving the prime. The prime's
+   language is the honest starting point - it is what covered the order until
+   now - and the differences are what the preparer is about to edit. The prime
+   template itself is never modified. */
+function ctOrderSeedFromPrime(o,templates){
+  const prime=ctLatestSource(ctSourceCandidates(o,'prime',templates));
+  const t=prime?JSON.parse(JSON.stringify(prime)):{data:ctBlankData()};
+  t.ioId=ioNewId();
+  t.label=(o.orderType||'Order')+' '+(o.number||'')+' — '+(prime&&prime.label?prime.label:'order DD-254');
+  t.data=t.data||ctBlankData();
+  t.data.primeContract=o.primeContract;
+  t.data.taskOrder=o.number;
+  t.data.orderType=ctOrderType(o.orderType);
+  t.srcType=''; t.srcRev=''; t.srcDate='';
+  t.seededFrom=prime?(prime.ioId||''):'';
+  return t;
+}
+async function ctOrderSetCoverage(id,mode){
+  if(window.DD254_READONLY){ alert('This tab is read-only — another tab holds the lock.'); return false; }
+  if(mode!=='prime'&&mode!=='order') return false;
+  if(!(await dashTplFlush())) return false;
+  const records=ctOrderStore(), o=ctOrderRows(records).find(function(x){return x.ioId===id;});
+  if(!o) return false;
+  const was=ctOrderCoverage(o,records);
+  if(was===mode) return true;
+  const templates=tplLoad(TPL_CT);
+  let seeded=null;
+  if(mode==='order'){
+    const own=ctSourceCandidates(o,'order',templates);
+    if(!own.length) seeded=ctOrderSeedFromPrime(o,templates);
+  }
+  const what=(mode==='order')
+    ? (seeded
+        ? 'It will get its own editable DD-254 template, started from the prime’s language and carrying this order number. The prime template is not changed.'
+        : 'Its existing order-specific template will be used. Choose the version on the next panel.')
+    : 'It will follow the prime DD-254. Its order-specific template is kept in DD-254 Template Language, no longer bound to this order.';
+  if(!(await uiConfirm('Change '+(o.orderType||'Order')+' '+o.number+' from '
+      +(was==='order'?'its own DD-254':'following the prime DD-254')+' to '
+      +(mode==='order'?'its own DD-254':'following the prime DD-254')+'?\n\n'+what
+      +'\n\nAny DD-254 already created from this order keeps the source it was built from.'))) return false;
+  if(seeded){
+    templates.push(seeded);
+    if(!(await tplSave(TPL_CT,templates))){ alert('Browser storage did not confirm the new template.'); return false; }
+  }
+  o.coverageMode=mode;
+  /* The saved source belonged to the OTHER scope. Re-pointing it silently is
+     exactly what v2.4.1 was protecting against, so the order asks for review
+     instead, and ctOrderStart refuses until that is answered. */
+  o.sourceMode='review';
+  delete o.sourceVersionId;
+  o.updatedAt=new Date().toISOString();
+  if(!(await tplSave(TPL_ORDERS,records))){ alert('Browser storage did not confirm the change.'); return false; }
+  audLog('',o.label||(o.primeContract+' · '+o.number),'order-coverage-changed',
+    was+' → '+mode+(seeded?'; template seeded from the prime':''));
+  if(typeof window.TPL_EDIT!=='undefined'&&window.TPL_EDIT_KIND==='ct') window.TPL_EDIT=tplLoad(TPL_CT);
+  ctRepoRender(true);
+  ctOrderSourcePanel(id);
+  if(typeof buildTplSelects==='function') buildTplSelects();
+  return true;
+}
 /* Restore/import uses the same natural order identity even when another browser
    gave it a different ioId. Source records retain their IDs so links survive. */
 function ctOrderImportPlan(mine,incoming){
@@ -10504,6 +10817,14 @@ function ctOrderRowHtml(o,records,arr){
     +(coverage!=='order'?'<label>Program <input type="text" value="'+tplEsc(ctOrderProgram(o,arr))+'" style="width:130px;font-size:11px;" onchange="ctOrderSetProgram('+ctOrderJs(o.ioId)+',this.value)"></label>':'')
     +(coverage==='prime'&&own.length?'<button type="button" class="dash-btn" style="background:#46606f;" onclick="ctRepoGo('+arr.indexOf(own[0])+')">Edit saved task-order template</button>':'')
     +'<button type="button" class="dash-btn" style="background:#2e5077;margin-left:auto;" onclick="ctOrderStart('+ctOrderJs(o.ioId)+')">'+(o.draftId?'Open DD254':'Create DD254')+'</button>'
+    /* Coverage can be changed after creation again (owner request, 6 October
+       2026). The button names the destination, not the current state, so there
+       is no reading required to know what pressing it does. */
+    +'<button type="button" class="dash-btn" style="background:#46606f;" title="'
+      +(coverage==='order'?'Make this order follow the prime DD-254. Its own template is kept in DD-254 Template Language.':'Give this order its own DD-254 template, started from the prime&#39;s language.')
+      +'" onclick="ctOrderSetCoverage('+ctOrderJs(o.ioId)+','+ctOrderJs(coverage==='order'?'prime':'order')+')">'
+      +(coverage==='order'?'⇄ Follow the prime':'⇄ Give it its own DD-254')+'</button>'
+    +'<button type="button" class="dash-btn" style="background:#7a4038;" title="Delete this order. The saved template and any DD-254 already created from it are kept." onclick="ctOrderDelete('+ctOrderJs(o.ioId)+')">✕</button>'
     +(review?'<div style="flex-basis:100%;color:#8a6a00;">⚠ '+tplEsc(review)+' <button type="button" class="dash-btn" style="background:#8a6a00;padding:2px 7px;" onclick="ctOrderSourcePanel('+ctOrderJs(o.ioId)+')">Review DD254</button></div>':'')+'</div>';
 }
 function ctOrderPanel(html){const p=document.getElementById('ctOrderPanel');if(p){p.style.cssText='background:#f5f7fa;border:1px solid #c4ccd4;border-radius:5px;padding:10px;margin-bottom:10px;font-size:11px;';p.innerHTML=html+' <button type="button" class="dash-btn" style="background:#7a8aa0;" onclick="ctOrderPanelClose()">Close</button>';if(p.scrollIntoView)p.scrollIntoView({block:'nearest'});}}
@@ -11001,43 +11322,106 @@ function ctFind(ref){
    selects its bound template, so everything downstream is unchanged; the bound
    template is not listed twice. An order whose source still needs review is
    shown and cannot be chosen, because there is nothing to apply yet. */
+/* The options every DD-254 template picker offers: the saved orders, each under
+   the number a preparer searches by, and the templates. The form's picker and
+   the dashboard's start-from picker call this, because what the picker lists has
+   been wrong twice and two copies of it would be two places to be wrong. */
+function ctPickerEntries(arr,filter){
+  const q=String(filter||'').trim().toLowerCase();
+  const hit=function(text){ return !q || String(text||'').toLowerCase().indexOf(q)>=0; };
+
+  /* Every saved order is listed under the number the preparer searches by. An
+     order that follows the prime resolves to the PRIME's template: the whole
+     point of the picker is that nobody has to remember which prime an order
+     belongs to. v2.7.1 listed only orders with their own DD-254, so typing a
+     prime-following order number found nothing at all and the preparer was
+     back to remembering the mapping. */
+  const orderOpts=[]; const bound={};
+  try{
+    const records=(typeof ctOrderStore==='function')?ctOrderStore():[];
+    const rows=(typeof ctOrderRows==='function')?ctOrderRows(records):[];
+    rows.forEach(function(o){
+      const coverage=(typeof ctOrderCoverage==='function')?ctOrderCoverage(o,records):o.coverageMode;
+      const own=(coverage==='order');
+      const name=(o.primeContract||'')+' · '+(o.number||'')+' — '+(o.orderType||'Order')
+        +(own?' DD-254':' follows the prime DD-254');
+      if(!hit(name+' '+(o.label||''))) return;
+      /* The bound source first: it is the version this order was reviewed
+         against. Falling back to the prime's current template is right for a
+         prime-following order -- that template IS what covers it -- but the
+         option says which one it resolved to, because the two can differ. */
+      const v=(typeof ctOrderSource==='function')?ctOrderSource(o,records):null;
+      let tid=(v&&v.templateId&&arr.some(function(t){return t.ioId===v.templateId;}))?v.templateId:'';
+      if(!tid && !own && typeof ctSourceCandidates==='function' && typeof ctLatestSource==='function'){
+        const prime=ctLatestSource(ctSourceCandidates(o,'prime',arr));
+        if(prime&&prime.ioId) tid=prime.ioId;
+      }
+      /* A prime-following order says which template it resolves to, because the
+         preparer searched for an order number and is about to insert something
+         filed under a contract number. */
+      let via='';
+      if(tid&&!own){ const r=arr.find(function(t){return t.ioId===tid;}); via=(r&&r.label)||''; }
+      if(tid){
+        /* An own-coverage order owns its template, so the template is not also
+           listed on its own. A prime template covers the prime and every order
+           that follows it, so it stays in the Templates list as itself. */
+        if(own) bound[tid]=1;
+        orderOpts.push({ref:tid,text:name+(via?' → '+via:'')});
+      } else {
+        orderOpts.push({ref:'',text:name,why:(own?'source needs review':'no prime template saved yet')});
+      }
+    });
+  }catch(e){}
+
+  const tplOpts=arr.map(function(t,i){
+    if(bound[t.ioId]) return null;
+    if(q&&(typeof dashTplSearchText==='function'?dashTplSearchText(t):String(t.label||'').toLowerCase()).indexOf(q)<0) return null;
+    return {ref:t.ioId,text:(t.label||('Template '+(i+1)))+(t.srcDate?' — src '+t.srcDate:' — NO SOURCE DATE')};
+  }).filter(Boolean);
+
+  return {orders:orderOpts,templates:tplOpts};
+}
+/* The form's select renders the entries as grouped options. */
+function ctPickerOptions(arr,filter){
+  const e=ctPickerEntries(arr,filter);
+  const opt=function(x){
+    return x.ref
+      ? '<option value="'+tplEsc(x.ref)+'">'+tplEsc(x.text)+'</option>'
+      : '<option value="" disabled>'+tplEsc(x.text+' — '+x.why)+'</option>';
+  };
+  return (e.orders.length?'<optgroup label="Task orders, BPAs and delivery orders">'+e.orders.map(opt).join('')+'</optgroup>':'')
+    +(e.templates.length?'<optgroup label="Templates">'+e.templates.map(opt).join('')+'</optgroup>':'');
+}
+/* The card's type-ahead renders them as datalist options and resolves what was
+   typed back through the SAME list. A name is made unique when it has to be,
+   because resolving by text is only safe while the text is unique. */
+function ctPickerTypeahead(arr,filter){
+  const e=ctPickerEntries(arr,filter);
+  const seen={}, out=[];
+  e.orders.concat(e.templates).forEach(function(x){
+    if(!x.ref) return;
+    let text=x.text, n=2;
+    while(seen[text.toLowerCase()]){ text=x.text+' ('+(n++)+')'; }
+    seen[text.toLowerCase()]=x.ref;
+    out.push({ref:x.ref,text:text});
+  });
+  return out;
+}
+function ctPickerResolve(text){
+  const want=String(text||'').trim().toLowerCase();
+  if(!want) return '';
+  const list=ctPickerTypeahead(ctEnsureIds(),'');
+  const hit=list.filter(function(x){ return x.text.toLowerCase()===want; })[0];
+  return hit?hit.ref:'';
+}
 function buildCtSelect(){
   const sel=document.getElementById('ctTplSel'); if(!sel) return;
   let arr=ctEnsureIds();
   const link=window.DD254_ORDER_SOURCE;
   if(link&&link.snapshot){const saved=Object.assign({},link.snapshot,{label:(link.snapshot.label||'Source')+' — saved workflow source'});arr=arr.map(function(t){return t.ioId===link.templateId?saved:t;});if(!arr.some(function(t){return t.ioId===link.templateId;}))arr.push(saved);}
   const cur=sel.value;
-  const q=(window.CT_FILTER||'').trim().toLowerCase();
-  const hit=function(text){ return !q || String(text||'').toLowerCase().indexOf(q)>=0; };
-
-  const orderOpts=[]; const bound={};
-  try{
-    const records=(typeof ctOrderStore==='function')?ctOrderStore():[];
-    const rows=(typeof ctOrderRows==='function')?ctOrderRows(records):[];
-    rows.forEach(function(o){
-      if((typeof ctOrderCoverage==='function'?ctOrderCoverage(o,records):o.coverageMode)!=='order') return;
-      const v=(typeof ctOrderSource==='function')?ctOrderSource(o,records):null;
-      const tid=v&&v.templateId;
-      const name=(o.primeContract||'')+' · '+(o.number||'')+' — '+(o.orderType||'Order')+' DD-254';
-      if(!hit(name+' '+(o.label||''))) return;
-      if(tid&&arr.some(function(t){return t.ioId===tid;})){
-        bound[tid]=1;
-        orderOpts.push('<option value="'+tplEsc(tid)+'">'+tplEsc(name)+'</option>');
-      } else {
-        orderOpts.push('<option value="" disabled>'+tplEsc(name+' — source needs review')+'</option>');
-      }
-    });
-  }catch(e){}
-
-  const tplOpts=arr.map(function(t,i){
-    if(bound[t.ioId]) return '';
-    if(q&&(typeof dashTplSearchText==='function'?dashTplSearchText(t):String(t.label||'').toLowerCase()).indexOf(q)<0) return '';
-    return '<option value="'+tplEsc(t.ioId)+'">'+tplEsc((t.label||('Template '+(i+1)))+(t.srcDate?' — src '+t.srcDate:' — NO SOURCE DATE'))+'</option>';
-  }).join('');
-
   sel.innerHTML='<option value="">— select a template… —</option>'
-    +(orderOpts.length?'<optgroup label="Task orders with their own DD-254">'+orderOpts.join('')+'</optgroup>':'')
-    +(tplOpts?'<optgroup label="Templates">'+tplOpts+'</optgroup>':'');
+    +ctPickerOptions(arr,window.CT_FILTER);
   if(cur && ctFormTemplate(cur) && Array.from(sel.options).some(function(o){return o.value===cur;})) sel.value=cur; else if(cur) sel.value='';
 }
 function ctFilterSel(q){
@@ -11174,8 +11558,8 @@ function slMatches(t,program,level){
   if(tl && level && tl!==level) return false;
   return true;
 }
-function slCandidates(program,level){
-  return slAll().filter(function(t){ return slBlockText(t) && slMatches(t,program,level); });
+function slCandidates(program,level,arr){
+  return (arr||slAll()).filter(function(t){ return slBlockText(t) && slMatches(t,program,level); });
 }
 function slAll(){ return (typeof tplLoad==='function') ? (tplLoad(TPL_SL)||[]) : []; }
 function slFind(ref){
@@ -11197,76 +11581,106 @@ function slApplied(){
   const el=document.getElementById('item13');
   return el?slAppliedIn(el.value):[];
 }
-/* Mandatory standard language asks once, at creation: the programme and the
-   Item 1a level are decided then, before any wording has been typed, and that
-   is the one moment the question is not an interruption. Both answers only
-   narrow the list - the preparer still chooses the entry, because the library
-   may hold two that fit and the tool has no basis for preferring one.
+/* The programme a DD-254 belongs to is recorded on the language that was
+   applied to it, which is in turn filled from the Security Manager template.
+   Asking the preparer again would be asking for something the form already
+   knows. Checked in the order of how specific each source is. */
+function slProgramForForm(){
+  const pick=function(t){ return (typeof ctProgram==='function')?ctProgram(t):String((t&&t.program)||''); };
+  try{
+    if(typeof ctActiveTpl==='function'){ const v=pick(ctActiveTpl()); if(v) return v; }
+    if(typeof ctAppliedContractType==='function'){ const v=pick(ctAppliedContractType()); if(v) return v; }
+    const link=window.DD254_ORDER_SOURCE;
+    if(link){
+      if(pick(link.snapshot)) return pick(link.snapshot);
+      if(typeof ctOrderRows==='function'&&typeof ctOrderProgram==='function'&&link.orderId){
+        const o=ctOrderRows().find(function(x){ return x.ioId===link.orderId; });
+        if(o){ const v=String(ctOrderProgram(o)||'').trim(); if(v) return v; }
+      }
+    }
+  }catch(e){}
+  return '';
+}
+function slLevelForForm(){
+  const el=document.getElementById('fcl1a');
+  return el?String(el.value||'').trim():'';
+}
+/* Insert the standard language this DD-254 calls for, without being asked.
+   Only when the answer is unambiguous: one entry matching the programme and the
+   Item 1a level. Two matching entries is a judgement the library has not
+   expressed, so the blocking error stands and the panel lists both.
 
-   Declining is allowed and leaves the blocking error standing. A dialog that
-   cannot be dismissed is one people learn to fight, and the library may
-   genuinely not hold the entry this contract needs yet. */
-/* One statement of the rule, read by the live validator that holds the status
-   at Draft and by the issue checklist, so the two cannot come to disagree about
-   what is blocking. Returns '' when nothing is wrong. */
+   An Issued, Cancelled or Skipped DD-254 is never rewritten - it is the record
+   of what went out - which is the same rule the Item 13 tail regions follow. */
+/* Called from the gestures that change what standard language is called for:
+   the Item 1a level and applying a template (which is what carries the
+   programme). It asks the record whether this DD-254 may still be changed,
+   rather than trusting a cached status. */
+async function slAutoAfterEdit(){
+  if(typeof slRequired!=='function'||!slRequired()) return 0;
+  if(typeof DASH!=='undefined'&&DASH&&DASH.current&&typeof draftGet==='function'){
+    try{
+      const rec=await draftGet(DASH.current);
+      if(rec&&typeof I13_FINAL_STATUS!=='undefined'&&I13_FINAL_STATUS.indexOf(String(rec.status||''))>=0) return 0;
+    }catch(e){}
+  }
+  return slAutoApply();
+}
+let SL_AUTO_BUSY=false;
+function slAutoApply(){
+  if(SL_AUTO_BUSY) return 0;
+  if(typeof slRequired!=='function'||!slRequired()) return 0;
+  if(window.DD254_READONLY) return 0;
+  const el=document.getElementById('item13'); if(!el) return 0;
+  /* Whether this DD-254 may be changed at all is the CALLER's decision, because
+     only a caller holding the record knows its status. There is no synchronous
+     source for it - DASH holds an id, not the record - and a guard that reads a
+     field nothing sets would pass always while looking like protection. The two
+     callers are dashOpen, which has the record, and slAutoAfterEdit, which
+     fetches it. */
+  if(slApplied().length) return 0;
+  const program=slProgramForForm(), level=slLevelForForm();
+  if(!level) return 0;
+  /* One load, one array. slAll() deserialises afresh on every call, so an entry
+     taken from one call is never identical to the same entry from another and
+     indexOf across two calls is always -1. That silently inserted nothing while
+     this function reported success. */
+  const all=slAll();
+  const hit=slCandidates(program,level,all);
+  if(hit.length!==1) return 0;
+  const t=hit[0], body=slBlockText(t), at=all.indexOf(t);
+  if(!body||at<0) return 0;
+  SL_AUTO_BUSY=true;
+  try{
+    slInsert(at);
+    /* Reporting an insert that did not happen is worse than not inserting:
+       the caller stops asking and the blocking error is the only thing left
+       saying something is wrong. Presence in Item 13 is the proof. */
+    if(slApplied().indexOf(t.label||'(unnamed)')<0 && String((document.getElementById('item13')||{}).value||'').indexOf(body)<0) return 0;
+    if(typeof audLog==='function') audLog(DASH&&DASH.current?DASH.current:'',
+      (document.getElementById('draftBarTitle')||{}).textContent||'',
+      'standard-language-inserted',
+      (t.label||'(unnamed)')+' — '+(program||'any programme')+', Item 1a '+level);
+    if(typeof dashTouch==='function') dashTouch();
+  }finally{ SL_AUTO_BUSY=false; }
+  return 1;
+}
 function slRequiredError(){
   if(typeof slRequired!=='function' || !slRequired()) return '';
   if(typeof slApplied!=='function') return '';
   if(slApplied().length) return '';
+  if(slAll().length && typeof slLevelForForm==='function'){
+    const level=slLevelForForm(), program=slProgramForForm();
+    if(!level) return 'Item 13: Standard language is mandatory in Settings. Enter the Item 1a level and the matching standard language is added automatically.';
+    const hit=slCandidates(program,level);
+    if(hit.length>1) return 'Item 13: Standard language is mandatory in Settings and '+hit.length
+      +' library entries match '+(program?('programme '+program):'any programme')+' at Item 1a '+level
+      +'. Insert the one that applies from the Standard Language panel.';
+    if(!hit.length) return 'Item 13: Standard language is mandatory in Settings and no library entry is written for '
+      +(program?('programme '+program):'this programme')+' at Item 1a '+level
+      +'. Add one to the Standard Language library, or insert an existing entry by hand.';
+  }
   return slAll().length ? 'Item 13: Standard language is mandatory in Settings and none of the Standard Language library appears in Item 13. Insert the entry for this programme and Item 1a level from the Standard Language panel.' : 'Item 13: Standard language is mandatory in Settings but the Standard Language library is empty. Add the wording to the library, or set Standard language back to Optional.';
-}
-function slPickForNew(){
-  return new Promise(function(resolve){
-    const progs=(typeof ctProgramOptions==='function')?ctProgramOptions(slAll()):[];
-    const LV=[['','Any level'],['C','Confidential'],['S','Secret'],['TS','Top Secret']];
-    const ov=document.createElement('div'); ov.id='slPickDlg';
-    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;';
-    const opt=function(v,l,sel){ return '<option value="'+tplEsc(v)+'"'+(sel===v?' selected':'')+'>'+tplEsc(l)+'</option>'; };
-    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:560px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
-      +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">📑 Standard language for this DD-254</div>'
-      +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">Standard language is mandatory in Settings. Choose the programme and the Item 1a level, then the entry to insert at the top of Item 13.</div>'
-      +'<div style="display:flex;gap:8px;margin-bottom:9px;">'
-      +'<label style="font-size:10.5px;color:#5a6a80;">Programme<br><select id="slPickProg" style="width:200px;font-size:11.5px;">'
-        +opt('','All programmes','')+progs.map(function(x){ return opt(x,x,''); }).join('')+'</select></label>'
-      +'<label style="font-size:10.5px;color:#5a6a80;">Item 1a level<br><select id="slPickLvl" style="width:160px;font-size:11.5px;">'
-        +LV.map(function(o){ return opt(o[0],o[1],''); }).join('')+'</select></label>'
-      +'</div>'
-      +'<div id="slPickList" style="max-height:230px;overflow:auto;"></div>'
-      +'<div style="display:flex;gap:8px;margin-top:10px;">'
-      +'<button id="slPickSkip" style="background:#8a94a0;color:#fff;border:none;padding:7px 14px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Not now</button>'
-      +'<span style="font-size:10.5px;color:#8a6a00;align-self:center;">Skipping leaves a blocking error until Item 13 carries standard language.</span>'
-      +'</div></div>';
-    document.body.appendChild(ov);
-    const done=function(v){ try{ov.remove();}catch(e){} resolve(v); };
-    const draw=function(){
-      const pr=ov.querySelector('#slPickProg').value, lv=ov.querySelector('#slPickLvl').value;
-      const all=slAll();
-      const hit=all.filter(function(t){ return slBlockText(t) && slMatches(t,pr,lv); });
-      const host=ov.querySelector('#slPickList');
-      if(!hit.length){
-        host.innerHTML='<div style="font-size:11.5px;color:#a03028;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:8px 10px;">No entry in the library is written for that programme and level. Widen the choice above, or add the wording to the Standard Language library first.</div>';
-        return;
-      }
-      host.innerHTML=hit.map(function(t){
-        const idx=all.indexOf(t);
-        const lab=LV.filter(function(o){ return o[0]===slLevelOf(t); })[0];
-        const tags=(slProgramOf(t)||'any programme')+' · '+(slLevelOf(t)?(lab?lab[1]:slLevelOf(t)):'any level');
-        const body=slBlockText(t);
-        return '<button class="slPickOne" data-idx="'+idx+'" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
-          +'<b>'+tplEsc(t.label||'(unnamed)')+'</b>'
-          +'<div style="font-size:10px;color:#5a6a80;margin-top:2px;">'+tplEsc(tags)+'</div>'
-          +'<div style="font-size:10.5px;color:#4a5866;margin-top:3px;white-space:pre-wrap;">'+tplEsc(body.slice(0,180))+(body.length>180?'…':'')+'</div></button>';
-      }).join('');
-      Array.prototype.forEach.call(host.querySelectorAll('.slPickOne'),function(b){
-        b.onclick=function(){ done({index:parseInt(b.getAttribute('data-idx'),10),level:ov.querySelector('#slPickLvl').value}); };
-      });
-    };
-    ov.querySelector('#slPickProg').onchange=draw;
-    ov.querySelector('#slPickLvl').onchange=draw;
-    ov.querySelector('#slPickSkip').onclick=function(){ done(null); };
-    ov.addEventListener('keydown',function(e){ if(e.key==='Escape') done(null); });
-    draw();
-  });
 }
 function slInsert(ref){
   const t=slFind(ref); if(!t) return;
