@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.9.0</title>
+<title>DD254 Interactive v2.10.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -534,6 +534,7 @@ body.ws-dragging{user-select:none;}
           <button class="dash-menu-item" data-lbl="templates standard language" onclick="dashTplEdit('sl')">📑 Standard Language</button>
           <button class="dash-menu-item" data-lbl="templates security classification guides scg" onclick="dashTplEdit('scg')">📘 Security Classification Guides</button>
           <button class="dash-menu-item" data-lbl="templates security managers" onclick="dashTplEdit('sm')">🛡 Security Managers</button>
+          <button class="dash-menu-item" data-lbl="templates requesters people" onclick="dashTplEdit('req')">👤 Requesters</button>
         </div>
         <div class="dash-menu-section" data-menu-section>
           <div class="dash-menu-hdr">Reports</div>
@@ -1395,14 +1396,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.154';
+const TOOL_VERSION='2.156';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.9.0';
+const RELEASE_VERSION='2.10.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -6171,7 +6172,14 @@ function sapLineageIssue(){
    "10a" and "COMSEC" both have to find the same contracts. */
 function dashSearchText(r){
   const ws=r.workspace||{}, m=r.meta||{};
-  let x=[r.title,m.contract,m.contractor,r.status,dashStageOf(r),r.requestedBy,r.notes].filter(Boolean).join(' ');
+  /* The requester's name and the structured identifiers are searched as well
+     as the title, so looking for a person or an order number finds the DD-254
+     whatever it happens to be called. */
+  const who=r.requester||{}, ident=(r.meta||{}).identity||{};
+  let x=[r.title,m.contract,m.contractor,r.status,dashStageOf(r),r.requestedBy,r.requestedByName,
+         who.firstName,who.lastName,who.email,
+         ident.prime,ident.order,ident.sub,ident.solicitation,
+         (r.securityManager||{}).name,r.notes].filter(Boolean).join(' ');
   if(ws.texts)   x+=' '+Object.keys(ws.texts).map(function(k){return ws.texts[k];}).filter(Boolean).join(' ');
   if(ws.selects) x+=' '+Object.keys(ws.selects).map(function(k){return ws.selects[k];}).filter(Boolean).join(' ');
   if(ws.checks)  x+=' '+Object.keys(ws.checks).filter(function(k){return ws.checks[k];})
@@ -6215,10 +6223,23 @@ function dashSearchMatches(r,terms){
    a solicitation card nothing to tell it from the award - the numbers a
    preparer is actually holding were missing. Each filled item is labelled; a
    record with no Item 2 text falls back to meta.contract. */
+/* Who this DD-254 is for. A legacy draft carries only an e-mail and shows
+   that; a newer one shows the name and the address. */
+function dashCardRequester(r){
+  const who=(typeof reqOfDraft==='function')?reqOfDraft(r):{label:String((r&&r.requestedBy)||'')};
+  return who.label||'';
+}
 function dashCardNumbers(r){
   const tx=((r&&r.workspace)||{}).texts||{}, m=(r&&r.meta)||{};
   const v=function(k){ return String(tx[k]||'').trim(); };
   const parts=[];
+  /* The lowest number that identifies the work comes first, because that is
+     what people look for. The prime stays beside it rather than being replaced:
+     an order number alone does not say which contract it belongs to. */
+  const id=(typeof dashPrimaryIdent==='function')?dashPrimaryIdent(r):null;
+  if(id&&id.kind==='order'&&id.value){
+    parts.push('<span class="dash-num-order" title="Task order, BPA or effort">Order: '+dashEsc(id.value)+'</span>');
+  }
   if(v('i2a')) parts.push('<span class="dash-num-2a" title="Item 2a">Prime: '+dashEsc(v('i2a'))+'</span>');
   if(v('i2b')) parts.push('<span class="dash-num-2b" title="Item 2b">Subcontract: '+dashEsc(v('i2b'))+'</span>');
   if(v('i2c')) parts.push('<span class="dash-num-2c" title="Item 2c">Solicitation: '+dashEsc(v('i2c'))+'</span>');
@@ -6534,6 +6555,36 @@ function distSmRender(){
   el.innerHTML=s.assigned.map(function(m){return '<div>'+tplEsc([m.name,m.email,m.program].filter(Boolean).join(' · '))+' <span style="color:#6a7888;">(assigned to template · CC)</span></div>';}).join('')
     +s.manual.map(function(m,i){return '<div>'+tplEsc([m.name,m.email,m.program].filter(Boolean).join(' · '))+' <button type="button" class="dash-btn" style="background:#7a4038;padding:1px 6px;" aria-label="Remove '+tplEsc(m.name||m.email)+'" onclick="distSmRemove('+i+')">✕</button></div>';}).join('');
 }
+/* \u2500\u2500 THE SECURITY MANAGER ON A DD-254 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   Snapshotted onto the draft when it is created, from the chosen or matched
+   template. Editing the Security Manager repository afterwards changes who the
+   NEXT DD-254 gets, never who this one was issued under - an issued DD-254 is
+   the record of what went out, and a directory edit is not an amendment to it.
+
+   A draft made before this existed has no snapshot. One is backfilled from the
+   template it is linked to, but only when exactly one template could be meant:
+   guessing which of three managers signed for a contract is the kind of help
+   nobody asked for. When there is nothing to backfill from, the issuance screen
+   says so rather than quietly leaving the row out. */
+function dashSecurityManager(rec){
+  const snap=(rec&&rec.securityManager)||null;
+  if(snap&&(snap.name||snap.email)) return Object.assign({source:'draft'},snap);
+  const ident=(typeof dashIdentity==='function')?dashIdentity(rec):{};
+  if(typeof dashIntakeMatch==='function'){
+    const m=dashIntakeMatch(ident.prime,ident.order);
+    if(m.one&&m.one.t&&(m.one.t.smName||m.one.t.smEmail)){
+      const t=m.one.t;
+      return {name:t.smName||'',email:t.smEmail||'',program:t.smProgram||'',
+              sourceTemplateId:t.ioId||t.label||'',source:'template'};
+    }
+  }
+  return null;
+}
+function dashSecurityManagerLabel(rec){
+  const sm=dashSecurityManager(rec);
+  if(!sm) return '';
+  return [sm.name,sm.email,sm.program].filter(Boolean).join(' \u00b7 ');
+}
 function dashDistEmails(rec){
   rec=rec||{};
   const ws=rec.workspace||{}, tx=ws.texts||{};
@@ -6549,12 +6600,14 @@ function dashDistEmails(rec){
     fsoItems:dedupe(prime.concat(sub,fsoPerf)),fsoPrime:dedupe(prime),fsoSub:dedupe(sub),fsoPerf:dedupe(fsoPerf),
     fsoManual:dedupe(manual),managers:dedupe(managers),other18f:other18f,
     other:dedupe(other18f.concat(emailsIn(tx.item13))),requestor:dedupe(emailsIn(rec.requestedBy))};
-  o.all=dedupe([].concat(o.fso,o.cso,o.other,o.requestor,o.managers));
+  const snap=(typeof dashSecurityManager==='function')?dashSecurityManager(rec):null;
+  o.securityManager=dedupe(emailsIn(snap&&snap.email));
+  o.all=dedupe([].concat(o.fso,o.cso,o.other,o.requestor,o.managers,o.securityManager));
   return o;
 }
 
 /* The issuance compose window has a deliberately narrower audience than the
-   general distribution picker. The requestor, subcontractor FSO and performance-location FSOs
+   general distribution picker. The requestor, the Security Manager and the Item 6, 7 and 8 FSOs
    belong on To. Facility FSOs, security/program security managers, CSOs,
    additional manual FSOs and checked Item 18f addresses belong on CC. Claiming To
    first also prevents Outlook from showing one person on both lines when a
@@ -6566,15 +6619,20 @@ function dashIssueMailMany(records){
     const k=String(x||'').toLowerCase();
     if(x&&!seen[k]){ seen[k]=1; out.push(x); }
   }); return out; };
+  /* Requester, then the Security Manager, then the Item 6, 7 and 8 FSOs. The
+     manager is second because the DD-254 is issued under their authority and
+     they are who the requester will be answered by. Claim order is what
+     deduplicates: an address claimed for To is skipped when CC is built, so a
+     person holding two roles appears once, on the line that matters more. */
   let to=[];
   records.forEach(function(rec){
     const em=dashDistEmails(rec);
-    to=to.concat(claim([].concat(em.requestor||[],em.fsoSub||[],em.fsoPerf||[])));
+    to=to.concat(claim([].concat(em.requestor||[],em.securityManager||[],em.fsoPrime||[],em.fsoSub||[],em.fsoPerf||[])));
   });
   let cc=[];
   records.forEach(function(rec){
     const em=dashDistEmails(rec);
-    cc=cc.concat(claim([].concat(em.cso||[],em.fsoPrime||[],em.fsoManual||[],em.managers||[],em.other18f||[])));
+    cc=cc.concat(claim([].concat(em.cso||[],em.fsoManual||[],em.managers||[],em.other18f||[])));
   });
   const name=records.length===1
     ? (String((records[0]&&records[0].title)||'DD Form 254').trim()||'DD Form 254')
@@ -6676,6 +6734,18 @@ function dashDistParties(rec){
     if(dd254WsChecked(ws,'dist'+k)) out.push({key:k,label:k+' — '+(CT_18_LBL[k]||''),to:pick(k),opts:em.all});
   });
   if((rec.requestedBy||'').trim()) out.push({key:'req',label:'Requestor',to:rec.requestedBy.trim(),opts:em.all});
+  /* Directly below the requester, and shown even when unassigned: an issuance
+     screen that silently omits the row looks like a DD-254 with no manager
+     rather than one whose manager nobody recorded. */
+  const smSnap=(typeof dashSecurityManager==='function')?dashSecurityManager(rec):null;
+  /* Only when there is an address: this list is written into the distribution
+     record, and a row recording that a DD-254 was sent to nobody is worse than
+     no row. The unassigned case is a warning on the dialog, where it can be
+     acted on. */
+  if(smSnap&&smSnap.email){
+    out.push({key:'sm',label:'Security Manager'+(smSnap.name?' — '+smSnap.name:''),
+              to:smSnap.email,opts:em.all});
+  }
   return out;
 }
 function dashDistStats(r){ return {n:(r.dist||[]).length}; }
@@ -6739,6 +6809,11 @@ async function dashDistOpen(id,isOpen){
 function dashDistDialog(rec){
   return new Promise(function(resolve){
     const parties=dashDistParties(rec);
+    const smNow=(typeof dashSecurityManager==='function')?dashSecurityManager(rec):null;
+    const smWarn=(smNow&&smNow.email)?''
+      :'<div id="ddSmWarn" style="font-size:11.5px;color:#9e1b32;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:8px 10px;margin-bottom:8px;">'
+        +'⚠ No Security Manager is assigned to this DD-254. Assign one with the pencil on its card, '
+        +'then reopen this window — the manager belongs on the To line beside the requester.</div>';
     const issueMail=dashIssueMail(rec);
     window.DASH_SINGLE_MAIL=issueMail;
     const ov=document.createElement('div');
@@ -6752,7 +6827,7 @@ function dashDistDialog(rec){
         +'<select id="ddM_'+i+'" style="font-size:11px;padding:4px 6px;width:auto;"><option>e-mail</option><option>portal</option><option>mail</option><option>hand</option></select>'
         +'</div>';
     }).join('') : '<div style="font-size:11.5px;color:#8a6a00;background:#fdf3d8;padding:8px 10px;border-radius:4px;">No Item 18 boxes are checked on this DD-254, so there is no distribution list to record. Check the required recipients in Item 18 first.</div>';
-    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:660px;width:94%;max-height:82vh;overflow:auto;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
+    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:660px;width:94%;max-height:82vh;overflow:auto;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'+smWarn
       +'<div style="font-size:14px;font-weight:bold;color:#2b3440;margin-bottom:3px;">Record distribution</div>'
       +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:12px;">'+dashEsc(rec.title||'Untitled DD-254')+' — parties taken from Item 18 on this form. Untick anything you have not sent yet; you can log the rest later from the card.</div>'
       +(dashDistIsCUI(rec)
@@ -6786,7 +6861,7 @@ function dashDistDialog(rec){
           +'</div>'; })()
       +'<datalist id="ddOpts">'+((dashDistEmails(rec).all)||[]).map(function(e){return '<option value="'+dashEsc(e)+'">';}).join('')+'</datalist>'
       +(parties.length?'<div style="font-size:10.5px;color:#8a94a0;margin-top:8px;line-height:1.5;">Addresses pulled from 6c / 7c / 8c, the FSO list, Item 13, Block 18f and the requestor field. Every box is a free-text field with a picker — edit anything that is wrong.</div>':'')
-      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;"><b>Open e-mail</b> uses the saved DD-254 to place the requestor, subcontractor FSO and performance-location FSOs on <b>To</b>, and facility FSOs, security / program security managers, CSOs, additional FSOs and checked Item 18f addresses on <b>CC</b>. Duplicate addresses are removed across both lines, and each address is separated by a semicolon and space for the mail application. It is a direct e-mail link to your computer\u2019s registered mail application; the tool does not open a web window or send automatically. <span style="white-space:nowrap;">To: '+issueMail.to.length+' · CC: '+issueMail.cc.length+'</span></div>'
+      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;"><b>Open e-mail</b> uses the saved DD-254 to place the requestor, the Security Manager and the Item 6, 7 and 8 FSOs on <b>To</b>, and CSOs, additional FSOs, Item 18 security / program security managers and checked Item 18f addresses on <b>CC</b>. Duplicate addresses are removed across both lines, and each address is separated by a semicolon and space for the mail application. It is a direct e-mail link to your computer\u2019s registered mail application; the tool does not open a web window or send automatically. <span style="white-space:nowrap;">To: '+issueMail.to.length+' · CC: '+issueMail.cc.length+'</span></div>'
       +(dashMailHrefTooLong(issueMail)?'<div style="font-size:10.5px;color:#9e1b32;background:#fdebea;padding:6px 8px;border-radius:3px;margin-top:7px;"><b>E-mail link is too long for a reliable handoff.</b> Use Copy To and Copy CC, then compose the message in your mail application.</div>':'')
       +'<div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">'
       +'<a id="ddEmail" title="Open a prepared message in Outlook or the computer’s default e-mail application" style="background:#1565a8;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;">✉ Open e-mail</a>'
@@ -7146,7 +7221,7 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 /* ── END SINGLE-TAB LOCK ── */
 
 /* ── FULL BACKUP / RESTORE + close-time warning ── */
-const BK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg','orders'];
+const BK_KINDS=['fac','cso','perf','cert','b13','ct','sm','sl','scg','orders','req'];
 /* Integrity for Full Backup. The backup REPLACES the entire template store on
    restore, so a truncated download or a hand-edited file must not be accepted
    silently. Canonical body is {templates,drafts} in that key order — JSON.parse
@@ -7218,7 +7293,10 @@ async function fullBackup(){
     return false;
   }
   drafts=drafts.map(function(rec){return Object.assign({},rec,{notes:dashNotesValue(rec)});});
-  const payload={tool:'DD254 Full Backup',version:4,exported:new Date().toISOString(),templates:templates,drafts:drafts};
+  /* 5 adds the requester repository. Restore reads the kinds present and never
+     checked the number, so a version-4 file still restores: it simply carries no
+     requesters, which is what a backup taken before they existed means. */
+  const payload={tool:'DD254 Full Backup',version:5,exported:new Date().toISOString(),templates:templates,drafts:drafts};
   payload.counts=bkCounts(templates,drafts);
   payload.sha256=await bkSha256(bkBody(templates,drafts));
   /* The audit log used to live outside the backup, so clearing browser data lost
@@ -7416,8 +7494,11 @@ function ctPickContractType(list){
 async function dashNewDraft(stage){
   stage=stage||'orig';
   const ans=await dashPartyPrompt({
-    heading:'New DD-254 '+(stage==='sol'?'solicitation':'original'),
-    note:'Named for the person and the contract. Everything here can be changed later with the pencil.',
+    stage:stage,
+    heading:'Create DD-254 Workspace \u2014 '+(stage==='sol'?'Solicitation':'Original'),
+    note:(stage==='sol'
+      ? 'Block 2c and its due date are required on a solicitation. Everything here can be changed later with the pencil.'
+      : 'Block 2b is required on an Original \u2014 the subcontract number, or N/A. Everything here can be changed later with the pencil.'),
     ok:'Create'
   });
   if(ans==null) return;
@@ -7436,7 +7517,10 @@ async function dashNewDraft(stage){
   const tplPick=null;
   const rec={id:dashId(),title:t,stage:stage,ctType:(tplPick&&tplPick.label)||'',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'Draft',todos:[],notes:'',workspace:null,
     requestedBy:ans.email,requestedByName:ans.person,
-    meta:{contract:ans.prime,contractor:'',errors:0,warns:0}};
+    requester:{firstName:ans.first||'',lastName:ans.last||'',email:ans.email||''},
+    securityManager:ans.securityManager||null,
+    meta:{contract:ans.prime,contractor:'',errors:0,warns:0,
+      identity:{prime:ans.prime||'',order:ans.order||'',sub:ans.sub||'',solicitation:ans.solicitation||''}}};
   await draftPut(rec);
   audLog(rec.id,rec.title,'created',stage+(tplPick?' (contract type: '+(tplPick.label||'unnamed')+')':''));
   resetFormFields();
@@ -7445,9 +7529,33 @@ async function dashNewDraft(stage){
   showFormView();
   if(typeof initWizard==='function') initWizard();
   const r3=document.querySelector('input[name="spec"][value="3a"]'); if(r3) r3.checked=true;
-  /* Asked once, written where they belong: Item 2a, Item 2b and the requestor. */
+  /* A template matched on the identifiers just typed is applied whole - its
+     selections, language, attachments and security manager - because the
+     preparer has already been told which one it is and that it will be. It is
+     applied BEFORE the typed identifiers are written, so what was typed wins
+     over what the template carries: a template must not quietly replace the
+     contract number somebody entered. */
+  if(ans.template&&ans.template.t&&ans.template.t.data){
+    const mt=ans.template.t;
+    window.DD254_CT_APPLIED=(ans.template.kind==='b13')?(mt.label||''):'';
+    ctApplyWsToForm(ctApplyDataToWorkspace(mt.data,null,mt));
+    if(ans.template.kind==='b13') rec.ctType=mt.label||'';
+    if(!rec.securityManager&&(mt.smName||mt.smEmail)){
+      rec.securityManager={name:mt.smName||'',email:mt.smEmail||'',program:mt.smProgram||'',sourceTemplateId:mt.ioId||mt.label||''};
+    }
+    audLog(rec.id,rec.title,'template-matched',(mt.label||'unnamed')+' \u2014 matched on '+(ans.template.level==='order'?'task order':'prime contract'));
+  }
+  /* Asked once, written where they belong: Items 2a, 2b, 2c, the due date, the
+     task-order field, and the requestor. */
+  const _put=function(id,v){ const e=document.getElementById(id); if(e&&v!=null&&v!=='') e.value=v; };
   const _i2a=document.getElementById('i2a'); if(_i2a) _i2a.value=ans.prime;
   const _i2b=document.getElementById('i2b'); if(_i2b) _i2b.value=ans.sub;
+  _put('iEffort',ans.order); _put('i2c',ans.solicitation); _put('i2c_due',ans.due);
+  if(ans.order){ const st=document.getElementById('iStandalone'); if(st&&!st.checked&&typeof st.click==='function') st.click(); }
+  if(typeof reqRemember==='function') await reqRemember(ans.first,ans.last,ans.email);
+  if(rec.securityManager&&rec.securityManager.name){
+    audLog(rec.id,rec.title,'security-manager-assigned',rec.securityManager.name);
+  }
   /* Standard language is not asked about at creation. At that moment Item 1a is
      empty and the programme is unknown, so the question could only be answered
      by the preparer telling the tool what the form is about to say. It is
@@ -7699,9 +7807,67 @@ async function dashDelete(id){
 function dashNameCompose(p){
   const person=String((p&&p.person)||'').trim();
   const prime=String((p&&p.prime)||'').trim();
-  const sub=String((p&&p.sub)||'').trim();
-  const head=[person,prime].filter(Boolean).join(' \u2014 ');
-  return (head+(sub?(head?' · ':'')+sub:'')).trim();
+  const order=String((p&&p.order)||'').trim();
+  /* Block 2b is required on an Original and is most often N/A, which is an
+     answer to a question rather than a number anybody identifies work by. It
+     goes in Item 2b; it does not go in the name. */
+  let sub=String((p&&p.sub)||'').trim();
+  if(/^(n\/?a|none|not applicable)$/i.test(sub)) sub='';
+  const sol=String((p&&p.solicitation)||'').trim();
+  const head=[person,prime||sol].filter(Boolean).join(' \u2014 ');
+  const tail=[order,sub].filter(Boolean).join(' · ');
+  return (head+(tail?(head?' · ':'')+tail:'')).trim();
+}
+/* \u2500\u2500 WHICH NUMBER THIS DD-254 IS KNOWN BY \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   People look for the lowest number that identifies the work: the task order if
+   there is one, otherwise the contract, otherwise the solicitation. The others
+   do not go away - a task order is shown under its prime, because an order
+   number alone does not say which contract it belongs to.
+
+   It is stored structured on the draft rather than parsed back out of the
+   title, because a title is a name a person may change and a parser reading one
+   is a second source of truth for what this DD-254 is. */
+function dashIdentity(rec){
+  const m=(rec&&rec.meta)||{}, id=m.identity||{};
+  const ws=(rec&&rec.workspace)||{}, tx=ws.texts||{};
+  return {prime:String(id.prime||tx.i2a||m.contract||'').trim(),
+          order:String(id.order||tx.iEffort||'').trim(),
+          sub:String(id.sub||tx.i2b||'').trim(),
+          solicitation:String(id.solicitation||tx.i2c||'').trim()};
+}
+function dashPrimaryIdent(rec){
+  const i=dashIdentity(rec);
+  if(i.order) return {value:i.order,kind:'order',parent:i.prime};
+  if(i.prime) return {value:i.prime,kind:'prime',parent:''};
+  if(i.solicitation) return {value:i.solicitation,kind:'solicitation',parent:''};
+  return {value:String((rec&&rec.title)||'').trim(),kind:'title',parent:''};
+}
+/* \u2500\u2500 FINDING THE TEMPLATE FOR WHAT WAS JUST TYPED \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   Exact first: a template written for this task order beats one written for the
+   contract it sits under, because the order is the more specific statement. A
+   prime match only counts against a template that carries no task order; a
+   template for order 0042 is not the template for the contract.
+
+   Anything less than exact is a suggestion and is never applied. A DD-254 built
+   from a template that merely looked similar is worse than one built from
+   nothing, because nobody reviews what they believe was already decided. */
+function dashIdentNorm(v){ return String(v==null?'':v).trim().replace(/\s+/g,' ').toLowerCase(); }
+function dashIntakeMatch(prime,order){
+  const p=dashIdentNorm(prime), o=dashIdentNorm(order);
+  const pool=[];
+  (typeof ctEnsureIds==='function'?ctEnsureIds():[]).forEach(function(t){ pool.push({t:t,kind:'ct'}); });
+  ((typeof tplLoad==='function')?(tplLoad(TPL_B13)||[]):[]).forEach(function(t,i){ pool.push({t:t,kind:'b13',idx:i}); });
+  const exactOrder=[], exactPrime=[], partial=[];
+  pool.forEach(function(e){
+    const d=e.t.data||{};
+    const tp=dashIdentNorm(d.primeContract), to=dashIdentNorm(d.taskOrder);
+    if(o&&to&&to===o&&(!p||!tp||tp===p)){ exactOrder.push(e); return; }
+    if(p&&tp&&tp===p&&!to){ exactPrime.push(e); return; }
+    if((p&&tp&&(tp.indexOf(p)>=0||p.indexOf(tp)>=0))||(o&&to&&(to.indexOf(o)>=0||o.indexOf(to)>=0))) partial.push(e);
+  });
+  const hits=exactOrder.length?exactOrder:exactPrime;
+  return {hits:hits,level:exactOrder.length?'order':(exactPrime.length?'prime':''),
+          partial:partial,one:hits.length===1?hits[0]:null,many:hits.length>1};
 }
 function dashEmailOk(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||'').trim()); }
 /* locked: an Issued, Cancelled or Skipped DD-254 may be renamed - a name is not
@@ -7710,22 +7876,38 @@ function dashEmailOk(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||'').
 function dashPartyPrompt(o){
   o=o||{};
   return new Promise(function(resolve){
-    const locked=!!o.locked;
+    const locked=!!o.locked, stage=o.stage||'';
     const ov=document.createElement('div'); ov.id='dashPartyDlg';
-    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;';
-    const row=function(id,label,val,hint,dis){
-      return '<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:7px;">'+dashEsc(label)
-        +'<input id="'+id+'" type="text" value="'+dashEsc(val||'')+'"'+(dis?' disabled':'')
+    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;padding:16px;overflow:auto;';
+    const row=function(id,label,val,hint,dis,type){
+      return '<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:2px;">'+dashEsc(label)
+        +'<input id="'+id+'" type="'+(type||'text')+'" value="'+dashEsc(val||'')+'"'+(dis?' disabled':'')
         +' style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;'+(dis?'background:#eef1f4;color:#6a7888;':'')+'">'
-        +(hint?'<span style="font-size:9.5px;color:#8a94a0;">'+dashEsc(hint)+'</span>':'')+'</label>';
+        +(hint?'<span style="font-size:9.5px;color:#8a94a0;">'+dashEsc(hint)+'</span>':'')
+        +'<span class="np-err" id="'+id+'_err" role="alert" style="display:block;font-size:9.5px;color:#a03028;min-height:12px;"></span></label>';
     };
-    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:520px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
-      +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">'+dashEsc(o.heading||'Name this DD-254')+'</div>'
-      +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">'+dashEsc(o.note||'The name is built from the person and the contract. Everything here can be changed later with the pencil.')+'</div>'
-      +row('np_person','First and last name',o.person,'',false)
-      +row('np_prime','Prime contract number (Item 2a)',o.prime,locked?'This DD-254 is '+(o.status||'issued')+' \u2014 Items 2a and 2b are the record of what went out.':'',locked)
-      +row('np_sub','Subcontract number (Item 2b) \u2014 optional',o.sub,'',locked)
-      +row('np_email','E-mail',o.email,'Becomes the requestor e-mail, which is copied on distribution.',false)
+    const sms=(typeof tplLoad==='function')?(tplLoad(TPL_SM)||[]):[];
+    const smOpts='<option value="">\u2014 none \u2014</option>'+sms.map(function(m,i){
+      return '<option value="'+i+'"'+((o.smName&&o.smName===m.name)?' selected':'')+'>'+dashEsc([m.name,m.program].filter(Boolean).join(' \u00b7 '))+'</option>'; }).join('');
+    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:560px;width:100%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
+      +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">'+dashEsc(o.heading||'Create DD-254 Workspace')+'</div>'
+      +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">'+dashEsc(o.note||'Named for the person and the contract. Everything here can be changed later with the pencil.')+'</div>'
+      +'<div style="display:flex;gap:8px;">'
+      +'<div style="flex:1;">'+row('np_first','Requester first name',o.first,'',false)+'</div>'
+      +'<div style="flex:1;">'+row('np_last','Requester last name',o.last,'',false)+'</div>'
+      +'</div>'
+      +row('np_email','Requester e-mail',o.email,'Becomes the requestor e-mail, which is copied on distribution.',false)
+      +'<div id="np_reqnote" style="font-size:9.5px;color:#1a6a2a;margin:-6px 0 6px;"></div>'
+      +row('np_prime','Prime contract or vehicle number (Item 2a)',o.prime,locked?'This DD-254 is '+(o.status||'issued')+' \u2014 Items 2a and 2b are the record of what went out.':'',locked)
+      +row('np_order','Task order, BPA, call or effort number \u2014 optional',o.order,'',locked)
+      +(stage==='orig'?row('np_sub','Block 2b \u2014 subcontract number, or N/A',o.sub,'Required on an Original. Enter the subcontract number, or N/A when this DD-254 is not a subcontract.',locked):'')
+      +(stage==='sol'?row('np_sol','Block 2c \u2014 solicitation number',o.solicitation,'',locked)
+                      +row('np_due','Solicitation due date',o.due,'The unnumbered date beside Block 2c.',locked,'date'):'')
+      +(stage!=='orig'&&stage!=='sol'?row('np_sub','Subcontract number (Item 2b) \u2014 optional',o.sub,'',locked):'')
+      +'<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:7px;">Security Manager'
+        +'<select id="np_sm" style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;">'+smOpts+'</select>'
+        +'<span style="font-size:9.5px;color:#8a94a0;">Filled from a matched template when there is one. Kept on this DD-254 as it is now.</span></label>'
+      +'<div id="np_match" style="font-size:10.5px;margin-bottom:7px;"></div>'
       +'<div style="border-top:1px solid #e3e8ee;margin:4px 0 9px;"></div>'
       +row('np_title','Name of this DD-254',o.title||'','Filled in from the fields above. Type here to use something else.',false)
       +'<div id="np_err" role="alert" style="font-size:10.5px;color:#a03028;min-height:14px;margin-bottom:6px;"></div>'
@@ -7735,27 +7917,93 @@ function dashPartyPrompt(o){
       +'</div></div>';
     document.body.appendChild(ov);
     const g=function(id){ return ov.querySelector('#'+id); };
+    const val=function(id){ const e=g(id); return e?String(e.value||'').trim():''; };
     const done=function(v){ try{ov.remove();}catch(e){} resolve(v); };
-    /* The name follows the fields until it is typed in, and then stops: at that
-       point it is the operator's name for this DD-254, not a derived one. */
+    const clearErrs=function(){ Array.prototype.forEach.call(ov.querySelectorAll('.np-err'),function(e){ e.textContent=''; }); g('np_err').textContent=''; };
+    const fieldErr=function(id,msg){ const e=g(id+'_err'); if(e) e.textContent=msg; };
+
     let manual=!!(o.title && o.title!==dashNameCompose(o));
     const recompose=function(){
       if(manual) return;
-      g('np_title').value=dashNameCompose({person:g('np_person').value,prime:g('np_prime').value,sub:g('np_sub').value});
+      g('np_title').value=dashNameCompose({person:[val('np_first'),val('np_last')].filter(Boolean).join(' '),
+        prime:val('np_prime'),order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol')});
     };
-    ['np_person','np_prime','np_sub'].forEach(function(id){ g(id).oninput=recompose; });
+    /* A requester with an issued DD-254 behind them is offered their e-mail.
+       It is never written over an address the operator typed, and two people
+       of the same name are never resolved by guessing. */
+    let emailTouched=!!String(o.email||'').trim();
+    g('np_email').oninput=function(){ emailTouched=true; };
+    const lookup=function(){
+      const note=g('np_reqnote'); if(!note) return;
+      if(typeof reqLookup!=='function'){ note.textContent=''; return; }
+      const r=reqLookup(val('np_first'),val('np_last'));
+      if(r.state==='one'){
+        note.style.color='#1a6a2a';
+        note.textContent='Known requester \u2014 '+(+r.record.completedCount||0)+' issued.';
+        if(!emailTouched&&r.record.email){ g('np_email').value=r.record.email; }
+      } else if(r.state==='many'){
+        note.style.color='#8a6a00';
+        note.textContent=r.records.length+' requesters have that name. Choose the e-mail: '
+          +r.records.map(function(x){ return x.email; }).filter(Boolean).join('  |  ');
+      } else if(r.state==='known'){
+        note.style.color='#8a94a0';
+        note.textContent='On file, but no DD-254 issued for them yet \u2014 e-mail not filled in automatically.';
+      } else { note.textContent=''; }
+    };
+    const matched={hit:null};
+    const matchNow=function(){
+      const host=g('np_match'); if(!host||typeof dashIntakeMatch!=='function') return;
+      const m=dashIntakeMatch(val('np_prime'),val('np_order'));
+      matched.hit=m.one||null;
+      if(m.one){
+        host.style.color='#1a6a2a';
+        host.textContent='\u2713 Template \u201c'+((m.one.t.label)||'unnamed')+'\u201d matches this '+(m.level==='order'?'task order':'contract')+' and will be applied.';
+        const sm=g('np_sm'); const who=m.one.t.smName;
+        if(sm&&who){ Array.prototype.forEach.call(sm.options,function(op){ if(op.textContent.indexOf(who)===0) sm.value=op.value; }); }
+      } else if(m.many){
+        host.style.color='#8a6a00';
+        host.textContent=m.hits.length+' templates match. None is applied \u2014 apply the one you want from the form.';
+      } else if(m.partial.length){
+        host.style.color='#8a94a0';
+        host.textContent=m.partial.length+' template'+(m.partial.length===1?'':'s')+' look similar. None is applied automatically.';
+      } else { host.textContent=''; }
+    };
+    ['np_first','np_last'].forEach(function(id){ g(id).oninput=function(){ recompose(); lookup(); }; });
+    ['np_prime','np_order','np_sub','np_sol'].forEach(function(id){ const e=g(id); if(e) e.oninput=function(){ recompose(); matchNow(); }; });
     g('np_title').oninput=function(){ manual=true; };
+
     const submit=function(){
-      const person=g('np_person').value.trim(), prime=g('np_prime').value.trim();
-      const sub=g('np_sub').value.trim(), email=g('np_email').value.trim();
-      const miss=[];
-      if(!person) miss.push('a first and last name');
-      if(!prime) miss.push('the prime contract number');
-      if(!email) miss.push('an e-mail');
-      if(miss.length){ g('np_err').textContent='Still needed: '+miss.join(', ')+'.'; return; }
-      if(!dashEmailOk(email)){ g('np_err').textContent='That does not look like an e-mail address.'; return; }
-      const title=g('np_title').value.trim()||dashNameCompose({person:person,prime:prime,sub:sub});
-      done({person:person,prime:prime,sub:sub,email:email,title:title});
+      clearErrs();
+      const first=val('np_first'), last=val('np_last'), email=val('np_email'), prime=val('np_prime');
+      /* Strict on creation, which is where the convention is set. Renaming an
+         older DD-254 must not be impossible because it was made before these
+         fields existed and carries one name or no e-mail. */
+      const strict=!!stage;
+      let bad=false;
+      if(strict){
+        if(!first){ fieldErr('np_first','Required.'); bad=true; }
+        if(!last){ fieldErr('np_last','Required.'); bad=true; }
+        if(!email){ fieldErr('np_email','Required.'); bad=true; }
+        if(!prime){ fieldErr('np_prime','Required.'); bad=true; }
+      } else if(!first&&!last){
+        fieldErr('np_first','Give at least a name.'); bad=true;
+      }
+      if(email&&!dashEmailOk(email)){ fieldErr('np_email','That does not look like an e-mail address.'); bad=true; }
+      if(stage==='orig'&&!val('np_sub')){ fieldErr('np_sub','Required on an Original \u2014 the subcontract number, or N/A.'); bad=true; }
+      if(stage==='sol'){
+        if(!val('np_sol')){ fieldErr('np_sol','Required on a Solicitation.'); bad=true; }
+        if(!val('np_due')){ fieldErr('np_due','Required on a Solicitation.'); bad=true; }
+      }
+      if(bad){ g('np_err').textContent='Fill in the fields marked above.'; return; }
+      const person=[first,last].filter(Boolean).join(' ');
+      const title=val('np_title')||dashNameCompose({person:person,prime:prime,order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol')});
+      const smSel=g('np_sm'), smIdx=smSel?smSel.value:'';
+      const sm=(smIdx!==''&&sms[+smIdx])?sms[+smIdx]:null;
+      done({first:first,last:last,person:person,email:email,prime:prime,
+            order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol'),due:val('np_due'),
+            title:title,stage:stage,
+            securityManager:sm?{name:sm.name||'',email:sm.email||'',program:sm.program||'',sourceTemplateId:sm.ioId||sm.label||''}:null,
+            template:matched.hit||null});
     };
     g('np_ok').onclick=submit;
     g('np_cancel').onclick=function(){ done(null); };
@@ -7763,8 +8011,9 @@ function dashPartyPrompt(o){
       if(e.key==='Escape') done(null);
       if(e.key==='Enter'&&e.target&&e.target.tagName==='INPUT') submit();
     });
-    if(g('np_person').focus) g('np_person').focus();
+    if(g('np_first').focus) g('np_first').focus();
     if(!o.title) recompose();
+    lookup(); matchNow();
   });
 }
 /* Write what the dialog collected onto the record and, when it is the DD-254 on
@@ -7775,20 +8024,32 @@ async function dashPartyApply(rec,ans,opts){
   rec.title=ans.title;
   rec.requestedBy=ans.email;
   rec.requestedByName=ans.person;
+  /* Structured alongside the legacy fields, never instead of them: a dashboard
+     filter, the issuance e-mail and every backup written before today all read
+     requestedBy. */
+  rec.requester={firstName:ans.first||'',lastName:ans.last||'',email:ans.email||''};
+  if(ans.securityManager) rec.securityManager=ans.securityManager;
   rec.meta=rec.meta||{};
   if(!opts.lockedFields){
     rec.meta.contract=ans.prime;
+    rec.meta.identity={prime:ans.prime||'',order:ans.order||'',sub:ans.sub||'',solicitation:ans.solicitation||''};
     rec.workspace=rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]};
     rec.workspace.texts=rec.workspace.texts||{};
-    rec.workspace.texts.i2a=ans.prime;
-    rec.workspace.texts.i2b=ans.sub;
+    const tx=rec.workspace.texts;
+    tx.i2a=ans.prime; tx.i2b=ans.sub;
+    if(ans.order) tx.iEffort=ans.order;
+    if(ans.solicitation) tx.i2c=ans.solicitation;
+    if(ans.due) tx.i2c_due=ans.due;
   }
   rec.updatedAt=new Date().toISOString();
   if(DASH.current===rec.id){
     window.CURRENT_REQUESTOR_EMAIL=rec.requestedBy;
     if(!opts.lockedFields){
-      const a=document.getElementById('i2a'); if(a) a.value=ans.prime;
-      const b=document.getElementById('i2b'); if(b) b.value=ans.sub;
+      const put=function(id,v){ const e=document.getElementById(id); if(e&&v!=null) e.value=v; };
+      put('i2a',ans.prime); put('i2b',ans.sub);
+      if(ans.order) put('iEffort',ans.order);
+      if(ans.solicitation) put('i2c',ans.solicitation);
+      if(ans.due) put('i2c_due',ans.due);
     }
     const tb=document.getElementById('draftBarTitle'); if(tb) tb.textContent=rec.title;
     if(typeof run==='function') run();
@@ -7801,10 +8062,19 @@ async function dashRename(id){
   const ws=rec.workspace||{}, tx=ws.texts||{};
   const locked=(typeof DASH_LOCKED!=='undefined') && !!DASH_LOCKED[rec.status];
   const live=(DASH.current===id);
+  const who=rec.requester||{};
+  const legacy=String(rec.requestedByName||'').trim().split(/\s+/);
+  const ident=(typeof dashIdentity==='function')?dashIdentity(rec):{};
   const ans=await dashPartyPrompt({
     heading:'Edit this DD-254',
     note:'The name is built from the person and the contract. Change any of them.',
     ok:'Save',
+    first:who.firstName||legacy[0]||'',
+    last:who.lastName||(legacy.length>1?legacy.slice(1).join(' '):''),
+    order:ident.order||'',
+    solicitation:ident.solicitation||'',
+    due:((rec.workspace||{}).texts||{}).i2c_due||'',
+    smName:(rec.securityManager||{}).name||'',
     person:rec.requestedByName||'',
     prime:(live?((document.getElementById('i2a')||{}).value||''):'')||tx.i2a||(rec.meta&&rec.meta.contract)||'',
     sub:(live?((document.getElementById('i2b')||{}).value||''):'')||tx.i2b||'',
@@ -8063,6 +8333,7 @@ async function dashBulkIssue(ids){
   records.forEach(function(rec){
     const prev=rec.status||'Draft', ownHolds=dashHoldsOpen(rec), hadNiss=!!(rec.niss&&rec.niss.on);
     rec.status='Issued'; if(!rec.issuedAt) rec.issuedAt=now;
+    if(typeof reqRecordCompletion==='function') reqRecordCompletion(rec);
     if(ownHolds.length) audit.push([rec.id,rec.title,'issued-with-open-holds',ownHolds.length+' hold(s) — bulk issuance']);
     if(!hadNiss) audit.push([rec.id,rec.title,'issued-without-niss','bulk issuance']);
     audit.push([rec.id,rec.title,'status',prev+' → Issued (bulk issuance)']);
@@ -9868,8 +10139,8 @@ async function exportOfficialXFA(btn, isSilentBatch){
 <script>
 /* ── FACILITY & CSO TEMPLATE LIBRARIES ─────────────── */
 const TPL_ORDERS='dd254_contract_orders';
-const TPL_FAC='dd254_fac_tpl', TPL_CSO='dd254_cso_tpl', TPL_PERF='dd254_perf_tpl', TPL_CERT='dd254_cert_tpl', TPL_B13='dd254_b13_tpl', TPL_CT='dd254_ct_tpl', TPL_SM='dd254_sm_tpl', TPL_SL='dd254_sl_tpl', TPL_SCG='dd254_scg_tpl';
-function tplKeyOf(kind){ if(kind==='orders')return TPL_ORDERS; return kind==='fac'?TPL_FAC:(kind==='cso'?TPL_CSO:(kind==='cert'?TPL_CERT:(kind==='b13'?TPL_B13:(kind==='ct'?TPL_CT:(kind==='sm'?TPL_SM:(kind==='sl'?TPL_SL:(kind==='scg'?TPL_SCG:TPL_PERF))))))); }
+const TPL_FAC='dd254_fac_tpl', TPL_CSO='dd254_cso_tpl', TPL_PERF='dd254_perf_tpl', TPL_CERT='dd254_cert_tpl', TPL_B13='dd254_b13_tpl', TPL_CT='dd254_ct_tpl', TPL_SM='dd254_sm_tpl', TPL_SL='dd254_sl_tpl', TPL_SCG='dd254_scg_tpl', TPL_REQ='dd254_req_tpl';
+function tplKeyOf(kind){ if(kind==='orders')return TPL_ORDERS; if(kind==='req')return TPL_REQ; return kind==='fac'?TPL_FAC:(kind==='cso'?TPL_CSO:(kind==='cert'?TPL_CERT:(kind==='b13'?TPL_B13:(kind==='ct'?TPL_CT:(kind==='sm'?TPL_SM:(kind==='sl'?TPL_SL:(kind==='scg'?TPL_SCG:TPL_PERF))))))); }
 const TPL_MEM={};
 /* ── TEMPLATE STORAGE: local IndexedDB (write-through cache) ──
    Purely local browser storage — no network, no external calls.
@@ -9956,7 +10227,7 @@ async function tplWalReplay(){
 }
 async function tdbInit(){
   await tdbOpen();
-  const keys=[TPL_FAC,TPL_CSO,TPL_PERF,TPL_CERT,TPL_B13,TPL_CT,TPL_SM,TPL_SL,TPL_SCG,TPL_ORDERS];
+  const keys=[TPL_FAC,TPL_CSO,TPL_PERF,TPL_CERT,TPL_B13,TPL_CT,TPL_SM,TPL_SL,TPL_SCG,TPL_ORDERS,TPL_REQ];
   if(TDB.useLS){
     keys.forEach(function(k){ TPL_CACHE[k]=lsTplRead(k); });
   } else {
@@ -11561,6 +11832,103 @@ function slMatches(t,program,level){
 function slCandidates(program,level,arr){
   return (arr||slAll()).filter(function(t){ return slBlockText(t) && slMatches(t,program,level); });
 }
+/* \u2500\u2500 REQUESTERS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   The people DD-254s are prepared for. A DD-254 already carried a requestor
+   e-mail; this is the same person with a name, and a count of how many of their
+   DD-254s have actually been issued.
+
+   That count is what makes an automatic e-mail safe to offer. A name typed once
+   into one draft proves nothing - it may be a typo, or a person who never came
+   back. A name on an ISSUED DD-254 has been through the whole process with that
+   address, so it is worth offering the next time the same name is typed.
+
+   What is in the repository is a lookup, not a record. The requester details on
+   a draft are snapshotted when it is created; editing the repository afterwards
+   changes what the NEXT DD-254 is offered and never rewrites one already made.
+   A DD-254 is a custody record, and custody records do not change because a
+   directory did. */
+function reqAll(){ return (typeof tplLoad==='function') ? (tplLoad(TPL_REQ)||[]) : []; }
+function reqNorm(v){ return String(v==null?'':v).trim().replace(/\s+/g,' ').toLowerCase(); }
+function reqKey(first,last){ return reqNorm(first)+'\u0000'+reqNorm(last); }
+function reqName(r){ return [String((r&&r.firstName)||'').trim(),String((r&&r.lastName)||'').trim()].filter(Boolean).join(' '); }
+function reqFind(first,last,arr){
+  const want=reqKey(first,last);
+  if(want==='\u0000') return [];
+  return (arr||reqAll()).filter(function(r){ return reqKey(r.firstName,r.lastName)===want; });
+}
+/* Only a requester with a completed DD-254 is offered automatically. */
+function reqCompleted(list){ return (list||[]).filter(function(r){ return (+r.completedCount||0)>0; }); }
+/* What the dialog should do about an e-mail for this name:
+     {state:'none'}                nothing known
+     {state:'one', record}         one completed match - offer its e-mail
+     {state:'many', records}       several - the operator must choose
+     {state:'known', record}       on file but never issued, so not offered */
+function reqLookup(first,last,arr){
+  const hits=reqFind(first,last,arr);
+  if(!hits.length) return {state:'none'};
+  const done=reqCompleted(hits);
+  if(done.length===1) return {state:'one',record:done[0]};
+  if(done.length>1) return {state:'many',records:done};
+  return {state:'known',record:hits[0]};
+}
+async function reqSave(arr){ return tplSave(TPL_REQ,arr); }
+/* Record a requester seen on a new DD-254. Creates the entry when the name is
+   new; never invents a completion, because creating a draft is not issuing one. */
+async function reqRemember(first,last,email){
+  if(window.DD254_READONLY) return null;
+  first=String(first||'').trim(); last=String(last||'').trim(); email=String(email||'').trim();
+  if(!first&&!last) return null;
+  const arr=reqAll();
+  const now=new Date().toISOString();
+  let rec=reqFind(first,last,arr).filter(function(r){ return reqNorm(r.email)===reqNorm(email); })[0];
+  if(!rec) rec=reqFind(first,last,arr).filter(function(r){ return !String(r.email||'').trim(); })[0];
+  if(rec){
+    if(email&&!String(rec.email||'').trim()) rec.email=email;
+    rec.updatedAt=now;
+  } else {
+    rec={id:(typeof ioNewId==='function'?ioNewId():String(Date.now())),
+         firstName:first,lastName:last,email:email,
+         completedCount:0,lastCompletedAt:'',createdAt:now,updatedAt:now};
+    arr.push(rec);
+  }
+  await reqSave(arr);
+  return rec;
+}
+/* Called when a DD-254 reaches Issued. The count is of DD-254s that went out,
+   which is the only thing it is ever read for. */
+async function reqRecordCompletion(rec){
+  if(window.DD254_READONLY) return null;
+  const who=(rec&&rec.requester)||null;
+  const first=who?who.firstName:'', last=who?who.lastName:'';
+  const email=(who&&who.email)||(rec&&rec.requestedBy)||'';
+  if(!String(first||'').trim()&&!String(last||'').trim()) return null;
+  const arr=reqAll();
+  let hit=reqFind(first,last,arr).filter(function(r){ return reqNorm(r.email)===reqNorm(email); })[0]
+       || reqFind(first,last,arr)[0];
+  const now=new Date().toISOString();
+  if(!hit){
+    hit={id:(typeof ioNewId==='function'?ioNewId():String(Date.now())),
+         firstName:String(first||'').trim(),lastName:String(last||'').trim(),email:String(email||'').trim(),
+         completedCount:0,lastCompletedAt:'',createdAt:now,updatedAt:now};
+    arr.push(hit);
+  }
+  hit.completedCount=(+hit.completedCount||0)+1;
+  hit.lastCompletedAt=now;
+  hit.updatedAt=now;
+  await reqSave(arr);
+  if(typeof audLog==='function') audLog(rec&&rec.id,rec&&rec.title,'requester-completion',
+    'count '+hit.completedCount);
+  return hit;
+}
+/* The requester shown on a card or searched for. Legacy drafts carry only an
+   e-mail, so that is what they show: the structured name is additional, never
+   a replacement. */
+function reqOfDraft(rec){
+  const r=(rec&&rec.requester)||null;
+  const name=r?reqName(r):String((rec&&rec.requestedByName)||'').trim();
+  const email=(r&&r.email)||String((rec&&rec.requestedBy)||'').trim();
+  return {name:name,email:email,label:[name,email].filter(Boolean).join(' \u00b7 ')};
+}
 function slAll(){ return (typeof tplLoad==='function') ? (tplLoad(TPL_SL)||[]) : []; }
 function slFind(ref){
   const arr=slAll(); const i=parseInt(ref,10);
@@ -11729,23 +12097,66 @@ function slStripAll(txt){
   });
   return body.replace(/^\s+/,'').replace(/\n{3,}/g,'\n\n');
 }
+/* The panel used to list the whole library on every DD-254, so a preparer read
+   past everything written for other programmes to reach the one entry this
+   contract calls for. It now lists what this DD-254 calls for: the entries
+   written for its programme and its Item 1a level, which are the same two
+   things the automatic insertion matches on.
+
+   Narrowing is not hiding. The others are one link away, because an entry that
+   carries no programme or a different level is sometimes exactly the one
+   needed, and a panel that cannot reach it is one people work around. Before
+   the form says enough to narrow by - no template applied, or Item 1a still
+   empty - everything is listed, with a line saying what would narrow it. */
+function slPanelState(){
+  const all=slAll();
+  const program=(typeof slProgramForForm==='function')?slProgramForForm():'';
+  const level=(typeof slLevelForForm==='function')?slLevelForForm():'';
+  const can=!!(program&&level);
+  const match=can?slCandidates(program,level,all):all;
+  return {all:all,program:program,level:level,narrowed:can,match:match,
+          others:can?all.filter(function(t){ return match.indexOf(t)<0; }):[]};
+}
+function slPanelShowAll(on){ window.SL_PANEL_ALL=!!on; slRenderPanel(); }
+function slLevelName(v){
+  return {C:'Confidential',S:'Secret',TS:'Top Secret'}[String(v||'')]||'';
+}
 function slRenderPanel(){
   const host=document.getElementById('slPanel'); if(!host) return;
-  const arr=slAll();
-  if(!arr.length){ host.innerHTML='<div style="font-size:10px;color:#888;">No standard language saved. Add entries under Templates \u2192 Standard Language.</div>'; return; }
+  const st=slPanelState();
+  if(!st.all.length){ host.innerHTML='<div style="font-size:10px;color:#888;">No standard language saved. Add entries under Templates \u2192 Standard Language.</div>'; return; }
+  const showAll=!!window.SL_PANEL_ALL;
+  const arr=(st.narrowed&&!showAll)?st.match:st.all;
   const on=slApplied();
-  host.innerHTML=arr.map(function(t,i){
+  const head=st.narrowed
+    ? '<div style="font-size:9.5px;color:#5a6a80;margin-bottom:4px;">Written for <b>'+tplEsc(st.program)+'</b> at <b>'+tplEsc(slLevelName(st.level)||st.level)+'</b>.</div>'
+    : '<div style="font-size:9.5px;color:#8a6a00;margin-bottom:4px;">Showing every entry. '+(st.level?'Apply a template so this DD-254 has a programme':'Enter the Item 1a level')+' to narrow this list.</div>';
+  const empty=(st.narrowed&&!showAll&&!arr.length)
+    ? '<div style="font-size:10px;color:#a03028;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:6px 8px;margin-bottom:4px;">No entry is written for this programme at this level.</div>'
+    : '';
+  const foot=st.narrowed
+    ? (showAll
+        ? '<div style="margin-top:3px;"><a href="#" onclick="slPanelShowAll(false);return false;" style="font-size:9.5px;color:#17427d;">Show only what this DD-254 calls for</a></div>'
+        : (st.others.length?'<div style="margin-top:3px;"><a href="#" onclick="slPanelShowAll(true);return false;" style="font-size:9.5px;color:#17427d;">Show all \u00b7 '+st.others.length+' other'+(st.others.length===1?'':'s')+'</a></div>':''))
+    : '';
+  /* The index is the entry's place in the LIBRARY, not in this filtered view:
+     slInsert takes a library index, and a filtered one would insert whatever
+     happened to sit at that position. */
+  host.innerHTML=head+empty+arr.map(function(t){
+    const i=st.all.indexOf(t);
     const applied=on.indexOf(t.label||'(unnamed)')>=0;
     const prev=slBlockText(t).replace(/\s+/g,' ').slice(0,90);
+    const tags=[slProgramOf(t)||'any programme',slLevelName(slLevelOf(t))||'any level'].join(' \u00b7 ');
     return '<div style="border:1px solid #c8d4e4;border-radius:4px;padding:5px 7px;margin-bottom:4px;background:'+(applied?'#edfaf3':'#fff')+';">'
       +'<div style="display:flex;gap:6px;align-items:center;">'
-      +'<b style="flex:1;font-size:10.5px;color:#2b3440;">'+tplEsc(t.label||'(unnamed)')+'</b>'
+      +'<b class="sl-name" style="flex:1;font-size:10.5px;color:#2b3440;">'+tplEsc(t.label||'(unnamed)')+'</b>'
       +(applied?'<span style="font-size:9.5px;color:#1a6a2a;font-weight:bold;">\u2713 in Block 13</span>'
                :'<button class="dash-btn" style="background:#17427d;padding:2px 8px;font-size:10px;" onclick="slInsert('+i+')">\u2b07 Insert</button>')
       +'</div>'
+      +'<div style="font-size:9px;color:#8a94a0;margin-top:1px;">'+tplEsc(tags)+'</div>'
       +'<div style="font-size:9.5px;color:#5a6a80;margin-top:2px;">'+tplEsc(prev)+(prev.length>=90?'\u2026':'')+'</div>'
       +'</div>';
-  }).join('')
+  }).join('')+foot
   +'<div style="font-size:9.5px;color:#8a94a0;margin-top:3px;line-height:1.4;">Inserted at the top of Block 13. To remove one, delete it from Block 13 by hand \u2014 it will not come back.</div>';
 }
 /* ── SECURITY CLASSIFICATION GUIDES ──────────────────────────────────────────
@@ -13005,6 +13416,19 @@ async function dashTplEdit(kind){
         +'<button class="dash-btn" style="background:#7a4038;" onclick="dashTplDel('+i+')">✕</button>'
         +scgLinkHtml(t,i)+'</div>';
     }
+    if(kind==='req'){
+      /* Name, e-mail, and what the repository knows about them. The count is
+         read-only: it is a fact about issued DD-254s, not a field. */
+      const done=+t.completedCount||0;
+      return '<div style="display:flex;gap:8px;margin-bottom:6px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid #c4ccd4;border-radius:5px;padding:8px;">'
+        +mv(i)
+        +'<input type="text" value="'+tplEsc(t.firstName||'')+'" placeholder="First name" style="width:150px;font-size:11px;" oninput="TPL_EDIT['+i+'].firstName=this.value">'
+        +'<input type="text" value="'+tplEsc(t.lastName||'')+'" placeholder="Last name" style="width:150px;font-size:11px;" oninput="TPL_EDIT['+i+'].lastName=this.value">'
+        +'<input type="text" value="'+tplEsc(t.email||'')+'" placeholder="E-mail" style="flex:1;min-width:200px;font-size:11px;" oninput="TPL_EDIT['+i+'].email=this.value">'
+        +'<span style="font-size:10px;color:'+(done?'#1a6a2a':'#8a94a0')+';white-space:nowrap;" title="DD-254s issued for this requester. Only a requester with at least one is offered automatically.">'
+          +(done?('\u2713 '+done+' issued'+(t.lastCompletedAt?' \u00b7 '+tplEsc(String(t.lastCompletedAt).slice(0,10)):'')):'none issued yet')+'</span>'
+        +'<button class="dash-btn" style="background:#7a4038;" onclick="dashTplDel('+i+')">\u2715</button></div>';
+    }
     if(kind==='sl'){
       /* Name, the text itself, and the two things that decide which entry a new
          DD-254 is offered when standard language is mandatory: the programme it
@@ -13044,8 +13468,8 @@ async function dashTplEdit(kind){
   window.TPL_EDIT=arr; window.TPL_EDIT_KIND=kind;
   if(kind==='ct'){window.CT_REPO_ROW=row;if(!Object.keys(CT_REPO_VIEW.open||{}).length&&arr.length)CT_REPO_VIEW.open[ctContractKey((arr[0].data||{}).primeContract)]=true;}
   host.innerHTML='<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">'
-    +'<h3 style="margin:0;color:#2b3440;font-size:15px;">'+(kind==='fac'?'🏢 Facility Templates (Blocks 6a / 6b / 6c, and the Item 17 certifier)':(kind==='perf'?'📍 Performance location / Sub-contractor Templates (Blocks 7 & 8)':(kind==='cert'?'✍ Certifier Templates — the official who certifies the DD-254 (Items 17a/b/c/e/f/g)':(kind==='ct'?'📝 DD-254 Template Language — Blocks 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 (insertable from the form side panel)':(kind==='b13'?'📄 Contract Type Templates — Blocks 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 (offered when a new DD-254 is created)':(kind==='sl'?'📑 Standard Language — recurring Block 13 text your organisation adds to its DD-254s':(kind==='sm'?'🛡 Security Manager Templates — name / e-mail / program':(kind==='scg'?'📘 Security Classification Guides — unclassified titles, dates and issuing offices cited in Item 13':'🏛 CSO Templates (Blocks 6c / 7c / 8c)'))))))))+'</h3>'
-    +((kind==='fac'||kind==='perf'||kind==='b13'||kind==='ct'||kind==='sm'||kind==='sl'||kind==='scg')?'<input type="search" id="tplFilter" placeholder="🔎 Search name, program, contract…" oninput="dashTplFilter(this.value)" style="font-size:11px;padding:3px 7px;width:190px;">':'')
+    +'<h3 style="margin:0;color:#2b3440;font-size:15px;">'+(kind==='fac'?'🏢 Facility Templates (Blocks 6a / 6b / 6c, and the Item 17 certifier)':(kind==='perf'?'📍 Performance location / Sub-contractor Templates (Blocks 7 & 8)':(kind==='cert'?'✍ Certifier Templates — the official who certifies the DD-254 (Items 17a/b/c/e/f/g)':(kind==='ct'?'📝 DD-254 Template Language — Blocks 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 (insertable from the form side panel)':(kind==='b13'?'📄 Contract Type Templates — Blocks 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 (offered when a new DD-254 is created)':(kind==='sl'?'📑 Standard Language — recurring Block 13 text your organisation adds to its DD-254s':(kind==='req'?'👤 Requesters — the people DD-254s are prepared for':(kind==='sm'?'🛡 Security Manager Templates — name / e-mail / program':(kind==='scg'?'📘 Security Classification Guides — unclassified titles, dates and issuing offices cited in Item 13':'🏛 CSO Templates (Blocks 6c / 7c / 8c)')))))))))+'</h3>'
+    +((kind==='fac'||kind==='perf'||kind==='b13'||kind==='ct'||kind==='sm'||kind==='sl'||kind==='scg'||kind==='req')?'<input type="search" id="tplFilter" placeholder="🔎 Search name, program, contract…" oninput="dashTplFilter(this.value)" style="font-size:11px;padding:3px 7px;width:190px;">':'')
     +'<button class="dash-btn" style="background:#4a5866;" onclick="dashTplAdd()">'+(kind==='ct'?'＋ Add template':'＋ Add')+'</button>'
     +'<button class="dash-btn" style="background:#46606f;" onclick="tplExport()">⬇ Export (.json)</button>'
     +'<button class="dash-btn" style="background:#46606f;" onclick="document.getElementById(\'tplImportFile\').click()">⬆ Import (.json)</button>'
@@ -13933,7 +14357,7 @@ function updateEmailDist(){
     el.innerHTML=list.length?list.map(function(e){return '<div>☐ '+e.replace(/</g,'&lt;')+'</div>';}).join(''):'<span style="color:#9aa4b0;font-style:italic;">'+emptyMsg+'</span>';
   };
   rend('csoEmailList',s.cc,'no CC recipients yet — add facility FSO, CSO or security manager contacts');
-  rend('fsoEmailList',s.to,'no To recipients yet — add a requestor, subcontractor FSO or performance-location FSO');
+  rend('fsoEmailList',s.to,'no To recipients yet — add a requestor, a security manager, or an Item 6, 7 or 8 FSO');
   rend('reqEmailList',s.req,'no emails found in Item 13 or Item 18f');
   distSmRender();
 }
