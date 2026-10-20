@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.10.0</title>
+<title>DD254 Interactive v2.11.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -437,6 +437,7 @@ body:not(.dash-mode) #dashView { display:none !important; }
 [data-theme="dark"] [style*="background:#fbf1ef"]{background:#3a2320!important;}
 [data-theme="dark"] [style*="background:#fdf3d8"]{background:#3a3220!important;}
 [data-theme="dark"] [style*="background:#e0f2e2"]{background:#1e3326!important;}
+[data-theme="dark"] [style*="background:#eef3fa"]{background:#1e2a3a!important;}
 }
 </style>
 <style>
@@ -1396,14 +1397,14 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.156';
+const TOOL_VERSION='2.157';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.10.0';
+const RELEASE_VERSION='2.11.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -6606,12 +6607,62 @@ function dashDistEmails(rec){
   return o;
 }
 
-/* The issuance compose window has a deliberately narrower audience than the
-   general distribution picker. The requestor, the Security Manager and the Item 6, 7 and 8 FSOs
-   belong on To. Facility FSOs, security/program security managers, CSOs,
-   additional manual FSOs and checked Item 18f addresses belong on CC. Claiming To
-   first also prevents Outlook from showing one person on both lines when a
-   contact performs more than one role. */
+/* The recipients a DD-254 exists to reach. These are not preferences. The
+   facility receiving the form, every location the work is performed at, the
+   cognizant security office and anyone written into Block 18f all need the
+   document in order to do their job, and the requestor is who asked for it.
+
+   Each row reports whether it applies to THIS DD-254 and whether an address was
+   actually recorded, so the issuance gate and the mail builder read one answer
+   rather than two. Applicability is the whole reason this is a function: Item 7
+   is empty on a DD-254 that is not a subcontract, and demanding an address the
+   form never asks for would make every prime DD-254 unissuable. A row that does
+   not apply is not a gap; a row that applies with nothing in it is. */
+function dashDistRequired(rec){
+  rec=rec||{};
+  const ws=rec.workspace||{}, tx=ws.texts||{};
+  const em=dashDistEmails(rec);
+  const has=function(v){ return !!String(v==null?'':v).trim(); };
+  const rows=[];
+  rows.push({key:'requestor',label:'Requestor',applies:true,addrs:em.requestor||[]});
+  /* Item 7 identifies the subcontractor the DD-254 is issued to. Naming the
+     facility is what makes its FSO address required; an unnamed Item 7 means
+     this is not a subcontract DD-254 and there is nobody there to reach. */
+  rows.push({key:'fsoSub',label:'Item 7 FSO \u2014 receiving facility',
+             applies:(has(tx.i7a)||has(tx.i7b)||has(tx.i7fsoEmail)),addrs:em.fsoSub||[]});
+  /* Every performance location gets its own row rather than one combined one:
+     "an Item 8 FSO is missing" is not actionable, "Building 400 Patuxent has no
+     FSO address" is. Duplicates across locations are removed when To is built. */
+  (ws.perf||[]).forEach(function(p,i){
+    if(!p) return;
+    if(!(has(p.loc)||has(p.cage)||has(p.email)||has(p.cso))) return;
+    rows.push({key:'fsoPerf'+i,
+               label:'Item 8 FSO \u2014 '+(String(p.loc||'').trim()||('performance location '+(i+1))),
+               applies:true,addrs:emailsIn(p.email)});
+  });
+  rows.push({key:'cso',label:'Cognizant security office (DCSA)',applies:true,addrs:em.cso||[]});
+  /* 18f is required when it is ticked: somebody is written in that box because
+     they need the form. Ticked and empty is therefore a gap, not a blank row. */
+  rows.push({key:'other18f',label:'Block 18f \u2014 other as necessary',
+             applies:!!dd254WsChecked(ws,'dist18f'),addrs:em.other18f||[]});
+  const applies=rows.filter(function(r){ return r.applies; });
+  let addrs=[];
+  applies.forEach(function(r){ addrs=addrs.concat(r.addrs||[]); });
+  return {rows:rows,applies:applies,
+          missing:applies.filter(function(r){ return !(r.addrs&&r.addrs.length); }),
+          addrs:addrs};
+}
+
+/* Two lines, two different kinds of recipient.
+
+   To is dashDistRequired: the people the document has to reach, which is not
+   something an operator should be able to switch off by accident. CC is whoever
+   the issuing office has chosen to copy, in Settings, globally \u2014 off by default,
+   because a CC list that grows on its own is how people stop reading it.
+
+   Claiming To first is what deduplicates. An address taken for To is skipped
+   when CC is built, so somebody who is both the Security Manager and the Item 7
+   FSO appears once, on the line that matters more. */
 function dashIssueMailMany(records){
   records=(records||[]).filter(Boolean);
   const seen={};
@@ -6625,14 +6676,15 @@ function dashIssueMailMany(records){
      deduplicates: an address claimed for To is skipped when CC is built, so a
      person holding two roles appears once, on the line that matters more. */
   let to=[];
-  records.forEach(function(rec){
-    const em=dashDistEmails(rec);
-    to=to.concat(claim([].concat(em.requestor||[],em.securityManager||[],em.fsoPrime||[],em.fsoSub||[],em.fsoPerf||[])));
-  });
+  records.forEach(function(rec){ to=to.concat(claim(dashDistRequired(rec).addrs)); });
   let cc=[];
+  const roles=(typeof distRolesGet==='function')?distRolesGet():[];
+  const always=(typeof DIST_CC_ALWAYS!=='undefined')?DIST_CC_ALWAYS:[];
   records.forEach(function(rec){
     const em=dashDistEmails(rec);
-    cc=cc.concat(claim([].concat(em.cso||[],em.fsoManual||[],em.managers||[],em.other18f||[])));
+    let opt=[];
+    always.concat(roles).forEach(function(k){ opt=opt.concat(em[k]||[]); });
+    cc=cc.concat(claim(opt));
   });
   const name=records.length===1
     ? (String((records[0]&&records[0].title)||'DD Form 254').trim()||'DD Form 254')
@@ -6742,7 +6794,11 @@ function dashDistParties(rec){
      record, and a row recording that a DD-254 was sent to nobody is worse than
      no row. The unassigned case is a warning on the dialog, where it can be
      acted on. */
-  if(smSnap&&smSnap.email){
+  /* The log records what was sent. With the manager not copied, a prefilled
+     row saying they were is the kind of tidy-looking falsehood that is only
+     discovered when somebody relies on it. */
+  const smCopied=(typeof distRoleOn==='function')?distRoleOn('securityManager'):false;
+  if(smCopied&&smSnap&&smSnap.email){
     out.push({key:'sm',label:'Security Manager'+(smSnap.name?' — '+smSnap.name:''),
               to:smSnap.email,opts:em.all});
   }
@@ -6810,10 +6866,14 @@ function dashDistDialog(rec){
   return new Promise(function(resolve){
     const parties=dashDistParties(rec);
     const smNow=(typeof dashSecurityManager==='function')?dashSecurityManager(rec):null;
-    const smWarn=(smNow&&smNow.email)?''
+    /* Only worth saying when the office has chosen to copy the manager. With
+       that setting off, an unassigned manager is not an omission from this
+       e-mail, and a red banner about it is noise on every issuance. */
+    const smWanted=(typeof distRoleOn==='function')?distRoleOn('securityManager'):false;
+    const smWarn=(!smWanted||(smNow&&smNow.email))?''
       :'<div id="ddSmWarn" style="font-size:11.5px;color:#9e1b32;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:8px 10px;margin-bottom:8px;">'
-        +'⚠ No Security Manager is assigned to this DD-254. Assign one with the pencil on its card, '
-        +'then reopen this window — the manager belongs on the To line beside the requester.</div>';
+        +'⚠ No Security Manager is assigned to this DD-254, and your settings copy the manager on '
+        +'every issuance. Assign one with the pencil on its card, then reopen this window.</div>';
     const issueMail=dashIssueMail(rec);
     window.DASH_SINGLE_MAIL=issueMail;
     const ov=document.createElement('div');
@@ -6861,7 +6921,7 @@ function dashDistDialog(rec){
           +'</div>'; })()
       +'<datalist id="ddOpts">'+((dashDistEmails(rec).all)||[]).map(function(e){return '<option value="'+dashEsc(e)+'">';}).join('')+'</datalist>'
       +(parties.length?'<div style="font-size:10.5px;color:#8a94a0;margin-top:8px;line-height:1.5;">Addresses pulled from 6c / 7c / 8c, the FSO list, Item 13, Block 18f and the requestor field. Every box is a free-text field with a picker — edit anything that is wrong.</div>':'')
-      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;"><b>Open e-mail</b> uses the saved DD-254 to place the requestor, the Security Manager and the Item 6, 7 and 8 FSOs on <b>To</b>, and CSOs, additional FSOs, Item 18 security / program security managers and checked Item 18f addresses on <b>CC</b>. Duplicate addresses are removed across both lines, and each address is separated by a semicolon and space for the mail application. It is a direct e-mail link to your computer\u2019s registered mail application; the tool does not open a web window or send automatically. <span style="white-space:nowrap;">To: '+issueMail.to.length+' · CC: '+issueMail.cc.length+'</span></div>'
+      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;"><b>Open e-mail</b> uses the saved DD-254 to place everyone this form has to reach on <b>To</b>: the requestor, the Item 7 FSO of the receiving facility, every Item 8 performance-location FSO, the cognizant security office, and any Block 18f address. <b>CC</b> carries whoever your office has chosen to copy \u2014 '+(distCcNames()||'nobody yet, which you can change under Manage \u2192 Settings')+'. Duplicate addresses are removed across both lines, and each address is separated by a semicolon and space for the mail application. It is a direct e-mail link to your computer\u2019s registered mail application; the tool does not open a web window or send automatically. <span style="white-space:nowrap;">To: '+issueMail.to.length+' · CC: '+issueMail.cc.length+'</span></div>'
       +(dashMailHrefTooLong(issueMail)?'<div style="font-size:10.5px;color:#9e1b32;background:#fdebea;padding:6px 8px;border-radius:3px;margin-top:7px;"><b>E-mail link is too long for a reliable handoff.</b> Use Copy To and Copy CC, then compose the message in your mail application.</div>':'')
       +'<div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">'
       +'<a id="ddEmail" title="Open a prepared message in Outlook or the computer’s default e-mail application" style="background:#1565a8;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;">✉ Open e-mail</a>'
@@ -6891,7 +6951,7 @@ function dashDistDialog(rec){
       emailLink.onclick=function(e){ e.preventDefault();
         const msg=dashMailHrefTooLong(issueMail)
           ?'This prepared e-mail is too long for a reliable mail link. Use Copy To and Copy CC, then compose it in your mail application.'
-          :'No requestor, Item 6/7/8 FSO, Item 6/7/8 CSO, or checked Block 18f e-mail address is recorded on this DD-254.';
+          :'No e-mail address is recorded for anyone this DD-254 has to reach \u2014 the requestor, the Item 7 FSO, an Item 8 performance-location FSO, the cognizant security office, or Block 18f.';
         if(typeof uiAlert==='function') uiAlert(msg); else alert(msg); };
     }
     ov.querySelector('#ddSkip').onclick=function(){ done(null); };
@@ -6974,7 +7034,7 @@ function dashBulkDistDialog(records){
       +groupPanels
       +sections
       +'<datalist id="bddOpts">'+known.map(function(e){return '<option value="'+dashEsc(e)+'">';}).join('')+'</datalist>'
-      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;">Within each e-mail, requestors, subcontractor FSOs and performance-location FSOs are on <b>To</b>; facility FSOs, security / program security managers, CSOs, additional FSOs and checked Item 18f addresses are on <b>CC</b>. Duplicate addresses are removed across both lines. Each address is separated by a semicolon and space.</div>'
+      +'<div style="font-size:10.5px;color:#46606f;background:#edf4fb;border:1px solid #c7d9eb;border-radius:4px;padding:7px 9px;margin-top:10px;line-height:1.5;">Within each e-mail, everyone that DD-254 has to reach is on <b>To</b>: the requestor, the Item 7 FSO of the receiving facility, every Item 8 performance-location FSO, the cognizant security office, and any Block 18f address. <b>CC</b> carries whoever your office has chosen to copy \u2014 '+(distCcNames()||'nobody yet, which you can change under Manage \u2192 Settings')+'. Duplicate addresses are removed across both lines. Each address is separated by a semicolon and space.</div>'
       +'<div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">'
       +'<button id="bddSave" style="background:#15702e;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Issue all and record distribution</button>'
       +'<button id="bddSkip" style="background:#8a94a0;color:#fff;border:none;padding:8px 15px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Issue all · log later</button>'
@@ -7308,6 +7368,7 @@ async function fullBackup(){
      audit log can still be shown to be unaltered. */
   payload.auditSha256=await bkSha256(JSON.stringify(payload.audit));
   payload.auditCount=payload.audit.length;
+  payload.settings=(typeof settingsExport==='function')?settingsExport():{};
   const blob=new Blob([JSON.stringify(payload,null,1)],{type:'application/json'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
@@ -7382,6 +7443,18 @@ async function fullRestoreData(data){
         if((await fullBackup())!==true){
           alert('Nothing was replaced: the backup of your current templates did not complete.');
           return false;
+        }
+      }
+      /* Offered, never assumed. The prompt names the one setting whose loss
+         actually costs something, so the answer can be an informed one. */
+      if(data.settings&&typeof data.settings==='object'&&typeof settingsImport==='function'){
+        const ccNames=Array.isArray(data.settings.distCc)
+          ? (data.settings.distCc.length?data.settings.distCc.join(', '):'nobody')
+          : 'unchanged';
+        if(await uiConfirm('This backup also carries the working preferences of the tool it came from, '
+          +'including who is copied on an issuance (CC: '+ccNames+').\n\nApply them to this browser?\n\n'
+          +'Choose Cancel to restore the templates, drafts and audit history only and keep your own settings.')){
+          settingsImport(data.settings);
         }
       }
       window.BK_RESTORING=true;
@@ -8311,6 +8384,10 @@ async function dashBulkIssue(ids){
     if(rec.meta&&rec.meta.errors>0&&!rec.statusOverride) why.push(rec.meta.errors+' unresolved validation error'+(rec.meta.errors===1?'':'s'));
     const co=dashComplianceOpen(rec);
     if(co.length) why.push(co.length+' open approval hold'+(co.length===1?'':'s'));
+    /* Same rule as a single issuance, read from the same function, so a record
+       cannot be issuable in bulk and not on its own. */
+    const rq=dashDistRequired(rec);
+    if(rq.missing.length) why.push('no address for '+rq.missing.map(function(r){ return r.label; }).join(', '));
     if(why.length) failures.push((rec.title||rec.id)+': '+why.join('; '));
   });
   if(failures.length){
@@ -8410,6 +8487,25 @@ async function dashSetStatus(id,val){
       audLog(id,rec.title,'hold-added',rec.status+': '+reasonAudit(reason));
     }
     if(rec.status==='Issued'){
+      /* Checked before the hold and NISS prompts, and deliberately a stop rather
+         than a confirm. Those prompts ask the operator to weigh something; this
+         one reports that an address the DD-254 cannot go out without has not
+         been written down yet. There is nothing to weigh, and answering "issue
+         anyway" would produce a record of a distribution that cannot have
+         happened. */
+      const _rq=dashDistRequired(rec);
+      if(_rq.missing.length){
+        rec.status=prev;
+        const _names=_rq.missing.map(function(r){ return r.label; });
+        audLog(id,rec.title,'issue-blocked-no-recipient',_names.join('; '));
+        alert('\u26d4 This DD-254 cannot be issued yet.\n\n'
+          +_names.length+' required recipient'+(_names.length===1?' has':'s have')
+          +' no e-mail address recorded:\n\n\u2022 '+_names.join('\n\u2022 ')
+          +'\n\nA DD Form 254 has to reach the facility receiving it, every location the work '
+          +'is performed at, the cognizant security office, and anyone written into Block 18f. '
+          +'Add the missing addresses on the form, then set the status again.');
+        await dashRenderCards(); return;
+      }
       // Existing validation and approval holds continue to govern issuance.
       const _oh=dashHoldsOpen(rec);
       if(_oh.length && !(await uiConfirm('✋ '+_oh.length+' open hold'+(_oh.length>1?'s':'')+' on this DD-254:\n\n• '+_oh.map(function(h){return h.t;}).join('\n• ')+'\n\nIssuing with an unresolved hold is a contradiction. Issue anyway?'))){
@@ -14725,6 +14821,70 @@ function themeSet(v){
 function bkEveryGet(){ const n=parseInt(lsGet('dd254_bk_every','1'),10); return (isFinite(n)&&n>=1)?Math.min(n,50):1; }
 function bkEverySet(v){ const n=parseInt(v,10); lsPut('dd254_bk_every',(isFinite(n)&&n>=1)?Math.min(n,50):1); if(typeof bkStatus==='function') bkStatus(); return bkEveryGet(); }
 
+/* Who gets copied on an issuance.
+
+   The people a DD-254 has to reach are not in this list and are not offered as
+   a choice \u2014 see dashDistRequired. What is here is everyone an issuing office
+   may reasonably want to copy, and whether to copy them is a property of the
+   office rather than of any one document, which is why it is one global setting
+   and not a per-DD-254 one.
+
+   Default off (owner decision, 17 October 2026). A CC list that fills itself in
+   is how people stop reading it, and an operator who had to tick a box to copy
+   their own Security Manager knows that they did.
+
+   The keys are dashDistEmails' own keys, deliberately: the CC builder looks each
+   one up by name, so adding a role here is a one-line change and there is no
+   second table to keep in step. */
+const DIST_ROLES=[
+  {key:'securityManager',label:'Security Manager',
+   help:'The manager this DD-254 was issued under. Read from the DD-254 itself, so a later edit to the repository cannot alter a form already sent.'},
+  {key:'fsoPrime',label:'Item 6 FSO \u2014 contractor',
+   help:'The prime contractor\u2019s FSO. On a subcontract DD-254 this is usually your own facility.'},
+];
+/* Not roles, and deliberately not offered as choices: the hand-entered FSO list
+   and the Item 18 managers added with "Add to CC" are addresses an operator
+   typed or clicked for THIS DD-254. A global preference that silently discarded
+   them would make an explicit action do nothing, which is worse than never
+   offering the setting. They are always copied. */
+const DIST_CC_ALWAYS=['fsoManual','managers'];
+function distRoleKeys(){ return DIST_ROLES.map(function(r){ return r.key; }); }
+/* One reader and one writer for dd254_dist_cc, and the writer is the only thing
+   that decides what a valid value is: an unknown key in storage is dropped
+   rather than carried, so a hand-edited or downgraded value cannot put an
+   address on CC that this version has no way to explain. */
+function distRolesGet(){
+  const want=String(lsGet('dd254_dist_cc','')).split(',').map(function(x){ return x.trim(); });
+  return distRoleKeys().filter(function(k){ return want.indexOf(k)>=0; });
+}
+function distRolesSet(v){
+  const list=Array.isArray(v)?v.slice():String(v==null?'':v).split(',');
+  const clean=list.map(function(x){ return String(x||'').trim(); });
+  const keep=distRoleKeys().filter(function(k){ return clean.indexOf(k)>=0; });
+  lsPut('dd254_dist_cc',keep.join(','));
+  return keep;
+}
+function distRoleOn(k){ return distRolesGet().indexOf(k)>=0; }
+/* The chosen roles written out for a human, so the issuance window can state
+   its own rule rather than making the operator go and look it up. */
+function distCcNames(){
+  const on=distRolesGet();
+  return DIST_ROLES.filter(function(r){ return on.indexOf(r.key)>=0; })
+                   .map(function(r){ return r.label; }).join(', ');
+}
+function distRoleToggle(k){
+  const cur=distRolesGet();
+  const next=(cur.indexOf(k)>=0)?cur.filter(function(x){ return x!==k; }):cur.concat([k]);
+  const out=distRolesSet(next);
+  /* Who is copied is a custody decision, so changing it is logged like one. */
+  if(typeof audLog==='function'){
+    const r=DIST_ROLES.filter(function(x){ return x.key===k; })[0];
+    audLog('','','distribution-cc',(r?r.label:k)+' \u2192 '+((out.indexOf(k)>=0)?'copied':'not copied'));
+  }
+  if(typeof settingsRender==='function') settingsRender();
+  return out;
+}
+
 /* Owner name — was only reachable through the first-run rollup prompt, so
    correcting a typo meant clearing site data. */
 function ownerGet(){ return lsGet('dd254_owner',''); }
@@ -14764,6 +14924,9 @@ const SETTINGS_DEFS=[
     help:'Optional leaves the Standard Language library as a library: insert from it when you want it. Mandatory means a new DD-254 is offered the entry matching its programme and Item 1a level, and a DD-254 carrying none of that wording in Item 13 cannot leave Draft. Presence in Item 13 is what is checked, so deleting the paragraph removes it. Changing this setting is written to the audit log.',
     choices:[['off','Optional'],['on','Mandatory']],
     read:slRequiredModeGet, write:slRequiredModeSet },
+  { key:'distCc', label:'Who is copied on an issuance', type:'roles',
+    help:'The requestor, the receiving facility\u2019s FSO, every performance-location FSO, the cognizant security office and anyone listed in Block 18f always receive the DD-254, so they are not listed here. Nor are FSOs you type in by hand, or managers you add with Add to CC: you already chose those on the form itself, and they are always copied. Below are the two the tool works out on its own. Applies to every DD-254.',
+    read:distRolesGet, write:distRolesSet },
   { key:'bkEvery', label:'Backup reminder', type:'number', min:1, max:50,
     help:'Warn after this many unsaved changes. 1 warns on the first change.',
     suffix:'change(s)', read:bkEveryGet, write:bkEverySet },
@@ -14793,6 +14956,27 @@ const SETTINGS_DEFS=[
 ];
 
 function settingsApplyAll(){ SETTINGS_DEFS.forEach(function(d){ try{ d.write(d.read()); }catch(e){} }); }
+
+/* Settings ride in a Full Backup the way the audit log does: outside the
+   checksummed body, so a file written before they existed still verifies, and
+   applied only when the operator asks for them. Restoring is usually about
+   recovering work, not adopting somebody else's text size \u2014 but who is copied
+   on an issuance is not a cosmetic preference, and losing it silently on a move
+   to a new machine is how a DD-254 quietly stops reaching somebody. */
+function settingsExport(){
+  const out={};
+  SETTINGS_DEFS.forEach(function(d){ try{ out[d.key]=d.read(); }catch(e){} });
+  return out;
+}
+function settingsImport(obj){
+  if(!obj||typeof obj!=='object') return 0;
+  let n=0;
+  SETTINGS_DEFS.forEach(function(d){
+    if(!Object.prototype.hasOwnProperty.call(obj,d.key)) return;
+    try{ d.write(obj[d.key]); n++; }catch(e){}
+  });
+  return n;
+}
 
 function settingsSet(key,val){
   const d=SETTINGS_DEFS.filter(function(x){ return x.key===key; })[0];
@@ -14871,6 +15055,27 @@ function settingsRender(){
       }
       h+='<div style="margin-top:9px;font-size:11px;color:#5a6a80;">Example: <code style="font-size:11px;">'
         +settingsEsc(fnPreview())+'</code></div>';
+    } else if(d.type==='roles'){
+      const on=d.read();
+      h+='<div style="font-size:11px;color:#3a4552;background:#eef3fa;border:1px solid #c8d4e4;'
+        +'border-radius:4px;padding:7px 9px;line-height:1.5;margin-bottom:8px;">'
+        +'<b>Always on the To line, never optional:</b> the requestor, the Item 7 FSO of the receiving '
+        +'facility, every Item 8 performance-location FSO, the cognizant security office, and anyone '
+        +'listed in Block 18f. A DD-254 cannot be issued while one of those applies to it and has no '
+        +'address recorded. <b>Always on CC:</b> FSOs you type in by hand, and Item 18 managers you add '
+        +'with <b>Add to CC</b> \u2014 you chose those on the form itself.</div>';
+      DIST_ROLES.forEach(function(r){
+        const is=on.indexOf(r.key)>=0;
+        h+='<label style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;cursor:pointer;">'
+          +'<input type="checkbox" id="distCc_'+r.key+'"'+(is?' checked':'')
+          +' onchange="distRoleToggle(\''+r.key+'\')" style="width:14px;height:14px;margin-top:2px;flex-shrink:0;">'
+          +'<span style="flex:1;"><span style="font-size:11.5px;color:#2b3440;font-weight:bold;">'
+          +settingsEsc(r.label)+'</span>'
+          +'<span style="display:block;font-size:10.5px;color:#5a6a80;line-height:1.45;">'
+          +settingsEsc(r.help)+'</span></span></label>';
+      });
+      if(!on.length) h+='<div style="font-size:10.5px;color:#8a6a00;background:#fdf3d8;border-radius:4px;'
+        +'padding:6px 9px;margin-top:6px;">Nobody is copied. Issuance e-mails will carry a To line and no CC.</div>';
     } else if(d.type==='number'){
       h+='<input type="number" min="'+d.min+'" max="'+d.max+'" value="'+settingsEsc(cur)+'"'
         +' onchange="settingsSet(\''+d.key+'\',this.value)"'
