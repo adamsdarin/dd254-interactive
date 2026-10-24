@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.13.0</title>
+<title>DD254 Interactive v2.14.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -441,23 +441,22 @@ body:not(.dash-mode) #dashView { display:none !important; }
 }
 </style>
 <style id="left-banner">
-/* The banner is a rail, not a third column of equal weight. Closed it is a
-   tab; open it borrows width from the page rather than from the facsimile,
-   which has a fixed shape and must not be squeezed to 640px. */
-.left-col{width:0;flex-shrink:0;overflow:hidden;transition:width .15s ease}
-body.lb-open .layout{max-width:1640px}
-body.lb-open .left-col{width:300px;position:sticky;top:16px;align-self:flex-start;
+/* The banner is a rail, not a third column of equal weight, and it is part of
+   the form rather than a drawer on it: no tab, nothing stored, nothing to
+   reopen. An operator who closed it once would go on issuing DD-254s without
+   ever seeing the language their own templates hold, and nothing would tell
+   them what they were missing. It borrows width from the page, never from the
+   facsimile, which has a fixed shape and must not be squeezed to 640px. */
+.left-col{width:300px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;
   height:calc(100vh - 32px);overflow-y:auto;margin-right:12px}
-.lb-tab{position:fixed;left:0;top:50%;transform:translateY(-50%) rotate(180deg);
-  writing-mode:vertical-rl;background:var(--dcsa-blue,#17427d);color:#fff;border:none;
-  border-radius:0 6px 6px 0;padding:14px 7px;font:bold 11px Arial,sans-serif;cursor:pointer;
-  letter-spacing:.6px;z-index:40}
-body.lb-open .lb-tab{left:300px}
+.layout{max-width:1640px}
 .lb-card{background:#fff;border:1px solid #c4ccd4;border-radius:6px;padding:9px 10px;margin-bottom:8px}
 .lb-hdr{background:var(--dcsa-blue,#17427d);color:#fff;padding:9px 11px;border-radius:6px 6px 0 0;
   font:bold 11.5px Arial,sans-serif;letter-spacing:.3px}
-@media (max-width:1240px){ body.lb-open .left-col{width:0} body.lb-open .lb-tab{left:0} }
-@media print{ .left-col,.lb-tab{display:none!important} }
+/* Narrower screens give the rail less room rather than none: it is narrowed,
+   never hidden, because hiding it is the thing this stopped doing. */
+@media (max-width:1240px){ .left-col{width:220px} }
+@media print{ .left-col{display:none!important} }
 @media screen{
 }
 </style>
@@ -1415,8 +1414,7 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
    restore) was silently lost. Item 13 became one run-on line and the
    cross-reference scanner, which anchors headings to start-of-line, only
    ever saw the first reference. */
-#item13:empty:before{content:attr(data-ph);color:#9aa6b2;white-space:pre-wrap;pointer-events:none;}#item13:focus{outline:2px solid var(--steel);}</style><div id="rsumBar" style="display:none;gap:6px;margin-bottom:4px;align-items:center;flex-wrap:wrap;font-size:10.5px;"><b>Revision summary:</b> <span id="rsumState"></span><button type="button" id="rsumRedraftBtn" onclick="rsumRedraft()" style="font-size:10px;height:24px;padding:0 8px;border:1px solid #b8c2cc;background:#eef1f4;border-radius:3px;cursor:pointer;">Redraft</button><button type="button" id="rsumRemoveBtn" onclick="rsumRemoveCmd()" style="font-size:10px;height:24px;padding:0 8px;border:1px solid #b8c2cc;background:#eef1f4;border-radius:3px;cursor:pointer;">Remove</button></div><input type="text" id="cavChosen" value="" style="display:none" tabindex="-1" aria-hidden="true">
-<input type="text" id="cavEngine" value="" style="display:none" tabindex="-1" aria-hidden="true">
+#item13:empty:before{content:attr(data-ph);color:#9aa6b2;white-space:pre-wrap;pointer-events:none;}#item13:focus{outline:2px solid var(--steel);}</style><div id="rsumBar" style="display:none;gap:6px;margin-bottom:4px;align-items:center;flex-wrap:wrap;font-size:10.5px;"><b>Revision summary:</b> <span id="rsumState"></span><button type="button" id="rsumRedraftBtn" onclick="rsumRedraft()" style="font-size:10px;height:24px;padding:0 8px;border:1px solid #b8c2cc;background:#eef1f4;border-radius:3px;cursor:pointer;">Redraft</button><button type="button" id="rsumRemoveBtn" onclick="rsumRemoveCmd()" style="font-size:10px;height:24px;padding:0 8px;border:1px solid #b8c2cc;background:#eef1f4;border-radius:3px;cursor:pointer;">Remove</button></div><input type="text" id="cavEngine" value="" style="display:none" tabindex="-1" aria-hidden="true">
 <div id="cavNotice" role="status" style="display:none;font-size:10.5px;color:#8a6a00;background:#fdf3d8;border:1px solid #e8c880;border-radius:4px;padding:6px 9px;margin-bottom:6px;"></div>
 <div id="b13Compose" style="display:none;border:1px dashed #b0bac6;border-radius:4px;padding:8px 10px;margin-bottom:6px;"></div><div id="b13RawNote" class="hint" style="display:none;margin-bottom:3px;">Full Item 13 — this is what prints. Edit it directly at any time; the sections above follow it.</div><div id="item13" contenteditable="true" data-ph="Reference each applicable item. Example:&#10;&#10;Ref. 10a: Access to classified COMSEC information requires a final U.S. Government clearance at the appropriate level. Further disclosure, including subcontracting, requires prior GCA approval...&#10;&#10;Ref. 11c: Contractor will reference [SCG Title/Number] when generating or deriving classified material. All classified information received or generated is the property of the U.S. Government..." style="min-height:110px;white-space:pre-wrap;border:1px solid var(--border);border-radius:3px;padding:6px 8px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;background:#fff;overflow:auto;" oninput="run();b13SyncFromRaw()" onpaste="i13PastePlain(event)"></div><script>
 /* Item 13 is plain text. The rich-text toolbar was retired (owner decision,
@@ -1444,14 +1442,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.159';
+const TOOL_VERSION='2.160';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.13.0';
+const RELEASE_VERSION='2.14.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -1674,14 +1672,10 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
      template feature remain independently reachable. -->
 <div class="rpanel" id="rpanelChecklist">
 <div class="rp-hdr">Checklist &amp; Templates</div>
-<div class="rp-section">
-<h4>Standard Language</h4>
-<div id="slPanel" style="font-family:Arial,sans-serif;">No standard language saved.</div>
-</div>
-<div class="rp-section">
-<h4>Contract Templates That Fit</h4>
-<div id="ctFitPanel" style="font-family:Arial,sans-serif;">No contract templates saved.</div>
-</div>
+<!-- Standard Language and Contract Templates That Fit were here. Both are on
+     the permanent left rail now, where they can actually insert: two lists of
+     the same library, one of which could only look, taught operators to
+     distrust whichever one they happened to be reading. -->
 <div class="rp-section">
 <h4>Security Classification Guides</h4>
 <div id="scgPanel" style="font-family:Arial,sans-serif;">No classification guides saved.</div>
@@ -3048,8 +3042,6 @@ const _dismissed=errors.filter(function(e){ return typeof dismissIsSet==='functi
 errors=errors.filter(function(e){ return !(typeof dismissIsSet==='function'&&dismissIsSet(e)); });
 window.DD254_ERRORS=errors.slice();
 window.DD254_DISMISSED=_dismissed.slice();
-if(typeof slRenderPanel==='function') slRenderPanel();
-if(typeof ctRenderFitPanel==='function') ctRenderFitPanel();
 if(typeof lbRender==='function') lbRender();
 if(typeof scgRenderPanel==='function') scgRenderPanel();
 if(typeof renderWpDots==='function') renderWpDots();
@@ -7312,6 +7304,25 @@ async function dashNewDraft(stage){
     const mt=ans.template.t;
     window.DD254_CT_APPLIED=(ans.template.kind==='b13')?(mt.label||''):'';
     ctApplyWsToForm(ctApplyDataToWorkspace(mt.data,null,mt));
+    /* The form has to go on knowing WHICH template it was built from, not just
+       what that template said at the time. Everything that inserts language per
+       Item 10/11 box reads ctActiveTpl, and a draft created from a matched
+       template used to leave that empty - so ticking 11d afterwards silently
+       inserted nothing and the feature looked as though it did not exist.
+       ctOrderStart already recorded the selection; this path did not. */
+    const mtId=String(mt.ioId||mt.label||'');
+    if(mtId){
+      rec.workspace=rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]};
+      rec.workspace.selects=rec.workspace.selects||{};
+      rec.workspace.selects.ctTplSel=mtId;
+      const selEl=document.getElementById('ctTplSel');
+      if(selEl){
+        if(typeof buildCtSelect==='function') buildCtSelect();
+        selEl.value=mtId;
+        if(selEl.value!==mtId) selEl.value='';
+        if(typeof buildCtPanel==='function') buildCtPanel();
+      }
+    }
     if(ans.template.kind==='b13') rec.ctType=mt.label||'';
     if(!rec.securityManager&&(mt.smName||mt.smEmail)){
       rec.securityManager={name:mt.smName||'',email:mt.smEmail||'',program:mt.smProgram||'',sourceTemplateId:mt.ioId||mt.label||''};
@@ -7671,7 +7682,9 @@ function dashPartyPrompt(o){
       +'<div style="flex:1;">'+row('np_first','Requester first name',o.first,'',false)+'</div>'
       +'<div style="flex:1;">'+row('np_last','Requester last name',o.last,'',false)+'</div>'
       +'</div>'
-      +row('np_email','Requester e-mail',o.email,'Becomes the requestor e-mail, which is copied on distribution.',false)
+      +row('np_email','Requester e-mail',o.email,'Search the requesters on file, or type a new address. Becomes the requestor e-mail, which is copied on distribution.',false,'text','npEmailList')
+      +'<datalist id="npEmailList">'+((typeof reqEmailList==='function')?reqEmailList():[]).map(function(e){
+          return '<option value="'+dashEsc(e)+'"></option>'; }).join('')+'</datalist>'
       +'<div id="np_reqnote" style="font-size:9.5px;color:#1a6a2a;margin:-6px 0 6px;"></div>'
       +row('np_prime','Prime contract or vehicle number (Item 2a)',o.prime,locked?'This DD-254 is '+(o.status||'issued')+' \u2014 Items 2a and 2b are the record of what went out.':'',locked)
       +row('np_order','Task order, BPA, call or effort number \u2014 optional',o.order,'',locked)
@@ -7683,7 +7696,6 @@ function dashPartyPrompt(o){
         +'<select id="np_sm" style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;">'+smOpts+'</select>'
         +'<span style="font-size:9.5px;color:#8a94a0;">Filled from a matched template when there is one. Kept on this DD-254 as it is now.</span></label>'
       +'<div id="np_match" style="font-size:10.5px;margin-bottom:7px;"></div>'
-      +'<div id="np_cav" style="display:none;border:1px solid #c8d4e4;background:#f7fbff;border-radius:5px;padding:7px 9px;margin-bottom:8px;"></div>'
       +'<div id="np_eng" style="display:none;border:1px solid #c8d4e4;background:#f7fbff;border-radius:5px;padding:7px 9px;margin-bottom:8px;"></div>'
       +'<div style="border-top:1px solid #e3e8ee;margin:4px 0 9px;"></div>'
       +row('np_title','Name of this DD-254',o.title||'','Filled in from the fields above. Type here to use something else.',false)
@@ -7709,7 +7721,40 @@ function dashPartyPrompt(o){
        It is never written over an address the operator typed, and two people
        of the same name are never resolved by guessing. */
     let emailTouched=!!String(o.email||'').trim();
-    g('np_email').oninput=function(){ emailTouched=true; };
+    /* Typed names are the operator's. Filling them from an address is a help
+       on an empty field and an overwrite on a full one, and an overwritten
+       name is one nobody notices until the DD-254 goes out addressed to the
+       wrong person. */
+    let nameTouched=!!(String(o.first||'').trim()||String(o.last||'').trim());
+    const emailLookup=function(){
+      const note=g('np_reqnote'); if(!note) return false;
+      if(typeof reqLookupEmail!=='function') return false;
+      const email=val('np_email');
+      if(!email||!dashEmailOk(email)) return false;
+      const r=reqLookupEmail(email);
+      if(r.state==='one'){
+        if(!nameTouched){
+          g('np_first').value=String(r.record.firstName||'');
+          g('np_last').value=String(r.record.lastName||'');
+          recompose();
+        }
+        note.style.color='#1a6a2a';
+        note.textContent='On file \u2014 '+(reqName(r.record)||'no name recorded')
+          +' \u00b7 '+(+r.record.completedCount||0)+' issued.';
+        return true;
+      }
+      if(r.state==='many'){
+        note.style.color='#8a6a00';
+        note.textContent=r.records.length+' requesters share that address, so the name is not filled in: '
+          +r.records.map(reqName).filter(Boolean).join('  |  ');
+        return true;
+      }
+      note.style.color='#5a6a80';
+      note.textContent='New address \u2014 a requester listing is created with this DD-254.';
+      return true;
+    };
+    g('np_email').oninput=function(){ emailTouched=true; emailLookup(); };
+    g('np_email').onchange=function(){ emailTouched=true; emailLookup(); };
     const lookup=function(){
       const note=g('np_reqnote'); if(!note) return;
       if(typeof reqLookup!=='function'){ note.textContent=''; return; }
@@ -7725,7 +7770,12 @@ function dashPartyPrompt(o){
       } else if(r.state==='known'){
         note.style.color='#8a94a0';
         note.textContent='On file, but no DD-254 issued for them yet \u2014 e-mail not filled in automatically.';
-      } else { note.textContent=''; }
+      } else {
+        /* Nothing known for this name. The address may still have something to
+           say, and it is the more specific of the two, so it gets the note
+           rather than being cleared by a name that matched nothing. */
+        if(!emailLookup()) note.textContent='';
+      }
     };
     const matched={hit:null};
     const matchNow=function(){
@@ -7737,7 +7787,6 @@ function dashPartyPrompt(o){
         host.textContent='\u2713 Template \u201c'+((m.one.t.label)||'unnamed')+'\u201d matches this '+(m.level==='order'?'task order':'contract')+' and will be applied.';
         const sm=g('np_sm'); const who=m.one.t.smName;
         if(sm&&who){ Array.prototype.forEach.call(sm.options,function(op){ if(op.textContent.indexOf(who)===0) sm.value=op.value; }); }
-        cavList(m.one.t);
       } else if(m.many){
         host.style.color='#8a6a00';
         host.textContent=m.hits.length+' templates match. None is applied \u2014 apply the one you want from the form.';
@@ -7745,25 +7794,7 @@ function dashPartyPrompt(o){
         host.style.color='#8a94a0';
         host.textContent=m.partial.length+' template'+(m.partial.length===1?'':'s')+' look similar. None is applied automatically.';
       } else { host.textContent=''; }
-      if(!m.one) cavList(null);
     };
-    /* REQ-10: which of a matched template's caveats this DD-254 takes. Shown
-       only when creating or copying - on a rename the answer has nowhere to go,
-       which is what made Argon's checklist dead UI there. */
-    function cavList(t){
-      const box=g('np_cav'); if(!box) return;
-      const keys=(t&&typeof ctCaveatKeys==='function')?ctCaveatKeys(t):[];
-      if(!stage||!keys.length){ box.style.display='none'; box.innerHTML=''; return; }
-      box.style.display='block';
-      box.innerHTML='<div style="font-size:10.5px;font-weight:bold;color:#2b3440;margin-bottom:3px;">Caveats this template can add to Item 13</div>'
-        +'<div style="font-size:9.5px;color:#5a6a80;margin-bottom:5px;line-height:1.4;">Each is written into Item 13 when its box is ticked on the form. Untick any that do not apply to this contract.</div>'
-        +keys.map(function(k){
-          const on=(typeof ctCaveatAlways==='function')?ctCaveatAlways(t,k):false;
-          return '<label style="display:flex;gap:6px;align-items:center;font-size:10.5px;color:#2b3440;padding:2px 0;">'
-            +'<input type="checkbox" class="np-cav" value="'+dashEsc(k)+'"'+(on?' checked':'')+'>'
-            +'<span>Item '+dashEsc(k)+(on?' \u00b7 always inserted':'')+'</span></label>';
-        }).join('');
-    }
     /* REQ-13 at intake: the architecture's hybrid. Asked here so a DD-254 is
        born consistent, and still adjustable afterwards in the banner. Absent
        when the engine is off, which is the default. */
@@ -7820,7 +7851,7 @@ function dashPartyPrompt(o){
         r.onchange=function(){ engAns.site=r.getAttribute('data-eng-site'); engDraw(); };
       });
     }
-    ['np_first','np_last'].forEach(function(id){ g(id).oninput=function(){ recompose(); lookup(); }; });
+    ['np_first','np_last'].forEach(function(id){ g(id).oninput=function(){ nameTouched=true; recompose(); lookup(); }; });
     ['np_prime','np_order','np_sub','np_sol'].forEach(function(id){ const e=g(id); if(e) e.oninput=function(){ recompose(); matchNow(); }; });
     g('np_title').oninput=function(){ manual=true; };
 
@@ -7852,8 +7883,6 @@ function dashPartyPrompt(o){
          offered some means every one was declined, which is different from a
          template that offers none - so the flag travels beside the list. */
       const engine=(typeof cavEngineOn==='function'&&cavEngineOn()&&stage&&engAns.archetype)?engAns:null;
-      const cavBoxes=Array.prototype.slice.call(ov.querySelectorAll('.np-cav'));
-      const caveats=cavBoxes.filter(function(c){ return c.checked; }).map(function(c){ return c.value; });
       const title=val('np_title')||dashNameCompose({person:person,prime:prime,order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol')});
       const smSel=g('np_sm'), smIdx=smSel?smSel.value:'';
       const sm=(smIdx!==''&&sms[+smIdx])?sms[+smIdx]:null;
@@ -7861,7 +7890,7 @@ function dashPartyPrompt(o){
             order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol'),due:val('np_due'),
             title:title,stage:stage,
             securityManager:sm?{name:sm.name||'',email:sm.email||'',program:sm.program||'',sourceTemplateId:sm.ioId||sm.label||''}:null,
-            caveats:caveats, caveatsOffered:cavBoxes.length>0, engine:engine,
+            engine:engine,
             template:matched.hit||null});
     };
     g('np_ok').onclick=submit;
@@ -7882,9 +7911,14 @@ function dashPartyPrompt(o){
 /* One field row, used by the intake dialog and by the copy dialog. They ask
    for the same things and must look and validate the same; two copies of this
    markup is how they would stop doing so. */
-function dashPartyRow(id,label,val,hint,dis,type){
+function dashPartyRow(id,label,val,hint,dis,type,listId){
+  /* listId attaches a datalist: the field stays a plain text input that any
+     address can be typed into, and gains type-ahead over the ones on file.
+     A select would have made an address that is not in the repository yet
+     unenterable, which is most of them. */
   return '<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:2px;">'+dashEsc(label)
     +'<input id="'+id+'" type="'+(type||'text')+'" value="'+dashEsc(val||'')+'"'+(dis?' disabled':'')
+    +(listId?' list="'+dashEsc(listId)+'" autocomplete="off"':'')
     +' style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;'+(dis?'background:#eef1f4;color:#6a7888;':'')+'">'
     +(hint?'<span style="font-size:9.5px;color:#8a94a0;">'+dashEsc(hint)+'</span>':'')
     +'<span class="np-err" id="'+id+'_err" role="alert" style="display:block;font-size:9.5px;color:#a03028;min-height:12px;"></span></label>';
@@ -7923,12 +7957,6 @@ async function dashPartyApply(rec,ans,opts){
       if(cur.indexOf(t)>=0) return;
       tx.item13=(cur?cur+'\n\n':'')+t;
     });
-  }
-  if(ans.caveatsOffered){
-    rec.workspace=rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]};
-    rec.workspace.texts=rec.workspace.texts||{};
-    rec.workspace.texts.cavChosen=(ans.caveats||[]).join(',');
-    if(DASH.current===rec.id&&typeof cavChosenSet==='function') cavChosenSet(ans.caveats||[]);
   }
   rec.meta=rec.meta||{};
   if(!opts.lockedFields){
@@ -11411,12 +11439,16 @@ function ctEditorHtml(t,i){
     return '<div style="display:inline-block;vertical-align:top;width:225px;margin:1px 8px 6px 0;">'
       +'<label title="'+tplEsc(key+(nm?' '+nm:''))+'" style="display:flex;align-items:flex-start;gap:4px;font-size:10px;line-height:1.35;"><input type="checkbox" '+(on?'checked':'')+' style="margin-top:1px;flex:none;" onchange="ctEd('+i+').'+grp+'[\''+key+'\']=this.checked;ctMgrSum('+i+');var tb=document.getElementById(\'ctL_'+i+'_'+key+'\');if(tb)tb.style.display=this.checked?\'block\':\'none\';var al=document.getElementById(\'ctAlw_'+i+'_'+key+'\');if(al)al.style.display=this.checked?\'flex\':\'none\'"><span><b>'+key+'</b>'+(nm?' '+tplEsc(nm):'')+'</span></label>'
       +'<textarea id="ctL_'+i+'_'+key+'" placeholder="'+key+' language \u2192 auto-inserts into Block 13\u2026" style="display:'+(on?'block':'none')+';width:225px;min-height:38px;font-size:10px;margin-top:2px;" oninput="ctEd('+i+').'+lgrp+'[\''+key+'\']=this.value;ctMgrSum('+i+')">'+tplEsc(lval)+'</textarea>'
-      /* REQ-11. Beside the wording it applies to, because that is the only
-         place the question makes sense: should this caveat arrive already
-         ticked when somebody creates a DD-254 from this template. */
-      +'<label id="ctAlw_'+i+'_'+key+'" title="Arrive pre-ticked at intake. The operator can still decline it." style="display:'+((on&&lval)?'flex':'none')+';align-items:center;gap:4px;font-size:9.5px;color:#176b31;margin-top:2px;">'
-        +'<input type="checkbox" '+((d.always&&d.always[key])?'checked':'')+' style="flex:none;" onchange="ctAlwaysSet('+i+','+JSON.stringify(key).split('"').join("'")+',this.checked)">'
-        +'always insert</label>'
+      /* Beside the wording it governs, because that is the only place the
+         question makes sense: does this clause belong in every DD-254 built
+         from this template, or only when its own box is ticked on the form.
+         Stated in words - a checkbox beside "always" reads as "yes, always"
+         to one person and "tick when it applies" to the next. */
+      +'<label id="ctAlw_'+i+'_'+key+'" title="Always applies: written into Item 13 of every DD-254 from this template. Otherwise it waits until Item '+tplEsc(key)+' is ticked on the form." style="display:'+((on&&lval)?'flex':'none')+';align-items:center;gap:4px;font-size:9.5px;color:#176b31;margin-top:2px;">'
+        +'<select style="font-size:9.5px;max-width:100%;" onchange="ctAlwaysSet('+i+','+JSON.stringify(key).split('"').join("'")+',this.selectedIndex===1)">'
+          +'<option value="box"'+((d.always&&d.always[key])?'':' selected')+'>Applies when '+tplEsc(key)+' is ticked</option>'
+          +'<option value="always"'+((d.always&&d.always[key])?' selected':'')+'>Always applies</option>'
+        +'</select></label>'
       +'</div>'; };
   const txa=function(field,ph,h,extra){ return '<textarea placeholder="'+ph+'" style="width:100%;min-height:'+(h||44)+'px;font-size:10.5px;margin:2px 0 6px;" oninput="ctEd('+i+').'+field+'=this.value;ctMgrSum('+i+')'+(extra||'')+'">'+tplEsc(d[field]||'')+'</textarea>'; };
   const inp=function(field,ph){ return '<input type="text" value="'+tplEsc(d[field]||'')+'" placeholder="'+ph+'" style="width:100%;font-size:10.5px;margin:2px 0 6px;" oninput="ctEd('+i+').'+field+'=this.value;ctMgrSum('+i+')">'; };
@@ -11426,17 +11458,11 @@ function ctEditorHtml(t,i){
   const cb18=function(key){ const on=!!(d.c18&&d.c18[key]); const nm=CT_18_LBL[key]||'';
     return '<label title="'+tplEsc(key+(nm?' '+nm:''))+'" style="display:inline-flex;align-items:flex-start;gap:4px;font-size:10px;line-height:1.35;width:225px;vertical-align:top;margin:1px 8px 5px 0;">'
       +'<input type="checkbox" '+(on?'checked':'')+' style="margin-top:1px;flex:none;" onchange="ctEd('+i+').c18[\''+key+'\']=this.checked;ctMgrSum('+i+')"><span><b>'+key+'</b>'+(nm?' '+tplEsc(nm):'')+'</span></label>'; };
+  /* The level and scenario used to be here as well as on the row. One
+     control per fact: two selects over t.level, only one of them visible at a
+     time, is how a template comes to claim two different levels depending on
+     which one was touched last. */
   return '<div id="ctEd_'+i+'" style="display:none;border-top:1px dashed #c8d4e4;margin-top:8px;padding-top:8px;">'
-    +h('What this template is written for')
-    +'<select title="The Item 1a level this template is written for. Any means it fits every level." style="width:auto;font-size:10.5px;margin:2px 6px 6px 0;" onchange="ctLevelSet('+i+',this.value)">'
-      +[['','Any Item 1a level'],['C','Confidential'],['S','Secret'],['TS','Top Secret']].map(function(o){
-          return '<option value="'+o[0]+'"'+((ctLevelOf(t)===o[0])?' selected':'')+'>'+tplEsc(o[1])+'</option>'; }).join('')
-    +'</select>'
-    +'<select title="Whether this template is written for an award or for a solicitation. Either means it is offered on both." style="width:auto;font-size:10.5px;margin:2px 6px 6px 0;" onchange="ctScenarioSet('+i+',this.value)">'
-      +DD254_SCENARIOS.map(function(o){
-          return '<option value="'+o[0]+'"'+((ctScenarioOf(t)===o[0])?' selected':'')+'>'+tplEsc(o[1])+'</option>'; }).join('')
-    +'</select>'
-    +'<div style="font-size:9.5px;color:#8a94a0;margin:-2px 0 6px;">Both may be left as Any or Either. They decide which DD-254s this template is offered for; they never change what it writes.</div>'
     +h('Classification of the DD Form 254 itself')
     +sel('cls',[['','UNCLASSIFIED'],['CUI','CUI — Controlled Unclassified Information']])
     +'<div style="font-size:9.5px;color:#8a94a0;margin:-2px 0 6px;">This tool supports UNCLASSIFIED and CUI markings only. Prepare any DD Form 254 containing classified information on an approved system; never enter that information here.</div>'
@@ -11884,8 +11910,8 @@ function ctLangOf(t,key){ const grp=key.indexOf('10')===0?'l10':'l11';
   const v=t.data[grp]&&t.data[grp][key]?String(t.data[grp][key]).trim():''; return v; }
 /* REQ-10. The Item 10 and 11 keys this template carries wording for: the
    caveats it can contribute. */
-/* One writer for the always-insert flag, so the editor and the CSV column
-   cannot disagree about where it lives. */
+/* One writer for the mode flag, so the editor and the CSV column cannot
+   disagree about where it lives or what it means. */
 function ctAlwaysSet(i,key,on){
   const d=ctEd(i);
   if(!d.always) d.always={};
@@ -11902,40 +11928,20 @@ function ctCaveatKeys(t){
   });
   return out;
 }
-/* REQ-11. An entry flagged "always insert" arrives pre-ticked at intake. It is
-   pre-ticked rather than forced, so an operator with a contract exception can
-   still decline it - and can see that they did. */
-function ctCaveatAlways(t,key){
+/* Two ways a piece of template language can behave, chosen beside the text
+   when the template is written:
+
+     always  - it is part of every DD-254 built from this template
+     box     - it stays out until its own Item 10/11 box is ticked
+
+   That is the whole model. The box on the form is the trigger; there is no
+   second gate anywhere else deciding whether the language is wanted, because
+   two gates on one clause is how a clause silently fails to appear. */
+function ctLangMode(t,key){
   const d=(t&&t.data)||{};
-  return !!(d.always&&d.always[key]);
+  return (d.always&&d.always[key])?'always':'box';
 }
-/* Which caveats this DD-254 chose, kept in the workspace so it round-trips
-   through save and open without a schema of its own. Empty means "whatever the
-   template offers", which is what every DD-254 written before this did. */
-function cavChosenGet(ws){
-  /* The live field first: ctAutoLangKey runs on every tick and must not pay
-     for a whole collectWorkspace to answer one question. */
-  let raw='';
-  if(!ws){
-    const el=document.getElementById('cavChosen');
-    if(el) raw=String(el.value||'').trim();
-  }
-  if(!raw){
-    const tx=(ws&&ws.texts)||((typeof collectWorkspace==='function')?(collectWorkspace().texts||{}):{});
-    raw=String(tx.cavChosen||'').trim();
-  }
-  return raw?raw.split(',').map(function(x){return x.trim();}).filter(Boolean):null;
-}
-function cavChosenSet(keys){
-  const el=document.getElementById('cavChosen');
-  const v=(keys&&keys.length)?keys.join(','):'';
-  if(el) el.value=v;
-  return v;
-}
-function cavWanted(key,ws){
-  const chosen=cavChosenGet(ws);
-  return (chosen===null)?true:(chosen.indexOf(key)>=0);
-}
+function ctCaveatAlways(t,key){ return ctLangMode(t,key)==='always'; }
 function cavNotice(msg){
   const el=document.getElementById('cavNotice');
   if(el){ el.textContent=msg||''; el.style.display=msg?'block':'none'; }
@@ -11947,18 +11953,17 @@ function ctAutoLangKey(key,addOnly){
   const ta=document.getElementById('item13'); if(!ta) return;
   const checked=!!(document.getElementById('c'+key)||{}).checked;
   const present=ta.value.indexOf(txt)>=0;
-  if(checked&&!present){
-    /* A caveat declined at intake stays declined, however the box is ticked
-       later. */
-    if(!cavWanted(key)) return;
+  const always=ctLangMode(t,key)==='always';
+  if((checked||always)&&!present){
     const base=ta.value.replace(/\s+$/,'');
     ta.value=(base?base+'\n\n':'')+txt;
     cavNotice('');
     return;
   }
-  /* Untick takes it back out. addOnly exists for the paths applying a whole
-     template, which must not strip what they are in the middle of writing. */
-  if(!checked&&present&&!addOnly){
+  /* Untick takes it back out - unless this language always applies, in which
+     case the box was never what put it there. addOnly exists for the paths
+     applying a whole template, which must not strip what they are writing. */
+  if(!checked&&present&&!addOnly&&!always){
     let v=ta.value.split(txt).join('');
     v=v.replace(/\n{3,}/g,'\n\n').replace(/^\s+/,'').replace(/\s+$/,'');
     ta.value=v;
@@ -11968,7 +11973,7 @@ function ctAutoLangKey(key,addOnly){
   /* Unticked, and the wording is not there verbatim: it was edited after it
      was inserted. Removing an approximate match would delete somebody's
      writing, so it is left alone and said out loud (DEF-08). */
-  if(!checked&&!present&&!addOnly){
+  if(!checked&&!present&&!addOnly&&!always){
     const d=(t.data)||{}, grp=key.indexOf('10')===0?'l10':'l11';
     const had=!!(d[grp]&&String(d[grp][key]||'').trim());
     if(had&&ta.value.length) cavNotice('Item '+key+' was unticked. Its wording had been edited, so it was left in Item 13 \u2014 remove it by hand if it no longer applies.');
@@ -12056,13 +12061,13 @@ function ctLevelSet(i,v){
   t.level=String(v||'');
   if(t.data) t.data.level=t.level;
   if(typeof ctMgrSum==='function') ctMgrSum(i);
-  if(typeof ctRenderFitPanel==='function') ctRenderFitPanel();
+  if(typeof lbRender==='function') lbRender();
 }
 function ctScenarioSet(i,v){
   const t=window.TPL_EDIT&&window.TPL_EDIT[i]; if(!t) return;
   t.scenario=dd254ScenarioOf(v);
   if(typeof ctMgrSum==='function') ctMgrSum(i);
-  if(typeof ctRenderFitPanel==='function') ctRenderFitPanel();
+  if(typeof lbRender==='function') lbRender();
 }
 /* Same three keys as slMatches, in the same order, so the two libraries answer
    "does this fit?" the same way. Blank on the template means any; blank on the
@@ -12094,43 +12099,7 @@ function ctPanelState(){
   return {all:all,program:program,level:level,scenario:scenario,narrowed:can,
           match:match,others:all.filter(function(t){ return match.indexOf(t)<0; })};
 }
-function ctPanelShowAll(on){ window.CT_PANEL_ALL=!!on; ctRenderFitPanel(); }
-function ctRenderFitPanel(){
-  const host=document.getElementById('ctFitPanel'); if(!host) return;
-  let st;
-  try{ st=ctPanelState(); }catch(e){ host.textContent='Contract templates unavailable.'; return; }
-  const esc=(typeof tplEsc==='function')?tplEsc:function(v){ return String(v==null?'':v); };
-  if(!st.all.length){ host.innerHTML='<div style="font-size:10px;color:#888;">No contract templates saved.</div>'; return; }
-  const showAll=!!window.CT_PANEL_ALL;
-  const list=showAll?st.all:st.match;
-  const row=function(t){
-    const bits=[(typeof ctProgram==='function'&&ctProgram(t))||'any programme',
-                ctLevelOf(t)?('Item 1a '+ctLevelOf(t)):'any level',
-                dd254ScenarioLabel(ctScenarioOf(t))];
-    const id=String(t.ioId||t.label||'');
-    return '<div style="border-bottom:1px dotted #e0e8f0;padding:5px 0;">'
-      +'<div style="font-size:11px;font-weight:bold;color:#2b3440;">'+esc(t.label)+'</div>'
-      +'<div style="font-size:9.5px;color:#8a94a0;margin:1px 0 3px;">'+esc(bits.join(' \u00b7 '))+'</div>'
-      +'<button type="button" class="tplbtn tplbtn-insert" onclick="ctPickContractType('+JSON.stringify(id).split('"').join("'")+')">Apply</button>'
-      +'</div>';
-  };
-  const why=st.narrowed
-    ? ('Showing the '+st.match.length+' that fit '
-       +(st.program?('programme '+esc(st.program)):'any programme')
-       +(st.level?(' at Item 1a '+esc(st.level)):'')
-       +' for '+esc(dd254ScenarioLabel(st.scenario))+'.')
-    : 'Nothing has been entered yet that would narrow this list, so all of them are shown.';
-  host.innerHTML='<div style="font-size:9.5px;color:#5a6a80;line-height:1.45;margin-bottom:5px;">'+why+'</div>'
-    +(list.length?list.map(row).join('')
-      :'<div style="font-size:10px;color:#8a6a00;background:#fdf3d8;border-radius:3px;padding:5px 7px;">No contract template fits this DD-254 yet.</div>')
-    +(st.narrowed&&st.others.length
-      ?'<div style="margin-top:6px;font-size:9.5px;">'
-        +'<a href="#" onclick="ctPanelShowAll('+(showAll?'false':'true')+');return false;" style="color:#17427d;">'
-        +(showAll?('Show only the '+st.match.length+' that fit')
-                 :('Show all '+st.all.length+' \u2014 '+st.others.length+' written for something else'))
-        +'</a></div>'
-      :'');
-}
+function ctPanelShowAll(on){ window.CT_PANEL_ALL=!!on; if(typeof lbRender==='function') lbRender(); }
 /* Which library a stage draws on. Original, Revision and Final are all award
    wording; only a Solicitation asks for bids. */
 function dd254StageScenario(stage){
@@ -12193,6 +12162,39 @@ function reqFind(first,last,arr){
   const want=reqKey(first,last);
   if(want==='\u0000') return [];
   return (arr||reqAll()).filter(function(r){ return reqKey(r.firstName,r.lastName)===want; });
+}
+/* The other direction: who is on file at this address. An operator holding a
+   request holds the address it came from, not a spelling of the name, so this
+   is the lookup that actually gets used. Several records can share an address
+   - a shared mailbox, or one person entered twice - and that is reported
+   rather than resolved, because picking one of two people silently is worse
+   than asking. */
+function reqByEmail(email,arr){
+  const want=reqNorm(email);
+  if(!want) return [];
+  return (arr||reqAll()).filter(function(r){ return reqNorm(r.email)===want; });
+}
+/* What the dialog should do about a name for this address:
+     {state:'none'}                nothing on file at it
+     {state:'one', record}         one listing - fill the name from it
+     {state:'many', records}       several - the operator must choose */
+function reqLookupEmail(email,arr){
+  const hits=reqByEmail(email,arr);
+  if(!hits.length) return {state:'none'};
+  if(hits.length===1) return {state:'one',record:hits[0]};
+  return {state:'many',records:hits};
+}
+/* Every address on file, for the field's own list. Sorted so the same request
+   twice offers the same order, and de-duplicated so a shared mailbox appears
+   once however many people answer it. */
+function reqEmailList(arr){
+  const seen={}, out=[];
+  (arr||reqAll()).forEach(function(r){
+    const e=String((r&&r.email)||'').trim();
+    if(!e||seen[reqNorm(e)]) return;
+    seen[reqNorm(e)]=true; out.push(e);
+  });
+  return out.sort(function(a,b){ return reqNorm(a)<reqNorm(b)?-1:1; });
 }
 /* Only a requester with a completed DD-254 is offered automatically. */
 function reqCompleted(list){ return (list||[]).filter(function(r){ return (+r.completedCount||0)>0; }); }
@@ -12454,8 +12456,6 @@ function slInsert(ref){
   if(typeof run==='function') run();
   if(typeof dashTouch==='function') dashTouch();
   if(typeof ctFlash==='function') ctFlash(el);
-  slRenderPanel();
-  if(typeof ctRenderFitPanel==='function') ctRenderFitPanel();
   if(typeof lbRender==='function') lbRender();
 }
 /* Remove any saved standard language from a block of text. Used when capturing
@@ -12621,77 +12621,126 @@ function cavEngineApply(){
   if(typeof lbRender==='function') lbRender();
   return n;
 }
-function slPanelShowAll(on){ window.SL_PANEL_ALL=!!on; slRenderPanel(); }
+function slPanelShowAll(on){ window.SL_PANEL_ALL=!!on; if(typeof lbRender==='function') lbRender(); }
 /* REQ-04. The language this DD-254 may actually use, beside the form rather
    than two clicks away in a repository screen. It carries only what fits the
    stage, which is the point of the purchase/bids split: somebody writing a
    solicitation should not be reading award wording.
 
-   Closed by default and remembered. It is a rail that borrows page width when
-   open, never width from the facsimile. */
-function lbOpenGet(){ return lsGet('dd254_left_banner','closed')==='open'; }
-function lbOpenSet(on){ lsPut('dd254_left_banner',on?'open':'closed'); return lbOpenGet(); }
-function lbApply(){
-  try{ document.body.classList.toggle('lb-open',lbOpenGet()); }catch(e){}
-  const t=document.getElementById('lbTab');
-  if(t){
-    t.textContent=lbOpenGet()?'\u25c0 Language':'\u25b6 Language';
-    t.setAttribute('aria-expanded',lbOpenGet()?'true':'false');
-  }
-  const host=document.getElementById('workflowLeftBanner');
-  if(lbOpenGet()){ lbRender(); }
-  else if(host){
-    /* Emptied rather than just narrowed. A zero-width overflow:hidden aside
-       still has its content in the accessibility tree, so a screen reader
-       would read out a panel nobody can see. */
-    host.innerHTML='';
-  }
-}
-function lbToggle(){ lbOpenSet(!lbOpenGet()); lbApply(); }
+   Always present. It is a rail that borrows page width, never width from the
+   facsimile, and there is no open/closed state to keep: see the note on
+   .left-col for why it cannot be hidden. */
+function lbApply(){ lbRender(); }
 function lbEsc(v){ return (typeof dashEsc==='function')?dashEsc(v):String(v==null?'':v); }
+/* Both lists were ported here when the right-hand panel's copies of them were
+   removed. The rail is the only place they appear now, so it carries the whole
+   of what that panel did rather than a summary of it: what the list was
+   narrowed to and why, the entries written for something else one link away,
+   each entry's opening words, and what happens to Block 13 afterwards. */
+function lbStandardBody(st){
+  if(!st.all.length) return '<div style="font-size:10px;color:#8a94a0;">No standard language saved. Add entries under Templates \u2192 Standard Language.</div>';
+  const showAll=!!window.SL_PANEL_ALL;
+  /* st.match already respects the stage, with or without a programme and
+     level to narrow by further, so the unnarrowed list is st.match and not
+     st.all. The right-hand panel fell back to the whole library here, which
+     is how bids wording reached a purchase DD-254: solicitation language on
+     an award is not a list that is merely too long, it is the wrong wording,
+     and somebody writing an award should never be reading it. */
+  const arr=showAll?st.all:st.match;
+  const on=(typeof slApplied==='function')?slApplied():[];
+  const head=st.narrowed
+    ? '<div style="font-size:9.5px;color:#5a6a80;margin-bottom:4px;">Written for <b>'+lbEsc(st.program)+'</b> at <b>'+lbEsc(slLevelName(st.level)||st.level)+'</b>.</div>'
+    : '<div style="font-size:9.5px;color:#8a6a00;margin-bottom:4px;">Showing every entry that fits this stage. '+(st.level?'Apply a template so this DD-254 has a programme':'Enter the Item 1a level')+' to narrow this list.</div>';
+  const empty=(!showAll&&!arr.length)
+    ? '<div style="font-size:10px;color:#a03028;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:6px 8px;margin-bottom:4px;">No entry is written for this programme at this level.</div>'
+    : '';
+  /* The link appears whenever something is being held back, narrowed or not:
+     an entry written for another stage is still an entry somebody may need to
+     reach, and with no link it would be unreachable from the form entirely. */
+  const foot=showAll
+    ? '<div style="margin-top:3px;"><a href="#" onclick="slPanelShowAll(false);return false;" style="font-size:9.5px;color:#17427d;">Show only what this DD-254 calls for</a></div>'
+    : (st.others.length?'<div style="margin-top:3px;"><a href="#" onclick="slPanelShowAll(true);return false;" style="font-size:9.5px;color:#17427d;">Show all \u00b7 '+st.others.length+' other'+(st.others.length===1?'':'s')+'</a></div>':'');
+  /* The index is the entry's place in the LIBRARY, not in this filtered view:
+     slInsert takes a library index, and a filtered one would insert whatever
+     happened to sit at that position. */
+  return head+empty+arr.map(function(t){
+    const i=st.all.indexOf(t);
+    const applied=on.indexOf(t.label||'(unnamed)')>=0;
+    const prev=slBlockText(t).replace(/\s+/g,' ').slice(0,90);
+    const tags=[slProgramOf(t)||'any programme',slLevelName(slLevelOf(t))||'any level'].join(' \u00b7 ');
+    return '<div style="border:1px solid #c8d4e4;border-radius:4px;padding:5px 7px;margin-bottom:4px;background:'+(applied?'#edfaf3':'#fff')+';">'
+      +'<div style="display:flex;gap:6px;align-items:center;">'
+      +'<b class="sl-name" style="flex:1;font-size:10.5px;color:#2b3440;">'+lbEsc(t.label||'(unnamed)')+'</b>'
+      +(applied?'<span style="font-size:9.5px;color:#1a6a2a;font-weight:bold;">\u2713 in Block 13</span>'
+               :'<button class="dash-btn" style="background:#17427d;padding:2px 8px;font-size:10px;" onclick="slInsert('+i+')">\u2b07 Insert</button>')
+      +'</div>'
+      +'<div style="font-size:9px;color:#8a94a0;margin-top:1px;">'+lbEsc(tags)+'</div>'
+      +'<div style="font-size:9.5px;color:#5a6a80;margin-top:2px;">'+lbEsc(prev)+(prev.length>=90?'\u2026':'')+'</div>'
+      +'</div>';
+  }).join('')+foot
+  +'<div style="font-size:9.5px;color:#8a94a0;margin-top:3px;line-height:1.4;">Inserted at the top of Block 13. To remove one, delete it from Block 13 by hand \u2014 it will not come back.</div>';
+}
+function lbContractBody(){
+  let st;
+  try{ st=ctPanelState(); }catch(e){ return '<div style="font-size:10px;color:#8a94a0;">Contract templates unavailable.</div>'; }
+  if(!st.all.length) return '<div style="font-size:10px;color:#8a94a0;">No contract templates saved.</div>';
+  const showAll=!!window.CT_PANEL_ALL;
+  const list=showAll?st.all:st.match;
+  const row=function(t){
+    const id=String(t.ioId||t.label||'');
+    const bits=[(typeof ctProgram==='function'&&ctProgram(t))||'any programme',
+                ctLevelOf(t)?('Item 1a '+ctLevelOf(t)):'any level',
+                dd254ScenarioLabel(ctScenarioOf(t))];
+    const prev=String((t.data&&t.data.i13)||'').replace(/\s+/g,' ').slice(0,90);
+    return '<div style="border:1px solid #c8d4e4;border-radius:4px;padding:5px 7px;margin-bottom:4px;background:#fff;">'
+      +'<div style="display:flex;gap:6px;align-items:center;">'
+      +'<b class="ct-name" style="flex:1;font-size:10.5px;color:#2b3440;">'+lbEsc(t.label)+'</b>'
+      +'<button class="dash-btn" style="background:#17427d;padding:2px 8px;font-size:10px;" onclick="ctInsertAll('+JSON.stringify(id).split('"').join("'")+')">\u2b07 Apply</button>'
+      +'</div>'
+      +'<div style="font-size:9px;color:#8a94a0;margin-top:1px;">'+lbEsc(bits.join(' \u00b7 '))+'</div>'
+      +(prev?'<div style="font-size:9.5px;color:#5a6a80;margin-top:2px;">'+lbEsc(prev)+(prev.length>=90?'\u2026':'')+'</div>'
+            :'<div style="font-size:9.5px;color:#8a94a0;margin-top:2px;">No Block 13 wording of its own.</div>')
+      +'</div>';
+  };
+  const why=st.narrowed
+    ? '<div style="font-size:9.5px;color:#5a6a80;margin-bottom:4px;">Showing the '+st.match.length+' that fit '
+      +(st.program?('programme <b>'+lbEsc(st.program)+'</b>'):'any programme')
+      +(st.level?(' at Item 1a <b>'+lbEsc(st.level)+'</b>'):'')
+      +' for '+lbEsc(dd254ScenarioLabel(st.scenario))+'.</div>'
+    : '<div style="font-size:9.5px;color:#8a6a00;margin-bottom:4px;">Nothing has been entered yet that would narrow this list, so all of them are shown.</div>';
+  const foot=(st.narrowed&&st.others.length)
+    ? '<div style="margin-top:3px;"><a href="#" onclick="ctPanelShowAll('+(showAll?'false':'true')+');return false;" style="font-size:9.5px;color:#17427d;">'
+      +(showAll?('Show only the '+st.match.length+' that fit')
+               :('Show all \u00b7 '+st.others.length+' written for something else'))
+      +'</a></div>'
+    : '';
+  return why
+    +(list.length?list.map(row).join('')
+      :'<div style="font-size:10px;color:#8a6a00;background:#fdf3d8;border-radius:3px;padding:5px 7px;margin-bottom:4px;">No contract template fits this DD-254 yet.</div>')
+    +foot
+    +'<div style="font-size:9.5px;color:#8a94a0;margin-top:3px;line-height:1.4;">Apply replaces the template sections in Items 10\u201316 and 18, and asks before it does.</div>';
+}
 function lbRender(){
   const host=document.getElementById('workflowLeftBanner');
-  if(!host||!lbOpenGet()) return;
-  let st={all:[],match:[],others:[],scenario:'purchase'};
+  if(!host) return;
+  let st={all:[],match:[],others:[],scenario:'purchase',narrowed:false,program:'',level:''};
   try{ st=slPanelState(); }catch(e){}
   const scen=st.scenario||'purchase';
   const scenName=(typeof dd254ScenarioLabel==='function')?dd254ScenarioLabel(scen):scen;
-  let cts=[];
-  try{
-    cts=(tplLoad(TPL_CT)||[]).filter(function(t){
-      return t && t.label && dd254ScenarioFits(ctScenarioOf(t),scen);
-    });
-  }catch(e){}
-  const slRow=function(t){
-    const i=slAll().indexOf(t);
-    return '<div style="border-bottom:1px dotted #e0e8f0;padding:5px 0;">'
-      +'<div style="font-size:11px;font-weight:bold;color:#2b3440;">'+lbEsc(t.label||'(unnamed)')+'</div>'
-      +'<div style="font-size:9.5px;color:#8a94a0;margin:1px 0 3px;">'
-        +lbEsc([t.program||'any programme',(t.level?('Item 1a '+t.level):'any level')].join(' \u00b7 '))+'</div>'
-      +(i>=0?'<button type="button" class="dash-btn" style="font-size:10px;padding:3px 9px;" onclick="slInsert('+i+')">Insert</button>':'')
-      +'</div>';
-  };
+  let ctCount=0;
+  try{ const cs=ctPanelState(); ctCount=cs.match.length; }catch(e){}
   host.innerHTML=
      '<div class="lb-hdr">Language for this DD-254</div>'
-    +'<div class="lb-card" style="border-radius:0 0 6px 6px;border-top:none;">'
+    +'<div class="lb-card" id="lbStandard" style="border-radius:0 0 6px 6px;border-top:none;">'
       +'<div style="font-size:10.5px;color:#5a6a80;line-height:1.45;margin-bottom:6px;">'
         +'Showing <b>'+lbEsc(scenName)+'</b> wording, because of what this DD-254 is. '
         +'Entries marked <i>Either</i> always appear.</div>'
       +'<div style="font-size:10.5px;font-weight:bold;color:#2b3440;margin:6px 0 2px;">Standard language ('+st.match.length+')</div>'
-      +(st.match.length?st.match.map(slRow).join('')
-        :'<div style="font-size:10px;color:#8a94a0;padding:3px 0;">Nothing in the library fits this DD-254 yet.</div>')
-      +(st.others&&st.others.length
-        ?'<div style="font-size:9.5px;color:#8a94a0;margin-top:5px;">'+st.others.length
-          +' other entr'+(st.others.length===1?'y is':'ies are')+' in the library but written for something else.</div>'
-        :'')
+      +lbStandardBody(st)
     +'</div>'
-    +'<div class="lb-card">'
-      +'<div style="font-size:10.5px;font-weight:bold;color:#2b3440;margin-bottom:2px;">Contract language ('+cts.length+')</div>'
-      +(cts.length?cts.map(function(t){
-          return '<div style="border-bottom:1px dotted #e0e8f0;padding:4px 0;font-size:11px;color:#2b3440;">'+lbEsc(t.label)+'</div>';
-        }).join('')
-        :'<div style="font-size:10px;color:#8a94a0;padding:3px 0;">No contract-type template fits this DD-254 yet.</div>')
-      +'<div style="font-size:9.5px;color:#8a94a0;margin-top:5px;">Apply one from the card on the dashboard, or the picker above the form.</div>'
+    +'<div class="lb-card" id="lbContract">'
+      +'<div style="font-size:10.5px;font-weight:bold;color:#2b3440;margin-bottom:2px;">Contract language ('+ctCount+')</div>'
+      +lbContractBody()
     +'</div>'
     +cavEnginePanelHtml();
 }
@@ -12748,44 +12797,6 @@ function cavEnginePanelHtml(){
 }
 function slLevelName(v){
   return {C:'Confidential',S:'Secret',TS:'Top Secret'}[String(v||'')]||'';
-}
-function slRenderPanel(){
-  const host=document.getElementById('slPanel'); if(!host) return;
-  const st=slPanelState();
-  if(!st.all.length){ host.innerHTML='<div style="font-size:10px;color:#888;">No standard language saved. Add entries under Templates \u2192 Standard Language.</div>'; return; }
-  const showAll=!!window.SL_PANEL_ALL;
-  const arr=(st.narrowed&&!showAll)?st.match:st.all;
-  const on=slApplied();
-  const head=st.narrowed
-    ? '<div style="font-size:9.5px;color:#5a6a80;margin-bottom:4px;">Written for <b>'+tplEsc(st.program)+'</b> at <b>'+tplEsc(slLevelName(st.level)||st.level)+'</b>.</div>'
-    : '<div style="font-size:9.5px;color:#8a6a00;margin-bottom:4px;">Showing every entry. '+(st.level?'Apply a template so this DD-254 has a programme':'Enter the Item 1a level')+' to narrow this list.</div>';
-  const empty=(st.narrowed&&!showAll&&!arr.length)
-    ? '<div style="font-size:10px;color:#a03028;background:#fdecea;border:1px solid #e6a6a0;border-radius:4px;padding:6px 8px;margin-bottom:4px;">No entry is written for this programme at this level.</div>'
-    : '';
-  const foot=st.narrowed
-    ? (showAll
-        ? '<div style="margin-top:3px;"><a href="#" onclick="slPanelShowAll(false);return false;" style="font-size:9.5px;color:#17427d;">Show only what this DD-254 calls for</a></div>'
-        : (st.others.length?'<div style="margin-top:3px;"><a href="#" onclick="slPanelShowAll(true);return false;" style="font-size:9.5px;color:#17427d;">Show all \u00b7 '+st.others.length+' other'+(st.others.length===1?'':'s')+'</a></div>':''))
-    : '';
-  /* The index is the entry's place in the LIBRARY, not in this filtered view:
-     slInsert takes a library index, and a filtered one would insert whatever
-     happened to sit at that position. */
-  host.innerHTML=head+empty+arr.map(function(t){
-    const i=st.all.indexOf(t);
-    const applied=on.indexOf(t.label||'(unnamed)')>=0;
-    const prev=slBlockText(t).replace(/\s+/g,' ').slice(0,90);
-    const tags=[slProgramOf(t)||'any programme',slLevelName(slLevelOf(t))||'any level'].join(' \u00b7 ');
-    return '<div style="border:1px solid #c8d4e4;border-radius:4px;padding:5px 7px;margin-bottom:4px;background:'+(applied?'#edfaf3':'#fff')+';">'
-      +'<div style="display:flex;gap:6px;align-items:center;">'
-      +'<b class="sl-name" style="flex:1;font-size:10.5px;color:#2b3440;">'+tplEsc(t.label||'(unnamed)')+'</b>'
-      +(applied?'<span style="font-size:9.5px;color:#1a6a2a;font-weight:bold;">\u2713 in Block 13</span>'
-               :'<button class="dash-btn" style="background:#17427d;padding:2px 8px;font-size:10px;" onclick="slInsert('+i+')">\u2b07 Insert</button>')
-      +'</div>'
-      +'<div style="font-size:9px;color:#8a94a0;margin-top:1px;">'+tplEsc(tags)+'</div>'
-      +'<div style="font-size:9.5px;color:#5a6a80;margin-top:2px;">'+tplEsc(prev)+(prev.length>=90?'\u2026':'')+'</div>'
-      +'</div>';
-  }).join('')+foot
-  +'<div style="font-size:9.5px;color:#8a94a0;margin-top:3px;line-height:1.4;">Inserted at the top of Block 13. To remove one, delete it from Block 13 by hand \u2014 it will not come back.</div>';
 }
 /* ── SECURITY CLASSIFICATION GUIDES ──────────────────────────────────────────
    Item 13 has to identify the classification guides that apply, and every one
@@ -14010,7 +14021,22 @@ async function dashTplEdit(kind){
       return '<div style="background:#fff;border:1px solid #c4ccd4;border-radius:5px;padding:8px;margin-bottom:6px;">'
       +'<div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;">'
       +mv(i)
-      +'<input type="text" value="'+tplEsc(t.label)+'" placeholder="Template name (e.g. CPFF R&D — SECRET)" style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].label=this.value;ctStamp('+i+')">'
+      /* The same four controls, in the same order, as a standard-language row:
+         what it is called, and the three things that decide which DD-254s it
+         is offered for. Stacked on the row rather than hidden behind "Edit
+         blocks", because a template whose level only exists inside its name is
+         a template nothing can match on. */
+      +'<div style="display:flex;flex-direction:column;gap:3px;align-items:flex-start;">'
+      +'<input type="text" value="'+tplEsc(t.label)+'" placeholder="Template name (e.g. CPFF R&D)" style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].label=this.value;ctStamp('+i+')">'
+      +'<input type="text" class="ct-program" value="'+tplEsc(ctProgram(t))+'" list="ctProgramList" placeholder="Programme (blank = any)" title="Programme this template belongs to. The options come from the Security Manager templates, and assigning a security manager fills it from that manager\u2019s own programme. Blank means it fits any programme." style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].program=this.value;ctStamp('+i+')">'
+      +'<select class="ct-scenario" title="Which kind of DD-254 this template is written for. Either means it is offered on both." style="width:210px;font-size:11px;" onchange="ctScenarioSet('+i+',this.value)">'
+      +DD254_SCENARIOS.map(function(o){ return '<option value="'+o[0]+'"'+((ctScenarioOf(t)===o[0])?' selected':'')+'>'+tplEsc(o[1])+'</option>'; }).join('')
+      +'</select>'
+      +'<select class="ct-level" title="Item 1a level this template is written for. Any means it fits every level. This is not the form\u2019s own UNCLASSIFIED/CUI marking, which is set inside Edit blocks." style="width:210px;font-size:11px;" onchange="ctLevelSet('+i+',this.value)">'
+      +[['','Any Item 1a level'],['C','Confidential'],['S','Secret'],['TS','Top Secret']].map(function(o){ return '<option value="'+o[0]+'"'+((ctLevelOf(t)===o[0])?' selected':'')+'>'+o[1]+'</option>'; }).join('')
+      +'</select>'
+      +'<div style="font-size:9px;color:#8a94a0;width:210px;line-height:1.35;">Any and Either decide which DD-254s this template is offered for. They never change what it writes.</div>'
+      +'</div>'
       +'<div style="display:flex;flex-direction:column;gap:3px;align-items:flex-start;">'
       +'<span id="ctSrc_'+i+'">'+ctSrcBadge(t)+'</span>'
       +'<div style="display:flex;gap:3px;align-items:center;">'
@@ -14029,7 +14055,6 @@ async function dashTplEdit(kind){
       +'<input type="text" value="'+tplEsc(t.smName||'')+'" list="ctSmList" placeholder="🛡 Security / program manager…" title="Assign a security / program security manager from Security Manager templates — included on CC" style="width:160px;font-size:11px;" onchange="ctSetSm('+i+',this.value)">'
       +'<span id="ctSmInfo_'+i+'" style="font-size:9.5px;color:#5a6a80;">'+tplEsc(t.smName?((t.smEmail||'—')+(t.smProgram?' · '+t.smProgram:'')):'')+'</span>'
       +'</div>'
-      +((kind==='ct'||kind==='b13')?'<label style="font-size:10px;">Program<br><input type="text" value="'+tplEsc(ctProgram(t))+'" list="ctProgramList" placeholder="Program" title="Program this template belongs to. Assigning a security manager fills it from that manager’s own programme." style="width:145px;font-size:11px;" oninput="TPL_EDIT['+i+'].program=this.value;ctStamp('+i+')"></label>':'')
       +'<div style="flex:1;min-width:170px;"><div id="ctSum_'+i+'" style="font-size:10.5px;color:#4a5866;line-height:1.5;">'+ctSummary(t)+'</div><div id="ctUpd_'+i+'" style="font-size:9.5px;color:#8a94a0;margin-top:2px;font-style:italic;">'+ctUpdText(t)+'</div></div>'
       +'<button class="dash-btn" style="background:#46606f;" title="Write or edit this template&#39;s block content by hand" onclick="ctMgrToggle('+i+')">✎ Edit blocks</button>'
       +'<button class="dash-btn" style="background:#2e5077;" title="Snapshot Blocks 2a, 10, 11, 12, 13, 14, 15, 16 and 18 from the form as it is right now (required attachments are kept, not overwritten)" onclick="dashCtCapture('+i+')">⇪ Capture from form</button>'
@@ -15668,17 +15693,8 @@ function settingsClose(){
 /* Theme is applied here rather than waiting for initWizard: the dashboard can
    be the first thing on screen and it must not paint light then flip. */
 themeSet(themeGet());
-(function(){
-  try{
-    if(document.getElementById('lbTab')) return;
-    const b=document.createElement('button');
-    b.id='lbTab'; b.className='lb-tab'; b.type='button';
-    b.setAttribute('aria-controls','workflowLeftBanner');
-    b.onclick=lbToggle;
-    document.body.appendChild(b);
-    lbApply();
-  }catch(e){}
-})();
+/* The rail paints itself on load. There is nothing to restore first. */
+(function(){ try{ lbApply(); }catch(e){} })();
 </script>
 
 <script>if(typeof ldcRenderRows==='function'){ ldcRenderRows(); ldcSyncVis(); }
@@ -15893,7 +15909,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     ]);
     /* Prime/order example: one prime source shared by twenty orders. */
     if(typeof TPL_ORDERS!=='undefined'&&!tplLoad(TPL_ORDERS).length){
-      const templates=ctEnsureIds();templates.forEach(t=>{if(t.program==null)t.program=/Meridian/i.test(t.label)?'Meridian':(/ALDER/i.test(t.label)?'ALDER':(/Northwind/i.test(t.label)?'Northwind':'Other programs'));});const prime=templates.find(t=>(t.data||{}).primeContract==='HQ0034-25-D-0101'&&!(t.data||{}).taskOrder);
+      const templates=ctEnsureIds();templates.forEach(t=>{if(t.program==null)t.program=/\bMeridian\b/i.test(t.label)?'Meridian':(/\bNorthwind\b/i.test(t.label)?'Northwind':((t.smProgram||'').replace(/^Programme\s+/i,'').replace(/\s*\(demo\)$/i,'')||'Other programs'));});const prime=templates.find(t=>(t.data||{}).primeContract==='HQ0034-25-D-0101'&&!(t.data||{}).taskOrder);
       if(prime){
         const records=[],base=ctSourceSaveVersion(prime,records),now=new Date().toISOString();
         for(let n=1;n<=23;n++){
