@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.15.2</title>
+<title>DD254 Interactive v2.16.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1442,14 +1442,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.164';
+const TOOL_VERSION='2.165';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.15.2';
+const RELEASE_VERSION='2.16.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -3368,7 +3368,10 @@ function dd254AttFromTemplates(list){
 function ctTplAttachments(){
   return dd254AttFromTemplates([
     (typeof ctActiveTpl==='function')?ctActiveTpl():null,
-    ctAppliedContractType()
+    ctAppliedContractType(),
+    /* and the template this DD-254 was actually built from, which is not
+       always one of the two above */
+    (typeof ctLangSnapshot==='function')?ctLangSnapshot():null
   ]);
 }
 function buildTplAttachments(){
@@ -6453,7 +6456,8 @@ function dashDistAttachments(rec){
   try{
     tpl=dd254AttFromTemplates([
       ctTemplateForWorkspace(ws,(ws.selects||{}).ctTplSel),
-      ctTypeByLabel(rec.ctType)
+      ctTypeByLabel(rec.ctType),
+      ctLangSnapshotOf(((ws.texts||{}).ctLangSrc)||'')
     ]).att;
   }catch(e){}
   const manual=String(tx.attachNotes||'').split(/\n+/).map(function(x){return x.trim();}).filter(Boolean);
@@ -8112,6 +8116,9 @@ function ctApplyDataToWorkspace(d,ws,template){
          that nobody else needs one. Clearing it took away what a Revision had
          just inherited from its Original. */
       if(g[0]==='c18'&&k==='18f'&&!(d.c18&&d.c18['18f'])) return;
+      /* A box whose wording waits to be asked for is left to the workflow,
+         ticked or not as the preparer finds it. */
+      if(g[0]!=='c18'&&ctBoxDeferredIn(d,k)) return;
       ws.checks[g[2]+k]=!!(d[g[0]]&&d[g[0]][k]);
     });
   });
@@ -8135,15 +8142,25 @@ function ctApplyDataToWorkspace(d,ws,template){
     /* Always-applies wording is part of every DD-254 built from this template,
        so whether the template also ticks the box is not what decides it. That
        gate dropped the wording of a clause marked "always" whenever the
-       template left its box alone. Box-mode wording waits for the box, which
-       the selections above have just set and the preparer can still untick. */
-    const wanted=!!((d[g[0]]||{})[k])||!!(d.always&&d.always[k]);
+       template left its box alone.
+
+       Wording that waits is a different question: it goes in only if the box
+       is ticked ON THE FORM, which this template has just declined to answer -
+       so what counts is what was already there. The preparer ticking it later
+       inserts the wording, and unticking takes it back out. */
+    let wanted;
+    if(ctBoxDeferredIn(d,k)){
+      const held=ws.checks['c'+k];
+      wanted=(held!=null)?!!held:(live?ctCk('c'+k):false);
+    } else {
+      wanted=!!((d[g[0]]||{})[k])||!!(d.always&&d.always[k]);
+    }
     if(wanted&&text&&b13.indexOf(text)<0) b13.push(text);
   });});
   if(has('i13')||has('l10')||has('l11')) put('item13',b13.join('\n\n'));
   /* What this template says for each box, carried on the form so the boxes
      still govern their own clauses once it has been applied. */
-  if(has('l10')||has('l11')) put('ctLangSrc',ctLangSrcData(d));
+  put('ctLangSrc',ctLangSrcData(d,template&&template.label));
   /* Item 13 has just been rewritten, so the supported-effort line it owns at
      the head has to be re-established. It is done here and not left to the
      form writer because this function also builds records that are never on
@@ -10434,7 +10451,9 @@ tdbOpen(); tdbInit();
 
 function tplLoad(key){
   const arr=(key in TPL_CACHE) ? JSON.parse(JSON.stringify(TPL_CACHE[key])) : lsTplRead(key);
-  return (key===TPL_B13) ? ctB13Mig(arr) : arr;
+  if(key===TPL_B13) return ctLangModeMig(ctB13Mig(arr));
+  if(key===TPL_CT||key===TPL_ORDERS) return ctLangModeMig(arr);
+  return arr;
 }
 /* Contract Type templates used to be {label,text} — a name and Block 13 text.
    They now carry the same structure as DD-254 Template Language entries, so the
@@ -10449,6 +10468,45 @@ function ctB13Mig(arr){
     t.data=ctBlankData();
     if(txt) t.data.i13=txt;
     delete t.text;
+  });
+  return arr;
+}
+/* The setting on each piece of per-box wording arrived in v2.14.0, and until
+   v2.16.0 a template asserted the box whatever that setting said - so wording
+   stored before this release behaved as "always applies" however its setting
+   read. Reading it as "waits" from now on would change what templates nobody
+   edited do, and a setting nobody chose should not become a decision.
+
+   Each template's wording is therefore stamped once, as what it has been doing
+   all along. From then on the settings in that template are the author's and
+   are left exactly as they set them - including back to "waits", one clause at
+   a time, in the editor. ctBlankData carries the stamp, so a template written
+   from now on is never retro-stamped and its wording waits by default.
+
+   Keys come from the stored wording itself rather than from CT_10/CT_11: this
+   runs on a read that can happen before those declarations have initialised. */
+const TPL_LANG_MODE_V=1;
+function ctLangModeStamp(d){
+  if(!d||typeof d!=='object') return d;
+  if(d.langModeV===TPL_LANG_MODE_V) return d;
+  ['l10','l11'].forEach(function(grp){
+    const m=d[grp]; if(!m||typeof m!=='object') return;
+    Object.keys(m).forEach(function(k){
+      if(!String(m[k]||'').trim()) return;
+      if(!d.always) d.always={};
+      if(!d.always[k]) d.always[k]=true;
+    });
+  });
+  d.langModeV=TPL_LANG_MODE_V;
+  return d;
+}
+function ctLangModeMig(arr){
+  if(!Array.isArray(arr)) return arr;
+  arr.forEach(function(t){
+    if(!t) return;
+    if(t.data) ctLangModeStamp(t.data);
+    /* a saved received-DD254 source carries a whole template inside it */
+    if(t.snapshot&&t.snapshot.data) ctLangModeStamp(t.snapshot.data);
   });
   return arr;
 }
@@ -10780,7 +10838,7 @@ function ctBlankData(){
      for it; the numbers themselves live here so applying the template puts the
      prime in 2a and the task order in its own field rather than making the
      name do double duty. */
-  const d={cls:'',c10:{},l10:{},t10k:'',c11:{},l11:{},t11m:'',i12route:'',i12:'',i12specify:'',i13:'',i14:'',i14text:'',i15:'',i15text:'',i16:{a:'',b:'',c:'',d:'',e:'',f:''},c18:{},t18f:'',attText:'',primeContract:'',taskOrder:''};
+  const d={cls:'',c10:{},l10:{},t10k:'',c11:{},l11:{},t11m:'',i12route:'',i12:'',i12specify:'',i13:'',i14:'',i14text:'',i15:'',i15text:'',i16:{a:'',b:'',c:'',d:'',e:'',f:''},c18:{},t18f:'',attText:'',primeContract:'',taskOrder:'',langModeV:(typeof TPL_LANG_MODE_V!=='undefined')?TPL_LANG_MODE_V:1};
   CT_10.forEach(function(k){d.c10[k]=false;}); CT_11.forEach(function(k){d.c11[k]=false;}); CT_18.forEach(function(k){d.c18[k]=false;});
   return d;
 }
@@ -11644,9 +11702,9 @@ function ctEditorHtml(t,i){
          from this template, or only when its own box is ticked on the form.
          Stated in words - a checkbox beside "always" reads as "yes, always"
          to one person and "tick when it applies" to the next. */
-      +'<label id="ctAlw_'+i+'_'+key+'" title="Always applies: written into Item 13 of every DD-254 from this template. Otherwise it waits until Item '+tplEsc(key)+' is ticked on the form \u2014 including when this template leaves the box above unticked, which is how wording is kept ready without asserting that it applies." style="display:'+(String(lval).trim()?'flex':'none')+';align-items:center;gap:4px;font-size:9.5px;color:#176b31;margin-top:2px;">'
+      +'<label id="ctAlw_'+i+'_'+key+'" title="Always applies: this template ticks '+tplEsc(key)+' as set above and writes this wording into Item 13 of every DD-254 built from it. Applies when '+tplEsc(key)+' is ticked in the workflow: the template leaves '+tplEsc(key)+' alone \u2014 it neither ticks it nor writes this wording \u2014 until the preparer ticks it on the form, and unticking takes the wording back out." style="display:'+(String(lval).trim()?'flex':'none')+';align-items:center;gap:4px;font-size:9.5px;color:#176b31;margin-top:2px;">'
         +'<select style="font-size:9.5px;max-width:100%;" onchange="ctAlwaysSet('+i+','+JSON.stringify(key).split('"').join("'")+',this.selectedIndex===1)">'
-          +'<option value="box"'+((d.always&&d.always[key])?'':' selected')+'>Applies when '+tplEsc(key)+' is ticked</option>'
+          +'<option value="box"'+((d.always&&d.always[key])?'':' selected')+'>Applies when '+tplEsc(key)+' is ticked in the workflow</option>'
           +'<option value="always"'+((d.always&&d.always[key])?' selected':'')+'>Always applies</option>'
         +'</select></label>'
       /* Item 11c alone carries two wordings, because the clause about test
@@ -12160,22 +12218,37 @@ function ctLangOf(t,key){
    A snapshot rather than a reference, deliberately: what the box has to be
    able to withdraw is the wording that was inserted, which is not necessarily
    what the template says today. */
-function ctLangSrcData(d){
+function ctLangSrcData(d,label){
   const ls={};
   ['l10','l11','l11v','always'].forEach(function(k){
     if(d&&d[k]&&typeof d[k]==='object'&&Object.keys(d[k]).length) ls[k]=JSON.parse(JSON.stringify(d[k]));
   });
+  /* What the template requires attached travels with it, for the same reason
+     the wording does: both were read through the picker above Item 13, and a
+     template applied from the library never sets that picker - so its required
+     attachments appeared neither on the form's own list nor on the issue
+     screen that tells the preparer what to attach before sending. */
+  const att=String((d&&d.attText)||'').trim();
+  if(att) ls.attText=att;
+  if(d&&Array.isArray(d.attList)&&d.attList.length) ls.attList=d.attList.slice();
+  const name=String(label==null?'':label).trim();
+  if(name&&Object.keys(ls).length) ls.srcLabel=name;
   return Object.keys(ls).length?JSON.stringify(ls):'';
 }
-function ctLangSrcRemember(d){
-  const e=document.getElementById('ctLangSrc'); if(e) e.value=ctLangSrcData(d);
+function ctLangSrcRemember(d,label){
+  const e=document.getElementById('ctLangSrc'); if(e) e.value=ctLangSrcData(d,label);
+}
+/* The snapshot as a template-shaped source: {label,data}, which is what both
+   the wording reader and the attachment reader already expect. */
+function ctLangSnapshotOf(raw){
+  try{
+    const d=raw?JSON.parse(raw):null;
+    if(!d||typeof d!=='object') return null;
+    return {label:String(d.srcLabel||'applied template'),data:d};
+  }catch(e){ return null; }
 }
 function ctLangSnapshot(){
-  try{
-    const raw=(document.getElementById('ctLangSrc')||{}).value||'';
-    const d=raw?JSON.parse(raw):null;
-    return (d&&typeof d==='object')?{data:d}:null;
-  }catch(e){ return null; }
+  return ctLangSnapshotOf((document.getElementById('ctLangSrc')||{}).value||'');
 }
 function ctLangSourceFor(key){
   const src=[];
@@ -12226,6 +12299,18 @@ function ctCaveatKeys(t){
 function ctLangMode(t,key){
   const d=(t&&t.data)||{};
   return (d.always&&d.always[key])?'always':'box';
+}
+/* Whether THIS template defers a box to the workflow: it carries wording for
+   that box and that wording waits to be asked for. Applying such a template
+   neither ticks the box nor writes the wording, because a template that ticked
+   it would be answering the very question the mode exists to leave open - and
+   the wording went in on application, which is what it was meant to prevent.
+   Taken from the data rather than from a template object so whole-template
+   application, which works on data, reads exactly the same rule. */
+function ctBoxDeferredIn(d,key){
+  const grp=key.indexOf('10')===0?'l10':'l11';
+  const has=!!(d&&d[grp]&&String(d[grp][key]||'').trim());
+  return has && !(d&&d.always&&d.always[key]);
 }
 function ctCaveatAlways(t,key){ return ctLangMode(t,key)==='always'; }
 function cavNotice(msg){
@@ -13835,7 +13920,11 @@ function ctForceLang(txt){ const ta=document.getElementById('item13'); if(!ta||!
   ta.value=(base?base+'\n\n':'')+txt; }
 function ctApplySel(idx,blk){ const d=ctData(idx); if(!d) return;
   const keys=blk==='10'?CT_10:CT_11; const map=blk==='10'?d.c10:d.c11;
-  keys.forEach(function(k){ const inp=ck('c'+k); if(!inp) return; if(inp.checked!==!!map[k]){ const cb=ck('cb'+k); if(cb) cb.click(); } });
+  keys.forEach(function(k){ const inp=ck('c'+k); if(!inp) return;
+    /* Same rule as applying the whole template: a box whose wording waits is
+       the workflow's to answer. */
+    if(ctBoxDeferredIn(d,k)) return;
+    if(inp.checked!==!!map[k]){ const cb=ck('cb'+k); if(cb) cb.click(); } });
   if(blk==='10'&&d.t10k){ const e=ck('i10k'); if(e){e.value=d.t10k;} }
   if(blk==='11'&&d.t11m){ const e=ck('i11m'); if(e){e.value=d.t11m;} }
   /* The same two rules as whole-template application, because "apply these
@@ -13845,7 +13934,7 @@ function ctApplySel(idx,blk){ const d=ctData(idx); if(!d) return;
   keys.forEach(function(k){ const inp=ck('c'+k);
     const txt=ctLangFromData(d,k,purpose);
     if(txt&&((inp&&inp.checked)||(d.always&&d.always[k]))) ctForceLang(txt); });
-  ctLangSrcRemember(d);
+  ctLangSrcRemember(d,(ctFormTemplate(idx)||{}).label);
   run(); }
 function ctApply12Route(idx){ const d=ctData(idx); if(!d||!d.i12route) return;
   const r=document.querySelector('input[name="i12route"][value="'+d.i12route+'"]'); if(r&&!r.checked) r.click(); run(); }
@@ -16308,17 +16397,17 @@ document.addEventListener('DOMContentLoaded',()=>{
     ]);
     seed(TPL_CT, [
       {label:'Aurora Dynamics — Programme ALDER (demo)', srcDate:'2026-02-02', smName:'R. Vance', smEmail:'r.vance@example.com', smProgram:'Programme ALDER (demo)',
-       data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'', c10:{'10a':true}, l10:{'10a':'Reference 10a:\n\nAccess to COMSEC information requires a final entity eligibility determination and a final personnel clearance at the appropriate level (32 CFR 117.21(c)(3)).'}})},
+       data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'', c10:{'10a':true}, always:{'10a':true}, l10:{'10a':'Reference 10a:\n\nAccess to COMSEC information requires a final entity eligibility determination and a final personnel clearance at the appropriate level (32 CFR 117.21(c)(3)).'}})},
       {label:'Task Order 0042 — Meridian (demo)', srcDate:'2026-03-14', smName:'T. Okafor', smEmail:'t.okafor@example.com', smProgram:'Programme BIRCH (demo)',
        /* 11c is wording this template asserts: it ticks the box, and the clause
           goes in with it. 11d is wording kept ready - the template does not tick
           11d, so nothing is written until a preparer ticks 11d on the form, and
           unticking it takes the clause back out again. */
-       data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'0042', c11:{'11c':true}, l11:{'11c':'Reference 11c:\n\nThe contractor will reference the applicable security classification guide when generating or deriving classified material.','11d':'Reference 11d:\n\nClassified hardware fabricated, modified or stored under this task order shall be marked in accordance with the applicable security classification guide and stored in approved security equipment at the cleared facility named in Item 8a.'}})},
+       data:ctData({primeContract:'HQ0034-25-D-0101', taskOrder:'0042', c11:{'11c':true}, always:{'11c':true}, l11:{'11c':'Reference 11c:\n\nThe contractor will reference the applicable security classification guide when generating or deriving classified material.','11d':'Reference 11d:\n\nClassified hardware fabricated, modified or stored under this task order shall be marked in accordance with the applicable security classification guide and stored in approved security equipment at the cleared facility named in Item 8a.'}, attText:'SCG-0042 Security Classification Guide, dated 14 Mar 2026 (demo).\nProgramme BIRCH access roster (demo).'})},
       {label:'Calder Aerospace — Programme CEDAR (demo)', srcDate:'2026-04-01', smName:'M. Lindqvist', smEmail:'m.lindqvist@example.com', smProgram:'Programme CEDAR (demo)',
-       data:ctData({primeContract:'N00178-25-D-2204', c11:{'11l':true}, l11:{'11l':'Reference 11l:\n\nControlled Unclassified Information generated under this contract shall be marked and safeguarded per 32 CFR Part 2002 and the CUI designation block below. CUI requirements are outside the scope of 32 CFR Part 117 (32 CFR 117.7(h)(1)(iii)).'}})},
+       data:ctData({primeContract:'N00178-25-D-2204', c11:{'11l':true}, always:{'11l':true}, l11:{'11l':'Reference 11l:\n\nControlled Unclassified Information generated under this contract shall be marked and safeguarded per 32 CFR Part 2002 and the CUI designation block below. CUI requirements are outside the scope of 32 CFR Part 117 (32 CFR 117.7(h)(1)(iii)).'}})},
       {label:'Northwind Defense — Programme DAMSON (demo)', srcDate:'2026-05-20', smName:'J. Serrano', smEmail:'j.serrano@example.com', smProgram:'Programme DAMSON (demo)',
-       data:ctData({primeContract:'SP4701-25-C-3310', taskOrder:'0007', c10:{'10b':true}, l10:{'10b':'Reference 10b:\n\nRestricted Data access is limited to personnel briefed under the applicable programme access requirements.'}})}
+       data:ctData({primeContract:'SP4701-25-C-3310', taskOrder:'0007', c10:{'10b':true}, always:{'10b':true}, l10:{'10b':'Reference 10b:\n\nRestricted Data access is limited to personnel briefed under the applicable programme access requirements.'}})}
     ]);
     /* Prime/order example: one prime source shared by twenty orders. */
     if(typeof TPL_ORDERS!=='undefined'&&!tplLoad(TPL_ORDERS).length){
