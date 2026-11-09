@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.17.0</title>
+<title>DD254 Interactive v2.18.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1448,14 +1448,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.166';
+const TOOL_VERSION='2.167';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.17.0';
+const RELEASE_VERSION='2.18.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -6188,7 +6188,8 @@ function distSmAdd(){
   if(!emailsIn(m.email).length) return alert('This security manager has no e-mail address. Add one in Security Manager templates first.');
   const a=distSmRead(box.value);
   if(!a.some(function(x){return String(x.email).trim().toLowerCase()===String(m.email).trim().toLowerCase();}))
-    a.push({name:m.name||'',email:m.email||'',program:m.program||''});
+    a.push({name:m.name||'',email:m.email||'',program:m.program||'',
+            programs:(typeof smPrograms==='function')?smPrograms(m):[]});
   box.value=JSON.stringify(a); sel.value=''; distSmRender(); updateEmailDist(); dashTouch();
 }
 function distSmRemove(i){
@@ -6239,7 +6240,7 @@ function dashSecurityManager(rec){
 function dashSecurityManagerLabel(rec){
   const sm=dashSecurityManager(rec);
   if(!sm) return '';
-  return [sm.name,sm.email,sm.program].filter(Boolean).join(' \u00b7 ');
+  return [sm.name,sm.email].concat((typeof smPrograms==='function')?smPrograms(sm):[]).filter(Boolean).join(' \u00b7 ');
 }
 function dashDistEmails(rec){
   rec=rec||{};
@@ -7730,7 +7731,11 @@ function dashPartyPrompt(o){
     const row=dashPartyRow;
     const sms=(typeof tplLoad==='function')?(tplLoad(TPL_SM)||[]):[];
     const smOpts='<option value="">\u2014 none \u2014</option>'+sms.map(function(m,i){
-      return '<option value="'+i+'"'+((o.smName&&o.smName===m.name)?' selected':'')+'>'+dashEsc([m.name,m.program].filter(Boolean).join(' \u00b7 '))+'</option>'; }).join('');
+      /* Every programme this manager runs, not whichever was recorded first.
+         Which one this DD-254 is for is settled on the template row, where the
+         question can be answered against the contract. */
+      const ps=(typeof smPrograms==='function')?smPrograms(m):[];
+      return '<option value="'+i+'"'+((o.smName&&o.smName===m.name)?' selected':'')+'>'+dashEsc([m.name].concat(ps).filter(Boolean).join(' \u00b7 '))+'</option>'; }).join('');
     ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:560px;width:100%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
       +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">'+dashEsc(o.heading||'Create DD-254 Workspace')+'</div>'
       +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">'+dashEsc(o.note||'Named for the person and the contract. Everything here can be changed later with the pencil.')+'</div>'
@@ -7969,7 +7974,14 @@ function dashPartyPrompt(o){
       done({first:first,last:last,person:person,email:email,prime:prime,
             order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol'),due:val('np_due'),
             title:title,stage:stage,
-            securityManager:sm?{name:sm.name||'',email:sm.email||'',program:sm.program||'',sourceTemplateId:sm.ioId||sm.label||''}:null,
+            /* programs is the record; program stays beside it as the one
+               programme when there is only one, blank when the manager runs
+               several - the same rule the template row follows, so nothing
+               claims a programme nobody chose. */
+            securityManager:sm?{name:sm.name||'',email:sm.email||'',
+              programs:(typeof smPrograms==='function')?smPrograms(sm):[],
+              program:((typeof smPrograms==='function'&&smPrograms(sm).length===1)?smPrograms(sm)[0]:''),
+              sourceTemplateId:sm.ioId||sm.label||''}:null,
             engine:engine,
             template:matched.hit||null});
     };
@@ -10972,7 +10984,11 @@ function ctSrcBadge(t){
 }
 function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim();
   const sms=tplLoad(TPL_SM);
-  const m=sms.find(function(x){return (x.name||'')===v;})||(v?sms.find(function(x){return (x.name||'').toLowerCase().indexOf(v.toLowerCase())===0;}):null);
+  /* A pair names the programme, so there is nothing left to choose. A bare
+     name still resolves, and a prefix still resolves, because the field is
+     typed into as well as picked from. */
+  const hit=smPairParse(v,sms);
+  const m=hit.manager||(v?sms.find(function(x){return (x.name||'').toLowerCase().indexOf(v.toLowerCase())===0;}):null)||null;
   t.smName=m?(m.name||v):v; t.smEmail=m?(m.email||''):'';
   /* Which of this manager's programmes is this template for? One, and it is
      filled in. Several, and none is - choosing between a manager's programmes
@@ -10981,7 +10997,8 @@ function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim
      manager runs it, so re-picking the same manager changes nothing. */
   const ps=m?smPrograms(m):[];
   const held=String(t.program!=null?t.program:(t.smProgram||'')).trim();
-  if(ps.length===1) t.smProgram=ps[0];
+  if(hit.program) t.smProgram=hit.program;
+  else if(ps.length===1) t.smProgram=ps[0];
   else if(ps.length>1) t.smProgram=(ps.indexOf(held)>=0?held:'');
   else t.smProgram='';
   /* program is what everything matches on; smProgram records where it came
@@ -10989,6 +11006,18 @@ function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim
   t.program=t.smProgram;
   ctStamp(i);
   ctSmProgRender(i,ps);
+}
+/* The manager control on the row follows the programme: it offers only the
+   managers who run it, each named with the programme the choice is for. Both
+   directions, because an FSO works in whichever order the paperwork arrived. */
+function ctSmListRender(i){
+  const t=window.TPL_EDIT&&window.TPL_EDIT[i]; if(!t) return;
+  const prog=String(t.program||'').trim();
+  const list=document.getElementById('ctSmList_'+i);
+  if(list) list.innerHTML=smPairsFor(prog).map(function(x){
+    return '<option value="'+tplEsc(smPairLabel(x.manager.name,x.program))+'" label="'+tplEsc(x.manager.email||'')+'"></option>'; }).join('');
+  const inp=document.querySelector('.ct-sm[data-row="'+i+'"]');
+  if(inp&&document.activeElement!==inp) inp.value=smPairLabel(t.smName||'',t.smProgram||'');
 }
 /* The programme control on the row follows the manager: it offers that
    manager's programmes, and says so when there is a choice left to make. */
@@ -11000,14 +11029,22 @@ function ctSmProgRender(i,ps){
   const inp=document.querySelector('.ct-program[data-row="'+i+'"]');
   if(inp) inp.value=String(t.program||'');
   const el=document.getElementById('ctSmInfo_'+i);
+  const prog=String(t.program||'').trim();
+  /* A programme this manager is not assigned to is said out loud rather
+     than quietly dropped: it is usually the programme that is wrong, not
+     the manager, and the row is the only place either can be corrected. */
+  const foreign=(!!t.smName&&!!prog&&ps.length>0&&ps.indexOf(prog)<0);
   if(el){
     el.textContent=!t.smName ? ''
       : ((t.smEmail||'\u2014')
-         +(ps.length>1
-            ? ' \u00b7 '+ps.length+' programmes: '+ps.join(', ')+(t.program?'':' \u2014 choose one')
-            : (t.program?' \u00b7 '+t.program:'')));
-    el.style.color=(ps.length>1&&!t.program)?'#8a6a00':'#5a6a80';
+         +(foreign
+            ? ' \u00b7 not assigned to '+prog+' \u2014 runs '+ps.join(', ')
+            : (ps.length>1
+                ? ' \u00b7 '+ps.length+' programmes: '+ps.join(', ')+(prog?'':' \u2014 choose one')
+                : (prog?' \u00b7 '+prog:''))));
+    el.style.color=(foreign||(ps.length>1&&!prog))?'#8a6a00':'#5a6a80';
   }
+  ctSmListRender(i);
 }
 function ctSetPrime(i,v){ const d=ctEd(i); if(!d) return; d.primeContract=(v||'').trim(); ctStamp(i); }
 async function ctSetTask(i,v){
@@ -11331,6 +11368,44 @@ function ctProgram(t){return String(t&&t.program!=null?t.program:(t&&t.smProgram
    first of them, kept in step on every write so that every reader written
    before this - the party dialog, the CSV column, an older build opening the
    same store - still finds the single value it expects rather than nothing. */
+/* A manager and ONE of their programmes. The owner's instruction, and the
+   only form in which a list of managers can be narrowed by programme at all:
+   "Joe Schmuckatelli Windfall. You know, Joe Schmuckatelli Ocean Breeze."
+   Picking a pair settles the manager and the programme in one action, which is
+   what the template row used to ask as two questions and then leave blank. */
+const SM_PAIR_SEP=' · ';
+function smPairLabel(name,program){
+  name=String(name==null?'':name).trim();
+  program=String(program==null?'':program).trim();
+  return program?(name+SM_PAIR_SEP+program):name;
+}
+/* Reads a pair, a bare name, or neither. The name is matched exactly first:
+   a manager whose own name contains the separator is still found. */
+function smPairParse(text,sms){
+  const raw=String(text==null?'':text).trim();
+  const list=sms||((typeof tplLoad==='function')?tplLoad(TPL_SM):[]);
+  const byName=function(n){ return list.filter(function(m){ return String(m.name||'')===n; })[0]||null; };
+  const exact=byName(raw);
+  if(exact){ const ps=smPrograms(exact); return {manager:exact,program:(ps.length===1?ps[0]:'')}; }
+  const at=raw.lastIndexOf(SM_PAIR_SEP);
+  if(at>0){
+    const m=byName(raw.slice(0,at).trim()), prog=raw.slice(at+SM_PAIR_SEP.length).trim();
+    if(m) return {manager:m,program:(smPrograms(m).indexOf(prog)>=0?prog:'')};
+  }
+  return {manager:null,program:''};
+}
+/* Every pair, narrowed to one programme when something has chosen one. A
+   manager with no programme recorded is offered only when nothing is chosen:
+   with a programme named, a manager who does not run it is not an answer. */
+function smPairsFor(program,sms){
+  const want=String(program==null?'':program).trim(), out=[];
+  (sms||((typeof tplLoad==='function')?tplLoad(TPL_SM):[])).forEach(function(m){
+    const ps=smPrograms(m);
+    if(!ps.length){ if(!want) out.push({manager:m,program:''}); return; }
+    ps.forEach(function(p){ if(!want||p===want) out.push({manager:m,program:p}); });
+  });
+  return out;
+}
 function smPrograms(m){
   const list=(m&&Array.isArray(m.programs))?m.programs:null;
   const out=[];
@@ -14534,7 +14609,7 @@ async function dashTplEdit(kind){
           const m=tplLoad(TPL_SM).find(function(x){return (x.name||'')===String(t.smName||'');});
           return (m?smPrograms(m):ctProgramOptions()).map(function(p){ return '<option value="'+tplEsc(p)+'"></option>'; }).join('');
         })()+'</datalist>'
-      +'<input type="text" class="ct-program" data-row="'+i+'" value="'+tplEsc(ctProgram(t))+'" list="ctSmProg_'+i+'" placeholder="Programme (blank = any)" title="Programme this template belongs to. The options come from the Security Manager templates, and assigning a security manager fills it from that manager\u2019s own programme. Blank means it fits any programme." style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].program=this.value;ctStamp('+i+')">'
+      +'<input type="text" class="ct-program" data-row="'+i+'" value="'+tplEsc(ctProgram(t))+'" list="ctSmProg_'+i+'" placeholder="Programme (blank = any)" title="Programme this template belongs to. The options come from the Security Manager repository. Naming one narrows the security manager list beside it to the managers who run it; assigning a manager fills this in from the programme you chose. Blank means it fits any programme." style="width:210px;font-size:11px;" oninput="TPL_EDIT['+i+'].program=this.value;ctStamp('+i+');ctSmProgRender('+i+')">'
       +'<select class="ct-scenario" title="Which kind of DD-254 this template is written for. Either means it is offered on both." style="width:210px;font-size:11px;" onchange="ctScenarioSet('+i+',this.value)">'
       +DD254_SCENARIOS.map(function(o){ return '<option value="'+o[0]+'"'+((ctScenarioOf(t)===o[0])?' selected':'')+'>'+tplEsc(o[1])+'</option>'; }).join('')
       +'</select>'
@@ -14558,7 +14633,9 @@ async function dashTplEdit(kind){
       +'<input type="text" value="'+tplEsc((t.data&&t.data.taskOrder)||'')+'" '+(kind==='ct'&&!(t.data||{}).taskOrder?'readonly ':'')+'placeholder="Task Order / BPA / Delivery Order…" title="Prime templates have no order number. Add task orders beneath the matching prime contract." style="width:160px;font-size:11px;" onchange="ctSetTask('+i+',this.value)">'
       +'</div>'
       +'<div style="display:flex;flex-direction:column;gap:2px;align-items:flex-start;">'
-      +'<input type="text" value="'+tplEsc(t.smName||'')+'" list="ctSmList" placeholder="🛡 Security / program manager…" title="Assign a security / program security manager from Security Manager templates — included on CC" style="width:160px;font-size:11px;" onchange="ctSetSm('+i+',this.value)">'
+      +'<datalist id="ctSmList_'+i+'">'+smPairsFor(ctProgram(t)).map(function(x){
+          return '<option value="'+tplEsc(smPairLabel(x.manager.name,x.program))+'" label="'+tplEsc(x.manager.email||'')+'"></option>'; }).join('')+'</datalist>'
+      +'<input type="text" class="ct-sm" data-row="'+i+'" value="'+tplEsc(smPairLabel(t.smName||'',t.smProgram||''))+'" list="ctSmList_'+i+'" placeholder="🛡 Security / program manager…" title="Assign a security / program manager from the Security Manager repository \u2014 included on CC. A manager who runs several programmes is listed once per programme, and choosing one sets the programme beside it. Naming a programme first narrows this list to the managers who run it." style="width:190px;font-size:11px;" onchange="ctSetSm('+i+',this.value)">'
       +'<span id="ctSmInfo_'+i+'" style="font-size:9.5px;color:#5a6a80;">'+tplEsc(t.smName?((t.smEmail||'—')+(t.smProgram?' · '+t.smProgram:'')):'')+'</span>'
       +'</div>'
       +'<div style="flex:1;min-width:170px;"><div id="ctSum_'+i+'" style="font-size:10.5px;color:#4a5866;line-height:1.5;">'+ctSummary(t)+'</div><div id="ctUpd_'+i+'" style="font-size:9.5px;color:#8a94a0;margin-top:2px;font-style:italic;">'+ctUpdText(t)+'</div></div>'
