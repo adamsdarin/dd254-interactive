@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.19.0</title>
+<title>DD254 Interactive v2.20.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1448,14 +1448,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.168';
+const TOOL_VERSION='2.169';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.19.0';
+const RELEASE_VERSION='2.20.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -8035,7 +8035,18 @@ function dashPartyPrompt(o){
 /* One field row, used by the intake dialog and by the copy dialog. They ask
    for the same things and must look and validate the same; two copies of this
    markup is how they would stop doing so. */
+/* A date field only accepts YYYY-MM-DD, and silently shows nothing for any
+   other spelling. The form's own date boxes are YYYYMMDD, so a due date typed
+   on the form arrived in these dialogs as an empty field - and an empty field
+   reads as "there is no date". */
+function dashDateForInput(v){
+  const s=String(v==null?'':v).trim();
+  if(/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const d=s.replace(/\D/g,'');
+  return (d.length===8)?(d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6,8)):'';
+}
 function dashPartyRow(id,label,val,hint,dis,type,listId){
+  if(type==='date') val=dashDateForInput(val);
   /* listId attaches a datalist: the field stays a plain text input that any
      address can be typed into, and gains type-ahead over the ones on file.
      A select would have made an address that is not in the repository yet
@@ -9358,6 +9369,52 @@ function dashRestore(ev){
    Deliberately not two dialogs. Opening a second blocking modal after this one
    is what stalled the regression suite for 800 assertions, and it is also
    worse to use: the operator is answering one question about one copy. */
+/* The one decision a copy has to make about the template behind it. A
+   Contract Type is written for a KIND of contract, so its language is as right
+   on the copy as it was on the original. A DD-254 template is written for ONE
+   contract - it is filed under that contract's number - so its language on a
+   copy is right only if the copy is for the same contract, and a copy is made
+   precisely when it usually is not. The owner's report is the result: copy,
+   forget Block 13, issue another contract's wording.
+
+   'dd254' - built from a DD-254 template, by any path that applies one
+   'type'  - built from a Contract Type and nothing more specific
+   ''      - no template on record; the language is somebody's own typing */
+function dashCopyTplKind(rec){
+  const ws=(rec&&rec.workspace)||{};
+  if(String((ws.selects||{}).ctTplSel||'').trim()||ws.ctSource) return 'dd254';
+  if(String((rec&&rec.ctType)||'').trim()) return 'type';
+  try{ const s=JSON.parse(((ws.texts||{}).ctLangSrc)||'null'); if(s&&s.srcLabel) return 'dd254'; }catch(e){}
+  return '';
+}
+function dashCopyTplLabel(rec){
+  const ws=(rec&&rec.workspace)||{};
+  try{
+    const t=(typeof ctTemplateForWorkspace==='function')?ctTemplateForWorkspace(ws,(ws.selects||{}).ctTplSel):null;
+    if(t&&t.label) return String(t.label);
+    if(ws.ctSource&&ws.ctSource.snapshot&&ws.ctSource.snapshot.label) return String(ws.ctSource.snapshot.label);
+    const s=JSON.parse(((ws.texts||{}).ctLangSrc)||'null');
+    if(s&&s.srcLabel) return String(s.srcLabel);
+  }catch(e){}
+  return '';
+}
+/* Blocks 10 to 16 and the link to the template that wrote them, taken off a
+   workspace. Everything else stays: who the contractor is, where the work is
+   performed and who gets a copy are facts about the parties, which a copy for
+   the next contract with the same company keeps. */
+function dashCopyResetBlocks(ws){
+  ws=ws||{};
+  ws.texts=ws.texts||{}; ws.checks=ws.checks||{}; ws.radios=ws.radios||{}; ws.selects=ws.selects||{};
+  ((typeof CT_10!=='undefined')?CT_10:[]).concat((typeof CT_11!=='undefined')?CT_11:[])
+    .forEach(function(k){ ws.checks['c'+k]=false; });
+  ['i10k','i11m','i12','i12specify','item13','i14text','i15text',
+   'i16a','i16b','i16c','i16d','i16e','i16f','ctLangSrc','distSmAssigned']
+    .forEach(function(k){ ws.texts[k]=''; });
+  ['i12route','i14','i15'].forEach(function(k){ delete ws.radios[k]; });
+  ws.selects.ctTplSel='';
+  delete ws.ctSource;
+  return ws;
+}
 function dashCopyPrompt(src){
   src=src||{};
   const title=src.title||((src.meta&&src.meta.contract)||'');
@@ -9370,9 +9427,26 @@ function dashCopyPrompt(src){
     const last=req.lastName||nameParts.slice(1).join(' ')||'';
     const stage0=(typeof dashStageOf==='function'&&dashStageOf(src)==='sol')?'sol':'orig';
     const smName=(src.securityManager&&src.securityManager.name)||'';
+    /* Built from a contract's own template: Blocks 10 to 16 stay behind, and
+       the contract fields start empty so that which contract this copy is for
+       is something the operator says rather than something they inherit. */
+    const reset=(typeof dashCopyTplKind==='function'&&dashCopyTplKind(src)==='dd254');
+    const tplName=reset?dashCopyTplLabel(src):'';
+    const oldPrime=String(ident.prime||tx.i2a||'').trim(), oldOrder=String(ident.order||tx.iEffort||'').trim();
+    const known=[];
+    if(reset){
+      ((typeof tplLoad==='function')?(tplLoad(TPL_CT)||[]):[]).forEach(function(t){
+        const p=String(((t&&t.data)||{}).primeContract||'').trim();
+        if(p&&known.indexOf(p)<0) known.push(p);
+      });
+      known.sort(function(a,b){ return a.localeCompare(b); });
+    }
     const ov=document.createElement('div'); ov.id='dashCopyDlg';
-    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;';
-    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:520px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);">'
+    /* Scrolls. The solicitation fields and the security manager are the last
+       rows of a tall dialog, and on a laptop screen they were below the fold
+       with no way to reach them. */
+    ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:flex-start;justify-content:center;font-family:Arial,sans-serif;padding:16px;overflow:auto;';
+    ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:520px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);margin:auto;">'
       +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">\u29c9 Copy this DD-254</div>'
       +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:11px;">'+dashEsc(title||'Untitled DD-254')+'</div>'
       +'<button id="cpKeep" style="display:block;width:100%;text-align:left;background:#eef3fa;border:1px solid #c8d4e4;border-radius:5px;padding:8px 11px;margin-bottom:6px;cursor:pointer;font-size:11.5px;color:#17427d;">'
@@ -9386,14 +9460,26 @@ function dashCopyPrompt(src){
       +'<button type="button" id="cpStageOrig" role="radio" aria-checked="'+(stage0==='orig'?'true':'false')+'" style="flex:1;font-size:11.5px;padding:7px 10px;border-radius:5px;cursor:pointer;border:1px solid '+(stage0==='orig'?'#17427d':'#c4ccd4')+';background:'+(stage0==='orig'?'#eef3fa':'#fff')+';">Original</button>'
       +'<button type="button" id="cpStageSol" role="radio" aria-checked="'+(stage0==='sol'?'true':'false')+'" style="flex:1;font-size:11.5px;padding:7px 10px;border-radius:5px;cursor:pointer;border:1px solid '+(stage0==='sol'?'#17427d':'#c4ccd4')+';background:'+(stage0==='sol'?'#eef3fa':'#fff')+';">Solicitation</button>'
       +'</div>'
-      +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:7px;line-height:1.45;">Everything below is carried over from the DD-254 you are copying. Change whatever differs; the form itself, its Item 10 and 11 selections and all of its Block 13 language come across untouched.</div>'
+      +(reset
+        ?'<div id="cpResetNote" style="font-size:11.5px;color:#7a4a00;background:#fdf3d8;border:1px solid #e8c880;border-radius:5px;padding:8px 10px;margin-bottom:9px;line-height:1.45;">'
+          +'<b>Blocks 10 to 16 are not copied.</b> This DD-254 was built from '
+          +(tplName?'the DD-254 template \u201c'+dashEsc(tplName)+'\u201d':'a DD-254 template')
+          +', which is written for one contract. Say which contract this copy is for and they are rebuilt from the template saved for it.</div>'
+        :'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:7px;line-height:1.45;">Everything below is carried over from the DD-254 you are copying. Change whatever differs; the form itself, its Item 10 and 11 selections and all of its Block 13 language come across untouched.</div>')
       +'<div style="display:flex;gap:8px;">'
       +'<div style="flex:1;">'+dashPartyRow('cp_first','Requester first name',first)+'</div>'
       +'<div style="flex:1;">'+dashPartyRow('cp_last','Requester last name',last)+'</div>'
       +'</div>'
       +dashPartyRow('cp_email','Requester e-mail',src.requestedBy||req.email||'')
-      +dashPartyRow('cp_prime','Prime contract or vehicle number (Item 2a)',ident.prime||tx.i2a||'')
-      +dashPartyRow('cp_order','Task order, BPA, call or effort number \u2014 optional',ident.order||tx.iEffort||'')
+      +((reset&&oldPrime)
+        ?'<button type="button" id="cpSame" style="display:block;width:100%;text-align:left;background:#fff;border:1px dashed #9aa6b2;border-radius:5px;padding:6px 10px;margin-bottom:7px;cursor:pointer;font-size:11px;color:#17427d;">'
+          +'<b>Same contract</b> \u2014 '+dashEsc(oldPrime+(oldOrder?' \u00b7 '+oldOrder:''))+'</button>'
+        :'')
+      +dashPartyRow('cp_prime','Prime contract or vehicle number (Item 2a)',reset?'':(ident.prime||tx.i2a||''),
+                    reset?'Choose from the contracts in the template repository, or type one.':'',false,'text',reset?'cpPrimeList':'')
+      +(reset?'<datalist id="cpPrimeList">'+known.map(function(p){ return '<option value="'+dashEsc(p)+'"></option>'; }).join('')+'</datalist>':'')
+      +dashPartyRow('cp_order','Task order, BPA, call or effort number \u2014 optional',reset?'':(ident.order||tx.iEffort||''))
+      +(reset?'<div id="cp_match" role="status" style="font-size:10.5px;margin:-4px 0 8px;line-height:1.4;color:#8a94a0;">Enter the contract this copy is for.</div>':'')
       +'<div id="cpOrigOnly">'+dashPartyRow('cp_sub','Block 2b \u2014 subcontract number, or N/A',ident.sub||tx.i2b||'')+'</div>'
       +'<div id="cpSolOnly">'+dashPartyRow('cp_sol','Block 2c \u2014 solicitation number',ident.solicitation||tx.i2c||'')
       +dashPartyRow('cp_due','Solicitation due date',tx.i2c_due||'','The unnumbered date beside Block 2c.',false,'date')+'</div>'
@@ -9423,15 +9509,54 @@ function dashCopyPrompt(src){
     paint();
     g('cpStageOrig').onclick=function(){ stage='orig'; paint(); };
     g('cpStageSol').onclick=function(){ stage='sol'; paint(); };
+    /* Which template will rebuild Blocks 10 to 16, said before the copy is
+       made rather than discovered after. Exact matches only, by the same rule
+       as creating a DD-254: one that merely looks similar is never applied. */
+    const matched={hit:null};
+    const matchNow=function(){
+      const host=g('cp_match'); if(!reset||!host) return;
+      matched.hit=null;
+      const p=val('cp_prime');
+      if(!p){ host.style.color='#8a94a0'; host.textContent='Enter the contract this copy is for.'; return; }
+      const m=(typeof dashIntakeMatch==='function')?dashIntakeMatch(p,val('cp_order')):{};
+      if(m.one){
+        matched.hit=m.one;
+        host.style.color='#1a6a2a';
+        host.textContent='\u2713 Blocks 10 to 16 will be rebuilt from \u201c'+((m.one.t.label)||'unnamed')+'\u201d, the template saved for this '+(m.level==='order'?'task order':'contract')+'.';
+      } else if(m.many){
+        host.style.color='#8a6a00';
+        host.textContent=m.hits.length+' templates are saved for this contract. Blocks 10 to 16 start blank \u2014 apply the one you want from the form.';
+      } else {
+        host.style.color='#8a6a00';
+        host.textContent='No template is saved for this contract. Blocks 10 to 16 start blank.';
+      }
+    };
+    if(reset){
+      ['cp_prime','cp_order'].forEach(function(id){ const e=g(id); if(e) e.oninput=matchNow; });
+      const same=g('cpSame');
+      if(same) same.onclick=function(){
+        g('cp_prime').value=oldPrime; g('cp_order').value=oldOrder; matchNow();
+      };
+    }
     /* No required-field gate here. This is a copy of something that already
        exists; refusing to copy a legacy draft because it never recorded a
        requester would block the operator from the one action that would let
        them fix it. */
     const answer=function(mode){
+      /* The one thing this dialog insists on, and only here: with Blocks 10
+         to 16 left behind, a copy that names no contract has no language and
+         no way to be given the right one. */
+      if(reset&&!val('cp_prime')){
+        const er=g('cp_prime_err');
+        if(er) er.textContent='Enter the contract this copy is for, or choose Same contract above.';
+        const pe=g('cp_prime'); if(pe&&pe.focus) pe.focus();
+        return;
+      }
+      if(reset) matchNow();
       const person=[val('cp_first'),val('cp_last')].filter(Boolean).join(' ');
       const sel=g('cp_sm'), sms=(typeof tplLoad==='function')?(tplLoad(TPL_SM)||[]):[];
       const sm=(sel&&sel.value!=='')?sms[parseInt(sel.value,10)]:null;
-      done({mode:mode,stage:stage,party:{
+      done({mode:mode,stage:stage,resetBlocks:reset,template:reset?(matched.hit||null):null,party:{
         first:val('cp_first'), last:val('cp_last'), person:person,
         email:val('cp_email'), prime:val('cp_prime'), order:val('cp_order'),
         sub:(stage==='orig')?val('cp_sub'):'',
@@ -9483,6 +9608,30 @@ async function dashDuplicate(id){
      with a template because the contract number now matches one would throw
      away the thing being copied. */
   rec.stage=ans.stage;
+  /* Built from a contract's own template: Blocks 10 to 16 and the link to
+     that template stay behind, and the template saved for the contract the
+     operator just named - if exactly one is - writes them fresh. Applied
+     before the intake below, so what was typed in the dialog wins over what
+     the template carries, the same order creating a DD-254 follows. A copy
+     built from a Contract Type, or from nobody's template, is untouched: its
+     language is not tied to a contract number. */
+  let rebuilt='';
+  if(ans.resetBlocks){
+    rec.workspace=dashCopyResetBlocks(rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]});
+    rec.ctType='';
+    rec.workspace.texts.i2a=String((ans.party||{}).prime||'');
+    rec.workspace.texts.iEffort=String((ans.party||{}).order||'');
+    const hit=ans.template, mt=hit&&hit.t;
+    if(mt&&mt.data&&typeof ctApplyDataToWorkspace==='function'){
+      rec.workspace=ctApplyDataToWorkspace(mt.data,rec.workspace,mt);
+      rec.workspace.selects=rec.workspace.selects||{};
+      if(hit.kind==='b13') rec.ctType=mt.label||'';
+      else rec.workspace.selects.ctTplSel=String(mt.ioId||mt.label||'');
+      rebuilt='; Blocks 10\u201316 rebuilt from \u201c'+(mt.label||'unnamed')+'\u201d';
+    } else {
+      rebuilt='; Blocks 10\u201316 reset \u2014 no single template saved for the contract';
+    }
+  }
   if(typeof dashPartyApply==='function'){
     const party=Object.assign({},ans.party,{title:rec.title});
     await dashPartyApply(rec,party,{});
@@ -9493,7 +9642,7 @@ async function dashDuplicate(id){
      inheriting the original's. */
   rec.workspace=rec.workspace||{}; rec.workspace.texts=rec.workspace.texts||{};
   ['i3a_date','i3b_date','i3c_date','i3b_rev'].forEach(function(k){ rec.workspace.texts[k]=''; });
-  await draftPut(rec); audLog(rec.id,rec.title,'duplicated',(mode==='form'?'form only':'form, notes and to-dos')+'; '+(ans.stage==='sol'?'solicitation':'original')+'; workflow history not carried');
+  await draftPut(rec); audLog(rec.id,rec.title,'duplicated',(mode==='form'?'form only':'form, notes and to-dos')+'; '+(ans.stage==='sol'?'solicitation':'original')+'; workflow history not carried'+rebuilt);
   await dashRenderCards(rec.id);
 }
 /* A spawned DD-254 is a new document, but it is the same contract and the same
@@ -12872,13 +13021,56 @@ function slHeadEnd(text,head){
   });
   return at;
 }
-/* Which entries are physically present in Block 13 right now. Presence is the
-   only source of truth: if you deleted the paragraph, it is not applied. */
+/* Which entries are present in Block 13 right now. Presence is still the only
+   source of truth - delete the paragraph and it is not applied - but present
+   does not mean untouched. Standard language is a starting point that gets
+   edited for the contract in front of you, and a rule that demanded the
+   library's exact characters called an edited paragraph missing: the finding
+   said standard language was not there while the preparer was looking at it,
+   and the automatic insert put a second copy in beside the first. (Owner,
+   13 November 2026: "the rule is you need to apply standard language, not
+   that standard language needs to be exactly the same.")
+
+   An entry therefore counts while most of its wording survives, measured as
+   the share of its three-word runs still found in Item 13. Runs rather than
+   single words, because every DD-254 says "contractor" and "classified"
+   somewhere; half rather than all, because changing a name, a number or a
+   sentence should not cost the paragraph its identity. Rewrite it past
+   recognition and it is no longer the library's wording - the finding returns
+   and can be set aside with a reason like any other. */
+const SL_EDIT_KEEP=0.5;
+function slWordsOf(s){
+  return String(s==null?'':s).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(' ').filter(Boolean);
+}
+function slRunsOf(words){
+  const out=[];
+  for(let i=0;i+2<words.length;i++) out.push(words[i]+' '+words[i+1]+' '+words[i+2]);
+  return out;
+}
+function slSurvivesIn(entryText,body,bodyRuns){
+  const b=slBlockText({text:entryText});
+  if(!b) return false;
+  if(String(body).indexOf(b)>=0) return true;
+  const runs=slRunsOf(slWordsOf(b));
+  /* too short to recognise once it has been edited - exact or nothing */
+  if(runs.length<4) return false;
+  const have=bodyRuns||(function(){ const h={}; slRunsOf(slWordsOf(body)).forEach(function(k){ h[k]=1; }); return h; })();
+  let hit=0;
+  runs.forEach(function(k){ if(have[k]) hit++; });
+  return (hit/runs.length)>=SL_EDIT_KEEP;
+}
 function slAppliedIn(txt){
   const body=String(txt==null?'':txt);
+  let runs=null;
+  const bodyRuns=function(){
+    if(!runs){ runs={}; slRunsOf(slWordsOf(body)).forEach(function(k){ runs[k]=1; }); }
+    return runs;
+  };
   return slAll().filter(function(t){
     const b=slBlockText(t);
-    return b && body.indexOf(b)>=0;
+    if(!b) return false;
+    if(body.indexOf(b)>=0) return true;
+    return slSurvivesIn(t.text,body,bodyRuns());
   }).map(function(t){ return t.label||'(unnamed)'; });
 }
 function slApplied(){
