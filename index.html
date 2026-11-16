@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.20.1</title>
+<title>DD254 Interactive v2.21.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -1448,14 +1448,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.170';
+const TOOL_VERSION='2.171';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.20.1';
+const RELEASE_VERSION='2.21.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -7349,23 +7349,35 @@ async function dashNewDraft(stage){
   /* Contract type offer. These templates used to carry Block 13 text alone;
      they now carry the same structure as a DD-254 Template Language entry, so
      the whole thing is applied to the new draft rather than just its text. */
-  /* No contract-type question at origination. Nearly every contract is an
-     ordinary FAR-based one with no contract type at all, so asking on every new
-     DD-254 spent everyone's attention on a minority case - and a prompt that is
-     usually answered "no" is one people learn to dismiss without reading, which
-     is worse than not asking. Contract types are chosen from their own picker on
-     the form, beside the other template libraries, in the same search-and-apply
-     motion the preparer already uses. */
-  const tplPick=null;
-  const rec={id:dashId(),title:t,stage:stage,ctType:(tplPick&&tplPick.label)||'',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'Draft',todos:[],notes:'',workspace:null,
+  /* No SEPARATE contract-type question at origination. Nearly every contract is
+     an ordinary FAR-based one with no contract type at all, so a prompt of its
+     own on every new DD-254 spent everyone's attention on a minority case - and
+     a prompt that is usually answered "no" is one people learn to dismiss
+     without reading. The create dialog now carries the choice as a control
+     (dashTplChooser): it defaults to what the tool would have done anyway and
+     asks nothing of a preparer who has no template to choose.
+
+     The template is settled BEFORE the record is first written. The Contract
+     Type and the template's security manager used to be set on this object
+     after it had been stored, and the save that follows reads the stored
+     record back - so a Contract Type applied at creation was applied to the
+     form and then forgotten by the record. */
+  const hit=(ans.template&&ans.template.t&&ans.template.t.data)?ans.template:null;
+  const mt=hit?hit.t:null, isType=!!(hit&&hit.kind==='b13');
+  let sm0=ans.securityManager||null;
+  if(!sm0&&mt&&(mt.smName||mt.smEmail)){
+    sm0={name:mt.smName||'',email:mt.smEmail||'',program:mt.smProgram||'',sourceTemplateId:mt.ioId||mt.label||''};
+  }
+  const rec={id:dashId(),title:t,stage:stage,ctType:isType?(mt.label||''):'',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'Draft',todos:[],notes:'',workspace:null,
     requestedBy:ans.email,requestedByName:ans.person,
     requester:{firstName:ans.first||'',lastName:ans.last||'',email:ans.email||''},
-    securityManager:ans.securityManager||null,
+    securityManager:sm0,
     meta:{contract:ans.prime,contractor:'',errors:0,warns:0,
       identity:{prime:ans.prime||'',order:ans.order||'',sub:ans.sub||'',solicitation:ans.solicitation||''}}};
   await draftPut(rec);
-  audLog(rec.id,rec.title,'created',stage+(tplPick?' (contract type: '+(tplPick.label||'unnamed')+')':''));
+  audLog(rec.id,rec.title,'created',stage+(isType?' (contract type: '+(mt.label||'unnamed')+')':''));
   resetFormFields();
+  window.DD254_CT_APPLIED=isType?(mt.label||''):'';
   window.CURRENT_REQUESTOR_EMAIL=ans.email;
   DASH.current=rec.id;
   showFormView();
@@ -7377,9 +7389,7 @@ async function dashNewDraft(stage){
      applied BEFORE the typed identifiers are written, so what was typed wins
      over what the template carries: a template must not quietly replace the
      contract number somebody entered. */
-  if(ans.template&&ans.template.t&&ans.template.t.data){
-    const mt=ans.template.t;
-    window.DD254_CT_APPLIED=(ans.template.kind==='b13')?(mt.label||''):'';
+  if(mt){
     ctApplyWsToForm(ctApplyDataToWorkspace(mt.data,null,mt));
     /* The form has to go on knowing WHICH template it was built from, not just
        what that template said at the time. Everything that inserts language per
@@ -7387,7 +7397,9 @@ async function dashNewDraft(stage){
        template used to leave that empty - so ticking 11d afterwards silently
        inserted nothing and the feature looked as though it did not exist.
        ctOrderStart already recorded the selection; this path did not. */
-    const mtId=String(mt.ioId||mt.label||'');
+    /* A Contract Type is not an entry in the DD-254 template picker; naming it
+       there would point the picker at something it does not hold. */
+    const mtId=isType?'':String(mt.ioId||mt.label||'');
     if(mtId){
       rec.workspace=rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]};
       rec.workspace.selects=rec.workspace.selects||{};
@@ -7400,11 +7412,8 @@ async function dashNewDraft(stage){
         if(typeof buildCtPanel==='function') buildCtPanel();
       }
     }
-    if(ans.template.kind==='b13') rec.ctType=mt.label||'';
-    if(!rec.securityManager&&(mt.smName||mt.smEmail)){
-      rec.securityManager={name:mt.smName||'',email:mt.smEmail||'',program:mt.smProgram||'',sourceTemplateId:mt.ioId||mt.label||''};
-    }
-    audLog(rec.id,rec.title,'template-matched',(mt.label||'unnamed')+' \u2014 matched on '+(ans.template.level==='order'?'task order':'prime contract'));
+    audLog(rec.id,rec.title,'template-matched',(mt.label||'unnamed')+' \u2014 '
+      +(hit.chosen?'chosen when the DD-254 was created':('matched on '+(hit.level==='order'?'task order':'prime contract'))));
   }
   /* Asked once, written where they belong: Items 2a, 2b, 2c, the due date, the
      task-order field, and the requestor. */
@@ -7435,8 +7444,6 @@ async function dashNewDraft(stage){
      by the preparer telling the tool what the form is about to say. It is
      inserted automatically instead, from the programme and the Item 1a level,
      as soon as the form carries both. */
-  window.DD254_CT_APPLIED=(tplPick&&tplPick.label)||'';
-  if(tplPick&&tplPick.data) ctApplyWsToForm(ctApplyDataToWorkspace(tplPick.data,null,tplPick));
   /* A solicitation says so in Item 9 before it says anything else. Applied after
      any contract type, so it sits above language the template brought with it. */
   if(stage==='sol'){
@@ -7785,6 +7792,128 @@ function dashIntakeMatch(prime,order){
   return {hits:hits,level:exactOrder.length?'order':(exactPrime.length?'prime':''),
           partial:partial,one:hits.length===1?hits[0]:null,many:hits.length>1};
 }
+/* ── WHICH TEMPLATE A DD-254 IS BUILT FROM ────────────────────
+   Asked in the dialog that creates a DD-254 and in the one that copies one
+   (owner, 16 November 2026). Two libraries hold templates and they are not the
+   same kind of thing: a DD-254 template is filed under one contract, a
+   Contract Type is written for a kind of contract. Which one was in play used
+   to be decided for the preparer - whichever was filed under the number they
+   typed - and could only be changed afterwards, from the form. A Contract
+   Type could not be chosen at creation at all.
+
+   The automatic match is still made and still shown first; this lets it be
+   seen and overruled. It is a control inside the dialog, not a question that
+   has to be answered, so a DD-254 with no template costs nobody a click -
+   which is why the old stand-alone contract-type prompt was removed and this
+   is not that prompt coming back.
+
+   One implementation for both dialogs: they ask the same thing and must not
+   drift into answering it differently. */
+function dashTplKey(e){
+  if(!e) return '';
+  return (e.kind==='b13')?('b13:'+e.idx):('ct:'+String((e.t&&(e.t.ioId||e.t.label))||''));
+}
+function dashTplChooserHtml(p,o){
+  o=o||{};
+  const btn=function(id,lab){
+    return '<button type="button" id="'+p+'_tk_'+id+'" role="radio" aria-checked="false" style="flex:1;font-size:11px;padding:6px 8px;border-radius:5px;cursor:pointer;border:1px solid #c4ccd4;background:#fff;color:#2b3440;">'+dashEsc(lab)+'</button>';
+  };
+  return '<div id="'+p+'_tplbox" style="border:1px solid #c8d4e4;background:#f7fbff;border-radius:5px;padding:8px 10px;margin-bottom:9px;">'
+    +'<div style="font-size:11.5px;font-weight:bold;color:#2b3440;margin-bottom:5px;">'+dashEsc(o.heading||'Which template is this DD-254 built from?')+'</div>'
+    +'<div role="radiogroup" aria-label="Template kind" style="display:flex;gap:6px;margin-bottom:6px;">'
+    +(o.keep?btn('keep','Keep as copied'):'')+btn('ct','DD-254 template')+btn('b13','Contract Type')+'</div>'
+    +'<select id="'+p+'_tpl" aria-label="Template" style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;"></select>'
+    +'<div id="'+dashEsc(o.noteId||(p+'_tplnote'))+'" role="status" style="font-size:10.5px;color:#8a94a0;margin-top:5px;line-height:1.4;min-height:14px;"></div>'
+    +'</div>';
+}
+/* keep: the dialog is copying something whose Blocks 10 to 16 may simply come
+   across, so "leave them alone" is an answer and the default one. The match
+   never moves a keep dialog off that default: a template that happens to be
+   filed under the same number must not overwrite the language being copied. */
+function dashTplChooser(g,p,o){
+  o=o||{};
+  const sel=g(p+'_tpl'); if(!sel) return null;
+  const pools={
+    ct:(typeof ctEnsureIds==='function'?ctEnsureIds():[]).map(function(t){ return {t:t,kind:'ct'}; }),
+    b13:((typeof tplLoad==='function')?(tplLoad(TPL_B13)||[]):[]).map(function(t,i){ return {t:t,kind:'b13',idx:i}; })
+  };
+  let mode=o.keep?'keep':'ct', manual=false, auto=null;
+  const label=function(e){
+    const d=e.t.data||{};
+    return [e.t.label||'(unnamed)',d.primeContract,d.taskOrder].map(function(x){ return String(x||'').trim(); }).filter(Boolean).join(' · ');
+  };
+  const indexOf=function(kind,e){
+    const k=dashTplKey(e); let at=-1;
+    pools[kind].forEach(function(x,i){ if(at<0&&dashTplKey(x)===k) at=i; });
+    return at;
+  };
+  const paint=function(){
+    ['keep','ct','b13'].forEach(function(k){
+      const b=g(p+'_tk_'+k); if(!b) return;
+      const on=(mode===k);
+      b.setAttribute('aria-checked',on?'true':'false');
+      b.style.borderColor=on?'#17427d':'#c4ccd4';
+      b.style.background=on?'#eef3fa':'#fff';
+      b.style.fontWeight=on?'bold':'normal';
+    });
+  };
+  const fill=function(pick){
+    if(mode==='keep'){ sel.innerHTML=''; sel.style.display='none'; }
+    else {
+      const list=pools[mode];
+      sel.style.display='block';
+      sel.innerHTML='<option value="">'
+        +(mode==='ct'?(list.length?'— no DD-254 template —':'— no DD-254 templates are saved —')
+                     :(list.length?'— choose a Contract Type —':'— no Contract Types are saved —'))
+        +'</option>'
+        +list.map(function(e,i){ return '<option value="'+i+'">'+dashEsc(label(e))+'</option>'; }).join('');
+      sel.value=(pick==null||pick<0)?'':String(pick);
+    }
+    paint();
+  };
+  const current=function(){
+    if(mode==='keep'||sel.value==='') return null;
+    return pools[mode][+sel.value]||null;
+  };
+  const changed=function(){ if(typeof o.onchange==='function') o.onchange(); };
+  ['keep','ct','b13'].forEach(function(k){
+    const b=g(p+'_tk_'+k); if(!b) return;
+    b.onclick=function(){
+      manual=true; mode=k;
+      /* Switching kind is not a reason to lose the match: if the template
+         filed under this number is of the kind just chosen, start on it. */
+      fill((auto&&auto.one&&auto.one.kind===k)?indexOf(k,auto.one):null);
+      changed();
+    };
+  });
+  sel.onchange=function(){ manual=true; changed(); };
+  fill(null);
+  return {
+    mode:function(){ return mode; },
+    manual:function(){ return manual; },
+    value:function(){
+      const e=current(); if(!e) return null;
+      const same=!!(auto&&auto.one&&dashTplKey(auto.one)===dashTplKey(e));
+      return {t:e.t,kind:e.kind,idx:e.idx,level:same?auto.level:'',chosen:!same};
+    },
+    match:function(m){
+      auto=m||null;
+      if(manual||o.keep) return;
+      if(auto&&auto.one){ mode=auto.one.kind; fill(indexOf(mode,auto.one)); }
+      else { mode='ct'; fill(null); }
+    }
+  };
+}
+/* A DD-254 template is filed under one contract. Choosing one for a different
+   contract is allowed - the preparer may know it is the right starting point -
+   but it is exactly how another contract's Block 13 gets issued, so it is said
+   where the choice is made. */
+function dashTplFiledNote(v,prime){
+  if(!v||v.kind!=='ct') return '';
+  const d=v.t.data||{}, tp=dashIdentNorm(d.primeContract), p=dashIdentNorm(prime);
+  if(tp&&p&&tp!==p) return ' It is filed under '+String(d.primeContract).trim()+', not the contract entered here — check Blocks 10 to 16 before this is issued.';
+  return '';
+}
 function dashEmailOk(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||'').trim()); }
 /* locked: an Issued, Cancelled or Skipped DD-254 may be renamed - a name is not
    a statement about what went out - but its Items 2a and 2b are the record and
@@ -7820,10 +7949,13 @@ function dashPartyPrompt(o){
       +(stage==='sol'?row('np_sol','Block 2c \u2014 solicitation number',o.solicitation,'',locked)
                       +row('np_due','Solicitation due date',o.due,'The unnumbered date beside Block 2c.',locked,'date'):'')
       +(stage!=='orig'&&stage!=='sol'?row('np_sub','Subcontract number (Item 2b) \u2014 optional',o.sub,'',locked):'')
+      /* Only where a DD-254 is being created. The pencil renames one that
+         already exists, and a template is not applied by renaming. */
+      +(stage?dashTplChooserHtml('np',{noteId:'np_match'}):'')
       +'<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:7px;">Security Manager'
         +'<select id="np_sm" style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;">'+smOpts+'</select>'
-        +'<span style="font-size:9.5px;color:#8a94a0;">Filled from a matched template when there is one. Kept on this DD-254 as it is now.</span></label>'
-      +'<div id="np_match" style="font-size:10.5px;margin-bottom:7px;"></div>'
+        +'<span style="font-size:9.5px;color:#8a94a0;">Filled from the template when it names one. Kept on this DD-254 as it is now.</span></label>'
+      +(stage?'':'<div id="np_match" style="font-size:10.5px;margin-bottom:7px;"></div>')
       +'<div id="np_eng" style="display:none;border:1px solid #c8d4e4;background:#f7fbff;border-radius:5px;padding:7px 9px;margin-bottom:8px;"></div>'
       +'<div style="border-top:1px solid #e3e8ee;margin:4px 0 9px;"></div>'
       +row('np_title','Name of this DD-254',o.title||'','Filled in from the fields above. Type here to use something else.',false)
@@ -7839,11 +7971,24 @@ function dashPartyPrompt(o){
     const clearErrs=function(){ Array.prototype.forEach.call(ov.querySelectorAll('.np-err'),function(e){ e.textContent=''; }); g('np_err').textContent=''; };
     const fieldErr=function(id,msg){ const e=g(id+'_err'); if(e) e.textContent=msg; };
 
-    let manual=!!(o.title && o.title!==dashNameCompose(o));
+    /* A name the tool wrote follows the fields; a name somebody typed is
+       theirs. "The tool wrote it" used to mean one exact spelling, so a
+       solicitation (which carries a suffix) and a copy (which carried "Copy
+       of") both counted as typed - and changing the contract number with the
+       pencil left the old number in the name, to be retyped by hand. (Owner,
+       16 November 2026.) Fields this dialog does not show keep the value the
+       record has, so the name is rebuilt from the whole of it. */
+    const nameSfx=(!stage&&o.nameStage==='sol')?' — Solicitation':'';
+    const keepOr=function(id,was){ return g(id)?val(id):String(was||'').trim(); };
+    const toolNames=function(){
+      const c=dashNameCompose(o), l=dashNameComposeLegacy(o);
+      return [c,c+nameSfx,'Copy of '+c,'Copy of '+c+nameSfx,l+nameSfx,'Copy of '+l+nameSfx];
+    };
+    let manual=!!(o.title && toolNames().indexOf(o.title)<0);
     const recompose=function(){
       if(manual) return;
       g('np_title').value=dashNameCompose({person:[val('np_first'),val('np_last')].filter(Boolean).join(' '),
-        prime:val('np_prime'),order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol')});
+        prime:val('np_prime'),order:val('np_order'),sub:keepOr('np_sub',o.sub),solicitation:keepOr('np_sol',o.solicitation)})+nameSfx;
     };
     /* A requester with an issued DD-254 behind them is offered their e-mail.
        It is never written over an address the operator typed, and two people
@@ -7920,24 +8065,50 @@ function dashPartyPrompt(o){
         if(!emailLookup()) note.textContent='';
       }
     };
-    const matched={hit:null};
-    const matchNow=function(){
-      const host=g('np_match'); if(!host||typeof dashIntakeMatch!=='function') return;
-      const m=dashIntakeMatch(val('np_prime'),val('np_order'));
-      matched.hit=m.one||null;
+    const matched={hit:null,m:null};
+    let chooser=null;
+    const smFollow=function(t){
+      const sm=g('np_sm'), who=t&&t.smName;
+      if(sm&&who){ Array.prototype.forEach.call(sm.options,function(op){ if(op.textContent.indexOf(who)===0) sm.value=op.value; }); }
+    };
+    /* One line saying what will happen, read from what is actually selected -
+       not from the match, which the preparer may have overruled. */
+    const tell=function(){
+      const host=g('np_match'); if(!host) return;
+      const m=matched.m||{partial:[]};
+      if(chooser&&chooser.manual()){
+        const v=chooser.value();
+        if(v){
+          const filed=dashTplFiledNote(v,val('np_prime'));
+          host.style.color=filed?'#8a6a00':'#1a6a2a';
+          host.textContent='\u2713 \u201c'+((v.t.label)||'unnamed')+'\u201d will be applied \u2014 chosen here.'+filed;
+          smFollow(v.t);
+        } else {
+          host.style.color='#8a94a0';
+          host.textContent=(chooser.mode()==='b13')?'Choose a Contract Type above, or this DD-254 starts without one.':'No template will be applied.';
+        }
+        return;
+      }
       if(m.one){
         host.style.color='#1a6a2a';
         host.textContent='\u2713 Template \u201c'+((m.one.t.label)||'unnamed')+'\u201d matches this '+(m.level==='order'?'task order':'contract')+' and will be applied.';
-        const sm=g('np_sm'); const who=m.one.t.smName;
-        if(sm&&who){ Array.prototype.forEach.call(sm.options,function(op){ if(op.textContent.indexOf(who)===0) sm.value=op.value; }); }
+        smFollow(m.one.t);
       } else if(m.many){
         host.style.color='#8a6a00';
-        host.textContent=m.hits.length+' templates match. None is applied \u2014 apply the one you want from the form.';
-      } else if(m.partial.length){
+        host.textContent=m.hits.length+' templates match. None is applied \u2014 '+(chooser?'choose the one you want above, or apply it from the form.':'apply the one you want from the form.');
+      } else if((m.partial||[]).length){
         host.style.color='#8a94a0';
         host.textContent=m.partial.length+' template'+(m.partial.length===1?'':'s')+' look similar. None is applied automatically.';
       } else { host.textContent=''; }
     };
+    const matchNow=function(){
+      const host=g('np_match'); if(!host||typeof dashIntakeMatch!=='function') return;
+      const m=dashIntakeMatch(val('np_prime'),val('np_order'));
+      matched.hit=m.one||null; matched.m=m;
+      if(chooser) chooser.match(m);
+      tell();
+    };
+    chooser=stage?dashTplChooser(g,'np',{onchange:tell}):null;
     /* REQ-13 at intake: the architecture's hybrid. Asked here so a DD-254 is
        born consistent, and still adjustable afterwards in the banner. Absent
        when the engine is off, which is the default. */
@@ -8035,11 +8206,15 @@ function dashPartyPrompt(o){
          offered some means every one was declined, which is different from a
          template that offers none - so the flag travels beside the list. */
       const engine=(typeof cavEngineOn==='function'&&cavEngineOn()&&stage&&engAns.archetype)?engAns:null;
-      const title=val('np_title')||dashNameCompose({person:person,prime:prime,order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol')});
+      /* A field this dialog did not show is not a field the operator emptied.
+         The pencil shows no solicitation row, and used to write the
+         solicitation number out of the record every time it was used. */
+      const subV=keepOr('np_sub',o.sub), solV=keepOr('np_sol',o.solicitation), dueV=keepOr('np_due',o.due);
+      const title=val('np_title')||(dashNameCompose({person:person,prime:prime,order:val('np_order'),sub:subV,solicitation:solV})+nameSfx);
       const smSel=g('np_sm'), smIdx=smSel?smSel.value:'';
       const sm=(smIdx!==''&&sms[+smIdx])?sms[+smIdx]:null;
       done({first:first,last:last,person:person,email:email,prime:prime,
-            order:val('np_order'),sub:val('np_sub'),solicitation:val('np_sol'),due:val('np_due'),
+            order:val('np_order'),sub:subV,solicitation:solV,due:dueV,
             title:title,stage:stage,
             /* programs is the record; program stays beside it as the one
                programme when there is only one, blank when the manager runs
@@ -8050,7 +8225,7 @@ function dashPartyPrompt(o){
               program:((typeof smPrograms==='function'&&smPrograms(sm).length===1)?smPrograms(sm)[0]:''),
               sourceTemplateId:sm.ioId||sm.label||''}:null,
             engine:engine,
-            template:matched.hit||null});
+            template:chooser?chooser.value():(matched.hit||null)});
     };
     g('np_ok').onclick=submit;
     g('np_cancel').onclick=function(){ done(null); };
@@ -8182,6 +8357,7 @@ async function dashRename(id){
     sub:(live?((document.getElementById('i2b')||{}).value||''):'')||tx.i2b||'',
     email:rec.requestedBy||'',
     title:rec.title||'',
+    nameStage:(typeof dashStageOf==='function')?dashStageOf(rec):'',
     locked:locked, status:rec.status
   });
   if(!ans) return;
@@ -9503,7 +9679,7 @@ function dashCopyPrompt(src){
           +'<b>Blocks 10 to 16 are not copied.</b> This DD-254 was built from '
           +(tplName?'the DD-254 template \u201c'+dashEsc(tplName)+'\u201d':'a DD-254 template')
           +', which is written for one contract. Say which contract this copy is for and they are rebuilt from the template saved for it.</div>'
-        :'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:7px;line-height:1.45;">Everything below is carried over from the DD-254 you are copying. Change whatever differs; the form itself, its Item 10 and 11 selections and all of its Block 13 language come across untouched.</div>')
+        :'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:7px;line-height:1.45;">Everything below is carried over from the DD-254 you are copying. Change whatever differs; the form itself, its Item 10 and 11 selections and all of its Block 13 language come across untouched unless you choose a template for the copy below.</div>')
       +'<div style="display:flex;gap:8px;">'
       +'<div style="flex:1;">'+dashPartyRow('cp_first','Requester first name',first)+'</div>'
       +'<div style="flex:1;">'+dashPartyRow('cp_last','Requester last name',last)+'</div>'
@@ -9517,12 +9693,17 @@ function dashCopyPrompt(src){
                     reset?'Choose from the contracts in the template repository, or type one.':'',false,'text',reset?'cpPrimeList':'')
       +(reset?'<datalist id="cpPrimeList">'+known.map(function(p){ return '<option value="'+dashEsc(p)+'"></option>'; }).join('')+'</datalist>':'')
       +dashPartyRow('cp_order','Task order, BPA, call or effort number \u2014 optional',reset?'':(ident.order||tx.iEffort||''))
-      +(reset?'<div id="cp_match" role="status" style="font-size:10.5px;margin:-4px 0 8px;line-height:1.4;color:#8a94a0;">Enter the contract this copy is for.</div>':'')
       +'<div id="cpOrigOnly">'+dashPartyRow('cp_sub','Block 2b \u2014 subcontract number, or N/A',ident.sub||tx.i2b||'')+'</div>'
       +'<div id="cpSolOnly">'+dashPartyRow('cp_sol','Block 2c \u2014 solicitation number',ident.solicitation||tx.i2c||'')
       +dashPartyRow('cp_due','Solicitation due date',tx.i2c_due||'','The unnumbered date beside Block 2c.',false,'date')+'</div>'
+      /* Every copy is asked, not only one whose Blocks 10 to 16 stay behind.
+         Where they come across, "Keep as copied" is offered and is the
+         default; where they do not, it is not on offer at all. Below the
+         numbers that identify the contract, because it is read against them. */
+      +dashTplChooserHtml('cp',{noteId:'cp_match',keep:!reset,heading:'Blocks 10 to 16 of the copy'})
       +'<label style="display:block;font-size:10.5px;color:#5a6a80;margin-bottom:9px;">Security Manager'
         +'<select id="cp_sm" style="display:block;width:100%;font-size:12px;padding:5px 7px;border:1px solid #c4ccd4;border-radius:4px;margin-top:2px;">'+dashSmOptionsHtml(smName)+'</select></label>'
+      +dashPartyRow('cp_title','Name of this copy','','Follows the fields above as you change them. Type here to use something else.')
       +'<div style="display:flex;gap:8px;">'
       +'<button id="cpCancel" style="background:#8a94a0;color:#fff;border:none;padding:7px 14px;border-radius:4px;font-size:11.5px;font-weight:bold;cursor:pointer;">Cancel</button>'
       +'</div></div>';
@@ -9545,37 +9726,100 @@ function dashCopyPrompt(src){
       if(so) so.style.display=(stage==='sol')?'block':'none';
     };
     paint();
-    g('cpStageOrig').onclick=function(){ stage='orig'; paint(); };
-    g('cpStageSol').onclick=function(){ stage='sol'; paint(); };
+    /* \u2500\u2500 THE COPY'S NAME \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+       A copy used to be called "Copy of <original>" whatever was changed in
+       this dialog, so a copy made for another contract carried the first
+       contract's number in its name until somebody opened the pencil and
+       retyped it (owner, 16 November 2026). It is now named the way a new
+       DD-254 is - for the person and the contract entered here - and shown
+       before the copy is made.
+
+       "Copy of" survives in the two cases where it is the honest name: the
+       fields say nothing different from the original, or the original had a
+       name of somebody's own and nothing identifying has been changed. */
+    const sfxOf=function(st){ return st==='sol'?' \u2014 Solicitation':''; };
+    const baseTitle=String(title||'Untitled DD-254').replace(/^Copy of /,'');
+    const srcP={person:String(src.requestedByName||[first,last].filter(Boolean).join(' ')).trim(),
+                prime:oldPrime,order:oldOrder,
+                sub:(stage0==='orig')?String(ident.sub||tx.i2b||''):'',
+                solicitation:(stage0==='sol')?String(ident.solicitation||tx.i2c||''):''};
+    let follow=([dashNameCompose(srcP)+sfxOf(stage0),dashNameComposeLegacy(srcP)+sfxOf(stage0)].indexOf(baseTitle)>=0);
+    let manualName=false;
+    const nameNow=function(){
+      const host=g('cp_title'); if(!host||manualName) return;
+      let n='Copy of '+baseTitle;
+      if(follow){
+        const c=dashNameCompose({person:[val('cp_first'),val('cp_last')].filter(Boolean).join(' '),
+          prime:val('cp_prime'),order:val('cp_order'),
+          sub:(stage==='orig')?val('cp_sub'):'',solicitation:(stage==='sol')?val('cp_sol'):''});
+        if(c){ n=c+sfxOf(stage); if(n===baseTitle) n='Copy of '+n; }
+      }
+      host.value=n;
+    };
+    g('cpStageOrig').onclick=function(){ stage='orig'; paint(); nameNow(); };
+    g('cpStageSol').onclick=function(){ stage='sol'; paint(); nameNow(); };
     /* Which template will rebuild Blocks 10 to 16, said before the copy is
-       made rather than discovered after. Exact matches only, by the same rule
-       as creating a DD-254: one that merely looks similar is never applied. */
-    const matched={hit:null};
-    const matchNow=function(){
-      const host=g('cp_match'); if(!reset||!host) return;
-      matched.hit=null;
-      const p=val('cp_prime');
+       made rather than discovered after. The automatic choice takes exact
+       matches only, by the same rule as creating a DD-254: one that merely
+       looks similar is never applied. What the line reports is what is
+       selected, which the operator may have changed. */
+    const matched={m:null};
+    let chooser=null;
+    const tell=function(){
+      const host=g('cp_match'); if(!host) return;
+      const mode=chooser?chooser.mode():(reset?'ct':'keep');
+      if(mode==='keep'){
+        host.style.color='#8a94a0';
+        host.textContent='Blocks 10 to 16 come across exactly as they are on the original.';
+        return;
+      }
+      if(chooser&&chooser.manual()){
+        const v=chooser.value();
+        if(v){
+          const filed=dashTplFiledNote(v,val('cp_prime'));
+          host.style.color=filed?'#8a6a00':'#1a6a2a';
+          host.textContent='\u2713 Blocks 10 to 16 will be rebuilt from \u201c'+((v.t.label)||'unnamed')+'\u201d.'+filed;
+        } else {
+          host.style.color='#8a6a00';
+          host.textContent=(mode==='b13')?'Choose a Contract Type above, or Blocks 10 to 16 start blank.':'No DD-254 template chosen. Blocks 10 to 16 start blank.';
+        }
+        return;
+      }
+      const p=val('cp_prime'), m=matched.m||{};
       if(!p){ host.style.color='#8a94a0'; host.textContent='Enter the contract this copy is for.'; return; }
-      const m=(typeof dashIntakeMatch==='function')?dashIntakeMatch(p,val('cp_order')):{};
       if(m.one){
-        matched.hit=m.one;
         host.style.color='#1a6a2a';
         host.textContent='\u2713 Blocks 10 to 16 will be rebuilt from \u201c'+((m.one.t.label)||'unnamed')+'\u201d, the template saved for this '+(m.level==='order'?'task order':'contract')+'.';
       } else if(m.many){
         host.style.color='#8a6a00';
-        host.textContent=m.hits.length+' templates are saved for this contract. Blocks 10 to 16 start blank \u2014 apply the one you want from the form.';
+        host.textContent=m.hits.length+' templates are saved for this contract. Blocks 10 to 16 start blank \u2014 choose the one you want above, or apply it from the form.';
       } else {
         host.style.color='#8a6a00';
-        host.textContent='No template is saved for this contract. Blocks 10 to 16 start blank.';
+        host.textContent='No template is saved for this contract. Blocks 10 to 16 start blank \u2014 or choose one above to build from it anyway.';
       }
     };
+    const matchNow=function(){
+      matched.m=(typeof dashIntakeMatch==='function')?dashIntakeMatch(val('cp_prime'),val('cp_order')):{};
+      if(chooser) chooser.match(matched.m);
+      tell();
+    };
+    chooser=dashTplChooser(g,'cp',{keep:!reset,onchange:tell});
+    ['cp_first','cp_last','cp_prime','cp_order','cp_sub','cp_sol'].forEach(function(id){
+      const e=g(id); if(!e) return;
+      e.oninput=function(){
+        follow=true;
+        if(id==='cp_prime'||id==='cp_order') matchNow();
+        nameNow();
+      };
+    });
+    g('cp_title').oninput=function(){ manualName=true; };
     if(reset){
-      ['cp_prime','cp_order'].forEach(function(id){ const e=g(id); if(e) e.oninput=matchNow; });
       const same=g('cpSame');
       if(same) same.onclick=function(){
-        g('cp_prime').value=oldPrime; g('cp_order').value=oldOrder; matchNow();
+        g('cp_prime').value=oldPrime; g('cp_order').value=oldOrder; follow=true; matchNow(); nameNow();
       };
     }
+    matchNow(); nameNow();
     /* No required-field gate here. This is a copy of something that already
        exists; refusing to copy a legacy draft because it never recorded a
        requester would block the operator from the one action that would let
@@ -9590,11 +9834,19 @@ function dashCopyPrompt(src){
         const pe=g('cp_prime'); if(pe&&pe.focus) pe.focus();
         return;
       }
-      if(reset) matchNow();
+      /* Read again at the moment of answering: a field filled in without an
+         input event (a paste by script, a password manager) is still what the
+         operator sees in the box. */
+      matchNow(); nameNow();
       const person=[val('cp_first'),val('cp_last')].filter(Boolean).join(' ');
       const sel=g('cp_sm'), sms=(typeof tplLoad==='function')?(tplLoad(TPL_SM)||[]):[];
       const sm=(sel&&sel.value!=='')?sms[parseInt(sel.value,10)]:null;
-      done({mode:mode,stage:stage,resetBlocks:reset,template:reset?(matched.hit||null):null,party:{
+      /* Blocks 10 to 16 are rebuilt whenever "Keep as copied" is not what is
+         selected - which, for a copy built from a contract's own template, it
+         never can be. */
+      const rebuild=!!(chooser&&chooser.mode()!=='keep');
+      done({mode:mode,stage:stage,resetBlocks:rebuild,template:rebuild?(chooser.value()||null):null,
+            title:val('cp_title'),party:{
         first:val('cp_first'), last:val('cp_last'), person:person,
         email:val('cp_email'), prime:val('cp_prime'), order:val('cp_order'),
         sub:(stage==='orig')?val('cp_sub'):'',
@@ -9638,21 +9890,28 @@ async function dashDuplicate(id){
   if(typeof dashSyncCompliance==='function') dashSyncCompliance(rec);
   rec.createdAt=rec.updatedAt=new Date().toISOString();
   const base=(fresh.title||((fresh.meta&&fresh.meta.contract)||'Untitled DD-254')).replace(/^Copy of /,'');
-  rec.title='Copy of '+base;
+  /* The name the dialog showed and the operator accepted or retyped. It is
+     composed there, from the contract the copy is for, so that it is seen
+     before the copy exists. "Copy of" is only the fallback for a caller that
+     supplied no name at all. */
+  const copyTitle=String(ans.title||'').trim()||('Copy of '+base);
+  rec.title=copyTitle;
   /* The stage the operator chose, and the intake they confirmed or corrected.
      dashPartyApply writes the identifiers, the requester and the manager - and
-     nothing else. A matched template is NEVER applied here: the whole point of
-     a copy is the language that came with it, and overwriting Items 10 to 18
-     with a template because the contract number now matches one would throw
-     away the thing being copied. */
+     nothing else. A template is never applied merely because the contract
+     number now matches one: the point of a copy is the language that came
+     with it, and overwriting Items 10 to 18 unasked would throw away the thing
+     being copied. It is applied when the dialog said Blocks 10 to 16 are to be
+     rebuilt, and only then. */
   rec.stage=ans.stage;
-  /* Built from a contract's own template: Blocks 10 to 16 and the link to
-     that template stay behind, and the template saved for the contract the
-     operator just named - if exactly one is - writes them fresh. Applied
+  /* Rebuilding: Blocks 10 to 16 and the link to the old template stay behind,
+     and the template selected in the dialog - the one saved for the contract
+     just named, unless the operator chose another - writes them fresh. Applied
      before the intake below, so what was typed in the dialog wins over what
      the template carries, the same order creating a DD-254 follows. A copy
-     built from a Contract Type, or from nobody's template, is untouched: its
-     language is not tied to a contract number. */
+     built from a contract's own template is always rebuilt; one built from a
+     Contract Type, or from nobody's template, is rebuilt only if the operator
+     picked a template for it. */
   let rebuilt='';
   if(ans.resetBlocks){
     rec.workspace=dashCopyResetBlocks(rec.workspace||{texts:{},checks:{},radios:{},selects:{},perf:[]});
@@ -9665,15 +9924,14 @@ async function dashDuplicate(id){
       rec.workspace.selects=rec.workspace.selects||{};
       if(hit.kind==='b13') rec.ctType=mt.label||'';
       else rec.workspace.selects.ctTplSel=String(mt.ioId||mt.label||'');
-      rebuilt='; Blocks 10\u201316 rebuilt from \u201c'+(mt.label||'unnamed')+'\u201d';
+      rebuilt='; Blocks 10\u201316 rebuilt from \u201c'+(mt.label||'unnamed')+'\u201d'+(hit.chosen?' (chosen in the copy dialog)':'');
     } else {
-      rebuilt='; Blocks 10\u201316 reset \u2014 no single template saved for the contract';
+      rebuilt='; Blocks 10\u201316 reset \u2014 no template applied';
     }
   }
   if(typeof dashPartyApply==='function'){
-    const party=Object.assign({},ans.party,{title:rec.title});
+    const party=Object.assign({},ans.party,{title:copyTitle});
     await dashPartyApply(rec,party,{});
-    rec.title='Copy of '+base;
   }
   /* Item 3 records when THIS DD-254 was issued and revised. None of that has
      happened to the copy, so it starts with those dates empty rather than
