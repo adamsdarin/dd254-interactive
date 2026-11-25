@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.24.0</title>
+<title>DD254 Interactive v2.25.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -596,6 +596,7 @@ body.ws-dragging{user-select:none;}
     <button class="dash-btn" onclick="portfolioCsvSelected()">📊 Export selected (.csv)</button>
     <button class="dash-btn" onclick="dashSelClear()">Clear selection</button>
   </div>
+  <div id="dashRevNeeded" role="status" style="display:none;"></div>
   <div id="dashCards"></div>
   <div id="dashRollupView" style="display:none;"></div>
   <div id="tplView" style="display:none;"></div>
@@ -1451,14 +1452,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.175';
+const TOOL_VERSION='2.176';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.24.0';
+const RELEASE_VERSION='2.25.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -7815,9 +7816,27 @@ function dashIntakeMatch(prime,order){
     if(p&&tp&&tp===p&&!to){ exactPrime.push(e); return; }
     if((p&&tp&&(tp.indexOf(p)>=0||p.indexOf(tp)>=0))||(o&&to&&(to.indexOf(o)>=0||o.indexOf(to)>=0))) partial.push(e);
   });
-  const hits=exactOrder.length?exactOrder:exactPrime;
+  let hits=exactOrder.length?exactOrder:exactPrime, chain=0;
+  /* Several DD-254 templates filed under one contract are that contract's
+     revisions (tplChainCmp), not a choice to be left to the preparer: the
+     latest is the one a new DD-254 is built from. A Final among them is set
+     aside, as the chain does; templates from different contracts, or a Contract
+     Type among them, still count as several. */
+  const notFinal=hits.filter(function(e){ return !(e.kind==='ct'&&e.t.srcType==='final'); });
+  if(notFinal.length&&notFinal.length<hits.length) hits=notFinal;
+  /* ...but only when every one records its government source and the latest
+     is strictly ahead: two templates at the same revision, or any without a
+     source recorded, are still not chosen between. */
+  if(hits.length>1&&hits.every(function(e){ return e.kind==='ct'&&tplChainTyped(e.t); })){
+    const k=tplChainKey(hits[0].t);
+    if(k&&hits.every(function(e){ return tplChainKey(e.t)===k; })){
+      const ord=hits.map(function(e){ return e.t; }).sort(tplChainCmp);
+      const L=ord[ord.length-1];
+      if(tplChainCmp(L,ord[ord.length-2])>0){ chain=hits.length; hits=hits.filter(function(e){ return e.t===L; }); }
+    }
+  }
   return {hits:hits,level:exactOrder.length?'order':(exactPrime.length?'prime':''),
-          partial:partial,one:hits.length===1?hits[0]:null,many:hits.length>1};
+          partial:partial,one:hits.length===1?hits[0]:null,many:hits.length>1,chain:chain};
 }
 /* ── WHICH TEMPLATE A DD-254 IS BUILT FROM ────────────────────
    Asked in the dialog that creates a DD-254 and in the one that copies one
@@ -7867,8 +7886,10 @@ function dashTplChooser(g,p,o){
   let mode=o.keep?'keep':'ct', manual=false, auto=null;
   const label=function(e){
     const d=e.t.data||{};
+    let sup='';
+    if(e.kind==='ct'&&e.t.srcType!=='final'){ const L=tplChainLatest(e.t); if(L&&!tplChainSame(L,e.t)) sup=' — superseded'; }
     return [e.t.label||'(unnamed)',d.primeContract,d.taskOrder].map(function(x){ return String(x||'').trim(); }).filter(Boolean).join(' · ')
-      +((e.kind==='ct'&&e.t.closed)?' — CLOSED':'');
+      +sup+((e.kind==='ct'&&e.t.closed)?' — CLOSED':'');
   };
   const indexOf=function(kind,e){
     const k=dashTplKey(e); let at=-1;
@@ -8125,7 +8146,8 @@ function dashPartyPrompt(o){
       }
       if(m.one){
         host.style.color='#1a6a2a';
-        host.textContent='\u2713 Template \u201c'+((m.one.t.label)||'unnamed')+'\u201d matches this '+(m.level==='order'?'task order':'contract')+' and will be applied.';
+        host.textContent='\u2713 Template \u201c'+((m.one.t.label)||'unnamed')+'\u201d matches this '+(m.level==='order'?'task order':'contract')+' and will be applied.'
+          +(m.chain>1?' It is the latest of '+m.chain+' revisions saved for it ('+tplChainVersion(m.one.t).label+').':'');
         smFollow(m.one.t);
       } else if(m.many){
         host.style.color='#8a6a00';
@@ -9270,6 +9292,11 @@ async function dashRenderCards(openId){
       }).catch(function(){});
     }
   });
+  /* DD-254s built from an earlier revision of their contract's template. Worked
+     out before the cards, which carry a chip for each. */
+  const _rev=(typeof tplRevNeeded==='function')?tplRevNeeded(drafts):[];
+  DASH.revBy={}; _rev.forEach(function(x){ DASH.revBy[x.rec.id]=x; });
+  if(typeof tplRevNotice==='function') tplRevNotice(_rev);
   const sc=document.getElementById('dashStatusCounts');
   if(sc){
     /* Ordered the way the work moves, not alphabetically. */
@@ -9374,13 +9401,13 @@ async function dashRenderCards(openId){
       /* Stage and the form's own classification marking sit on the title line:
          they identify WHAT this record is, so they read as part of its name.
          The counts and workflow badges below describe its state instead. */
-      +' <span class="dash-title-badges">'+dashStageChip(r)+dashClsBadge(r)+'</span></h3>'
+      +' <span class="dash-title-badges">'+dashStageChip(r)+dashClsBadge(r)+tplRevChip((DASH.revBy||{})[r.id])+'</span></h3>'
       +(function(){
         const c7=String(m.cage7||(((r.workspace||{}).texts||{}).i7b)||'').trim();
         return '<div class="dash-card-ids" style="font-size:11.5px;color:#5a6a80;margin-top:2px;">'
           +dashCardNumbers(r)+' · '+dashEsc(m.contractor||'— contractor not yet entered —')
           +(c7?' · <span title="Item 7b">Subcontractor CAGE: '+dashEsc(c7)+'</span>':'')
-          +'</div></div>'; })()
+          +'</div>'+tplProvLine(r)+'</div>'; })()
       +'<select onchange="dashSetStatus(\''+r.id+'\',this.value)" style="font-size:12px;padding:5px 8px;border:1px solid #c4ccd4;border-radius:4px;background:#fff;">'
       +dashStatusOptions(r).map(function(s){return '<option'+(r.status===s?' selected':'')+'>'+s+'</option>';}).join('')+'</select>'
       /* Both pickers are type-aheads rather than plain dropdowns: a library of a
@@ -9831,7 +9858,8 @@ function dashCopyPrompt(src){
       if(!p){ host.style.color='#8a94a0'; host.textContent='Enter the contract this copy is for.'; return; }
       if(m.one){
         host.style.color='#1a6a2a';
-        host.textContent='\u2713 Blocks 10 to 16 will be rebuilt from \u201c'+((m.one.t.label)||'unnamed')+'\u201d, the template saved for this '+(m.level==='order'?'task order':'contract')+'.';
+        host.textContent='\u2713 Blocks 10 to 16 will be rebuilt from \u201c'+((m.one.t.label)||'unnamed')+'\u201d, the template saved for this '+(m.level==='order'?'task order':'contract')+'.'
+          +(m.chain>1?' It is the latest of '+m.chain+' revisions ('+tplChainVersion(m.one.t).label+').':'');
       } else if(m.many){
         host.style.color='#8a6a00';
         host.textContent=m.hits.length+' templates are saved for this contract. Blocks 10 to 16 start blank \u2014 choose the one you want above, or apply it from the form.';
@@ -11837,7 +11865,11 @@ function ctOrderSource(o,records){return (records||ctOrderStore()).find(function
 function ctSourceCandidates(o,mode,templates){
   return (templates||tplLoad(TPL_CT)).filter(function(t){const d=t.data||{};return t.ioId&&ctContractKey(d.primeContract)===ctContractKey(o.primeContract)&&(mode==='order'?ctContractKey(d.taskOrder)===ctContractKey(o.number):!ctContractKey(d.taskOrder));});
 }
-function ctLatestSource(list){return (list||[]).filter(function(t){return t.srcType!=='final';}).slice().sort(function(a,b){return String(b.srcDate||'').localeCompare(String(a.srcDate||''))||Number(b.srcRev||0)-Number(a.srcRev||0);})[0]||null;}
+/* The latest source in a list, by the same order as the revision chain
+   (tplChainCmp): the government's revision number first, then the source date.
+   One ordering for orders and templates alike, so the two cannot disagree about
+   which revision is current. Finals are excluded, as before. */
+function ctLatestSource(list){const c=(list||[]).filter(function(t){return t.srcType!=='final';}).slice().sort(tplChainCmp);return c.length?c[c.length-1]:null;}
 function ctOrderMigrate(templates){
   if(window.DD254_READONLY)return Promise.resolve(false);
   const records=ctOrderStore(),known=new Set(ctOrderRows(records).map(function(o){return ctOrderKey(o.primeContract,o.number);})),groups=new Map();
@@ -12817,7 +12849,9 @@ function ctPickerEntries(arr,filter){
   const tplOpts=arr.map(function(t,i){
     if(bound[t.ioId]) return null;
     if(q&&(typeof dashTplSearchText==='function'?dashTplSearchText(t):String(t.label||'').toLowerCase()).indexOf(q)<0) return null;
-    return {ref:t.ioId,text:(t.label||('Template '+(i+1)))+(t.srcDate?' — src '+t.srcDate:' — NO SOURCE DATE')+(t.closed?' — CLOSED':'')};
+    const L=(typeof tplChainLatest==='function')?tplChainLatest(t):t;
+    const sup=(t.srcType!=='final'&&L&&!tplChainSame(L,t))?' — superseded by '+(L.label||'a newer revision'):'';
+    return {ref:t.ioId,text:(t.label||('Template '+(i+1)))+(t.srcDate?' — src '+t.srcDate:' — NO SOURCE DATE')+sup+(t.closed?' — CLOSED':'')};
   }).filter(Boolean);
 
   return {orders:orderOpts,templates:tplOpts};
@@ -13020,6 +13054,60 @@ function tplFingerprint(t){
   for(let i=0;i<s.length;i++){ const c=s.charCodeAt(i); a=Math.imul(a^c,0x01000193)>>>0; b=Math.imul(b^(c+i),0x01000193)>>>0; }
   return ('00000000'+a.toString(16)).slice(-8)+('00000000'+b.toString(16)).slice(-8);
 }
+/* ── THE REVISION CHAIN OF A CONTRACT'S TEMPLATES ──────────────────────────
+   Owner, 25 November 2026: "Lets say I issued X DD-254 based on an original
+   issued by the government because I'm a prime. I should get a flag, if/when I
+   enter a new template that is a revision 1, 2, 3, 4, ect for all the DD-254's
+   that I issued under that template, and THEN also the DD-254 that is inserted
+   into the workflow, should be the DD-254 template that is highest in the
+   revision chain."
+
+   Each government DD-254 for a contract is entered as its own DD-254 template,
+   recording its source type and revision number. The templates filed under one
+   prime contract and task order are that contract's chain, ordered by the
+   government's revision (Original, then Revision 1, 2, ...) and then by source
+   date. Our own numbering is the position in the chain - v1, v2, v3 - shown
+   with the government's revision beside it. A Final is not part of the chain:
+   it ends a contract rather than revising it, which is how the task-order
+   logic (ctLatestSource) has always treated it. A template whose source type
+   was never recorded sorts below an Original, so it never supersedes one. */
+function tplChainKey(t){
+  const d=(t&&t.data)||{}, p=ctContractKey(d.primeContract);
+  return p?(p+'|'+ctContractKey(d.taskOrder)):'';
+}
+function tplChainRank(t){
+  if(!t) return -2;
+  if(t.srcType==='orig') return 0;
+  if(t.srcType==='rev'){ const n=parseFloat(String(t.srcRev||'').replace(/[^0-9.]/g,'')); return isNaN(n)?0.5:n; }
+  return -1;
+}
+function tplChainCmp(a,b){
+  return (tplChainRank(a)-tplChainRank(b))
+    || String((a&&a.srcDate)||'').localeCompare(String((b&&b.srcDate)||''))
+    || String((a&&a.updatedAt)||'').localeCompare(String((b&&b.updatedAt)||''));
+}
+/* Only templates that say which government DD-254 they came from - an
+   Original or a numbered Revision - are links in a chain. Two templates under
+   one contract with no source recorded are not known to be revisions of each
+   other (they may be for different subcontracts), and choosing between them by
+   which was edited last would be a guess; each stays a chain of one. */
+function tplChainTyped(t){ return !!t&&(t.srcType==='orig'||t.srcType==='rev'); }
+function tplChainOf(t){
+  const k=tplChainKey(t);
+  if(!t) return [];
+  if(!k||!tplChainTyped(t)) return [t];
+  return (tplLoad(TPL_CT)||[]).filter(function(x){ return tplChainTyped(x)&&tplChainKey(x)===k; }).sort(tplChainCmp);
+}
+function tplChainLatest(t){ const c=tplChainOf(t); return c.length?c[c.length-1]:t; }
+function tplChainSame(a,b){ return !!a&&!!b&&(a===b||(!!a.ioId&&a.ioId===b.ioId)); }
+function tplChainVersion(t){
+  const c=tplChainOf(t); let i=-1;
+  c.forEach(function(x,j){ if(tplChainSame(x,t)) i=j; });
+  const gov=(typeof ctSrcLabel==='function')?ctSrcLabel(t):'';
+  const n=(i<0||(t&&t.srcType==='final'))?0:i+1;
+  return {n:n,of:c.length,
+    label:(n?'v'+n:'')+(gov?(n?' · ':'')+'Government '+gov:'')+(t&&t.srcDate?' · source '+t.srcDate:'')};
+}
 /* Which library a template came from, and the key that finds it there again.
    A task-order source version carries the id of the template it was saved
    from, so it is found in the DD-254 template library like any other. */
@@ -13064,10 +13152,30 @@ function tplChangeInfo(){
     el.value=JSON.stringify(s);
     return null;
   }
+  const i=tplChangeDiff(s);
+  if(!i) return null;
+  if(i.missing) return (s.srcAck==='missing')?null:i;
+  if(i.fp===s.srcAck) return null;
+  return i;
+}
+/* What, if anything, a snapshot is behind. A DD-254 template that a newer
+   revision of the same contract supersedes is behind its chain, whatever it
+   says (tplChainLatest), and "update" means taking that newest revision. Then
+   a template that has itself been edited since it was applied. */
+function tplChangeDiff(s){
   const cur=tplChangeFind(s.srcKind,s.srcId);
-  if(!cur) return (s.srcAck==='missing')?null:{missing:true,label:s.srcLabel||'the template',snap:s};
+  if(!cur) return {missing:true,label:s.srcLabel||'the template',snap:s};
+  if(s.srcKind==='ct'){
+    const L=tplChainLatest(cur.t);
+    if(L&&!tplChainSame(L,cur.t)){
+      const li=tplChangeFind('ct',L.ioId);
+      return {superseded:true,label:L.label||'the template',fromLabel:cur.t.label||s.srcLabel||'the template',
+        toVer:tplChainVersion(L).label,fromVer:String(s.srcVer||tplChainVersion(cur.t).label),
+        kind:'ct',t:L,idx:li?li.idx:-1,fp:tplFingerprint(L),at:String(s.srcAt||''),snap:s};
+    }
+  }
   const fp=tplFingerprint(cur.t);
-  if(fp===s.srcFp||fp===s.srcAck) return null;
+  if(fp===s.srcFp) return null;
   return {label:cur.t.label||s.srcLabel||'the template',kind:s.srcKind,t:cur.t,idx:cur.idx,fp:fp,at:String(s.srcAt||''),snap:s};
 }
 /* The same check against a stored record rather than the open form: spawning
@@ -13084,11 +13192,7 @@ function tplChangeSnapOf(ws){
 }
 function tplChangeForWorkspace(ws){
   const s=tplChangeSnapOf(ws); if(!s||!s.srcFp) return null;
-  const cur=tplChangeFind(s.srcKind,s.srcId);
-  if(!cur) return {missing:true,label:s.srcLabel||'the template',snap:s};
-  const fp=tplFingerprint(cur.t);
-  if(fp===s.srcFp) return null;
-  return {label:cur.t.label||s.srcLabel||'the template',kind:s.srcKind,t:cur.t,idx:cur.idx,fp:fp,at:String(s.srcAt||''),snap:s};
+  return tplChangeDiff(s);
 }
 function dashSpawnTplHtml(tch,what,from){
   if(!tch||tch.missing) return '';
@@ -13097,7 +13201,11 @@ function dashSpawnTplHtml(tch,what,from){
       +'<b>'+dashEsc(t)+'</b><div style="font-size:10.5px;color:#5a6a80;margin-top:1px;">'+dashEsc(sub)+'</div></button>';
   };
   return '<div id="spTplBox" style="border:1px solid #e0b860;background:#fdf3d8;border-radius:5px;padding:8px 10px;margin:0 0 9px;">'
-    +'<div style="font-size:11.5px;color:#6b4300;font-weight:bold;line-height:1.45;">⚠ Template changed — “'+dashEsc(tch.label)+'” has changed in the repository since '+dashEsc(from)+' was built from it'+(tch.at?' on '+dashEsc(tch.at.slice(0,10)):'')+'.</div>'
+    +'<div style="font-size:11.5px;color:#6b4300;font-weight:bold;line-height:1.45;">⚠ Template changed — '
+      +(tch.superseded
+        ?'a newer revision of this contract’s template is in the repository: “'+dashEsc(tch.label)+'” ('+dashEsc(tch.toVer)+') supersedes “'+dashEsc(tch.fromLabel)+'”'+(tch.fromVer?' ('+dashEsc(tch.fromVer)+')':'')+', which '+dashEsc(from)+' was built from.'
+        :'“'+dashEsc(tch.label)+'” has changed in the repository since '+dashEsc(from)+' was built from it'+(tch.at?' on '+dashEsc(tch.at.slice(0,10)):'')+'.')
+      +'</div>'
     +'<div role="radiogroup" aria-label="Template for the new DD-254">'
     +opt('sp_tpl_current',true,'Build the '+what+' from the current template','Items 10 to 16 and 18, and Item 13, are written from the template as it is now.')
     +opt('sp_tpl_carry',false,'Keep the wording from '+from,'The '+what+' starts with what '+from+' says, and warns about the change when it is opened.')
@@ -13136,6 +13244,7 @@ function dashSpawnTplPrompt(src,kind,tch){
 function tplChangeText(i){
   if(!i) return '';
   if(i.missing) return 'Template changed — the template “'+i.label+'” this DD-254 was built from is no longer in the repository.';
+  if(i.superseded) return 'Template changed — update to new template. A newer revision of this contract’s template is in the repository: “'+i.label+'” ('+i.toVer+') supersedes “'+i.fromLabel+'”'+(i.fromVer?' ('+i.fromVer+')':'')+', which this DD-254 was built from'+(i.at?' on '+i.at.slice(0,10):'')+'.';
   return 'Template changed — update to new template. “'+i.label+'” has changed in the repository since it was applied to this DD-254'
     +(i.at?' on '+i.at.slice(0,10):'')+'.';
 }
@@ -13166,6 +13275,110 @@ async function tplChangeKeep(){
   if(typeof dashSaveNow==='function') await dashSaveNow();
   return true;
 }
+/* ── REVISIONS NEEDED ──────────────────────────────────────────────────────
+   Every DD-254 built from a template that a newer revision of the same
+   contract now supersedes (tplChainLatest), issued or not. Only the newest
+   DD-254 in each line counts: one that already has a Revision or Final below
+   it has been dealt with by that child, which is checked in its own right.
+   Cancelled and Skipped records are finished and not listed. The owner asked
+   for a list to work through, not revisions made for them, so this lists them
+   and offers each its next step. */
+function tplRevSnapId(r){
+  const ws=(r&&r.workspace)||{}, s=tplChangeSnapOf(ws);
+  if(s&&s.srcKind==='ct'&&s.srcId) return s.srcId;
+  if(s&&s.srcKind&&s.srcKind!=='ct') return '';
+  return String((ws.selects||{}).ctTplSel||'').trim();
+}
+function tplRevNeeded(drafts){
+  const kids={}; (drafts||[]).forEach(function(r){ if(r&&r.parentId) kids[r.parentId]=(kids[r.parentId]||0)+1; });
+  const out=[];
+  (drafts||[]).forEach(function(r){
+    if(!r||kids[r.id]) return;
+    const st=r.status||'Draft'; if(st==='Cancelled'||st==='Skipped') return;
+    const id=tplRevSnapId(r); if(!id) return;
+    const cur=tplChangeFind('ct',id); if(!cur) return;
+    const L=tplChainLatest(cur.t); if(!L||tplChainSame(L,cur.t)) return;
+    const key=(L.ioId||'')+':'+tplFingerprint(L);
+    if(r.revExempt&&r.revExempt.to===key) return;
+    const s=tplChangeSnapOf(r.workspace)||{};
+    out.push({rec:r,from:cur.t,to:L,key:key,fromVer:String(s.srcVer||tplChainVersion(cur.t).label),toVer:tplChainVersion(L).label});
+  });
+  return out;
+}
+function tplRevChip(x){
+  if(!x) return '';
+  return '<span class="dash-badge tpl-rev-chip" style="background:#fdf3d8;color:#7a4a00;font-weight:bold;cursor:pointer;" title="'
+    +dashEsc('Built from '+(x.from.label||'the template')+' ('+x.fromVer+'). The contract’s template is now '+(x.to.label||'')+' ('+x.toVer+').')
+    +'" onclick="tplRevOpen()">⟳ Revision needed</span>';
+}
+function tplRevNotice(list){
+  const host=document.getElementById('dashRevNeeded'); if(!host) return;
+  if(!list||!list.length){ host.style.display='none'; host.innerHTML=''; return; }
+  host.style.cssText='display:block;max-width:1280px;margin:8px auto;padding:8px 12px;background:#fdf3d8;border:1px solid #e0b860;border-radius:6px;color:#6b4300;font-family:Arial,sans-serif;font-size:12px;line-height:1.5;';
+  host.innerHTML='<b>⟳ '+list.length+' DD-254'+(list.length===1?' was':'s were')+' built from an earlier revision of '+(list.length===1?'its':'their')+' contract’s template.</b> '
+    +'A newer government revision is in the repository. '
+    +'<button type="button" id="tplRevReview" onclick="tplRevOpen()" style="margin-left:6px;background:#17427d;color:#fff;border:none;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:bold;cursor:pointer;">Review</button>';
+}
+/* What a DD-254 was built from, as recorded when it was applied: the record of
+   "we issued this with that template on this day". */
+function tplProvLine(r){
+  const s=tplChangeSnapOf((r||{}).workspace);
+  if(!s||!s.srcLabel) return '';
+  return '<div class="dash-card-tpl" style="font-size:10.5px;color:#6a7888;margin-top:1px;">Template: '+dashEsc(s.srcLabel)
+    +(s.srcVer?' — '+dashEsc(s.srcVer):'')+(s.srcAt?' · applied '+dashEsc(String(s.srcAt).slice(0,10)):'')+'</div>';
+}
+async function tplRevOpen(){
+  const old=document.getElementById('tplRevDlg'); if(old) old.remove();
+  const list=tplRevNeeded(await draftAll());
+  const ov=document.createElement('div'); ov.id='tplRevDlg';
+  ov.style.cssText='position:fixed;inset:0;background:rgba(20,26,34,.55);z-index:6000;display:flex;align-items:flex-start;justify-content:center;font-family:Arial,sans-serif;padding:16px;overflow:auto;';
+  const btn='border:none;border-radius:4px;padding:4px 10px;font-size:11px;font-weight:bold;cursor:pointer;';
+  const rows=list.map(function(x){
+    const r=x.rec, st=r.status||'Draft', stage=(typeof dashStageOf==='function')?dashStageOf(r):(r.stage||'orig');
+    const issued=(st==='Issued');
+    const go=issued?(stage==='sol'?'Spawn Original':'Revise'):'Open';
+    return '<div class="tpl-rev-row" data-id="'+dashEsc(r.id)+'" style="border:1px solid #d8dee5;border-radius:6px;padding:8px 10px;margin:6px 0;">'
+      +'<div style="font-size:12px;font-weight:bold;color:#2b3440;">'+dashEsc(r.title||'Untitled DD-254')+' <span style="font-weight:normal;color:#5a6a80;">· '+dashEsc(st)+'</span></div>'
+      +'<div style="font-size:11px;color:#5a6a80;margin:2px 0 6px;line-height:1.45;">Built from “'+dashEsc(x.from.label||'')+'” ('+dashEsc(x.fromVer)+')<br>Now: “'+dashEsc(x.to.label||'')+'” ('+dashEsc(x.toVer)+')</div>'
+      +'<button type="button" id="trGo_'+dashEsc(r.id)+'" style="'+btn+'background:#17427d;color:#fff;">'+go+'</button> '
+      +'<button type="button" id="trEx_'+dashEsc(r.id)+'" style="'+btn+'background:#fff;color:#7a4a00;border:1px solid #c9a24a;">Exempt…</button>'
+      +'</div>';
+  }).join('');
+  ov.innerHTML='<div style="background:#fff;border-radius:8px;max-width:620px;width:94%;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);margin:auto;">'
+    +'<div style="font-size:13px;font-weight:bold;color:#2b3440;margin-bottom:3px;">⟳ Revisions needed</div>'
+    +'<div style="font-size:11.5px;color:#5a6a80;margin-bottom:6px;line-height:1.45;">Each of these was built from an earlier revision of its contract’s template. <b>Revise</b> spawns a Revision built from the newest one; <b>Open</b> takes you to a DD-254 still being prepared, where <i>Update to new template</i> does the same. <b>Exempt</b> records why one stays as it is, until the next revision.</div>'
+    +(rows||'<div style="font-size:12px;color:#1a6a2a;padding:8px 0;">✓ Nothing needs revising.</div>')
+    +'<div style="text-align:right;margin-top:8px;"><button type="button" id="trClose" style="'+btn+'background:#8a94a0;color:#fff;">Close</button></div></div>';
+  document.body.appendChild(ov);
+  const close=function(){ try{ ov.remove(); }catch(e){} };
+  ov.querySelector('#trClose').onclick=close;
+  ov.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+  list.forEach(function(x){
+    const r=x.rec, st=r.status||'Draft', stage=(typeof dashStageOf==='function')?dashStageOf(r):(r.stage||'orig');
+    const g=document.getElementById('trGo_'+r.id), e=document.getElementById('trEx_'+r.id);
+    if(g) g.onclick=async function(){
+      close();
+      if(st==='Issued'){ await dashSpawn(r.id,stage==='sol'?'orig':'rev'); if(typeof dashRenderCards==='function') await dashRenderCards(); }
+      else await dashOpen(r.id);
+    };
+    if(e) e.onclick=async function(){ if(await tplRevExempt(r.id,x)){ close(); await tplRevOpen(); } };
+  });
+  return ov;
+}
+async function tplRevExempt(id,x){
+  const rec=await draftGet(id); if(!rec) return false;
+  const opt=(typeof reasonsOptional==='function')&&reasonsOptional();
+  const why=await uiPrompt('Why does “'+(rec.title||'this DD-254')+'” stay on “'+(x.from.label||'')+'” ('+x.fromVer+') rather than be revised to “'+(x.to.label||'')+'” ('+x.toVer+')?\n\nThe reason is kept on the DD-254 and in the audit log. It holds until the contract’s template is revised again.','');
+  if(why===null) return false;
+  let reason=String(why||'').trim();
+  if(!reason&&!opt){ uiAlert('A reason is required.'); return false; }
+  if(!reason) reason=(typeof REASON_NONE!=='undefined')?REASON_NONE:'(no reason given)';
+  rec.revExempt={to:x.key,reason:reason,ts:new Date().toISOString(),toLabel:(x.to.label||'')+' ('+x.toVer+')'};
+  await draftPut(rec);
+  try{ audLog(id,rec.title,'revision-exempted',(x.to.label||'')+' ('+x.toVer+') — '+reason); }catch(e){}
+  if(typeof dashRenderCards==='function') await dashRenderCards();
+  return true;
+}
 function ctLangSrcData(d,label,template){
   const ls={};
   ['l10','l11','l11v','always'].forEach(function(k){
@@ -13188,7 +13401,10 @@ function ctLangSrcData(d,label,template){
      (tplChangeInfo). Recorded only when the template is one the repositories
      can find again. */
   const k=(template&&typeof tplChangeKindOf==='function')?tplChangeKindOf(template):null;
-  if(k){ ls.srcKind=k.kind; ls.srcId=k.id; ls.srcFp=tplFingerprint(template); ls.srcAt=new Date().toISOString(); }
+  if(k){ ls.srcKind=k.kind; ls.srcId=k.id; ls.srcFp=tplFingerprint(template); ls.srcAt=new Date().toISOString();
+    /* Which revision it was, as it stood that day: the chain can gain an older
+       revision later, and the record should still say what was used. */
+    if(k.kind==='ct'){ const v=tplChainVersion(template).label; if(v) ls.srcVer=v; } }
   return Object.keys(ls).length?JSON.stringify(ls):'';
 }
 function ctLangSrcRemember(d,label,template){
