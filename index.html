@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.22.0</title>
+<title>DD254 Interactive v2.23.0</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -607,6 +607,7 @@ body.ws-dragging{user-select:none;}
   <button class="pbtn" style="background:var(--dcsa-blue);font-size:11px;padding:4px 12px;margin-right:12px;" onclick="showDashView()">← Dashboard</button>
   <strong id="draftBarTitle">Untitled draft</strong> <button title="Rename" onclick="dashRename(DASH.current)" style="background:none;border:none;cursor:pointer;font-size:12px;color:#6a7888;">✏</button>
   <span id="draftBarSaved" style="color:#6a7888;margin-left:10px;"></span>
+  <div id="tplChangedBanner" role="alert" style="display:none;margin-top:6px;padding:6px 10px;background:#fdf3d8;border:1px solid #e0b860;border-radius:4px;color:#6b4300;font-size:11.5px;line-height:1.6;"></div>
 </div>
 
 <div class="layout">
@@ -1450,14 +1451,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.173';
+const TOOL_VERSION='2.174';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.22.0';
+const RELEASE_VERSION='2.23.0';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -2920,6 +2921,14 @@ if(S.c['10a']&&!S.c['11h']&&!S.c['11a']) warns.push('10a COMSEC: If accountable 
   const raw=(ck('i7fsoEmail')?.value||'').trim();
   const al=ck('a7email'); if(al) al.classList.toggle('show',hasSub&&!raw);
   if(hasSub&&!raw) errors.push('Item 7: Subcontractor FSO e-mail is required — the DD Form 254 has to reach them.');
+})();
+/* The template this DD-254 was built from has changed since (tplChangeInfo).
+   A warning, not a block: the DD-254 may be right as it stands, and the
+   banner under the title offers both answers. */
+(function(){
+  const i=(typeof tplChangeInfo==='function')?tplChangeInfo():null;
+  if(i) warns.push(tplChangeText(i)+(i.missing?' Keep this version under the title once you have checked it.':' Use Update to new template under the title, or Keep this version.'));
+  if(typeof tplChangeRender==='function') tplChangeRender(i);
 })();
 if(typeof ctTplAttachments==='function'){ const _ga=ctTplAttachments();
   if(_ga.att.length) warns.push('Template "'+(_ga.tpl.label||'unnamed')+'" requires '+_ga.att.length+' attachment'+(_ga.att.length===1?'':'s')+': '+_ga.att.join('; ')+' — confirm each is attached before signing.'); }
@@ -8458,7 +8467,7 @@ function ctApplyDataToWorkspace(d,ws,template){
   if(has('i13')||has('l10')||has('l11')) put('item13',b13.join('\n\n'));
   /* What this template says for each box, carried on the form so the boxes
      still govern their own clauses once it has been applied. */
-  put('ctLangSrc',ctLangSrcData(d,template&&template.label));
+  put('ctLangSrc',ctLangSrcData(d,template&&template.label,template));
   /* Item 13 has just been rewritten, so the supported-effort line it owns at
      the head has to be re-established. It is done here and not left to the
      form writer because this function also builds records that are never on
@@ -8534,14 +8543,15 @@ async function ctTypeApply(sel){
   if(!DASH.current){ alert('Save this DD-254 to the dashboard before applying a contract type.'); return; }
   await dashApplyB13(DASH.current,idx);
 }
-async function dashApplyB13(id,idx){
+async function dashApplyB13(id,idx,opts){
+  opts=opts||{};
   if(idx===''||idx==null) return;
   const b13=(typeof tplLoad==='function')?tplLoad(TPL_B13):[];
   const t=b13[+idx]; if(!t) return;
   const d=t.data; if(!d) return alert('That Contract Type template has no content saved.');
   const rec=await draftGet(id); if(!rec) return alert('Draft not found.');
   const cur=(DASH.current===id)?(((document.getElementById('item13')||{}).value)||''):(((rec.workspace||{}).texts||{}).item13||'');
-  if(String(cur).trim() && !(await uiConfirm('This DD-254 already has Block 13 text.\n\nApply Contract Type "'+(t.label||'unnamed')+'" over it?'))) return;
+  if(!opts.confirmed && String(cur).trim() && !(await uiConfirm('This DD-254 already has Block 13 text.\n\nApply Contract Type "'+(t.label||'unnamed')+'" over it?'))) return;
   if(DASH.current===id){
     window.DD254_CT_APPLIED=t.label||'';
     ctApplyWsToForm(ctApplyDataToWorkspace(d,null,t));
@@ -8561,7 +8571,8 @@ async function dashApplyB13(id,idx){
    as dashApplyB13: ask before writing over Item 13, apply to the open form when
    that is the record on screen so the preparer watches it happen, and to the
    stored workspace otherwise. */
-async function dashApplyTpl(id,ref){
+async function dashApplyTpl(id,ref,opts){
+  opts=opts||{};
   if(ref===''||ref==null) return;
   if(window.DD254_READONLY){ alert('This tab is read-only \u2014 another tab holds the lock.'); return; }
   const t=(typeof ctFind==='function')?ctFind(ref):null;
@@ -8573,7 +8584,8 @@ async function dashApplyTpl(id,ref){
     return;
   }
   const cur=(DASH.current===id)?(((document.getElementById('item13')||{}).value)||''):(((rec.workspace||{}).texts||{}).item13||'');
-  if(String(cur).trim() && !(await uiConfirm('This DD-254 already has Block 13 text.\n\nApply the template \u201c'+(t.label||'unnamed')+'\u201d over it?'))) return;
+  /* opts.confirmed: the caller has already asked, in its own words. */
+  if(!opts.confirmed && String(cur).trim() && !(await uiConfirm('This DD-254 already has Block 13 text.\n\nApply the template \u201c'+(t.label||'unnamed')+'\u201d over it?'))) return;
   if(DASH.current===id){
     ctApplyWsToForm(ctApplyDataToWorkspace(d,null,t));
     const sl=document.getElementById('ctTplSel'); if(sl) sl.value=t.ioId||'';
@@ -12947,7 +12959,129 @@ function ctLangOf(t,key){
    A snapshot rather than a reference, deliberately: what the box has to be
    able to withdraw is the wording that was inserted, which is not necessarily
    what the template says today. */
-function ctLangSrcData(d,label){
+/* ── HAS THE TEMPLATE CHANGED SINCE IT WAS APPLIED? ──────────────────────────
+   Owner, 25 November 2026: "when a DD-254 workflow is opened, it checks the
+   template repo, every time, to see if there are any changes, and if there is
+   there is a warning saying 'template changed - update to new template'."
+
+   Applying a template records which one it was and a fingerprint of what it
+   said, in the snapshot every apply path already writes (ctLangSrc). Each time
+   the form is checked - which is every open and every edit - the template is
+   fingerprinted again as it stands in the repository; a difference is a
+   warning, a banner under the title, and an offer to update.
+
+   The fingerprint is of meaning, not of storage: empty fields, unticked boxes,
+   whitespace at line ends and the language-mode version stamp are dropped, so
+   the editor filling in a blank field, or an upgrade migrating a template,
+   does not read as a change. The template's name is left out too - renaming
+   one changes nothing a DD-254 says.
+
+   An Issued, Cancelled or Skipped DD-254 is never warned: it is the record of
+   what went out, and updating it is not on offer anyway. */
+const TPL_FP_SKIP={langModeV:1,ioId:1,label:1,updatedAt:1};
+function tplCanon(v){
+  if(v==null) return undefined;
+  if(Array.isArray(v)){ const a=v.map(tplCanon).filter(function(x){ return x!==undefined; }); return a.length?a:undefined; }
+  if(typeof v==='object'){
+    const o={}; Object.keys(v).sort().forEach(function(k){ if(TPL_FP_SKIP[k]) return; const c=tplCanon(v[k]); if(c!==undefined) o[k]=c; });
+    return Object.keys(o).length?o:undefined;
+  }
+  if(v===false||v==='') return undefined;
+  if(typeof v==='string'){ const s=v.replace(/\r\n?/g,'\n').replace(/[ \t]+$/gm,'').trim(); return s||undefined; }
+  return v;
+}
+function tplFingerprint(t){
+  if(!t) return '';
+  const s=JSON.stringify(tplCanon({data:t.data,src:{date:t.srcDate,type:t.srcType,rev:t.srcRev},sm:{name:t.smName,email:t.smEmail,program:t.smProgram}})||{});
+  /* two independent 32-bit FNV-1a runs: a change detector, not a signature */
+  let a=0x811c9dc5, b=0x01000193^0x5bd1e995;
+  for(let i=0;i<s.length;i++){ const c=s.charCodeAt(i); a=Math.imul(a^c,0x01000193)>>>0; b=Math.imul(b^(c+i),0x01000193)>>>0; }
+  return ('00000000'+a.toString(16)).slice(-8)+('00000000'+b.toString(16)).slice(-8);
+}
+/* Which library a template came from, and the key that finds it there again.
+   A task-order source version carries the id of the template it was saved
+   from, so it is found in the DD-254 template library like any other. */
+function tplChangeKindOf(t){
+  if(!t) return null;
+  if(t.ioId&&(tplLoad(TPL_CT)||[]).some(function(x){ return x.ioId===t.ioId; })) return {kind:'ct',id:t.ioId};
+  const b=(tplLoad(TPL_B13)||[]).filter(function(x){ return x===t||(t.ioId&&x.ioId===t.ioId)||(!t.ioId&&String(x.label||'')===String(t.label||'')); })[0];
+  if(b) return {kind:'b13',id:b.ioId||b.label||''};
+  return null;
+}
+function tplChangeFind(kind,id){
+  if(!kind||!id) return null;
+  const arr=(tplLoad(kind==='ct'?TPL_CT:TPL_B13)||[]);
+  let idx=-1;
+  arr.forEach(function(x,i){ if(idx<0&&(x.ioId===id||(!x.ioId&&String(x.label||'')===String(id)))) idx=i; });
+  if(idx<0&&kind==='b13') arr.forEach(function(x,i){ if(idx<0&&String(x.label||'')===String(id)) idx=i; });
+  return idx<0?null:{t:arr[idx],idx:idx};
+}
+/* A DD-254 made before fingerprints existed: find what it was built from, by
+   the picker above Item 13, the Contract Type on the record, or a name that is
+   unique in one library, and take today's template as the starting point. */
+function tplChangeLegacy(s){
+  const sel=String((document.getElementById('ctTplSel')||{}).value||'').trim();
+  if(sel){ const f=tplChangeFind('ct',sel); if(f) return {kind:'ct',id:f.t.ioId,t:f.t}; }
+  const ty=String(window.DD254_CT_APPLIED||'').trim();
+  if(ty){ const f=tplChangeFind('b13',ty); if(f) return {kind:'b13',id:f.t.ioId||f.t.label,t:f.t}; }
+  const name=String((s&&s.srcLabel)||'').trim(); if(!name) return null;
+  const ct=(tplLoad(TPL_CT)||[]).filter(function(x){ return String(x.label||'')===name; });
+  if(ct.length===1&&ct[0].ioId) return {kind:'ct',id:ct[0].ioId,t:ct[0]};
+  const b=(tplLoad(TPL_B13)||[]).filter(function(x){ return String(x.label||'')===name; });
+  if(b.length===1) return {kind:'b13',id:b[0].ioId||b[0].label,t:b[0]};
+  return null;
+}
+function tplChangeInfo(){
+  const el=document.getElementById('ctLangSrc'); if(!el||!el.value) return null;
+  let s=null; try{ s=JSON.parse(el.value); }catch(e){ return null; }
+  if(!s||typeof s!=='object') return null;
+  if(I13_FINAL_STATUS.indexOf(String(window.DD254_STATUS||''))>=0) return null;
+  if(!s.srcFp){
+    const l=tplChangeLegacy(s); if(!l) return null;
+    s.srcKind=l.kind; s.srcId=l.id; s.srcFp=tplFingerprint(l.t); s.srcAt=''; s.srcBaseline=1;
+    el.value=JSON.stringify(s);
+    return null;
+  }
+  const cur=tplChangeFind(s.srcKind,s.srcId);
+  if(!cur) return (s.srcAck==='missing')?null:{missing:true,label:s.srcLabel||'the template',snap:s};
+  const fp=tplFingerprint(cur.t);
+  if(fp===s.srcFp||fp===s.srcAck) return null;
+  return {label:cur.t.label||s.srcLabel||'the template',kind:s.srcKind,t:cur.t,idx:cur.idx,fp:fp,at:String(s.srcAt||''),snap:s};
+}
+function tplChangeText(i){
+  if(!i) return '';
+  if(i.missing) return 'Template changed — the template “'+i.label+'” this DD-254 was built from is no longer in the repository.';
+  return 'Template changed — update to new template. “'+i.label+'” has changed in the repository since it was applied to this DD-254'
+    +(i.at?' on '+i.at.slice(0,10):'')+'.';
+}
+function tplChangeRender(i){
+  const host=document.getElementById('tplChangedBanner'); if(!host) return;
+  if(!i||!(window.DASH&&DASH.current)){ host.style.display='none'; host.innerHTML=''; return; }
+  host.style.display='block';
+  host.innerHTML='<span style="font-weight:bold;">⚠ '+htmlEsc(tplChangeText(i))+'</span>'
+    +'<span style="display:inline-flex;gap:6px;margin-left:10px;">'
+    +(i.missing?'':'<button type="button" id="tplChangeUpdate" onclick="tplChangeUpdate()" style="background:#17427d;color:#fff;border:none;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:bold;cursor:pointer;">Update to new template</button>')
+    +'<button type="button" id="tplChangeKeep" onclick="tplChangeKeep()" style="background:#fff;color:#7a4a00;border:1px solid #c9a24a;border-radius:4px;padding:3px 10px;font-size:11px;cursor:pointer;">Keep this version</button></span>';
+}
+async function tplChangeUpdate(){
+  const i=tplChangeInfo(); if(!i||i.missing||!DASH.current) return false;
+  if(!(await uiConfirm('Update this DD-254 to the current “'+i.label+'”?\n\nItems 10 to 16 and 18 are rewritten from the template as it is now, and Item 13 is replaced with its wording. Changes made to those items on this DD-254 are lost.'))) return false;
+  if(i.kind==='ct') await dashApplyTpl(DASH.current,i.t.ioId,{confirmed:true});
+  else await dashApplyB13(DASH.current,i.idx,{confirmed:true});
+  try{ audLog(DASH.current,(document.getElementById('draftBarTitle')||{}).textContent||'','template-change-updated',i.label); }catch(e){}
+  if(typeof run==='function') run();
+  return true;
+}
+async function tplChangeKeep(){
+  const i=tplChangeInfo(); if(!i||!DASH.current) return false;
+  const el=document.getElementById('ctLangSrc'); const s=i.snap;
+  s.srcAck=i.missing?'missing':i.fp; el.value=JSON.stringify(s);
+  try{ audLog(DASH.current,(document.getElementById('draftBarTitle')||{}).textContent||'','template-change-kept',i.label+(i.missing?' (no longer in the repository)':'')); }catch(e){}
+  if(typeof run==='function') run();
+  if(typeof dashSaveNow==='function') await dashSaveNow();
+  return true;
+}
+function ctLangSrcData(d,label,template){
   const ls={};
   ['l10','l11','l11v','always'].forEach(function(k){
     if(d&&d[k]&&typeof d[k]==='object'&&Object.keys(d[k]).length) ls[k]=JSON.parse(JSON.stringify(d[k]));
@@ -12965,10 +13099,15 @@ function ctLangSrcData(d,label){
      mandatory setting asks. */
   const name=String(label==null?'':label).trim();
   if(name) ls.srcLabel=name;
+  /* Which template, and what it said, so a later change can be noticed
+     (tplChangeInfo). Recorded only when the template is one the repositories
+     can find again. */
+  const k=(template&&typeof tplChangeKindOf==='function')?tplChangeKindOf(template):null;
+  if(k){ ls.srcKind=k.kind; ls.srcId=k.id; ls.srcFp=tplFingerprint(template); ls.srcAt=new Date().toISOString(); }
   return Object.keys(ls).length?JSON.stringify(ls):'';
 }
-function ctLangSrcRemember(d,label){
-  const e=document.getElementById('ctLangSrc'); if(e) e.value=ctLangSrcData(d,label);
+function ctLangSrcRemember(d,label,template){
+  const e=document.getElementById('ctLangSrc'); if(e) e.value=ctLangSrcData(d,label,template);
 }
 /* The snapshot as a template-shaped source: {label,data}, which is what both
    the wording reader and the attachment reader already expect. */
@@ -14849,7 +14988,8 @@ function ctApplySel(idx,blk){ const d=ctData(idx); if(!d) return;
   keys.forEach(function(k){ const inp=ck('c'+k);
     const txt=ctLangFromData(d,k,purpose);
     if(txt&&((inp&&inp.checked)||(d.always&&d.always[k]))) ctForceLang(txt,k); });
-  ctLangSrcRemember(d,(ctFormTemplate(idx)||{}).label);
+  const _t=ctFormTemplate(idx);
+  ctLangSrcRemember(d,(_t||{}).label,_t);
   run(); }
 function ctApply12Route(idx){ const d=ctData(idx); if(!d||!d.i12route) return;
   const r=document.querySelector('input[name="i12route"][value="'+d.i12route+'"]'); if(r&&!r.checked) r.click(); run(); }
