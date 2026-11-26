@@ -20,7 +20,7 @@
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DD254 Interactive v2.25.0</title>
+<title>DD254 Interactive v2.25.1</title>
 <style>:root{--navy:#2b3440;--navy2:#3a4552;--steel:#4a5866;--steel2:#566573;--accent:#5a6b7c;--accent2:#e8ecef;--req-red:#c0392b;--req-bg:#fdf0ef;--warn-amber:#d4840a;--warn-bg:#fef8ec;--ok:#27ae60;--ok-bg:#edfaf3;--rule-red:#8b1a0a;--rule-bg:#fde8e6;--rule-amber:#7a4800;--rule-abg:#fef3e0;--info:#46606f;--info-bg:#e8f3fa;--border:#b0bac6;--text:#1a1e26;--label:#384558;--light:#f7f9fb;--white:#fff;--muted:#6a7888;--disabled-bg:#f0f2f4;--disabled:#a0a8b0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Georgia',serif;font-size:12.5px;color:var(--text);background:#c8cdd5;line-height:1.4}.layout{display:flex;gap:0;max-width:1280px;margin:16px auto}.form-col{flex:1;min-width:0}.panel-col{width:320px;flex-shrink:0;position:sticky;top:16px;align-self:flex-start;height:calc(100vh - 32px);max-height:calc(100vh - 32px);overflow-y:auto}.fw{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.3)}.fh{background:var(--navy);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fh h1{font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;line-height:1.4}.fh .omb{font-size:9.5px;color:#7a9fc0;text-align:right;white-space:nowrap}.cls-banner{background:#1a6030;color:#fff;text-align:center;padding:6px;font-size:10.5px;font-weight:bold;letter-spacing:2px;display:block}.top-bar{background:var(--navy2);padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.top-bar select,.top-bar input{background:var(--steel);color:#fff;border:1px solid #6a7a8a;padding:3px 7px;font-size:11px;border-radius:3px}.top-bar label{font-size:11px;color:#b0bcc4}.print-bar{background:var(--steel2);padding:8px 18px;display:flex;justify-content:space-between;align-items:center}.print-bar span{font-size:10.5px;color:#c0d8f0}.pbtn{background:var(--accent);color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.pbtn:hover{background:#46545f}.ebtn{background:#46606f;color:#fff;border:none;padding:7px 18px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;letter-spacing:.4px;text-transform:uppercase}.ebtn:hover{background:#38505e}.ebtn:disabled{background:#5a7a8a;cursor:wait}.sec{border-bottom:2px solid var(--navy);padding:10px 16px}.sec:last-child{border-bottom:none}.sec-hdr{background:var(--navy);color:#fff;padding:5px 16px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}.sec-row{display:flex;gap:10px;flex-wrap:wrap}.sc{flex:1;min-width:180px}.sc2{flex:2}.sc3{flex:3}.ilabel{display:flex;align-items:flex-start;gap:5px;margin-bottom:5px}.inum{background:var(--navy);color:#fff;font-size:10.5px;font-weight:bold;padding:2px 6px;border-radius:3px;min-width:26px;text-align:center;flex-shrink:0}.ititle{font-size:11px;font-weight:bold;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;line-height:1.3}.inst-box{background:var(--info-bg);border-left:3px solid var(--info);border-radius:0 4px 4px 0;padding:7px 10px;margin:4px 0 6px 0;font-size:10.5px;color:#3a4552;font-family:Arial,sans-serif}.inst-box summary{cursor:pointer;font-weight:bold;color:var(--info);list-style:none;display:flex;align-items:center;gap:5px;user-select:none}.inst-box summary::before{content:'▶';font-size:9px;transition:transform .15s}details[open]>summary::before{content:'▼'}.inst-box .rule-r{background:var(--rule-bg);border:1px solid #e8a09a;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-r::before{content:'🔴 REQUIRED:';font-weight:bold;color:var(--rule-red)}.inst-box .rule-w{background:var(--rule-abg);border:1px solid #e8c880;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-w::before{content:'🟡 RECOMMENDED:';font-weight:bold;color:var(--rule-amber)}.inst-box .rule-n{background:#f0f0f4;border:1px solid #c0a0e0;border-radius:3px;padding:4px 7px;margin:4px 0;font-size:10px}.inst-box .rule-n::before{content:'⛔ DO NOT:';font-weight:bold;color:#4a4a5a}.inst-box p{margin:3px 0;line-height:1.5}.inst-box ul{padding-left:14px;margin:3px 0}.inst-box li{margin-bottom:2px}input[type=text],textarea,select{width:100%;border:1px solid var(--border);padding:5px 7px;font-size:11.5px;font-family:Arial,sans-serif;color:var(--text);background:#f9fafc;border-radius:3px;transition:border-color .15s}input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);background:#fff;box-shadow:0 0 0 2px rgba(46,80,119,.15)}input.dis,textarea.dis{background:var(--disabled-bg);color:var(--disabled);cursor:not-allowed}textarea{resize:vertical;min-height:55px}input.df{font-family:monospace;width:120px}.hint{font-size:10px;color:var(--muted);margin-top:2px;font-style:italic;font-family:Arial,sans-serif}.req{color:var(--req-red)}.sub-lbl{font-size:11px;font-weight:bold;color:var(--label);margin:6px 0 2px;display:flex;align-items:center;gap:4px}.sub-ltr{background:var(--light);border:1px solid var(--border);padding:1px 4px;border-radius:2px;font-size:10px;color:var(--navy);font-weight:bold}.alert{padding:7px 10px;border-radius:4px;font-size:10.5px;margin-top:6px;display:none;font-family:Arial,sans-serif;line-height:1.5}.alert.show{display:block}.alert-tpl{font-size:9.5px!important;line-height:1.35!important;padding:5px 7px!important;margin-top:4px!important;word-break:normal;overflow-wrap:anywhere}.alert-r{background:var(--req-bg);border-left:3px solid var(--req-red);color:#7a1008}.alert-w{background:var(--warn-bg);border-left:3px solid var(--warn-amber);color:#5a3000}.alert-ok{background:var(--ok-bg);border-left:3px solid var(--ok);color:#0a4020}.alert-i{background:var(--info-bg);border-left:3px solid var(--info);color:#0a2a50}.alert strong{display:block;margin-bottom:1px}.yn{display:flex;gap:16px;align-items:center;margin:4px 0}.yn label{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:bold;cursor:pointer}.yn input[type=radio]{accent-color:var(--navy);width:13px;height:13px}.crev{margin-top:7px;padding:8px 10px;border:1px dashed var(--steel);border-radius:4px;background:#eef3fa;display:none}.crev.show{display:block}.cbgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;align-items:start}.cbgrid.one{grid-template-columns:1fr}.cbcol{display:flex;flex-direction:column;gap:5px;min-width:0}.dash-daygroup{font-size:12px;font-weight:bold;color:#2b3440;background:#dfe6ee;border-left:4px solid #566573;border-radius:3px;padding:5px 10px;margin:8px 0 8px;letter-spacing:.3px}.cbi{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:4px;background:var(--light);cursor:pointer;transition:background .1s,border-color .1s,box-shadow .1s}.cbi:hover{background:var(--accent2);border-color:var(--navy)}.cbi:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,52,64,.18)}.cbi.on{background:#e4ecf8;border-color:var(--steel)}.cbi.dis{opacity:.4;cursor:not-allowed;pointer-events:none;background:var(--disabled-bg)}.cbi.conflict{background:var(--req-bg);border-color:var(--req-red)}.cbi input[type=checkbox]{accent-color:var(--navy);margin-top:2px;flex-shrink:0;pointer-events:none}.cbl{flex:1;font-size:10.5px;line-height:1.3}.cbl .ck{font-weight:bold;color:var(--navy)}.cbl .cd{color:var(--label)}.cbi-rules{font-size:9.5px;margin-top:3px;display:none}.cbi.on .cbi-rules{display:block}.cbi-rules .rr{color:var(--rule-red);background:var(--rule-bg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rw{color:var(--rule-amber);background:var(--rule-abg);border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.cbi-rules .rn{color:#4a4a5a;background:#f0f0f4;border-radius:2px;padding:1px 4px;margin:1px 0;display:block}.sigbox{border:1px solid var(--border);min-height:38px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--disabled);font-size:11px;font-style:italic}.distrow{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px dotted var(--border);font-size:11.5px}.distrow:last-child{border:none}.distrow input[type=checkbox]{accent-color:var(--navy);width:13px;height:13px}.bpbtn{background:var(--navy2);color:#fff;border:none;padding:4px 10px;border-radius:3px;font-size:10.5px;cursor:pointer;margin:3px 3px 0 0}.bpbtn:hover{background:var(--steel)}.bparea{margin-top:6px}.rpanel{background:var(--white);box-shadow:-2px 0 12px rgba(0,0,0,.15);border-radius:0 6px 6px 0}.rp-hdr{background:var(--navy);color:#fff;padding:10px 14px;font-size:11.5px;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-radius:0 6px 0 0}.rp-section{padding:10px 12px;border-bottom:1px solid #e0e6f0}.rp-section h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);font-weight:bold;margin-bottom:6px}.check-item{display:flex;align-items:flex-start;gap:6px;padding:4px 0;border-bottom:1px dotted #e0e8f0;font-size:10px;font-family:Arial,sans-serif;color:var(--label)}.check-item:last-child{border:none}.ci-icon{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:bold}.ci-pending{background:#e8eaed;color:#888}.ci-warn{background:#ffeaa7;color:#d4840a}.ci-error{background:#fde8e6;color:#c0392b}.ci-ok{background:#edfaf3;color:#27ae60}.ci-text{flex:1;line-height:1.4}.ci-text.error{color:#c0392b;font-weight:bold}.ci-text.warn{color:#d4840a}.ci-text.ok{color:#27ae60}.item13-needed{background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:10px;font-family:Arial,sans-serif;margin-top:5px}.item13-needed h5{color:var(--rule-amber);font-size:10px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}.i13tag{display:inline-block;background:#fde8c0;border:1px solid #e8c080;border-radius:3px;padding:2px 5px;font-size:9.5px;color:#7a4000;margin:2px 2px 0 0}.ffoot{background:var(--navy);color:#6090b0;padding:7px 18px;font-size:9.5px;display:flex;justify-content:space-between}@media print{body{background:#fff}.layout{display:block;max-width:100%}.panel-col,.print-bar,.top-bar{display:none!important}.fw{box-shadow:none}.inst-box{display:none!important}.crev,.alert{display:block!important}.cbi.dis{opacity:1}}.tplcard{border:1px solid #d0d8e8;border-radius:5px;margin-bottom:6px;background:#f7f9fb;overflow:hidden}.tplcard-hdr{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#edf1f7;gap:4px}.tplcard-label{font-size:10.5px;font-weight:bold;color:var(--navy);flex:1}
 
 /* ── WIZARD STYLES ── */
@@ -782,7 +782,7 @@ body.ws-dragging{user-select:none;}
 <div class="cbl">
 <div class="ck">3a. Original</div>
 <div class="cd" style="margin:3px 0 2px;">Original date (YYYYMMDD):</div>
-<input type="text" id="i3a_date" class="df" placeholder="YYYYMMDD" onclick="e=>{e.stopPropagation()}" style="margin-top:2px;">
+<input type="text" id="i3a_date" class="df" placeholder="YYYYMMDD" style="margin-top:2px;">
 <div class="cd" style="font-size:9.5px;margin-top:3px;">Date never changes on revisions or the Final.</div>
 </div>
 </div>
@@ -887,7 +887,7 @@ body.ws-dragging{user-select:none;}
 <div class="ilabel"><span class="inum">7</span><span class="ititle">Subcontractor(s)</span></div>
 <details class="inst-box">
 <summary>Instructions for Item 7</summary>
-<div class="rule-r">Even if you list subcontractors here, a <strong>separate DD Form 254 must be issued</strong> from the prime to each subcontractor. Listing them here does NOT replace that requirement.</div>
+<div class="rule-r">Item 7 names the one subcontractor this DD Form 254 is issued to by the prime. Every other subcontractor gets a <strong>separate DD Form 254</strong> from the prime.</div>
 <div class="rule-r">Each tier in a subcontract chain requires its own DD Form 254 (prime→sub1, sub1→sub2, etc.).</div>
 <div class="rule-n">Do NOT use DD Form 254 for foreign contractors/NATO activities — use a Security Aspects Letter.</div>
 <p>If subcontractor has an authorized PO Box for classified mailing, note that in Item 13 (not in 7a).</p><div style="background:#e8f0fa;border:1px solid #b0c8e8;border-radius:3px;padding:5px 8px;margin-top:5px;font-size:10px;"><strong style="color:#1a3a6a;">⚖️ Subcontract Clause Review (Prime → Sub):</strong><br><span style="color:#2a3a50;line-height:1.7;">For a subcontract involving classified access, <a class="clause-tag far" href="https://www.acquisition.gov/far/52.204-2" target="_blank" rel="noopener">FAR 52.204-2</a> requires terms that conform substantially to the clause. When subcontract performance involves covered defense information or operationally critical support, <a class="clause-tag dfars" href="https://www.acquisition.gov/dfars/252.204-7012" target="_blank" rel="noopener">DFARS 252.204-7012</a> flows down without alteration except to identify the parties.<br><span style="font-style:italic;color:var(--muted);">Confirm applicability in the subcontract instrument. DD Form 254 selections convey classification guidance; they do not independently prescribe the complete clause set.</span></span></div>
@@ -913,7 +913,7 @@ body.ws-dragging{user-select:none;}
 <div class="sub-lbl" style="margin-top:7px;"><span class="sub-ltr">FSO</span> Subcontractor FSO e-mail <span class="req">*</span></div><input type="text" id="i7fsoEmail" placeholder="fso@subcontractor.com" oninput="if(typeof run==='function')run()"><div class="hint">Workflow only &#8212; never printed on the DD Form 254. Feeds the FSO send list and the distribution record.</div><div class="sub-lbl" style="margin-top:7px;"><span class="sub-ltr">CMA</span> Classified mailing address <span style="font-weight:normal;color:#6a7888;">(optional)</span></div><textarea id="i7cma" placeholder="PO Box 0000&#10;Anytown, ST 00000" style="min-height:44px;" oninput="cmaSync()"></textarea><div class="hint">Optional. Only if the contractor holds a separate classified mailing address. Appears at the bottom of Item 13.</div><div class="alert alert-r" id="a7email">🔴 <strong>REQUIRED:</strong> A subcontractor is identified, so the subcontractor FSO e-mail must be recorded — the DD Form 254 has to reach them.</div><button type="button" class="pbtn" style="font-size:10px;padding:3px 10px;background:#4a5866;margin-top:4px;text-transform:none;" onclick="saveBlock7ToTpl(this)">💾 Save this sub-contractor to Performance/Sub templates</button>
 </div>
 </div>
-<div class="alert alert-i show" style="margin-top:5px;">ℹ️ Listing this subcontractor here does <strong>not</strong> replace the requirement to issue them a separate DD Form 254. This entry is informational only.</div>
+<div class="alert alert-i show" style="margin-top:5px;">ℹ️ Item 7 is the subcontractor this DD Form 254 is issued to. A second subcontractor needs its own DD Form 254 from the prime.</div>
 </div>
 </div>
 <div class="sec">
@@ -1384,17 +1384,17 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 </div>
 </div><!-- /step4 --><div class="wizard-step" id="step5"><div class="sec">
 <div id="markedSummary" style="background:#eef3f8;border:1px solid #b8cbe0;border-radius:5px;padding:9px 12px;margin-bottom:12px;font-family:Arial,sans-serif;"><div style="font-weight:bold;font-size:12px;color:#26364a;margin-bottom:4px;">✔ Boxes marked in Item 10 (Access) &amp; Item 11 (Performance)</div><div id="markedSummaryBody" style="font-size:11px;color:#3a4552;line-height:1.5;"><em style="color:#7a8aa0;">None marked yet in Items 10 or 11.</em></div></div>
-<div class="ilabel"><span class="inum">12</span><span class="ititle">Public Release Authority <span style="color:#6a7888;font-weight:normal;">(optional — not required)</span></span></div>
+<div class="ilabel"><span class="inum">12</span><span class="ititle">Public Release Authority <span class="req">*</span> <span style="color:#6a7888;font-weight:normal;">(Q1 required · Q2 optional)</span></span></div>
 <details class="inst-box">
 <summary>Instructions for Item 12</summary>
-<div class="rule-r">This item MUST be completed — it is required on every DD Form 254.</div>
+<div class="rule-r">Q1 (DIRECT or THROUGH) must be marked on every DD Form 254, and THROUGH must name the routing office. Q2, the public release authority, is optional.</div>
 <p>Identify the GCA office with public release authority and the process for contractor release requests. Include at minimum: office name, phone number, and email if available.</p>
 <div class="rule-r">No information (classified or unclassified) may be released publicly without GCA approval, except as authorized by NISPOM.</div>
 <div class="rule-r">Subcontractors must route public release requests through the prime contractor. Prime is responsible for submitting to the GCA public release authority.</div><p style="margin-top:5px;"><strong>Clause review:</strong> <a class="clause-tag dfars" href="https://www.acquisition.gov/dfars/252.204-7000" target="_blank" rel="noopener">DFARS 252.204-7000</a> Disclosure of Information is prescribed when the contractor will access or generate unclassified information that may be sensitive and inappropriate for public release. Item 12 alone does not decide applicability.</p>
 </details>
 <div style="margin:2px 0 4px;font-size:11px;font-family:Arial,sans-serif;color:#3a4552;"><strong>Q1 · Release routing (mark one — required on the form):</strong><br><label style="margin-right:18px;"><input type="radio" name="i12route" value="dir" onchange="run()"> DIRECT — contractor submits public release requests directly to the authority</label><label><input type="radio" name="i12route" value="thru" onchange="run()"> THROUGH — requests are routed through the office specified below</label></div>
 <textarea id="i12specify" placeholder="If THROUGH — specify the office/routing here. Prints on the form inside the DIRECT/THROUGH box (left side)." style="min-height:42px;"></textarea>
-<label class="sub-lbl" style="margin-top:8px;display:block;">Q2 · Public Release Authority</label>
+<label class="sub-lbl" style="margin-top:8px;display:block;">Q2 · Public Release Authority <span style="font-weight:normal;color:#6a7888;">(optional)</span></label>
 <textarea id="i12" placeholder="Identify the office and procedures for public release requests. Include: Office name, address, phone number, and email address of the Government authority responsible for public release approval. Prints on the form under Public Release Authority (right side)." style="min-height:55px;"></textarea>
 </div>
 <div class="sec">
@@ -1409,7 +1409,6 @@ Item 11 Performance Advisor <span style="display:inline-block;margin-left:6px;pa
 <p>Use this for: security classification guides, reasons for classification, SCG titles and identifiers, additional guidance on any item, OPSEC plans, COMSEC guidance, overseas performance details, final disposition instructions, transfer authority from follow-on contracts.</p>
 <p>Up to 6 internal reviewers may digitally sign here (contracting officer's representative, program manager, GCA security officer, contractor security officer).</p>
 </details>
-<div id="bpButtons" style="margin-bottom:5px;"></div>
 
 <style>#item13{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;}/* Wrapping, everywhere text is typed. pre-wrap breaks at spaces, which is
    not enough for what goes in a DD-254: an SCG number, a long contract
@@ -1452,14 +1451,14 @@ function i13PastePlain(e){
 /* The single version of record. Section banners used to carry the release they
    were written in, which read like competing version declarations; they were
    only ever history and have been removed. */
-const TOOL_VERSION='2.176';
+const TOOL_VERSION='2.177';
 /* The release name had a second, hand-typed copy in the header markup and it
    drifted: v1.14.0 shipped announcing itself as v1.12.0 on the one line a
    reviewer compares against the download. The header now renders from this
    constant, and make_build_facts.py refuses a build whose title, filename or any
    literal release string disagrees with it. The OMB expiry belongs to the
    form's information collection, so it sits beside the OMB number instead. */
-const RELEASE_VERSION='2.25.0';
+const RELEASE_VERSION='2.25.1';
 function releaseLabel(){ return 'DD254 Interactive v'+RELEASE_VERSION; }
 document.getElementById('toolVer').textContent='Tool v'+TOOL_VERSION;
 document.getElementById('releaseVer').textContent=releaseLabel();
@@ -1653,16 +1652,6 @@ function sanitizePdfText(t){return String(t==null?'':t).replace(/[\u2018\u2019\u
 <div class="rp-section">
 <h4 class="sev-warn">Recommendations &amp; Warnings</h4>
 <div id="warnsPanel" role="status" aria-live="polite"><div class="check-item"><span class="ci-icon ci-pending">—</span><span class="ci-text">No recommendations yet</span></div></div>
-</div>
-<div class="rp-section" style="display:none" data-co-only="1">
-<h4>Subcontract Flow-Down</h4>
-<div style="font-size:9.5px;color:var(--muted);font-family:Arial,sans-serif;margin-bottom:5px;">Items requiring GCA written approval before a prime can impose them on a subcontractor, plus mandatory clause flow-down obligations.</div>
-<div id="flowDownPanel"><div class="check-item"><span class="ci-icon ci-pending">—</span><span class="ci-text" style="font-style:italic;">Make selections to see flow-down obligations</span></div></div>
-</div>
-<div class="rp-section" style="display:none" data-co-only="1">
-<h4>Applicable Contract Clauses</h4>
-<div style="font-size:9.5px;color:var(--muted);font-family:Arial,sans-serif;margin-bottom:6px;">FAR/DFARS clauses triggered by your current selections. Verify inclusion in the contract — the DD Form 254 does not substitute for contractual clause incorporation.</div>
-<div id="clausesPanel"><div class="check-item"><span class="ci-icon ci-pending">—</span><span class="ci-text" style="font-style:italic;">Make selections to see applicable clauses</span></div></div>
 </div>
 <div class="rp-section">
 <h4>Required Item 13 Entries</h4>
@@ -2207,9 +2196,6 @@ if(box&&!dis11a) box.classList.toggle('dis', dis11b&&!S.c[k]);
  buildPanel();
 buildItem3Panel();
 buildItem13Panel();
-buildTemplateLanguage();
-buildClausesPanel();
-buildFlowDownPanel();
 buildAttachmentReminder();
 renderMarkedSummary();
 buildAccessAdvisor();
@@ -2935,10 +2921,8 @@ if(typeof ctTplAttachments==='function'){ const _ga=ctTplAttachments();
   if(_ga.att.length) warns.push('Template "'+(_ga.tpl.label||'unnamed')+'" requires '+_ga.att.length+' attachment'+(_ga.att.length===1?'':'s')+': '+_ga.att.join('; ')+' — confirm each is attached before signing.'); }
 /* SAP or non-SAP for the life of the contract. */
 if(typeof sapLineageIssue==='function'){ const _sl=sapLineageIssue(); if(_sl) errors.push(_sl); }
-/* Flow-down ceiling vs. the parent DD-254 (only present for spawned children). */
-if(typeof flowIssuesLive==='function'){ const _fl=flowIssuesLive();
-  _fl.err.forEach(function(x){ errors.push(x); });
-  _fl.warn.forEach(function(x){ warns.push(x); }); }
+/* The flow-down ceiling against a parent DD-254 is cut until a subcontract can
+   be linked to its prime (v2.25.1 P0.3; see dashFlowIssues). */
 
 /* ── REQUIRED FIELDS ─────────────────────────────────────────────────────
    The fields the PREPARER is responsible for. These were drawn on screen as
@@ -3116,7 +3100,10 @@ if(typeof dismissRender==='function') ep.insertAdjacentHTML('beforeend',dismissR
 const wp=ck('warnsPanel');
 validationFindingsRender(wp,warns,'warn','No recommendations',false);
 // Completion
-const total=12; const done=[S.fcl,S.sfg,S.spec,S.i9].filter(Boolean).length + (S.fo?1:0) + (S.fin?1:0);
+/* v2.25.1 (P0.4): the total is the length of the list being counted. It was a
+   fixed 12 against at most six answers, so the meter could never pass 50%. */
+const _meter=[S.fcl,S.sfg,S.spec,S.i9,S.fo,S.fin];
+const total=_meter.length; const done=_meter.filter(Boolean).length;
 ck('completionPanel').innerHTML=`<div style="font-size:10.5px;font-family:Arial,sans-serif;color:var(--label);">Errors: <strong style="color:${errors.length?'var(--req-red)':'var(--ok)'}">${errors.length}</strong> &nbsp;|&nbsp; Warnings: <strong style="color:${warns.length?'var(--warn-amber)':'var(--ok)'}">${warns.length}</strong><br><div style="height:6px;background:#e0e6f0;border-radius:3px;margin-top:6px;"><div style="height:100%;width:${Math.min(100,Math.round(done/total*100))}%;background:${errors.length?'var(--warn-amber)':'var(--ok)'};border-radius:3px;transition:width .3s;"></div></div><div style="margin-top:3px;font-size:9.5px;">Estimated completion: ${Math.min(100,Math.round(done/total*100))}%</div></div>`;
 }
 function buildItem13Panel(){
@@ -3187,84 +3174,11 @@ const TPL_DEFAULTS = {
 const TPL_EDITS = {};
 function getTplText(id){ return TPL_EDITS[id]!==undefined?TPL_EDITS[id]:TPL_DEFAULTS[id].text; }
 function isEdited(id){ return TPL_EDITS[id]!==undefined&&TPL_EDITS[id]!==TPL_DEFAULTS[id].text; }
-function buildTemplateLanguage(){
-const p=ck('bpPanel');
-/* The legacy side-panel renderer is retained for the Item 13 section composer
-   helpers that share its template source. The duplicate side-panel section is
-   intentionally absent now that DD-254 Template Language is the one visible
-   template workflow. */
-if(!p) return;
-let active=[];
-// Item 10 — access requirements (a–k in form order)
-if(S.c['10a'])  active.push('10a');
-if(S.c['10b'])  active.push('10b');
-if(S.c['10c'])  active.push('10c');
-if(S.c['10d'])  active.push('10d');
-if(S.c['10e1']) active.push('10e1');
-if(S.c['10e2']) active.push('10e2');
-if(S.c['10f'])  active.push('10f');
-if(S.c['10g'])  active.push('10g');
-if(S.c['10h'])  active.push('10h');
-if(S.c['10i'])  active.push('10i');
-if(S.c['10j'])  active.push('10j');
-if(S.c['10k'])  active.push('10k');
-// Item 11 — performance requirements (a–m in form order)
-if(S.c['11a'])  active.push('11a');
-if(S.c['11b'])  active.push('11b');
-if(S.c['11c'])  active.push('11c');
-if(S.c['11d'])  active.push('11d');
-if(S.c['11e'])  active.push('11e');
-if(S.c['11f'])  active.push('11f');
-if(S.c['11g'])  active.push('11g');
-if(S.c['11h'])  active.push('11h');
-if(S.c['11i'])  active.push('11i');
-if(S.c['11j'])  active.push('11j');
-if(S.c['11k'])  active.push('11k');
-if(S.c['11l'])  active.push('11l');
-if(S.c['11m'])  active.push('11m');
-// Items 4, 5, & 18f
-if(S.fo==='yes')  active.push('fo');
-if(S.fin==='yes') active.push('fin');
-if(gc('dist18f')) active.push('18f');
-// Items 12, 14, 15
-active.push('12');
-if(S.i14==='yes') active.push('14');
-if(S.i15==='yes') active.push('15');
-/* In sections layout each Item 10/11 box carries its own insert, so offering
-   the same language here as well would be the same content in two places. */
-if(typeof b13ViewGet==='function'&&b13ViewGet()==='sections'){
-  active=active.filter(function(id){ return !/^1[01][a-m]/.test(id); });
-}
-if(!active.length){
-p.innerHTML='<div class="tpl-empty">Make selections in the form to see applicable template language.</div>';
-return;
-}
-p.innerHTML=active.map(id=>{
-const tpl=TPL_DEFAULTS[id];
-const txt=getTplText(id);
-const edited=isEdited(id);
-const preview=(txt.length>120?txt.slice(0,117)+'…':txt).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const safeTxt=txt.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const targetLabel=tpl.target&&tpl.target!=='item13'?`<span style="font-size:8.5px;background:#dce8f8;color:#1a4a7a;border-radius:3px;padding:1px 5px;margin-left:4px;font-weight:normal;">→ Item ${tpl.target==='i12'?'12':tpl.target==='i14text'?'14':'15'}</span>`:`<span style="font-size:8.5px;background:#e8f0dc;color:#4a5866;border-radius:3px;padding:1px 5px;margin-left:4px;font-weight:normal;">→ Item 13</span>`;
-return `<div class="tplcard" id="tplcard-${id}">
-<div class="tplcard-hdr">
-<span class="tplcard-label" id="tpllbl-${id}">${edited?'✏️ ':''} ${tpl.label}${targetLabel}</span>
-<button class="tplbtn tplbtn-edit" onclick="toggleTplEdit('${id}')">✏️ Edit</button>
-<button class="tplbtn tplbtn-insert" onclick="insertTpl('${id}')">⬇ Insert</button>
-${/^1[01][a-m]/.test(id)?`<button class="tplbtn" onclick="ctSaveFromPanel('${id}')" title="Save this language into the selected DD-254 Template Language template">💾 Save</button>`:''}
-</div>
-<div class="tplcard-preview" id="tplprev-${id}">${preview}</div>
-<div class="tplcard-editor" id="tpleditor-${id}">
-<textarea id="tpltxt-${id}" aria-label="Template text for ${tpl.label||'this template'}" oninput="saveTplEdit('${id}')">${safeTxt}</textarea>
-<div style="display:flex;gap:5px;margin-top:4px;align-items:center;">
-<button class="tplbtn tplbtn-insert" onclick="insertTpl('${id}')">⬇ Insert into ${tpl.target==='i12'?'Item 12':tpl.target==='i14text'?'Item 14':tpl.target==='i15text'?'Item 15':'Item 13'}</button>
-${edited?`<button class="tplbtn tplbtn-reset" onclick="resetTpl('${id}')">↺ Reset to default</button>`:''}
-<span style="font-size:9px;color:#888;margin-left:4px;font-style:italic;">${edited?'Modified':'Default text'}</span>
-</div>
-</div>
-</div>`;
-}).join('');
-}
+/* v2.25.1 (P0.9): buildTemplateLanguage, the side-panel renderer for these
+   cards, is removed. Its #bpPanel had already been retired, so it looked the
+   panel up, found nothing and returned, on every run(). TPL_DEFAULTS,
+   getTplText and insertTpl stay: the Item 13 section composer and the
+   template save use them. */
 function toggleTplEdit(id){
 const ed=ck('tpleditor-'+id), prev=ck('tplprev-'+id);
 if(!ed) return;
@@ -3283,7 +3197,6 @@ if(lbl) lbl.innerHTML=(ta.value!==TPL_DEFAULTS[id].text?'✏️ ':'')+TPL_DEFAUL
 }
 function resetTpl(id){
 delete TPL_EDITS[id];
-buildTemplateLanguage();
 // Reopen editor after rebuild
 setTimeout(()=>toggleTplEdit(id),0);
 }
@@ -3330,38 +3243,11 @@ function htmlEsc(s){
 function gc(id){ const e=document.getElementById(id); return e?e.checked:false; }
 function gr(name){ const e=document.querySelector(`input[name="${name}"]:checked`); return e?e.value:''; }
 
-async function buildClausesPanel(){
-const p=ck('clausesPanel'); if(!p) return;
-const CLAUSES=[
- {num:'FAR 52.204-2',       url:'https://www.acquisition.gov/far/52.204-2',       far:true,  title:'Security Requirements',                                          blocks:'1a, 1b',    note:'Review for solicitations and contracts that may require classified access. Subcontract terms conform substantially when classified access is involved.', flowdown:true, always:true},
- {num:'DFARS 252.204-7000', url:'https://www.acquisition.gov/dfars/252.204-7000',  far:false, title:'Disclosure of Information',                                      blocks:'12',        note:'Review when the contractor will access or generate unclassified information that may be sensitive and inappropriate for public release.', flowdown:false, always:true},
- {num:'DFARS 252.204-7003', url:'https://www.acquisition.gov/dfars/252.204-7003',  far:false, title:'Control of Government Personnel Work Product',                   blocks:'All DoD',    note:'Current DFARS 204.404-70 prescribes this clause in all solicitations and contracts; it is not a CNWDI-specific clause.', flowdown:false, always:true},
- {num:'DFARS 252.204-7008', url:'https://www.acquisition.gov/dfars/252.204-7008',  far:false, title:'Compliance with Safeguarding Covered Defense Information Controls', blocks:'DoD solicitation', note:'Solicitation provision prescribed by DFARS 204.7304 except for COTS-only solicitations. It is not a NATO or export-control flow-down clause.', flowdown:false, always:true},
- {num:'DFARS 252.204-7012', url:'https://www.acquisition.gov/dfars/252.204-7012',  far:false, title:'Safeguarding Covered Defense Information & Cyber Incident Reporting', blocks:'DoD solicitation / contract', note:'Clause prescribed by DFARS 204.7304 except for COTS-only actions. Flow-down applies when subcontract performance involves covered defense information or operationally critical support.', flowdown:true, always:true},
- {num:'DFARS 252.204-7019', url:'https://www.acquisition.gov/dfars/252.204-7019',  far:false, title:'Notice of NIST SP 800-171 DoD Assessment Requirements',           blocks:'DoD solicitation', note:'Solicitation provision prescribed by DFARS 204.7304 except for COTS-only solicitations.', flowdown:false, always:true},
- {num:'DFARS 252.204-7020', url:'https://www.acquisition.gov/dfars/252.204-7020',  far:false, title:'NIST SP 800-171 DoD Assessment Requirements',                    blocks:'DoD solicitation / contract', note:'Provision or clause prescribed by DFARS 204.7304 except for COTS-only actions; confirm the current prescription for the acquisition.', flowdown:false, always:true},
- {num:'FAR 52.225-19',      url:'https://www.acquisition.gov/far/52.225-19',       far:true,  title:'Contractor Personnel in a Designated Operational Area or Supporting a Diplomatic or Consular Mission Outside the U.S.', blocks:'11f review', note:'Item 11f is only a review prompt. Apply this clause only when the acquisition meets its designated-area or diplomatic/consular prescription.', flowdown:false, trigger:()=>S.c['11f']},
- {num:'DFARS 252.225-7040', url:'https://www.acquisition.gov/dfars/252.225-7040',  far:false, title:'Contractor Personnel Supporting U.S. Armed Forces Deployed Outside the U.S.', blocks:'11f review', note:'Item 11f alone does not establish applicability. Confirm deployed-force, location, personnel-status and prescription facts.', flowdown:false, trigger:()=>S.c['11f']},
- {num:'FAR 52.227-10',      url:'https://www.acquisition.gov/far/52.227-10',       far:true,  title:'Filing of Patent Applications — Classified Subject Matter',                blocks:'11c review', note:'Review if classified patent applications may arise; Item 11c does not establish applicability by itself.', flowdown:false, trigger:()=>S.c['11c']},
- {num:'DFARS 252.223-7007', url:'https://www.acquisition.gov/dfars/252.223-7007',  far:false, title:'Safeguarding Sensitive Conventional Arms, Ammunition, and Explosives', blocks:'10k review', note:'Review when the contract involves sensitive conventional AA&E; confirm the current prescription rather than relying on Item 10k alone.', flowdown:false, trigger:()=>S.c['10k']},
- {num:'DFARS 252.239-7000', url:'https://www.acquisition.gov/dfars/252.239-7000',  far:false, title:'Protection Against Compromising Emanations (TEMPEST)',           blocks:'11i review', note:'Review the current prescription when TEMPEST requirements apply; Item 11i conveys the requirement but does not prescribe the clause.', flowdown:false, trigger:()=>S.c['11i']},
- {num:'DFARS 252.239-7001', url:'https://www.acquisition.gov/dfars/252.239-7001',  far:false, title:'Information Assurance Contractor Training and Certification',    blocks:'11e review', note:'Review the current prescription when contractor personnel perform covered cybersecurity functions.', flowdown:false, trigger:()=>S.c['11e']},
- {num:'DFARS 252.239-7016', url:'https://www.acquisition.gov/dfars/252.239-7016',  far:false, title:'Telecommunications Security Equipment, Devices, Techniques, and Services', blocks:'10a, 11h review', note:'Review the current prescription when the acquisition involves covered telecommunications security support; COMSEC selections alone do not decide applicability.', flowdown:false, trigger:()=>S.c['10a']||S.c['11h']},
-];
-const always   = CLAUSES.filter(c=>c.always);
-const triggered= CLAUSES.filter(c=>!c.always&&c.trigger&&c.trigger());
-const r = c=>`<div class="clause-row">
-  <div><span class="clause-num ${c.far?'far':'dfars'}"><a href="${c.url}" target="_blank" rel="noopener">${c.num}</a></span>${c.flowdown?'<span class="clause-flowdown">↓ Flow-down review</span>':''}</div>
-  <div class="clause-body"><div class="clause-title">${c.title}<span class="clause-blocks">Blocks ${c.blocks}</span></div><div class="clause-note">${c.note}</div></div>
-</div>`;
-let h='<div class="clause-section-hdr">Baseline Applicability Review</div>'+always.map(r).join('');
-h+=triggered.length
-  ?'<div class="clause-section-hdr" style="margin-top:8px;">Additional Review Prompts from Your Selections</div>'+triggered.map(r).join('')
-  :'<div style="font-size:10px;color:var(--muted);font-family:Arial,sans-serif;padding:4px 0;font-style:italic;">No additional review prompts — make selections in Items 10 and 11.</div>';
-h+='<div style="margin-top:8px;padding:5px 7px;background:#fef8ec;border:1px solid #e8c880;border-radius:3px;font-size:9.5px;font-family:Arial,sans-serif;color:#5a3800;">⚠️ <strong>Contracting Officer review required:</strong> This is an applicability aid, not a complete clause matrix. DD Form 254 selections do not prescribe clauses by themselves. Confirm the current FAR, DFARS, agency supplement, acquisition type, COTS status and subcontract facts before incorporation.</div>';
-p.innerHTML=h;
-}
-// ── SUBCONTRACT FLOW-DOWN PANEL ───────────────────────────────
+/* v2.25.1 (P0.9): buildClausesPanel and buildFlowDownPanel are removed. run()
+   rebuilt both on every keystroke into #clausesPanel / #flowDownPanel, hidden
+   (data-co-only) containers that nothing ever showed. Their CLAUSES list was
+   local to buildClausesPanel and read nowhere else. The CO review packages
+   build their own clause and flow-down lists in coPackageModel. */
 /* The attachment rules, expressed once. buildAttachmentReminder() feeds them
    the live form; the dashboard distribution dialog feeds them a stored draft.
    Duplicating this list would guarantee the two drift apart. */
@@ -3459,43 +3345,6 @@ function attachCopy(btn){
   if(notes) out+='\n'+notes.split(/\n+/).map(l=>'- '+l.trim()).join('\n');
   try{ navigator.clipboard.writeText(out); }catch(e){}
   const o=btn.textContent; btn.textContent='✓ copied'; setTimeout(()=>{btn.textContent=o;},1200);
-}
-function buildFlowDownPanel(){
-const p=ck('flowDownPanel'); if(!p) return;
-const GCA=[
- {key:'10c',  label:'10c — CNWDI',           rule:'GCA written approval required before subcontracting. CNWDI access may NOT be flowed down without explicit GCA authorization.'},
- {key:'10e1', label:'10e(1) — SCI',          rule:'GCA prior written approval required before subcontracting any SCI access. SCI subcontracts require separate ODNI/IC authority.'},
- {key:'10e2', label:'10e(2) — Non-SCI Intel',rule:'GCA prior written approval required before subcontracting.'},
- {key:'10f',  label:'10f — SAP',             rule:'GCA approval required before subcontracting. SAP subcontracts require PSO coordination and a separate Program Access Request (PAR).'},
- {key:'10g',  label:'10g — NATO',            rule:'GCA prior written approval required before subcontracting NATO-classified access.'},
- {key:'10h',  label:'10h — FGI',             rule:'GCA prior written approval required before subcontracting access to Foreign Government Information.'},
- {key:'10a',  label:'10a — COMSEC',          rule:'GCA approval required before subcontracting accountable COMSEC. Subcontractor must establish a COMSEC account with NSA.'},
- {key:'11i',  label:'11i — TEMPEST',         rule:'Prime may NOT impose TEMPEST requirements on subcontractors without prior GCA written approval. GCA must separately notify DCSA.'},
- {key:'11j',  label:'11j — OPSEC',           rule:'Prime may NOT impose OPSEC requirements on subcontractors without prior GCA written approval. A copy of the OPSEC plan must accompany the requirement.'},
- {key:'11k',  label:'11k — Defense Courier', rule:'Prime may NOT authorize subcontractor use of Defense Couriers without prior GCA written approval from USTRANSCOM TCJ3-C.'},
-];
-const FLOW=[
- {always:true, label:'FAR 52.204-2',       url:'https://www.acquisition.gov/far/52.204-2',      rule:'For a subcontract involving classified access, insert terms that conform substantially to the clause, including its flow-down paragraph and excluding the prime Changes-clause reference.'},
- {trigger:()=>S.c['10j']||S.c['11l'], label:'DFARS 252.204-7012', url:'https://www.acquisition.gov/dfars/252.204-7012', rule:'Safeguarding Covered Defense Information — flows down without alteration (except to identify parties) when performance involves CDI or operationally critical support.'},
-];
-const activeGCA =GCA.filter(x=>S.c[x.key]);
-const activeFlow=FLOW.filter(x=>x.always||(x.trigger&&x.trigger()));
-if(!S.fcl&&!activeGCA.length){p.innerHTML='<div class="check-item"><span class="ci-icon ci-pending">—</span><span class="ci-text" style="font-style:italic;">Make selections to see flow-down obligations</span></div>';return;}
-let h='';
-if(activeGCA.length){
-  h+='<div style="background:var(--req-bg);border:1px solid #e8a09a;border-radius:4px;padding:6px 8px;margin-bottom:7px;">'
-   +'<div style="font-size:9.5px;font-weight:bold;color:var(--rule-red);text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px;">🔴 GCA Written Approval Required Before Subcontracting</div>';
-  activeGCA.forEach(item=>{h+='<div style="display:flex;gap:6px;padding:4px 0;border-bottom:1px dotted #f0b0a8;font-family:Arial,sans-serif;font-size:10px;"><span style="background:var(--rule-red);color:#fff;font-size:8.5px;font-weight:bold;padding:1px 5px;border-radius:3px;white-space:nowrap;flex-shrink:0;align-self:flex-start;margin-top:1px;">'+item.label+'</span><span style="color:#5a1008;line-height:1.45;">'+item.rule+'</span></div>';});
-  h+='</div>';
-}else if(S.fcl){
-  h+='<div class="check-item"><span class="ci-icon ci-ok">✓</span><span class="ci-text ok" style="font-size:10px;">No GCA-restricted items selected — no pre-subcontract GCA approval required beyond FAR 52.204-2 baseline.</span></div>';
-}
-h+='<div style="background:#eef3fa;border:1px solid #b0c8e8;border-radius:4px;padding:6px 8px;">'
- +'<div style="font-size:9.5px;font-weight:bold;color:#1a3a6a;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px;">📎 Subcontract Clause Flow-Down Review</div>';
-activeFlow.forEach(cl=>{h+='<div style="display:flex;gap:6px;padding:4px 0;border-bottom:1px dotted #c0d4ec;font-family:Arial,sans-serif;font-size:10px;"><a href="'+cl.url+'" target="_blank" rel="noopener" style="background:#1a4a7a;color:#fff;font-size:8.5px;font-weight:bold;padding:1px 5px;border-radius:3px;white-space:nowrap;flex-shrink:0;align-self:flex-start;margin-top:1px;text-decoration:none;">'+cl.label+'</a><span style="color:#1a2a4a;line-height:1.45;">'+cl.rule+'</span></div>';});
-h+='</div>';
-h+='<div style="margin-top:6px;font-size:9px;color:var(--muted);font-family:Arial,sans-serif;font-style:italic;">Confirm the applicable clause text in the subcontract instrument. The DD Form 254 conveys classification guidance only and does not establish export-control jurisdiction or a complete clause set.</div>';
-p.innerHTML=h;
 }
 
 
@@ -4334,7 +4183,6 @@ async function ctSaveLang(key,text){
   if(typeof audAdd==='function') audAdd('template','Saved Item 13 language for '+key+' to "'+(tgt.t.label||'unnamed')+'"');
   if(typeof buildCtPanel==='function') buildCtPanel();
   if(typeof b13RenderCompose==='function'&&b13ViewGet()==='sections') b13RenderCompose();
-  if(typeof buildTemplateLanguage==='function') buildTemplateLanguage();
   return true;
 }
 function ctSaveFromSection(key){
@@ -5280,7 +5128,13 @@ async function dashSaveNow(){
   const id=DASH.current;
   if(!id) return;
   clearTimeout(DASH.timer);
-  const rec=(await draftGet(id))||{id:id,createdAt:new Date().toISOString(),status:'Draft',todos:[],notes:''};
+  /* v2.25.1 (P0.11, review finding N5): a record that is no longer in the
+     store is not re-created. Every path that opens a record (dashOpen, creating
+     a DD-254) stores it first, so a missing one has been deleted while it was
+     open, and the autosave that was due would otherwise write it back as
+     {id, status:'Draft'} plus whatever the form held. */
+  const rec=await draftGet(id);
+  if(!rec) return;
   rec.workspace=collectWorkspace();
   rec.updatedAt=new Date().toISOString();
   const gvx=function(id){const e=document.getElementById(id);return e?e.value.trim():'';};
@@ -6941,40 +6795,14 @@ function dashFlowIssues(parent,child){
     return issues;
   }catch(e){ return []; }
 }
-/* Live-form variant: compares what is on screen right now against the cached
-   parent workspace, so the same rules reach run(), the Preparer's Worksheet and
-   the CO Package instead of only a chip on a dashboard card.
-   Level exceedance is flatly prohibited -> error. Extra Item 10/11 boxes are
-   permitted with prior GCA written approval -> warning, not error, so that a
-   correctly approved form can still validate clean. */
-function flowIssuesLive(){
-  const out={err:[],warn:[]};
-  try{
-    const p=window.DD254_PARENT&&window.DD254_PARENT.workspace; if(!p) return out;
-    /* The ceiling is a prime-versus-subcontract rule. An Original, Revision or
-       Final is compared here against an earlier issuance of the SAME contract,
-       and a revision raising Item 1a or adding a box is exactly what Item 3b
-       revisions are for (v1.15.4). */
-    if(window.DD254_PARENT.issuance) return out;
-    const who=(window.DD254_PARENT.title||'the prime DD-254');
-    const pv=function(id){ return (p.selects&&p.selects[id])||(p.texts&&p.texts[id])||''; };
-    const cv=function(id){ const e=document.getElementById(id); return e?e.value:''; };
-    const cf=cv('fcl1a'), pf=pv('fcl1a');
-    if((FLOW_LVL[cf]||0)>(FLOW_LVL[pf]||0))
-      out.err.push('Flow-down: Item 1a FCL ('+(cf||'none')+') exceeds '+who+' ('+(pf||'none')+') — a subcontract DD Form 254 may not exceed the prime.');
-    const cs=cv('sfg1b'), ps=pv('sfg1b');
-    if((FLOW_LVL[cs]||0)>(FLOW_LVL[ps]||0))
-      out.err.push('Flow-down: Item 1b safeguarding ('+(cs||'none')+') exceeds '+who+' ('+(ps||'none')+') — storage may not be authorised above the prime.');
-    const gca=[], other=[];
-    CT_10.concat(CT_11).forEach(function(k){
-      const e=document.getElementById('c'+k);
-      if(e&&e.checked&&!(p.checks&&p.checks['c'+k])) (FLOW_GCA_KEYS[k]?gca:other).push(k);
-    });
-    if(gca.length) out.warn.push('Flow-down: '+gca.join(', ')+' checked here but not on '+who+' — a prime may not impose these on a subcontractor without prior GCA written approval. Record the approval reference in Item 13.');
-    if(other.length) out.warn.push('Flow-down: '+other.join(', ')+' checked here but not on '+who+' — confirm the requirement actually flows from the prime contract.');
-  }catch(e){}
-  return out;
-}
+/* v2.25.1 (P0.3, owner decision 3 of 26 November 2026): the live-form variant
+   of this ceiling (flowIssuesLive, called from run(), the Preparer's Worksheet
+   and the CO Package) and the dashboard card's flow-down chip are removed. Both
+   compared a draft with its parentId record, and the only parents the tool
+   creates are earlier issuances of the SAME contract (dashParentIsIssuance), so
+   neither could ever fire: no subcontract-to-prime link exists to compare
+   against. dashFlowIssues above is kept as the rule; it returns in Phase 4 on a
+   real primeSourceId link. */
 /* ── SAM.GOV LOOKUP ── */
 function samLookup(fid){
   const v=String(((document.getElementById(fid)||{}).value)||'').trim();
@@ -9360,11 +9188,9 @@ async function dashRenderCards(openId){
     const csB=_sapSub?(_csGot
       ?'<span class="dash-badge" style="background:#e0f2e2;color:#1a6a2a;cursor:pointer;" title="Signed — '+dashEsc((r.countersign&&r.countersign.how)||'location not recorded')+' — click to clear" onclick="dashCsToggle(\''+r.id+'\')">countersigned ✓ '+dashEsc(r.countersign.date||'')+'</span>'
       :'<span class="dash-badge" style="background:#fbe3e0;color:var(--dcsa-crimson);font-weight:bold;cursor:pointer;" title="SAP subcontract — this DD Form 254 is not complete until the subcontractor’s authorized representative signs it. The form provides no subcontractor signature block, so capture it by the method your programme accepts. Do not grant access until you hold it. Click to record it. (DoDM 5205.07 §10.1.d)" onclick="dashCsToggle(\''+r.id+'\')">✋ SAP countersignature owed</span>'):'';
-    let flowB='';
-    if(r.parentId&&byId[r.parentId]&&!dashParentIsIssuance(byId[r.parentId])){
-      const fi=dashFlowIssues(byId[r.parentId],r);
-      if(fi.length) flowB='<span class="dash-badge" style="background:#fbe3e0;color:var(--dcsa-crimson);" title="This sub exceeds the prime DD-254">⚠ exceeds prime: '+dashEsc(fi.slice(0,4).join(', '))+(fi.length>4?'…':'')+'</span>';
-    }
+    /* v2.25.1 (P0.3): the flow-down chip that stood here compared a card with its
+       parentId record, which is always an earlier issuance of the same contract,
+       so it never showed. Removed until a subcontract can name its prime. */
     const todos=(r.todos||[]).map(function(t,i){
       let chip;
       if(!t.due) chip='<span class="dash-badge" style="background:#fdf3d8;color:#8a6a00;">no date</span>';
@@ -9444,7 +9270,7 @@ async function dashRenderCards(openId){
             +'</div></span>';
         })()
       +'</div>'
-      +'<div style="margin-top:8px;">'+solB+errB+warnB+todoB+nissB+csB+flowB+dashHoldBadge(r)+dashAttBadge(r,openId===r.id)+dashDistBadge(r,openId===r.id)+dashReviewBadge(r)+dashRetentionBadge(r)+dashPopBadge(r,{superseded:superseded,hasFinal:dashChainHasFinal(r,drafts)})
+      +'<div style="margin-top:8px;">'+solB+errB+warnB+todoB+nissB+csB+dashHoldBadge(r)+dashAttBadge(r,openId===r.id)+dashDistBadge(r,openId===r.id)+dashReviewBadge(r)+dashRetentionBadge(r)+dashPopBadge(r,{superseded:superseded,hasFinal:dashChainHasFinal(r,drafts)})
       +'<span style="font-size:10px;color:#8a94a0;margin-left:8px;">last edited '+when+'</span></div>'
       +((r.status==='Cancelled'&&r.cancel&&r.cancel.reason)
         ?'<div style="margin-top:10px;border:1px solid #d8b0a8;border-left:4px solid #7a4038;background:#fbf1ef;padding:8px 12px;">'
@@ -10873,7 +10699,7 @@ const FN_FIELDS=[
   {key:'i7b',    label:'7b — Subcontractor CAGE',         get:function(){ return fnById('i7b'); }},
   {key:'p8a',    label:'8a — Performance location',       get:function(){ return fnPerf('loc'); }},
   {key:'p8b',    label:'8b — Performance CAGE',           get:function(){ return fnPerf('cage'); }},
-  {key:'i16a',   label:'16a — Certifier name',            get:function(){ return fnFirstLine(fnById('i16a')); }},
+  {key:'i16a',   label:'16a — GCA name',                  get:function(){ return fnFirstLine(fnById('i16a')); }},
   {key:'i17a',   label:'17a — Certifying official',       get:function(){ return fnFirstLine(fnById('i17a')); }}
 ];
 const FN_DEFAULT=['i6b','i7b','i2a','sol'];
@@ -11630,6 +11456,17 @@ function ctSrcBadge(t){
   const late=(due<today);
   return base+'<span title="32 CFR 117.15 \u2014 classified material held under this contract must be returned to the Government or destroyed within two years of the final, unless the GCA authorises retention in writing." style="display:inline-block;margin-left:5px;background:'+(late?'#7a1008':'#8a6a00')+';color:#fff;font-weight:bold;font-size:11px;border-radius:4px;padding:4px 9px;letter-spacing:.3px;">\u23f3 RETURN OR DESTROY BY '+due+(late?' \u2014 OVERDUE':'')+'</span>';
 }
+/* v2.25.1 (P0.2): a DD-254 template that says which government DD-254 it came
+   from (an Original or a Revision) but names no prime contract can never be a
+   link in a revision chain - tplChainKey is the prime. Received DD-254s
+   imported before v2.25.1 are all like this. Said on the row, with what the
+   template records about Items 1a/1b, until a contract number is entered. */
+function ctChainGap(t){ return tplChainTyped(t)&&!ctContractKey(((t||{}).data||{}).primeContract); }
+function ctSrcFacts(t){
+  const lv=tplSrcLevels(t);
+  return (lv?'<div style="font-size:9.5px;color:#4a5866;margin-top:2px;">'+tplEsc(lv)+'</div>':'')
+    +(ctChainGap(t)?'<div class="ct-chain-gap" style="font-size:10px;color:#a03028;font-weight:bold;margin-top:2px;max-width:210px;line-height:1.3;">⚠ Contract number missing — revision chain cannot include this. Enter the prime contract (2a).</div>':'');
+}
 function ctSetSm(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; v=(v||'').trim();
   const sms=tplLoad(TPL_SM);
   /* A pair names the programme, so there is nothing left to choose. A bare
@@ -11694,7 +11531,7 @@ function ctSmProgRender(i,ps){
   }
   ctSmListRender(i);
 }
-function ctSetPrime(i,v){ const d=ctEd(i); if(!d) return; d.primeContract=(v||'').trim(); ctStamp(i); }
+function ctSetPrime(i,v){ const d=ctEd(i); if(!d) return; d.primeContract=(v||'').trim(); ctStamp(i); ctSrcRepaint(i); }
 async function ctSetTask(i,v){
   const d=ctEd(i);if(!d)return;const value=String(v||'').trim(),before=d.taskOrder;
   if(window.TPL_EDIT_KIND==='ct'&&before){
@@ -11707,7 +11544,7 @@ async function ctSetTask(i,v){
 }
 function ctSrcRepaint(i){
   const t=window.TPL_EDIT[i]; if(!t) return;
-  const el=document.getElementById('ctSrc_'+i); if(el) el.innerHTML=ctSrcBadge(t);
+  const el=document.getElementById('ctSrc_'+i); if(el) el.innerHTML=ctSrcBadge(t)+(window.TPL_EDIT_KIND==='ct'?ctSrcFacts(t):'');
   const rv=document.getElementById('ctSrcRev_'+i); if(rv) rv.style.display=(t.srcType==='rev'?'':'none');
 }
 function ctSetSrc(i,v){ const t=window.TPL_EDIT[i]; if(!t) return; t.srcDate=(v||'').trim(); ctStamp(i); ctSrcRepaint(i); }
@@ -11851,7 +11688,7 @@ function ctContractKey(v){return String(v||'').trim().toUpperCase();}
 function ctOrderKey(prime,number){return JSON.stringify([ctContractKey(prime),ctContractKey(number)]);}
 function ctOrderType(v){return CT_ORDER_TYPES.indexOf(v)>=0?v:'Task Order';}
 function ctSourceSnapshot(t){
-  const out={}; ['ioId','label','srcDate','srcType','srcRev','smName','smEmail','smProgram','data'].forEach(function(k){if(t&&t[k]!=null)out[k]=JSON.parse(JSON.stringify(t[k]));});
+  const out={}; ['ioId','label','srcDate','srcType','srcRev','srcFcl','srcSfg','smName','smEmail','smProgram','data'].forEach(function(k){if(t&&t[k]!=null)out[k]=JSON.parse(JSON.stringify(t[k]));});
   return out;
 }
 function ctSourceBody(t){return JSON.stringify(ctSourceSnapshot(t));}
@@ -12707,16 +12544,52 @@ function rcv254Parse(xml){
   else if(on('three_B')){ srcType='rev'; srcRev=f('three_RevisionNum')||''; rawDate=f('three_dateB')||''; }
   else if(on('three_A')){ srcType='orig'; rawDate=f('three_dateA')||''; }
   const number=f('two_Sub')||f('two_Prime')||f('two_Solicitation')||'';
+  /* v2.25.1 (P0.2): Item 2a is the template's contract. The revision chain
+     (tplChainKey) is keyed on data.primeContract, and an import that left it
+     empty could never join its contract's chain. A standalone task order's
+     DD-254 carries "PRIME | Task Order N" in 2a (collect254Data), which is
+     read back into the prime and the order. */
+  const two=rcv254Prime(f('two_Prime')||'');
+  d.primeContract=two.prime; d.taskOrder=two.order; if(two.order) d.orderType=two.type;
   const has=CT_10.some(function(k){return d.c10[k];})||CT_11.some(function(k){return d.c11[k];})||CT_18.some(function(k){return d.c18[k];})
     ||[d.i12route,d.i12,d.i12specify,d.i13,d.i14,d.i14text,d.i15,d.i15text,d.t10k,d.t11m].some(Boolean)
     ||Object.keys(d.i16).some(function(k){return d.i16[k];});
   if(!has) throw new Error('This DD Form 254 has no content in Items 10 to 16 or 18, so there is nothing to import.');
-  return {data:d, srcType:srcType, srcRev:srcRev, srcDate:rcv254Date(rawDate), rawDate:rawDate, number:number, marking:marking};
+  /* Items 1a and 1b (owner decision 2, 26 November 2026) are facts about the
+     source form, recorded on the template and shown, never applied to a form:
+     a template has no 1a/1b fields and the preparer sets them per DD-254. */
+  return {data:d, srcType:srcType, srcRev:srcRev, srcDate:rcv254Date(rawDate), rawDate:rawDate, number:number, marking:marking,
+          srcFcl:rcv254Level(f('FacilityLevel')), srcSfg:rcv254Level(f('SafeguardLevel'))};
+}
+/* Item 2a as exported: the bare prime, or "PRIME | <order type> <number>" for
+   a standalone task order (collect254Data). */
+function rcv254Prime(v){
+  const s=String(v||'').trim();
+  const m=s.match(/^(.*?)\s*\|\s*(Task Order|BPA|Delivery Order)\s+(.+)$/i);
+  if(!m) return {prime:s, order:'', type:''};
+  const type=CT_ORDER_TYPES.filter(function(x){ return x.toLowerCase()===m[2].toLowerCase(); })[0]||'Task Order';
+  return {prime:m[1].trim(), order:m[3].trim(), type:type};
+}
+/* The form writes levels as words (dd254Level); the tool keeps codes. An
+   unrecognised value is kept as written rather than dropped. */
+function rcv254Level(v){
+  const s=String(v||'').trim(); if(!s) return '';
+  return ({'TOP SECRET':'TS','SECRET':'S','CONFIDENTIAL':'C','NONE':'NONE','N/A':'NA','NA':'NA','TS':'TS','S':'S','C':'C'})[s.toUpperCase()]||s;
+}
+/* "Items 1a/1b as received: Secret / None", or '' when the source had neither. */
+function tplSrcLevels(t){
+  if(!t||!(t.srcFcl||t.srcSfg)) return '';
+  return 'Items 1a/1b as received: '+(t.srcFcl?dd254Level(t.srcFcl):'not marked')+' / '+(t.srcSfg?dd254Level(t.srcSfg):'not marked');
 }
 function rcv254Summary(r){
   const d=r.data, lines=[];
   const sel=function(list,grp){ return list.filter(function(k){return d[grp][k];}); };
   const s10=sel(CT_10,'c10'), s11=sel(CT_11,'c11'), s18=sel(CT_18,'c18');
+  lines.push('Item 2a: '+(d.primeContract
+    ? d.primeContract+(d.taskOrder?' · '+(d.orderType||'Task Order')+' '+d.taskOrder+' — the template’s prime contract and order':' — the template’s prime contract')
+    : 'empty — contract number missing, so the revision chain cannot include this template until one is entered'));
+  const lv=tplSrcLevels(r);
+  if(lv) lines.push(lv+' — recorded on the template, not applied');
   lines.push('Item 10: '+(s10.length?s10.join(', '):'none selected'));
   lines.push('Item 11: '+(s11.length?s11.join(', '):'none selected'));
   lines.push('Item 12: '+({dir:'DIRECT',thru:'THROUGH'}[d.i12route]||'no routing')+(d.i12?' with release authority':''));
@@ -12742,12 +12615,14 @@ async function rcv254Import(file){
     +'Source: '+(srcLbl||'Item 3 type not marked')+(result.srcDate?' dated '+result.srcDate:(result.rawDate?' (date "'+result.rawDate+'" not recognised — set it on the template)':' (no date)'))+'\n'
     +'Form marked: '+(result.data.cls==='CUI'?'CUI':'UNCLASSIFIED')+'\n\n• '
     +rcv254Summary(result).join('\n• ')
-    +'\n\nNot imported: Items 1–9 and 17, reviewers, signatures and file attachments. No draft or dashboard record is created, and the PDF is not kept.'
+    +'\n\nNot imported: Items 2b–9 and 17, reviewers, signatures and file attachments. Item 2a becomes the template’s contract number; Items 1a and 1b are kept as what the source said and never applied. No draft or dashboard record is created, and the PDF is not kept.'
     +'\n\nThis is the received form’s own wording. Review it before applying it to a subcontract.');
   if(!ok) return false;
   const t={label:label, srcDate:result.srcDate, srcType:result.srcType, srcRev:result.srcRev,
            ioId:(typeof ioNewId==='function')?ioNewId():('ct'+Math.random().toString(36).slice(2,10)),
            updatedAt:new Date().toISOString(), data:result.data};
+  if(result.srcFcl) t.srcFcl=result.srcFcl;
+  if(result.srcSfg) t.srcSfg=result.srcSfg;
   const editing=(window.TPL_EDIT_KIND==='ct'&&Array.isArray(window.TPL_EDIT));
   const list=editing?window.TPL_EDIT:tplLoad(TPL_CT);
   if(!(await ctDuplicateSaveCheck(list.concat([t]))))return null;
@@ -13339,7 +13214,7 @@ async function tplRevOpen(){
     const go=issued?(stage==='sol'?'Spawn Original':'Revise'):'Open';
     return '<div class="tpl-rev-row" data-id="'+dashEsc(r.id)+'" style="border:1px solid #d8dee5;border-radius:6px;padding:8px 10px;margin:6px 0;">'
       +'<div style="font-size:12px;font-weight:bold;color:#2b3440;">'+dashEsc(r.title||'Untitled DD-254')+' <span style="font-weight:normal;color:#5a6a80;">· '+dashEsc(st)+'</span></div>'
-      +'<div style="font-size:11px;color:#5a6a80;margin:2px 0 6px;line-height:1.45;">Built from “'+dashEsc(x.from.label||'')+'” ('+dashEsc(x.fromVer)+')<br>Now: “'+dashEsc(x.to.label||'')+'” ('+dashEsc(x.toVer)+')</div>'
+      +'<div style="font-size:11px;color:#5a6a80;margin:2px 0 6px;line-height:1.45;">Built from “'+dashEsc(x.from.label||'')+'” ('+dashEsc(x.fromVer)+')<br>Now: “'+dashEsc(x.to.label||'')+'” ('+dashEsc(x.toVer)+')'+(tplSrcLevels(x.to)?' · '+dashEsc(tplSrcLevels(x.to)):'')+'</div>'
       +'<button type="button" id="trGo_'+dashEsc(r.id)+'" style="'+btn+'background:#17427d;color:#fff;">'+go+'</button> '
       +'<button type="button" id="trEx_'+dashEsc(r.id)+'" style="'+btn+'background:#fff;color:#7a4a00;border:1px solid #c9a24a;">Exempt…</button>'
       +'</div>';
@@ -16309,7 +16184,7 @@ async function dashTplEdit(kind){
       +'<div style="font-size:9px;color:#8a94a0;width:210px;line-height:1.35;">Any and Either decide which DD-254s this template is offered for. They never change what it writes.</div>'
       +'</div>'
       +'<div style="display:flex;flex-direction:column;gap:3px;align-items:flex-start;">'
-      +'<span id="ctSrc_'+i+'">'+ctSrcBadge(t)+'</span>'
+      +'<span id="ctSrc_'+i+'">'+ctSrcBadge(t)+(kind==='ct'?ctSrcFacts(t):'')+'</span>'
       +'<div style="display:flex;gap:3px;align-items:center;">'
       +'<select title="Source type — was this template taken from an Original DD Form 254, a numbered Revision, or a Final?" style="font-size:10.5px;width:104px;" onchange="ctSetSrcType('+i+',this.value)">'
       +CT_SRC_TYPES.map(function(o){ return '<option value="'+o[0]+'"'+(((t.srcType||'')===o[0])?' selected':'')+'>'+tplEsc(o[1])+'</option>'; }).join('')
@@ -16606,10 +16481,6 @@ function exportPrep254() {
   const warn  = [];
   const notes = [];
 
-  if(typeof flowIssuesLive==='function'){ const _fl=flowIssuesLive();
-    _fl.err.forEach(function(x){ must.push(x); });
-    _fl.warn.forEach(function(x){ warn.push(x); }); }
-
   if(!gv('fcl1a'))            must.push('Item 1a: Facility Clearance Level (FCL) required.');
   if(!gv('sfg1b'))            must.push('Item 1b: Safeguarding level required.');
   if(!gv('i2a'))              must.push('Item 2a: Prime contract number required.');
@@ -16882,10 +16753,8 @@ function coPackageModel(audience){
   const coWarn  = [];
   const clauses = [];
 
-  /* The flow-down ceiling compares a subcontract with its prime: the prime's check. */
-  if(P && typeof flowIssuesLive==='function'){ const _fl=flowIssuesLive();
-    _fl.err.forEach(function(x){ coMust.push(x); });
-    _fl.warn.forEach(function(x){ coWarn.push(x); }); }
+  /* The flow-down ceiling against a linked prime DD-254 is cut until Phase 4
+     (v2.25.1 P0.3); the prime package still lists the GCA-approval boxes below. */
 
   // Core obligations
   coMust.push('Verify the contractor entity eligibility/FCL and, when possession or storage is required, the approved safeguarding capability through NISS, NCAISS, or the CSA-designated source. A CAGE code or FCL alone does not establish storage authority. (32 CFR §§117.9 and 117.15)');
@@ -18441,7 +18310,10 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(document.getElementById('demoBanner')) return;
     const d=document.createElement('div');
     d.id='demoBanner';
-    d.textContent='DEMONSTRATION BUILD — resets on every refresh; fictitious data only. Not for preparing an actual DD Form 254.';
+    /* v2.25.1 (P0.10): this used to claim the demo reset itself on each
+       reload. It does not: seed() and seedPortfolio() leave existing data alone, so what a
+       visitor changes stays in their browser until its site data is cleared. */
+    d.textContent='DEMONSTRATION BUILD — fictitious data only; keeps your changes in this browser until you clear its site data. Not for preparing an actual DD Form 254.';
     d.style.cssText='position:sticky;top:0;z-index:9000;background:#7a4038;color:#fff;'
       +'font-family:Arial,sans-serif;font-size:11.5px;font-weight:bold;letter-spacing:.4px;'
       +'text-align:center;padding:5px 10px;';
